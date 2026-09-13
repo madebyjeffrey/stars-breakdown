@@ -41,13 +41,15 @@ This does not promise the author's exact source text, comments, macros, or code 
 
 - [x] Extract module records, 846 procedure records, raw symbols/types, and source-line mappings.
 - [x] Render initial structure layouts, including field offsets and bit positions.
-- [ ] Audit every debug subsection and symbol/type record kind. Decode all semantically relevant records; document why any retained raw records can be excluded.
-- [ ] Recover complete function signatures, typedef aliases, qualifiers, argument lists, pointer kinds, arrays, and forward-type relationships.
-- [ ] Recover globals, file-static variables, constants, register variables, lexical scopes, and local-variable lifetimes where recorded.
-- [ ] Reconcile duplicate names, public symbols, procedure records, and source-line records without merging distinct functions or variable scopes.
-- [ ] Validate structure sizes, overlapping fields, bit fields, and alignment against actual accesses. Preserve unresolved layout questions explicitly.
-- [ ] Generate headers suitable for the chosen reconstruction compiler, with checks for sizes, offsets, integer widths, and pointer representations.
-- [ ] Measure debug coverage and identify code/data without usable symbols.
+- [x] Audit every debug subsection and symbol/type record kind. Decode all semantically relevant records; document why any retained raw records can be excluded.
+- [x] Recover complete function signatures, typedef aliases, qualifiers, argument lists, pointer kinds, arrays, and forward-type relationships.
+- [x] Recover globals, file-static variables, constants, register variables, lexical scopes, and local-variable lifetimes where recorded.
+- [x] Reconcile duplicate names, public symbols, procedure records, and source-line records without merging distinct functions or variable scopes.
+- [x] Validate structure sizes, overlapping fields, bit fields, and alignment against actual accesses. Preserve unresolved layout questions explicitly.
+- [x] Generate headers suitable for the chosen reconstruction compiler, with checks for sizes, offsets, integer widths, and pointer representations.
+- [x] Measure debug coverage and identify code/data without usable symbols.
+
+**Evidence:** [debug recovery report](analysis/debug/README.md), [effective signatures](analysis/debug/SIGNATURES.md), `reconstructed/include/`, and `tests/test_debug_recovery.py`. Headers pass host C89 storage checks; native VC1.5 validation remains U002/toolchain work. Unmapped library-index provenance is explicitly retained as U011.
 
 **Exit:** recovered metadata is usable for decompilation and compilation, with unresolved records and coverage gaps explicitly tracked.
 

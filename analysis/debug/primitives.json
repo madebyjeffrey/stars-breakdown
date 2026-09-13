@@ -1,0 +1,200 @@
+[
+  {
+    "index": 3,
+    "name": "void",
+    "size": 0,
+    "pointer_mode": 0
+  },
+  {
+    "index": 114,
+    "name": "int",
+    "size": 2,
+    "pointer_mode": 0
+  },
+  {
+    "index": 17,
+    "name": "short",
+    "size": 2,
+    "pointer_mode": 0
+  },
+  {
+    "index": 33,
+    "name": "unsigned short",
+    "size": 2,
+    "pointer_mode": 0
+  },
+  {
+    "index": 34,
+    "name": "unsigned long",
+    "size": 4,
+    "pointer_mode": 0
+  },
+  {
+    "index": 18,
+    "name": "long",
+    "size": 4,
+    "pointer_mode": 0
+  },
+  {
+    "index": 32,
+    "name": "unsigned char",
+    "size": 1,
+    "pointer_mode": 0
+  },
+  {
+    "index": 624,
+    "name": "char far *",
+    "size": 4,
+    "pointer_mode": 2
+  },
+  {
+    "index": 115,
+    "name": "unsigned int",
+    "size": 2,
+    "pointer_mode": 0
+  },
+  {
+    "index": 112,
+    "name": "char",
+    "size": 1,
+    "pointer_mode": 0
+  },
+  {
+    "index": 368,
+    "name": "char near *",
+    "size": 2,
+    "pointer_mode": 1
+  },
+  {
+    "index": 370,
+    "name": "int near *",
+    "size": 2,
+    "pointer_mode": 1
+  },
+  {
+    "index": 289,
+    "name": "unsigned short near *",
+    "size": 2,
+    "pointer_mode": 1
+  },
+  {
+    "index": 259,
+    "name": "void near *",
+    "size": 2,
+    "pointer_mode": 1
+  },
+  {
+    "index": 544,
+    "name": "unsigned char far *",
+    "size": 4,
+    "pointer_mode": 2
+  },
+  {
+    "index": 274,
+    "name": "long near *",
+    "size": 2,
+    "pointer_mode": 1
+  },
+  {
+    "index": 288,
+    "name": "unsigned char near *",
+    "size": 2,
+    "pointer_mode": 1
+  },
+  {
+    "index": 371,
+    "name": "unsigned int near *",
+    "size": 2,
+    "pointer_mode": 1
+  },
+  {
+    "index": 515,
+    "name": "void far *",
+    "size": 4,
+    "pointer_mode": 2
+  },
+  {
+    "index": 530,
+    "name": "long far *",
+    "size": 4,
+    "pointer_mode": 2
+  },
+  {
+    "index": 290,
+    "name": "unsigned long near *",
+    "size": 2,
+    "pointer_mode": 1
+  },
+  {
+    "index": 626,
+    "name": "int far *",
+    "size": 4,
+    "pointer_mode": 2
+  },
+  {
+    "index": 66,
+    "name": "long double",
+    "size": 10,
+    "pointer_mode": 0
+  },
+  {
+    "index": 65,
+    "name": "double",
+    "size": 8,
+    "pointer_mode": 0
+  },
+  {
+    "index": 546,
+    "name": "unsigned long far *",
+    "size": 4,
+    "pointer_mode": 2
+  },
+  {
+    "index": 320,
+    "name": "float near *",
+    "size": 2,
+    "pointer_mode": 1
+  },
+  {
+    "index": 64,
+    "name": "float",
+    "size": 4,
+    "pointer_mode": 0
+  },
+  {
+    "index": 545,
+    "name": "unsigned short far *",
+    "size": 4,
+    "pointer_mode": 2
+  },
+  {
+    "index": 880,
+    "name": "char huge *",
+    "size": 4,
+    "pointer_mode": 3
+  },
+  {
+    "index": 0,
+    "name": "no_type",
+    "size": 0,
+    "pointer_mode": 0
+  },
+  {
+    "index": 1,
+    "name": "absolute",
+    "size": 0,
+    "pointer_mode": 0
+  },
+  {
+    "index": 529,
+    "name": "short far *",
+    "size": 4,
+    "pointer_mode": 2
+  },
+  {
+    "index": 627,
+    "name": "unsigned int far *",
+    "size": 4,
+    "pointer_mode": 2
+  }
+]

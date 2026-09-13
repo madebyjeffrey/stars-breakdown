@@ -1,0 +1,2469 @@
+[
+  {
+    "directory_index": 0,
+    "kind": "sstModule",
+    "module": 1,
+    "bytes": 34,
+    "sha256": "04e14c717d87df12ef884f4c5c0876423fa4c50ec6062928471a32eb1c08f3b9",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 1,
+    "kind": "sstModule",
+    "module": 2,
+    "bytes": 33,
+    "sha256": "eec2aa0aa7a01de2a723c7823856143854f3f9a7e3bfdfaf15bc6f48d67f42ce",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 2,
+    "kind": "sstModule",
+    "module": 3,
+    "bytes": 35,
+    "sha256": "ad70dbf65365bcf2f70ac578620498bf1dcf75bad9beff371a76c4aabce625d9",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 3,
+    "kind": "sstModule",
+    "module": 4,
+    "bytes": 34,
+    "sha256": "9dc7886f373091afffc3c081e7f5b0cd153daa0ed54803e832b41f76e7e57112",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 4,
+    "kind": "sstModule",
+    "module": 5,
+    "bytes": 33,
+    "sha256": "cd08de816a36f16ed7747041d3bf7e1d66fa661a0e63873b4d815272fae0ae18",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 5,
+    "kind": "sstModule",
+    "module": 6,
+    "bytes": 36,
+    "sha256": "7e9e0577e6f5199b4d5c647d2b0028da8f0047b7213ab1d4f8cb7be7a70aa2e9",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 6,
+    "kind": "sstModule",
+    "module": 7,
+    "bytes": 30,
+    "sha256": "e381136c2e37571aa641fb69370401e73f7c823a11ed0f85bd7f8dd8d260701f",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 7,
+    "kind": "sstModule",
+    "module": 8,
+    "bytes": 35,
+    "sha256": "e2dcedb6b144b378efff9d167857571718f67e0266ff247613fe25c1019139ad",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 8,
+    "kind": "sstModule",
+    "module": 9,
+    "bytes": 34,
+    "sha256": "0b78f85475adc12a12708451698dc95712be14fb21581f74df7779e268ee3d97",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 9,
+    "kind": "sstModule",
+    "module": 10,
+    "bytes": 33,
+    "sha256": "99919ba259c48235297361bc2a6640d070083f4c3460e188964c3397bb06248b",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 10,
+    "kind": "sstModule",
+    "module": 11,
+    "bytes": 32,
+    "sha256": "d1457b93d21d387e90c55c3fd055784d2f61f7cf7ae730cbefe83e2aa3e00dca",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 11,
+    "kind": "sstModule",
+    "module": 12,
+    "bytes": 19,
+    "sha256": "90fac6f4747289299c6cfcaa5a69bd75e067a397cccf2207d7caa2f267e86a8a",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 12,
+    "kind": "sstModule",
+    "module": 13,
+    "bytes": 39,
+    "sha256": "c236734330f22971bbe9db9e6ade258a4f48bb6868ccd3c98238f116b8391988",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 13,
+    "kind": "sstModule",
+    "module": 14,
+    "bytes": 34,
+    "sha256": "87496db21a1685083cdbef18cdcc3e9a57c8cfa010efeeab86b0b1a10a3f81fb",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 14,
+    "kind": "sstModule",
+    "module": 15,
+    "bytes": 19,
+    "sha256": "332b889481d1c7583efac07250bfaa80a76d8586bb0f38e17a770599b31a7592",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 15,
+    "kind": "sstModule",
+    "module": 16,
+    "bytes": 32,
+    "sha256": "9f045067d5ed641c17677c3fb9aa5528d3e8eefb028841a0cc1b94804fe0ae38",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 16,
+    "kind": "sstModule",
+    "module": 17,
+    "bytes": 34,
+    "sha256": "67c973a40e1d9fb04830e5c7307bcf77341d5e4b089a06f7846a4f9aa9873171",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 17,
+    "kind": "sstModule",
+    "module": 18,
+    "bytes": 34,
+    "sha256": "8c1bf2bfc96ce2c00b089c7e30394ae926f495515ae975aa52d0840767562534",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 18,
+    "kind": "sstModule",
+    "module": 19,
+    "bytes": 33,
+    "sha256": "b7dc2833b7e77845d5cbefbac229999f21d541557c87449a4e5fbb01438cd0c2",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 19,
+    "kind": "sstModule",
+    "module": 20,
+    "bytes": 36,
+    "sha256": "b4066eeeded6167a4e67d0ef7667d51c87439b408fa0d01c169568b2762fba62",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 20,
+    "kind": "sstModule",
+    "module": 21,
+    "bytes": 31,
+    "sha256": "3ab5821f8632b3ae98b6fa2c2e59d2631e111fc9b948c841ffa75bb28b8ba195",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 21,
+    "kind": "sstModule",
+    "module": 22,
+    "bytes": 27,
+    "sha256": "8d0f44eec2fc8eca441069f1f9250f16bc4be9615626acfff92def6b71f486ee",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 22,
+    "kind": "sstModule",
+    "module": 23,
+    "bytes": 40,
+    "sha256": "192aef273961033ab06eae7fee20fd68c136f4a632e92ea94267f138b456eb1a",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 23,
+    "kind": "sstModule",
+    "module": 24,
+    "bytes": 37,
+    "sha256": "38c37f56e9507437a454c622951712e73a5371bb17f0c3871f6d70bd087e0804",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 24,
+    "kind": "sstModule",
+    "module": 25,
+    "bytes": 36,
+    "sha256": "e4311e4f52c8f7670253684f8e312dae048f6f668167b41465cf48632ec0e7c3",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 25,
+    "kind": "sstModule",
+    "module": 26,
+    "bytes": 26,
+    "sha256": "7da77cdd5548c94b0274dc6ec47de5b3523ba0512dc49f9e95ce800d717c84bc",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 26,
+    "kind": "sstModule",
+    "module": 27,
+    "bytes": 39,
+    "sha256": "0f87612386bca6bfae09bbaa79dfd5b4cdc2426bf3fe8ad450d728bdf3ad8049",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 27,
+    "kind": "sstModule",
+    "module": 28,
+    "bytes": 33,
+    "sha256": "4a1a59000203afa7954c63e5b35cfa3f62232369b6a08f61d904c920bb3fefb5",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 28,
+    "kind": "sstModule",
+    "module": 29,
+    "bytes": 34,
+    "sha256": "216cd682a02f5c3db9d49948706efde2853e582afbf093dbd1c1f850aa0613e5",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 29,
+    "kind": "sstModule",
+    "module": 30,
+    "bytes": 28,
+    "sha256": "e49875982bb3e743065464b1448443f57f22d10285d9095d54daad7c3bf2331e",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 30,
+    "kind": "sstModule",
+    "module": 31,
+    "bytes": 34,
+    "sha256": "cb9cb33c8086417a4b6735a11c68b6207fd3903a5a70be67a2798ab189b75a45",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 31,
+    "kind": "sstModule",
+    "module": 32,
+    "bytes": 33,
+    "sha256": "a3fb86b610768bee135c14f82a83658661cc8cab91fa89baa9f6826ff6bfd733",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 32,
+    "kind": "sstModule",
+    "module": 33,
+    "bytes": 33,
+    "sha256": "501109f9ec3bca018c282427a0f28d793ace5ea71bb68f0b2d5943171b758b53",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 33,
+    "kind": "sstModule",
+    "module": 34,
+    "bytes": 33,
+    "sha256": "2cfd6362a2035d06c70925b40908541b154de7522e2c4b5c9b92ed7708a19f93",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 34,
+    "kind": "sstModule",
+    "module": 35,
+    "bytes": 29,
+    "sha256": "7f9f4e7afe7473eff9f990dd40cd49758caf5bdac4e711b131772e28c2bcd2f8",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 35,
+    "kind": "sstModule",
+    "module": 36,
+    "bytes": 34,
+    "sha256": "c3d3077558974cd66ba27915107ef5cfa48c4d2022e5070d30228ff063d33ce3",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 36,
+    "kind": "sstModule",
+    "module": 37,
+    "bytes": 21,
+    "sha256": "a4c23eb2ae13593a8318fe0bf0a6f71dbc9fb16f68b87230d9fa661568ec489c",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 37,
+    "kind": "sstModule",
+    "module": 38,
+    "bytes": 29,
+    "sha256": "0e54e3c5a7bde51a10b79b39115009c752dc15cea0248a8bc41e833438d14e43",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 38,
+    "kind": "sstModule",
+    "module": 39,
+    "bytes": 21,
+    "sha256": "ce600da8e34bde1d45108547f075c7e72ba25b3ae7190767d8d324c19666009e",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 39,
+    "kind": "sstModule",
+    "module": 40,
+    "bytes": 33,
+    "sha256": "61d1f606c07b153c6e063938e80d9aa57eb222d6e9e839aef1046b3e32dac0bf",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 40,
+    "kind": "sstModule",
+    "module": 41,
+    "bytes": 35,
+    "sha256": "5a4de2518c235c0eb16c801e2c53916ce5693bbc56561659e25313a51e15a0dd",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 41,
+    "kind": "sstModule",
+    "module": 42,
+    "bytes": 38,
+    "sha256": "19ee6c85bdc3468341ad3792446072e020cca2f6d6cc1c0a9a2af84b30716577",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 42,
+    "kind": "sstModule",
+    "module": 43,
+    "bytes": 36,
+    "sha256": "03aa002094d432c62b91610ef3569dbace6f6dd5fb2f6efc0f99c5f58b390223",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 43,
+    "kind": "sstModule",
+    "module": 44,
+    "bytes": 36,
+    "sha256": "6f89a34d74b8dc1f48d2a509f8227fd6cd343b5a9f61a32a8358fa6a6cb5d066",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 44,
+    "kind": "sstModule",
+    "module": 45,
+    "bytes": 40,
+    "sha256": "0ca8eeac0a3c4ad43d3bd87078195b2393947d5dc5e75609aaa1e447622a030b",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 45,
+    "kind": "sstModule",
+    "module": 46,
+    "bytes": 31,
+    "sha256": "3284d7ce008ebb01918d24d42970246f77168db45bbf3221f14b662b25c9c426",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 46,
+    "kind": "sstModule",
+    "module": 47,
+    "bytes": 36,
+    "sha256": "99f583a8b72e1b8a40a20630c28bd6060a8d6f1e3fd075c7de270241ee945794",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 47,
+    "kind": "sstModule",
+    "module": 48,
+    "bytes": 41,
+    "sha256": "36c006463dbf00a76e0046a51b1c94193095024f89892adb42037a18c8ab1c1f",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 48,
+    "kind": "sstModule",
+    "module": 49,
+    "bytes": 35,
+    "sha256": "7d00d61522a6ffa7db2d491fe055e4fa2074a955122a610e5db2121f30a84588",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 49,
+    "kind": "sstModule",
+    "module": 50,
+    "bytes": 33,
+    "sha256": "2653d31ed0224ac65860cd90d377d8fbfc2e4f0ec9c74a339b4714277ec5946a",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 50,
+    "kind": "sstModule",
+    "module": 51,
+    "bytes": 33,
+    "sha256": "e49d2b8c45b42dc239a3b8a12d9911828500cce5c65ac5a5653d72975f1bb0ab",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 51,
+    "kind": "sstModule",
+    "module": 52,
+    "bytes": 35,
+    "sha256": "66f14377cb00e9767b181ffbd7b2a547be7d8f32067a5f6cb5148b49742cb4f1",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 52,
+    "kind": "sstModule",
+    "module": 53,
+    "bytes": 34,
+    "sha256": "1b51077af3935ff2f69a168fdc019336ee0f5191888dabdd8f7d6dc9a2e511eb",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 53,
+    "kind": "sstModule",
+    "module": 54,
+    "bytes": 34,
+    "sha256": "127db5895349c140295143cfab3e0c3b18f0ee513e161ae9e66780b27cc938be",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 54,
+    "kind": "sstModule",
+    "module": 55,
+    "bytes": 34,
+    "sha256": "15e40580255d6fe3ccc42049b9b872cb74e94f1475a23da75784d771a2e8ff1d",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 55,
+    "kind": "sstModule",
+    "module": 56,
+    "bytes": 21,
+    "sha256": "cbd0baab86c110179e9e5c6daf820d675ca77d6ae66318c12145fb13c3c01e45",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 56,
+    "kind": "sstModule",
+    "module": 57,
+    "bytes": 32,
+    "sha256": "8d452e3a802fb1b4096a518d69c852f14d97f8fca9470e50e7fa8bb308fa2eb3",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 57,
+    "kind": "sstModule",
+    "module": 58,
+    "bytes": 32,
+    "sha256": "c7a5a5779a850a443f02da711a9c2fd68e8b3ee886dfa3c6528bd4f520ad37cf",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 58,
+    "kind": "sstModule",
+    "module": 59,
+    "bytes": 31,
+    "sha256": "7819f7076ea090a3bda747628488ab8a73811d0063e9b59a48117abb3bed7531",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 59,
+    "kind": "sstModule",
+    "module": 60,
+    "bytes": 31,
+    "sha256": "cc4e88749b728ca2e79b45afe99963dfd72a1c9e72112eddd46167efaf291761",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 60,
+    "kind": "sstModule",
+    "module": 61,
+    "bytes": 31,
+    "sha256": "4bda7d6aa0e0b3c067c20b584c53e791a317630dcc178460a590c06c6bb8a248",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 61,
+    "kind": "sstModule",
+    "module": 62,
+    "bytes": 31,
+    "sha256": "d429bdf50ad2ddfc4d6ec138739b9c0f0e756b1efad40d42bf84d5c319c6c1a1",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 62,
+    "kind": "sstModule",
+    "module": 63,
+    "bytes": 32,
+    "sha256": "238461591ad4a8b7ad1f439f11545cfe4ab712a67acdb728a76b71fb07b3c6b3",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 63,
+    "kind": "sstModule",
+    "module": 64,
+    "bytes": 32,
+    "sha256": "65dfb3a76415a83b71cec9fa08139dd890f7e5baef664763f4fbf58bd46ae441",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 64,
+    "kind": "sstModule",
+    "module": 65,
+    "bytes": 32,
+    "sha256": "1fc7b4d677b7a8bf6d3ae5de01ae2279726ca791360fad18afc823784a621fcc",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 65,
+    "kind": "sstModule",
+    "module": 66,
+    "bytes": 30,
+    "sha256": "24d86c8159084937adff95701bdf2f7bfd6aa2f82d68179b1fc48c955bec7342",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 66,
+    "kind": "sstModule",
+    "module": 67,
+    "bytes": 30,
+    "sha256": "6cebf9884174bf544a51a8983826c9dcbcb01faa9ab40c2196c4307f8c6f7eab",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 67,
+    "kind": "sstModule",
+    "module": 68,
+    "bytes": 30,
+    "sha256": "9f98586d1ee5723b05d8f8b5a4b209ccc76ab848fa10042e4cd58a2cfd2ef3ac",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 68,
+    "kind": "sstModule",
+    "module": 69,
+    "bytes": 29,
+    "sha256": "0659d1d935f4c6727ed450e6498a557e8bf44cecbc6dcc5304df7b570ca0df2a",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 69,
+    "kind": "sstModule",
+    "module": 70,
+    "bytes": 29,
+    "sha256": "5c609182904837cac12128ff8790883ca9c889b118cf8251c0528d671a7a0a36",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 70,
+    "kind": "sstModule",
+    "module": 71,
+    "bytes": 29,
+    "sha256": "07c8c39b0a46b45d181f81d46e0f98b36194035a974d927bf044fc82adda055e",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 71,
+    "kind": "sstModule",
+    "module": 72,
+    "bytes": 29,
+    "sha256": "b6864a8e41c09f78ce18b9cd177972fdaadd01f53236bd2ecdfd4deff65e3b60",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 72,
+    "kind": "sstModule",
+    "module": 73,
+    "bytes": 29,
+    "sha256": "51e298880644e01d124c88dfd2ff53f29eb004a84bf2eda8bdea04a43b63e601",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 73,
+    "kind": "sstModule",
+    "module": 74,
+    "bytes": 37,
+    "sha256": "4c69ede8fd4776850a4545464cacc3d89f3ab1db4d83e3b04bc03ad5434ac0a5",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 74,
+    "kind": "sstModule",
+    "module": 75,
+    "bytes": 35,
+    "sha256": "116049652285879fe55329003266f6dbd8b64a7cfe440460f9c21ea6f66eadb8",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 75,
+    "kind": "sstModule",
+    "module": 76,
+    "bytes": 35,
+    "sha256": "81c27e02b92250e74feebcc9f4dc1dd72bbab46452ec143cd8a248a0478fbf36",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 76,
+    "kind": "sstModule",
+    "module": 77,
+    "bytes": 35,
+    "sha256": "0b16d45119990d59dc957f110c288e9752d87c63ff8a9d69afa4f771608f2796",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 77,
+    "kind": "sstModule",
+    "module": 78,
+    "bytes": 32,
+    "sha256": "0f2494ba9ae5db5a1f2fed9442572ad607c02e64bcc4eccb21b421b963efb28b",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 78,
+    "kind": "sstModule",
+    "module": 79,
+    "bytes": 35,
+    "sha256": "20656ccf10d4318109200ec237e22b2f0de1ede39cba565c967935bcaf7871cc",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 79,
+    "kind": "sstModule",
+    "module": 80,
+    "bytes": 31,
+    "sha256": "d0b4df2cde2ff9c5eda6c463fb0228a240c60742193cde8898c2f934ae8d4c88",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 80,
+    "kind": "sstModule",
+    "module": 81,
+    "bytes": 30,
+    "sha256": "9ee4b83779ae4bfe92e87388dff7056208c2ae5403da899023ec91a1c664d0a5",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 81,
+    "kind": "sstModule",
+    "module": 82,
+    "bytes": 27,
+    "sha256": "af6cb614592cc6940d6599dbadb10fa43e6f1f84e615592e0ba99e63f838717a",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 82,
+    "kind": "sstModule",
+    "module": 83,
+    "bytes": 30,
+    "sha256": "4b40c379970c0cdcb21cdc188987b3aafaa08f6a9239e2dde05f067617f16365",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 83,
+    "kind": "sstModule",
+    "module": 84,
+    "bytes": 26,
+    "sha256": "8c7a45580e6e7ed05dce8774562cba1c0afec8ee81f50c9db4443ba7d610862c",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 84,
+    "kind": "sstModule",
+    "module": 85,
+    "bytes": 31,
+    "sha256": "a65b99388351f08c1858b744e5347ec446c5f06783d8d3859fa004d0d9e6eee1",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 85,
+    "kind": "sstModule",
+    "module": 86,
+    "bytes": 31,
+    "sha256": "f9036e1be3ebece9b3a1d918f4aeaa6e15e9e1620fdfbf450d8af0a3422721b8",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 86,
+    "kind": "sstModule",
+    "module": 87,
+    "bytes": 31,
+    "sha256": "dac21e006a4aacf0c1af0265cb053656af61a0cb6ff59bfec9dc1cfa59ed141d",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 87,
+    "kind": "sstModule",
+    "module": 88,
+    "bytes": 31,
+    "sha256": "bc7a43ef8e96ddf9c066cc155ef1c90b666bea2c2d8751dafea92c92ca0d93e7",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 88,
+    "kind": "sstModule",
+    "module": 89,
+    "bytes": 31,
+    "sha256": "9bc1eb24ed2e89556928f9e0ea7d311ef93070fd17da8d73ac695a32e60c19cf",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 89,
+    "kind": "sstModule",
+    "module": 90,
+    "bytes": 32,
+    "sha256": "7a4a0872ed9e822bfd20c8babb72836face6b58c8767db6bfd803b685583dc0f",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 90,
+    "kind": "sstModule",
+    "module": 91,
+    "bytes": 33,
+    "sha256": "3ef124cde59efab8959511611670a19f8a51bd419915b00010aa4697417fcb70",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 91,
+    "kind": "sstModule",
+    "module": 92,
+    "bytes": 32,
+    "sha256": "fe695e01858b74073b7f012a11c2192224db0d5f3b268a308b3b602bc852d903",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 92,
+    "kind": "sstModule",
+    "module": 93,
+    "bytes": 31,
+    "sha256": "b71ddd7e0027291c3f569ad9049d9565bcd33743a8869460e79ad24de8d4f2f7",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 93,
+    "kind": "sstModule",
+    "module": 94,
+    "bytes": 36,
+    "sha256": "7773224f8857b034d50a28f59602e296d4a6f82f6ffc731ff7bef14584ba630a",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 94,
+    "kind": "sstModule",
+    "module": 95,
+    "bytes": 36,
+    "sha256": "b03b0de9913b9dd1f24305908312a3a51820fa1036b6b83f4c6669a67d0a2b90",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 95,
+    "kind": "sstModule",
+    "module": 96,
+    "bytes": 30,
+    "sha256": "8f5850b232c75551637578ea0d14713ef670b6d92760df55043391ed91fab397",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 96,
+    "kind": "sstModule",
+    "module": 97,
+    "bytes": 27,
+    "sha256": "bee07ee143000c9583ece3244b87eacb7a4ead6352538af25e6cd99783c87e0c",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 97,
+    "kind": "sstModule",
+    "module": 98,
+    "bytes": 18,
+    "sha256": "0849b8bff3e34c2a8aafd9ddf8abfbe10beac8ec131308efb054ddbee26f32ec",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 98,
+    "kind": "sstModule",
+    "module": 99,
+    "bytes": 29,
+    "sha256": "0b9a5a9599708e11d979bd7f5e087bb761da31662e3db5f4181db36474c30740",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 99,
+    "kind": "sstModule",
+    "module": 100,
+    "bytes": 29,
+    "sha256": "df7f5869a8417a848fc0224a068a0985a85a0a44eb4120ba04bc32f3981a46ad",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 100,
+    "kind": "sstModule",
+    "module": 101,
+    "bytes": 32,
+    "sha256": "934067237436a5dc60d847f972d7c9f884d2c1397467fade80b74fd28b531e55",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 101,
+    "kind": "sstModule",
+    "module": 102,
+    "bytes": 31,
+    "sha256": "db4202893fec129aa80aad865fafd159a6a39dbca7e685fd931399c432423b84",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 102,
+    "kind": "sstModule",
+    "module": 103,
+    "bytes": 31,
+    "sha256": "f67b23acb050352129123b3f6ca3c2a0c5c2043b770e7ea48500d1447d73de17",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 103,
+    "kind": "sstModule",
+    "module": 104,
+    "bytes": 31,
+    "sha256": "6ec68b82bbf35cb926579fab7ac301a01443cb593022d02136a66f11b61a4cef",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 104,
+    "kind": "sstModule",
+    "module": 105,
+    "bytes": 31,
+    "sha256": "a307aaaedf6d59b7e1736ca45a7a1dda2f1865d64559aadc9de1a3bbe61775b6",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 105,
+    "kind": "sstModule",
+    "module": 106,
+    "bytes": 34,
+    "sha256": "8fcea34a0619c90a4babbcaa1fc1575f75fcc750ff54cee84bd09f01a34b268f",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 106,
+    "kind": "sstModule",
+    "module": 107,
+    "bytes": 36,
+    "sha256": "f6aad38ed9ebeb2f252ca5643030aa1fdcefc2d681a6bef5074afd03cea7bd1b",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 107,
+    "kind": "sstModule",
+    "module": 108,
+    "bytes": 37,
+    "sha256": "4cf7f9cf36f165e9ba8a262af91406fad83752ad8de176e1fa9602c520479ee4",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 108,
+    "kind": "sstModule",
+    "module": 109,
+    "bytes": 30,
+    "sha256": "8c7d7619725047a14e8202280dc5bdd04bdfb010b329a73ca03d245f5bba9164",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 109,
+    "kind": "sstModule",
+    "module": 110,
+    "bytes": 27,
+    "sha256": "06b206c970d9b062a29d42725e019ecee65e987d57a3fa7ba25c5499b2202fe4",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 110,
+    "kind": "sstModule",
+    "module": 111,
+    "bytes": 28,
+    "sha256": "07d9acce5d073aeb585fa69045af06261757666d7b21b50ba4fdcfbac8f7a67b",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 111,
+    "kind": "sstModule",
+    "module": 112,
+    "bytes": 28,
+    "sha256": "8e15388845782cbfdd517f2ec95f5bd7982b5cf882cd347fb509b553832a44e3",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 112,
+    "kind": "sstModule",
+    "module": 113,
+    "bytes": 28,
+    "sha256": "13a9d3dc029b72c9c2f783e7cdaf095aab513efedd07502d7d8ec69ad1b41707",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 113,
+    "kind": "sstModule",
+    "module": 114,
+    "bytes": 30,
+    "sha256": "100728fca702911d14025f1f12187e4461ad2ca19fe2a9d741e1dee4bd61825e",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 114,
+    "kind": "sstModule",
+    "module": 115,
+    "bytes": 30,
+    "sha256": "ae9ad3f30c915c443f217ca08f6efd4dd1539a0d82d6d5552720cde5341a37dd",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 115,
+    "kind": "sstModule",
+    "module": 116,
+    "bytes": 31,
+    "sha256": "f3505397fced1cb45f4fa38cca8825fa27ba66ed9f1a24c2e5f32a703a03b4b8",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 116,
+    "kind": "sstModule",
+    "module": 117,
+    "bytes": 31,
+    "sha256": "000b136ec9f423e0583380f24227c4db1b3189769f103274c04e74dafdb13bdb",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 117,
+    "kind": "sstModule",
+    "module": 118,
+    "bytes": 30,
+    "sha256": "b3544ec512e2d2c032a8ae2a0593a0e8fb7fbd0be46f3ac4aa1c4876405f5204",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 118,
+    "kind": "sstModule",
+    "module": 119,
+    "bytes": 32,
+    "sha256": "47b0494b63ff25999096a3a55ab862c79dbb4f71b48146285eaf521ae593d996",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 119,
+    "kind": "sstModule",
+    "module": 120,
+    "bytes": 31,
+    "sha256": "52e4068c09b3f5a65f889dfb08131b463f6ee8334013da3301cc99c4c9eec57c",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 120,
+    "kind": "sstModule",
+    "module": 121,
+    "bytes": 27,
+    "sha256": "c7948a0589da49866a8da1d1bfe8d7b568e3d4e9ecb6805e79c7b2b01414f5d7",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 121,
+    "kind": "sstModule",
+    "module": 122,
+    "bytes": 28,
+    "sha256": "7981e9d6a620a5ce3d00ea1a062bade4743c06b2332bb742199e6abd1f64efe0",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 122,
+    "kind": "sstModule",
+    "module": 123,
+    "bytes": 32,
+    "sha256": "5165d7f59c639c83733f7ae8398dc78bd832081a9f0bea91b76e22dff05cc682",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 123,
+    "kind": "sstModule",
+    "module": 124,
+    "bytes": 29,
+    "sha256": "e44377438efa7c1315d7795d4e95ac302bf205e68134eb2b4ba84292cc6f52a5",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 124,
+    "kind": "sstModule",
+    "module": 125,
+    "bytes": 31,
+    "sha256": "e271a690a47ef1da1f1bb737b8d3bae5dddfdd362afeb0ed2b60e48a48e279f8",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 125,
+    "kind": "sstModule",
+    "module": 126,
+    "bytes": 31,
+    "sha256": "8242337385b7b14eca248e27b54bc34af6687872922e80ec87fdbfb1fada0ed8",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 126,
+    "kind": "sstModule",
+    "module": 127,
+    "bytes": 33,
+    "sha256": "77c98ad6e22704edaa5ebd43d2052285f3dcbe6127b3fe23c2f28afc27204f9e",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 127,
+    "kind": "sstModule",
+    "module": 128,
+    "bytes": 32,
+    "sha256": "a2caa44ed47e8ec176f3416fe6b3f07de13edf1d366d84929bffb1e0ca7859f6",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 128,
+    "kind": "sstModule",
+    "module": 129,
+    "bytes": 30,
+    "sha256": "6a64593f87eece7b35887b94a600c5412ba3292498260f26aa46ee3f90b7fc50",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 129,
+    "kind": "sstModule",
+    "module": 130,
+    "bytes": 30,
+    "sha256": "155634e0122397a642b82e220ac621ca3cc47d192972ba57c7891ad8fd8687a2",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 130,
+    "kind": "sstModule",
+    "module": 131,
+    "bytes": 30,
+    "sha256": "81886d7f87651e8e865ce31dbea5807437430d60ddf28782c8c68c3fa9dae277",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 131,
+    "kind": "sstModule",
+    "module": 132,
+    "bytes": 28,
+    "sha256": "57a905bffa6275ec75b6b5947997bd0c06bc01e0e1ecfef058f9dcbf9c25a144",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 132,
+    "kind": "sstModule",
+    "module": 133,
+    "bytes": 31,
+    "sha256": "3363c9d92fc622cf905e83bbd0b934852b510ab9f7c52b6f4b4723be1f2134b1",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 133,
+    "kind": "sstModule",
+    "module": 134,
+    "bytes": 29,
+    "sha256": "8800e443c960589439b38b97bc1c2ef349d0b273cc92552d429aef15d8080227",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 134,
+    "kind": "sstModule",
+    "module": 135,
+    "bytes": 30,
+    "sha256": "335b2df97d3790bcb68394ad00196ce11937828dd7b90c5563e8f42d64107253",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 135,
+    "kind": "sstModule",
+    "module": 136,
+    "bytes": 29,
+    "sha256": "ac6097e238cad24b4835c401e35ef4fe43bdaa1abc9f16452e2645a024d70422",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 136,
+    "kind": "sstModule",
+    "module": 137,
+    "bytes": 18,
+    "sha256": "f10b5189c5cbc8377e680081d6398b8cd0f214b66cdc7241783fb06ba85b4296",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 137,
+    "kind": "sstModule",
+    "module": 138,
+    "bytes": 28,
+    "sha256": "e5626d7b10981b255cfa40a4a0cac148d0342f6b7c1fa2ed4b6111611b275060",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 138,
+    "kind": "sstModule",
+    "module": 139,
+    "bytes": 29,
+    "sha256": "02764efd73d60fa5d5b3a37ec28b0aadab15ec78a5e3e3d6ab489e1687631ce6",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 139,
+    "kind": "sstModule",
+    "module": 140,
+    "bytes": 31,
+    "sha256": "deeba59ceffbec277ef2fb992ebfa760d8f3514c8ff32643b7f3b82e1aa45298",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 140,
+    "kind": "sstModule",
+    "module": 141,
+    "bytes": 29,
+    "sha256": "bb8d23bf8f2918685aa9b20fd93d34573e2f61625afe8197a74d96cd7fb358a9",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 141,
+    "kind": "sstModule",
+    "module": 142,
+    "bytes": 29,
+    "sha256": "0cd256f0ade84f4736a85493f89a6ef91783fe14175232d435778804496ea456",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 142,
+    "kind": "sstModule",
+    "module": 143,
+    "bytes": 29,
+    "sha256": "4911fa907edc22f7177e47f7c3989efedc52adca06cd75308fecf9b5779daeae",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 143,
+    "kind": "sstModule",
+    "module": 144,
+    "bytes": 29,
+    "sha256": "dadd287d793f956a521c8154a6f4d57d4fb7317c69119a12cb5733fcf8919c4e",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 144,
+    "kind": "sstModule",
+    "module": 145,
+    "bytes": 29,
+    "sha256": "ae4a1d318fcf6dc12fae7926b50408f50a71783a1704dabeb691d6c8ac210fc2",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 145,
+    "kind": "sstModule",
+    "module": 146,
+    "bytes": 28,
+    "sha256": "4382c053cc257c9f664872308e7ea9b2e945df8d412387ffe63f10cfd174e8b9",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 146,
+    "kind": "sstModule",
+    "module": 147,
+    "bytes": 18,
+    "sha256": "5f93f199dc4ba064ec2ef222590035d7bdd59ddf00ec713f187b8a743d59cefd",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 147,
+    "kind": "sstModule",
+    "module": 148,
+    "bytes": 30,
+    "sha256": "787b450f2c08359a5d8e61cafceb852fb6f6a3d8d4bf29bf90b8be74c28ed851",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 148,
+    "kind": "sstAlignSym",
+    "module": 109,
+    "bytes": 1708,
+    "sha256": "bcedad571c6a027f7474e497e9405d940e749e13f0bf226df583615bf1fa1c8a",
+    "status": "decoded"
+  },
+  {
+    "directory_index": 149,
+    "kind": "sstSrcModule",
+    "module": 109,
+    "bytes": 3868,
+    "sha256": "a99f32506b8780c8f770e8166a604b7d3f8a4037a6c8b8e45a236c39f2b3a949",
+    "status": "decoded",
+    "source_ranges": [
+      {
+        "logical_segment": 23,
+        "start": 26520,
+        "end_inclusive": 40631
+      }
+    ],
+    "source_files": [
+      "c:\\user\\jeffl\\2.7j\\turn3.c"
+    ],
+    "treatment": "File names and line mappings cross-checked against independent sstFileIndex."
+  },
+  {
+    "directory_index": 150,
+    "kind": "sstAlignSym",
+    "module": 110,
+    "bytes": 2300,
+    "sha256": "27206aa64fb17159aad8a0007b578751912847d3c34a1ea18e7e6aa64e119526",
+    "status": "decoded"
+  },
+  {
+    "directory_index": 151,
+    "kind": "sstSrcModule",
+    "module": 110,
+    "bytes": 3156,
+    "sha256": "08271c76fa140f97535fe6993a9f76beffbb6c4f8f24c084e8c3608c699aae6f",
+    "status": "decoded",
+    "source_ranges": [
+      {
+        "logical_segment": 14,
+        "start": 30,
+        "end_inclusive": 7789
+      }
+    ],
+    "source_files": [
+      "c:\\user\\jeffl\\2.7j\\tb.c"
+    ],
+    "treatment": "File names and line mappings cross-checked against independent sstFileIndex."
+  },
+  {
+    "directory_index": 152,
+    "kind": "sstAlignSym",
+    "module": 111,
+    "bytes": 5144,
+    "sha256": "c9d56fac4359899e549c72cd9b89d6727194c0dca9ab467986fc12fa0804fc31",
+    "status": "decoded"
+  },
+  {
+    "directory_index": 153,
+    "kind": "sstSrcModule",
+    "module": 111,
+    "bytes": 6016,
+    "sha256": "3309e700301575ba3cd5d007cc6bbcc182aeebd97953370c382efb9bcf647bf4",
+    "status": "decoded",
+    "source_ranges": [
+      {
+        "logical_segment": 22,
+        "start": 42,
+        "end_inclusive": 22144
+      }
+    ],
+    "source_files": [
+      "c:\\user\\jeffl\\2.7j\\ai4.c"
+    ],
+    "treatment": "File names and line mappings cross-checked against independent sstFileIndex."
+  },
+  {
+    "directory_index": 154,
+    "kind": "sstAlignSym",
+    "module": 112,
+    "bytes": 3124,
+    "sha256": "b965d99e879f3f5d230386c895d9db0d1c432001c21d5ccc6dc47d69cad18b60",
+    "status": "decoded"
+  },
+  {
+    "directory_index": 155,
+    "kind": "sstSrcModule",
+    "module": 112,
+    "bytes": 4864,
+    "sha256": "8719701d4a5d7ba911ef88b3a0b7992ecfd393b32c954a2a07c4c21ce7faefce",
+    "status": "decoded",
+    "source_ranges": [
+      {
+        "logical_segment": 21,
+        "start": 8,
+        "end_inclusive": 17433
+      }
+    ],
+    "source_files": [
+      "c:\\user\\jeffl\\2.7j\\ai3.c"
+    ],
+    "treatment": "File names and line mappings cross-checked against independent sstFileIndex."
+  },
+  {
+    "directory_index": 156,
+    "kind": "sstAlignSym",
+    "module": 113,
+    "bytes": 2348,
+    "sha256": "e02348d7e00c46a4c4bdba1d6aba80e7876a8c06bb000ba0b2c9b73ec8ec02df",
+    "status": "decoded"
+  },
+  {
+    "directory_index": 157,
+    "kind": "sstSrcModule",
+    "module": 113,
+    "bytes": 3584,
+    "sha256": "eaaceda1135d677699f7b01c1b29b656e3cf48082a2ab5dd6f829fdb49ad85ad",
+    "status": "decoded",
+    "source_ranges": [
+      {
+        "logical_segment": 20,
+        "start": 0,
+        "end_inclusive": 12334
+      }
+    ],
+    "source_files": [
+      "c:\\user\\jeffl\\2.7j\\ai2.c"
+    ],
+    "treatment": "File names and line mappings cross-checked against independent sstFileIndex."
+  },
+  {
+    "directory_index": 158,
+    "kind": "sstAlignSym",
+    "module": 114,
+    "bytes": 4272,
+    "sha256": "91f324847239848cbbb811b06856cb83293f8a4723d267c60cf0c5b2c28fa42a",
+    "status": "decoded"
+  },
+  {
+    "directory_index": 159,
+    "kind": "sstSrcModule",
+    "module": 114,
+    "bytes": 4760,
+    "sha256": "f2bfdc1343acd65f7fd1edc4f8594a44d4831624c429564439f522920893724f",
+    "status": "decoded",
+    "source_ranges": [
+      {
+        "logical_segment": 17,
+        "start": 0,
+        "end_inclusive": 14806
+      }
+    ],
+    "source_files": [
+      "c:\\user\\jeffl\\2.7j\\ship2.c"
+    ],
+    "treatment": "File names and line mappings cross-checked against independent sstFileIndex."
+  },
+  {
+    "directory_index": 160,
+    "kind": "sstAlignSym",
+    "module": 115,
+    "bytes": 2148,
+    "sha256": "aa02c11f7ab5e207d62d80e0321b88108420dc71caa8e35d2b1eab0eb7300820",
+    "status": "decoded"
+  },
+  {
+    "directory_index": 161,
+    "kind": "sstSrcModule",
+    "module": 115,
+    "bytes": 2452,
+    "sha256": "9a5e1a416eccb60da23d7dbda72e473587415cfb191e355ec6113e36c74bbc19",
+    "status": "decoded",
+    "source_ranges": [
+      {
+        "logical_segment": 37,
+        "start": 0,
+        "end_inclusive": 7070
+      }
+    ],
+    "source_files": [
+      "c:\\user\\jeffl\\2.7j\\thing.c"
+    ],
+    "treatment": "File names and line mappings cross-checked against independent sstFileIndex."
+  },
+  {
+    "directory_index": 162,
+    "kind": "sstAlignSym",
+    "module": 116,
+    "bytes": 7580,
+    "sha256": "bec01c767a4d116c0c1b7fa6f02f4310459a3fe0293f72764380d16175ef1f47",
+    "status": "decoded"
+  },
+  {
+    "directory_index": 163,
+    "kind": "sstSrcModule",
+    "module": 116,
+    "bytes": 14240,
+    "sha256": "dc3726275b8f7d0e3b663e4966f3ed3df52e102d515dae98f1b1a058a2a8ec48",
+    "status": "decoded",
+    "source_ranges": [
+      {
+        "logical_segment": 34,
+        "start": 24,
+        "end_inclusive": 42147
+      }
+    ],
+    "source_files": [
+      "c:\\user\\jeffl\\2.7j\\report.c"
+    ],
+    "treatment": "File names and line mappings cross-checked against independent sstFileIndex."
+  },
+  {
+    "directory_index": 164,
+    "kind": "sstAlignSym",
+    "module": 117,
+    "bytes": 284,
+    "sha256": "5d98c280f07bc1bedcb335a3c4a1579c4f279c5e6d6f7d8d4673c6f01f2e38b7",
+    "status": "decoded"
+  },
+  {
+    "directory_index": 165,
+    "kind": "sstSrcModule",
+    "module": 117,
+    "bytes": 248,
+    "sha256": "67fe12713ca96cf49bcacf0605f0356c3686730093c1d274366c519b74bd3469",
+    "status": "decoded",
+    "source_ranges": [
+      {
+        "logical_segment": 33,
+        "start": 23060,
+        "end_inclusive": 23421
+      }
+    ],
+    "source_files": [
+      "c:\\user\\jeffl\\2.7j\\tutor2.c"
+    ],
+    "treatment": "File names and line mappings cross-checked against independent sstFileIndex."
+  },
+  {
+    "directory_index": 166,
+    "kind": "sstAlignSym",
+    "module": 118,
+    "bytes": 4788,
+    "sha256": "216d02068e9df2f31afd721cd2dda26cb6b603b43bb1760e8b70bb34124f5b09",
+    "status": "decoded"
+  },
+  {
+    "directory_index": 167,
+    "kind": "sstSrcModule",
+    "module": 118,
+    "bytes": 13144,
+    "sha256": "9965a299914f0da325b703ef03674a61d0509948598ea3d1c898b953acbbfa10",
+    "status": "decoded",
+    "source_ranges": [
+      {
+        "logical_segment": 32,
+        "start": 0,
+        "end_inclusive": 33446
+      }
+    ],
+    "source_files": [
+      "c:\\user\\jeffl\\2.7j\\tutor.c"
+    ],
+    "treatment": "File names and line mappings cross-checked against independent sstFileIndex."
+  },
+  {
+    "directory_index": 168,
+    "kind": "sstAlignSym",
+    "module": 119,
+    "bytes": 276,
+    "sha256": "0ce3d2345b0ea0975fde7d331f1176d8fa9c7b2e436cf5034fb399b1f430bb6b",
+    "status": "decoded"
+  },
+  {
+    "directory_index": 169,
+    "kind": "sstSrcModule",
+    "module": 119,
+    "bytes": 252,
+    "sha256": "c66d653738ddcad1b185101806c94f575a4be87056b2f44d9113186e73fa46c8",
+    "status": "decoded",
+    "source_ranges": [
+      {
+        "logical_segment": 3,
+        "start": 29754,
+        "end_inclusive": 30104
+      }
+    ],
+    "source_files": [
+      "c:\\user\\jeffl\\2.7j\\strings.c"
+    ],
+    "treatment": "File names and line mappings cross-checked against independent sstFileIndex."
+  },
+  {
+    "directory_index": 170,
+    "kind": "sstAlignSym",
+    "module": 120,
+    "bytes": 11952,
+    "sha256": "e1e9fd7357a80a3ad3b770e531abfe19d81f52c3f8febe2caa30533ed8144e63",
+    "status": "decoded"
+  },
+  {
+    "directory_index": 171,
+    "kind": "sstSrcModule",
+    "module": 120,
+    "bytes": 11656,
+    "sha256": "f887f880a36a9c60a673248c970662f2d0350c21bf17507b61df9621c635b342",
+    "status": "decoded",
+    "source_ranges": [
+      {
+        "logical_segment": 19,
+        "start": 300,
+        "end_inclusive": 41410
+      }
+    ],
+    "source_files": [
+      "c:\\user\\jeffl\\2.7j\\aiutil.c"
+    ],
+    "treatment": "File names and line mappings cross-checked against independent sstFileIndex."
+  },
+  {
+    "directory_index": 172,
+    "kind": "sstAlignSym",
+    "module": 121,
+    "bytes": 4128,
+    "sha256": "44d8afd2f480bea9cc9b38236bc2537c30cf967473b94e4ad8acb9b364a06bbb",
+    "status": "decoded"
+  },
+  {
+    "directory_index": 173,
+    "kind": "sstSrcModule",
+    "module": 121,
+    "bytes": 6700,
+    "sha256": "f69ed1dc405a693a9f1febd841688b5a81fcbc58f635c2a65e34b7806c7836c9",
+    "status": "decoded",
+    "source_ranges": [
+      {
+        "logical_segment": 18,
+        "start": 0,
+        "end_inclusive": 24763
+      }
+    ],
+    "source_files": [
+      "c:\\user\\jeffl\\2.7j\\ai.c"
+    ],
+    "treatment": "File names and line mappings cross-checked against independent sstFileIndex."
+  },
+  {
+    "directory_index": 174,
+    "kind": "sstAlignSym",
+    "module": 122,
+    "bytes": 3660,
+    "sha256": "8d7ba3fc2fd656ef3c9629a8a0e30354c09f121227a27e869de0c155f8d70123",
+    "status": "decoded"
+  },
+  {
+    "directory_index": 175,
+    "kind": "sstSrcModule",
+    "module": 122,
+    "bytes": 5308,
+    "sha256": "d3b793d124c4f083bdd0322a7ad43c8acd7dc59941f08c9dda04a6e145ce657d",
+    "status": "decoded",
+    "source_ranges": [
+      {
+        "logical_segment": 30,
+        "start": 0,
+        "end_inclusive": 18877
+      }
+    ],
+    "source_files": [
+      "c:\\user\\jeffl\\2.7j\\vcr.c"
+    ],
+    "treatment": "File names and line mappings cross-checked against independent sstFileIndex."
+  },
+  {
+    "directory_index": 176,
+    "kind": "sstAlignSym",
+    "module": 123,
+    "bytes": 10472,
+    "sha256": "719409f90f40b996c10a6036e3c5b5c1c224322ba46fbcdf58e98859b762dd8d",
+    "status": "decoded"
+  },
+  {
+    "directory_index": 177,
+    "kind": "sstSrcModule",
+    "module": 123,
+    "bytes": 8720,
+    "sha256": "b6839e9084e0a99eb1e8245c9e68d6458fce47840e00ae0b1f942c5a129181ed",
+    "status": "decoded",
+    "source_ranges": [
+      {
+        "logical_segment": 9,
+        "start": 5184,
+        "end_inclusive": 27503
+      }
+    ],
+    "source_files": [
+      "c:\\user\\jeffl\\2.7j\\utilgen.c"
+    ],
+    "treatment": "File names and line mappings cross-checked against independent sstFileIndex."
+  },
+  {
+    "directory_index": 178,
+    "kind": "sstAlignSym",
+    "module": 124,
+    "bytes": 6112,
+    "sha256": "fbbab8c42d7cd96e29f79956704662d86855aa06a2f72491c8301946dd47560e",
+    "status": "decoded"
+  },
+  {
+    "directory_index": 179,
+    "kind": "sstSrcModule",
+    "module": 124,
+    "bytes": 9284,
+    "sha256": "39c7dd393e80e6d2d2f024cd3af59bba67e6037e8c97d69f8a1dfc5662398d01",
+    "status": "decoded",
+    "source_ranges": [
+      {
+        "logical_segment": 29,
+        "start": 0,
+        "end_inclusive": 26155
+      }
+    ],
+    "source_files": [
+      "c:\\user\\jeffl\\2.7j\\race.c"
+    ],
+    "treatment": "File names and line mappings cross-checked against independent sstFileIndex."
+  },
+  {
+    "directory_index": 180,
+    "kind": "sstAlignSym",
+    "module": 125,
+    "bytes": 11172,
+    "sha256": "ad457819a42705a7bbf750bf5fadd882da60a1dd1ac797fa175863b2f53685a1",
+    "status": "decoded"
+  },
+  {
+    "directory_index": 181,
+    "kind": "sstSrcModule",
+    "module": 125,
+    "bytes": 14644,
+    "sha256": "f6fdf910b54a6507d44438b720aab13067d5c3df55bb0e70c6329eea80b62a33",
+    "status": "decoded",
+    "source_ranges": [
+      {
+        "logical_segment": 31,
+        "start": 136,
+        "end_inclusive": 48786
+      }
+    ],
+    "source_files": [
+      "c:\\user\\jeffl\\2.7j\\battle.c"
+    ],
+    "treatment": "File names and line mappings cross-checked against independent sstFileIndex."
+  },
+  {
+    "directory_index": 182,
+    "kind": "sstAlignSym",
+    "module": 126,
+    "bytes": 1280,
+    "sha256": "9767ca194245cdcc48188461feb8c5ae24b542b09c7999ec4e97fd05785b4282",
+    "status": "decoded"
+  },
+  {
+    "directory_index": 183,
+    "kind": "sstSrcModule",
+    "module": 126,
+    "bytes": 1084,
+    "sha256": "6712df61cd61560220074db6b482321ad0e9a464689add58cf1d7ebf2177b722",
+    "status": "decoded",
+    "source_ranges": [
+      {
+        "logical_segment": 13,
+        "start": 0,
+        "end_inclusive": 2392
+      }
+    ],
+    "source_files": [
+      "c:\\user\\jeffl\\2.7j\\memory.c"
+    ],
+    "treatment": "File names and line mappings cross-checked against independent sstFileIndex."
+  },
+  {
+    "directory_index": 184,
+    "kind": "sstAlignSym",
+    "module": 127,
+    "bytes": 4752,
+    "sha256": "7d1207711f8e9596b8e3ed3991907d6157816f9bfe7dbd5041871303f4f17f30",
+    "status": "decoded"
+  },
+  {
+    "directory_index": 185,
+    "kind": "sstSrcModule",
+    "module": 127,
+    "bytes": 9288,
+    "sha256": "afd6ed65bfc5ee1574a97a733a21e801f9b5b6605c4f65e7c0f941a2d6bbb478",
+    "status": "decoded",
+    "source_ranges": [
+      {
+        "logical_segment": 28,
+        "start": 0,
+        "end_inclusive": 27220
+      }
+    ],
+    "source_files": [
+      "c:\\user\\jeffl\\2.7j\\research.c"
+    ],
+    "treatment": "File names and line mappings cross-checked against independent sstFileIndex."
+  },
+  {
+    "directory_index": 186,
+    "kind": "sstAlignSym",
+    "module": 128,
+    "bytes": 3884,
+    "sha256": "6375c12e2d9251e6cf6cafc9ddb3a943ab5ae2f3c1c9682068755426dbff17f7",
+    "status": "decoded"
+  },
+  {
+    "directory_index": 187,
+    "kind": "sstSrcModule",
+    "module": 128,
+    "bytes": 5952,
+    "sha256": "98a8fd45116aa4d18adf05a58e3686c100bc5117f2f07ce74b25fb08b6e3df17",
+    "status": "decoded",
+    "source_ranges": [
+      {
+        "logical_segment": 27,
+        "start": 0,
+        "end_inclusive": 24563
+      }
+    ],
+    "source_files": [
+      "c:\\user\\jeffl\\2.7j\\produce.c"
+    ],
+    "treatment": "File names and line mappings cross-checked against independent sstFileIndex."
+  },
+  {
+    "directory_index": 188,
+    "kind": "sstAlignSym",
+    "module": 129,
+    "bytes": 844,
+    "sha256": "74303271ccbd99485031fa5877b533efc4d0a88458225bde818c44d1203e61e7",
+    "status": "decoded"
+  },
+  {
+    "directory_index": 189,
+    "kind": "sstSrcModule",
+    "module": 129,
+    "bytes": 1700,
+    "sha256": "c24c1fe43f6c6d98adc6b00a2acd9142419433481a50344b12a8e3c09111f343",
+    "status": "decoded",
+    "source_ranges": [
+      {
+        "logical_segment": 2,
+        "start": 20746,
+        "end_inclusive": 25255
+      }
+    ],
+    "source_files": [
+      "c:\\user\\jeffl\\2.7j\\parts.c"
+    ],
+    "treatment": "File names and line mappings cross-checked against independent sstFileIndex."
+  },
+  {
+    "directory_index": 190,
+    "kind": "sstAlignSym",
+    "module": 130,
+    "bytes": 5508,
+    "sha256": "3844819b46ebf4cb22ee0583d9fa082be2bd90a58c5ae3f7760de304cdc23585",
+    "status": "decoded"
+  },
+  {
+    "directory_index": 191,
+    "kind": "sstSrcModule",
+    "module": 130,
+    "bytes": 8852,
+    "sha256": "b3c48f58041c2d948bd8af8f1a5c48890becbab445883727aa6f71300e0ac01f",
+    "status": "decoded",
+    "source_ranges": [
+      {
+        "logical_segment": 26,
+        "start": 140,
+        "end_inclusive": 28188
+      }
+    ],
+    "source_files": [
+      "c:\\user\\jeffl\\2.7j\\build.c"
+    ],
+    "treatment": "File names and line mappings cross-checked against independent sstFileIndex."
+  },
+  {
+    "directory_index": 192,
+    "kind": "sstAlignSym",
+    "module": 131,
+    "bytes": 3004,
+    "sha256": "4477930e387fa3c4e5a477e380ae063b1c2009f46bc5284984acde0a1b9d2d36",
+    "status": "decoded"
+  },
+  {
+    "directory_index": 193,
+    "kind": "sstSrcModule",
+    "module": 131,
+    "bytes": 4624,
+    "sha256": "21e38ace87ccd88f0f3654223bb610ff6bb93bf0644b2c8064e570ab3505d3a2",
+    "status": "decoded",
+    "source_ranges": [
+      {
+        "logical_segment": 25,
+        "start": 0,
+        "end_inclusive": 13787
+      }
+    ],
+    "source_files": [
+      "c:\\user\\jeffl\\2.7j\\popup.c"
+    ],
+    "treatment": "File names and line mappings cross-checked against independent sstFileIndex."
+  },
+  {
+    "directory_index": 194,
+    "kind": "sstAlignSym",
+    "module": 132,
+    "bytes": 5796,
+    "sha256": "20fe55f973e8d78750b82ffe33cc09dd4578b5752ec19c82bb508e3296b6a014",
+    "status": "decoded"
+  },
+  {
+    "directory_index": 195,
+    "kind": "sstSrcModule",
+    "module": 132,
+    "bytes": 6760,
+    "sha256": "8976b834e799dd8365ac0ae8398bda4b52b2dac4f4caa1a8b1cbae19f560dbac",
+    "status": "decoded",
+    "source_ranges": [
+      {
+        "logical_segment": 7,
+        "start": 23698,
+        "end_inclusive": 43234
+      }
+    ],
+    "source_files": [
+      "c:\\user\\jeffl\\2.7j\\msg.c"
+    ],
+    "treatment": "File names and line mappings cross-checked against independent sstFileIndex."
+  },
+  {
+    "directory_index": 196,
+    "kind": "sstAlignSym",
+    "module": 133,
+    "bytes": 6044,
+    "sha256": "c523280378b1a6d424c58549c186343467b1df62c5e5191e7b0a18a394581a11",
+    "status": "decoded"
+  },
+  {
+    "directory_index": 197,
+    "kind": "sstSrcModule",
+    "module": 133,
+    "bytes": 12716,
+    "sha256": "39f4936e39ab61dafb8e2bfefbccf8f83cb6aa1592746562d0c8aa0c0d506ed0",
+    "status": "decoded",
+    "source_ranges": [
+      {
+        "logical_segment": 16,
+        "start": 192,
+        "end_inclusive": 47166
+      }
+    ],
+    "source_files": [
+      "c:\\user\\jeffl\\2.7j\\create.c"
+    ],
+    "treatment": "File names and line mappings cross-checked against independent sstFileIndex."
+  },
+  {
+    "directory_index": 198,
+    "kind": "sstAlignSym",
+    "module": 134,
+    "bytes": 5200,
+    "sha256": "08e8df82c36c7f8e98d1d29ecfbf4a9c6d040f8309d5ba84a1f7071c8c5e4b7d",
+    "status": "decoded"
+  },
+  {
+    "directory_index": 199,
+    "kind": "sstSrcModule",
+    "module": 134,
+    "bytes": 7160,
+    "sha256": "67204242c02ec2ec584c30bfb168ff204217544607fca57b420ad9921a5443b3",
+    "status": "decoded",
+    "source_ranges": [
+      {
+        "logical_segment": 15,
+        "start": 21630,
+        "end_inclusive": 51281
+      }
+    ],
+    "source_files": [
+      "c:\\user\\jeffl\\2.7j\\save.c"
+    ],
+    "treatment": "File names and line mappings cross-checked against independent sstFileIndex."
+  },
+  {
+    "directory_index": 200,
+    "kind": "sstAlignSym",
+    "module": 135,
+    "bytes": 6728,
+    "sha256": "7b8ec036e8252f5d2afcae603721347130e3e67834e90503249f3d7c742199ce",
+    "status": "decoded"
+  },
+  {
+    "directory_index": 201,
+    "kind": "sstSrcModule",
+    "module": 135,
+    "bytes": 9328,
+    "sha256": "ce99149f9b84740afef2cc5b6a5b5533d704e0c62a275cc097a194028f0cfdab",
+    "status": "decoded",
+    "source_ranges": [
+      {
+        "logical_segment": 24,
+        "start": 0,
+        "end_inclusive": 36026
+      }
+    ],
+    "source_files": [
+      "c:\\user\\jeffl\\2.7j\\turn2.c"
+    ],
+    "treatment": "File names and line mappings cross-checked against independent sstFileIndex."
+  },
+  {
+    "directory_index": 202,
+    "kind": "sstAlignSym",
+    "module": 136,
+    "bytes": 4376,
+    "sha256": "b637767385210861c7036234e602599c92690d5b09df3ff20acbec17e87673d3",
+    "status": "decoded"
+  },
+  {
+    "directory_index": 203,
+    "kind": "sstSrcModule",
+    "module": 136,
+    "bytes": 6628,
+    "sha256": "9799bf9e3eb39b7174c298484a5cdf5ad88cfd59ddb7f799bdcc387c151d158b",
+    "status": "decoded",
+    "source_ranges": [
+      {
+        "logical_segment": 23,
+        "start": 0,
+        "end_inclusive": 26518
+      }
+    ],
+    "source_files": [
+      "c:\\user\\jeffl\\2.7j\\turn.c"
+    ],
+    "treatment": "File names and line mappings cross-checked against independent sstFileIndex."
+  },
+  {
+    "directory_index": 204,
+    "kind": "sstAlignSym",
+    "module": 137,
+    "bytes": 44,
+    "sha256": "9a1a1d45cfae561b09fd1761416c53391f38f5fc65d8a072a8343f3c06c5a5f6",
+    "status": "decoded"
+  },
+  {
+    "directory_index": 205,
+    "kind": "sstAlignSym",
+    "module": 138,
+    "bytes": 4172,
+    "sha256": "048fb0d2a77aaa56a3cf3a70e60fd09c9863fe2a9afa5534250c480e3ad9ac04",
+    "status": "decoded"
+  },
+  {
+    "directory_index": 206,
+    "kind": "sstSrcModule",
+    "module": 138,
+    "bytes": 6304,
+    "sha256": "c5ea28903a861144196a4b4983fddaea1b1fc8a4801507110a8f3a49617e7f5f",
+    "status": "decoded",
+    "source_ranges": [
+      {
+        "logical_segment": 10,
+        "start": 35598,
+        "end_inclusive": 55170
+      }
+    ],
+    "source_files": [
+      "c:\\user\\jeffl\\2.7j\\log.c"
+    ],
+    "treatment": "File names and line mappings cross-checked against independent sstFileIndex."
+  },
+  {
+    "directory_index": 207,
+    "kind": "sstAlignSym",
+    "module": 139,
+    "bytes": 11916,
+    "sha256": "026a4adaf93b4a8d58ae89f7facaf5c94a61798698c515b46c437fa0b9509581",
+    "status": "decoded"
+  },
+  {
+    "directory_index": 208,
+    "kind": "sstSrcModule",
+    "module": 139,
+    "bytes": 15644,
+    "sha256": "1d5c7a839e39241154a8b7581bb4fa65a914a0264c91ca8d162666a784b0b2fc",
+    "status": "decoded",
+    "source_ranges": [
+      {
+        "logical_segment": 11,
+        "start": 0,
+        "end_inclusive": 53904
+      }
+    ],
+    "source_files": [
+      "c:\\user\\jeffl\\2.7j\\ship.c"
+    ],
+    "treatment": "File names and line mappings cross-checked against independent sstFileIndex."
+  },
+  {
+    "directory_index": 209,
+    "kind": "sstAlignSym",
+    "module": 140,
+    "bytes": 9856,
+    "sha256": "1a747cf1a42c779bad016f7cbfb679be9dd4a69ad49ff52ba31944f0b429d50f",
+    "status": "decoded"
+  },
+  {
+    "directory_index": 210,
+    "kind": "sstSrcModule",
+    "module": 140,
+    "bytes": 11924,
+    "sha256": "45724e30cd72f0ca58b4a58cd7e72bf31b115244ebe7e705c509bd88c72233fa",
+    "status": "decoded",
+    "source_ranges": [
+      {
+        "logical_segment": 10,
+        "start": 0,
+        "end_inclusive": 35596
+      }
+    ],
+    "source_files": [
+      "c:\\user\\jeffl\\2.7j\\planet.c"
+    ],
+    "treatment": "File names and line mappings cross-checked against independent sstFileIndex."
+  },
+  {
+    "directory_index": 211,
+    "kind": "sstAlignSym",
+    "module": 141,
+    "bytes": 4248,
+    "sha256": "4cd9ec15c959188fc30b06c5fb92684064d3cdde1a31695f8df5d9e301fce684",
+    "status": "decoded"
+  },
+  {
+    "directory_index": 212,
+    "kind": "sstSrcModule",
+    "module": 141,
+    "bytes": 7484,
+    "sha256": "149e0264e9729c07fc8566757340de9dd301e0ed4f2c715c2bd219387e1542d6",
+    "status": "decoded",
+    "source_ranges": [
+      {
+        "logical_segment": 15,
+        "start": 6,
+        "end_inclusive": 21629
+      }
+    ],
+    "source_files": [
+      "c:\\user\\jeffl\\2.7j\\file.c"
+    ],
+    "treatment": "File names and line mappings cross-checked against independent sstFileIndex."
+  },
+  {
+    "directory_index": 213,
+    "kind": "sstAlignSym",
+    "module": 142,
+    "bytes": 1412,
+    "sha256": "24bcbc8c2dc5f2503489f6da239b51b6bb26775c920ba466914720812bb6127a",
+    "status": "decoded"
+  },
+  {
+    "directory_index": 214,
+    "kind": "sstSrcModule",
+    "module": 142,
+    "bytes": 3736,
+    "sha256": "b4db05dc7b2efe7b15171012a442658bcefbbe957d1759ee0fea5eb166a626f7",
+    "status": "decoded",
+    "source_ranges": [
+      {
+        "logical_segment": 1,
+        "start": 20,
+        "end_inclusive": 11757
+      }
+    ],
+    "source_files": [
+      "c:\\user\\jeffl\\2.7j\\init.c"
+    ],
+    "treatment": "File names and line mappings cross-checked against independent sstFileIndex."
+  },
+  {
+    "directory_index": 215,
+    "kind": "sstAlignSym",
+    "module": 143,
+    "bytes": 8568,
+    "sha256": "6284bc116b3398a0e0f7f3da305c45789bdd7993dea73a5af52083e6b3c17631",
+    "status": "decoded"
+  },
+  {
+    "directory_index": 216,
+    "kind": "sstSrcModule",
+    "module": 143,
+    "bytes": 13076,
+    "sha256": "85474798514e647f008b6bf40577e25c81e91905a0f963254245b9ae8d413649",
+    "status": "decoded",
+    "source_ranges": [
+      {
+        "logical_segment": 12,
+        "start": 50,
+        "end_inclusive": 40184
+      }
+    ],
+    "source_files": [
+      "c:\\user\\jeffl\\2.7j\\scan.c"
+    ],
+    "treatment": "File names and line mappings cross-checked against independent sstFileIndex."
+  },
+  {
+    "directory_index": 217,
+    "kind": "sstAlignSym",
+    "module": 144,
+    "bytes": 10676,
+    "sha256": "f0fd99b6a19eabc06489ac4564f79e3164f9ca4dec3194e7dfd892687221bfb3",
+    "status": "decoded"
+  },
+  {
+    "directory_index": 218,
+    "kind": "sstSrcModule",
+    "module": 144,
+    "bytes": 10324,
+    "sha256": "a7d8a4eec88d774325f54b2353accb2da5e85334966b66f7276bb46fe1c8219c",
+    "status": "decoded",
+    "source_ranges": [
+      {
+        "logical_segment": 8,
+        "start": 0,
+        "end_inclusive": 33061
+      }
+    ],
+    "source_files": [
+      "c:\\user\\jeffl\\2.7j\\util.c"
+    ],
+    "treatment": "File names and line mappings cross-checked against independent sstFileIndex."
+  },
+  {
+    "directory_index": 219,
+    "kind": "sstAlignSym",
+    "module": 145,
+    "bytes": 4816,
+    "sha256": "e5c0bf29c6e486568376e6d6a78fe0927da8e4d02b874fad289ef1b9a8831dba",
+    "status": "decoded"
+  },
+  {
+    "directory_index": 220,
+    "kind": "sstSrcModule",
+    "module": 145,
+    "bytes": 6508,
+    "sha256": "3dab6449c76023ea0011f31592d10f3f5b76a469d81100bd5016cbf1b67c3ce7",
+    "status": "decoded",
+    "source_ranges": [
+      {
+        "logical_segment": 6,
+        "start": 0,
+        "end_inclusive": 23033
+      }
+    ],
+    "source_files": [
+      "c:\\user\\jeffl\\2.7j\\mine.c"
+    ],
+    "treatment": "File names and line mappings cross-checked against independent sstFileIndex."
+  },
+  {
+    "directory_index": 221,
+    "kind": "sstAlignSym",
+    "module": 146,
+    "bytes": 8588,
+    "sha256": "20e36560980fc9362b9f3b8914a482027f1033e4fad8bbe282e9350632779af7",
+    "status": "decoded"
+  },
+  {
+    "directory_index": 222,
+    "kind": "sstSrcModule",
+    "module": 146,
+    "bytes": 14560,
+    "sha256": "e0db091b03b1986fc4637aa1eeaa93dd67f349c2b26953ba4a4c56fb4de0d7b3",
+    "status": "decoded",
+    "source_ranges": [
+      {
+        "logical_segment": 5,
+        "start": 0,
+        "end_inclusive": 38975
+      }
+    ],
+    "source_files": [
+      "c:\\user\\jeffl\\2.7j\\mdi.c"
+    ],
+    "treatment": "File names and line mappings cross-checked against independent sstFileIndex."
+  },
+  {
+    "directory_index": 223,
+    "kind": "sstAlignSym",
+    "module": 147,
+    "bytes": 44,
+    "sha256": "56563ae8610713953c930c6a729de65f8634fbbae07b2850735f74ac0d370434",
+    "status": "decoded"
+  },
+  {
+    "directory_index": 224,
+    "kind": "sstAlignSym",
+    "module": 148,
+    "bytes": 1764,
+    "sha256": "bb84733eda73fe1727cb5ab61bd9a251bcd59588273789e3eff8a863181779d7",
+    "status": "decoded"
+  },
+  {
+    "directory_index": 225,
+    "kind": "sstSrcModule",
+    "module": 148,
+    "bytes": 3224,
+    "sha256": "2d0b2def0c6b40a91d582ed83a9f10f8dd63aaeeff85238716d5a8c7c06eb44e",
+    "status": "decoded",
+    "source_ranges": [
+      {
+        "logical_segment": 4,
+        "start": 0,
+        "end_inclusive": 7227
+      }
+    ],
+    "source_files": [
+      "c:\\user\\jeffl\\2.7j\\stars.c"
+    ],
+    "treatment": "File names and line mappings cross-checked against independent sstFileIndex."
+  },
+  {
+    "directory_index": 226,
+    "kind": "sstGlobalPub",
+    "module": 65535,
+    "bytes": 75648,
+    "sha256": "e750c4d1ed6140a96c8b70ac98e5f07c0ab570e14c9c676e64acd5ebae252ed0",
+    "status": "decoded",
+    "lookup_indexes": {
+      "symbol_hash_kind": 10,
+      "address_hash_kind": 12,
+      "symbol_hash_bytes": 15628,
+      "address_hash_bytes": 14628,
+      "symbol_hash_sha256": "0ef38ef24c1d13622d51a61833c7a5e5dda57b11964ef4d0290dba86466a0723",
+      "address_hash_sha256": "c4ee25e98892c5e5ac5f829b945e62dd023c8bd02c52047c2f150eef4347cda1",
+      "treatment": "Lookup accelerators excluded from semantic reconstruction; linear records are decoded instead. Bytes retained in original and hashes recorded."
+    }
+  },
+  {
+    "directory_index": 227,
+    "kind": "sstGlobalSym",
+    "module": 65535,
+    "bytes": 68904,
+    "sha256": "5321625ebef6c7c187a8a7906f552a23ca03f6f395e4229402885d20feac28d2",
+    "status": "decoded",
+    "lookup_indexes": {
+      "symbol_hash_kind": 10,
+      "address_hash_kind": 12,
+      "symbol_hash_bytes": 18116,
+      "address_hash_bytes": 12244,
+      "symbol_hash_sha256": "e750b5572092e94aa7162d32783b6afb4d0d3011933e70f9a25ce73d984fb447",
+      "address_hash_sha256": "67a78d421a1b13ea85cbd59eb1dd3a631a0c18dbe1de260faf3b6a4d36c26cdd",
+      "treatment": "Lookup accelerators excluded from semantic reconstruction; linear records are decoded instead. Bytes retained in original and hashes recorded."
+    }
+  },
+  {
+    "directory_index": 228,
+    "kind": "sstStaticSym",
+    "module": 65535,
+    "bytes": 2472,
+    "sha256": "bfdf59695df820a804f908714844dd789e23dfd10d317e14014cdedb402e43a4",
+    "status": "decoded",
+    "lookup_indexes": {
+      "symbol_hash_kind": 10,
+      "address_hash_kind": 12,
+      "symbol_hash_bytes": 500,
+      "address_hash_bytes": 1060,
+      "symbol_hash_sha256": "ab2295f43b94614b6fc4c6226e9ffe558f65a2d833fbafc1a7a3e4316bef7904",
+      "address_hash_sha256": "8fa632fd12d0822cdc1867e716498a77f2c82e893d7008de23d4843410396126",
+      "treatment": "Lookup accelerators excluded from semantic reconstruction; linear records are decoded instead. Bytes retained in original and hashes recorded."
+    }
+  },
+  {
+    "directory_index": 229,
+    "kind": "sstLibraries",
+    "module": 65535,
+    "bytes": 47,
+    "sha256": "b8fcf7c84dad9ccba1a9d35f97c0f5cd8f55eab99852f25d631413093875635f",
+    "status": "decoded"
+  },
+  {
+    "directory_index": 230,
+    "kind": "sstGlobalTypes",
+    "module": 65535,
+    "bytes": 53316,
+    "sha256": "8ca0c9b8a4b05322c614d255f6999da7c059eb319ac68b66863d85e35912b442",
+    "status": "decoded",
+    "type_table_flags": 1
+  },
+  {
+    "directory_index": 231,
+    "kind": "sstSegMap",
+    "module": 65535,
+    "bytes": 1544,
+    "sha256": "f92cf78ea98a0cdd2a2d60fdea13bcd47489fa3d0d3ed243ecae5e5059360562",
+    "status": "decoded",
+    "treatment": "Decoded in initial extraction; semantic validation and enrichment below."
+  },
+  {
+    "directory_index": 232,
+    "kind": "sstSegName",
+    "module": 65535,
+    "bytes": 1031,
+    "sha256": "8949703f423f25230d45d5b66a21935b869eb586653e243462dbb556d7fc366d",
+    "status": "decoded"
+  },
+  {
+    "directory_index": 233,
+    "kind": "sstFileIndex",
+    "module": 65535,
+    "bytes": 1764,
+    "sha256": "b9fc49fc5661e4e6c0f5e5a46c2d6fda688c6d2ca86c93f275650b43a78c243f",
+    "status": "decoded"
+  }
+]

@@ -1,0 +1,58 @@
+{
+  "absolute_public_constants": 23,
+  "overlapping_structures": 63,
+  "structure_members": 1478,
+  "variable_tail_members": 9,
+  "subsections": 234,
+  "record_kinds": {
+    "S_SSEARCH": 38,
+    "S_OBJNAME": 40,
+    "S_GPROC16": 845,
+    "S_BPREL16": 8098,
+    "S_BLOCK16": 637,
+    "S_END": 1483,
+    "S_LABEL16": 431,
+    "S_COMPILE": 40,
+    "S_LDATA16": 3,
+    "S_GDATA16": 661,
+    "S_LPROC16": 1,
+    "S_REGISTER16": 2,
+    "S_PUB16": 1769,
+    "S_ALIGN": 22,
+    "S_PUB32_16t": 6,
+    "S_UDT16": 604,
+    "S_PROCREF": 846,
+    "S_DATAREF": 55
+  },
+  "type_kinds": {
+    "LF_ARGLIST16": 301,
+    "LF_PROCEDURE16": 401,
+    "LF_STRUCTURE16": 192,
+    "LF_POINTER16": 203,
+    "LF_ARRAY16": 281,
+    "LF_FIELDLIST16": 186,
+    "LF_MODIFIER16": 1,
+    "LF_BITFIELD16": 113
+  },
+  "procedures": 846,
+  "blocks": 637,
+  "typedef_records": 604,
+  "data_records": 664,
+  "unmapped_library_indices": [
+    256
+  ],
+  "effective_signature_unresolved": 0,
+  "parameter_metadata_mismatches": [
+    "211:00000ac0",
+    "221:000000c4"
+  ],
+  "library_names": [
+    "",
+    "mlibcew.lib",
+    "libw.lib",
+    "commdlg.lib",
+    "toolhelp.lib"
+  ],
+  "semantic_unknown_record_kinds": 0,
+  "limitation": "All present semantic record kinds are decoded. Hash accelerators and padding are excluded with justification. Compiler execution and full instruction-by-instruction use validation remain later work."
+}

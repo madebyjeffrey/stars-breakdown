@@ -4,6 +4,8 @@ A reverse-engineering study of `target/stars.exe`, preserving the supplied execu
 
 ## Start here
 
+- [Debug recovery report](analysis/debug/README.md): complete semantic record recovery, effective signatures, and generated storage headers (step 2 complete).
+
 - [Executable layout report](analysis/ne/README.md): complete file map, imports, resources, and the static loader model (step 1 complete).
 
 - [Baseline and progress tracking](tracking/README.md): verified input inventory, coverage ledger, uncertainty log, and version-control policy.
@@ -11,7 +13,7 @@ A reverse-engineering study of `target/stars.exe`, preserving the supplied execu
 - [Full decompilation TODO](TODO.md): staged checklist, per-function requirements, and completion criteria for a buildable, validated reconstruction.
 - [First reconstructed function](notes/FIRST_RECONSTRUCTION.md): `GetRaceStat`, with every instruction explained.
 - [Function index](analysis/FUNCTIONS.md): 846 procedure records with original names, mapped NE addresses, byte lengths, and original source locations.
-- [Data layouts](analysis/DATA_LAYOUTS.md): 192 structure records with member names, byte offsets, array sizes, and bit positions. Some records are forward declarations or alternate type records, so this is not a count of unique complete structures.
+- [Data layouts](analysis/DATA_LAYOUTS.md): 192 complete structure records with member names, byte offsets, array sizes, and bit positions. Step 2 confirms that none is a forward declaration.
 - [Summary](analysis/summary.json): file identity, counts, and original C source paths.
 
 ## Confirmed findings
@@ -34,17 +36,19 @@ From this directory, with Python 3 (no third-party dependencies):
 python3 tools/extract_debug.py
 python3 tools/render_layouts.py
 python3 tools/ne_layout.py
+python3 tools/recover_debug.py
+python3 tools/debug_headers.py
 python3 tools/baseline.py --check
 python3 -m unittest discover -s tests
 ```
 
-The extractor reads the input only and writes derived artifacts to `analysis/`. It retains raw symbol and type bytes for auditing. Unknown symbol records are retained rather than assigned speculative meanings. Local records are associated with their containing procedure, but lexical block scopes and register locals are not fully modeled.
+The extractor reads the input only and writes derived artifacts to `analysis/`. It retains raw symbol and type bytes for auditing. Unknown symbol records are retained rather than assigned speculative meanings. The initial extractor provides a compact first-pass inventory. The step 2 artifacts in `analysis/debug/` add nested lexical scopes, register variables, reference resolution and effective signatures.
 
 CodeView logical segment numbers are translated through `sstSegMap` to NE segment ordinals. All procedure ranges are checked against segment memory extents. A procedure may include a trailing zero-filled byte beyond the initialized file bytes; `file_backed_bytes` makes this explicit. Source paths and line numbers are metadata, not embedded source text.
 
 ## Next decompilation stage
 
-Steps 0 and 1 are complete. Step 2 is the next stage: finish decoding debug symbols/types, reconcile scopes and aliases, validate data layouts, and generate usable reconstruction headers. The full checklist is in [TODO.md](TODO.md).
+Steps 0, 1 and 2 are complete. Step 3 is next: establish and verify a decompiler workflow, import the recovered metadata, discover remaining functions and resolve control flow. The full checklist is in [TODO.md](TODO.md).
 
 The NE extractor accounts for every file byte, decodes all relocation records, resolves imports to symbolic identities, extracts every resource, and emits static memory images with synthetic selectors. Its hardware-x87 policy and remaining runtime limitations are documented in [the layout report](analysis/ne/README.md). Actual native execution and decompiler import are still pending.
 

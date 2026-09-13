@@ -1,0 +1,3626 @@
+[
+  {
+    "name": "PL",
+    "type_index": 4700,
+    "scope_id": null,
+    "record_id": "227:00000010"
+  },
+  {
+    "name": "PLANET",
+    "type_index": 4098,
+    "scope_id": null,
+    "record_id": "227:00000060"
+  },
+  {
+    "name": "PFLEET",
+    "type_index": 4674,
+    "scope_id": null,
+    "record_id": "227:00000070"
+  },
+  {
+    "name": "PBYTE",
+    "type_index": 288,
+    "scope_id": null,
+    "record_id": "227:000000a8"
+  },
+  {
+    "name": "PATTERN",
+    "type_index": 5365,
+    "scope_id": null,
+    "record_id": "227:000000b4"
+  },
+  {
+    "name": "PSIZE",
+    "type_index": 5383,
+    "scope_id": null,
+    "record_id": "227:000000c4"
+  },
+  {
+    "name": "PLAYER",
+    "type_index": 4116,
+    "scope_id": null,
+    "record_id": "227:000000d0"
+  },
+  {
+    "name": "DRVCONFIGINFO",
+    "type_index": 5098,
+    "scope_id": null,
+    "record_id": "227:000000f0"
+  },
+  {
+    "name": "EVENTMSG",
+    "type_index": 4939,
+    "scope_id": null,
+    "record_id": "227:00000124"
+  },
+  {
+    "name": "PAINTSTRUCT",
+    "type_index": 4121,
+    "scope_id": null,
+    "record_id": "227:00000134"
+  },
+  {
+    "name": "LPMDICREATESTRUCT",
+    "type_index": 5283,
+    "scope_id": null,
+    "record_id": "227:00000180"
+  },
+  {
+    "name": "tagCOMPAREITEMSTRUCT",
+    "type_index": 5391,
+    "scope_id": null,
+    "record_id": "227:000001a8"
+  },
+  {
+    "name": "PHELPWININFO",
+    "type_index": 5436,
+    "scope_id": null,
+    "record_id": "227:00000244"
+  },
+  {
+    "name": "RTXFERF",
+    "type_index": 5174,
+    "scope_id": null,
+    "record_id": "227:000002bc"
+  },
+  {
+    "name": "RTXFERL",
+    "type_index": 5169,
+    "scope_id": null,
+    "record_id": "227:000002cc"
+  },
+  {
+    "name": "RTXFERX",
+    "type_index": 5153,
+    "scope_id": null,
+    "record_id": "227:000002dc"
+  },
+  {
+    "name": "RTXFER",
+    "type_index": 5132,
+    "scope_id": null,
+    "record_id": "227:000002ec"
+  },
+  {
+    "name": "RGBQUAD",
+    "type_index": 5180,
+    "scope_id": null,
+    "record_id": "227:00000310"
+  },
+  {
+    "name": "tagMULTIKEYHELP",
+    "type_index": 5375,
+    "scope_id": null,
+    "record_id": "227:00000358"
+  },
+  {
+    "name": "SCOREX",
+    "type_index": 4250,
+    "scope_id": null,
+    "record_id": "227:000003a8"
+  },
+  {
+    "name": "SCORE",
+    "type_index": 4918,
+    "scope_id": null,
+    "record_id": "227:000003b8"
+  },
+  {
+    "name": "COMSTAT",
+    "type_index": 5163,
+    "scope_id": null,
+    "record_id": "227:000003c4"
+  },
+  {
+    "name": "div_t",
+    "type_index": 5482,
+    "scope_id": null,
+    "record_id": "227:00000430"
+  },
+  {
+    "name": "DWORD",
+    "type_index": 34,
+    "scope_id": null,
+    "record_id": "227:0000043c"
+  },
+  {
+    "name": "tagRECT",
+    "type_index": 4122,
+    "scope_id": null,
+    "record_id": "227:00000448"
+  },
+  {
+    "name": "THTRADER",
+    "type_index": 5270,
+    "scope_id": null,
+    "record_id": "227:00000468"
+  },
+  {
+    "name": "BITMAPINFO",
+    "type_index": 5446,
+    "scope_id": null,
+    "record_id": "227:00000514"
+  },
+  {
+    "name": "DEVNAMES",
+    "type_index": 5096,
+    "scope_id": null,
+    "record_id": "227:00000528"
+  },
+  {
+    "name": "FLEETID",
+    "type_index": 5372,
+    "scope_id": null,
+    "record_id": "227:000005b8"
+  },
+  {
+    "name": "FIXED",
+    "type_index": 5134,
+    "scope_id": null,
+    "record_id": "227:000005c8"
+  },
+  {
+    "name": "FLEET",
+    "type_index": 4099,
+    "scope_id": null,
+    "record_id": "227:000005d4"
+  },
+  {
+    "name": "LPKERNINGPAIR",
+    "type_index": 5434,
+    "scope_id": null,
+    "record_id": "227:0000064c"
+  },
+  {
+    "name": "DELETEITEMSTRUCT",
+    "type_index": 5339,
+    "scope_id": null,
+    "record_id": "227:000006c0"
+  },
+  {
+    "name": "TURNSERIAL",
+    "type_index": 4927,
+    "scope_id": null,
+    "record_id": "227:000006d8"
+  },
+  {
+    "name": "HFONT",
+    "type_index": 115,
+    "scope_id": null,
+    "record_id": "227:000006fc"
+  },
+  {
+    "name": "tagPOINT",
+    "type_index": 4120,
+    "scope_id": null,
+    "record_id": "227:000007ac"
+  },
+  {
+    "name": "LPPLANETSOME",
+    "type_index": 4973,
+    "scope_id": null,
+    "record_id": "227:000007bc"
+  },
+  {
+    "name": "WINDOWPOS",
+    "type_index": 5204,
+    "scope_id": null,
+    "record_id": "227:00000800"
+  },
+  {
+    "name": "LPSHDEF",
+    "type_index": 4105,
+    "scope_id": null,
+    "record_id": "227:00000888"
+  },
+  {
+    "name": "LPMAT2",
+    "type_index": 5188,
+    "scope_id": null,
+    "record_id": "227:00000898"
+  },
+  {
+    "name": "LPINT",
+    "type_index": 626,
+    "scope_id": null,
+    "record_id": "227:000008a8"
+  },
+  {
+    "name": "LPBYTE",
+    "type_index": 544,
+    "scope_id": null,
+    "record_id": "227:000008b4"
+  },
+  {
+    "name": "LPCSTR",
+    "type_index": 624,
+    "scope_id": null,
+    "record_id": "227:000008c4"
+  },
+  {
+    "name": "LPNCCALCSIZE_PARAMS",
+    "type_index": 5430,
+    "scope_id": null,
+    "record_id": "227:000008e4"
+  },
+  {
+    "name": "tagFIXED",
+    "type_index": 5134,
+    "scope_id": null,
+    "record_id": "227:00000930"
+  },
+  {
+    "name": "MSGHDR",
+    "type_index": 4832,
+    "scope_id": null,
+    "record_id": "227:00000940"
+  },
+  {
+    "name": "tagBITMAP",
+    "type_index": 4549,
+    "scope_id": null,
+    "record_id": "227:00000960"
+  },
+  {
+    "name": "LPPOINTFX",
+    "type_index": 5277,
+    "scope_id": null,
+    "record_id": "227:00000980"
+  },
+  {
+    "name": "LPTTPOLYGONHEADER",
+    "type_index": 5351,
+    "scope_id": null,
+    "record_id": "227:000009cc"
+  },
+  {
+    "name": "tagENUMLOGFONT",
+    "type_index": 5407,
+    "scope_id": null,
+    "record_id": "227:00000a60"
+  },
+  {
+    "name": "_tile",
+    "type_index": 5046,
+    "scope_id": null,
+    "record_id": "227:00000aac"
+  },
+  {
+    "name": "_fleet",
+    "type_index": 4099,
+    "scope_id": null,
+    "record_id": "227:00000ab8"
+  },
+  {
+    "name": "_mines",
+    "type_index": 4769,
+    "scope_id": null,
+    "record_id": "227:00000ac8"
+  },
+  {
+    "name": "_game",
+    "type_index": 4114,
+    "scope_id": null,
+    "record_id": "227:00000ad8"
+  },
+  {
+    "name": "_shield",
+    "type_index": 4764,
+    "scope_id": null,
+    "record_id": "227:00000ae4"
+  },
+  {
+    "name": "_timer",
+    "type_index": 5250,
+    "scope_id": null,
+    "record_id": "227:00000af4"
+  },
+  {
+    "name": "_shdef",
+    "type_index": 4104,
+    "scope_id": null,
+    "record_id": "227:00000b04"
+  },
+  {
+    "name": "_order",
+    "type_index": 4101,
+    "scope_id": null,
+    "record_id": "227:00000b14"
+  },
+  {
+    "name": "ABC",
+    "type_index": 5360,
+    "scope_id": null,
+    "record_id": "227:00000b6c"
+  },
+  {
+    "name": "POINT",
+    "type_index": 4120,
+    "scope_id": null,
+    "record_id": "227:00000ba0"
+  },
+  {
+    "name": "PRECT",
+    "type_index": 4123,
+    "scope_id": null,
+    "record_id": "227:00000bac"
+  },
+  {
+    "name": "POINTFX",
+    "type_index": 5261,
+    "scope_id": null,
+    "record_id": "227:00000bb8"
+  },
+  {
+    "name": "PHANDLE",
+    "type_index": 371,
+    "scope_id": null,
+    "record_id": "227:00000bc8"
+  },
+  {
+    "name": "PLORD",
+    "type_index": 5416,
+    "scope_id": null,
+    "record_id": "227:00000c0c"
+  },
+  {
+    "name": "PWORD",
+    "type_index": 289,
+    "scope_id": null,
+    "record_id": "227:00000c18"
+  },
+  {
+    "name": "MENUITEMTEMPLATE",
+    "type_index": 5090,
+    "scope_id": null,
+    "record_id": "227:00000cac"
+  },
+  {
+    "name": "POFSTRUCT",
+    "type_index": 5370,
+    "scope_id": null,
+    "record_id": "227:00000d20"
+  },
+  {
+    "name": "RTSHDEF",
+    "type_index": 5327,
+    "scope_id": null,
+    "record_id": "227:00000dec"
+  },
+  {
+    "name": "BTLREC",
+    "type_index": 4438,
+    "scope_id": null,
+    "record_id": "227:00000e40"
+  },
+  {
+    "name": "tagRGBQUAD",
+    "type_index": 5180,
+    "scope_id": null,
+    "record_id": "227:00000e50"
+  },
+  {
+    "name": "PLOGPALETTE",
+    "type_index": 4543,
+    "scope_id": null,
+    "record_id": "227:00000ff4"
+  },
+  {
+    "name": "tagPD",
+    "type_index": 5209,
+    "scope_id": null,
+    "record_id": "227:00001010"
+  },
+  {
+    "name": "DRVCALLBACK",
+    "type_index": 0,
+    "scope_id": null,
+    "record_id": "227:000010a4"
+  },
+  {
+    "name": "MENUITEMTEMPLATEHEADER",
+    "type_index": 5092,
+    "scope_id": null,
+    "record_id": "227:00001120"
+  },
+  {
+    "name": "_starpack",
+    "type_index": 4854,
+    "scope_id": null,
+    "record_id": "227:00001190"
+  },
+  {
+    "name": "tagCBT_CREATEWND",
+    "type_index": 5274,
+    "scope_id": null,
+    "record_id": "227:00001218"
+  },
+  {
+    "name": "TASKSELL",
+    "type_index": 4997,
+    "scope_id": null,
+    "record_id": "227:000012a0"
+  },
+  {
+    "name": "GLOBALHANDLE",
+    "type_index": 115,
+    "scope_id": null,
+    "record_id": "227:000012c8"
+  },
+  {
+    "name": "HMENU",
+    "type_index": 115,
+    "scope_id": null,
+    "record_id": "227:000012f0"
+  },
+  {
+    "name": "HACCEL",
+    "type_index": 115,
+    "scope_id": null,
+    "record_id": "227:000012fc"
+  },
+  {
+    "name": "HFILE",
+    "type_index": 114,
+    "scope_id": null,
+    "record_id": "227:0000130c"
+  },
+  {
+    "name": "HMODULE",
+    "type_index": 115,
+    "scope_id": null,
+    "record_id": "227:00001318"
+  },
+  {
+    "name": "HULDEF",
+    "type_index": 4745,
+    "scope_id": null,
+    "record_id": "227:00001328"
+  },
+  {
+    "name": "HWAVEIN",
+    "type_index": 115,
+    "scope_id": null,
+    "record_id": "227:0000135c"
+  },
+  {
+    "name": "BITMAPFILEHEADER",
+    "type_index": 5021,
+    "scope_id": null,
+    "record_id": "227:00001400"
+  },
+  {
+    "name": "WNDENUMPROC",
+    "type_index": 4151,
+    "scope_id": null,
+    "record_id": "227:0000146c"
+  },
+  {
+    "name": "tagWNDCLASS",
+    "type_index": 5031,
+    "scope_id": null,
+    "record_id": "227:000014e0"
+  },
+  {
+    "name": "tagCOMSTAT",
+    "type_index": 5163,
+    "scope_id": null,
+    "record_id": "227:000014f4"
+  },
+  {
+    "name": "GNOTIFYPROC",
+    "type_index": 4151,
+    "scope_id": null,
+    "record_id": "227:00001520"
+  },
+  {
+    "name": "LPFLEET",
+    "type_index": 4100,
+    "scope_id": null,
+    "record_id": "227:00001550"
+  },
+  {
+    "name": "LRESULT",
+    "type_index": 18,
+    "scope_id": null,
+    "record_id": "227:00001560"
+  },
+  {
+    "name": "LOGPEN",
+    "type_index": 5127,
+    "scope_id": null,
+    "record_id": "227:00001570"
+  },
+  {
+    "name": "COMPAREITEMSTRUCT",
+    "type_index": 5391,
+    "scope_id": null,
+    "record_id": "227:000015a0"
+  },
+  {
+    "name": "MOUSEHOOKSTRUCT",
+    "type_index": 5279,
+    "scope_id": null,
+    "record_id": "227:000015b8"
+  },
+  {
+    "name": "tagMETARECORD",
+    "type_index": 5241,
+    "scope_id": null,
+    "record_id": "227:000015f0"
+  },
+  {
+    "name": "MSGTURN",
+    "type_index": 4830,
+    "scope_id": null,
+    "record_id": "227:00001604"
+  },
+  {
+    "name": "DRIVERINFOSTRUCT",
+    "type_index": 5349,
+    "scope_id": null,
+    "record_id": "227:00001624"
+  },
+  {
+    "name": "LPENUMLOGFONT",
+    "type_index": 5437,
+    "scope_id": null,
+    "record_id": "227:0000163c"
+  },
+  {
+    "name": "_prodq1",
+    "type_index": 4937,
+    "scope_id": null,
+    "record_id": "227:000016b0"
+  },
+  {
+    "name": "_prod",
+    "type_index": 4153,
+    "scope_id": null,
+    "record_id": "227:000016c0"
+  },
+  {
+    "name": "_gdata",
+    "type_index": 4115,
+    "scope_id": null,
+    "record_id": "227:000016cc"
+  },
+  {
+    "name": "_btnt",
+    "type_index": 4444,
+    "scope_id": null,
+    "record_id": "227:000016dc"
+  },
+  {
+    "name": "_huldef",
+    "type_index": 4745,
+    "scope_id": null,
+    "record_id": "227:000016e8"
+  },
+  {
+    "name": "_find_t",
+    "type_index": 4462,
+    "scope_id": null,
+    "record_id": "227:000016f8"
+  },
+  {
+    "name": "_part",
+    "type_index": 4190,
+    "scope_id": null,
+    "record_id": "227:00001718"
+  },
+  {
+    "name": "RPT",
+    "type_index": 4276,
+    "scope_id": null,
+    "record_id": "227:00001744"
+  },
+  {
+    "name": "BTN",
+    "type_index": 5103,
+    "scope_id": null,
+    "record_id": "227:00001750"
+  },
+  {
+    "name": "_rtChgPlanetLong",
+    "type_index": 4955,
+    "scope_id": null,
+    "record_id": "227:00001794"
+  },
+  {
+    "name": "PLONG",
+    "type_index": 274,
+    "scope_id": null,
+    "record_id": "227:000017bc"
+  },
+  {
+    "name": "RTCHGPRODQ",
+    "type_index": 4933,
+    "scope_id": null,
+    "record_id": "227:00001934"
+  },
+  {
+    "name": "THING",
+    "type_index": 4102,
+    "scope_id": null,
+    "record_id": "227:00001988"
+  },
+  {
+    "name": "tagCBTACTIVATESTRUCT",
+    "type_index": 5303,
+    "scope_id": null,
+    "record_id": "227:00001a0c"
+  },
+  {
+    "name": "ITEMACTION",
+    "type_index": 4299,
+    "scope_id": null,
+    "record_id": "227:00001a80"
+  },
+  {
+    "name": "FINDREPLACE",
+    "type_index": 4948,
+    "scope_id": null,
+    "record_id": "227:00001ab8"
+  },
+  {
+    "name": "TIMERPROC",
+    "type_index": 4151,
+    "scope_id": null,
+    "record_id": "227:00001acc"
+  },
+  {
+    "name": "tagPAINTSTRUCT",
+    "type_index": 4121,
+    "scope_id": null,
+    "record_id": "227:00001b18"
+  },
+  {
+    "name": "RGBTRIPLE",
+    "type_index": 4968,
+    "scope_id": null,
+    "record_id": "227:00001bac"
+  },
+  {
+    "name": "PDRAWITEMSTRUCT",
+    "type_index": 5246,
+    "scope_id": null,
+    "record_id": "227:00001c80"
+  },
+  {
+    "name": "TTPOLYCURVE",
+    "type_index": 5286,
+    "scope_id": null,
+    "record_id": "227:00001c98"
+  },
+  {
+    "name": "_itemaction",
+    "type_index": 4299,
+    "scope_id": null,
+    "record_id": "227:00001cdc"
+  },
+  {
+    "name": "tagTTPOLYCURVE",
+    "type_index": 5286,
+    "scope_id": null,
+    "record_id": "227:00001cf0"
+  },
+  {
+    "name": "_turnserial",
+    "type_index": 4927,
+    "scope_id": null,
+    "record_id": "227:00001da8"
+  },
+  {
+    "name": "_rtlogthing",
+    "type_index": 4942,
+    "scope_id": null,
+    "record_id": "227:00001dbc"
+  },
+  {
+    "name": "MEASUREITEMSTRUCT",
+    "type_index": 4729,
+    "scope_id": null,
+    "record_id": "227:00001e38"
+  },
+  {
+    "name": "LOGXFER",
+    "type_index": 5100,
+    "scope_id": null,
+    "record_id": "227:00001e8c"
+  },
+  {
+    "name": "RTSHIPINT2",
+    "type_index": 5201,
+    "scope_id": null,
+    "record_id": "227:00001f88"
+  },
+  {
+    "name": "RTSHIPINT",
+    "type_index": 5187,
+    "scope_id": null,
+    "record_id": "227:00001f9c"
+  },
+  {
+    "name": "RASTERIZER_STATUS",
+    "type_index": 5453,
+    "scope_id": null,
+    "record_id": "227:00001fbc"
+  },
+  {
+    "name": "CYBERINFOTEMP",
+    "type_index": 4160,
+    "scope_id": null,
+    "record_id": "227:00002010"
+  },
+  {
+    "name": "PBITMAPCOREINFO",
+    "type_index": 4976,
+    "scope_id": null,
+    "record_id": "227:00002064"
+  },
+  {
+    "name": "SEL",
+    "type_index": 4187,
+    "scope_id": null,
+    "record_id": "227:000020ac"
+  },
+  {
+    "name": "CLIENTCREATESTRUCT",
+    "type_index": 5028,
+    "scope_id": null,
+    "record_id": "227:00002248"
+  },
+  {
+    "name": "LPCBT_CREATEWND",
+    "type_index": 5293,
+    "scope_id": null,
+    "record_id": "227:00002290"
+  },
+  {
+    "name": "RTBOF",
+    "type_index": 4899,
+    "scope_id": null,
+    "record_id": "227:000022a8"
+  },
+  {
+    "name": "HELPWININFO",
+    "type_index": 5087,
+    "scope_id": null,
+    "record_id": "227:000022b4"
+  },
+  {
+    "name": "tagRASTERIZER_STATUS",
+    "type_index": 5453,
+    "scope_id": null,
+    "record_id": "227:00002314"
+  },
+  {
+    "name": "SHDEF",
+    "type_index": 4104,
+    "scope_id": null,
+    "record_id": "227:00002330"
+  },
+  {
+    "name": "TIMECALLBACK",
+    "type_index": 0,
+    "scope_id": null,
+    "record_id": "227:0000237c"
+  },
+  {
+    "name": "RTCHGSHDEF",
+    "type_index": 5337,
+    "scope_id": null,
+    "record_id": "227:00002390"
+  },
+  {
+    "name": "RTCHGNAME",
+    "type_index": 5254,
+    "scope_id": null,
+    "record_id": "227:000023a4"
+  },
+  {
+    "name": "WAVECALLBACK",
+    "type_index": 0,
+    "scope_id": null,
+    "record_id": "227:000023b4"
+  },
+  {
+    "name": "tagOFN",
+    "type_index": 4614,
+    "scope_id": null,
+    "record_id": "227:00002408"
+  },
+  {
+    "name": "WNDCLASS",
+    "type_index": 5031,
+    "scope_id": null,
+    "record_id": "227:00002710"
+  },
+  {
+    "name": "PEVENTMSG",
+    "type_index": 4956,
+    "scope_id": null,
+    "record_id": "227:000027b0"
+  },
+  {
+    "name": "tagDRIVERINFOSTRUCT",
+    "type_index": 5349,
+    "scope_id": null,
+    "record_id": "227:000027c0"
+  },
+  {
+    "name": "LPOUTLINETEXTMETRIC",
+    "type_index": 5281,
+    "scope_id": null,
+    "record_id": "227:0000289c"
+  },
+  {
+    "name": "LPMSG",
+    "type_index": 5053,
+    "scope_id": null,
+    "record_id": "227:000028e8"
+  },
+  {
+    "name": "PWINDOWPLACEMENT",
+    "type_index": 5358,
+    "scope_id": null,
+    "record_id": "227:00002984"
+  },
+  {
+    "name": "NPMSG",
+    "type_index": 5026,
+    "scope_id": null,
+    "record_id": "227:000029b4"
+  },
+  {
+    "name": "_ldiv_t",
+    "type_index": 5485,
+    "scope_id": null,
+    "record_id": "227:000029d0"
+  },
+  {
+    "name": "_rtxfer",
+    "type_index": 5132,
+    "scope_id": null,
+    "record_id": "227:000029f0"
+  },
+  {
+    "name": "LPHELPWININFO",
+    "type_index": 5448,
+    "scope_id": null,
+    "record_id": "227:00002a74"
+  },
+  {
+    "name": "MIDICALLBACK",
+    "type_index": 0,
+    "scope_id": null,
+    "record_id": "227:00002a98"
+  },
+  {
+    "name": "TOK",
+    "type_index": 4329,
+    "scope_id": null,
+    "record_id": "227:00002acc"
+  },
+  {
+    "name": "DV",
+    "type_index": 4440,
+    "scope_id": null,
+    "record_id": "227:00002ad8"
+  },
+  {
+    "name": "DCB",
+    "type_index": 5149,
+    "scope_id": null,
+    "record_id": "227:00002ae4"
+  },
+  {
+    "name": "PRODQ1",
+    "type_index": 4937,
+    "scope_id": null,
+    "record_id": "227:00002b38"
+  },
+  {
+    "name": "PCOLDROP",
+    "type_index": 5350,
+    "scope_id": null,
+    "record_id": "227:00002ba8"
+  },
+  {
+    "name": "tagMEASUREITEMSTRUCT",
+    "type_index": 4729,
+    "scope_id": null,
+    "record_id": "227:00002c10"
+  },
+  {
+    "name": "LPXFERFULL",
+    "type_index": 4913,
+    "scope_id": null,
+    "record_id": "227:00002c44"
+  },
+  {
+    "name": "ATOM",
+    "type_index": 115,
+    "scope_id": null,
+    "record_id": "227:00002c68"
+  },
+  {
+    "name": "_exception",
+    "type_index": 5192,
+    "scope_id": null,
+    "record_id": "227:00002c98"
+  },
+  {
+    "name": "_exceptionl",
+    "type_index": 4975,
+    "scope_id": null,
+    "record_id": "227:00002cac"
+  },
+  {
+    "name": "FRAMESTUFF",
+    "type_index": 4152,
+    "scope_id": null,
+    "record_id": "227:00002cc0"
+  },
+  {
+    "name": "_fonexit_t",
+    "type_index": 5457,
+    "scope_id": null,
+    "record_id": "227:00002cd4"
+  },
+  {
+    "name": "PLOGFONT",
+    "type_index": 4504,
+    "scope_id": null,
+    "record_id": "227:00002d20"
+  },
+  {
+    "name": "BYTE",
+    "type_index": 32,
+    "scope_id": null,
+    "record_id": "227:00002d40"
+  },
+  {
+    "name": "BOOL",
+    "type_index": 114,
+    "scope_id": null,
+    "record_id": "227:00002d4c"
+  },
+  {
+    "name": "BOMB",
+    "type_index": 4776,
+    "scope_id": null,
+    "record_id": "227:00002d58"
+  },
+  {
+    "name": "BEAM",
+    "type_index": 4780,
+    "scope_id": null,
+    "record_id": "227:00002d64"
+  },
+  {
+    "name": "LPMETARECORD",
+    "type_index": 5288,
+    "scope_id": null,
+    "record_id": "227:00002d84"
+  },
+  {
+    "name": "BTNT",
+    "type_index": 4444,
+    "scope_id": null,
+    "record_id": "227:00002d98"
+  },
+  {
+    "name": "CBTACTIVATESTRUCT",
+    "type_index": 5303,
+    "scope_id": null,
+    "record_id": "227:00002db4"
+  },
+  {
+    "name": "LPTTPOLYCURVE",
+    "type_index": 5314,
+    "scope_id": null,
+    "record_id": "227:00002dcc"
+  },
+  {
+    "name": "tagMAT2",
+    "type_index": 5165,
+    "scope_id": null,
+    "record_id": "227:00002f40"
+  },
+  {
+    "name": "TERRA",
+    "type_index": 4774,
+    "scope_id": null,
+    "record_id": "227:00002f70"
+  },
+  {
+    "name": "LPNEWTEXTMETRIC",
+    "type_index": 5362,
+    "scope_id": null,
+    "record_id": "227:00002f9c"
+  },
+  {
+    "name": "NPNEWTEXTMETRIC",
+    "type_index": 5347,
+    "scope_id": null,
+    "record_id": "227:00002fb4"
+  },
+  {
+    "name": "LPBITMAPINFO",
+    "type_index": 5483,
+    "scope_id": null,
+    "record_id": "227:00003010"
+  },
+  {
+    "name": "POPUPDATA",
+    "type_index": 4291,
+    "scope_id": null,
+    "record_id": "227:00003024"
+  },
+  {
+    "name": "tagOUTLINETEXTMETRIC",
+    "type_index": 5265,
+    "scope_id": null,
+    "record_id": "227:0000314c"
+  },
+  {
+    "name": "GAME",
+    "type_index": 4114,
+    "scope_id": null,
+    "record_id": "227:000031a0"
+  },
+  {
+    "name": "WPARAM",
+    "type_index": 115,
+    "scope_id": null,
+    "record_id": "227:000031bc"
+  },
+  {
+    "name": "HWND",
+    "type_index": 115,
+    "scope_id": null,
+    "record_id": "227:00003234"
+  },
+  {
+    "name": "HRGN",
+    "type_index": 115,
+    "scope_id": null,
+    "record_id": "227:00003240"
+  },
+  {
+    "name": "HPEN",
+    "type_index": 115,
+    "scope_id": null,
+    "record_id": "227:0000324c"
+  },
+  {
+    "name": "HSTR",
+    "type_index": 115,
+    "scope_id": null,
+    "record_id": "227:00003268"
+  },
+  {
+    "name": "HDWP",
+    "type_index": 115,
+    "scope_id": null,
+    "record_id": "227:00003274"
+  },
+  {
+    "name": "LPBITMAPINFOHEADER",
+    "type_index": 4540,
+    "scope_id": null,
+    "record_id": "227:000032a0"
+  },
+  {
+    "name": "_planetsome",
+    "type_index": 4966,
+    "scope_id": null,
+    "record_id": "227:00003348"
+  },
+  {
+    "name": "PHANDLETABLE",
+    "type_index": 5215,
+    "scope_id": null,
+    "record_id": "227:0000335c"
+  },
+  {
+    "name": "KILL",
+    "type_index": 5107,
+    "scope_id": null,
+    "record_id": "227:00003400"
+  },
+  {
+    "name": "PDRVCONFIGINFO",
+    "type_index": 5143,
+    "scope_id": null,
+    "record_id": "227:0000340c"
+  },
+  {
+    "name": "_rtChgProdQ",
+    "type_index": 4933,
+    "scope_id": null,
+    "record_id": "227:000034b4"
+  },
+  {
+    "name": "LPPRINTDLG",
+    "type_index": 5333,
+    "scope_id": null,
+    "record_id": "227:000034c8"
+  },
+  {
+    "name": "MAT2",
+    "type_index": 5165,
+    "scope_id": null,
+    "record_id": "227:0000350c"
+  },
+  {
+    "name": "GOBJENUMPROC",
+    "type_index": 4151,
+    "scope_id": null,
+    "record_id": "227:00003574"
+  },
+  {
+    "name": "PALETTEENTRY",
+    "type_index": 5322,
+    "scope_id": null,
+    "record_id": "227:000035a8"
+  },
+  {
+    "name": "_thpack",
+    "type_index": 5185,
+    "scope_id": null,
+    "record_id": "227:000035cc"
+  },
+  {
+    "name": "_aipart",
+    "type_index": 4416,
+    "scope_id": null,
+    "record_id": "227:000035dc"
+  },
+  {
+    "name": "LPMEASUREITEMSTRUCT",
+    "type_index": 4730,
+    "scope_id": null,
+    "record_id": "227:000035fc"
+  },
+  {
+    "name": "ENV",
+    "type_index": 4144,
+    "scope_id": null,
+    "record_id": "227:00003634"
+  },
+  {
+    "name": "PROD",
+    "type_index": 4153,
+    "scope_id": null,
+    "record_id": "227:00003660"
+  },
+  {
+    "name": "NPPATTERN",
+    "type_index": 5403,
+    "scope_id": null,
+    "record_id": "227:0000366c"
+  },
+  {
+    "name": "PLOGPEN",
+    "type_index": 5166,
+    "scope_id": null,
+    "record_id": "227:0000367c"
+  },
+  {
+    "name": "PMSG",
+    "type_index": 5026,
+    "scope_id": null,
+    "record_id": "227:0000368c"
+  },
+  {
+    "name": "PINT",
+    "type_index": 370,
+    "scope_id": null,
+    "record_id": "227:000036c0"
+  },
+  {
+    "name": "PSTR",
+    "type_index": 368,
+    "scope_id": null,
+    "record_id": "227:000036cc"
+  },
+  {
+    "name": "PART",
+    "type_index": 4190,
+    "scope_id": null,
+    "record_id": "227:000036d8"
+  },
+  {
+    "name": "PRINTDLG",
+    "type_index": 5209,
+    "scope_id": null,
+    "record_id": "227:000036f4"
+  },
+  {
+    "name": "FONTENUMPROC",
+    "type_index": 4151,
+    "scope_id": null,
+    "record_id": "227:00003718"
+  },
+  {
+    "name": "PPATTERN",
+    "type_index": 5403,
+    "scope_id": null,
+    "record_id": "227:0000372c"
+  },
+  {
+    "name": "tagPALETTEENTRY",
+    "type_index": 5322,
+    "scope_id": null,
+    "record_id": "227:0000374c"
+  },
+  {
+    "name": "LPCLIENTCREATESTRUCT",
+    "type_index": 5111,
+    "scope_id": null,
+    "record_id": "227:000037b0"
+  },
+  {
+    "name": "BITMAP",
+    "type_index": 4549,
+    "scope_id": null,
+    "record_id": "227:0000381c"
+  },
+  {
+    "name": "BTLDATA",
+    "type_index": 4258,
+    "scope_id": null,
+    "record_id": "227:0000382c"
+  },
+  {
+    "name": "RECT",
+    "type_index": 4122,
+    "scope_id": null,
+    "record_id": "227:0000383c"
+  },
+  {
+    "name": "tagOFSTRUCT",
+    "type_index": 4477,
+    "scope_id": null,
+    "record_id": "227:0000386c"
+  },
+  {
+    "name": "SIZE",
+    "type_index": 5368,
+    "scope_id": null,
+    "record_id": "227:000038a0"
+  },
+  {
+    "name": "SCAN",
+    "type_index": 4167,
+    "scope_id": null,
+    "record_id": "227:000038ac"
+  },
+  {
+    "name": "SBAR",
+    "type_index": 5198,
+    "scope_id": null,
+    "record_id": "227:000038cc"
+  },
+  {
+    "name": "COMPART",
+    "type_index": 5141,
+    "scope_id": null,
+    "record_id": "227:000038d8"
+  },
+  {
+    "name": "TILE",
+    "type_index": 5046,
+    "scope_id": null,
+    "record_id": "227:00003954"
+  },
+  {
+    "name": "tagPANOSE",
+    "type_index": 5263,
+    "scope_id": null,
+    "record_id": "227:00003970"
+  },
+  {
+    "name": "TORP",
+    "type_index": 4778,
+    "scope_id": null,
+    "record_id": "227:00003980"
+  },
+  {
+    "name": "PROPENUMPROC",
+    "type_index": 4151,
+    "scope_id": null,
+    "record_id": "227:000039b8"
+  },
+  {
+    "name": "UINT",
+    "type_index": 115,
+    "scope_id": null,
+    "record_id": "227:00003a10"
+  },
+  {
+    "name": "VERS",
+    "type_index": 5378,
+    "scope_id": null,
+    "record_id": "227:00003ae0"
+  },
+  {
+    "name": "CREATESTRUCT",
+    "type_index": 5207,
+    "scope_id": null,
+    "record_id": "227:00003aec"
+  },
+  {
+    "name": "WORD",
+    "type_index": 33,
+    "scope_id": null,
+    "record_id": "227:00003c00"
+  },
+  {
+    "name": "GDATA",
+    "type_index": 4115,
+    "scope_id": null,
+    "record_id": "227:00003c0c"
+  },
+  {
+    "name": "RTHISTHDR",
+    "type_index": 4930,
+    "scope_id": null,
+    "record_id": "227:00003cc0"
+  },
+  {
+    "name": "HLOCAL",
+    "type_index": 115,
+    "scope_id": null,
+    "record_id": "227:00003cf8"
+  },
+  {
+    "name": "XFER",
+    "type_index": 4910,
+    "scope_id": null,
+    "record_id": "227:00003d08"
+  },
+  {
+    "name": "tagDELETEITEMSTRUCT",
+    "type_index": 5339,
+    "scope_id": null,
+    "record_id": "227:00003d4c"
+  },
+  {
+    "name": "WINDEBUGINFO",
+    "type_index": 5122,
+    "scope_id": null,
+    "record_id": "227:00003dac"
+  },
+  {
+    "name": "tagLOGBRUSH",
+    "type_index": 5365,
+    "scope_id": null,
+    "record_id": "227:00003ee0"
+  },
+  {
+    "name": "LPARAM",
+    "type_index": 18,
+    "scope_id": null,
+    "record_id": "227:00003f10"
+  },
+  {
+    "name": "tagDRAWITEMSTRUCT",
+    "type_index": 4727,
+    "scope_id": null,
+    "record_id": "227:00003f20"
+  },
+  {
+    "name": "TASKXPORT",
+    "type_index": 4991,
+    "scope_id": null,
+    "record_id": "227:00003f38"
+  },
+  {
+    "name": "SPECIALSB",
+    "type_index": 4786,
+    "scope_id": null,
+    "record_id": "227:00003f88"
+  },
+  {
+    "name": "_rtshipint2",
+    "type_index": 5201,
+    "scope_id": null,
+    "record_id": "227:00003fa8"
+  },
+  {
+    "name": "_rtshipint",
+    "type_index": 5187,
+    "scope_id": null,
+    "record_id": "227:00003fbc"
+  },
+  {
+    "name": "LPMOUSEHOOKSTRUCT",
+    "type_index": 5312,
+    "scope_id": null,
+    "record_id": "227:00003fe0"
+  },
+  {
+    "name": "tagGLYPHMETRICS",
+    "type_index": 4983,
+    "scope_id": null,
+    "record_id": "227:00004048"
+  },
+  {
+    "name": "_ini",
+    "type_index": 4332,
+    "scope_id": null,
+    "record_id": "227:00004094"
+  },
+  {
+    "name": "_hul",
+    "type_index": 4214,
+    "scope_id": null,
+    "record_id": "227:000040a0"
+  },
+  {
+    "name": "_sel",
+    "type_index": 4187,
+    "scope_id": null,
+    "record_id": "227:000040ac"
+  },
+  {
+    "name": "_obj",
+    "type_index": 5042,
+    "scope_id": null,
+    "record_id": "227:000040b8"
+  },
+  {
+    "name": "_msgplr",
+    "type_index": 4820,
+    "scope_id": null,
+    "record_id": "227:000040c4"
+  },
+  {
+    "name": "_tok",
+    "type_index": 4329,
+    "scope_id": null,
+    "record_id": "227:000040d4"
+  },
+  {
+    "name": "_lsb",
+    "type_index": 5259,
+    "scope_id": null,
+    "record_id": "227:000040e0"
+  },
+  {
+    "name": "_btn",
+    "type_index": 5103,
+    "scope_id": null,
+    "record_id": "227:000040ec"
+  },
+  {
+    "name": "_torp",
+    "type_index": 4778,
+    "scope_id": null,
+    "record_id": "227:00004108"
+  },
+  {
+    "name": "_rpt",
+    "type_index": 4276,
+    "scope_id": null,
+    "record_id": "227:00004114"
+  },
+  {
+    "name": "_hdr",
+    "type_index": 4844,
+    "scope_id": null,
+    "record_id": "227:00004120"
+  },
+  {
+    "name": "EDITWORDBREAKPROC",
+    "type_index": 5157,
+    "scope_id": null,
+    "record_id": "227:00004140"
+  },
+  {
+    "name": "FLEETSOME",
+    "type_index": 5117,
+    "scope_id": null,
+    "record_id": "227:00004198"
+  },
+  {
+    "name": "BTLREC26",
+    "type_index": 5176,
+    "scope_id": null,
+    "record_id": "227:000041c0"
+  },
+  {
+    "name": "PANOSE",
+    "type_index": 5263,
+    "scope_id": null,
+    "record_id": "227:000041d0"
+  },
+  {
+    "name": "tagSEGINFO",
+    "type_index": 5395,
+    "scope_id": null,
+    "record_id": "227:000041f8"
+  },
+  {
+    "name": "_fleetsome",
+    "type_index": 5117,
+    "scope_id": null,
+    "record_id": "227:00004258"
+  },
+  {
+    "name": "ARMOR",
+    "type_index": 4761,
+    "scope_id": null,
+    "record_id": "227:000042a4"
+  },
+  {
+    "name": "AIPART",
+    "type_index": 4416,
+    "scope_id": null,
+    "record_id": "227:000042b0"
+  },
+  {
+    "name": "tagWINDEBUGINFO",
+    "type_index": 5122,
+    "scope_id": null,
+    "record_id": "227:000042d8"
+  },
+  {
+    "name": "COLDROP",
+    "type_index": 4914,
+    "scope_id": null,
+    "record_id": "227:000043f0"
+  },
+  {
+    "name": "RTLOGHDR",
+    "type_index": 5456,
+    "scope_id": null,
+    "record_id": "227:00004434"
+  },
+  {
+    "name": "AISTARBASE",
+    "type_index": 5190,
+    "scope_id": null,
+    "record_id": "227:0000446c"
+  },
+  {
+    "name": "tagDCB",
+    "type_index": 5149,
+    "scope_id": null,
+    "record_id": "227:000044c4"
+  },
+  {
+    "name": "THPACK",
+    "type_index": 5185,
+    "scope_id": null,
+    "record_id": "227:000044d4"
+  },
+  {
+    "name": "tagMSG",
+    "type_index": 4523,
+    "scope_id": null,
+    "record_id": "227:000044e4"
+  },
+  {
+    "name": "DLGPROC",
+    "type_index": 4151,
+    "scope_id": null,
+    "record_id": "227:00004504"
+  },
+  {
+    "name": "OPENFILENAME",
+    "type_index": 4614,
+    "scope_id": null,
+    "record_id": "227:00004514"
+  },
+  {
+    "name": "_complexl",
+    "type_index": 5018,
+    "scope_id": null,
+    "record_id": "227:00004538"
+  },
+  {
+    "name": "tagBITMAPFILEHEADER",
+    "type_index": 5021,
+    "scope_id": null,
+    "record_id": "227:00004548"
+  },
+  {
+    "name": "LPCREATESTRUCT",
+    "type_index": 5272,
+    "scope_id": null,
+    "record_id": "227:000045bc"
+  },
+  {
+    "name": "tagBITMAPCOREHEADER",
+    "type_index": 4537,
+    "scope_id": null,
+    "record_id": "227:000045d4"
+  },
+  {
+    "name": "STARPACK",
+    "type_index": 4854,
+    "scope_id": null,
+    "record_id": "227:00004600"
+  },
+  {
+    "name": "RTPLANET",
+    "type_index": 5346,
+    "scope_id": null,
+    "record_id": "227:00004638"
+  },
+  {
+    "name": "_xferfull",
+    "type_index": 4912,
+    "scope_id": null,
+    "record_id": "227:00004648"
+  },
+  {
+    "name": "PCOMPAREITEMSTRUCT",
+    "type_index": 5435,
+    "scope_id": null,
+    "record_id": "227:00004658"
+  },
+  {
+    "name": "FARPROC",
+    "type_index": 4151,
+    "scope_id": null,
+    "record_id": "227:000046c0"
+  },
+  {
+    "name": "COLORREF",
+    "type_index": 34,
+    "scope_id": null,
+    "record_id": "227:0000471c"
+  },
+  {
+    "name": "HGLOBAL",
+    "type_index": 115,
+    "scope_id": null,
+    "record_id": "227:000047f0"
+  },
+  {
+    "name": "HPSTR",
+    "type_index": 880,
+    "scope_id": null,
+    "record_id": "227:00004814"
+  },
+  {
+    "name": "HDRVR",
+    "type_index": 115,
+    "scope_id": null,
+    "record_id": "227:00004834"
+  },
+  {
+    "name": "jmp_buf",
+    "type_index": 4144,
+    "scope_id": null,
+    "record_id": "227:000048f0"
+  },
+  {
+    "name": "tagPOINTFX",
+    "type_index": 5261,
+    "scope_id": null,
+    "record_id": "227:00004900"
+  },
+  {
+    "name": "BITMAPCOREINFO",
+    "type_index": 4971,
+    "scope_id": null,
+    "record_id": "227:000049b0"
+  },
+  {
+    "name": "LPDCB",
+    "type_index": 5154,
+    "scope_id": null,
+    "record_id": "227:000049d8"
+  },
+  {
+    "name": "LPWORD",
+    "type_index": 545,
+    "scope_id": null,
+    "record_id": "227:000049e4"
+  },
+  {
+    "name": "LPSTR",
+    "type_index": 624,
+    "scope_id": null,
+    "record_id": "227:00004a08"
+  },
+  {
+    "name": "_rtchgname",
+    "type_index": 5254,
+    "scope_id": null,
+    "record_id": "227:00004a14"
+  },
+  {
+    "name": "MDPLR",
+    "type_index": 5460,
+    "scope_id": null,
+    "record_id": "227:00004a6c"
+  },
+  {
+    "name": "tagBITMAPINFOHEADER",
+    "type_index": 4539,
+    "scope_id": null,
+    "record_id": "227:00004ad4"
+  },
+  {
+    "name": "tagRGBTRIPLE",
+    "type_index": 4968,
+    "scope_id": null,
+    "record_id": "227:00004af0"
+  },
+  {
+    "name": "NPSTR",
+    "type_index": 368,
+    "scope_id": null,
+    "record_id": "227:00004b04"
+  },
+  {
+    "name": "ORDER",
+    "type_index": 4101,
+    "scope_id": null,
+    "record_id": "227:00004b30"
+  },
+  {
+    "name": "_vers",
+    "type_index": 5378,
+    "scope_id": null,
+    "record_id": "227:00004b3c"
+  },
+  {
+    "name": "WN",
+    "type_index": 5429,
+    "scope_id": null,
+    "record_id": "227:00004bb0"
+  },
+  {
+    "name": "LPPATTERN",
+    "type_index": 5423,
+    "scope_id": null,
+    "record_id": "227:00004c14"
+  },
+  {
+    "name": "PDWORD",
+    "type_index": 290,
+    "scope_id": null,
+    "record_id": "227:00004c24"
+  },
+  {
+    "name": "tagMINMAXINFO",
+    "type_index": 5393,
+    "scope_id": null,
+    "record_id": "227:00004cc0"
+  },
+  {
+    "name": "tagNEWTEXTMETRIC",
+    "type_index": 5298,
+    "scope_id": null,
+    "record_id": "227:00004cec"
+  },
+  {
+    "name": "AIHIST",
+    "type_index": 5218,
+    "scope_id": null,
+    "record_id": "227:00004d04"
+  },
+  {
+    "name": "ABORTPROC",
+    "type_index": 4151,
+    "scope_id": null,
+    "record_id": "227:00004d34"
+  },
+  {
+    "name": "LPFLEETSOME",
+    "type_index": 5135,
+    "scope_id": null,
+    "record_id": "227:00004d88"
+  },
+  {
+    "name": "MFENUMPROC",
+    "type_index": 4151,
+    "scope_id": null,
+    "record_id": "227:00004d9c"
+  },
+  {
+    "name": "PTEXTMETRIC",
+    "type_index": 5256,
+    "scope_id": null,
+    "record_id": "227:00004dd0"
+  },
+  {
+    "name": "LPSEGINFO",
+    "type_index": 5443,
+    "scope_id": null,
+    "record_id": "227:00004ef0"
+  },
+  {
+    "name": "tagCHOOSECOLOR",
+    "type_index": 5354,
+    "scope_id": null,
+    "record_id": "227:00004f10"
+  },
+  {
+    "name": "MDICREATESTRUCT",
+    "type_index": 5243,
+    "scope_id": null,
+    "record_id": "227:00004f3c"
+  },
+  {
+    "name": "tagCREATESTRUCT",
+    "type_index": 5207,
+    "scope_id": null,
+    "record_id": "227:00004f54"
+  },
+  {
+    "name": "tagABC",
+    "type_index": 5360,
+    "scope_id": null,
+    "record_id": "227:00004fdc"
+  },
+  {
+    "name": "TIMER",
+    "type_index": 5250,
+    "scope_id": null,
+    "record_id": "227:00004fec"
+  },
+  {
+    "name": "THWORM",
+    "type_index": 5213,
+    "scope_id": null,
+    "record_id": "227:00004ff8"
+  },
+  {
+    "name": "TUTOR",
+    "type_index": 4333,
+    "scope_id": null,
+    "record_id": "227:00005010"
+  },
+  {
+    "name": "DRAWCIR",
+    "type_index": 5239,
+    "scope_id": null,
+    "record_id": "227:00005064"
+  },
+  {
+    "name": "METAFILEPICT",
+    "type_index": 5036,
+    "scope_id": null,
+    "record_id": "227:000050fc"
+  },
+  {
+    "name": "NEWTEXTMETRIC",
+    "type_index": 5298,
+    "scope_id": null,
+    "record_id": "227:0000515c"
+  },
+  {
+    "name": "tagTEXTMETRIC",
+    "type_index": 4571,
+    "scope_id": null,
+    "record_id": "227:00005170"
+  },
+  {
+    "name": "tagBITMAPINFO",
+    "type_index": 5446,
+    "scope_id": null,
+    "record_id": "227:00005184"
+  },
+  {
+    "name": "FOURCC",
+    "type_index": 34,
+    "scope_id": null,
+    "record_id": "227:000051e4"
+  },
+  {
+    "name": "tagMOUSEHOOKSTRUCT",
+    "type_index": 5279,
+    "scope_id": null,
+    "record_id": "227:0000525c"
+  },
+  {
+    "name": "LPDRAWITEMSTRUCT",
+    "type_index": 4728,
+    "scope_id": null,
+    "record_id": "227:000052a4"
+  },
+  {
+    "name": "PWNDCLASS",
+    "type_index": 5032,
+    "scope_id": null,
+    "record_id": "227:000052bc"
+  },
+  {
+    "name": "wchar_t",
+    "type_index": 33,
+    "scope_id": null,
+    "record_id": "227:00005338"
+  },
+  {
+    "name": "WNDPROC",
+    "type_index": 5029,
+    "scope_id": null,
+    "record_id": "227:0000539c"
+  },
+  {
+    "name": "LPDOCINFO",
+    "type_index": 5199,
+    "scope_id": null,
+    "record_id": "227:000053ec"
+  },
+  {
+    "name": "HCURSOR",
+    "type_index": 115,
+    "scope_id": null,
+    "record_id": "227:000053fc"
+  },
+  {
+    "name": "HBRUSH",
+    "type_index": 115,
+    "scope_id": null,
+    "record_id": "227:0000540c"
+  },
+  {
+    "name": "HRSRC",
+    "type_index": 115,
+    "scope_id": null,
+    "record_id": "227:0000541c"
+  },
+  {
+    "name": "SPHANDLE",
+    "type_index": 371,
+    "scope_id": null,
+    "record_id": "227:000054a0"
+  },
+  {
+    "name": "LPABC",
+    "type_index": 5380,
+    "scope_id": null,
+    "record_id": "227:00005574"
+  },
+  {
+    "name": "LPRECT",
+    "type_index": 5331,
+    "scope_id": null,
+    "record_id": "227:00005580"
+  },
+  {
+    "name": "CATCHBUF",
+    "type_index": 4144,
+    "scope_id": null,
+    "record_id": "227:000055b0"
+  },
+  {
+    "name": "tagMETAHEADER",
+    "type_index": 5120,
+    "scope_id": null,
+    "record_id": "227:000055c0"
+  },
+  {
+    "name": "MINES",
+    "type_index": 4769,
+    "scope_id": null,
+    "record_id": "227:00005610"
+  },
+  {
+    "name": "LPMMIOPROC",
+    "type_index": 5756,
+    "scope_id": null,
+    "record_id": "227:00005654"
+  },
+  {
+    "name": "LPMETAFILEPICT",
+    "type_index": 5108,
+    "scope_id": null,
+    "record_id": "227:00005668"
+  },
+  {
+    "name": "NPRECT",
+    "type_index": 4123,
+    "scope_id": null,
+    "record_id": "227:000056dc"
+  },
+  {
+    "name": "_tasksell",
+    "type_index": 4997,
+    "scope_id": null,
+    "record_id": "227:000056fc"
+  },
+  {
+    "name": "LPLOGPALETTE",
+    "type_index": 5447,
+    "scope_id": null,
+    "record_id": "227:0000572c"
+  },
+  {
+    "name": "NPLOGPALETTE",
+    "type_index": 4543,
+    "scope_id": null,
+    "record_id": "227:00005740"
+  },
+  {
+    "name": "CBT_CREATEWND",
+    "type_index": 5274,
+    "scope_id": null,
+    "record_id": "227:00005754"
+  },
+  {
+    "name": "_xfer",
+    "type_index": 4910,
+    "scope_id": null,
+    "record_id": "227:00005788"
+  },
+  {
+    "name": "_scorex",
+    "type_index": 4250,
+    "scope_id": null,
+    "record_id": "227:00005794"
+  },
+  {
+    "name": "_score",
+    "type_index": 4918,
+    "scope_id": null,
+    "record_id": "227:000057a4"
+  },
+  {
+    "name": "_bomb",
+    "type_index": 4776,
+    "scope_id": null,
+    "record_id": "227:000057b4"
+  },
+  {
+    "name": "_msgbig",
+    "type_index": 4822,
+    "scope_id": null,
+    "record_id": "227:000057c0"
+  },
+  {
+    "name": "_sbar",
+    "type_index": 5198,
+    "scope_id": null,
+    "record_id": "227:000057d0"
+  },
+  {
+    "name": "_btlrec",
+    "type_index": 4438,
+    "scope_id": null,
+    "record_id": "227:000057dc"
+  },
+  {
+    "name": "_terra",
+    "type_index": 4774,
+    "scope_id": null,
+    "record_id": "227:000057ec"
+  },
+  {
+    "name": "HUL",
+    "type_index": 4214,
+    "scope_id": null,
+    "record_id": "227:00005824"
+  },
+  {
+    "name": "HS",
+    "type_index": 4216,
+    "scope_id": null,
+    "record_id": "227:00005830"
+  },
+  {
+    "name": "HDC",
+    "type_index": 115,
+    "scope_id": null,
+    "record_id": "227:0000583c"
+  },
+  {
+    "name": "HB",
+    "type_index": 4431,
+    "scope_id": null,
+    "record_id": "227:00005848"
+  },
+  {
+    "name": "HDR",
+    "type_index": 4844,
+    "scope_id": null,
+    "record_id": "227:00005854"
+  },
+  {
+    "name": "PBITMAP",
+    "type_index": 5112,
+    "scope_id": null,
+    "record_id": "227:000058e8"
+  },
+  {
+    "name": "_cyberinfotemp",
+    "type_index": 4160,
+    "scope_id": null,
+    "record_id": "227:00005940"
+  },
+  {
+    "name": "HINSTANCE",
+    "type_index": 115,
+    "scope_id": null,
+    "record_id": "227:000059c0"
+  },
+  {
+    "name": "LPDRIVERINFOSTRUCT",
+    "type_index": 5381,
+    "scope_id": null,
+    "record_id": "227:00005a04"
+  },
+  {
+    "name": "RTCHGPLANETLONG",
+    "type_index": 4955,
+    "scope_id": null,
+    "record_id": "227:00005a20"
+  },
+  {
+    "name": "BTLPLAN",
+    "type_index": 4286,
+    "scope_id": null,
+    "record_id": "227:00005a88"
+  },
+  {
+    "name": "complex",
+    "type_index": 5257,
+    "scope_id": null,
+    "record_id": "227:00005ae0"
+  },
+  {
+    "name": "LPLOGPEN",
+    "type_index": 5172,
+    "scope_id": null,
+    "record_id": "227:00005af0"
+  },
+  {
+    "name": "RTLOGTHING",
+    "type_index": 4942,
+    "scope_id": null,
+    "record_id": "227:00005b00"
+  },
+  {
+    "name": "LOGXFERF",
+    "type_index": 5115,
+    "scope_id": null,
+    "record_id": "227:00005b14"
+  },
+  {
+    "name": "tagTTPOLYGONHEADER",
+    "type_index": 5320,
+    "scope_id": null,
+    "record_id": "227:00005b8c"
+  },
+  {
+    "name": "MMIOPROC",
+    "type_index": 0,
+    "scope_id": null,
+    "record_id": "227:00005bb8"
+  },
+  {
+    "name": "LPPLANET",
+    "type_index": 4107,
+    "scope_id": null,
+    "record_id": "227:00005c34"
+  },
+  {
+    "name": "TTPOLYGONHEADER",
+    "type_index": 5320,
+    "scope_id": null,
+    "record_id": "227:00005c54"
+  },
+  {
+    "name": "LPRGBTRIPLE",
+    "type_index": 5171,
+    "scope_id": null,
+    "record_id": "227:00005c8c"
+  },
+  {
+    "name": "_thtrader",
+    "type_index": 5270,
+    "scope_id": null,
+    "record_id": "227:00005ce0"
+  },
+  {
+    "name": "_specialsb",
+    "type_index": 4786,
+    "scope_id": null,
+    "record_id": "227:00005cf0"
+  },
+  {
+    "name": "NPOFSTRUCT",
+    "type_index": 5370,
+    "scope_id": null,
+    "record_id": "227:00005d1c"
+  },
+  {
+    "name": "GLYPHMETRICS",
+    "type_index": 4983,
+    "scope_id": null,
+    "record_id": "227:00005d30"
+  },
+  {
+    "name": "CHOOSEFONT",
+    "type_index": 5224,
+    "scope_id": null,
+    "record_id": "227:00005d44"
+  },
+  {
+    "name": "tagTIMERINFO",
+    "type_index": 4427,
+    "scope_id": null,
+    "record_id": "227:00005d68"
+  },
+  {
+    "name": "HANDLE",
+    "type_index": 115,
+    "scope_id": null,
+    "record_id": "227:00005d7c"
+  },
+  {
+    "name": "LPCOLDROP",
+    "type_index": 4915,
+    "scope_id": null,
+    "record_id": "227:00005dd0"
+  },
+  {
+    "name": "NCCALCSIZE_PARAMS",
+    "type_index": 5386,
+    "scope_id": null,
+    "record_id": "227:00005e38"
+  },
+  {
+    "name": "MULTIKEYHELP",
+    "type_index": 5375,
+    "scope_id": null,
+    "record_id": "227:00005e50"
+  },
+  {
+    "name": "LPPANOSE",
+    "type_index": 5424,
+    "scope_id": null,
+    "record_id": "227:00005edc"
+  },
+  {
+    "name": "LPHANDLE",
+    "type_index": 627,
+    "scope_id": null,
+    "record_id": "227:00005eec"
+  },
+  {
+    "name": "LPWINDOWPOS",
+    "type_index": 5237,
+    "scope_id": null,
+    "record_id": "227:00005f54"
+  },
+  {
+    "name": "PBITMAPINFOHEADER",
+    "type_index": 5411,
+    "scope_id": null,
+    "record_id": "227:00005fcc"
+  },
+  {
+    "name": "MSGPLR",
+    "type_index": 4820,
+    "scope_id": null,
+    "record_id": "227:00006030"
+  },
+  {
+    "name": "_beam",
+    "type_index": 4780,
+    "scope_id": null,
+    "record_id": "227:000060a4"
+  },
+  {
+    "name": "INI",
+    "type_index": 4332,
+    "scope_id": null,
+    "record_id": "227:000060cc"
+  },
+  {
+    "name": "NPEVENTMSG",
+    "type_index": 4956,
+    "scope_id": null,
+    "record_id": "227:00006158"
+  },
+  {
+    "name": "NPWNDCLASS",
+    "type_index": 5032,
+    "scope_id": null,
+    "record_id": "227:000061bc"
+  },
+  {
+    "name": "LPBITMAP",
+    "type_index": 5128,
+    "scope_id": null,
+    "record_id": "227:00006200"
+  },
+  {
+    "name": "LPDRVCONFIGINFO",
+    "type_index": 5159,
+    "scope_id": null,
+    "record_id": "227:00006220"
+  },
+  {
+    "name": "PFLEETSOME",
+    "type_index": 5150,
+    "scope_id": null,
+    "record_id": "227:00006258"
+  },
+  {
+    "name": "PLANETSOME",
+    "type_index": 4966,
+    "scope_id": null,
+    "record_id": "227:000062a0"
+  },
+  {
+    "name": "SHIELD",
+    "type_index": 4764,
+    "scope_id": null,
+    "record_id": "227:0000631c"
+  },
+  {
+    "name": "NPLOGBRUSH",
+    "type_index": 5403,
+    "scope_id": null,
+    "record_id": "227:00006340"
+  },
+  {
+    "name": "HMETAFILE",
+    "type_index": 115,
+    "scope_id": null,
+    "record_id": "227:00006354"
+  },
+  {
+    "name": "PLANETMINIMAL",
+    "type_index": 5426,
+    "scope_id": null,
+    "record_id": "227:000063dc"
+  },
+  {
+    "name": "tagWINDOWPOS",
+    "type_index": 5204,
+    "scope_id": null,
+    "record_id": "227:000063f0"
+  },
+  {
+    "name": "LPTEXTMETRIC",
+    "type_index": 5275,
+    "scope_id": null,
+    "record_id": "227:00006404"
+  },
+  {
+    "name": "NPTEXTMETRIC",
+    "type_index": 5256,
+    "scope_id": null,
+    "record_id": "227:00006418"
+  },
+  {
+    "name": "PBITMAPCOREHEADER",
+    "type_index": 5289,
+    "scope_id": null,
+    "record_id": "227:0000643c"
+  },
+  {
+    "name": "PXFERFULL",
+    "type_index": 5404,
+    "scope_id": null,
+    "record_id": "227:00006454"
+  },
+  {
+    "name": "CYBERINFO",
+    "type_index": 4158,
+    "scope_id": null,
+    "record_id": "227:00006464"
+  },
+  {
+    "name": "RSRCHDLRPROC",
+    "type_index": 4151,
+    "scope_id": null,
+    "record_id": "227:00006490"
+  },
+  {
+    "name": "LOGBRUSH",
+    "type_index": 5365,
+    "scope_id": null,
+    "record_id": "227:00006504"
+  },
+  {
+    "name": "TEXTMETRIC",
+    "type_index": 4571,
+    "scope_id": null,
+    "record_id": "227:000065c0"
+  },
+  {
+    "name": "HBITMAP",
+    "type_index": 115,
+    "scope_id": null,
+    "record_id": "227:000065f4"
+  },
+  {
+    "name": "LPOPENFILENAME",
+    "type_index": 5104,
+    "scope_id": null,
+    "record_id": "227:00006644"
+  },
+  {
+    "name": "tagHARDWAREHOOKSTRUCT",
+    "type_index": 5341,
+    "scope_id": null,
+    "record_id": "227:000066f8"
+  },
+  {
+    "name": "_ziporder",
+    "type_index": 4229,
+    "scope_id": null,
+    "record_id": "227:00006714"
+  },
+  {
+    "name": "_planetary",
+    "type_index": 4753,
+    "scope_id": null,
+    "record_id": "227:00006724"
+  },
+  {
+    "name": "DEBUGHOOKINFO",
+    "type_index": 5038,
+    "scope_id": null,
+    "record_id": "227:00006750"
+  },
+  {
+    "name": "_rtloghdr",
+    "type_index": 5456,
+    "scope_id": null,
+    "record_id": "227:000067ac"
+  },
+  {
+    "name": "_tasklaymines",
+    "type_index": 4993,
+    "scope_id": null,
+    "record_id": "227:000067bc"
+  },
+  {
+    "name": "_taskpatrol",
+    "type_index": 4995,
+    "scope_id": null,
+    "record_id": "227:00006860"
+  },
+  {
+    "name": "_taskxport",
+    "type_index": 4991,
+    "scope_id": null,
+    "record_id": "227:00006874"
+  },
+  {
+    "name": "_kill",
+    "type_index": 5107,
+    "scope_id": null,
+    "record_id": "227:00006898"
+  },
+  {
+    "name": "_mdplr",
+    "type_index": 5460,
+    "scope_id": null,
+    "record_id": "227:000068a4"
+  },
+  {
+    "name": "LINEDDAPROC",
+    "type_index": 4151,
+    "scope_id": null,
+    "record_id": "227:000068c4"
+  },
+  {
+    "name": "_msgturn",
+    "type_index": 4830,
+    "scope_id": null,
+    "record_id": "227:000068d8"
+  },
+  {
+    "name": "PLPROD",
+    "type_index": 4180,
+    "scope_id": null,
+    "record_id": "227:00006940"
+  },
+  {
+    "name": "DRAWITEMSTRUCT",
+    "type_index": 4727,
+    "scope_id": null,
+    "record_id": "227:000069a0"
+  },
+  {
+    "name": "LPHANDLETABLE",
+    "type_index": 5229,
+    "scope_id": null,
+    "record_id": "227:000069d8"
+  },
+  {
+    "name": "WINDOWPLACEMENT",
+    "type_index": 5301,
+    "scope_id": null,
+    "record_id": "227:000069fc"
+  },
+  {
+    "name": "size_t",
+    "type_index": 115,
+    "scope_id": null,
+    "record_id": "227:00006a98"
+  },
+  {
+    "name": "_drawcir",
+    "type_index": 5239,
+    "scope_id": null,
+    "record_id": "227:00006aa8"
+  },
+  {
+    "name": "SELSOME",
+    "type_index": 5422,
+    "scope_id": null,
+    "record_id": "227:00006ae0"
+  },
+  {
+    "name": "NPLOGPEN",
+    "type_index": 5166,
+    "scope_id": null,
+    "record_id": "227:00006b18"
+  },
+  {
+    "name": "tagLOGPALETTE",
+    "type_index": 4542,
+    "scope_id": null,
+    "record_id": "227:00006b28"
+  },
+  {
+    "name": "time_t",
+    "type_index": 18,
+    "scope_id": null,
+    "record_id": "227:00006b70"
+  },
+  {
+    "name": "DOCINFO",
+    "type_index": 5094,
+    "scope_id": null,
+    "record_id": "227:00006b80"
+  },
+  {
+    "name": "_btlplan",
+    "type_index": 4286,
+    "scope_id": null,
+    "record_id": "227:00006ba0"
+  },
+  {
+    "name": "_complex",
+    "type_index": 5252,
+    "scope_id": null,
+    "record_id": "227:00006bb0"
+  },
+  {
+    "name": "_compart",
+    "type_index": 5141,
+    "scope_id": null,
+    "record_id": "227:00006bc0"
+  },
+  {
+    "name": "ENGINE",
+    "type_index": 4636,
+    "scope_id": null,
+    "record_id": "227:00006c20"
+  },
+  {
+    "name": "tagDRVCONFIGINFO",
+    "type_index": 5098,
+    "scope_id": null,
+    "record_id": "227:00006c40"
+  },
+  {
+    "name": "tagFINDREPLACE",
+    "type_index": 4948,
+    "scope_id": null,
+    "record_id": "227:00006c6c"
+  },
+  {
+    "name": "METARECORD",
+    "type_index": 5241,
+    "scope_id": null,
+    "record_id": "227:00006ca4"
+  },
+  {
+    "name": "PMEASUREITEMSTRUCT",
+    "type_index": 5318,
+    "scope_id": null,
+    "record_id": "227:00006d14"
+  },
+  {
+    "name": "OFSTRUCT",
+    "type_index": 4477,
+    "scope_id": null,
+    "record_id": "227:00006d6c"
+  },
+  {
+    "name": "LPOFSTRUCT",
+    "type_index": 5387,
+    "scope_id": null,
+    "record_id": "227:00006d7c"
+  },
+  {
+    "name": "_selSome",
+    "type_index": 5422,
+    "scope_id": null,
+    "record_id": "227:00006da8"
+  },
+  {
+    "name": "CHOOSECOLOR",
+    "type_index": 5354,
+    "scope_id": null,
+    "record_id": "227:00006dd0"
+  },
+  {
+    "name": "PBITMAPINFO",
+    "type_index": 5478,
+    "scope_id": null,
+    "record_id": "227:00006de4"
+  },
+  {
+    "name": "HICON",
+    "type_index": 115,
+    "scope_id": null,
+    "record_id": "227:00006df8"
+  },
+  {
+    "name": "_logxfer",
+    "type_index": 5100,
+    "scope_id": null,
+    "record_id": "227:00006eac"
+  },
+  {
+    "name": "LPLONG",
+    "type_index": 530,
+    "scope_id": null,
+    "record_id": "227:00006ecc"
+  },
+  {
+    "name": "MINING",
+    "type_index": 4771,
+    "scope_id": null,
+    "record_id": "227:00006f20"
+  },
+  {
+    "name": "LPFINDREPLACE",
+    "type_index": 4972,
+    "scope_id": null,
+    "record_id": "227:00006f50"
+  },
+  {
+    "name": "LPGLYPHMETRICS",
+    "type_index": 5118,
+    "scope_id": null,
+    "record_id": "227:00006f84"
+  },
+  {
+    "name": "_rtbof",
+    "type_index": 4899,
+    "scope_id": null,
+    "record_id": "227:00006fcc"
+  },
+  {
+    "name": "_armor",
+    "type_index": 4761,
+    "scope_id": null,
+    "record_id": "227:00006fdc"
+  },
+  {
+    "name": "_div_t",
+    "type_index": 5482,
+    "scope_id": null,
+    "record_id": "227:00006fec"
+  },
+  {
+    "name": "_thworm",
+    "type_index": 5213,
+    "scope_id": null,
+    "record_id": "227:00007010"
+  },
+  {
+    "name": "_tutor",
+    "type_index": 4333,
+    "scope_id": null,
+    "record_id": "227:00007020"
+  },
+  {
+    "name": "LPEVENTMSG",
+    "type_index": 4978,
+    "scope_id": null,
+    "record_id": "227:0000705c"
+  },
+  {
+    "name": "PPOINT",
+    "type_index": 4128,
+    "scope_id": null,
+    "record_id": "227:00007070"
+  },
+  {
+    "name": "PTHING",
+    "type_index": 5040,
+    "scope_id": null,
+    "record_id": "227:00007080"
+  },
+  {
+    "name": "PPLANET",
+    "type_index": 5039,
+    "scope_id": null,
+    "record_id": "227:00007090"
+  },
+  {
+    "name": "_btldata",
+    "type_index": 4258,
+    "scope_id": null,
+    "record_id": "227:000070e8"
+  },
+  {
+    "name": "_coldrop",
+    "type_index": 4914,
+    "scope_id": null,
+    "record_id": "227:000070f8"
+  },
+  {
+    "name": "OUTLINETEXTMETRIC",
+    "type_index": 5265,
+    "scope_id": null,
+    "record_id": "227:00007108"
+  },
+  {
+    "name": "LPWNDCLASS",
+    "type_index": 5052,
+    "scope_id": null,
+    "record_id": "227:00007120"
+  },
+  {
+    "name": "NPBITMAP",
+    "type_index": 5112,
+    "scope_id": null,
+    "record_id": "227:00007144"
+  },
+  {
+    "name": "_fleetid",
+    "type_index": 5372,
+    "scope_id": null,
+    "record_id": "227:000071b4"
+  },
+  {
+    "name": "tagMDICREATESTRUCT",
+    "type_index": 5243,
+    "scope_id": null,
+    "record_id": "227:000071c4"
+  },
+  {
+    "name": "_aistarbase",
+    "type_index": 5190,
+    "scope_id": null,
+    "record_id": "227:00007210"
+  },
+  {
+    "name": "SEGINFO",
+    "type_index": 5395,
+    "scope_id": null,
+    "record_id": "227:00007390"
+  },
+  {
+    "name": "SCANNER",
+    "type_index": 4749,
+    "scope_id": null,
+    "record_id": "227:000073a0"
+  },
+  {
+    "name": "LPLOGBRUSH",
+    "type_index": 5423,
+    "scope_id": null,
+    "record_id": "227:000073b0"
+  },
+  {
+    "name": "_rtxferf",
+    "type_index": 5174,
+    "scope_id": null,
+    "record_id": "227:000073c4"
+  },
+  {
+    "name": "_rtxferl",
+    "type_index": 5169,
+    "scope_id": null,
+    "record_id": "227:000073d4"
+  },
+  {
+    "name": "_rtxferx",
+    "type_index": 5153,
+    "scope_id": null,
+    "record_id": "227:00007400"
+  },
+  {
+    "name": "PMETARECORD",
+    "type_index": 5280,
+    "scope_id": null,
+    "record_id": "227:00007428"
+  },
+  {
+    "name": "_rtwaypt",
+    "type_index": 5226,
+    "scope_id": null,
+    "record_id": "227:0000744c"
+  },
+  {
+    "name": "THMINE",
+    "type_index": 5161,
+    "scope_id": null,
+    "record_id": "227:0000745c"
+  },
+  {
+    "name": "_zipprodq",
+    "type_index": 4337,
+    "scope_id": null,
+    "record_id": "227:000074c8"
+  },
+  {
+    "name": "_zipprodq1",
+    "type_index": 4335,
+    "scope_id": null,
+    "record_id": "227:000074d8"
+  },
+  {
+    "name": "NEARPROC",
+    "type_index": 5182,
+    "scope_id": null,
+    "record_id": "227:00007504"
+  },
+  {
+    "name": "LPFNNOTIFYCALLBACK",
+    "type_index": 4430,
+    "scope_id": null,
+    "record_id": "227:00007524"
+  },
+  {
+    "name": "fpos_t",
+    "type_index": 18,
+    "scope_id": null,
+    "record_id": "227:000075fc"
+  },
+  {
+    "name": "_special",
+    "type_index": 4766,
+    "scope_id": null,
+    "record_id": "227:0000761c"
+  },
+  {
+    "name": "HMMIO",
+    "type_index": 115,
+    "scope_id": null,
+    "record_id": "227:000076cc"
+  },
+  {
+    "name": "HGDIOBJ",
+    "type_index": 115,
+    "scope_id": null,
+    "record_id": "227:000076d8"
+  },
+  {
+    "name": "LPBITMAPFILEHEADER",
+    "type_index": 5136,
+    "scope_id": null,
+    "record_id": "227:000076fc"
+  },
+  {
+    "name": "LPBITMAPCOREINFO",
+    "type_index": 4981,
+    "scope_id": null,
+    "record_id": "227:0000775c"
+  },
+  {
+    "name": "_scanner",
+    "type_index": 4749,
+    "scope_id": null,
+    "record_id": "227:0000779c"
+  },
+  {
+    "name": "PPLANETSOME",
+    "type_index": 4979,
+    "scope_id": null,
+    "record_id": "227:000077ac"
+  },
+  {
+    "name": "LOGFONT",
+    "type_index": 4503,
+    "scope_id": null,
+    "record_id": "227:00007864"
+  },
+  {
+    "name": "ldiv_t",
+    "type_index": 5485,
+    "scope_id": null,
+    "record_id": "227:00007874"
+  },
+  {
+    "name": "LPDWORD",
+    "type_index": 546,
+    "scope_id": null,
+    "record_id": "227:00007884"
+  },
+  {
+    "name": "onexit_t",
+    "type_index": 5457,
+    "scope_id": null,
+    "record_id": "227:000078a4"
+  },
+  {
+    "name": "_rtshdef",
+    "type_index": 5327,
+    "scope_id": null,
+    "record_id": "227:000078c4"
+  },
+  {
+    "name": "BITMAPINFOHEADER",
+    "type_index": 4539,
+    "scope_id": null,
+    "record_id": "227:000078e4"
+  },
+  {
+    "name": "_scan",
+    "type_index": 4167,
+    "scope_id": null,
+    "record_id": "227:00007954"
+  },
+  {
+    "name": "_thing",
+    "type_index": 4102,
+    "scope_id": null,
+    "record_id": "227:00007960"
+  },
+  {
+    "name": "_planet",
+    "type_index": 4098,
+    "scope_id": null,
+    "record_id": "227:00007970"
+  },
+  {
+    "name": "LSB",
+    "type_index": 5259,
+    "scope_id": null,
+    "record_id": "227:000079a0"
+  },
+  {
+    "name": "LPPAINTSTRUCT",
+    "type_index": 5458,
+    "scope_id": null,
+    "record_id": "227:000079cc"
+  },
+  {
+    "name": "NPPAINTSTRUCT",
+    "type_index": 5441,
+    "scope_id": null,
+    "record_id": "227:000079e0"
+  },
+  {
+    "name": "HWAVEOUT",
+    "type_index": 115,
+    "scope_id": null,
+    "record_id": "227:000079f4"
+  },
+  {
+    "name": "LPCATCHBUF",
+    "type_index": 626,
+    "scope_id": null,
+    "record_id": "227:00007a38"
+  },
+  {
+    "name": "tagMETAFILEPICT",
+    "type_index": 5036,
+    "scope_id": null,
+    "record_id": "227:00007a60"
+  },
+  {
+    "name": "HPALETTE",
+    "type_index": 115,
+    "scope_id": null,
+    "record_id": "227:00007b40"
+  },
+  {
+    "name": "tagKERNINGPAIR",
+    "type_index": 5400,
+    "scope_id": null,
+    "record_id": "227:00007b50"
+  },
+  {
+    "name": "tagEVENTMSG",
+    "type_index": 4939,
+    "scope_id": null,
+    "record_id": "227:00007b68"
+  },
+  {
+    "name": "LPDEVNAMES",
+    "type_index": 5142,
+    "scope_id": null,
+    "record_id": "227:00007b7c"
+  },
+  {
+    "name": "RTWAYPT",
+    "type_index": 5226,
+    "scope_id": null,
+    "record_id": "227:00007b90"
+  },
+  {
+    "name": "tagCHOOSEFONT",
+    "type_index": 5224,
+    "scope_id": null,
+    "record_id": "227:00007be0"
+  },
+  {
+    "name": "LPWINDOWPLACEMENT",
+    "type_index": 5366,
+    "scope_id": null,
+    "record_id": "227:00007c08"
+  },
+  {
+    "name": "SPECIAL",
+    "type_index": 4766,
+    "scope_id": null,
+    "record_id": "227:00007c20"
+  },
+  {
+    "name": "XFERFULL",
+    "type_index": 4912,
+    "scope_id": null,
+    "record_id": "227:00007c40"
+  },
+  {
+    "name": "LPLOGFONT",
+    "type_index": 5222,
+    "scope_id": null,
+    "record_id": "227:00007c7c"
+  },
+  {
+    "name": "LPPLANETMINIMAL",
+    "type_index": 5442,
+    "scope_id": null,
+    "record_id": "227:00007cc4"
+  },
+  {
+    "name": "LOGPALETTE",
+    "type_index": 4542,
+    "scope_id": null,
+    "record_id": "227:00007cdc"
+  },
+  {
+    "name": "tagSIZE",
+    "type_index": 5368,
+    "scope_id": null,
+    "record_id": "227:00007cf0"
+  },
+  {
+    "name": "PLOGBRUSH",
+    "type_index": 5403,
+    "scope_id": null,
+    "record_id": "227:00007d7c"
+  },
+  {
+    "name": "LPRGBQUAD",
+    "type_index": 5219,
+    "scope_id": null,
+    "record_id": "227:00007d8c"
+  },
+  {
+    "name": "va_list",
+    "type_index": 368,
+    "scope_id": null,
+    "record_id": "227:00007dcc"
+  },
+  {
+    "name": "VERSION",
+    "type_index": 33,
+    "scope_id": null,
+    "record_id": "227:00007ddc"
+  },
+  {
+    "name": "TASKLAYMINES",
+    "type_index": 4993,
+    "scope_id": null,
+    "record_id": "227:00007e50"
+  },
+  {
+    "name": "_btlrec26",
+    "type_index": 5176,
+    "scope_id": null,
+    "record_id": "227:00007e64"
+  },
+  {
+    "name": "LOCALHANDLE",
+    "type_index": 115,
+    "scope_id": null,
+    "record_id": "227:00007f64"
+  },
+  {
+    "name": "_logxferf",
+    "type_index": 5115,
+    "scope_id": null,
+    "record_id": "227:000080dc"
+  },
+  {
+    "name": "LPFIXED",
+    "type_index": 5158,
+    "scope_id": null,
+    "record_id": "227:000080ec"
+  },
+  {
+    "name": "METAHEADER",
+    "type_index": 5120,
+    "scope_id": null,
+    "record_id": "227:000080fc"
+  },
+  {
+    "name": "LPMIXWAVE",
+    "type_index": 515,
+    "scope_id": null,
+    "record_id": "227:0000813c"
+  },
+  {
+    "name": "LPRASTERIZER_STATUS",
+    "type_index": 5486,
+    "scope_id": null,
+    "record_id": "227:0000814c"
+  },
+  {
+    "name": "HMIDIOUT",
+    "type_index": 115,
+    "scope_id": null,
+    "record_id": "227:00008168"
+  },
+  {
+    "name": "LPDEBUGHOOKINFO",
+    "type_index": 5105,
+    "scope_id": null,
+    "record_id": "227:000081ac"
+  },
+  {
+    "name": "tagDEBUGHOOKINFO",
+    "type_index": 5038,
+    "scope_id": null,
+    "record_id": "227:000081c4"
+  },
+  {
+    "name": "_mining",
+    "type_index": 4771,
+    "scope_id": null,
+    "record_id": "227:000081fc"
+  },
+  {
+    "name": "_aihist",
+    "type_index": 5218,
+    "scope_id": null,
+    "record_id": "227:0000820c"
+  },
+  {
+    "name": "_engine",
+    "type_index": 4636,
+    "scope_id": null,
+    "record_id": "227:0000821c"
+  },
+  {
+    "name": "_thmine",
+    "type_index": 5161,
+    "scope_id": null,
+    "record_id": "227:0000822c"
+  },
+  {
+    "name": "_player",
+    "type_index": 4116,
+    "scope_id": null,
+    "record_id": "227:0000823c"
+  },
+  {
+    "name": "PNEWTEXTMETRIC",
+    "type_index": 5347,
+    "scope_id": null,
+    "record_id": "227:0000824c"
+  },
+  {
+    "name": "MSG",
+    "type_index": 4523,
+    "scope_id": null,
+    "record_id": "227:00008264"
+  },
+  {
+    "name": "tagDEVNAMES",
+    "type_index": 5096,
+    "scope_id": null,
+    "record_id": "227:000082e0"
+  },
+  {
+    "name": "_cyberinfo",
+    "type_index": 4158,
+    "scope_id": null,
+    "record_id": "227:00008320"
+  },
+  {
+    "name": "PLANETARY",
+    "type_index": 4753,
+    "scope_id": null,
+    "record_id": "227:00008344"
+  },
+  {
+    "name": "GRAYSTRINGPROC",
+    "type_index": 4151,
+    "scope_id": null,
+    "record_id": "227:00008458"
+  },
+  {
+    "name": "HOOKPROC",
+    "type_index": 4151,
+    "scope_id": null,
+    "record_id": "227:0000851c"
+  },
+  {
+    "name": "tagBITMAPCOREINFO",
+    "type_index": 4971,
+    "scope_id": null,
+    "record_id": "227:00008580"
+  },
+  {
+    "name": "HMIDIIN",
+    "type_index": 115,
+    "scope_id": null,
+    "record_id": "227:0000873c"
+  },
+  {
+    "name": "tagHANDLETABLE",
+    "type_index": 5195,
+    "scope_id": null,
+    "record_id": "227:00008764"
+  },
+  {
+    "name": "OLDFONTENUMPROC",
+    "type_index": 4151,
+    "scope_id": null,
+    "record_id": "227:0000888c"
+  },
+  {
+    "name": "LPPOINT",
+    "type_index": 5363,
+    "scope_id": null,
+    "record_id": "227:000088a4"
+  },
+  {
+    "name": "LPTHING",
+    "type_index": 4103,
+    "scope_id": null,
+    "record_id": "227:000088b4"
+  },
+  {
+    "name": "LPVOID",
+    "type_index": 515,
+    "scope_id": null,
+    "record_id": "227:000088c4"
+  },
+  {
+    "name": "PDELETEITEMSTRUCT",
+    "type_index": 5361,
+    "scope_id": null,
+    "record_id": "227:0000890c"
+  },
+  {
+    "name": "MSGBIG",
+    "type_index": 4822,
+    "scope_id": null,
+    "record_id": "227:0000894c"
+  },
+  {
+    "name": "NPPOINT",
+    "type_index": 4128,
+    "scope_id": null,
+    "record_id": "227:00008980"
+  },
+  {
+    "name": "_msghdr",
+    "type_index": 4832,
+    "scope_id": null,
+    "record_id": "227:000089bc"
+  },
+  {
+    "name": "tagNCCALCSIZE_PARAMS",
+    "type_index": 5386,
+    "scope_id": null,
+    "record_id": "227:000089cc"
+  },
+  {
+    "name": "LPCHOOSECOLOR",
+    "type_index": 5382,
+    "scope_id": null,
+    "record_id": "227:000089e8"
+  },
+  {
+    "name": "_popupdata",
+    "type_index": 4291,
+    "scope_id": null,
+    "record_id": "227:00008a0c"
+  },
+  {
+    "name": "YIELDPROC",
+    "type_index": 5759,
+    "scope_id": null,
+    "record_id": "227:00008a34"
+  },
+  {
+    "name": "LPTIMECALLBACK",
+    "type_index": 5762,
+    "scope_id": null,
+    "record_id": "227:00008a64"
+  },
+  {
+    "name": "LPPALETTEENTRY",
+    "type_index": 5357,
+    "scope_id": null,
+    "record_id": "227:00008a90"
+  },
+  {
+    "name": "NPLOGFONT",
+    "type_index": 4504,
+    "scope_id": null,
+    "record_id": "227:00008b6c"
+  },
+  {
+    "name": "TASKPATROL",
+    "type_index": 4995,
+    "scope_id": null,
+    "record_id": "227:00008b8c"
+  },
+  {
+    "name": "LPDELETEITEMSTRUCT",
+    "type_index": 5369,
+    "scope_id": null,
+    "record_id": "227:00008c54"
+  },
+  {
+    "name": "tagCLIENTCREATESTRUCT",
+    "type_index": 5028,
+    "scope_id": null,
+    "record_id": "227:00008cd0"
+  },
+  {
+    "name": "ZIPPRODQ1",
+    "type_index": 4335,
+    "scope_id": null,
+    "record_id": "227:00008d04"
+  },
+  {
+    "name": "HARDWAREHOOKSTRUCT",
+    "type_index": 5341,
+    "scope_id": null,
+    "record_id": "227:00008d14"
+  },
+  {
+    "name": "HANDLETABLE",
+    "type_index": 5195,
+    "scope_id": null,
+    "record_id": "227:00008d54"
+  },
+  {
+    "name": "LPBITMAPCOREHEADER",
+    "type_index": 4538,
+    "scope_id": null,
+    "record_id": "227:00008d80"
+  },
+  {
+    "name": "ENUMLOGFONT",
+    "type_index": 5407,
+    "scope_id": null,
+    "record_id": "227:00008d9c"
+  },
+  {
+    "name": "_framestuff",
+    "type_index": 4152,
+    "scope_id": null,
+    "record_id": "227:00008de4"
+  },
+  {
+    "name": "tagLOGFONT",
+    "type_index": 4503,
+    "scope_id": null,
+    "record_id": "227:00008eb0"
+  },
+  {
+    "name": "tagLOGPEN",
+    "type_index": 5127,
+    "scope_id": null,
+    "record_id": "227:00008ec4"
+  },
+  {
+    "name": "_onexit_t",
+    "type_index": 5457,
+    "scope_id": null,
+    "record_id": "227:00008ed4"
+  },
+  {
+    "name": "LPSIZE",
+    "type_index": 5401,
+    "scope_id": null,
+    "record_id": "227:00008f00"
+  },
+  {
+    "name": "tagWINDOWPLACEMENT",
+    "type_index": 5301,
+    "scope_id": null,
+    "record_id": "227:00008f20"
+  },
+  {
+    "name": "KERNINGPAIR",
+    "type_index": 5400,
+    "scope_id": null,
+    "record_id": "227:00008f4c"
+  },
+  {
+    "name": "NPSIZE",
+    "type_index": 5383,
+    "scope_id": null,
+    "record_id": "227:00008f7c"
+  },
+  {
+    "name": "_diskfree_t",
+    "type_index": 4464,
+    "scope_id": null,
+    "record_id": "227:00008f8c"
+  },
+  {
+    "name": "LPCOMPAREITEMSTRUCT",
+    "type_index": 5449,
+    "scope_id": null,
+    "record_id": "227:00008fc8"
+  },
+  {
+    "name": "_wn",
+    "type_index": 5429,
+    "scope_id": null,
+    "record_id": "227:00008fe4"
+  },
+  {
+    "name": "_hs",
+    "type_index": 4216,
+    "scope_id": null,
+    "record_id": "227:00008ff0"
+  },
+  {
+    "name": "_dv",
+    "type_index": 4440,
+    "scope_id": null,
+    "record_id": "227:00008ffc"
+  },
+  {
+    "name": "OBJ",
+    "type_index": 5042,
+    "scope_id": null,
+    "record_id": "227:00009010"
+  },
+  {
+    "name": "_hb",
+    "type_index": 4431,
+    "scope_id": null,
+    "record_id": "227:0000901c"
+  },
+  {
+    "name": "_pl",
+    "type_index": 4700,
+    "scope_id": null,
+    "record_id": "227:00009028"
+  },
+  {
+    "name": "DRIVERPROC",
+    "type_index": 5440,
+    "scope_id": null,
+    "record_id": "227:00009080"
+  },
+  {
+    "name": "PBITMAPFILEHEADER",
+    "type_index": 5125,
+    "scope_id": null,
+    "record_id": "227:000091cc"
+  },
+  {
+    "name": "clock_t",
+    "type_index": 18,
+    "scope_id": null,
+    "record_id": "227:000091e4"
+  },
+  {
+    "name": "MINMAXINFO",
+    "type_index": 5393,
+    "scope_id": null,
+    "record_id": "227:000092a0"
+  },
+  {
+    "name": "ZIPORDER",
+    "type_index": 4229,
+    "scope_id": null,
+    "record_id": "227:00009338"
+  },
+  {
+    "name": "ZIPPRODQ",
+    "type_index": 4337,
+    "scope_id": null,
+    "record_id": "227:00009374"
+  },
+  {
+    "name": "HHOOK",
+    "type_index": 34,
+    "scope_id": null,
+    "record_id": "227:000093b4"
+  },
+  {
+    "name": "HTASK",
+    "type_index": 115,
+    "scope_id": null,
+    "record_id": "227:000093d4"
+  },
+  {
+    "name": "_rtplanet",
+    "type_index": 5346,
+    "scope_id": null,
+    "record_id": "227:00009490"
+  },
+  {
+    "name": "LPCHOOSEFONT",
+    "type_index": 5292,
+    "scope_id": null,
+    "record_id": "227:000094f8"
+  },
+  {
+    "name": "_rtchgshdef",
+    "type_index": 5337,
+    "scope_id": null,
+    "record_id": "227:00009558"
+  },
+  {
+    "name": "PPLANETMINIMAL",
+    "type_index": 5454,
+    "scope_id": null,
+    "record_id": "227:00009588"
+  },
+  {
+    "name": "_planetminimal",
+    "type_index": 5426,
+    "scope_id": null,
+    "record_id": "227:000095a0"
+  },
+  {
+    "name": "_rthisthdr",
+    "type_index": 4930,
+    "scope_id": null,
+    "record_id": "227:000095e0"
+  },
+  {
+    "name": "PPAINTSTRUCT",
+    "type_index": 5441,
+    "scope_id": null,
+    "record_id": "227:00009604"
+  },
+  {
+    "name": "BITMAPCOREHEADER",
+    "type_index": 4537,
+    "scope_id": null,
+    "record_id": "227:00009634"
+  }
+]

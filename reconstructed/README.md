@@ -1,3 +1,5 @@
 # Reconstructed source
 
-Place reviewed source and recovered headers here as subsystem reconstruction proceeds. No buildable source has been reconstructed yet. The first manual example lives in `notes/FIRST_RECONSTRUCTION.md`; coverage must distinguish notes from compiled source.
+Step 2 generates storage-view headers and effective declarations in `include/`. They are reproducible with `python3 tools/debug_headers.py`; see `analysis/debug/README.md` for their representation, limitations and checks.
+
+No complete application implementation exists yet. The first manual function example remains in `notes/FIRST_RECONSTRUCTION.md`. Header compilation is not counted as compiled function reconstruction.

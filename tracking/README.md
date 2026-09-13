@@ -24,7 +24,7 @@ The ledger excludes non-segment file regions and dynamic heap/stack growth. Whol
 
 ## Version-control policy
 
-Use local Git only; no remote or publication is configured by this step. Track tools, tests, documentation, ledgers, future reconstructed source and small curated validation fixtures. Track the current deterministic analysis JSON/Markdown snapshots, including `analysis/ne/layout.json` and its report so changes can be reviewed against the tools that produced them.
+Use local Git only; no remote or publication is configured by this step. Track tools, tests, documentation, ledgers, future reconstructed source and small curated validation fixtures. Track the current deterministic analysis JSON/Markdown snapshots, including the NE and debug recovery subdirectories and their reports so changes can be reviewed against the tools that produced them.
 
 Preserve `target/` in place but exclude original binaries/archives and OS metadata from Git. The tracked input manifest identifies required originals; a checkout needs those same originals restored locally before regeneration. Git is not a backup of the supplied archive. Keep the original archive in your normal backed-up storage.
 
@@ -39,8 +39,12 @@ python3 tools/baseline.py --check
 python3 tools/extract_debug.py
 python3 tools/render_layouts.py
 python3 tools/ne_layout.py
+python3 tools/recover_debug.py
+python3 tools/debug_headers.py
 python3 tools/baseline.py --check
 python3 -m unittest discover -s tests
 ```
 
 `--check` compares both retained artifacts without rewriting them and detects changed input files. For an intentional, reviewed inventory or progress change, run `python3 tools/baseline.py`, inspect the diff, and then run the checks. Regeneration must not silently bless an unexpected changed original.
+
+Step 2 adds `analysis/debug/coverage.json`, preserving the baseline ranges and annotating public-symbol anchors. It does not inflate completed-code coverage. Signature corrections live in `tracking/debug_signature_overrides.json`; generated headers and their check source are tracked under `reconstructed/include/`.

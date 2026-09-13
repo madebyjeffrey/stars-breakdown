@@ -1,0 +1,17 @@
+[
+  {
+    "url": "https://raw.githubusercontent.com/microsoft/microsoft-pdb/master/include/cvinfo.h",
+    "sha256": "c5ad2bfe11e659ead18cc08d23b77768320a7046a135b0173d6b4e5d8c99d63b",
+    "access_date": "2026-09-13"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/microsoft/microsoft-pdb/master/include/cvconst.h",
+    "sha256": "2616d86d7f05d028818a4ac4ec627bcc5b7f57ca72f57c27edc31e204ca69415",
+    "access_date": "2026-09-13"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/wine-mirror/wine/master/tools/winedump/debug.c",
+    "sha256": "1bb0a92398cb445e64770934e9033c28d97fe2aaa60ba380f6d6d058c28255da",
+    "access_date": "2026-09-13"
+  }
+]
