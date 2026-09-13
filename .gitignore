@@ -1,0 +1,10 @@
+# Preserved originals are identified by the tracked input manifest.
+/target/
+.DS_Store
+__pycache__/
+*.py[cod]
+.venv/
+/build/
+/dist/
+/runs/
+/ghidra_projects/

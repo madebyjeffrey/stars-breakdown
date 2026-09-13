@@ -1,0 +1,1715 @@
+{
+  "1": {
+    "name": ".\\mantold.asm",
+    "spans": [
+      {
+        "segment": 38,
+        "padding": 0,
+        "offset": 15068,
+        "size": 185
+      }
+    ],
+    "library": 1
+  },
+  "2": {
+    "name": ".\\tenpow.asm",
+    "spans": [
+      {
+        "segment": 38,
+        "padding": 0,
+        "offset": 13770,
+        "size": 1297
+      }
+    ],
+    "library": 1
+  },
+  "3": {
+    "name": ".\\strgtold.asm",
+    "spans": [
+      {
+        "segment": 38,
+        "padding": 0,
+        "offset": 13154,
+        "size": 616
+      }
+    ],
+    "library": 1
+  },
+  "4": {
+    "name": ".\\strgtod.asm",
+    "spans": [
+      {
+        "segment": 38,
+        "padding": 0,
+        "offset": 13050,
+        "size": 104
+      }
+    ],
+    "library": 1
+  },
+  "5": {
+    "name": ".\\x8tmul.asm",
+    "spans": [
+      {
+        "segment": 38,
+        "padding": 0,
+        "offset": 12608,
+        "size": 441
+      }
+    ],
+    "library": 1
+  },
+  "6": {
+    "name": "windows\\nheap.c",
+    "spans": [
+      {
+        "segment": 38,
+        "padding": 0,
+        "offset": 12360,
+        "size": 248
+      }
+    ],
+    "library": 1
+  },
+  "7": {
+    "name": ".\\cfinn.c",
+    "spans": [
+      {
+        "segment": 38,
+        "padding": 0,
+        "offset": 12264,
+        "size": 96
+      }
+    ],
+    "library": 1
+  },
+  "8": {
+    "name": ".\\fastmult.asm",
+    "spans": [
+      {
+        "segment": 38,
+        "padding": 0,
+        "offset": 11992,
+        "size": 271
+      }
+    ],
+    "library": 1
+  },
+  "9": {
+    "name": ".\\fastadd.asm",
+    "spans": [
+      {
+        "segment": 38,
+        "padding": 0,
+        "offset": 11608,
+        "size": 384
+      }
+    ],
+    "library": 1
+  },
+  "10": {
+    "name": ".\\x8fout.asm",
+    "spans": [
+      {
+        "segment": 38,
+        "padding": 0,
+        "offset": 11204,
+        "size": 403
+      }
+    ],
+    "library": 1
+  },
+  "11": {
+    "name": "growseg.asm",
+    "spans": [
+      {
+        "segment": 38,
+        "padding": 0,
+        "offset": 10930,
+        "size": 274
+      }
+    ],
+    "library": 1
+  },
+  "12": {
+    "name": "malloc.asm",
+    "spans": [],
+    "library": 1
+  },
+  "13": {
+    "name": "windows\\windgrpx.c",
+    "spans": [
+      {
+        "segment": 38,
+        "padding": 0,
+        "offset": 10910,
+        "size": 20
+      }
+    ],
+    "library": 1
+  },
+  "14": {
+    "name": ".\\matherr.asm",
+    "spans": [
+      {
+        "segment": 38,
+        "padding": 0,
+        "offset": 10884,
+        "size": 25
+      }
+    ],
+    "library": 1
+  },
+  "15": {
+    "name": ".\\huge.asm",
+    "spans": [],
+    "library": 1
+  },
+  "16": {
+    "name": ".\\cfout.asm",
+    "spans": [
+      {
+        "segment": 38,
+        "padding": 0,
+        "offset": 10804,
+        "size": 80
+      }
+    ],
+    "library": 1
+  },
+  "17": {
+    "name": ".\\87exist.asm",
+    "spans": [
+      {
+        "segment": 38,
+        "padding": 0,
+        "offset": 10670,
+        "size": 133
+      }
+    ],
+    "library": 1
+  },
+  "18": {
+    "name": ".\\emtrigx.asm",
+    "spans": [
+      {
+        "segment": 38,
+        "padding": 0,
+        "offset": 9440,
+        "size": 1229
+      }
+    ],
+    "library": 1
+  },
+  "19": {
+    "name": ".\\87disp.asm",
+    "spans": [
+      {
+        "segment": 38,
+        "padding": 0,
+        "offset": 9184,
+        "size": 255
+      }
+    ],
+    "library": 1
+  },
+  "20": {
+    "name": "dos\\wrt2err.asm",
+    "spans": [
+      {
+        "segment": 38,
+        "padding": 0,
+        "offset": 9106,
+        "size": 77
+      }
+    ],
+    "library": 1
+  },
+  "21": {
+    "name": "_fptostr.c",
+    "spans": [
+      {
+        "segment": 38,
+        "padding": 0,
+        "offset": 8952,
+        "size": 154
+      }
+    ],
+    "library": 1
+  },
+  "22": {
+    "name": "atof.c",
+    "spans": [
+      {
+        "segment": 38,
+        "padding": 0,
+        "offset": 8876,
+        "size": 76
+      }
+    ],
+    "library": 1
+  },
+  "23": {
+    "name": "windows\\windgrp.asm",
+    "spans": [
+      {
+        "segment": 38,
+        "padding": 0,
+        "offset": 8860,
+        "size": 16
+      }
+    ],
+    "library": 1
+  },
+  "24": {
+    "name": "dos\\stdalloc.asm",
+    "spans": [
+      {
+        "segment": 38,
+        "padding": 0,
+        "offset": 8814,
+        "size": 45
+      }
+    ],
+    "library": 1
+  },
+  "25": {
+    "name": "dos\\nmsghdr.asm",
+    "spans": [
+      {
+        "segment": 38,
+        "padding": 0,
+        "offset": 8698,
+        "size": 116
+      }
+    ],
+    "library": 1
+  },
+  "26": {
+    "name": "windows\\wnull.asm",
+    "spans": [],
+    "library": 1
+  },
+  "27": {
+    "name": "windows\\noqwin.asm",
+    "spans": [
+      {
+        "segment": 38,
+        "padding": 0,
+        "offset": 8686,
+        "size": 11
+      }
+    ],
+    "library": 1
+  },
+  "28": {
+    "name": ".\\cfpsig.asm",
+    "spans": [
+      {
+        "segment": 38,
+        "padding": 0,
+        "offset": 8650,
+        "size": 36
+      }
+    ],
+    "library": 1
+  },
+  "29": {
+    "name": ".\\87cdisp.asm",
+    "spans": [
+      {
+        "segment": 38,
+        "padding": 0,
+        "offset": 8218,
+        "size": 432
+      }
+    ],
+    "library": 1
+  },
+  "30": {
+    "name": ".\\cvt.c",
+    "spans": [
+      {
+        "segment": 38,
+        "padding": 0,
+        "offset": 6640,
+        "size": 1578
+      }
+    ],
+    "library": 1
+  },
+  "31": {
+    "name": ".\\87triga.asm",
+    "spans": [
+      {
+        "segment": 38,
+        "padding": 0,
+        "offset": 6442,
+        "size": 198
+      }
+    ],
+    "library": 1
+  },
+  "32": {
+    "name": ".\\87trig.asm",
+    "spans": [
+      {
+        "segment": 38,
+        "padding": 0,
+        "offset": 6182,
+        "size": 260
+      }
+    ],
+    "library": 1
+  },
+  "33": {
+    "name": ".\\87tran.asm",
+    "spans": [
+      {
+        "segment": 38,
+        "padding": 0,
+        "offset": 5806,
+        "size": 376
+      }
+    ],
+    "library": 1
+  },
+  "34": {
+    "name": ".\\87sqrt.asm",
+    "spans": [
+      {
+        "segment": 38,
+        "padding": 0,
+        "offset": 5784,
+        "size": 21
+      }
+    ],
+    "library": 1
+  },
+  "35": {
+    "name": "xtoa.asm",
+    "spans": [
+      {
+        "segment": 38,
+        "padding": 0,
+        "offset": 5688,
+        "size": 95
+      }
+    ],
+    "library": 1
+  },
+  "36": {
+    "name": "os2\\hdiff.asm",
+    "spans": [
+      {
+        "segment": 38,
+        "padding": 0,
+        "offset": 5656,
+        "size": 32
+      }
+    ],
+    "library": 1
+  },
+  "37": {
+    "name": "cmiscdat.asm",
+    "spans": [],
+    "library": 1
+  },
+  "38": {
+    "name": "atox.asm",
+    "spans": [
+      {
+        "segment": 38,
+        "padding": 0,
+        "offset": 5572,
+        "size": 84
+      }
+    ],
+    "library": 1
+  },
+  "39": {
+    "name": "seekfast.asm",
+    "spans": [],
+    "library": 1
+  },
+  "40": {
+    "name": "stackava.asm",
+    "spans": [
+      {
+        "segment": 38,
+        "padding": 0,
+        "offset": 5552,
+        "size": 20
+      }
+    ],
+    "library": 1
+  },
+  "41": {
+    "name": "dos\\dosret.asm",
+    "spans": [
+      {
+        "segment": 38,
+        "padding": 0,
+        "offset": 5458,
+        "size": 93
+      }
+    ],
+    "library": 1
+  },
+  "42": {
+    "name": "windows\\fatal.asm",
+    "spans": [
+      {
+        "segment": 38,
+        "padding": 0,
+        "offset": 5386,
+        "size": 71
+      }
+    ],
+    "library": 1
+  },
+  "43": {
+    "name": "dos\\stdenvp.asm",
+    "spans": [
+      {
+        "segment": 38,
+        "padding": 0,
+        "offset": 5242,
+        "size": 144
+      }
+    ],
+    "library": 1
+  },
+  "44": {
+    "name": "dos\\stdargv.asm",
+    "spans": [
+      {
+        "segment": 38,
+        "padding": 0,
+        "offset": 4856,
+        "size": 385
+      }
+    ],
+    "library": 1
+  },
+  "45": {
+    "name": "windows\\wchkstk.asm",
+    "spans": [
+      {
+        "segment": 38,
+        "padding": 0,
+        "offset": 4772,
+        "size": 83
+      }
+    ],
+    "library": 1
+  },
+  "46": {
+    "name": "crt0fp.asm",
+    "spans": [
+      {
+        "segment": 38,
+        "padding": 0,
+        "offset": 4766,
+        "size": 6
+      }
+    ],
+    "library": 1
+  },
+  "47": {
+    "name": "dos\\crt0msg.asm",
+    "spans": [
+      {
+        "segment": 38,
+        "padding": 0,
+        "offset": 4730,
+        "size": 35
+      }
+    ],
+    "library": 1
+  },
+  "48": {
+    "name": "windows\\stubmain.asm",
+    "spans": [
+      {
+        "segment": 38,
+        "padding": 0,
+        "offset": 4686,
+        "size": 44
+      }
+    ],
+    "library": 1
+  },
+  "49": {
+    "name": ".\\fltusedc.asm",
+    "spans": [
+      {
+        "segment": 38,
+        "padding": 0,
+        "offset": 4666,
+        "size": 20
+      }
+    ],
+    "library": 1
+  },
+  "50": {
+    "name": ".\\87ftol.asm",
+    "spans": [
+      {
+        "segment": 38,
+        "padding": 0,
+        "offset": 4604,
+        "size": 61
+      }
+    ],
+    "library": 1
+  },
+  "51": {
+    "name": ".\\87fcmp.asm",
+    "spans": [
+      {
+        "segment": 38,
+        "padding": 0,
+        "offset": 4520,
+        "size": 84
+      }
+    ],
+    "library": 1
+  },
+  "52": {
+    "name": ".\\87ctriga.asm",
+    "spans": [
+      {
+        "segment": 38,
+        "padding": 0,
+        "offset": 4476,
+        "size": 44
+      }
+    ],
+    "library": 1
+  },
+  "53": {
+    "name": ".\\87ctrig.asm",
+    "spans": [
+      {
+        "segment": 38,
+        "padding": 0,
+        "offset": 4444,
+        "size": 32
+      }
+    ],
+    "library": 1
+  },
+  "54": {
+    "name": ".\\87ctran.asm",
+    "spans": [
+      {
+        "segment": 38,
+        "padding": 0,
+        "offset": 4400,
+        "size": 44
+      }
+    ],
+    "library": 1
+  },
+  "55": {
+    "name": ".\\87csqrt.asm",
+    "spans": [
+      {
+        "segment": 38,
+        "padding": 0,
+        "offset": 4388,
+        "size": 12
+      }
+    ],
+    "library": 1
+  },
+  "56": {
+    "name": ".\\fixups.asm",
+    "spans": [],
+    "library": 1
+  },
+  "57": {
+    "name": "hmemcpy.asm",
+    "spans": [
+      {
+        "segment": 38,
+        "padding": 0,
+        "offset": 4186,
+        "size": 202
+      }
+    ],
+    "library": 1
+  },
+  "58": {
+    "name": "hmemset.asm",
+    "spans": [
+      {
+        "segment": 38,
+        "padding": 0,
+        "offset": 4114,
+        "size": 72
+      }
+    ],
+    "library": 1
+  },
+  "59": {
+    "name": "strcat.asm",
+    "spans": [
+      {
+        "segment": 38,
+        "padding": 0,
+        "offset": 4030,
+        "size": 84
+      }
+    ],
+    "library": 1
+  },
+  "60": {
+    "name": "strcpy.asm",
+    "spans": [
+      {
+        "segment": 38,
+        "padding": 0,
+        "offset": 3970,
+        "size": 60
+      }
+    ],
+    "library": 1
+  },
+  "61": {
+    "name": "strcmp.asm",
+    "spans": [
+      {
+        "segment": 38,
+        "padding": 0,
+        "offset": 3928,
+        "size": 41
+      }
+    ],
+    "library": 1
+  },
+  "62": {
+    "name": "strlen.asm",
+    "spans": [
+      {
+        "segment": 38,
+        "padding": 0,
+        "offset": 3902,
+        "size": 25
+      }
+    ],
+    "library": 1
+  },
+  "63": {
+    "name": "stricmp.asm",
+    "spans": [
+      {
+        "segment": 38,
+        "padding": 0,
+        "offset": 3832,
+        "size": 69
+      }
+    ],
+    "library": 1
+  },
+  "64": {
+    "name": "hmemcpy.asm",
+    "spans": [
+      {
+        "segment": 38,
+        "padding": 0,
+        "offset": 3738,
+        "size": 94
+      }
+    ],
+    "library": 1
+  },
+  "65": {
+    "name": "hmemcmp.asm",
+    "spans": [
+      {
+        "segment": 38,
+        "padding": 0,
+        "offset": 3646,
+        "size": 91
+      }
+    ],
+    "library": 1
+  },
+  "66": {
+    "name": "ulshr.asm",
+    "spans": [
+      {
+        "segment": 38,
+        "padding": 0,
+        "offset": 3634,
+        "size": 11
+      }
+    ],
+    "library": 1
+  },
+  "67": {
+    "name": "ulrem.asm",
+    "spans": [
+      {
+        "segment": 38,
+        "padding": 0,
+        "offset": 3528,
+        "size": 106
+      }
+    ],
+    "library": 1
+  },
+  "68": {
+    "name": "uldiv.asm",
+    "spans": [
+      {
+        "segment": 38,
+        "padding": 0,
+        "offset": 3432,
+        "size": 95
+      }
+    ],
+    "library": 1
+  },
+  "69": {
+    "name": "lshr.asm",
+    "spans": [
+      {
+        "segment": 38,
+        "padding": 0,
+        "offset": 3420,
+        "size": 11
+      }
+    ],
+    "library": 1
+  },
+  "70": {
+    "name": "lshl.asm",
+    "spans": [
+      {
+        "segment": 38,
+        "padding": 0,
+        "offset": 3408,
+        "size": 11
+      }
+    ],
+    "library": 1
+  },
+  "71": {
+    "name": "lrem.asm",
+    "spans": [
+      {
+        "segment": 38,
+        "padding": 0,
+        "offset": 3248,
+        "size": 160
+      }
+    ],
+    "library": 1
+  },
+  "72": {
+    "name": "lmul.asm",
+    "spans": [
+      {
+        "segment": 38,
+        "padding": 0,
+        "offset": 3198,
+        "size": 50
+      }
+    ],
+    "library": 1
+  },
+  "73": {
+    "name": "ldiv.asm",
+    "spans": [
+      {
+        "segment": 38,
+        "padding": 0,
+        "offset": 3044,
+        "size": 154
+      }
+    ],
+    "library": 1
+  },
+  "74": {
+    "name": "dos\\diskfree.asm",
+    "spans": [
+      {
+        "segment": 38,
+        "padding": 0,
+        "offset": 2970,
+        "size": 73
+      }
+    ],
+    "library": 1
+  },
+  "75": {
+    "name": "dos\\d_find.asm",
+    "spans": [
+      {
+        "segment": 38,
+        "padding": 0,
+        "offset": 2830,
+        "size": 140
+      }
+    ],
+    "library": 1
+  },
+  "76": {
+    "name": "dos\\unlink.asm",
+    "spans": [
+      {
+        "segment": 38,
+        "padding": 0,
+        "offset": 2794,
+        "size": 36
+      }
+    ],
+    "library": 1
+  },
+  "77": {
+    "name": "dos\\rename.asm",
+    "spans": [
+      {
+        "segment": 38,
+        "padding": 0,
+        "offset": 2750,
+        "size": 43
+      }
+    ],
+    "library": 1
+  },
+  "78": {
+    "name": "dos\\dir.asm",
+    "spans": [
+      {
+        "segment": 38,
+        "padding": 0,
+        "offset": 2636,
+        "size": 113
+      }
+    ],
+    "library": 1
+  },
+  "79": {
+    "name": "dos\\access.asm",
+    "spans": [
+      {
+        "segment": 38,
+        "padding": 0,
+        "offset": 2582,
+        "size": 54
+      }
+    ],
+    "library": 1
+  },
+  "80": {
+    "name": "setjmp.asm",
+    "spans": [
+      {
+        "segment": 38,
+        "padding": 0,
+        "offset": 2504,
+        "size": 77
+      }
+    ],
+    "library": 1
+  },
+  "81": {
+    "name": "qsort.asm",
+    "spans": [
+      {
+        "segment": 38,
+        "padding": 0,
+        "offset": 2150,
+        "size": 353
+      }
+    ],
+    "library": 1
+  },
+  "82": {
+    "name": "labs.c",
+    "spans": [
+      {
+        "segment": 38,
+        "padding": 0,
+        "offset": 2120,
+        "size": 30
+      }
+    ],
+    "library": 1
+  },
+  "83": {
+    "name": "bsearch.c",
+    "spans": [
+      {
+        "segment": 38,
+        "padding": 0,
+        "offset": 1968,
+        "size": 152
+      }
+    ],
+    "library": 1
+  },
+  "84": {
+    "name": "abs.c",
+    "spans": [
+      {
+        "segment": 38,
+        "padding": 0,
+        "offset": 1948,
+        "size": 20
+      }
+    ],
+    "library": 1
+  },
+  "85": {
+    "name": "memset.asm",
+    "spans": [
+      {
+        "segment": 38,
+        "padding": 0,
+        "offset": 1902,
+        "size": 45
+      }
+    ],
+    "library": 1
+  },
+  "86": {
+    "name": "memcpy.asm",
+    "spans": [
+      {
+        "segment": 38,
+        "padding": 0,
+        "offset": 1858,
+        "size": 44
+      }
+    ],
+    "library": 1
+  },
+  "87": {
+    "name": "memcmp.asm",
+    "spans": [
+      {
+        "segment": 38,
+        "padding": 0,
+        "offset": 1818,
+        "size": 39
+      }
+    ],
+    "library": 1
+  },
+  "88": {
+    "name": "memcpy.asm",
+    "spans": [
+      {
+        "segment": 38,
+        "padding": 0,
+        "offset": 1746,
+        "size": 72
+      }
+    ],
+    "library": 1
+  },
+  "89": {
+    "name": "strlwr.asm",
+    "spans": [
+      {
+        "segment": 38,
+        "padding": 0,
+        "offset": 1716,
+        "size": 30
+      }
+    ],
+    "library": 1
+  },
+  "90": {
+    "name": "strrchr.asm",
+    "spans": [
+      {
+        "segment": 38,
+        "padding": 0,
+        "offset": 1676,
+        "size": 40
+      }
+    ],
+    "library": 1
+  },
+  "91": {
+    "name": "strnicmp.asm",
+    "spans": [
+      {
+        "segment": 38,
+        "padding": 0,
+        "offset": 1588,
+        "size": 87
+      }
+    ],
+    "library": 1
+  },
+  "92": {
+    "name": "stricmp.asm",
+    "spans": [
+      {
+        "segment": 38,
+        "padding": 0,
+        "offset": 1522,
+        "size": 66
+      }
+    ],
+    "library": 1
+  },
+  "93": {
+    "name": "strchr.asm",
+    "spans": [
+      {
+        "segment": 38,
+        "padding": 0,
+        "offset": 1480,
+        "size": 41
+      }
+    ],
+    "library": 1
+  },
+  "94": {
+    "name": "dos\\strtime.asm",
+    "spans": [
+      {
+        "segment": 38,
+        "padding": 0,
+        "offset": 1390,
+        "size": 89
+      }
+    ],
+    "library": 1
+  },
+  "95": {
+    "name": "dos\\strdate.asm",
+    "spans": [
+      {
+        "segment": 38,
+        "padding": 0,
+        "offset": 1290,
+        "size": 99
+      }
+    ],
+    "library": 1
+  },
+  "96": {
+    "name": "flength.c",
+    "spans": [
+      {
+        "segment": 38,
+        "padding": 0,
+        "offset": 1136,
+        "size": 154
+      }
+    ],
+    "library": 1
+  },
+  "97": {
+    "name": "tell.c",
+    "spans": [
+      {
+        "segment": 38,
+        "padding": 0,
+        "offset": 1108,
+        "size": 28
+      }
+    ],
+    "library": 1
+  },
+  "98": {
+    "name": "ctype.asm",
+    "spans": [],
+    "library": 1
+  },
+  "99": {
+    "name": "itoa.asm",
+    "spans": [
+      {
+        "segment": 38,
+        "padding": 0,
+        "offset": 1080,
+        "size": 27
+      }
+    ],
+    "library": 1
+  },
+  "100": {
+    "name": "atoi.asm",
+    "spans": [
+      {
+        "segment": 38,
+        "padding": 0,
+        "offset": 1076,
+        "size": 3
+      }
+    ],
+    "library": 1
+  },
+  "101": {
+    "name": "strncpy.asm",
+    "spans": [
+      {
+        "segment": 38,
+        "padding": 0,
+        "offset": 1036,
+        "size": 40
+      }
+    ],
+    "library": 1
+  },
+  "102": {
+    "name": "strlen.asm",
+    "spans": [
+      {
+        "segment": 38,
+        "padding": 0,
+        "offset": 1008,
+        "size": 27
+      }
+    ],
+    "library": 1
+  },
+  "103": {
+    "name": "strcmp.asm",
+    "spans": [
+      {
+        "segment": 38,
+        "padding": 0,
+        "offset": 964,
+        "size": 43
+      }
+    ],
+    "library": 1
+  },
+  "104": {
+    "name": "strcpy.asm",
+    "spans": [
+      {
+        "segment": 38,
+        "padding": 0,
+        "offset": 914,
+        "size": 50
+      }
+    ],
+    "library": 1
+  },
+  "105": {
+    "name": "strcat.asm",
+    "spans": [
+      {
+        "segment": 38,
+        "padding": 0,
+        "offset": 850,
+        "size": 63
+      }
+    ],
+    "library": 1
+  },
+  "106": {
+    "name": "dos\\lseek.asm",
+    "spans": [
+      {
+        "segment": 38,
+        "padding": 0,
+        "offset": 638,
+        "size": 212
+      }
+    ],
+    "library": 1
+  },
+  "107": {
+    "name": "dos\\crt0dat.asm",
+    "spans": [
+      {
+        "segment": 38,
+        "padding": 0,
+        "offset": 196,
+        "size": 441
+      }
+    ],
+    "library": 1
+  },
+  "108": {
+    "name": "windows\\crt0.asm",
+    "spans": [
+      {
+        "segment": 38,
+        "padding": 0,
+        "offset": 16,
+        "size": 179
+      }
+    ],
+    "library": 1
+  },
+  "109": {
+    "name": "turn3.obj",
+    "spans": [
+      {
+        "segment": 23,
+        "padding": 0,
+        "offset": 26520,
+        "size": 14112
+      }
+    ],
+    "library": 256
+  },
+  "110": {
+    "name": "tb.obj",
+    "spans": [
+      {
+        "segment": 14,
+        "padding": 0,
+        "offset": 0,
+        "size": 7790
+      }
+    ],
+    "library": 256
+  },
+  "111": {
+    "name": "ai4.obj",
+    "spans": [
+      {
+        "segment": 22,
+        "padding": 0,
+        "offset": 0,
+        "size": 22145
+      }
+    ],
+    "library": 256
+  },
+  "112": {
+    "name": "ai3.obj",
+    "spans": [
+      {
+        "segment": 21,
+        "padding": 0,
+        "offset": 0,
+        "size": 17434
+      }
+    ],
+    "library": 256
+  },
+  "113": {
+    "name": "ai2.obj",
+    "spans": [
+      {
+        "segment": 20,
+        "padding": 0,
+        "offset": 0,
+        "size": 12335
+      }
+    ],
+    "library": 256
+  },
+  "114": {
+    "name": "ship2.obj",
+    "spans": [
+      {
+        "segment": 17,
+        "padding": 0,
+        "offset": 0,
+        "size": 14807
+      }
+    ],
+    "library": 256
+  },
+  "115": {
+    "name": "thing.obj",
+    "spans": [
+      {
+        "segment": 37,
+        "padding": 0,
+        "offset": 0,
+        "size": 7071
+      }
+    ],
+    "library": 256
+  },
+  "116": {
+    "name": "report.obj",
+    "spans": [
+      {
+        "segment": 34,
+        "padding": 0,
+        "offset": 0,
+        "size": 42148
+      }
+    ],
+    "library": 256
+  },
+  "117": {
+    "name": "tutor2.obj",
+    "spans": [
+      {
+        "segment": 33,
+        "padding": 0,
+        "offset": 0,
+        "size": 23422
+      }
+    ],
+    "library": 256
+  },
+  "118": {
+    "name": "tutor.obj",
+    "spans": [
+      {
+        "segment": 32,
+        "padding": 0,
+        "offset": 0,
+        "size": 33447
+      }
+    ],
+    "library": 256
+  },
+  "119": {
+    "name": "strings.obj",
+    "spans": [
+      {
+        "segment": 3,
+        "padding": 0,
+        "offset": 0,
+        "size": 30105
+      }
+    ],
+    "library": 256
+  },
+  "120": {
+    "name": "aiutil.obj",
+    "spans": [
+      {
+        "segment": 19,
+        "padding": 0,
+        "offset": 0,
+        "size": 41411
+      }
+    ],
+    "library": 256
+  },
+  "121": {
+    "name": "ai.obj",
+    "spans": [
+      {
+        "segment": 18,
+        "padding": 0,
+        "offset": 0,
+        "size": 24764
+      }
+    ],
+    "library": 256
+  },
+  "122": {
+    "name": "vcr.obj",
+    "spans": [
+      {
+        "segment": 30,
+        "padding": 0,
+        "offset": 0,
+        "size": 18878
+      }
+    ],
+    "library": 256
+  },
+  "123": {
+    "name": "utilgen.obj",
+    "spans": [
+      {
+        "segment": 9,
+        "padding": 0,
+        "offset": 0,
+        "size": 27504
+      }
+    ],
+    "library": 256
+  },
+  "124": {
+    "name": "race.obj",
+    "spans": [
+      {
+        "segment": 29,
+        "padding": 0,
+        "offset": 0,
+        "size": 26156
+      }
+    ],
+    "library": 256
+  },
+  "125": {
+    "name": "battle.obj",
+    "spans": [
+      {
+        "segment": 31,
+        "padding": 0,
+        "offset": 0,
+        "size": 48787
+      }
+    ],
+    "library": 256
+  },
+  "126": {
+    "name": "memory.obj",
+    "spans": [
+      {
+        "segment": 13,
+        "padding": 0,
+        "offset": 0,
+        "size": 2393
+      }
+    ],
+    "library": 256
+  },
+  "127": {
+    "name": "research.obj",
+    "spans": [
+      {
+        "segment": 28,
+        "padding": 0,
+        "offset": 0,
+        "size": 27221
+      }
+    ],
+    "library": 256
+  },
+  "128": {
+    "name": "produce.obj",
+    "spans": [
+      {
+        "segment": 27,
+        "padding": 0,
+        "offset": 0,
+        "size": 24564
+      }
+    ],
+    "library": 256
+  },
+  "129": {
+    "name": "parts.obj",
+    "spans": [
+      {
+        "segment": 2,
+        "padding": 0,
+        "offset": 0,
+        "size": 25256
+      }
+    ],
+    "library": 256
+  },
+  "130": {
+    "name": "build.obj",
+    "spans": [
+      {
+        "segment": 26,
+        "padding": 0,
+        "offset": 0,
+        "size": 28189
+      }
+    ],
+    "library": 256
+  },
+  "131": {
+    "name": "popup.obj",
+    "spans": [
+      {
+        "segment": 25,
+        "padding": 0,
+        "offset": 0,
+        "size": 13788
+      }
+    ],
+    "library": 256
+  },
+  "132": {
+    "name": "msg.obj",
+    "spans": [
+      {
+        "segment": 7,
+        "padding": 0,
+        "offset": 0,
+        "size": 43235
+      }
+    ],
+    "library": 256
+  },
+  "133": {
+    "name": "create.obj",
+    "spans": [
+      {
+        "segment": 16,
+        "padding": 0,
+        "offset": 0,
+        "size": 47167
+      }
+    ],
+    "library": 256
+  },
+  "134": {
+    "name": "save.obj",
+    "spans": [
+      {
+        "segment": 15,
+        "padding": 0,
+        "offset": 21630,
+        "size": 29652
+      }
+    ],
+    "library": 256
+  },
+  "135": {
+    "name": "turn2.obj",
+    "spans": [
+      {
+        "segment": 24,
+        "padding": 0,
+        "offset": 0,
+        "size": 36027
+      }
+    ],
+    "library": 256
+  },
+  "136": {
+    "name": "turn.obj",
+    "spans": [
+      {
+        "segment": 23,
+        "padding": 0,
+        "offset": 0,
+        "size": 26519
+      }
+    ],
+    "library": 256
+  },
+  "137": {
+    "name": "dummy.obj",
+    "spans": [],
+    "library": 256
+  },
+  "138": {
+    "name": "log.obj",
+    "spans": [
+      {
+        "segment": 10,
+        "padding": 0,
+        "offset": 35598,
+        "size": 19573
+      }
+    ],
+    "library": 256
+  },
+  "139": {
+    "name": "ship.obj",
+    "spans": [
+      {
+        "segment": 11,
+        "padding": 0,
+        "offset": 0,
+        "size": 53905
+      }
+    ],
+    "library": 256
+  },
+  "140": {
+    "name": "planet.obj",
+    "spans": [
+      {
+        "segment": 10,
+        "padding": 0,
+        "offset": 0,
+        "size": 35597
+      }
+    ],
+    "library": 256
+  },
+  "141": {
+    "name": "file.obj",
+    "spans": [
+      {
+        "segment": 15,
+        "padding": 0,
+        "offset": 0,
+        "size": 21630
+      }
+    ],
+    "library": 256
+  },
+  "142": {
+    "name": "init.obj",
+    "spans": [
+      {
+        "segment": 1,
+        "padding": 0,
+        "offset": 0,
+        "size": 11758
+      }
+    ],
+    "library": 256
+  },
+  "143": {
+    "name": "scan.obj",
+    "spans": [
+      {
+        "segment": 12,
+        "padding": 0,
+        "offset": 0,
+        "size": 40185
+      }
+    ],
+    "library": 256
+  },
+  "144": {
+    "name": "util.obj",
+    "spans": [
+      {
+        "segment": 8,
+        "padding": 0,
+        "offset": 0,
+        "size": 33062
+      }
+    ],
+    "library": 256
+  },
+  "145": {
+    "name": "mine.obj",
+    "spans": [
+      {
+        "segment": 6,
+        "padding": 0,
+        "offset": 0,
+        "size": 23034
+      }
+    ],
+    "library": 256
+  },
+  "146": {
+    "name": "mdi.obj",
+    "spans": [
+      {
+        "segment": 5,
+        "padding": 0,
+        "offset": 0,
+        "size": 38976
+      }
+    ],
+    "library": 256
+  },
+  "147": {
+    "name": "debug.obj",
+    "spans": [],
+    "library": 256
+  },
+  "148": {
+    "name": "stars.obj",
+    "spans": [
+      {
+        "segment": 4,
+        "padding": 0,
+        "offset": 0,
+        "size": 7228
+      }
+    ],
+    "library": 256
+  }
+}

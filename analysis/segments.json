@@ -1,0 +1,261 @@
+[
+  {
+    "segment": 1,
+    "file_offset": 4352,
+    "size": 11758,
+    "flags": 7504,
+    "allocation": 11758
+  },
+  {
+    "segment": 2,
+    "file_offset": 16384,
+    "size": 25256,
+    "flags": 3392,
+    "allocation": 25256
+  },
+  {
+    "segment": 3,
+    "file_offset": 41728,
+    "size": 30105,
+    "flags": 3136,
+    "allocation": 30105
+  },
+  {
+    "segment": 4,
+    "file_offset": 71872,
+    "size": 7228,
+    "flags": 7504,
+    "allocation": 7228
+  },
+  {
+    "segment": 5,
+    "file_offset": 79616,
+    "size": 38975,
+    "flags": 7504,
+    "allocation": 38976
+  },
+  {
+    "segment": 6,
+    "file_offset": 119616,
+    "size": 23034,
+    "flags": 7504,
+    "allocation": 23034
+  },
+  {
+    "segment": 7,
+    "file_offset": 143104,
+    "size": 43235,
+    "flags": 7504,
+    "allocation": 43235
+  },
+  {
+    "segment": 8,
+    "file_offset": 186816,
+    "size": 33062,
+    "flags": 7504,
+    "allocation": 33062
+  },
+  {
+    "segment": 9,
+    "file_offset": 221888,
+    "size": 27504,
+    "flags": 7504,
+    "allocation": 27504
+  },
+  {
+    "segment": 10,
+    "file_offset": 250752,
+    "size": 55171,
+    "flags": 7504,
+    "allocation": 55171
+  },
+  {
+    "segment": 11,
+    "file_offset": 306880,
+    "size": 53905,
+    "flags": 7504,
+    "allocation": 53905
+  },
+  {
+    "segment": 12,
+    "file_offset": 361728,
+    "size": 40185,
+    "flags": 7504,
+    "allocation": 40185
+  },
+  {
+    "segment": 13,
+    "file_offset": 403712,
+    "size": 2393,
+    "flags": 7504,
+    "allocation": 2393
+  },
+  {
+    "segment": 14,
+    "file_offset": 406208,
+    "size": 7789,
+    "flags": 7504,
+    "allocation": 7790
+  },
+  {
+    "segment": 15,
+    "file_offset": 414464,
+    "size": 51282,
+    "flags": 7504,
+    "allocation": 51282
+  },
+  {
+    "segment": 16,
+    "file_offset": 466048,
+    "size": 47167,
+    "flags": 7440,
+    "allocation": 47167
+  },
+  {
+    "segment": 17,
+    "file_offset": 513792,
+    "size": 14807,
+    "flags": 7440,
+    "allocation": 14807
+  },
+  {
+    "segment": 18,
+    "file_offset": 529216,
+    "size": 24764,
+    "flags": 7440,
+    "allocation": 24764
+  },
+  {
+    "segment": 19,
+    "file_offset": 554112,
+    "size": 41411,
+    "flags": 7440,
+    "allocation": 41411
+  },
+  {
+    "segment": 20,
+    "file_offset": 595968,
+    "size": 12335,
+    "flags": 7440,
+    "allocation": 12335
+  },
+  {
+    "segment": 21,
+    "file_offset": 608448,
+    "size": 17434,
+    "flags": 7440,
+    "allocation": 17434
+  },
+  {
+    "segment": 22,
+    "file_offset": 626048,
+    "size": 22145,
+    "flags": 7440,
+    "allocation": 22145
+  },
+  {
+    "segment": 23,
+    "file_offset": 649280,
+    "size": 40632,
+    "flags": 7440,
+    "allocation": 40632
+  },
+  {
+    "segment": 24,
+    "file_offset": 690944,
+    "size": 36027,
+    "flags": 7440,
+    "allocation": 36027
+  },
+  {
+    "segment": 25,
+    "file_offset": 727360,
+    "size": 13788,
+    "flags": 7440,
+    "allocation": 13788
+  },
+  {
+    "segment": 26,
+    "file_offset": 741504,
+    "size": 28189,
+    "flags": 7440,
+    "allocation": 28189
+  },
+  {
+    "segment": 27,
+    "file_offset": 770304,
+    "size": 24564,
+    "flags": 7440,
+    "allocation": 24564
+  },
+  {
+    "segment": 28,
+    "file_offset": 795328,
+    "size": 27221,
+    "flags": 7440,
+    "allocation": 27221
+  },
+  {
+    "segment": 29,
+    "file_offset": 823040,
+    "size": 26156,
+    "flags": 7440,
+    "allocation": 26156
+  },
+  {
+    "segment": 30,
+    "file_offset": 850112,
+    "size": 18878,
+    "flags": 7440,
+    "allocation": 18878
+  },
+  {
+    "segment": 31,
+    "file_offset": 869440,
+    "size": 48787,
+    "flags": 7440,
+    "allocation": 48787
+  },
+  {
+    "segment": 32,
+    "file_offset": 919104,
+    "size": 33447,
+    "flags": 7440,
+    "allocation": 33447
+  },
+  {
+    "segment": 33,
+    "file_offset": 952896,
+    "size": 23422,
+    "flags": 7440,
+    "allocation": 23422
+  },
+  {
+    "segment": 34,
+    "file_offset": 976384,
+    "size": 42147,
+    "flags": 7440,
+    "allocation": 42148
+  },
+  {
+    "segment": 35,
+    "file_offset": 1019648,
+    "size": 7071,
+    "flags": 7504,
+    "allocation": 7071
+  },
+  {
+    "segment": 36,
+    "file_offset": 1026944,
+    "size": 15253,
+    "flags": 7504,
+    "allocation": 15253
+  },
+  {
+    "segment": 37,
+    "file_offset": 1044352,
+    "size": 8818,
+    "flags": 3409,
+    "allocation": 26054
+  }
+]

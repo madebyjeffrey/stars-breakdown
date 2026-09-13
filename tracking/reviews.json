@@ -1,0 +1,14 @@
+{
+  "001d:30d2-30f4": {
+    "reconstruction_path": "notes/FIRST_RECONSTRUCTION.md",
+    "review_status": "manually_reviewed",
+    "validation_status": "static_bytes_and_metadata_checked; runtime_not_tested; not_compiled",
+    "evidence": [
+      "analysis/segments.json",
+      "analysis/functions.json",
+      "analysis/segment_map.json",
+      "notes/FIRST_RECONSTRUCTION.md",
+      "tests/test_debug.py"
+    ]
+  }
+}

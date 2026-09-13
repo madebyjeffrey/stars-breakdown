@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "files": [
+    {
+      "path": "target/.DS_Store",
+      "size": 6148,
+      "sha256": "b74a3f869785a5103df2df90b0bf4d7163d105a7147d46f76b411167779a6d7a",
+      "role": "macOS metadata"
+    },
+    {
+      "path": "target/26JFIN.txt",
+      "size": 16537,
+      "sha256": "07b8d6c9bb02547de5e6a4c130a096051a9100ff809f7c481ab2a5e0927e4bd6",
+      "role": "supplied input"
+    },
+    {
+      "path": "target/stars.exe",
+      "size": 4218116,
+      "sha256": "ccab6682b55dae14dbf104e491cfbd3b32a6280022020032ae0615500949ba59",
+      "role": "supplied input"
+    },
+    {
+      "path": "target/stars26jrc3/.DS_Store",
+      "size": 6148,
+      "sha256": "d65165279105ca6773180500688df4bdc69a2c7b771752f0a46ef120b7fd8ec3",
+      "role": "macOS metadata"
+    },
+    {
+      "path": "target/stars26jrc3/26JFIN.txt",
+      "size": 16537,
+      "sha256": "07b8d6c9bb02547de5e6a4c130a096051a9100ff809f7c481ab2a5e0927e4bd6",
+      "role": "supplied input"
+    },
+    {
+      "path": "target/stars26jrc3.zip",
+      "size": 1509517,
+      "sha256": "01ff4f87060bfa1dcb516556c8dd802a6b6bbd84e11b1c086ea5484048d1acfa",
+      "role": "supplied input"
+    }
+  ],
+  "archive_members": [
+    {
+      "archive": "target/stars26jrc3.zip",
+      "index": 0,
+      "member": "26JFIN.txt",
+      "size": 16537,
+      "sha256": "07b8d6c9bb02547de5e6a4c130a096051a9100ff809f7c481ab2a5e0927e4bd6",
+      "crc32": "6bb34fdf",
+      "zip_timestamp": [
+        2000,
+        4,
+        26,
+        21,
+        6,
+        38
+      ],
+      "matching_files": [
+        "target/26JFIN.txt",
+        "target/stars26jrc3/26JFIN.txt"
+      ]
+    },
+    {
+      "archive": "target/stars26jrc3.zip",
+      "index": 1,
+      "member": "stars.exe",
+      "size": 4218116,
+      "sha256": "ccab6682b55dae14dbf104e491cfbd3b32a6280022020032ae0615500949ba59",
+      "crc32": "d91c436b",
+      "zip_timestamp": [
+        2000,
+        4,
+        26,
+        16,
+        25,
+        28
+      ],
+      "matching_files": [
+        "target/stars.exe"
+      ]
+    }
+  ],
+  "timestamp_note": "ZIP timestamps are recorded metadata without timezone; they are not verified build dates.",
+  "version_evidence": {
+    "release_notes": "26JFIN.txt describes V2.60j final release candidate; dated April 26, 2000.",
+    "archive_label": "stars26jrc3.zip",
+    "source_tree": "c:\\user\\jeffl\\2.7j\\",
+    "compiler": "8.00c in all 40 extracted game-module compiler records",
+    "conclusion": "Use the executable SHA-256 as identity. Archive/notes support 2.60j RC3 provenance; exact embedded product version remains unverified."
+  }
+}
