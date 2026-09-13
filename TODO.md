@@ -25,13 +25,15 @@ This does not promise the author's exact source text, comments, macros, or code 
 ## 1. Recover the complete executable layout
 
 - [x] Read the NE segment table and CodeView logical-to-NE segment map; check named procedure ranges against segment memory extents.
-- [ ] Parse and validate the NE entry table, exported names, imported modules/names/ordinals, segment flags, initial registers, stack, heap, and automatic data segment.
-- [ ] Decode every relocation record and relocation chain, including internal targets, imported targets, and additive fixups where present.
-- [ ] Produce a relocation-aware memory image and address translation helpers. Keep file offsets, CodeView segments, NE ordinals, and runtime selectors distinct.
-- [ ] Account for zero-filled memory, discarded/loadable segments, and any special segment behavior actually present.
-- [ ] Extract all resources with their identifiers, types, offsets, sizes, and hashes. Decode dialogs, menus, strings, accelerators, icons, and bitmaps where present.
-- [ ] Classify the DOS stub, executable overlays/trailing data, padding, and debug block. Determine whether any additional executable content needs reconstruction.
-- [ ] Verify representative code, data, cross-segment calls, imports, and resource references against independent byte inspection or runtime observations.
+- [x] Parse and validate the NE entry table, exported names, imported modules/names/ordinals, segment flags, initial registers, stack, heap, and automatic data segment.
+- [x] Decode every relocation record and relocation chain, including internal targets, imported targets, and additive fixups where present.
+- [x] Produce a relocation-aware memory image and address translation helpers. Keep file offsets, CodeView segments, NE ordinals, and runtime selectors distinct.
+- [x] Account for zero-filled memory, discarded/loadable segments, and any special segment behavior actually present.
+- [x] Extract all resources with their identifiers, types, offsets, sizes, and hashes. Decode dialogs, menus, strings, accelerators, icons, and bitmaps where present.
+- [x] Classify the DOS stub, executable overlays/trailing data, padding, and debug block. Determine whether any additional executable content needs reconstruction.
+- [x] Verify representative code, data, cross-segment calls, imports, and resource references against independent byte inspection or runtime observations.
+
+**Evidence:** [executable layout report](analysis/ne/README.md), [machine-readable layout](analysis/ne/layout.json), `tools/ne_layout.py`, and `tests/test_ne_layout.py`. Memory images use synthetic selectors and a documented hardware-x87 policy; runtime emulation is step 4.
 
 **Exit:** every file region and loaded segment has a documented role; relocation-bearing operands resolve correctly.
 

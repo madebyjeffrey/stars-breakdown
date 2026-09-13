@@ -85,6 +85,12 @@
     "archive_label": "stars26jrc3.zip",
     "source_tree": "c:\\user\\jeffl\\2.7j\\",
     "compiler": "8.00c in all 40 extracted game-module compiler records",
-    "conclusion": "Use the executable SHA-256 as identity. Archive/notes support 2.60j RC3 provenance; exact embedded product version remains unverified."
+    "user_clarification": {
+      "date": "2026-09-13",
+      "version": "2.70j RC3",
+      "edition": "retail",
+      "context": "User identifies this as the third release candidate of the 2.70j patch. 2.60 was shareware; 2.70 was retail; the releases were binary compatible."
+    },
+    "conclusion": "Identified by the user as 2.70j RC3 (retail). Preserve archive/notes labels as provenance and SHA-256 as exact binary identity; product version has not been independently decoded from the executable."
   }
 }

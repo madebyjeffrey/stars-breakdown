@@ -8,3 +8,6 @@ __pycache__/
 /dist/
 /runs/
 /ghidra_projects/
+# Reproducible original resource bytes and synthetic static memory images.
+/analysis/ne/memory/
+/analysis/ne/resources/

@@ -1,8 +1,10 @@
 # Stars! executable study
 
-A first reverse-engineering pass over `target/stars.exe`, preserving the supplied executable unchanged. This repository currently contains a debug-information extractor, a function index, recovered data layouts, and one manually reconstructed function. It is not a complete decompilation or a buildable recreation of the game.
+A reverse-engineering study of `target/stars.exe`, preserving the supplied executable unchanged. This repository currently contains a debug-information extractor, a function index, recovered data layouts, a relocation-aware NE layout/resource extractor, and one manually reconstructed function. It is not a complete decompilation or a buildable recreation of the game.
 
 ## Start here
+
+- [Executable layout report](analysis/ne/README.md): complete file map, imports, resources, and the static loader model (step 1 complete).
 
 - [Baseline and progress tracking](tracking/README.md): verified input inventory, coverage ledger, uncertainty log, and version-control policy.
 
@@ -18,7 +20,7 @@ The file is a 4,218,116-byte Windows NE executable with 37 loadable segments. It
 
 The debug block contains 148 module records (including runtime modules), 846 procedure records, 1,678 type records, 8,098 BP-relative local/parameter records, and 46,190 line mappings referencing 38 C source files. These are record counts, not claims that every linked function or original source line survives. Compiler records report version string `8.00c`.
 
-The original source tree appears as `c:\user\jeffl\2.7j\`. The bundled release notes describe 2.60j RC3 and are dated April 26, 2000. The source directory name alone does not establish the executable's product version.
+The original source tree appears as `c:\user\jeffl\2.7j\`. The user identifies this executable as **2.70j RC3**, the third release candidate of the retail patch, and clarifies that 2.60 was shareware, 2.70 was retail, and the releases were binary compatible. The bundled notes use the 2.60j label and are dated April 26, 2000; those labels are retained as provenance. This product identification comes from the user's clarification, not an independent decoding of version resources.
 
 The modules expose distinct areas for AI (`ai`, `ai2`, `ai3`, `ai4`, `aiutil`), simulation (`turn`, `turn2`, `turn3`, `battle`, `produce`, `research`), Windows interface (`mdi`, `scan`, `popup`, `vcr`), and storage/memory (`file`, `save`, `log`, `memory`). These are useful starting points for studying the design; function names alone do not establish their algorithms.
 
@@ -31,6 +33,8 @@ From this directory, with Python 3 (no third-party dependencies):
 ```sh
 python3 tools/extract_debug.py
 python3 tools/render_layouts.py
+python3 tools/ne_layout.py
+python3 tools/baseline.py --check
 python3 -m unittest discover -s tests
 ```
 
@@ -40,12 +44,9 @@ CodeView logical segment numbers are translated through `sstSegMap` to NE segmen
 
 ## Next decompilation stage
 
-Use a decompiler with a Windows NE loader and 16-bit x86 support, then import the extracted function names and types. Ghidra is a candidate, but it is not installed in the current command environment and no Ghidra import or decompilation has been run here. Before automating it, verify its NE address mapping, loader relocation handling, and calling conventions against the checked `GetRaceStat` example.
+Steps 0 and 1 are complete. Step 2 is the next stage: finish decoding debug symbols/types, reconcile scopes and aliases, validate data layouts, and generate usable reconstruction headers. The full checklist is in [TODO.md](TODO.md).
 
-1. Apply NE relocations and recover Windows API imports and call targets.
-2. Import symbols using the segment map, then reconstruct types with explicit near/far pointer widths and bit-field layouts.
-3. Study `memory.c` and `produce.c` first for memory constraints and simulation techniques, or `battle.c` for combat. Recover one subsystem at a time with assembly-backed explanations.
-4. Compare reconstructed behavior against the original under a suitable Windows 3.x environment when runtime validation becomes useful.
+The NE extractor accounts for every file byte, decodes all relocation records, resolves imports to symbolic identities, extracts every resource, and emits static memory images with synthetic selectors. Its hardware-x87 policy and remaining runtime limitations are documented in [the layout report](analysis/ne/README.md). Actual native execution and decompiler import are still pending.
 
 Debug information greatly improves names and layouts, but comments, macros, original expressions, and optimized-away code generally require interpretation or are unrecoverable.
 

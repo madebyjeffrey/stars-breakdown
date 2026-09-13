@@ -1,0 +1,17 @@
+[
+  {
+    "url": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/krnl386.exe16/ne_segment.c",
+    "sha256": "cac13ddba4805ccb11508cf6254d2d83a935df1a88e4eb22aaa37f70f30fa944",
+    "access_date": "2026-09-13"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/wine-mirror/wine/master/include/wine/winbase16.h",
+    "sha256": "1c991ba45276a944b01738ebae8874b1f278ce2ddaec27f5f38dea45ef63bfcc",
+    "access_date": "2026-09-13"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/user.exe16/dialog.c",
+    "sha256": "6e990586894b4d0eef3b841b9aca7065c257edaef5d34c05ca385a5eb6aa933d",
+    "access_date": "2026-09-13"
+  }
+]
