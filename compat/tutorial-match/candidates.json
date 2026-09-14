@@ -1,0 +1,98 @@
+[
+  {
+    "name": "ShowTutor",
+    "stem": "T00"
+  },
+  {
+    "name": "FCheckResearch",
+    "stem": "T01"
+  },
+  {
+    "name": "FCheckScanner",
+    "stem": "T02"
+  },
+  {
+    "name": "FAskKillTutor",
+    "stem": "T03"
+  },
+  {
+    "name": "FOKMergeDialog",
+    "stem": "T04"
+  },
+  {
+    "name": "TutorError",
+    "stem": "T05"
+  },
+  {
+    "name": "FCheckBtlPlan",
+    "stem": "T06"
+  },
+  {
+    "name": "FCheckPlanetRoute",
+    "stem": "T07"
+  },
+  {
+    "name": "FCheckShipBuilder",
+    "stem": "T08"
+  },
+  {
+    "name": "EndTutor",
+    "stem": "T09"
+  },
+  {
+    "name": "FCheckFleetName",
+    "stem": "T10"
+  },
+  {
+    "name": "FCheckMessages",
+    "stem": "T11"
+  },
+  {
+    "name": "FCheckSummary",
+    "stem": "T12"
+  },
+  {
+    "name": "FCheckSelection",
+    "stem": "T13"
+  },
+  {
+    "name": "FCheckLayingWP",
+    "stem": "V011"
+  },
+  {
+    "name": "FCheckPatrolWP",
+    "stem": "S011"
+  },
+  {
+    "name": "FCheckColonizeWP",
+    "stem": "T16"
+  },
+  {
+    "name": "FCheckCargo",
+    "stem": "T17"
+  },
+  {
+    "name": "FCheckFleetWP",
+    "stem": "V179"
+  },
+  {
+    "name": "AdvanceTutor",
+    "stem": "V303"
+  },
+  {
+    "name": "FCheckQueue",
+    "stem": "T20"
+  },
+  {
+    "name": "FCheckXferWP",
+    "stem": "T21"
+  },
+  {
+    "name": "FCheckBuilderPart",
+    "stem": "T22"
+  },
+  {
+    "name": "FCheckZip",
+    "stem": "S023"
+  }
+]

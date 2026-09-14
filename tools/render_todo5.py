@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Render the detailed Step 5 inventory from checked-in analysis (no binary access)."""
 from pathlib import Path
+import hashlib
 import collections
 import json
 import re
@@ -37,7 +38,32 @@ PARTIAL = {
  'TitleWndProc': ('reconstructed/src/title.c', 'Reviewed title creation/painting/palette/destruction paths are integrated; complete original command/application behavior remains open. The trailing zero-fill byte belongs to this same procedure.', 'analysis/reconstruction/starting-screen.md'),
 }
 
+def byte_matches():
+    """Keep byte credit separate; reject stale source and inconsistent evidence."""
+    matches = {}
+    for path in ['analysis/compat/byte-match.json', 'analysis/compat/tutorial-byte-match.json']:
+        if not (ROOT/path).exists():
+            continue
+        report = read(path)
+        assert report['original_sha256'] == 'ccab6682b55dae14dbf104e491cfbd3b32a6280022020032ae0615500949ba59'
+        if 'tutorial' in path:
+            for row in report['functions']:
+                for file, field in [(row['source'], 'source_sha256'), ('compat/tutorial-match/TYPES.H', 'header_sha256')]:
+                    assert hashlib.sha256((ROOT/file).read_bytes()).hexdigest() == row[field], 'Stale byte evidence: '+file
+        else:
+            assert hashlib.sha256((ROOT/'compat/bytematch/PROBE.C').read_bytes()).hexdigest() == report['source_sha256']
+        for row in report['functions']:
+            if not row['exact_after_address_resolution']:
+                continue
+            assert row['original_relocated_sha256'] == row['generated_resolved_sha256']
+            assert row['original_bytes'] == row['generated_bytes'] and row['length_difference'] == 0
+            k = row['ne_segment'], row['original_offset']
+            assert k not in matches
+            matches[k] = (row, path)
+    return matches
+
 def main():
+    matched = byte_matches()
     ranges = read('analysis/coverage.json')['ranges']
     procedures = {(p['ne_segment'], p['ne_offset']): p for p in read('analysis/debug/procedures.json')}
     games = []
@@ -91,15 +117,16 @@ def main():
     add('\nEvery currently identified function has its own entry. Game routines are grouped by their original object module, under editorial subsystem headings. A module may mix UI and rules. Identity is keyed by **NE segment and entry offset**, never by spelling alone. Three final-byte zero-fill ranges are joined to their procedures, giving 846 functions rather than 849 coverage ranges. Addresses here are hexadecimal NE ordinals, not runtime selectors. All end offsets are exclusive; raw Ghidra addresses use a separate synthetic selector space.')
     add('\n- **[x] Reviewed source** means the whole original game procedure has reviewed, compiled C and the ledger’s original-instruction validation. It does not mean the full application or every native caller is integrated.\n- **[ ] Partial** means a documented slice or caller-specific substitute exists; the whole procedure remains open.\n- **[ ] Open** means no whole-function source credit is recorded; raw decompilation already exists and is a starting point.\n- **[x] Library mapping** in the runtime appendix means the exported body lies within audited matching CRT code spans. It is not recovered runtime source, independent behavioral validation or final link integration.\n- DOS-stub completion is counted separately. Neither CRT entries nor DOS entries inflate game-source coverage.')
     add('\nThe source/evidence fields come from [coverage.json](analysis/coverage.json), maintained through [tracking/reviews.json](tracking/reviews.json). Some ledger validation strings still say native integration pending: recent package-level acceptance does not establish every function/caller combination. [START2A Windows 95 acceptance](analysis/compat/startup2a-win95.json) verifies the integrated title, wizard, colors and race roundtrip. It does not complete WinMain, world generation, game loading or turn processing.')
-    add('\nA separate [byte-matching pilot](analysis/compat/byte-match.md) reproduces GetRaceStat, SetRaceStat and Random instruction bytes, with named address placement where required. The other reviewed functions have not been byte-matched; the checkboxes here continue to mean reviewed semantic source.')
+    add('\n**[x] Byte match** is separate evidence: native VC++ 1.52c generated every byte in the original function extent after resolving named address relocations into the original layout. No instruction bytes are masked or patched. This does not establish final executable linking or integration, and does not change the semantic-review ledger. See the [pilot](analysis/compat/byte-match.md) and [tutorial comparison](analysis/compat/tutorial-byte-match.md).')
+    add(f'\n**{len(matched)} functions / {sum(r[0]["original_bytes"] for r in matched.values()):,} bytes** have verified instruction byte matches. The renderer checks the evidence hashes against the current matching sources.')
     add('\n## Counts and navigation')
     add(f'\n- **846 named game procedures:** {done} reviewed, {part} documented partial entries, {846-done-part} open.\n- **{credited:,} / {total:,} named procedure bytes** credited ({credited/total:.2%}); procedure extents can include embedded data. This is not whole-executable instruction coverage.\n- **197 additional NE runtime/helper entries**, each listed below; 101 code-bearing CRT module records are audited, a different denominator.\n- **2 DOS-stub entries**, separately listed.\n- **1,045 total function entries** in this document. This is complete for the current inventory, not proof that future boundary/dispatch analysis cannot discover more code.')
-    add('\n| Subsystem | Named procedures | Reviewed | Partial | Open |')
-    add('| --- | ---: | ---: | ---: | ---: |')
+    add('\n| Subsystem | Named procedures | Reviewed | Partial | Open | Byte matches |')
+    add('| --- | ---: | ---: | ---: | ---: | ---: |')
     for ident,title,mods,_ in GROUPS:
         rows=[r for r in games if r['modules'][0] in [m+'.obj' for m in mods]]
         n=sum(map(reviewed,rows));p=sum(map(partial,rows))
-        add(f'| [{title}](#{ident}) | {len(rows)} | {n} | {p} | {len(rows)-n-p} |')
+        add(f'| [{title}](#{ident}) | {len(rows)} | {n} | {p} | {len(rows)-n-p} | {sum((r["ne_segment"], r["start"]) in matched for r in rows)} |')
     add('\nAlso: [runtime/helper functions](#runtime), [DOS stub](#dos-stub), [non-function obligations](#non-functions), [completion rules](#completion-rules).')
     add('\n## Completion rules')
     add('\nFor each open/partial entry, finish all of these before checking its main box:')
@@ -132,6 +159,10 @@ def main():
                 state='Reviewed source' if reviewed(r) else 'Partial' if partial(r) else 'Open'
                 add(f'\n<a id="{anchor(k)}"></a>\n\n- [{"x" if reviewed(r) else " "}] **`{name}` — {state}**')
                 add(f'  - Identity: NE `{k[0]:04x}:{k[1]:04x}–{r["end_exclusive"]:04x}`; **{r["bytes"]:,} bytes**; {rawlinks(f)}.')
+                if k in matched:
+                    match, evidence = matched[k]
+                    source = match.get('source', 'compat/bytematch/PROBE.C')
+                    add(f'  - [x] **Byte match — {match["original_bytes"]:,}/{match["original_bytes"]:,} bytes**, zero differences after named address resolution. '+link(source, 'Native matching C')+' · '+link(evidence, 'Exact comparison evidence')+'. Integration/semantic review remains separately recorded below.')
                 add(f'  - Signature: `{s[3]} {name}({params})`; **{s[4]}**. Debug source: '+', '.join('`'+x.split('\\')[-1]+'`' for x in procedures[k]['source_files'])+'.')
                 add(f'  - Calls: {call_text(f)} Static callers: {len(incoming[f["address"]])}.')
                 refs=sorted(data[f['address']]);sites=[x for x in indirect[name] if key(x['address'])[0]==k[0] and k[1]<=key(x['address'])[1]<r['end_exclusive']]

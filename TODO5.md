@@ -14,7 +14,9 @@ Every currently identified function has its own entry. Game routines are grouped
 
 The source/evidence fields come from [coverage.json](analysis/coverage.json), maintained through [tracking/reviews.json](tracking/reviews.json). Some ledger validation strings still say native integration pending: recent package-level acceptance does not establish every function/caller combination. [START2A Windows 95 acceptance](analysis/compat/startup2a-win95.json) verifies the integrated title, wizard, colors and race roundtrip. It does not complete WinMain, world generation, game loading or turn processing.
 
-A separate [byte-matching pilot](analysis/compat/byte-match.md) reproduces GetRaceStat, SetRaceStat and Random instruction bytes, with named address placement where required. The other reviewed functions have not been byte-matched; the checkboxes here continue to mean reviewed semantic source.
+**[x] Byte match** is separate evidence: native VC++ 1.52c generated every byte in the original function extent after resolving named address relocations into the original layout. No instruction bytes are masked or patched. This does not establish final executable linking or integration, and does not change the semantic-review ledger. See the [pilot](analysis/compat/byte-match.md) and [tutorial comparison](analysis/compat/tutorial-byte-match.md).
+
+**25 functions / 5,791 bytes** have verified instruction byte matches. The renderer checks the evidence hashes against the current matching sources.
 
 ## Counts and navigation
 
@@ -24,18 +26,18 @@ A separate [byte-matching pilot](analysis/compat/byte-match.md) reproduces GetRa
 - **2 DOS-stub entries**, separately listed.
 - **1,045 total function entries** in this document. This is complete for the current inventory, not proof that future boundary/dispatch analysis cannot discover more code.
 
-| Subsystem | Named procedures | Reviewed | Partial | Open |
-| --- | ---: | ---: | ---: | ---: |
-| [Application startup, configuration and main frame](#startup) | 46 | 10 | 4 | 32 |
-| [Memory, random numbers, formatting and shared services](#common) | 151 | 68 | 9 | 74 |
-| [Component definitions and world objects](#components) | 19 | 0 | 2 | 17 |
-| [Files, serialization, orders and logs](#persistence) | 69 | 13 | 0 | 56 |
-| [Race creation, new games and ship design](#creation) | 70 | 33 | 0 | 37 |
-| [Planets, fleets, production, research and turn processing](#simulation) | 191 | 3 | 1 | 187 |
-| [Combat resolution and battle playback](#combat) | 57 | 1 | 0 | 56 |
-| [AI personalities and shared decision machinery](#ai) | 103 | 0 | 0 | 103 |
-| [Scanner, toolbar, messages, reports and popups](#interface) | 106 | 2 | 0 | 104 |
-| [Tutorial progression and restrictions](#tutorial) | 34 | 0 | 0 | 34 |
+| Subsystem | Named procedures | Reviewed | Partial | Open | Byte matches |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| [Application startup, configuration and main frame](#startup) | 46 | 10 | 4 | 32 | 0 |
+| [Memory, random numbers, formatting and shared services](#common) | 151 | 68 | 9 | 74 | 1 |
+| [Component definitions and world objects](#components) | 19 | 0 | 2 | 17 | 0 |
+| [Files, serialization, orders and logs](#persistence) | 69 | 13 | 0 | 56 | 0 |
+| [Race creation, new games and ship design](#creation) | 70 | 33 | 0 | 37 | 2 |
+| [Planets, fleets, production, research and turn processing](#simulation) | 191 | 3 | 1 | 187 | 0 |
+| [Combat resolution and battle playback](#combat) | 57 | 1 | 0 | 56 | 0 |
+| [AI personalities and shared decision machinery](#ai) | 103 | 0 | 0 | 103 | 0 |
+| [Scanner, toolbar, messages, reports and popups](#interface) | 106 | 2 | 0 | 104 | 0 |
+| [Tutorial progression and restrictions](#tutorial) | 34 | 0 | 0 | 34 | 22 |
 
 Also: [runtime/helper functions](#runtime), [DOS stub](#dos-stub), [non-function obligations](#non-functions), [completion rules](#completion-rules).
 
@@ -677,6 +679,7 @@ For each open/partial entry, finish all of these before checking its main box:
 
 - [x] **`Random` — Reviewed source**
   - Identity: NE `0009:16d2–1889`; **439 bytes**; [assembly](analysis/decompiler/export/raw/1040_16d2.asm) · [raw pseudocode](analysis/decompiler/export/raw/1040_16d2_Random.c).
+  - [x] **Byte match — 439/439 bytes**, zero differences after named address resolution. [Native matching C](compat/bytematch/PROBE.C) · [Exact comparison evidence](analysis/compat/byte-match.json). Integration/semantic review remains separately recorded below.
   - Signature: `int Random(int c)`; **far cdecl**. Debug source: `utilgen.c`.
   - Calls: [`__aFldiv`](#fn-0024-0be4), [`__aFlmul`](#fn-0024-0c7e), [`__aFulrem`](#fn-0024-0dc8). Static callers: 70.
   - Data references: 4 recorded targets; `lRandSeed1+2@1120:1372`, `lRandSeed1/_lRandSeed1@1120:1370`, `lRandSeed2+2@1120:1376`, `lRandSeed2/_lRandSeed2@1120:1374`.
@@ -2961,6 +2964,7 @@ For each open/partial entry, finish all of these before checking its main box:
 
 - [x] **`GetRaceStat` — Reviewed source**
   - Identity: NE `001d:30d2–30f4`; **34 bytes**; [assembly](analysis/decompiler/export/raw/10e0_30d2.asm) · [raw pseudocode](analysis/decompiler/export/raw/10e0_30d2_GetRaceStat.c).
+  - [x] **Byte match — 34/34 bytes**, zero differences after named address resolution. [Native matching C](compat/bytematch/PROBE.C) · [Exact comparison evidence](analysis/compat/byte-match.json). Integration/semantic review remains separately recorded below.
   - Signature: `int GetRaceStat(_player near * pplr, int iStat)`; **far cdecl**. Debug source: `race.c`.
   - Calls: No outgoing edge recorded (not proof of no OS/indirect calls). Static callers: 82.
   - Implementation: [race.c](reconstructed/src/race.c). Evidence: [core.md](analysis/reconstruction/core.md) · [test_core_machine.py](tests/test_core_machine.py).
@@ -2970,6 +2974,7 @@ For each open/partial entry, finish all of these before checking its main box:
 
 - [x] **`SetRaceStat` — Reviewed source**
   - Identity: NE `001d:3114–3175`; **97 bytes**; [assembly](analysis/decompiler/export/raw/10e0_3114.asm) · [raw pseudocode](analysis/decompiler/export/raw/10e0_3114_SetRaceStat.c).
+  - [x] **Byte match — 97/97 bytes**, zero differences after named address resolution. [Native matching C](compat/bytematch/PROBE.C) · [Exact comparison evidence](analysis/compat/byte-match.json). Integration/semantic review remains separately recorded below.
   - Signature: `int SetRaceStat(_player near * pplr, int iStat, int iVal)`; **far cdecl**. Debug source: `race.c`.
   - Calls: No outgoing edge recorded (not proof of no OS/indirect calls). Static callers: 6.
   - Implementation: [race.c](reconstructed/src/race.c). Evidence: [race-validation.md](analysis/reconstruction/race-validation.md) · [test_race_machine.py](tests/test_race_machine.py).
@@ -8172,6 +8177,7 @@ For each open/partial entry, finish all of these before checking its main box:
 
 - [ ] **`ShowTutor` — Open**
   - Identity: NE `0020:0374–03bf`; **75 bytes**; [assembly](analysis/decompiler/export/raw/10f8_0374.asm) · [raw pseudocode](analysis/decompiler/export/raw/10f8_0374_ShowTutor.c).
+  - [x] **Byte match — 75/75 bytes**, zero differences after named address resolution. [Native matching C](compat/tutorial-match/T00.C) · [Exact comparison evidence](analysis/compat/tutorial-byte-match.json). Integration/semantic review remains separately recorded below.
   - Signature: `void ShowTutor(int fShow)`; **far cdecl**. Debug source: `tutor.c`.
   - Calls: `USER::SHOWWINDOW` (14f8:01bc). Static callers: 5.
   - Data references: 2 recorded targets; `tutor.hwnd@1120:521c`, `tutor/_tutor@1120:520c`.
@@ -8202,6 +8208,7 @@ For each open/partial entry, finish all of these before checking its main box:
 
 - [ ] **`AdvanceTutor` — Open**
   - Identity: NE `0020:0a30–0c01`; **465 bytes**; [assembly](analysis/decompiler/export/raw/10f8_0a30.asm) · [raw pseudocode](analysis/decompiler/export/raw/10f8_0a30_AdvanceTutor.c).
+  - [x] **Byte match — 465/465 bytes**, zero differences after named address resolution. [Native matching C](compat/tutorial-match/V303.C) · [Exact comparison evidence](analysis/compat/tutorial-byte-match.json). Integration/semantic review remains separately recorded below.
   - Signature: `void AdvanceTutor(…)`; **far cdecl**. Debug source: `tutor.c`.
   - Calls: [`PszGetCompressedString`](#fn-0003-743a), [`ExpandRc`](#fn-0009-2f0c), [`ShowTutor`](#fn-0020-0374), [`EndTutor`](#fn-0020-0c02), [`FTutorTaskDone`](#fn-0020-0fbc), [`TutorError`](#fn-0020-67ae), `USER::SCREENTOCLIENT` (14f8:0190), `USER::GETWINDOWRECT` (14f8:019c), `USER::SETWINDOWTEXT` (14f8:01ac), `USER::INVALIDATERECT` (14f8:0274), `USER::_WSPRINTF` (14f8:02f8). Static callers: 33.
   - Data references: 7 recorded targets; `dyArial8/_dyArial8@1120:23fa`, `tutor.hwnd@1120:521c`, `tutor.idh@1120:5212`, `tutor.idsError@1120:5214`, `tutor.idt@1120:520e`, `tutor.idtBold@1120:5210`, `tutor/_tutor@1120:520c`.
@@ -8212,6 +8219,7 @@ For each open/partial entry, finish all of these before checking its main box:
 
 - [ ] **`EndTutor` — Open**
   - Identity: NE `0020:0c02–0c8f`; **141 bytes**; [assembly](analysis/decompiler/export/raw/10f8_0c02.asm) · [raw pseudocode](analysis/decompiler/export/raw/10f8_0c02_EndTutor.c).
+  - [x] **Byte match — 141/141 bytes**, zero differences after named address resolution. [Native matching C](compat/tutorial-match/T09.C) · [Exact comparison evidence](analysis/compat/tutorial-byte-match.json). Integration/semantic review remains separately recorded below.
   - Signature: `void EndTutor(int fClose)`; **far cdecl**. Debug source: `tutor.c`.
   - Calls: [`Randomize2`](#fn-0009-165a), [`RestoreGameState`](#fn-0020-0e1c), [`_memset`](#fn-0024-076e), `USER::GETTICKCOUNT` (14f8:0170), `USER::DESTROYWINDOW` (14f8:01c8). Static callers: 4.
   - Data references: 4 recorded targets; `game.overlap_16@1120:0080`, `gd/_gd@1120:07ca`, `tutor.hwnd@1120:521c`, `tutor/_tutor@1120:520c`.
@@ -8242,6 +8250,7 @@ For each open/partial entry, finish all of these before checking its main box:
 
 - [ ] **`FAskKillTutor` — Open**
   - Identity: NE `0020:0f36–0f93`; **93 bytes**; [assembly](analysis/decompiler/export/raw/10f8_0f36.asm) · [raw pseudocode](analysis/decompiler/export/raw/10f8_0f36_FAskKillTutor.c).
+  - [x] **Byte match — 93/93 bytes**, zero differences after named address resolution. [Native matching C](compat/tutorial-match/T03.C) · [Exact comparison evidence](analysis/compat/tutorial-byte-match.json). Integration/semantic review remains separately recorded below.
   - Signature: `int FAskKillTutor(…)`; **far cdecl**. Debug source: `tutor.c`.
   - Calls: [`PszFormatIds`](#fn-0007-924c), [`AlertSz`](#fn-0009-2160), [`EndTutor`](#fn-0020-0c02). Static callers: 1.
   - Data references: 1 recorded targets; `game.turn@1120:0082`.
@@ -8263,6 +8272,7 @@ For each open/partial entry, finish all of these before checking its main box:
 
 - [ ] **`FCheckZip` — Open**
   - Identity: NE `0020:6460–6639`; **473 bytes**; [assembly](analysis/decompiler/export/raw/10f8_6460.asm) · [raw pseudocode](analysis/decompiler/export/raw/10f8_6460_FCheckZip.c).
+  - [x] **Byte match — 473/473 bytes**, zero differences after named address resolution. [Native matching C](compat/tutorial-match/S023.C) · [Exact comparison evidence](analysis/compat/tutorial-byte-match.json). Integration/semantic review remains separately recorded below.
   - Signature: `int FCheckZip(int iZip, _itemaction far * lpiaGoal, int ids)`; **far cdecl**. Debug source: `tutor.c`.
   - Calls: [`CchGetString`](#fn-0009-221e), [`TutorError`](#fn-0020-67ae), [`_strcpy`](#fn-0024-0392), [`__strcmpi`](#fn-0024-05f2). Static callers: 1.
   - Data references: 3 recorded targets; `hwndZipOrderDlg/_hwndZipOrderDlg@1120:16b8`, `tutor.idh@1120:5212`, `tutor/_tutor@1120:520c`.
@@ -8283,6 +8293,7 @@ For each open/partial entry, finish all of these before checking its main box:
 
 - [ ] **`TutorError` — Open**
   - Identity: NE `0020:67ae–685c`; **174 bytes**; [assembly](analysis/decompiler/export/raw/10f8_67ae.asm) · [raw pseudocode](analysis/decompiler/export/raw/10f8_67ae_TutorError.c).
+  - [x] **Byte match — 174/174 bytes**, zero differences after named address resolution. [Native matching C](compat/tutorial-match/T05.C) · [Exact comparison evidence](analysis/compat/tutorial-byte-match.json). Integration/semantic review remains separately recorded below.
   - Signature: `void TutorError(int idsError)`; **far cdecl**. Debug source: `tutor.c`.
   - Calls: [`PszFormatIds`](#fn-0007-924c), [`AlertSz`](#fn-0009-2160). Static callers: 10.
   - Data references: 2 recorded targets; `tutor.idsError@1120:5214`, `tutor/_tutor@1120:520c`.
@@ -8293,6 +8304,7 @@ For each open/partial entry, finish all of these before checking its main box:
 
 - [ ] **`FCheckScanner` — Open**
   - Identity: NE `0020:685c–690a`; **174 bytes**; [assembly](analysis/decompiler/export/raw/10f8_685c.asm) · [raw pseudocode](analysis/decompiler/export/raw/10f8_685c_FCheckScanner.c).
+  - [x] **Byte match — 174/174 bytes**, zero differences after named address resolution. [Native matching C](compat/tutorial-match/T02.C) · [Exact comparison evidence](analysis/compat/tutorial-byte-match.json). Integration/semantic review remains separately recorded below.
   - Signature: `int FCheckScanner(int md, int iZoom)`; **far cdecl**. Debug source: `tutor.c`.
   - Calls: No outgoing edge recorded (not proof of no OS/indirect calls). Static callers: 1.
   - Data references: 4 recorded targets; `grbitScan/_grbitScan@1120:0588`, `iScanZoom/_iScanZoom@1120:05a0`, `tutor.idh@1120:5212`, `tutor/_tutor@1120:520c`.
@@ -8303,6 +8315,7 @@ For each open/partial entry, finish all of these before checking its main box:
 
 - [ ] **`FCheckFleetName` — Open**
   - Identity: NE `0020:690a–69e1`; **215 bytes**; [assembly](analysis/decompiler/export/raw/10f8_690a.asm) · [raw pseudocode](analysis/decompiler/export/raw/10f8_690a_FCheckFleetName.c).
+  - [x] **Byte match — 215/215 bytes**, zero differences after named address resolution. [Native matching C](compat/tutorial-match/T10.C) · [Exact comparison evidence](analysis/compat/tutorial-byte-match.json). Integration/semantic review remains separately recorded below.
   - Signature: `int FCheckFleetName(int id, int ids)`; **far cdecl**. Debug source: `tutor.c`.
   - Calls: [`LpflFromId`](#fn-0008-2078), [`CchGetString`](#fn-0009-221e), [`TutorError`](#fn-0020-67ae), [`__fstricmp`](#fn-0024-0ef8). Static callers: 0.
   - Data references: 1 recorded targets; `tutor.idh@1120:5212`.
@@ -8313,6 +8326,7 @@ For each open/partial entry, finish all of these before checking its main box:
 
 - [ ] **`FCheckSummary` — Open**
   - Identity: NE `0020:69e2–6af4`; **274 bytes**; [assembly](analysis/decompiler/export/raw/10f8_69e2.asm) · [raw pseudocode](analysis/decompiler/export/raw/10f8_69e2_FCheckSummary.c).
+  - [x] **Byte match — 274/274 bytes**, zero differences after named address resolution. [Native matching C](compat/tutorial-match/T12.C) · [Exact comparison evidence](analysis/compat/tutorial-byte-match.json). Integration/semantic review remains separately recorded below.
   - Signature: `int FCheckSummary(unsigned int grobj, int id)`; **far cdecl**. Debug source: `tutor.c`.
   - Calls: No outgoing edge recorded (not proof of no OS/indirect calls). Static callers: 1.
   - Data references: 10 recorded targets; `gd/_gd@1120:07ca`, `lpThings+2@1120:169a`, `lpThings/_lpThings@1120:1698`, `rglpfl+2@1120:00fc`, `rglpfl/_rglpfl@1120:00fa`, `sel.scan.grobj@1120:4966`, `sel.scan.idpl@1120:496a`, `sel.scan.ifl@1120:496c` … (remaining targets in [data-reference index](analysis/decompiler/data-references.json)).
@@ -8323,6 +8337,7 @@ For each open/partial entry, finish all of these before checking its main box:
 
 - [ ] **`FCheckSelection` — Open**
   - Identity: NE `0020:6af4–6c47`; **339 bytes**; [assembly](analysis/decompiler/export/raw/10f8_6af4.asm) · [raw pseudocode](analysis/decompiler/export/raw/10f8_6af4_FCheckSelection.c).
+  - [x] **Byte match — 339/339 bytes**, zero differences after named address resolution. [Native matching C](compat/tutorial-match/T13.C) · [Exact comparison evidence](analysis/compat/tutorial-byte-match.json). Integration/semantic review remains separately recorded below.
   - Signature: `int FCheckSelection(unsigned int grobj, int id)`; **far cdecl**. Debug source: `tutor.c`.
   - Calls: [`LpflFromId`](#fn-0008-2078). Static callers: 5.
   - Data references: 9 recorded targets; `gd/_gd@1120:07ca`, `idMsgObj/_idMsgObj@1120:3ee6`, `mdMsgObj/_mdMsgObj@1120:3ee2`, `sel.fl.idPlanet@1120:4978`, `sel.fl.overlap_0@1120:4972`, `sel.grobj@1120:495a`, `sel.pl.id@1120:49ee`, `tutor.idh@1120:5212` … (remaining targets in [data-reference index](analysis/decompiler/data-references.json)).
@@ -8333,6 +8348,7 @@ For each open/partial entry, finish all of these before checking its main box:
 
 - [ ] **`FCheckMessages` — Open**
   - Identity: NE `0020:6c48–6da3`; **347 bytes**; [assembly](analysis/decompiler/export/raw/10f8_6c48.asm) · [raw pseudocode](analysis/decompiler/export/raw/10f8_6c48_FCheckMessages.c).
+  - [x] **Byte match — 347/347 bytes**, zero differences after named address resolution. [Native matching C](compat/tutorial-match/T11.C) · [Exact comparison evidence](analysis/compat/tutorial-byte-match.json). Integration/semantic review remains separately recorded below.
   - Signature: `int FCheckMessages(int imsg, int idm, int fFilter)`; **far cdecl**. Debug source: `tutor.c`.
   - Calls: [`IMsgNext`](#fn-0007-7808), [`IdmGetMessageN`](#fn-0007-8412), [`SetFilteringGroups`](#fn-0007-a018). Static callers: 1.
   - Data references: 4 recorded targets; `gd/_gd@1120:07ca`, `iMsgCur/_iMsgCur@1120:0b00`, `tutor.idh@1120:5212`, `tutor/_tutor@1120:520c`.
@@ -8343,6 +8359,7 @@ For each open/partial entry, finish all of these before checking its main box:
 
 - [ ] **`FCheckResearch` — Open**
   - Identity: NE `0020:6da4–6df4`; **80 bytes**; [assembly](analysis/decompiler/export/raw/10f8_6da4.asm) · [raw pseudocode](analysis/decompiler/export/raw/10f8_6da4_FCheckResearch.c).
+  - [x] **Byte match — 80/80 bytes**, zero differences after named address resolution. [Native matching C](compat/tutorial-match/T01.C) · [Exact comparison evidence](analysis/compat/tutorial-byte-match.json). Integration/semantic review remains separately recorded below.
   - Signature: `int FCheckResearch(int iTech, int iTechNext, int pct)`; **far cdecl**. Debug source: `tutor.c`.
   - Calls: No outgoing edge recorded (not proof of no OS/indirect calls). Static callers: 1.
   - Data references: 3 recorded targets; `rgplr[0].iTechCur@1120:59db`, `rgplr[0].pctResearch@1120:59da`, `tutor.idh@1120:5212`.
@@ -8353,6 +8370,7 @@ For each open/partial entry, finish all of these before checking its main box:
 
 - [ ] **`FCheckFleetWP` — Open**
   - Identity: NE `0020:6df4–6f86`; **402 bytes**; [assembly](analysis/decompiler/export/raw/10f8_6df4.asm) · [raw pseudocode](analysis/decompiler/export/raw/10f8_6df4_FCheckFleetWP.c).
+  - [x] **Byte match — 402/402 bytes**, zero differences after named address resolution. [Native matching C](compat/tutorial-match/V179.C) · [Exact comparison evidence](analysis/compat/tutorial-byte-match.json). Integration/semantic review remains separately recorded below.
   - Signature: `int FCheckFleetWP(unsigned int ifl, int iord, unsigned int grobj, int id, unsigned int grTask, unsigned int iWarp)`; **far cdecl**. Debug source: `tutor.c`.
   - Calls: [`LpflFromId`](#fn-0008-2078), [`TutorError`](#fn-0020-67ae), [`FCheckSelection`](#fn-0020-6af4). Static callers: 5.
   - Data references: 1 recorded targets; `tutor.idh@1120:5212`.
@@ -8363,6 +8381,7 @@ For each open/partial entry, finish all of these before checking its main box:
 
 - [ ] **`FCheckPlanetRoute` — Open**
   - Identity: NE `0020:6f86–6ff3`; **109 bytes**; [assembly](analysis/decompiler/export/raw/10f8_6f86.asm) · [raw pseudocode](analysis/decompiler/export/raw/10f8_6f86_FCheckPlanetRoute.c).
+  - [x] **Byte match — 109/109 bytes**, zero differences after named address resolution. [Native matching C](compat/tutorial-match/T07.C) · [Exact comparison evidence](analysis/compat/tutorial-byte-match.json). Integration/semantic review remains separately recorded below.
   - Signature: `int FCheckPlanetRoute(int idpl, int idplRoute)`; **far cdecl**. Debug source: `tutor.c`.
   - Calls: [`LpplFromId`](#fn-0008-021e). Static callers: 1.
   - Data references: 1 recorded targets; `tutor.idh@1120:5212`.
@@ -8373,6 +8392,7 @@ For each open/partial entry, finish all of these before checking its main box:
 
 - [ ] **`FCheckLayingWP` — Open**
   - Identity: NE `0020:6ff4–70c0`; **204 bytes**; [assembly](analysis/decompiler/export/raw/10f8_6ff4.asm) · [raw pseudocode](analysis/decompiler/export/raw/10f8_6ff4_FCheckLayingWP.c).
+  - [x] **Byte match — 204/204 bytes**, zero differences after named address resolution. [Native matching C](compat/tutorial-match/V011.C) · [Exact comparison evidence](analysis/compat/tutorial-byte-match.json). Integration/semantic review remains separately recorded below.
   - Signature: `int FCheckLayingWP(unsigned int ifl, int iord, int id, int iYears)`; **far cdecl**. Debug source: `tutor.c`.
   - Calls: [`LpflFromId`](#fn-0008-2078), [`FCheckFleetWP`](#fn-0020-6df4). Static callers: 0.
   - Data references: 1 recorded targets; `tutor.idh@1120:5212`.
@@ -8383,6 +8403,7 @@ For each open/partial entry, finish all of these before checking its main box:
 
 - [ ] **`FCheckColonizeWP` — Open**
   - Identity: NE `0020:70c0–71ac`; **236 bytes**; [assembly](analysis/decompiler/export/raw/10f8_70c0.asm) · [raw pseudocode](analysis/decompiler/export/raw/10f8_70c0_FCheckColonizeWP.c).
+  - [x] **Byte match — 236/236 bytes**, zero differences after named address resolution. [Native matching C](compat/tutorial-match/T16.C) · [Exact comparison evidence](analysis/compat/tutorial-byte-match.json). Integration/semantic review remains separately recorded below.
   - Signature: `int FCheckColonizeWP(unsigned int ifl, int id, unsigned int iWarp)`; **far cdecl**. Debug source: `tutor.c`.
   - Calls: [`LpflFromId`](#fn-0008-2078), [`FCheckFleetWP`](#fn-0020-6df4), [`FCheckCargo`](#fn-0020-7664). Static callers: 1.
   - Data references: 1 recorded targets; `tutor.idh@1120:5212`.
@@ -8393,6 +8414,7 @@ For each open/partial entry, finish all of these before checking its main box:
 
 - [ ] **`FCheckPatrolWP` — Open**
   - Identity: NE `0020:71ac–7280`; **212 bytes**; [assembly](analysis/decompiler/export/raw/10f8_71ac.asm) · [raw pseudocode](analysis/decompiler/export/raw/10f8_71ac_FCheckPatrolWP.c).
+  - [x] **Byte match — 212/212 bytes**, zero differences after named address resolution. [Native matching C](compat/tutorial-match/S011.C) · [Exact comparison evidence](analysis/compat/tutorial-byte-match.json). Integration/semantic review remains separately recorded below.
   - Signature: `int FCheckPatrolWP(unsigned int ifl, int iord, int id, unsigned int iWarp, unsigned int iPlan, unsigned int iDist)`; **far cdecl**. Debug source: `tutor.c`.
   - Calls: [`LpflFromId`](#fn-0008-2078), [`FCheckFleetWP`](#fn-0020-6df4). Static callers: 0.
   - Data references: 1 recorded targets; `tutor.idh@1120:5212`.
@@ -8423,6 +8445,7 @@ For each open/partial entry, finish all of these before checking its main box:
 
 - [ ] **`FCheckBtlPlan` — Open**
   - Identity: NE `0020:760a–7664`; **90 bytes**; [assembly](analysis/decompiler/export/raw/10f8_760a.asm) · [raw pseudocode](analysis/decompiler/export/raw/10f8_760a_FCheckBtlPlan.c).
+  - [x] **Byte match — 90/90 bytes**, zero differences after named address resolution. [Native matching C](compat/tutorial-match/T06.C) · [Exact comparison evidence](analysis/compat/tutorial-byte-match.json). Integration/semantic review remains separately recorded below.
   - Signature: `int FCheckBtlPlan(int ibp, unsigned short imdTarget, unsigned short fSpread, unsigned short fBomb, unsigned short fDump, unsigned short mdUnarmed, unsigned short mdScout, unsigned short mdWar, unsigned short mdBomber)`; **far cdecl**. Debug source: `tutor.c`.
   - Calls: No outgoing edge recorded (not proof of no OS/indirect calls). Static callers: 0.
   - Data references: 4 recorded targets; `rgcbtlplan/_rgcbtlplan@1120:4830`, `rglpbtlplan/_rglpbtlplan@1120:5938`, `rglpbtlplan[0]+2@1120:593a`, `tutor.idh@1120:5212`.
@@ -8433,6 +8456,7 @@ For each open/partial entry, finish all of these before checking its main box:
 
 - [ ] **`FCheckCargo` — Open**
   - Identity: NE `0020:7664–77d8`; **372 bytes**; [assembly](analysis/decompiler/export/raw/10f8_7664.asm) · [raw pseudocode](analysis/decompiler/export/raw/10f8_7664_FCheckCargo.c).
+  - [x] **Byte match — 372/372 bytes**, zero differences after named address resolution. [Native matching C](compat/tutorial-match/T17.C) · [Exact comparison evidence](analysis/compat/tutorial-byte-match.json). Integration/semantic review remains separately recorded below.
   - Signature: `int FCheckCargo(_fleet far * lpfl, int wtMin1, int wtMin2, int wtMin3, int wtColonists)`; **far cdecl**. Debug source: `tutor.c`.
   - Calls: [`TutorError`](#fn-0020-67ae), [`FCheckSelection`](#fn-0020-6af4). Static callers: 2.
   - Data references: 1 recorded targets; `tutor.idh@1120:5212`.
@@ -8443,6 +8467,7 @@ For each open/partial entry, finish all of these before checking its main box:
 
 - [ ] **`FCheckBuilderPart` — Open**
   - Identity: NE `0020:77d8–7964`; **396 bytes**; [assembly](analysis/decompiler/export/raw/10f8_77d8.asm) · [raw pseudocode](analysis/decompiler/export/raw/10f8_77d8_FCheckBuilderPart.c).
+  - [x] **Byte match — 396/396 bytes**, zero differences after named address resolution. [Native matching C](compat/tutorial-match/T22.C) · [Exact comparison evidence](analysis/compat/tutorial-byte-match.json). Integration/semantic review remains separately recorded below.
   - Signature: `int FCheckBuilderPart(int iSlot, _hs near * phs, unsigned int cInit)`; **far cdecl**. Debug source: `tutor.c`.
   - Calls: [`TutorError`](#fn-0020-67ae). Static callers: 2.
   - Data references: 5 recorded targets; `hwndSlotDlg/_hwndSlotDlg@1120:0c90`, `lpshdefBuild+2@1120:5204`, `lpshdefBuild/_lpshdefBuild@1120:5202`, `mdBuild/_mdBuild@1120:5466`, `tutor.idh@1120:5212`.
@@ -8453,6 +8478,7 @@ For each open/partial entry, finish all of these before checking its main box:
 
 - [ ] **`FCheckShipBuilder` — Open**
   - Identity: NE `0020:7964–79f5`; **145 bytes**; [assembly](analysis/decompiler/export/raw/10f8_7964.asm) · [raw pseudocode](analysis/decompiler/export/raw/10f8_7964_FCheckShipBuilder.c).
+  - [x] **Byte match — 145/145 bytes**, zero differences after named address resolution. [Native matching C](compat/tutorial-match/T08.C) · [Exact comparison evidence](analysis/compat/tutorial-byte-match.json). Integration/semantic review remains separately recorded below.
   - Signature: `int FCheckShipBuilder(int iCategory, int iShip)`; **far cdecl**. Debug source: `tutor.c`.
   - Calls: `USER::GETDLGITEM` (14f8:0228), `USER::SENDMESSAGE` (14f8:0260). Static callers: 2.
   - Data references: 3 recorded targets; `hwndSlotDlg/_hwndSlotDlg@1120:0c90`, `mdBuild/_mdBuild@1120:5466`, `tutor.idh@1120:5212`.
@@ -8474,6 +8500,7 @@ For each open/partial entry, finish all of these before checking its main box:
 
 - [ ] **`FOKMergeDialog` — Open**
   - Identity: NE `0020:81da–82a7`; **205 bytes**; [assembly](analysis/decompiler/export/raw/10f8_81da.asm) · [raw pseudocode](analysis/decompiler/export/raw/10f8_81da_FOKMergeDialog.c).
+  - [x] **Byte match — 205/205 bytes**, zero differences after named address resolution. [Native matching C](compat/tutorial-match/T04.C) · [Exact comparison evidence](analysis/compat/tutorial-byte-match.json). Integration/semantic review remains separately recorded below.
   - Signature: `int FOKMergeDialog(…)`; **far cdecl**. Debug source: `tutor.c`.
   - Calls: [`TutorError`](#fn-0020-67ae). Static callers: 1.
   - Data references: 3 recorded targets; `game.turn@1120:0082`, `tutor.idh@1120:5212`, `vrgiflMerge/_vrgiflMerge@1120:51bc`.
