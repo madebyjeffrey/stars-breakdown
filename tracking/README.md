@@ -8,7 +8,7 @@ Step 0 is complete when the retained inventory is verified, the ledgers exist, a
 
 `target/stars.exe` is byte-identical to the archive's `stars.exe`. Both on-disk copies of `26JFIN.txt` match its archive member. There is only one distinct supplied executable. No comparison with unprovided releases has been performed; a different hash must receive a separate inventory and analysis baseline.
 
-The user identified this executable on 2026-09-13 as **2.70j RC3**, the third release candidate of the retail patch. They clarified that 2.60 was the shareware release, 2.70 was retail, and the releases were binary compatible. U001 is resolved on that basis. The archive name and release-note labels remain preserved as provenance; the version has not yet been independently decoded from executable resources.
+The user identified this executable on 2026-09-13 as **2.70j RC3**, the third release candidate of the retail patch. They clarified that 2.60 was the shareware release, 2.70 was retail, and the releases were binary compatible. U001 is resolved on that basis. The archive name and release-note labels remain preserved as provenance. SzVersion independently formats **Version 2.60j**, as confirmed by its instructions and the reconstructed native screen; that displayed text is preserved and does not replace the user's provenance clarification.
 
 ## Coverage
 
@@ -16,10 +16,13 @@ The user identified this executable on 2026-09-13 as **2.70j RC3**, the third re
 
 Initial coverage: 37 segments, 1,305 ranges, 1,042,584 memory bytes. Debug procedure ranges cover 890,384 bytes; 126,146 code-segment bytes remain unclassified and 26,054 bytes belong to the data segment. These are inventory measurements, not a decompilation percentage. Procedure extents may themselves contain inline data.
 
-Step 5 has 122 reviewed routines covering 53,170 original procedure bytes, compiled
+Step 5 has 127 reviewed routines covering 55,129 original procedure bytes, compiled
 as host C89 semantic adapters and compared with original x86 execution. See
-[the reconstruction report](../analysis/reconstruction/core.md). This is not a
-linked Win16 replacement. The historical GetRaceStat note has been superseded
+[the reconstruction report](../analysis/reconstruction/core.md). A partial
+Win16 application now opens the starting screen, with original resources and
+recovered drawing code; see the [milestone](../analysis/reconstruction/starting-screen.md).
+Full application behavior and repeat native acceptance remain open.
+The historical GetRaceStat note has been superseded
 by reviewed source and the recorded static/runtime/differential evidence.
 The [race-component audit](../analysis/reconstruction/race-dependencies.json)
 also records caller-specific helper paths separately, without crediting their

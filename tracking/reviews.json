@@ -1726,5 +1726,70 @@
       "analysis/reconstruction/foundations.md",
       "tests/test_startup_machine.py"
     ]
+  },
+  "0009:5310-53b4": {
+    "reconstruction_path": "reconstructed/src/resources.c",
+    "review_status": "manually_reviewed",
+    "compilation_status": "host_c89_compiled",
+    "validation_status": "original_x86_differential_checked; VC152_large_model_compiled; scoped_native_startup_integration",
+    "evidence": [
+      "analysis/functions.json",
+      "analysis/debug/procedures.json",
+      "analysis/decompiler/export-manifest.json",
+      "analysis/reconstruction/starting-screen.md",
+      "tests/test_title_machine.py"
+    ]
+  },
+  "0009:5220-530f": {
+    "reconstruction_path": "reconstructed/src/resources.c",
+    "review_status": "manually_reviewed",
+    "compilation_status": "host_c89_compiled",
+    "validation_status": "original_x86_differential_checked; VC152_large_model_compiled; scoped_native_startup_integration",
+    "evidence": [
+      "analysis/functions.json",
+      "analysis/debug/procedures.json",
+      "analysis/decompiler/export-manifest.json",
+      "analysis/reconstruction/starting-screen.md",
+      "tests/test_title_machine.py"
+    ]
+  },
+  "0009:4b50-4c9b": {
+    "reconstruction_path": "reconstructed/src/resources.c",
+    "review_status": "manually_reviewed",
+    "compilation_status": "host_c89_compiled",
+    "validation_status": "original_x86_differential_checked; VC152_large_model_compiled; scoped_native_startup_integration",
+    "evidence": [
+      "analysis/functions.json",
+      "analysis/debug/procedures.json",
+      "analysis/decompiler/export-manifest.json",
+      "analysis/reconstruction/starting-screen.md",
+      "tests/test_title_machine.py"
+    ]
+  },
+  "0001:1020-124c": {
+    "reconstruction_path": "reconstructed/src/title.c",
+    "review_status": "manually_reviewed",
+    "compilation_status": "host_c89_compiled",
+    "validation_status": "original_x86_differential_checked; VC152_large_model_compiled; scoped_native_startup_integration",
+    "evidence": [
+      "analysis/functions.json",
+      "analysis/debug/procedures.json",
+      "analysis/decompiler/export-manifest.json",
+      "analysis/reconstruction/starting-screen.md",
+      "tests/test_title_machine.py"
+    ]
+  },
+  "0008:5fe2-627f": {
+    "reconstruction_path": "reconstructed/src/title.c",
+    "review_status": "manually_reviewed",
+    "compilation_status": "host_c89_compiled",
+    "validation_status": "original_x86_differential_checked; VC152_large_model_compiled; scoped_native_startup_integration",
+    "evidence": [
+      "analysis/functions.json",
+      "analysis/debug/procedures.json",
+      "analysis/decompiler/export-manifest.json",
+      "analysis/reconstruction/starting-screen.md",
+      "tests/test_title_machine.py"
+    ]
   }
 }

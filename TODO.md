@@ -86,7 +86,7 @@ This does not promise the author's exact source text, comments, macros, or code 
 
 ## 5. Reconstruct the program, subsystem by subsystem
 
-**In progress:** 122 named routines (53,170 original procedure bytes) now have
+**In progress:** 127 named routines (55,129 original procedure bytes) now have
 reviewed C89 source and original-x86 differential tests. See
 [the core reconstruction report](analysis/reconstruction/core.md).
 Completed components are checked under their subsystem below. A parent checkbox
@@ -228,6 +228,22 @@ provisional; module names identify study areas rather than architectural boundar
     InitInstance, INI settings, WinMain, command-line/batch setup, class
     registration and message-loop dependencies; connect the mapped NE entry
     and recovered resource helpers and validate the integrated startup path.
+  - [x] **Starting-screen source milestone:** recover large-resource loading,
+    palette construction, saved-window parsing and the fallback starfield;
+    connect recovered title creation, painting and palette handling to a new
+    Win16 bootstrap. Fonts use the original configuration rules in a separate
+    INI file. Five additional complete routines / 1,959 original bytes plus
+    explicitly scoped TitleWndProc and ReadIniSettings paths. See the
+    [starting-screen report](analysis/reconstruction/starting-screen.md).
+  - [x] **First native starting-screen launch:** VC++ 1.52c compiled/linked the
+    application; WfW 3.11 drew the original title, read 481,088 bitmap bytes,
+    repainted and exited with successful cleanup logged. The source and prebuilt
+    executable are packaged as START1. This does not complete WinMain or the
+    full application initialization/command paths.
+  - [ ] **Repeat native startup acceptance:** run a fresh Windows session,
+    /SMOKE and /FALLBACK, and test New/Open notices. Investigate the PROGMAN
+    fault seen in the first session (U023). Automatic approval review requires
+    user confirmation before the next launch of the new executable.
   - [ ] **Remaining runtime data:** audit the seven records without code,
     remaining CRT data fixups and placement dependencies. The code-byte match
     does not complete these data mappings or prove the full linker layout.
@@ -259,15 +275,25 @@ provisional; module names identify study areas rather than architectural boundar
 - [ ] **Tutorial and remaining behavior:** `tutor`, `tutor2`, `dummy`, `debug`, and every module or unnamed routine not covered above.
 - [ ] **Resources and non-code data:** incorporate extracted assets, dialogs, menus, strings, and tables into the build with preserved identifiers and semantics.
 
+  - [x] **Original resource embedding:** all 122 resources are included in the
+    new executable with identical types, identifiers, flags, sizes and SHA-256
+    hashes. Native RC 3.11 binding and NE roundtrip verification pass.
+  - [x] **Starting-screen static data:** use preserved DGROUP initialization,
+    all 1,414 compressed strings with executable string-segment code removed,
+    and reviewed starfield tables. All extracted strings match the full carrier.
+  - [ ] Audit and use remaining non-code tables, resource semantics and CRT
+    data throughout the complete application.
+
 The checked C components above have host builds and original-instruction tests.
-Their native Windows heap/resource adapters and live startup acceptance remain
-integration work; compiler installation alone does not complete those checks.
+The starting-screen milestone also exercises native Windows heap/resource
+adapters. Broader native integration and repeat live acceptance remain open;
+compiler installation alone does not complete those checks.
 
 ### Per-function completion checklist
 
 This is a template for each routine, not a global progress checklist. Completed
 routine reviews are recorded in [the coverage ledger](analysis/coverage.json);
-122 named game routines currently meet the reviewed-source standard.
+127 named game routines currently meet the reviewed-source standard.
 
 - [ ] Record address range(s), names, source mappings, signature, calling convention, and evidence links.
 - [ ] Resolve control flow, call targets, global references, structure accesses, and local-variable roles.
@@ -280,6 +306,10 @@ routine reviews are recorded in [the coverage ledger](analysis/coverage.json);
 **Exit:** every identified routine has reviewed source or an explicitly documented runtime/library implementation with an audited mapping. No unresolved behavior is hidden behind placeholders or silently omitted modules.
 
 ## 6. Build a complete replacement executable
+
+A partial native executable now opens the starting screen; see the
+[START1 instructions](compat/startup/README.TXT). The complete-program items
+below remain open, including New/Open/Continue game behavior.
 
 - [ ] Choose and document a reproducible compiler/toolchain and target. Prefer an original-compatible 16-bit build for direct comparison if feasible; if using a modern target, explicitly implement the original memory/arithmetic/OS semantics.
 - [ ] Create build scripts, startup integration, compiler compatibility definitions, and resource compilation steps.

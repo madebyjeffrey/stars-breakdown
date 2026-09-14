@@ -1,0 +1,33 @@
+{
+  "date": "2026-09-14",
+  "scope": "First reconstructed starting-screen build; incomplete application",
+  "executable_sha256": "81e4ad0b84444adfb39cc40e71b388e44fca3a2d66e65b5891f1d392d89ea093",
+  "compiler": "Microsoft C/C++ 8.00c, VC++ 1.52c",
+  "linker": "5.60",
+  "resource_compiler": "Microsoft Windows RC 3.11",
+  "build_flags": "/AL /GA /GEs /Zp1 /Od /Zi /W3; /NOLOGO /NOD /MAP /CO /ALIGN:64",
+  "original_resource_matches": 122,
+  "build_logs": {
+    "BLDSTAT.TXT": "BUILD=START1\nCOMPILE=PASS\nLINK=PASS\nRESOURCES=PASS\n",
+    "BUILD.LOG": "utilgen.c\nrace.c\nnearstat.c\ncodec.c\ntext.c\ncreate.c\nplanet.c\nstrings.c\nrecords.c\nstream.c\nfile.c\nalerts.c\nruntime.c\npassword.c\noutput.c\nformat.c\nui.c\nraceui.c\nracedraw.c\nracewiz.c\nmemory.c\ncommon.c\nstartup.c\nresource.c\ntitle.c\napp.c\n",
+    "LINK.LOG": "Object Modules [.obj]: /NOLOGO /NOD /MAP /CO /ALIGN:64 UTILGEN.OBJ+\nObject Modules [.obj]: RACE.OBJ+\nObject Modules [.obj]: NEARSTAT.OBJ+\nObject Modules [.obj]: CODEC.OBJ+\nObject Modules [.obj]: TEXT.OBJ+\nObject Modules [.obj]: CREATE.OBJ+\nObject Modules [.obj]: PLANET.OBJ+\nObject Modules [.obj]: STRINGS.OBJ+\nObject Modules [.obj]: RECORDS.OBJ+\nObject Modules [.obj]: STREAM.OBJ+\nObject Modules [.obj]: FILE.OBJ+\nObject Modules [.obj]: ALERTS.OBJ+\nObject Modules [.obj]: RUNTIME.OBJ+\nObject Modules [.obj]: PASSWORD.OBJ+\nObject Modules [.obj]: OUTPUT.OBJ+\nObject Modules [.obj]: FORMAT.OBJ+\nObject Modules [.obj]: UI.OBJ+\nObject Modules [.obj]: RACEUI.OBJ+\nObject Modules [.obj]: RACEDRAW.OBJ+\nObject Modules [.obj]: RACEWIZ.OBJ+\nObject Modules [.obj]: MEMORY.OBJ+\nObject Modules [.obj]: COMMON.OBJ+\nObject Modules [.obj]: STARTUP.OBJ+\nObject Modules [.obj]: RESOURCE.OBJ+\nObject Modules [.obj]: TITLE.OBJ+\nObject Modules [.obj]: APP.OBJ\nRun File [UTILGEN.exe]: START.EXE\nList File [c:START.map]: START.MAP\nLibraries [.lib]: LLIBCEW LIBW\nDefinitions File [nul.def]: START.DEF;\n",
+    "RC.LOG": "Microsoft (R) Windows Resource Compiler Version 3.11\nCopyright (C) Microsoft Corp. 1985-1992. All rights reserved.\n\n"
+  },
+  "first_native_run_log": "STARTUP_MILESTONE=1\nSTATIC_DATA=PASS\nCONFIGURATION=PASS\nDRAWING=BITMAP\nMEMORY_ALLOC_FREE=PASS\nTITLE_CREATE=PASS\nFIRST_PAINT=PASS\nTITLE_RELEASE=PASS\nCLEANUP=PASS\nRESOURCE_READS=17\nRESOURCE_BYTES=481088\nPAINTS=2\nEXIT=PASS\n",
+  "observed": [
+    "Starting screen appeared with original artwork, four buttons and Version 2.60j text.",
+    "Continue button was disabled with no previous game configured.",
+    "Alt+X closed the new application; its log records two paints and cleanup success."
+  ],
+  "unresolved": [
+    "Existing guest session showed drawing corruption before launching START.EXE.",
+    "After first paint, Ctrl+F5 followed by Alt+N coincided with PROGMAN page fault in USER.EXE at 0001:4F7F. Cause not isolated.",
+    "Fresh startup, automated smoke, native fallback and New/Open notice checks remain pending."
+  ],
+  "approval_status": "Automatic approval review rejected a repeat GUI launch of the locally built START.EXE as unrecognized software; explicit user confirmation required before another launch.",
+  "validation_limits": [
+    "Large-model semantic adapter; not original medium-model link layout.",
+    "New/Open/Continue game logic and complete startup/configuration are not implemented in the native bootstrap.",
+    "Native fallback uses an explicit zero for the original stack-dependent second RNG seed."
+  ]
+}

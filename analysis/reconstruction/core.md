@@ -1,11 +1,12 @@
 # Step 5: reviewed semantic core
 
-Status: **122 of 846 named game routines reconstructed**, covering 53,170 original
+Status: **127 of 846 named game routines reconstructed**, covering 55,129 original
 procedure bytes. Step 5 remains in progress. A separate
 [CRT audit](runtime-library.json) maps the linked runtime code; other unnamed
 code and remaining CRT data still need review. These routines compile together
-as a host C89 library; they do not yet
-constitute a Win16 application or retain the original far-call ABI. Innate race
+as a host C89 library and now support a partial native
+[Win16 starting-screen application](starting-screen.md). The complete application
+and original far-call ABI remain unfinished. Innate race
 scoring uses explicit bounded x87 rounding; see the U018 resolution.
 
 Additional routines and their limits are described in [codec](codec.md),
@@ -16,7 +17,8 @@ Additional routines and their limits are described in [codec](codec.md),
 [file headers and stream handling](file-streams.md), and
 [file creation and alerts](file-creation.md), the integrated
 [race component](race-component.md), [message formatting](message-formatting.md),
-and [memory, startup resources and runtime mapping](foundations.md).
+and [memory, startup resources and runtime mapping](foundations.md), plus the
+[starting-screen milestone](starting-screen.md).
 The table below covers the initial 15 routines.
 
 A complete host-side race-generation example is available with
