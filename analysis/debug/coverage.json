@@ -10,9 +10,9 @@
     "debug_procedure_bytes": 890384,
     "unclassified_code_segment_bytes": 126146,
     "data_segment_bytes": 26054,
-    "compiled_reconstruction_bytes": 16415,
+    "compiled_reconstruction_bytes": 17404,
     "compiled_coverage_scope": "Host C89 semantic adapters; not a linked Win16 replacement or byte-matching build",
-    "manually_reviewed_bytes": 16415
+    "manually_reviewed_bytes": 17404
   },
   "ranges": [
     {
@@ -16334,13 +16334,18 @@
         "file.obj"
       ],
       "evidence": [
-        "analysis/segments.json",
         "analysis/functions.json",
-        "analysis/segment_map.json"
+        "analysis/debug/procedures.json",
+        "analysis/decompiler/export-manifest.json",
+        "analysis/reconstruction/file-streams.md",
+        "tools/stream_machine.py",
+        "tests/test_stream_machine.py",
+        "tests/stream_abort_bridge.c"
       ],
-      "reconstruction_path": null,
-      "review_status": "not_started",
-      "validation_status": "not_started",
+      "reconstruction_path": "reconstructed/src/stream.c",
+      "review_status": "manually_reviewed",
+      "validation_status": "original_x86_differential_checked_with_explicit_OS_and_game_error_and_nonlocal_exit_boundaries; host_semantic_adapter; Win16_UI_integration_pending",
+      "compilation_status": "host_c89_compiled",
       "public_symbols": [
         "226:000078ec"
       ]
@@ -16361,13 +16366,18 @@
         "file.obj"
       ],
       "evidence": [
-        "analysis/segments.json",
         "analysis/functions.json",
-        "analysis/segment_map.json"
+        "analysis/debug/procedures.json",
+        "analysis/decompiler/export-manifest.json",
+        "analysis/reconstruction/file-streams.md",
+        "tools/stream_machine.py",
+        "tests/test_stream_machine.py",
+        "tests/stream_abort_bridge.c"
       ],
-      "reconstruction_path": null,
-      "review_status": "not_started",
-      "validation_status": "not_started",
+      "reconstruction_path": "reconstructed/src/stream.c",
+      "review_status": "manually_reviewed",
+      "validation_status": "original_x86_differential_checked_with_explicit_OS_close_boundary; host_semantic_adapter; Win16_UI_integration_pending",
+      "compilation_status": "host_c89_compiled",
       "public_symbols": [
         "226:00003394"
       ]
@@ -16388,13 +16398,18 @@
         "file.obj"
       ],
       "evidence": [
-        "analysis/segments.json",
         "analysis/functions.json",
-        "analysis/segment_map.json"
+        "analysis/debug/procedures.json",
+        "analysis/decompiler/export-manifest.json",
+        "analysis/reconstruction/file-streams.md",
+        "tools/stream_machine.py",
+        "tests/test_stream_machine.py",
+        "tests/stream_abort_bridge.c"
       ],
-      "reconstruction_path": null,
-      "review_status": "not_started",
-      "validation_status": "not_started",
+      "reconstruction_path": "reconstructed/src/stream.c",
+      "review_status": "manually_reviewed",
+      "validation_status": "original_x86_differential_checked_with_contiguous_far_spans_OS_and_game_error_and_nonlocal_exit_boundaries; host_semantic_adapter; Win16_UI_integration_pending",
+      "compilation_status": "host_c89_compiled",
       "public_symbols": [
         "226:0000a088"
       ]
@@ -16987,13 +17002,18 @@
         "save.obj"
       ],
       "evidence": [
-        "analysis/segments.json",
         "analysis/functions.json",
-        "analysis/segment_map.json"
+        "analysis/debug/procedures.json",
+        "analysis/decompiler/export-manifest.json",
+        "analysis/reconstruction/file-streams.md",
+        "tools/stream_machine.py",
+        "tests/test_stream_machine.py",
+        "tests/stream_abort_bridge.c"
       ],
-      "reconstruction_path": null,
-      "review_status": "not_started",
-      "validation_status": "not_started",
+      "reconstruction_path": "reconstructed/src/records.c",
+      "review_status": "manually_reviewed",
+      "validation_status": "original_x86_differential_checked_with_controlled_OS_tick_and_exact_transfer_boundary; host_semantic_adapter; Win16_UI_integration_pending",
+      "compilation_status": "host_c89_compiled",
       "public_symbols": [
         "226:00008800"
       ]
@@ -17129,13 +17149,18 @@
         "save.obj"
       ],
       "evidence": [
-        "analysis/segments.json",
         "analysis/functions.json",
-        "analysis/segment_map.json"
+        "analysis/debug/procedures.json",
+        "analysis/decompiler/export-manifest.json",
+        "analysis/reconstruction/file-streams.md",
+        "tools/stream_machine.py",
+        "tests/test_stream_machine.py",
+        "tests/stream_abort_bridge.c"
       ],
-      "reconstruction_path": null,
-      "review_status": "not_started",
-      "validation_status": "not_started",
+      "reconstruction_path": "reconstructed/src/stream.c",
+      "review_status": "manually_reviewed",
+      "validation_status": "original_x86_differential_checked_with_explicit_OS_and_formatted_error_and_nonlocal_exit_boundaries; host_semantic_adapter; Win16_UI_integration_pending",
+      "compilation_status": "host_c89_compiled",
       "public_symbols": [
         "226:0000a25c"
       ]

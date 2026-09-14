@@ -642,5 +642,80 @@
       "tools/record_machine.py",
       "tests/test_record_machine.py"
     ]
+  },
+  "000f:8ea4-9049": {
+    "reconstruction_path": "reconstructed/src/records.c",
+    "review_status": "manually_reviewed",
+    "compilation_status": "host_c89_compiled",
+    "validation_status": "original_x86_differential_checked_with_controlled_OS_tick_and_exact_transfer_boundary; host_semantic_adapter; Win16_UI_integration_pending",
+    "evidence": [
+      "analysis/functions.json",
+      "analysis/debug/procedures.json",
+      "analysis/decompiler/export-manifest.json",
+      "analysis/reconstruction/file-streams.md",
+      "tools/stream_machine.py",
+      "tests/test_stream_machine.py",
+      "tests/stream_abort_bridge.c"
+    ]
+  },
+  "000f:52ae-53cc": {
+    "reconstruction_path": "reconstructed/src/stream.c",
+    "review_status": "manually_reviewed",
+    "compilation_status": "host_c89_compiled",
+    "validation_status": "original_x86_differential_checked_with_explicit_OS_and_game_error_and_nonlocal_exit_boundaries; host_semantic_adapter; Win16_UI_integration_pending",
+    "evidence": [
+      "analysis/functions.json",
+      "analysis/debug/procedures.json",
+      "analysis/decompiler/export-manifest.json",
+      "analysis/reconstruction/file-streams.md",
+      "tools/stream_machine.py",
+      "tests/test_stream_machine.py",
+      "tests/stream_abort_bridge.c"
+    ]
+  },
+  "000f:53cc-53f4": {
+    "reconstruction_path": "reconstructed/src/stream.c",
+    "review_status": "manually_reviewed",
+    "compilation_status": "host_c89_compiled",
+    "validation_status": "original_x86_differential_checked_with_explicit_OS_close_boundary; host_semantic_adapter; Win16_UI_integration_pending",
+    "evidence": [
+      "analysis/functions.json",
+      "analysis/debug/procedures.json",
+      "analysis/decompiler/export-manifest.json",
+      "analysis/reconstruction/file-streams.md",
+      "tools/stream_machine.py",
+      "tests/test_stream_machine.py",
+      "tests/stream_abort_bridge.c"
+    ]
+  },
+  "000f:53f4-547e": {
+    "reconstruction_path": "reconstructed/src/stream.c",
+    "review_status": "manually_reviewed",
+    "compilation_status": "host_c89_compiled",
+    "validation_status": "original_x86_differential_checked_with_contiguous_far_spans_OS_and_game_error_and_nonlocal_exit_boundaries; host_semantic_adapter; Win16_UI_integration_pending",
+    "evidence": [
+      "analysis/functions.json",
+      "analysis/debug/procedures.json",
+      "analysis/decompiler/export-manifest.json",
+      "analysis/reconstruction/file-streams.md",
+      "tools/stream_machine.py",
+      "tests/test_stream_machine.py",
+      "tests/stream_abort_bridge.c"
+    ]
+  },
+  "000f:9554-95bc": {
+    "reconstruction_path": "reconstructed/src/stream.c",
+    "review_status": "manually_reviewed",
+    "compilation_status": "host_c89_compiled",
+    "validation_status": "original_x86_differential_checked_with_explicit_OS_and_formatted_error_and_nonlocal_exit_boundaries; host_semantic_adapter; Win16_UI_integration_pending",
+    "evidence": [
+      "analysis/functions.json",
+      "analysis/debug/procedures.json",
+      "analysis/decompiler/export-manifest.json",
+      "analysis/reconstruction/file-streams.md",
+      "tools/stream_machine.py",
+      "tests/test_stream_machine.py",
+      "tests/stream_abort_bridge.c"
+    ]
   }
 }

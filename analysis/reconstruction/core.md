@@ -1,6 +1,6 @@
 # Step 5: reviewed semantic core
 
-Status: **49 of 846 named game routines reconstructed**, covering 16,415 original
+Status: **54 of 846 named game routines reconstructed**, covering 17,404 original
 procedure bytes. Step 5 remains in progress. Unnamed/runtime code is additional
 work. These routines compile together as a host C89 library; they do not yet
 constitute a Win16 application or retain the original far-call ABI. Innate race
@@ -10,15 +10,17 @@ Additional routines and their limits are described in [codec](codec.md),
 [text utilities](text.md), [game creation](create.md), [race validation](race-validation.md),
 [planet habitability](habitability.md), [innate habitability](innate-habitability.md),
 [race scoring](race-scoring.md), [game strings](game-strings.md),
-[random race creation](random-race.md), and [player records](player-records.md).
+[random race creation](random-race.md), [player records](player-records.md), and
+[file headers and stream handling](file-streams.md).
 The table below covers the initial 15 routines.
 
 A complete host-side race-generation example is available with
 `python3 tools/race_demo.py --seed 0`. It runs reconstructed C code with static
 original data and needs no emulator. Player-record serialization is now available through
-`--record-roundtrip`; file dialogs, error handling and the wizard UI remain
-unreconstructed. Successful Windows file transfers are explicitly simulated
-only in the specialized record tests; see that report for limits.
+`--record-roundtrip --tick 0`, including the reconstructed clock-dependent BOF
+header. Stream retry/transfer control flow is also reconstructed with explicit
+OS, error-presentation and nonlocal-exit boundaries. File dialogs and the wizard
+UI remain unreconstructed; see the stream report for validation limits.
 
 ## Source and address mapping
 

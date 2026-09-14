@@ -13,9 +13,11 @@ class RecordMachine(OriginalCore):
     SEGMENTS = dict(OriginalCore.SEGMENTS)
     SEGMENTS.update({15: 0xa000, 8: 0xb000})
 
-    def __init__(self):
-        super().__init__({'KERNEL!#82': (0xe000,0x100), 'KERNEL!#86': (0xe000,0x200),
-                          'USER!#420': (0xe000,0x300)})
+    def __init__(self, imports=None):
+        slots = {'KERNEL!#82': (0xe000,0x100), 'KERNEL!#86': (0xe000,0x200),
+                 'USER!#420': (0xe000,0x300)}
+        slots.update(imports or {})
+        super().__init__(slots)
         self.cpu.mem_map(0xe0000,0x10000)
         for offset,ret in [(0x100,b'\xca\x08\x00'),(0x200,b'\xca\x08\x00'),(0x300,b'\xcb')]:
             self.cpu.mem_write(0xe0000+offset,ret)

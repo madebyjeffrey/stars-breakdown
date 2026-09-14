@@ -62,7 +62,9 @@ outside the host adapter. The original arithmetic helpers execute in the oracle
 but are not counted as reconstructed runtime source.
 
 Record framing, stream XOR transformations and ReadRtPlr now have reviewed
-source; see [player records](player-records.md). Full stream/file I/O remains pending. Innate habitability,
+source; see [player records](player-records.md). [File streams](file-streams.md)
+now covers header generation and stream control flow at explicit OS/error
+boundaries, plus complete original-caller checksum observations. Innate habitability,
 CAdvantagePoints and CreateRandomRace now have reviewed source and original-machine
 comparisons. Their reports record mutation ordering, arithmetic and input limits.
 

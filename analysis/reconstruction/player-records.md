@@ -144,8 +144,10 @@ wsprintf for the verified `Player %d` format. The stream is synthetic memory;
 no live user files are opened. Other imports remain unmapped. This is **not**
 validation of short-I/O failures, dialogs, Windows handles or protected-mode
 selector behavior. Existing core tests still use a base harness with no import
-substitutions. RgFromStream, RgToStream, FWasRaceFile, FSaveRace and WriteBOF are
-not counted as reconstructed functions in this checkpoint.
+substitutions. Subsequent [file-stream work](file-streams.md) reconstructs
+RgFromStream, RgToStream and WriteBOF with explicit boundaries and tests the
+unchanged original FWasRaceFile/FSaveRace callers. Those two callers remain
+unreconstructed.
 
 ## Runnable record example
 
@@ -155,7 +157,8 @@ python3 tools/race_demo.py --seed 0 --record-roundtrip
 
 This generates a synthetic race using reconstructed code, encodes a controlled
 BOF/player/checksum sequence, reads it back, and reports byte equality and the
-checksum result. It runs without Windows. BOF game id, turn and salt are fixed
-fixture inputs; WriteBOF's clock path has not been reconstructed. Seed 0 produces
-a 144-byte stream whose restored player bytes and checksum match. Other inputs
-report differences instead of normalizing them away. The tool writes no files.
+checksum result. It runs without Windows. The demo now uses reconstructed
+WriteBOF with controlled game inputs and `--tick 0`; see [file streams](file-streams.md).
+Seed 0 produces a 144-byte stream whose restored player bytes and checksum match.
+Other inputs report differences instead of normalizing them away. The tool
+writes no race files.

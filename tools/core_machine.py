@@ -35,7 +35,7 @@ class OriginalCore:
                     continue
                 if relocation['target_kind'] == 'os_fpu_fixup':
                     continue
-                target = self.SEGMENTS.get(relocation.get('target_segment'), 0xd000)
+                target = self.SEGMENTS.get(relocation.get('target_segment'), 0xf000)
                 offset = relocation.get('target_offset', 0)
                 if relocation.get('import_key') in (imports or {}):
                     target, offset = imports[relocation['import_key']]

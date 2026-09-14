@@ -22,7 +22,7 @@ class Seeds(C.Structure):
     _fields_ = [('first', C.c_uint32), ('second', C.c_uint32)]
 
 
-def generate(seed, record_roundtrip=False):
+def generate(seed, record_roundtrip=False, tick=0):
     original = ROOT / 'target/stars.exe'
     if hashlib.sha256(original.read_bytes()).hexdigest() != 'ccab6682b55dae14dbf104e491cfbd3b32a6280022020032ae0615500949ba59':
         raise ValueError('Original executable differs from the reviewed baseline')
@@ -64,30 +64,37 @@ def generate(seed, record_roundtrip=False):
         'rng_after': list(struct.unpack_from('<II', memory, 0x1370)),
     }
     if record_roundtrip:
-        result['record_roundtrip'] = roundtrip_records(lib, memory, strings, player)
+        result['record_roundtrip'] = roundtrip_records(lib, memory, strings, player, tick)
     return result
 
 
-def roundtrip_records(lib, memory, strings, player):
+def roundtrip_records(lib, memory, strings, player, tick):
     """Serialize and read a controlled BOF/player/checksum sequence in memory."""
     pointer = C.POINTER(C.c_ubyte)
     read_type = C.CFUNCTYPE(None, C.c_void_p, pointer, C.c_uint16)
     write_type = C.CFUNCTYPE(None, C.c_void_p, pointer, C.c_uint16)
+    tick_type = C.CFUNCTYPE(C.c_uint32, C.c_void_p)
     lib.stars_write_record.argtypes = [pointer,C.c_int16,C.c_uint16,pointer,write_type,C.c_void_p]
     lib.stars_write_player_record.argtypes = [pointer,C.c_uint16,C.c_uint16,write_type,C.c_void_p]
     lib.stars_read_record.argtypes = [pointer,read_type,C.c_void_p]
     lib.stars_read_player_record.argtypes = [pointer,pointer,C.c_uint16,C.c_uint16]
     lib.stars_race_checksum.argtypes = [pointer,C.c_uint16]
     lib.stars_race_checksum.restype = C.c_uint16
-    for name in ['stars_write_record','stars_write_player_record','stars_read_record','stars_read_player_record']:
+    lib.stars_write_bof.argtypes = [pointer,C.c_int16,C.c_int16,C.c_int16,tick_type,write_type,C.c_void_p]
+    for name in ['stars_write_record','stars_write_player_record','stars_read_record','stars_read_player_record','stars_write_bof']:
         getattr(lib,name).restype = None
     host = (C.c_ubyte*65536).from_buffer(memory)
     encoded = bytearray()
     writer = write_type(lambda _,p,n: encoded.extend(C.string_at(p,n)))
-    # Deliberate fixed BOF inputs: not a reconstruction of WriteBOF's clock path.
-    bof = struct.pack('<4sIHHHH',b'J3J3',0x12345678,0x2a60,0,(73<<5)|31,5)
-    memory[0x3400:0x3410] = bof
-    lib.stars_write_record(host,8,16,C.cast(C.byref(host,0x3400),pointer),writer,None)
+    # Controlled environment; the reconstructed header routine consumes the
+    # current game RNG before asking for the supplied Windows tick value.
+    struct.pack_into('<I',memory,0x70,0x12345678)
+    struct.pack_into('<HH',memory,0x80,0,0)
+    struct.pack_into('<I',memory,0x7ca,0)
+    clock = tick_type(lambda _:tick)
+    lib.stars_write_bof(host,-1,5,0,clock,writer,None)
+    salt = struct.unpack_from('<H',encoded,14)[0] >> 5
+    rng_after_bof = list(struct.unpack_from('<II',memory,0x1370))
     lib.stars_write_player_record(host,player,0,writer,None)
     checksum = lib.stars_race_checksum(host,player)
     expected = bytes(memory[player:player+192])
@@ -117,7 +124,8 @@ def roundtrip_records(lib, memory, strings, player):
             'checksum_matches':stored_checksum == decoded_checksum,
             'changed_player_offsets':[i for i,(a,b) in enumerate(zip(expected,decoded)) if a != b],
             'stream_sha256':hashlib.sha256(encoded).hexdigest(),
-            'bof_inputs':'Fixed synthetic game id, turn and salt; clock path not invoked'}
+            'bof_inputs':{'game_id':0x12345678,'turn':0,'tick':tick},
+            'bof_salt':salt,'rng_after_bof':rng_after_bof}
 
 
 
@@ -125,9 +133,12 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--seed', type=lambda value: int(value, 0), default=0)
     parser.add_argument('--record-roundtrip', action='store_true', help='also encode and read a synthetic player-record stream')
+    parser.add_argument('--tick', type=lambda value:int(value,0), default=0,
+                        help='controlled Windows tick value for --record-roundtrip')
     args = parser.parse_args()
     if not 0 <= args.seed <= 0xffffffff: parser.error('seed must be an unsigned 32-bit integer')
-    print(json.dumps(generate(args.seed, args.record_roundtrip), indent=2))
+    if not 0 <= args.tick <= 0xffffffff: parser.error('tick must be an unsigned 32-bit integer')
+    print(json.dumps(generate(args.seed, args.record_roundtrip, args.tick), indent=2))
 
 
 if __name__ == '__main__': main()

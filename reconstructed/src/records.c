@@ -128,3 +128,36 @@ void stars_write_player_record(StarsU8 *data, StarsU16 player, StarsU16 storage,
     }
     stars_write_record(data, 6, cursor, body, write, context);
 }
+
+/* NE 15:8EA4-9049. multi is present in the debug signature but never read. */
+void stars_write_bof(StarsU8 *data, StarsI16 player, StarsI16 type, StarsI16 multi,
+    StarsTickCount ticks, StarsWriteTransfer write, void *context)
+{
+    StarsU8 body[16];
+    StarsSeeds seeds;
+    StarsU16 flags, salt, i;
+    StarsI16 random;
+    (void)multi;
+    memset(body, 0, sizeof(body));
+    strncpy((char *)body, (const char *)data + 0xa1cU, 4);
+    memcpy(body + 4, data + 0x70U, 4);
+    body[8] = 0x60U; body[9] = 0x2aU;
+    memcpy(body + 10, data + 0x82U, 2);
+    flags = (StarsU16)((record_word(data, 0x80U) & 0xe00U) << 4);
+    seeds.first = record_word(data, 0x1370U) | ((StarsU32)record_word(data, 0x1372U) << 16);
+    seeds.second = record_word(data, 0x1374U) | ((StarsU32)record_word(data, 0x1376U) << 16);
+    random = stars_random(&seeds, 2000);
+    for (i = 0; i < 4U; ++i) {
+        data[0x1370U + i] = (StarsU8)(seeds.first >> (i * 8U));
+        data[0x1374U + i] = (StarsU8)(seeds.second >> (i * 8U));
+    }
+    salt = (StarsU16)((StarsU16)ticks(context) + (StarsU16)random);
+    salt = (StarsU16)(((salt & 2047U) << 5) | ((StarsU16)player & 31U));
+    body[12] = (StarsU8)salt; body[13] = (StarsU8)(salt >> 8);
+    flags |= (StarsU16)((StarsU16)type & 255U);
+    flags |= (StarsU16)((record_word(data, 0x7caU) & 16U) << 4);
+    flags |= (StarsU16)((record_word(data, 0x7caU) & 8U) << 6);
+    if (type == 2 && (data[0x7ccU] & 1U)) flags |= 0x800U;
+    body[14] = (StarsU8)flags; body[15] = (StarsU8)(flags >> 8);
+    stars_write_record(data, 8, 16, body, write, context);
+}

@@ -102,4 +102,28 @@ StarsU16 stars_player_name(StarsU8 *data, const StarsU8 *strings, StarsI16 index
 void stars_read_player_record(StarsU8 *data, const StarsU8 *strings, StarsU16 player, StarsU16 input);
 void stars_write_player_record(StarsU8 *data, StarsU16 player, StarsU16 storage,
     StarsWriteTransfer write, void *context);
+typedef StarsU32 (*StarsTickCount)(void *context);
+void stars_write_bof(StarsU8 *data, StarsI16 player, StarsI16 type, StarsI16 multi,
+    StarsTickCount ticks, StarsWriteTransfer write, void *context);
+/* Stream integration boundaries. abort must not return. Error callbacks stand
+ * for the still-unreconstructed FileError / formatted write-error alert.
+ * memory resolves a contiguous far source span; no selector crossing allowed. */
+typedef struct StarsStreamApi {
+    StarsI16 (*open)(void *context, const StarsU8 *name, StarsU16 mode, StarsU16 *error);
+    StarsI16 (*close)(void *context, StarsI16 handle);
+    StarsU16 (*read)(void *context, StarsI16 handle, StarsU8 *output, StarsU16 count);
+    StarsU16 (*write)(void *context, StarsI16 handle, const StarsU8 *input, StarsU16 count);
+    StarsTickCount ticks;
+    const StarsU8 *(*memory)(void *context, StarsU16 selector, StarsU16 offset);
+    void (*file_error)(void *context, StarsI16 id);
+    void (*write_error)(void *context);
+    void (*abort)(void *context, StarsU16 environment, StarsI16 value);
+} StarsStreamApi;
+void stars_stream_open(StarsU8 *data, StarsU16 name, StarsI16 mode,
+    const StarsStreamApi *api, void *context);
+void stars_stream_close(StarsU8 *data, const StarsStreamApi *api, void *context);
+void stars_stream_read(StarsU8 *data, StarsU8 *output, StarsU16 count,
+    const StarsStreamApi *api, void *context);
+void stars_stream_write(StarsU8 *data, const StarsU8 *input, StarsU16 count,
+    const StarsStreamApi *api, void *context);
 #endif
