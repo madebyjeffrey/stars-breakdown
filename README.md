@@ -5,6 +5,7 @@ A reverse-engineering study of `target/stars.exe`, preserving the supplied execu
 ## Start here
 
 - [Race component](analysis/reconstruction/race-component.md): completed game-code dependencies, original-instruction comparisons, and the Windows contract for the next native build.
+- [Buildable race test](compat/racevc/README.md): VC++ package for 88 automatic race-creation/save/load scenarios; ready for its first native build and returned-output comparison.
 - [Reviewed semantic core](analysis/reconstruction/core.md): current source coverage and validation scope.
 
 - [Decompiler workflow](analysis/decompiler/README.md): tested import, initial C/assembly exports, call/data maps, acceptance checks, and remaining analysis limits (step 3 complete).
@@ -55,8 +56,9 @@ CodeView logical segment numbers are translated through `sstSegMap` to NE segmen
 ## Next decompilation stage
 
 Steps 0–4 are complete for the recorded baseline. Step 5 is in progress. The
-save/load and race-creation dependency cluster is integrated; its native Windows
-acceptance build comes next. The full checklist is in [TODO.md](TODO.md).
+save/load and race-creation dependency cluster is integrated. Its automatic
+compiler/output package is ready for a VC++ build/run; real Windows UI acceptance
+also remains pending. The full checklist is in [TODO.md](TODO.md).
 
 The NE extractor accounts for every file byte, decodes all relocation records, resolves imports to symbolic identities, extracts every resource, and emits static memory images with synthetic selectors. Its hardware-x87 policy and remaining runtime limitations are documented in [the layout report](analysis/ne/README.md). Original execution evidence is in the [runtime report](analysis/runtime/README.md); the early native compiler results are in the [VC++ review](analysis/compat/vc152-return2.md).
 

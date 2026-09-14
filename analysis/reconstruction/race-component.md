@@ -3,10 +3,12 @@
 The game-code dependencies for both milestones are implemented and integrated.
 The component can open, edit, create, password-check and save a race through
 recovered C code. All six wizard procedures execute; the platform supplies
-Windows services and messages. A native Windows test application is the next
-integration task and has not been packaged in this dependency pass. The subsequent
-[scenario acceptance package](../../compat/race/README.md) generates checked race
-variations and live replay recipes in preparation for that native integration.
+Windows services and messages. The [compiler/output package](../../compat/racevc/README.md)
+now contains the recovered source, an automatic runner and a VC++ 1.52c build
+recipe. Its host build passes all 88 scenarios; the first native build/run is
+pending. It models UI services and uses real CRT file I/O. The earlier
+[scenario package](../../compat/race/README.md) supplies live replay recipes;
+a real Windows UI adapter and completion of that pilot remain separate work.
 
 This adds **40 reviewed entry points, covering 27,718 original procedure bytes**.
 The project now has **99 reviewed named routines / 45,906 procedure bytes**.

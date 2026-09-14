@@ -128,6 +128,9 @@ U020, dynamic mouse actions, ASCII/8.3 transfer integrity and preserved returns.
 The complete catalog is also compared during package generation.
 
 Remaining acceptance work is the rest of the live pilot, inspection of returned observations,
-and the native VC++ adapter/build of these new source files. Later components can
+and the native VC++ adapter/build of these new source files. The subsequent
+[RACEVC1 compiler/output package](../racevc/README.md) now includes all recovered
+source and an automatic C runner for the same 88 scenarios. Its first native
+build/run is pending; its modeled UI does not finish the live pilot. Later components can
 use the same structure: named actions, original expected outcomes, candidate
 artifacts, a small live sample and explicit unresolved differences.

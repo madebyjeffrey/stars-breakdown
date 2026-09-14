@@ -162,8 +162,18 @@ The immediate work is:
   recipes. Include valid saves, expected rejections, U020 and file comparison
   that accounts explicitly for the BOF salt. See the [scenario package](compat/race/README.md).
   **2026-09-14:** 88 scenarios match under modeled Windows services; one live
-  DOSBox baseline passes both file directions. The 15-case live pilot and native
-  build of the new source remain incomplete.
+  DOSBox baseline passes both file directions. The 15-case live pilot remains
+  incomplete; the buildable compiler/output package is the next item.
+- [x] **Buildable race compiler/output package:** export the recovered component,
+  an automatic C runner, frozen original expectations and a VC++ 1.52c build
+  recipe. Run all 88 scenarios locally with real file I/O and retain generated
+  state/files for VM comparison. **2026-09-14:** [RACEVC1](compat/racevc/README.md)
+  passes 812 host checks, generates 61 matching race files and 89 state snapshots,
+  and detects deliberately incorrect expectations. It models Windows services;
+  it does not complete real Windows UI acceptance.
+- [ ] **Native race compiler/output run:** build RACEVC1 in VC++ 1.52c, execute
+  RACEVC.EXE, return all logs and artifacts, and investigate every compiler,
+  linker or output mismatch. Expected native result: 816 checks, zero failures.
 - [ ] **Native race-component acceptance:** create a VC++ 1.52c adapter and one
   coherent build package after this dependency work. Map the documented Windows
   services/resources, compile the new source, exercise both file directions and

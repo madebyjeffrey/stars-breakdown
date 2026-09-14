@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "date": "2026-09-14",
+  "original_sha256": "ccab6682b55dae14dbf104e491cfbd3b32a6280022020032ae0615500949ba59",
+  "package": "ftp-share/RACEVC1.ZIP",
+  "package_sha256": "25867996b445773dc1c8b6196807be45b3b58940bd9ed15bf25d994bf1ad9a05",
+  "vectors_sha256": "2ab6fadccc9d2f4f1fbea2e724f020bff5f86922999f2f4b509634648c2e0ad2",
+  "source_files": 20,
+  "runner_files": 3,
+  "scope": "Recovered game callbacks and real CRT file I/O; deterministic modeled Windows services.",
+  "host_validation": {
+    "compiler": "host cc, strict C89, -O2",
+    "cases": 88,
+    "sessions": 89,
+    "checks": 812,
+    "failures": 0,
+    "race_file_matches": 61,
+    "player_state_matches": 89,
+    "accepted_reloads": 60,
+    "predicted_rejected_reloads": 1,
+    "fileless_sessions": 28,
+    "focused_tests_passed": 4,
+    "mutation_check": "Wrong expected file causes FAIL without changing generated output",
+    "transfer_manifest_and_zip": "verified; actual output directory contains no race/state files"
+  },
+  "native_validation": {
+    "status": "pending user VC++ 1.52c build/run",
+    "expected_checks": 816,
+    "expected_failures": 0,
+    "memory_model": "/AL, chosen for semantic-interface far data pointers; not an original build-setting claim"
+  },
+  "remaining": [
+    "Review native compiler/linker diagnostics, including OUTPUT.TXT",
+    "Review native RESULTS.TXT and all returned ACTUAL files",
+    "Real Windows dialog/graphics/input adapter and remaining original-game live pilot",
+    "Byte-identical whole-game executable remains a separate distant milestone"
+  ]
+}
