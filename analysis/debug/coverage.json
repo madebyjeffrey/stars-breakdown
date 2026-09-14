@@ -10,9 +10,9 @@
     "debug_procedure_bytes": 890384,
     "unclassified_code_segment_bytes": 126146,
     "data_segment_bytes": 26054,
-    "compiled_reconstruction_bytes": 3176,
+    "compiled_reconstruction_bytes": 4072,
     "compiled_coverage_scope": "Host C89 semantic adapters; not a linked Win16 replacement or byte-matching build",
-    "manually_reviewed_bytes": 3176
+    "manually_reviewed_bytes": 4072
   },
   "ranges": [
     {
@@ -7192,13 +7192,16 @@
         "utilgen.obj"
       ],
       "evidence": [
-        "analysis/segments.json",
         "analysis/functions.json",
-        "analysis/segment_map.json"
+        "analysis/debug/procedures.json",
+        "analysis/decompiler/export-manifest.json",
+        "analysis/reconstruction/text.md",
+        "tests/test_text_machine.py"
       ],
-      "reconstruction_path": null,
-      "review_status": "not_started",
-      "validation_status": "not_started",
+      "reconstruction_path": "reconstructed/src/text.c",
+      "review_status": "manually_reviewed",
+      "validation_status": "original_x86_differential_checked_with_documented_memory_limits; host_semantic_adapter; Win16_integration_pending",
+      "compilation_status": "host_c89_compiled",
       "public_symbols": [
         "226:00005960"
       ]
@@ -7238,13 +7241,16 @@
         "utilgen.obj"
       ],
       "evidence": [
-        "analysis/segments.json",
         "analysis/functions.json",
-        "analysis/segment_map.json"
+        "analysis/debug/procedures.json",
+        "analysis/decompiler/export-manifest.json",
+        "analysis/reconstruction/text.md",
+        "tests/test_text_machine.py"
       ],
-      "reconstruction_path": null,
-      "review_status": "not_started",
-      "validation_status": "not_started",
+      "reconstruction_path": "reconstructed/src/text.c",
+      "review_status": "manually_reviewed",
+      "validation_status": "original_x86_differential_checked_with_documented_memory_limits; host_semantic_adapter; Win16_integration_pending",
+      "compilation_status": "host_c89_compiled",
       "public_symbols": [
         "226:000043c8"
       ]
@@ -7265,13 +7271,16 @@
         "utilgen.obj"
       ],
       "evidence": [
-        "analysis/segments.json",
         "analysis/functions.json",
-        "analysis/segment_map.json"
+        "analysis/debug/procedures.json",
+        "analysis/decompiler/export-manifest.json",
+        "analysis/reconstruction/text.md",
+        "tests/test_text_machine.py"
       ],
-      "reconstruction_path": null,
-      "review_status": "not_started",
-      "validation_status": "not_started",
+      "reconstruction_path": "reconstructed/src/text.c",
+      "review_status": "manually_reviewed",
+      "validation_status": "original_x86_differential_checked_with_documented_memory_limits; host_semantic_adapter; Win16_integration_pending",
+      "compilation_status": "host_c89_compiled",
       "public_symbols": [
         "226:00003fa0"
       ]
@@ -8451,13 +8460,16 @@
         "utilgen.obj"
       ],
       "evidence": [
-        "analysis/segments.json",
         "analysis/functions.json",
-        "analysis/segment_map.json"
+        "analysis/debug/procedures.json",
+        "analysis/decompiler/export-manifest.json",
+        "analysis/reconstruction/text.md",
+        "tests/test_text_machine.py"
       ],
-      "reconstruction_path": null,
-      "review_status": "not_started",
-      "validation_status": "not_started",
+      "reconstruction_path": "reconstructed/src/text.c",
+      "review_status": "manually_reviewed",
+      "validation_status": "original_x86_differential_checked_with_documented_memory_limits; host_semantic_adapter; Win16_integration_pending",
+      "compilation_status": "host_c89_compiled",
       "public_symbols": [
         "226:00005070"
       ]
@@ -8911,13 +8923,16 @@
         "utilgen.obj"
       ],
       "evidence": [
-        "analysis/segments.json",
         "analysis/functions.json",
-        "analysis/segment_map.json"
+        "analysis/debug/procedures.json",
+        "analysis/decompiler/export-manifest.json",
+        "analysis/reconstruction/text.md",
+        "tests/test_text_machine.py"
       ],
-      "reconstruction_path": null,
-      "review_status": "not_started",
-      "validation_status": "not_started",
+      "reconstruction_path": "reconstructed/src/text.c",
+      "review_status": "manually_reviewed",
+      "validation_status": "original_x86_differential_checked_with_documented_memory_limits; host_semantic_adapter; Win16_integration_pending",
+      "compilation_status": "host_c89_compiled",
       "public_symbols": [
         "226:00001b68"
       ]
@@ -8957,13 +8972,16 @@
         "utilgen.obj"
       ],
       "evidence": [
-        "analysis/segments.json",
         "analysis/functions.json",
-        "analysis/segment_map.json"
+        "analysis/debug/procedures.json",
+        "analysis/decompiler/export-manifest.json",
+        "analysis/reconstruction/text.md",
+        "tests/test_text_machine.py"
       ],
-      "reconstruction_path": null,
-      "review_status": "not_started",
-      "validation_status": "not_started",
+      "reconstruction_path": "reconstructed/src/text.c",
+      "review_status": "manually_reviewed",
+      "validation_status": "original_x86_differential_checked_with_documented_memory_limits; host_semantic_adapter; Win16_integration_pending",
+      "compilation_status": "host_c89_compiled",
       "public_symbols": [
         "226:00000d18"
       ]

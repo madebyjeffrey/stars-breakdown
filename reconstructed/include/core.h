@@ -48,4 +48,11 @@ int stars_compress_user_string(const StarsU8 *dgroup, const StarsU8 *input,
     StarsU8 *output, StarsI16 *capacity);
 int stars_decompress_user_string(const StarsU8 *dgroup, const StarsU8 *input,
     StarsI16 length, StarsU8 *output, const StarsI16 *capacity);
+void stars_add_back_trailing_spaces(StarsU8 *data, StarsU16 cursor_slot, StarsU16 end);
+void stars_chop_trailing_spaces(StarsU8 *data, StarsU16 start, StarsU16 end_slot);
+void stars_chop_last_word(StarsU8 *data, StarsU16 start, StarsU16 end_slot);
+void stars_int_to_roman(StarsU8 *data, StarsI16 value, StarsU16 output);
+StarsI16 stars_parse_numbers(StarsU8 *data, StarsU16 input, StarsU16 output, StarsI16 maximum);
+/* pointer_slot holds an offset:selector pointing into data; selector retained. */
+StarsU32 stars_get_line(StarsU8 *data, StarsU16 pointer_slot);
 #endif

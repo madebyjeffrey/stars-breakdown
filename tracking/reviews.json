@@ -245,5 +245,83 @@
       "analysis/reconstruction/codec.md",
       "tests/test_codec_machine.py"
     ]
+  },
+  "0009:280c-2841": {
+    "reconstruction_path": "reconstructed/src/text.c",
+    "review_status": "manually_reviewed",
+    "compilation_status": "host_c89_compiled",
+    "validation_status": "original_x86_differential_checked_with_documented_memory_limits; host_semantic_adapter; Win16_integration_pending",
+    "evidence": [
+      "analysis/functions.json",
+      "analysis/debug/procedures.json",
+      "analysis/decompiler/export-manifest.json",
+      "analysis/reconstruction/text.md",
+      "tests/test_text_machine.py"
+    ]
+  },
+  "0009:2842-28c6": {
+    "reconstruction_path": "reconstructed/src/text.c",
+    "review_status": "manually_reviewed",
+    "compilation_status": "host_c89_compiled",
+    "validation_status": "original_x86_differential_checked_with_documented_memory_limits; host_semantic_adapter; Win16_integration_pending",
+    "evidence": [
+      "analysis/functions.json",
+      "analysis/debug/procedures.json",
+      "analysis/decompiler/export-manifest.json",
+      "analysis/reconstruction/text.md",
+      "tests/test_text_machine.py"
+    ]
+  },
+  "0009:28c6-28fc": {
+    "reconstruction_path": "reconstructed/src/text.c",
+    "review_status": "manually_reviewed",
+    "compilation_status": "host_c89_compiled",
+    "validation_status": "original_x86_differential_checked_with_documented_memory_limits; host_semantic_adapter; Win16_integration_pending",
+    "evidence": [
+      "analysis/functions.json",
+      "analysis/debug/procedures.json",
+      "analysis/decompiler/export-manifest.json",
+      "analysis/reconstruction/text.md",
+      "tests/test_text_machine.py"
+    ]
+  },
+  "0009:5830-58d7": {
+    "reconstruction_path": "reconstructed/src/text.c",
+    "review_status": "manually_reviewed",
+    "compilation_status": "host_c89_compiled",
+    "validation_status": "original_x86_differential_checked_with_documented_memory_limits; host_semantic_adapter; Win16_integration_pending",
+    "evidence": [
+      "analysis/functions.json",
+      "analysis/debug/procedures.json",
+      "analysis/decompiler/export-manifest.json",
+      "analysis/reconstruction/text.md",
+      "tests/test_text_machine.py"
+    ]
+  },
+  "0009:68ba-6985": {
+    "reconstruction_path": "reconstructed/src/text.c",
+    "review_status": "manually_reviewed",
+    "compilation_status": "host_c89_compiled",
+    "validation_status": "original_x86_differential_checked_with_documented_memory_limits; host_semantic_adapter; Win16_integration_pending",
+    "evidence": [
+      "analysis/functions.json",
+      "analysis/debug/procedures.json",
+      "analysis/decompiler/export-manifest.json",
+      "analysis/reconstruction/text.md",
+      "tests/test_text_machine.py"
+    ]
+  },
+  "0009:6986-6aa5": {
+    "reconstruction_path": "reconstructed/src/text.c",
+    "review_status": "manually_reviewed",
+    "compilation_status": "host_c89_compiled",
+    "validation_status": "original_x86_differential_checked_with_documented_memory_limits; host_semantic_adapter; Win16_integration_pending",
+    "evidence": [
+      "analysis/functions.json",
+      "analysis/debug/procedures.json",
+      "analysis/decompiler/export-manifest.json",
+      "analysis/reconstruction/text.md",
+      "tests/test_text_machine.py"
+    ]
   }
 }
