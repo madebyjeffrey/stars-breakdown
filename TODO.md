@@ -86,6 +86,11 @@ This does not promise the author's exact source text, comments, macros, or code 
 
 ## 5. Reconstruct the program, subsystem by subsystem
 
+**In progress:** 15 named routines (1,905 original procedure bytes) now have
+reviewed C89 source and original-x86 differential tests. See
+[the core reconstruction report](analysis/reconstruction/core.md).
+This is a host semantic library; the subsystem checkboxes below remain open.
+
 For each group below, follow the per-function checklist. The order is provisional: use the recovered dependency graph to adjust it. Module names identify initial study areas, not verified architectural boundaries.
 
 - [ ] **Startup and runtime:** NE/DOS entry paths, initialization/termination, compiler helpers, memory model, and linked runtime code.

@@ -94,7 +94,15 @@ class DecompilerWorkflowTests(unittest.TestCase):
         self.assertEqual(sum(ends.values()),1042584)
         self.assertEqual(len(ends),37)
         baseline=json.loads((ROOT/'analysis/coverage.json').read_text())
-        self.assertEqual(baseline['summary']['compiled_reconstruction_bytes'],0)
+        # Automatic disassembly is not compiled coverage: only explicitly
+        # reviewed source rows may contribute to the independent baseline.
+        compiled=[r for r in baseline['ranges']
+                  if r.get('compilation_status')=='host_c89_compiled']
+        self.assertEqual(baseline['summary']['compiled_reconstruction_bytes'],
+                         sum(r['bytes'] for r in compiled))
+        self.assertTrue(all(r['review_status']=='manually_reviewed' and
+                            r['reconstruction_path'].startswith('reconstructed/src/')
+                            for r in compiled))
 
     def test_dos_stub_is_separate_and_message_is_not_code(self):
         funcs=read('dos-functions.json')

@@ -16,9 +16,13 @@ The user identified this executable on 2026-09-13 as **2.70j RC3**, the third re
 
 Initial coverage: 37 segments, 1,305 ranges, 1,042,584 memory bytes. Debug procedure ranges cover 890,384 bytes; 126,146 code-segment bytes remain unclassified and 26,054 bytes belong to the data segment. These are inventory measurements, not a decompilation percentage. Procedure extents may themselves contain inline data.
 
-Only `GetRaceStat`'s 34 bytes have manual review and static evidence. That example is a note, not compiled or runtime-tested source. Compiled reconstruction coverage starts at zero.
+Step 5 has 15 reviewed routines covering 1,905 original procedure bytes, compiled
+as host C89 semantic adapters and compared with original x86 execution. See
+[the reconstruction report](../analysis/reconstruction/core.md). This is not a
+linked Win16 replacement. The historical GetRaceStat note has been superseded
+by reviewed source and the recorded static/runtime/differential evidence.
 
-Manual progress belongs in [reviews.json](reviews.json), keyed by the ledger range ID. Generation merges those annotations into the ledger without overwriting the editable source. If segmentation changes, generation rejects obsolete keys so a human must reconcile their evidence. Extend the status schema and summary calculation when compiled/runtime-validated ranges first exist; do not inflate progress by assigning a status without evidence.
+Manual progress belongs in [reviews.json](reviews.json), keyed by the ledger range ID. Generation merges those annotations into the ledger without overwriting the editable source. If segmentation changes, generation rejects obsolete keys so a human must reconcile their evidence. Schema 2 counts `host_c89_compiled` rows separately and states their scope explicitly; this is original-byte mapping coverage, not generated object size or whole-program equivalence.
 
 The ledger excludes non-segment file regions and dynamic heap/stack growth. Whole-file classification and static relocation interpretation are now completed in [the step 1 layout](../analysis/ne/README.md). Discovery and interpretation of unnamed code remain later work, tracked by U004/U010. The baseline coverage denominator itself is unchanged.
 

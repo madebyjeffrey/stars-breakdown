@@ -36,5 +36,12 @@
   "clock_initial_requested": "2000-01-01 12:00:00",
   "clock_verified": false,
   "debugger_observed_date": "2026-09-13",
-  "mouse_verified": false
+  "physical_mouse": {
+    "status": "working",
+    "evidence": "user report"
+  },
+  "automated_mouse": {
+    "status": "unreliable",
+    "observation": "coordinate clicks target the wrong guest location"
+  }
 }

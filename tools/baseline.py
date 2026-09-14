@@ -76,14 +76,21 @@ def coverage():
     unknown=set(reviews)-{r['id'] for r in rows}
     if unknown:
         raise ValueError(f'Review keys no longer map to coverage: {unknown}')
-    return dict(schema_version=1,address_convention='NE ordinal:offset; half-open ranges; not runtime selectors',
+    for row in rows:
+        if row.get('compilation_status') == 'host_c89_compiled':
+            if row['review_status'] != 'manually_reviewed' or not row['reconstruction_path']:
+                raise ValueError('Compiled coverage requires reviewed source')
+            if not (ROOT/row['reconstruction_path']).is_file():
+                raise ValueError('Compiled reconstruction source is missing')
+    return dict(schema_version=2,address_convention='NE ordinal:offset; half-open ranges; not runtime selectors',
         scope='NE segment static memory extents only. DOS stub, headers, relocations, resources and debug overlay are outside this denominator and remain step 1 work.',
         classification_note='Procedure ranges are debug evidence, not proof that every byte is an instruction. Gaps are not assumed to be padding or library code.',
         summary=dict(segments=len(segments),ranges=len(rows),segment_bytes=sum(r['bytes'] for r in rows),
             debug_procedure_bytes=sum(r['bytes'] for r in rows if r['names']),
             unclassified_code_segment_bytes=sum(r['bytes'] for r in rows if r['classification']=='unclassified_code_segment_range'),
             data_segment_bytes=sum(r['bytes'] for r in rows if r['classification']=='data_unreviewed'),
-            compiled_reconstruction_bytes=0,
+            compiled_reconstruction_bytes=sum(r['bytes'] for r in rows if r.get('compilation_status')=='host_c89_compiled'),
+            compiled_coverage_scope='Host C89 semantic adapters; not a linked Win16 replacement or byte-matching build',
             manually_reviewed_bytes=sum(r['bytes'] for r in rows if r['review_status']=='manually_reviewed')),
         ranges=rows)
 

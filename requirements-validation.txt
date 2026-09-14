@@ -1,0 +1,2 @@
+# Isolated execution of original x86 utility routines; no Windows emulation.
+unicorn==2.1.4

@@ -1,5 +1,5 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "address_convention": "NE ordinal:offset; half-open ranges; not runtime selectors",
   "scope": "NE segment static memory extents only. DOS stub, headers, relocations, resources and debug overlay are outside this denominator and remain step 1 work.",
   "classification_note": "Procedure ranges are debug evidence, not proof that every byte is an instruction. Gaps are not assumed to be padding or library code.",
@@ -10,8 +10,9 @@
     "debug_procedure_bytes": 890384,
     "unclassified_code_segment_bytes": 126146,
     "data_segment_bytes": 26054,
-    "compiled_reconstruction_bytes": 0,
-    "manually_reviewed_bytes": 34
+    "compiled_reconstruction_bytes": 1905,
+    "compiled_coverage_scope": "Host C89 semantic adapters; not a linked Win16 replacement or byte-matching build",
+    "manually_reviewed_bytes": 1905
   },
   "ranges": [
     {
@@ -5592,13 +5593,16 @@
         "utilgen.obj"
       ],
       "evidence": [
-        "analysis/segments.json",
         "analysis/functions.json",
-        "analysis/segment_map.json"
+        "analysis/debug/procedures.json",
+        "analysis/decompiler/export-manifest.json",
+        "analysis/reconstruction/core.md",
+        "tests/test_core_machine.py"
       ],
-      "reconstruction_path": null,
-      "review_status": "not_started",
-      "validation_status": "not_started"
+      "reconstruction_path": "reconstructed/src/near_state.c",
+      "review_status": "manually_reviewed",
+      "validation_status": "original_x86_differential_checked; host_semantic_adapter; Win16_integration_pending",
+      "compilation_status": "host_c89_compiled"
     },
     {
       "id": "0009:14a2-14ea",
@@ -5616,13 +5620,16 @@
         "utilgen.obj"
       ],
       "evidence": [
-        "analysis/segments.json",
         "analysis/functions.json",
-        "analysis/segment_map.json"
+        "analysis/debug/procedures.json",
+        "analysis/decompiler/export-manifest.json",
+        "analysis/reconstruction/core.md",
+        "tests/test_core_machine.py"
       ],
-      "reconstruction_path": null,
-      "review_status": "not_started",
-      "validation_status": "not_started"
+      "reconstruction_path": "reconstructed/src/near_state.c",
+      "review_status": "manually_reviewed",
+      "validation_status": "original_x86_differential_checked; host_semantic_adapter; Win16_integration_pending",
+      "compilation_status": "host_c89_compiled"
     },
     {
       "id": "0009:14ea-15ea",
@@ -5658,13 +5665,16 @@
         "utilgen.obj"
       ],
       "evidence": [
-        "analysis/segments.json",
         "analysis/functions.json",
-        "analysis/segment_map.json"
+        "analysis/debug/procedures.json",
+        "analysis/decompiler/export-manifest.json",
+        "analysis/reconstruction/core.md",
+        "tests/test_core_machine.py"
       ],
-      "reconstruction_path": null,
-      "review_status": "not_started",
-      "validation_status": "not_started"
+      "reconstruction_path": "reconstructed/src/utilgen.c",
+      "review_status": "manually_reviewed",
+      "validation_status": "original_x86_differential_checked; host_semantic_adapter; Win16_integration_pending",
+      "compilation_status": "host_c89_compiled"
     },
     {
       "id": "0009:165a-16d2",
@@ -5682,13 +5692,16 @@
         "utilgen.obj"
       ],
       "evidence": [
-        "analysis/segments.json",
         "analysis/functions.json",
-        "analysis/segment_map.json"
+        "analysis/debug/procedures.json",
+        "analysis/decompiler/export-manifest.json",
+        "analysis/reconstruction/core.md",
+        "tests/test_core_machine.py"
       ],
-      "reconstruction_path": null,
-      "review_status": "not_started",
-      "validation_status": "not_started"
+      "reconstruction_path": "reconstructed/src/utilgen.c",
+      "review_status": "manually_reviewed",
+      "validation_status": "original_x86_differential_checked; host_semantic_adapter; Win16_integration_pending",
+      "compilation_status": "host_c89_compiled"
     },
     {
       "id": "0009:16d2-1889",
@@ -5706,13 +5719,16 @@
         "utilgen.obj"
       ],
       "evidence": [
-        "analysis/segments.json",
         "analysis/functions.json",
-        "analysis/segment_map.json"
+        "analysis/debug/procedures.json",
+        "analysis/decompiler/export-manifest.json",
+        "analysis/reconstruction/core.md",
+        "tests/test_core_machine.py"
       ],
-      "reconstruction_path": null,
-      "review_status": "not_started",
-      "validation_status": "not_started"
+      "reconstruction_path": "reconstructed/src/utilgen.c",
+      "review_status": "manually_reviewed",
+      "validation_status": "original_x86_differential_checked; host_semantic_adapter; Win16_integration_pending",
+      "compilation_status": "host_c89_compiled"
     },
     {
       "id": "0009:1889-188a",
@@ -5790,13 +5806,16 @@
         "utilgen.obj"
       ],
       "evidence": [
-        "analysis/segments.json",
         "analysis/functions.json",
-        "analysis/segment_map.json"
+        "analysis/debug/procedures.json",
+        "analysis/decompiler/export-manifest.json",
+        "analysis/reconstruction/core.md",
+        "tests/test_core_machine.py"
       ],
-      "reconstruction_path": null,
-      "review_status": "not_started",
-      "validation_status": "not_started"
+      "reconstruction_path": "reconstructed/src/utilgen.c",
+      "review_status": "manually_reviewed",
+      "validation_status": "original_x86_differential_checked; host_semantic_adapter; Win16_integration_pending",
+      "compilation_status": "host_c89_compiled"
     },
     {
       "id": "0009:1a7b-1a7c",
@@ -5832,13 +5851,16 @@
         "utilgen.obj"
       ],
       "evidence": [
-        "analysis/segments.json",
         "analysis/functions.json",
-        "analysis/segment_map.json"
+        "analysis/debug/procedures.json",
+        "analysis/decompiler/export-manifest.json",
+        "analysis/reconstruction/core.md",
+        "tests/test_core_machine.py"
       ],
-      "reconstruction_path": null,
-      "review_status": "not_started",
-      "validation_status": "not_started"
+      "reconstruction_path": "reconstructed/src/utilgen.c",
+      "review_status": "manually_reviewed",
+      "validation_status": "original_x86_differential_checked; host_semantic_adapter; Win16_integration_pending",
+      "compilation_status": "host_c89_compiled"
     },
     {
       "id": "0009:1aa5-1aa6",
@@ -5874,13 +5896,16 @@
         "utilgen.obj"
       ],
       "evidence": [
-        "analysis/segments.json",
         "analysis/functions.json",
-        "analysis/segment_map.json"
+        "analysis/debug/procedures.json",
+        "analysis/decompiler/export-manifest.json",
+        "analysis/reconstruction/core.md",
+        "tests/test_core_machine.py"
       ],
-      "reconstruction_path": null,
-      "review_status": "not_started",
-      "validation_status": "not_started"
+      "reconstruction_path": "reconstructed/src/utilgen.c",
+      "review_status": "manually_reviewed",
+      "validation_status": "original_x86_differential_checked; host_semantic_adapter; Win16_integration_pending",
+      "compilation_status": "host_c89_compiled"
     },
     {
       "id": "0009:1b53-1b54",
@@ -5916,13 +5941,16 @@
         "utilgen.obj"
       ],
       "evidence": [
-        "analysis/segments.json",
         "analysis/functions.json",
-        "analysis/segment_map.json"
+        "analysis/debug/procedures.json",
+        "analysis/decompiler/export-manifest.json",
+        "analysis/reconstruction/core.md",
+        "tests/test_core_machine.py"
       ],
-      "reconstruction_path": null,
-      "review_status": "not_started",
-      "validation_status": "not_started"
+      "reconstruction_path": "reconstructed/src/utilgen.c",
+      "review_status": "manually_reviewed",
+      "validation_status": "original_x86_differential_checked; host_semantic_adapter; Win16_integration_pending",
+      "compilation_status": "host_c89_compiled"
     },
     {
       "id": "0009:1cc3-1cc4",
@@ -5958,13 +5986,16 @@
         "utilgen.obj"
       ],
       "evidence": [
-        "analysis/segments.json",
         "analysis/functions.json",
-        "analysis/segment_map.json"
+        "analysis/debug/procedures.json",
+        "analysis/decompiler/export-manifest.json",
+        "analysis/reconstruction/core.md",
+        "tests/test_core_machine.py"
       ],
-      "reconstruction_path": null,
-      "review_status": "not_started",
-      "validation_status": "not_started"
+      "reconstruction_path": "reconstructed/src/near_state.c",
+      "review_status": "manually_reviewed",
+      "validation_status": "original_x86_differential_checked; host_semantic_adapter; Win16_integration_pending",
+      "compilation_status": "host_c89_compiled"
     },
     {
       "id": "0009:1d74-1d96",
@@ -5982,13 +6013,16 @@
         "utilgen.obj"
       ],
       "evidence": [
-        "analysis/segments.json",
         "analysis/functions.json",
-        "analysis/segment_map.json"
+        "analysis/debug/procedures.json",
+        "analysis/decompiler/export-manifest.json",
+        "analysis/reconstruction/core.md",
+        "tests/test_core_machine.py"
       ],
-      "reconstruction_path": null,
-      "review_status": "not_started",
-      "validation_status": "not_started"
+      "reconstruction_path": "reconstructed/src/utilgen.c",
+      "review_status": "manually_reviewed",
+      "validation_status": "original_x86_differential_checked; host_semantic_adapter; Win16_integration_pending",
+      "compilation_status": "host_c89_compiled"
     },
     {
       "id": "0009:1d96-1f64",
@@ -6600,13 +6634,16 @@
         "utilgen.obj"
       ],
       "evidence": [
-        "analysis/segments.json",
         "analysis/functions.json",
-        "analysis/segment_map.json"
+        "analysis/debug/procedures.json",
+        "analysis/decompiler/export-manifest.json",
+        "analysis/reconstruction/core.md",
+        "tests/test_core_machine.py"
       ],
-      "reconstruction_path": null,
-      "review_status": "not_started",
-      "validation_status": "not_started"
+      "reconstruction_path": "reconstructed/src/utilgen.c",
+      "review_status": "manually_reviewed",
+      "validation_status": "original_x86_differential_checked; host_semantic_adapter; Win16_integration_pending",
+      "compilation_status": "host_c89_compiled"
     },
     {
       "id": "0009:2f3e-2f70",
@@ -6624,13 +6661,16 @@
         "utilgen.obj"
       ],
       "evidence": [
-        "analysis/segments.json",
         "analysis/functions.json",
-        "analysis/segment_map.json"
+        "analysis/debug/procedures.json",
+        "analysis/decompiler/export-manifest.json",
+        "analysis/reconstruction/core.md",
+        "tests/test_core_machine.py"
       ],
-      "reconstruction_path": null,
-      "review_status": "not_started",
-      "validation_status": "not_started"
+      "reconstruction_path": "reconstructed/src/utilgen.c",
+      "review_status": "manually_reviewed",
+      "validation_status": "original_x86_differential_checked; host_semantic_adapter; Win16_integration_pending",
+      "compilation_status": "host_c89_compiled"
     },
     {
       "id": "0009:2f70-3094",
@@ -7950,13 +7990,16 @@
         "utilgen.obj"
       ],
       "evidence": [
-        "analysis/segments.json",
         "analysis/functions.json",
-        "analysis/segment_map.json"
+        "analysis/debug/procedures.json",
+        "analysis/decompiler/export-manifest.json",
+        "analysis/reconstruction/core.md",
+        "tests/test_core_machine.py"
       ],
-      "reconstruction_path": null,
-      "review_status": "not_started",
-      "validation_status": "not_started"
+      "reconstruction_path": "reconstructed/src/utilgen.c",
+      "review_status": "manually_reviewed",
+      "validation_status": "original_x86_differential_checked; host_semantic_adapter; Win16_integration_pending",
+      "compilation_status": "host_c89_compiled"
     },
     {
       "id": "0009:68ba-6985",
@@ -23874,15 +23917,16 @@
         "race.obj"
       ],
       "evidence": [
-        "analysis/segments.json",
         "analysis/functions.json",
-        "analysis/segment_map.json",
-        "notes/FIRST_RECONSTRUCTION.md",
-        "tests/test_debug.py"
+        "analysis/debug/procedures.json",
+        "analysis/decompiler/export-manifest.json",
+        "analysis/reconstruction/core.md",
+        "tests/test_core_machine.py"
       ],
-      "reconstruction_path": "notes/FIRST_RECONSTRUCTION.md",
+      "reconstruction_path": "reconstructed/src/race.c",
       "review_status": "manually_reviewed",
-      "validation_status": "static_bytes_and_metadata_checked; runtime_not_tested; not_compiled"
+      "validation_status": "original_x86_differential_checked; host_semantic_adapter; Win16_integration_pending",
+      "compilation_status": "host_c89_compiled"
     },
     {
       "id": "001d:30f4-3114",
