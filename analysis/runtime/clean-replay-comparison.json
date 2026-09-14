@@ -1,0 +1,38 @@
+{
+  "equal": false,
+  "normalization": "none",
+  "files": [
+    {
+      "name": "CLEAN.HST",
+      "equal": false,
+      "left_size": 2018,
+      "right_size": 2019,
+      "differing_bytes": 1874,
+      "first_difference": 14
+    },
+    {
+      "name": "CLEAN.M1",
+      "equal": false,
+      "left_size": 1700,
+      "right_size": 1700,
+      "differing_bytes": 775,
+      "first_difference": 857
+    },
+    {
+      "name": "CLEAN.M2",
+      "equal": false,
+      "left_size": 807,
+      "right_size": 808,
+      "differing_bytes": 767,
+      "first_difference": 14
+    },
+    {
+      "name": "CLEAN.XY",
+      "equal": true,
+      "left_size": 216,
+      "right_size": 216,
+      "differing_bytes": 0,
+      "first_difference": null
+    }
+  ]
+}

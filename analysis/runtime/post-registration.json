@@ -1,0 +1,20 @@
+{
+  "registration": "User reported resolved; clean creation and generation succeeded without renewed prompt.",
+  "fixture": "clean2400",
+  "creation": {
+    "difficulty": "Standard",
+    "size": "Tiny",
+    "race": "Humanoid",
+    "game_name": "Duck Hunt",
+    "homeworld": "Spitfire",
+    "year": 2400,
+    "population": 25000
+  },
+  "turn": {
+    "year": 2401,
+    "population": 28700,
+    "message": "The production queue on Spitfire is empty."
+  },
+  "batch_replay": "clean-replay-comparison.json",
+  "randomness": "Uncontrolled ordinary batch replay remains nonidentical."
+}

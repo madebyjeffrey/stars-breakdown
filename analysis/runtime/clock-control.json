@@ -1,0 +1,18 @@
+{
+  "method": "controlled environmental return value; not output normalization",
+  "function": "WriteBOF",
+  "ne_segment": 15,
+  "ne_offset": "8F64",
+  "runtime_selector": "1297",
+  "verified_code": "8b4eea03c18946ec8b46ec25ff07d1e0",
+  "instruction": "MOV CX,[BP-16h], immediately after GETTICKCOUNT",
+  "intervention": "SR AX 0 DX 0 at each of four breakpoint hits per creation; then RUN",
+  "calls_per_run": 4,
+  "runs": 2,
+  "seed": 1234567890,
+  "game_id": 9236297,
+  "scope": "Tutorial year-2400 creation only; ordinary-game RNG remains uncontrolled",
+  "original_file_modified": false,
+  "compared_bytes": 3213,
+  "exact_match": true
+}

@@ -72,15 +72,15 @@ This does not promise the author's exact source text, comments, macros, or code 
 
 ## 4. Set up original-game execution and comparison
 
-**In progress:** WfW 3.11 / DOSBox-X runs the game; a live GetRaceStat entry/return trace and byte-comparison harness are verified. Registration, deterministic replay and input issues remain. See [runtime report](analysis/runtime/README.md).
+**Complete for the initial reference:** clean execution, fixtures, error/recovery checks, a live function trace and exact controlled tutorial comparison are recorded in the [runtime report](analysis/runtime/README.md). Ordinary-game RNG, broader behavioral coverage and mouse automation remain explicit follow-ups.
 
-- [ ] Establish a reproducible environment capable of running this executable and document its OS, emulator/VM, configuration, and required companion files.
-- [ ] Capture startup and basic interaction as baseline smoke tests, including failure behavior for missing dependencies.
-- [ ] Create small, controlled game/race/save/turn fixtures and record all inputs, outputs, seeds, and relevant environment state.
-- [ ] Identify randomness, time, configuration, and other nondeterministic inputs; establish how to control or record them.
-- [ ] Add observation methods appropriate to the environment: memory snapshots, breakpoints, function traces, file comparisons, and UI captures.
+- [x] Establish a reproducible environment capable of running this executable and document its OS, emulator/VM, configuration, and required companion files.
+- [x] Capture startup and basic interaction as baseline smoke tests, including failure behavior for missing dependencies.
+- [x] Create small, controlled game/race/save/turn fixtures and record all inputs, outputs, seeds, and relevant environment state.
+- [x] Identify randomness, time, configuration, and other nondeterministic inputs; establish how to control or record them.
+- [x] Add observation methods appropriate to the environment: memory snapshots, breakpoints, function traces, file comparisons, and UI captures.
 - [x] Build a comparison harness for original versus reconstructed behavior, documenting any normalization of timestamps or other nondeterministic fields. (`tools/runtime/compare.py`; all bytes compared, no normalization; reconstruction not yet available.)
-- [ ] Record original crashes, arithmetic quirks, and malformed-input behavior as compatibility evidence rather than silently correcting them.
+- [x] Record original crashes, arithmetic quirks, and malformed-input behavior as compatibility evidence rather than silently correcting them.
 
 **Exit:** there is a practical behavioral reference for validating source as it is reconstructed. Begin this stage before substantial subsystem rewriting.
 

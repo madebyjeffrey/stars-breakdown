@@ -1,0 +1,38 @@
+{
+  "equal": false,
+  "normalization": "none",
+  "files": [
+    {
+      "name": "TUTORIAL.HST",
+      "equal": false,
+      "left_size": 1635,
+      "right_size": 1635,
+      "differing_bytes": 1477,
+      "first_difference": 14
+    },
+    {
+      "name": "TUTORIAL.M1",
+      "equal": false,
+      "left_size": 818,
+      "right_size": 818,
+      "differing_bytes": 742,
+      "first_difference": 14
+    },
+    {
+      "name": "TUTORIAL.M2",
+      "equal": false,
+      "left_size": 576,
+      "right_size": 576,
+      "differing_bytes": 518,
+      "first_difference": 14
+    },
+    {
+      "name": "TUTORIAL.XY",
+      "equal": false,
+      "left_size": 184,
+      "right_size": 184,
+      "differing_bytes": 66,
+      "first_difference": 14
+    }
+  ]
+}

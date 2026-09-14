@@ -1,0 +1,239 @@
+{
+  "snapshots": [
+    {
+      "local_directory": "runs/step4/fixtures/clean2400",
+      "files": [
+        {
+          "name": "CLEAN.XY",
+          "size": 216,
+          "sha256": "580e4c3be92eee570c95c97faa2557e3b4fe92856387970cf548700e1bb3fd88"
+        },
+        {
+          "name": "CLEAN.HST",
+          "size": 1822,
+          "sha256": "74a27a31221f67328a98200c5dfde54f4c955a6498cc37ac08624b64a33997f6"
+        },
+        {
+          "name": "CLEAN.M1",
+          "size": 843,
+          "sha256": "95d2d7fd27a39ea1668685beeb4785d876d9ed3cfb657f58173ea47e04e8c0a7"
+        },
+        {
+          "name": "CLEAN.M2",
+          "size": 576,
+          "sha256": "588830ac2225056422fa447cb201c7bd326e472652a8d3abf222b5fcceb99d4b"
+        }
+      ],
+      "normalization": "none"
+    },
+    {
+      "local_directory": "runs/step4/fixtures/clean2401",
+      "files": [
+        {
+          "name": "CLEAN.XY",
+          "size": 216,
+          "sha256": "580e4c3be92eee570c95c97faa2557e3b4fe92856387970cf548700e1bb3fd88"
+        },
+        {
+          "name": "CLEAN.HST",
+          "size": 2019,
+          "sha256": "a7a827f92a7a9262e08517585e806fae50201905b54d41a752fae7b2a22dc126"
+        },
+        {
+          "name": "CLEAN.M1",
+          "size": 857,
+          "sha256": "6b3a39bb7abecf3161426f9d1dd3a3668722373c351544f534ec036d26811e4f"
+        },
+        {
+          "name": "CLEAN.M2",
+          "size": 808,
+          "sha256": "7639edaac618676078364026bb63368827f6177a7a77abe65329445851300a0c"
+        }
+      ],
+      "normalization": "none"
+    },
+    {
+      "local_directory": "runs/step4/fixtures/clean-replay-a",
+      "files": [
+        {
+          "name": "CLEAN.XY",
+          "size": 216,
+          "sha256": "580e4c3be92eee570c95c97faa2557e3b4fe92856387970cf548700e1bb3fd88"
+        },
+        {
+          "name": "CLEAN.HST",
+          "size": 2018,
+          "sha256": "ac7c2f283f43b56503b061d87af8d4a815bd494332d92a1c099e13ea6e3b307f"
+        },
+        {
+          "name": "CLEAN.M1",
+          "size": 1700,
+          "sha256": "5a80e815662233ab52d63ad4fc99357612969daad802802ee6742dc8c73dd151"
+        },
+        {
+          "name": "CLEAN.M2",
+          "size": 807,
+          "sha256": "d72451fdbf2806233eb2988da0f7c545f9d15ffab25e5cfa69331372308590f7"
+        }
+      ],
+      "normalization": "none"
+    },
+    {
+      "local_directory": "runs/step4/fixtures/clean-replay-b",
+      "files": [
+        {
+          "name": "CLEAN.XY",
+          "size": 216,
+          "sha256": "580e4c3be92eee570c95c97faa2557e3b4fe92856387970cf548700e1bb3fd88"
+        },
+        {
+          "name": "CLEAN.HST",
+          "size": 2019,
+          "sha256": "602f60b0c7d1e1738bad6e78ab94b0084af055e968a044a56b27022054788b53"
+        },
+        {
+          "name": "CLEAN.M1",
+          "size": 1700,
+          "sha256": "0b44e03187df8143ecf256f7c7daf9475155628243ed506e4be0c475612a1b9b"
+        },
+        {
+          "name": "CLEAN.M2",
+          "size": 808,
+          "sha256": "08c3970d8f749fd8ce1dcf7dcac853706854d7fc51603256ddd61889dff423a4"
+        }
+      ],
+      "normalization": "none"
+    },
+    {
+      "local_directory": "runs/step4/fixtures/tutorial-a",
+      "files": [
+        {
+          "name": "TUTORIAL.XY",
+          "size": 184,
+          "sha256": "1c1f5a26701190005c123c36adb0231ec161ea2d393c2235606306c029b26058"
+        },
+        {
+          "name": "TUTORIAL.HST",
+          "size": 1635,
+          "sha256": "701aa8dd61478f5d579824fcf271087184174b547029948eb209dc696b876d85"
+        },
+        {
+          "name": "TUTORIAL.M1",
+          "size": 818,
+          "sha256": "4ddddc83a0166a9843cf3b936423d64d16fcb9b834166b33cda5505cd5e38489"
+        },
+        {
+          "name": "TUTORIAL.M2",
+          "size": 576,
+          "sha256": "15090f3df56067bbf97952e30a24af1e0273c40314fe2efa3d3a915abb388959"
+        }
+      ],
+      "normalization": "none"
+    },
+    {
+      "local_directory": "runs/step4/fixtures/tutorial-b",
+      "files": [
+        {
+          "name": "TUTORIAL.XY",
+          "size": 184,
+          "sha256": "27c38e7b36c93e4aa2fdd60d9d391531804f84b2ce807ddf4b43b4949dd3ca40"
+        },
+        {
+          "name": "TUTORIAL.HST",
+          "size": 1635,
+          "sha256": "809ce168511d4e525913cb9b4da38845907c75db1aa69b4791e6c2b690172051"
+        },
+        {
+          "name": "TUTORIAL.M1",
+          "size": 818,
+          "sha256": "dd9ce54c5851f90877b0dbe16d5a5f74f7dd9227247ce37203da7d3721ef6154"
+        },
+        {
+          "name": "TUTORIAL.M2",
+          "size": 576,
+          "sha256": "48f0305685eafa37cb87a6e47bf0d050fb1767ac48e4f8752e2519ca6cd687bf"
+        }
+      ],
+      "normalization": "none"
+    },
+    {
+      "local_directory": "runs/step4/fixtures/tutorial-controlled-a",
+      "files": [
+        {
+          "name": "TUTORIAL.XY",
+          "size": 184,
+          "sha256": "53a93dcf558516278df0473718b3fc46f16bce5b553bb7a3dc35d13e2bc6af42"
+        },
+        {
+          "name": "TUTORIAL.HST",
+          "size": 1635,
+          "sha256": "c2eee0ba11f304be17a6470f3af7bed722fb5b14b6ae68f7aec770942dbfe008"
+        },
+        {
+          "name": "TUTORIAL.M1",
+          "size": 818,
+          "sha256": "9f88166471910db177598acbc5d913c28eabda17aeca77c12fce115366f7b976"
+        },
+        {
+          "name": "TUTORIAL.M2",
+          "size": 576,
+          "sha256": "f7da9469008456da94aebfd3b115a15b560390f4514db9b978101177c91c9a63"
+        }
+      ],
+      "normalization": "none"
+    },
+    {
+      "local_directory": "runs/step4/fixtures/tutorial-controlled-b",
+      "files": [
+        {
+          "name": "TUTORIAL.XY",
+          "size": 184,
+          "sha256": "53a93dcf558516278df0473718b3fc46f16bce5b553bb7a3dc35d13e2bc6af42"
+        },
+        {
+          "name": "TUTORIAL.HST",
+          "size": 1635,
+          "sha256": "c2eee0ba11f304be17a6470f3af7bed722fb5b14b6ae68f7aec770942dbfe008"
+        },
+        {
+          "name": "TUTORIAL.M1",
+          "size": 818,
+          "sha256": "9f88166471910db177598acbc5d913c28eabda17aeca77c12fce115366f7b976"
+        },
+        {
+          "name": "TUTORIAL.M2",
+          "size": 576,
+          "sha256": "f7da9469008456da94aebfd3b115a15b560390f4514db9b978101177c91c9a63"
+        }
+      ],
+      "normalization": "none"
+    },
+    {
+      "local_directory": "runs/step4/fixtures/race",
+      "files": [
+        {
+          "name": "STUDY.R1",
+          "size": 149,
+          "sha256": "0c9757d8f8384b3538e37e110977bc79565baadb9d152058c3b2045075a7803c"
+        }
+      ],
+      "normalization": "none"
+    },
+    {
+      "local_directory": "runs/step4/fixtures/malformed",
+      "files": [
+        {
+          "name": "BAD.XY",
+          "size": 216,
+          "sha256": "580e4c3be92eee570c95c97faa2557e3b4fe92856387970cf548700e1bb3fd88"
+        },
+        {
+          "name": "BAD.HST",
+          "size": 16,
+          "sha256": "374708fff7719dd5979ec875d56cd2286f6d3cf7ec317a3b25632aab28ec37bb"
+        }
+      ],
+      "normalization": "none"
+    }
+  ]
+}
