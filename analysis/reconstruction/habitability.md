@@ -3,8 +3,8 @@
 `PctPlanetDesirability`, NE 10:6E1E–7095, now has reviewed C89 source in
 `reconstructed/src/planet.c` as `stars_planet_desirability`. It contributes 631
 original procedure bytes. `LInnateRaceHabitability` is now described in [its own report](innate-habitability.md),
-including its portable x87 rounding implementation. `CAdvantagePoints` remains
-unreconstructed.
+including its portable x87 rounding implementation. `CAdvantagePoints` is now
+covered in [race scoring](race-scoring.md).
 
 ## Planet desirability algorithm
 
@@ -80,4 +80,6 @@ ranges means caller guarantees still need auditing before integration.
 
 See [innate race scoring](innate-habitability.md) for the reconstructed sampling,
 mutation/restoration, and accumulator sequence. Its U018 precision mismatch is resolved for the documented FPU path; caller
-guarantees for degenerate ranges still need auditing before CAdvantagePoints integration.
+guarantees for degenerate ranges still need auditing at higher-level entry points.
+CAdvantagePoints is now reconstructed and is confirmed to propagate the original
+divide exception for a degenerate range.

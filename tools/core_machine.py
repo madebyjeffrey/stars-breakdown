@@ -16,7 +16,7 @@ from tools.ne_layout import NE, patch
 
 
 class OriginalCore:
-    SEGMENTS = {9: 0x1000, 36: 0x2000, 37: 0x3000, 29: 0x4000, 16: 0x7000, 10: 0x8000}
+    SEGMENTS = {9: 0x1000, 36: 0x2000, 37: 0x3000, 29: 0x4000, 16: 0x7000, 10: 0x8000, 3: 0x9000}
     DATA = 0x30000
     STOP = 0x60000
 
@@ -26,7 +26,7 @@ class OriginalCore:
             'ccab6682b55dae14dbf104e491cfbd3b32a6280022020032ae0615500949ba59')
         ne = NE(path)
         self.cpu = Uc(UC_ARCH_X86, UC_MODE_16)
-        self.cpu.mem_map(0x10000, 0x80000)
+        self.cpu.mem_map(0x10000, 0x90000)
         for number, selector in self.SEGMENTS.items():
             memory = bytearray(ne.raw[number - 1])
             for relocation in ne.relocations:
@@ -60,7 +60,7 @@ class OriginalCore:
             self.put(offset, struct.pack('<II', *value))
         return struct.unpack('<II', self.get(offset, 8))
 
-    def call(self, offset, arguments=b'', segment=9, shared_stack=False):
+    def call(self, offset, arguments=b'', segment=9, shared_stack=False, instruction_budget=20000000):
         cpu = self.cpu
         self.returned = False
         for name, value in dict(CS=self.SEGMENTS[segment], IP=offset,
@@ -71,7 +71,7 @@ class OriginalCore:
         cpu.mem_write(0x3ff00 if shared_stack else 0x5ff00,
                       struct.pack('<HH', 0, 0x6000) + arguments)
         cpu.emu_start(self.SEGMENTS[segment] * 16 + offset, self.STOP + 1,
-                      count=20000000)
+                      count=instruction_budget)
         if not self.returned:
             raise RuntimeError('Original routine exceeded instruction budget')
         assert cpu.reg_read(reg.UC_X86_REG_SP) == 0xff04, 'Unexpected calling convention'

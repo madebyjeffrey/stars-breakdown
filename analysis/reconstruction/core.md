@@ -1,15 +1,22 @@
-# Step 5: reviewed integer and near-memory core
+# Step 5: reviewed semantic core
 
-Status: **39 of 846 named game routines reconstructed**, covering 8,866 original
+Status: **44 of 846 named game routines reconstructed**, covering 14,235 original
 procedure bytes. Step 5 remains in progress. Unnamed/runtime code is additional
 work. These routines compile together as a host C89 library; they do not yet
 constitute a Win16 application or retain the original far-call ABI. Innate race
 scoring uses explicit bounded x87 rounding; see the U018 resolution.
 
-Additional routines and their memory-domain limits are described in
-[the codec report](codec.md), [the text-utility report](text.md), and
-[the game-creation report](create.md), and [race validation](race-validation.md), and [habitability](habitability.md), and [innate race scoring](innate-habitability.md).
+Additional routines and their limits are described in [codec](codec.md),
+[text utilities](text.md), [game creation](create.md), [race validation](race-validation.md),
+[planet habitability](habitability.md), [innate habitability](innate-habitability.md),
+[race scoring](race-scoring.md), [game strings](game-strings.md), and
+[random race creation](random-race.md).
 The table below covers the initial 15 routines.
+
+A complete host-side race-generation example is available with
+`python3 tools/race_demo.py --seed 0`. It runs reconstructed C code with static
+original data and needs no emulator. Race-file I/O and the wizard UI remain
+unreconstructed.
 
 ## Source and address mapping
 

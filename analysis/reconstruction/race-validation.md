@@ -1,8 +1,8 @@
 # Race validation dependencies
 
 Five routines were added to `reconstructed/src/race.c`, covering 1,184 procedure
-bytes. These support FWasRaceFile and CAdvantagePoints; neither enclosing routine
-is yet reconstructed. All addresses are NE ordinals with half-open offsets.
+bytes. These support FWasRaceFile and CAdvantagePoints. The latter is now
+reconstructed in [race scoring](race-scoring.md); FWasRaceFile remains pending. All addresses are NE ordinals with half-open offsets.
 
 | Original | NE 29 range | Host entry |
 |---|---|---|
@@ -61,10 +61,9 @@ with code or the private stack. Native Win16 selector fault behavior remains
 outside the host adapter. The original arithmetic helpers execute in the oracle
 but are not counted as reconstructed runtime source.
 
-Next dependencies include stream record decoding, ReadRtPlr, and innate
-habitability calculations. CAdvantagePoints mutates records through
-BoundsCheckPlayer before computing points; a future reconstruction must preserve
-that ordering rather than treating it as a pure scoring function.
+Stream record decoding and ReadRtPlr remain pending. Innate habitability,
+CAdvantagePoints and CreateRandomRace now have reviewed source and original-machine
+comparisons. Their reports record mutation ordering, arithmetic and input limits.
 
 ## Segment-move display audit (U016)
 

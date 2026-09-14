@@ -77,4 +77,13 @@ StarsI16 stars_planet_desirability(const StarsU8 *data, StarsU16 planet, StarsI1
  * Player record must be disjoint from player zero or exactly player zero.
  * See innate-habitability.md for the bounded x87 rounding model. */
 StarsI32 stars_innate_race_habitability(StarsU8 *data, StarsU16 player);
+/* Same record/FPU domain as innate habitability, after bounds correction. */
+StarsI16 stars_race_advantage_points(StarsU8 *data, StarsU16 player);
+StarsI16 stars_true_max_growth(const StarsU8 *data, StarsI16 player_index);
+/* strings is a complete image of NE segment 3; see game-strings.md. */
+StarsU16 stars_get_compressed_string(StarsU8 *data, const StarsU8 *strings, StarsI16 id);
+StarsI16 stars_copy_game_string(StarsU8 *data, const StarsU8 *strings, StarsI16 id, StarsU16 output);
+/* Existing initialized record, static template and RNG seeds in data.
+ * Name must terminate within its 32-byte field; see random-race.md. */
+void stars_create_random_race(StarsU8 *data, const StarsU8 *strings, StarsU16 player);
 #endif

@@ -86,10 +86,13 @@ This does not promise the author's exact source text, comments, macros, or code 
 
 ## 5. Reconstruct the program, subsystem by subsystem
 
-**In progress:** 39 named routines (8,866 original procedure bytes) now have
+**In progress:** 44 named routines (14,235 original procedure bytes) now have
 reviewed C89 source and original-x86 differential tests. See
 [the core reconstruction report](analysis/reconstruction/core.md).
 This is a host semantic library; the subsystem checkboxes below remain open.
+The race scoring/random-generation chain now runs independently of Windows;
+`python3 tools/race_demo.py --seed 0` exercises it. Race-file I/O, wizard UI,
+and remaining creation routines are still pending.
 
 For each group below, follow the per-function checklist. The order is provisional: use the recovered dependency graph to adjust it. Module names identify initial study areas, not verified architectural boundaries.
 

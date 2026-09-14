@@ -10,9 +10,9 @@
     "debug_procedure_bytes": 890384,
     "unclassified_code_segment_bytes": 126146,
     "data_segment_bytes": 26054,
-    "compiled_reconstruction_bytes": 8866,
+    "compiled_reconstruction_bytes": 14235,
     "compiled_coverage_scope": "Host C89 semantic adapters; not a linked Win16 replacement or byte-matching build",
-    "manually_reviewed_bytes": 8866
+    "manually_reviewed_bytes": 14235
   },
   "ranges": [
     {
@@ -715,13 +715,16 @@
         "strings.obj"
       ],
       "evidence": [
-        "analysis/segments.json",
         "analysis/functions.json",
-        "analysis/segment_map.json"
+        "analysis/debug/procedures.json",
+        "analysis/decompiler/export-manifest.json",
+        "analysis/reconstruction/game-strings.md",
+        "tests/test_game_strings_machine.py"
       ],
-      "reconstruction_path": null,
-      "review_status": "not_started",
-      "validation_status": "not_started"
+      "reconstruction_path": "reconstructed/src/strings.c",
+      "review_status": "manually_reviewed",
+      "validation_status": "original_x86_all_1414_ids_and_cache_behavior_checked_with_documented_memory_limits; host_semantic_adapter; Win16_integration_pending",
+      "compilation_status": "host_c89_compiled"
     },
     {
       "id": "0004:0000-06a3",
@@ -6190,13 +6193,16 @@
         "utilgen.obj"
       ],
       "evidence": [
-        "analysis/segments.json",
         "analysis/functions.json",
-        "analysis/segment_map.json"
+        "analysis/debug/procedures.json",
+        "analysis/decompiler/export-manifest.json",
+        "analysis/reconstruction/game-strings.md",
+        "tests/test_game_strings_machine.py"
       ],
-      "reconstruction_path": null,
-      "review_status": "not_started",
-      "validation_status": "not_started"
+      "reconstruction_path": "reconstructed/src/strings.c",
+      "review_status": "manually_reviewed",
+      "validation_status": "original_x86_all_1414_ids_and_forward_copy_checked_with_documented_memory_limits; host_semantic_adapter; Win16_integration_pending",
+      "compilation_status": "host_c89_compiled"
     },
     {
       "id": "0009:2273-2274",
@@ -24268,13 +24274,16 @@
         "race.obj"
       ],
       "evidence": [
-        "analysis/segments.json",
         "analysis/functions.json",
-        "analysis/segment_map.json"
+        "analysis/debug/procedures.json",
+        "analysis/decompiler/export-manifest.json",
+        "analysis/reconstruction/race-scoring.md",
+        "tests/test_advantage_machine.py"
       ],
-      "reconstruction_path": null,
-      "review_status": "not_started",
-      "validation_status": "not_started"
+      "reconstruction_path": "reconstructed/src/race.c",
+      "review_status": "manually_reviewed",
+      "validation_status": "original_x86_x87_full_callee_chain_checked_with_documented_valid_environment_and_FPCW_037F_limits; host_semantic_adapter; Win16_integration_pending",
+      "compilation_status": "host_c89_compiled"
     },
     {
       "id": "001d:4c6d-4c6e",
@@ -24498,13 +24507,16 @@
         "race.obj"
       ],
       "evidence": [
-        "analysis/segments.json",
         "analysis/functions.json",
-        "analysis/segment_map.json"
+        "analysis/debug/procedures.json",
+        "analysis/decompiler/export-manifest.json",
+        "analysis/reconstruction/random-race.md",
+        "tests/test_random_race_machine.py"
       ],
-      "reconstruction_path": null,
-      "review_status": "not_started",
-      "validation_status": "not_started"
+      "reconstruction_path": "reconstructed/src/race.c",
+      "review_status": "manually_reviewed",
+      "validation_status": "original_x86_x87_complete_seeded_generations_and_251_attempt_fallback_checked_with_documented_memory_and_FPCW_037F_limits; host_semantic_adapter; Win16_integration_pending",
+      "compilation_status": "host_c89_compiled"
     },
     {
       "id": "001d:65d4-662c",
@@ -24522,13 +24534,16 @@
         "race.obj"
       ],
       "evidence": [
-        "analysis/segments.json",
         "analysis/functions.json",
-        "analysis/segment_map.json"
+        "analysis/debug/procedures.json",
+        "analysis/decompiler/export-manifest.json",
+        "analysis/reconstruction/race-scoring.md",
+        "tests/test_advantage_machine.py"
       ],
-      "reconstruction_path": null,
-      "review_status": "not_started",
-      "validation_status": "not_started"
+      "reconstruction_path": "reconstructed/src/race.c",
+      "review_status": "manually_reviewed",
+      "validation_status": "original_x86_differential_checked_with_signed_byte_and_wrapped_player_indices; host_semantic_adapter; Win16_integration_pending",
+      "compilation_status": "host_c89_compiled"
     },
     {
       "id": "001e:0000-028c",

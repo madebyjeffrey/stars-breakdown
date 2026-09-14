@@ -25,10 +25,10 @@ class BaselineChecks(unittest.TestCase):
                 self.assertGreater(row['end_exclusive'],cursor)
                 cursor=row['end_exclusive']
             self.assertEqual(cursor,max(seg['size'],seg['allocation']))
-        self.assertEqual(ledger['summary']['manually_reviewed_bytes'],8866)
-        self.assertEqual(ledger['summary']['compiled_reconstruction_bytes'],8866)
+        self.assertEqual(ledger['summary']['manually_reviewed_bytes'],14235)
+        self.assertEqual(ledger['summary']['compiled_reconstruction_bytes'],14235)
         compiled=[r for r in ledger['ranges'] if r.get('compilation_status')=='host_c89_compiled']
-        self.assertEqual(len(compiled),39)
+        self.assertEqual(len(compiled),44)
         for row in compiled:
             for evidence in row['evidence']:
                 self.assertTrue((ROOT/evidence).is_file(),evidence)
