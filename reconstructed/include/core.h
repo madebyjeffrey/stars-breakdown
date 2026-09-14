@@ -55,4 +55,13 @@ void stars_int_to_roman(StarsU8 *data, StarsI16 value, StarsU16 output);
 StarsI16 stars_parse_numbers(StarsU8 *data, StarsU16 input, StarsU16 output, StarsI16 maximum);
 /* pointer_slot holds an offset:selector pointing into data; selector retained. */
 StarsU32 stars_get_line(StarsU8 *data, StarsU16 pointer_slot);
+void stars_set_victory_check(StarsU8 *data, StarsU16 game, StarsI16 index, StarsI16 enabled);
+StarsI16 stars_get_victory_check(const StarsU8 *data, StarsU16 game, StarsI16 index);
+StarsI16 stars_get_victory_value(const StarsU8 *data, StarsU16 game, StarsI16 index, StarsI16 raw);
+/* Setter requires a valid victory-field index, 0 through 9. */
+StarsI16 stars_set_victory_value(StarsU8 *data, StarsU16 game, StarsI16 index, StarsI16 value);
+/* Valid template indices 0..4; destination is a valid 36-byte region. */
+void stars_init_battle_plan(StarsU8 *data, StarsU16 output, StarsI16 template_index, StarsI16 plan_id);
+StarsU32 stars_computer_player_pointer(StarsU16 code_selector, StarsI16 race, StarsI16 level);
+void stars_init_new_game3(void);
 #endif

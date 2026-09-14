@@ -10,9 +10,9 @@
     "debug_procedure_bytes": 890384,
     "unclassified_code_segment_bytes": 126146,
     "data_segment_bytes": 26054,
-    "compiled_reconstruction_bytes": 4072,
+    "compiled_reconstruction_bytes": 4901,
     "compiled_coverage_scope": "Host C89 semantic adapters; not a linked Win16 replacement or byte-matching build",
-    "manually_reviewed_bytes": 4072
+    "manually_reviewed_bytes": 4901
   },
   "ranges": [
     {
@@ -15679,13 +15679,16 @@
         "create.obj"
       ],
       "evidence": [
-        "analysis/segments.json",
         "analysis/functions.json",
-        "analysis/segment_map.json"
+        "analysis/debug/procedures.json",
+        "analysis/decompiler/export-manifest.json",
+        "analysis/reconstruction/create.md",
+        "tests/test_create_machine.py"
       ],
-      "reconstruction_path": null,
-      "review_status": "not_started",
-      "validation_status": "not_started"
+      "reconstruction_path": "reconstructed/src/create.c",
+      "review_status": "manually_reviewed",
+      "validation_status": "original_x86_differential_checked_with_documented_memory_limits; host_semantic_adapter; Win16_integration_pending",
+      "compilation_status": "host_c89_compiled"
     },
     {
       "id": "0010:0136-468f",
@@ -15883,13 +15886,16 @@
         "create.obj"
       ],
       "evidence": [
-        "analysis/segments.json",
         "analysis/functions.json",
-        "analysis/segment_map.json"
+        "analysis/debug/procedures.json",
+        "analysis/decompiler/export-manifest.json",
+        "analysis/reconstruction/create.md",
+        "tests/test_create_machine.py"
       ],
-      "reconstruction_path": null,
-      "review_status": "not_started",
-      "validation_status": "not_started"
+      "reconstruction_path": "reconstructed/src/create.c",
+      "review_status": "manually_reviewed",
+      "validation_status": "original_x86_differential_checked_with_documented_memory_limits; host_semantic_adapter; Win16_integration_pending",
+      "compilation_status": "host_c89_compiled"
     },
     {
       "id": "0010:7507-7508",
@@ -16267,13 +16273,16 @@
         "create.obj"
       ],
       "evidence": [
-        "analysis/segments.json",
         "analysis/functions.json",
-        "analysis/segment_map.json"
+        "analysis/debug/procedures.json",
+        "analysis/decompiler/export-manifest.json",
+        "analysis/reconstruction/create.md",
+        "tests/test_create_machine.py"
       ],
-      "reconstruction_path": null,
-      "review_status": "not_started",
-      "validation_status": "not_started"
+      "reconstruction_path": "reconstructed/src/create.c",
+      "review_status": "manually_reviewed",
+      "validation_status": "original_x86_differential_checked_with_documented_memory_limits; host_semantic_adapter; Win16_integration_pending",
+      "compilation_status": "host_c89_compiled"
     },
     {
       "id": "0010:b5a7-b5bc",
@@ -16309,13 +16318,16 @@
         "create.obj"
       ],
       "evidence": [
-        "analysis/segments.json",
         "analysis/functions.json",
-        "analysis/segment_map.json"
+        "analysis/debug/procedures.json",
+        "analysis/decompiler/export-manifest.json",
+        "analysis/reconstruction/create.md",
+        "tests/test_create_machine.py"
       ],
-      "reconstruction_path": null,
-      "review_status": "not_started",
-      "validation_status": "not_started"
+      "reconstruction_path": "reconstructed/src/create.c",
+      "review_status": "manually_reviewed",
+      "validation_status": "original_x86_differential_checked_with_documented_memory_limits; host_semantic_adapter; Win16_integration_pending",
+      "compilation_status": "host_c89_compiled"
     },
     {
       "id": "0010:b60b-b60c",
@@ -16351,13 +16363,16 @@
         "create.obj"
       ],
       "evidence": [
-        "analysis/segments.json",
         "analysis/functions.json",
-        "analysis/segment_map.json"
+        "analysis/debug/procedures.json",
+        "analysis/decompiler/export-manifest.json",
+        "analysis/reconstruction/create.md",
+        "tests/test_create_machine.py"
       ],
-      "reconstruction_path": null,
-      "review_status": "not_started",
-      "validation_status": "not_started"
+      "reconstruction_path": "reconstructed/src/create.c",
+      "review_status": "manually_reviewed",
+      "validation_status": "original_x86_differential_checked_with_documented_memory_limits; host_semantic_adapter; Win16_integration_pending",
+      "compilation_status": "host_c89_compiled"
     },
     {
       "id": "0010:b644-b70f",
@@ -16375,13 +16390,16 @@
         "create.obj"
       ],
       "evidence": [
-        "analysis/segments.json",
         "analysis/functions.json",
-        "analysis/segment_map.json"
+        "analysis/debug/procedures.json",
+        "analysis/decompiler/export-manifest.json",
+        "analysis/reconstruction/create.md",
+        "tests/test_create_machine.py"
       ],
-      "reconstruction_path": null,
-      "review_status": "not_started",
-      "validation_status": "not_started"
+      "reconstruction_path": "reconstructed/src/create.c",
+      "review_status": "manually_reviewed",
+      "validation_status": "original_x86_differential_checked_with_documented_memory_limits; host_semantic_adapter; Win16_integration_pending",
+      "compilation_status": "host_c89_compiled"
     },
     {
       "id": "0010:b70f-b710",
@@ -16417,13 +16435,16 @@
         "create.obj"
       ],
       "evidence": [
-        "analysis/segments.json",
         "analysis/functions.json",
-        "analysis/segment_map.json"
+        "analysis/debug/procedures.json",
+        "analysis/decompiler/export-manifest.json",
+        "analysis/reconstruction/create.md",
+        "tests/test_create_machine.py"
       ],
-      "reconstruction_path": null,
-      "review_status": "not_started",
-      "validation_status": "not_started"
+      "reconstruction_path": "reconstructed/src/create.c",
+      "review_status": "manually_reviewed",
+      "validation_status": "original_x86_differential_checked_with_documented_memory_limits; host_semantic_adapter; Win16_integration_pending",
+      "compilation_status": "host_c89_compiled"
     },
     {
       "id": "0011:0000-0831",

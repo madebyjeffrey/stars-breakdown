@@ -16,7 +16,7 @@ The user identified this executable on 2026-09-13 as **2.70j RC3**, the third re
 
 Initial coverage: 37 segments, 1,305 ranges, 1,042,584 memory bytes. Debug procedure ranges cover 890,384 bytes; 126,146 code-segment bytes remain unclassified and 26,054 bytes belong to the data segment. These are inventory measurements, not a decompilation percentage. Procedure extents may themselves contain inline data.
 
-Step 5 has 25 reviewed routines covering 4,072 original procedure bytes, compiled
+Step 5 has 32 reviewed routines covering 4,901 original procedure bytes, compiled
 as host C89 semantic adapters and compared with original x86 execution. See
 [the reconstruction report](../analysis/reconstruction/core.md). This is not a
 linked Win16 replacement. The historical GetRaceStat note has been superseded

@@ -33,7 +33,8 @@ class CoreMachineTests(unittest.TestCase):
                         str(ROOT / 'reconstructed/src/race.c'),
                         str(ROOT / 'reconstructed/src/near_state.c'),
                         str(ROOT / 'reconstructed/src/codec.c'),
-                        str(ROOT / 'reconstructed/src/text.c'), '-o', str(library)],
+                        str(ROOT / 'reconstructed/src/text.c'),
+                        str(ROOT / 'reconstructed/src/create.c'), '-o', str(library)],
                        check=True)
         cls.lib = C.CDLL(str(library))
         for name in ['stars_randomize', 'stars_randomize2']:

@@ -16,7 +16,7 @@ from tools.ne_layout import NE, patch
 
 
 class OriginalCore:
-    SEGMENTS = {9: 0x1000, 36: 0x2000, 37: 0x3000, 29: 0x4000}
+    SEGMENTS = {9: 0x1000, 36: 0x2000, 37: 0x3000, 29: 0x4000, 16: 0x7000}
     DATA = 0x30000
     STOP = 0x60000
 
@@ -26,7 +26,7 @@ class OriginalCore:
             'ccab6682b55dae14dbf104e491cfbd3b32a6280022020032ae0615500949ba59')
         ne = NE(path)
         self.cpu = Uc(UC_ARCH_X86, UC_MODE_16)
-        self.cpu.mem_map(0x10000, 0x60000)
+        self.cpu.mem_map(0x10000, 0x70000)
         for number, selector in self.SEGMENTS.items():
             memory = bytearray(ne.raw[number - 1])
             for relocation in ne.relocations:

@@ -1,12 +1,13 @@
 # Step 5: reviewed integer and near-memory core
 
-Status: **25 of 846 named game routines reconstructed**, covering 4,072 original
+Status: **32 of 846 named game routines reconstructed**, covering 4,901 original
 procedure bytes. Step 5 remains in progress. Unnamed/runtime code is additional
 work. These routines compile together as a host C89 library; they do not yet
 constitute a Win16 application or retain the original far-call ABI.
 
 Additional routines and their memory-domain limits are described in
-[the codec report](codec.md) and [the text-utility report](text.md).
+[the codec report](codec.md), [the text-utility report](text.md), and
+[the game-creation report](create.md).
 The table below covers the initial 15 routines.
 
 ## Source and address mapping

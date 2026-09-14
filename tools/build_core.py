@@ -17,7 +17,7 @@ def main():
     subprocess.run([args.cc, '-std=c89', '-pedantic', '-Wall', '-Wextra', '-Werror',
                     '-O2', '-shared', '-fPIC', '-I', str(ROOT / 'reconstructed/include'),
                     *[str(ROOT / 'reconstructed/src' / name) for name in
-                      ['utilgen.c', 'race.c', 'near_state.c', 'codec.c', 'text.c']], '-o', str(output)], check=True)
+                      ['utilgen.c', 'race.c', 'near_state.c', 'codec.c', 'text.c', 'create.c']], '-o', str(output)], check=True)
     print(output)
 
 
