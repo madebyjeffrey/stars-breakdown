@@ -1,8 +1,11 @@
 # Stars! executable study
 
-A reverse-engineering study of `target/stars.exe`, preserving the supplied executable unchanged. This repository currently contains a debug-information extractor, a function index, recovered data layouts, a relocation-aware NE layout/resource extractor, a tested Ghidra workflow with initial exports for 1,043 identified functions, and one manually reconstructed function. It is not a complete decompilation or a buildable recreation of the game.
+A reverse-engineering study of `target/stars.exe`, preserving the supplied executable unchanged. The project has a tested NE/CodeView/Ghidra workflow and 99 reviewed C89 routines, including an integrated race save/load and creation component. It is not yet a complete decompilation or a Win16 replacement application.
 
 ## Start here
+
+- [Race component](analysis/reconstruction/race-component.md): completed game-code dependencies, original-instruction comparisons, and the Windows contract for the next native build.
+- [Reviewed semantic core](analysis/reconstruction/core.md): current source coverage and validation scope.
 
 - [Decompiler workflow](analysis/decompiler/README.md): tested import, initial C/assembly exports, call/data maps, acceptance checks, and remaining analysis limits (step 3 complete).
 
@@ -32,7 +35,8 @@ Examples of compact recorded layouts: `_planet` is 56 bytes, `_fleet` 124 bytes,
 
 ## Reproduce
 
-From this directory, with Python 3 (no third-party dependencies):
+The metadata extractors use Python 3. Differential tests additionally use the
+pinned dependencies in `requirements-validation.txt` and a host C compiler:
 
 ```sh
 python3 tools/extract_debug.py
@@ -50,9 +54,11 @@ CodeView logical segment numbers are translated through `sstSegMap` to NE segmen
 
 ## Next decompilation stage
 
-Steps 0–3 are complete. Step 4 is next: run the original in a reproducible environment and capture controlled behavior for comparison. The full checklist is in [TODO.md](TODO.md).
+Steps 0–4 are complete for the recorded baseline. Step 5 is in progress. The
+save/load and race-creation dependency cluster is integrated; its native Windows
+acceptance build comes next. The full checklist is in [TODO.md](TODO.md).
 
-The NE extractor accounts for every file byte, decodes all relocation records, resolves imports to symbolic identities, extracts every resource, and emits static memory images with synthetic selectors. Its hardware-x87 policy and remaining runtime limitations are documented in [the layout report](analysis/ne/README.md). Decompiler import and static acceptance are complete in [step 3](analysis/decompiler/README.md). Actual native execution remains step 4.
+The NE extractor accounts for every file byte, decodes all relocation records, resolves imports to symbolic identities, extracts every resource, and emits static memory images with synthetic selectors. Its hardware-x87 policy and remaining runtime limitations are documented in [the layout report](analysis/ne/README.md). Original execution evidence is in the [runtime report](analysis/runtime/README.md); the early native compiler results are in the [VC++ review](analysis/compat/vc152-return2.md).
 
 Debug information greatly improves names and layouts, but comments, macros, original expressions, and optimized-away code generally require interpretation or are unrecoverable.
 

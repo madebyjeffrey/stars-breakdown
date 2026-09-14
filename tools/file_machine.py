@@ -10,9 +10,12 @@ from unicorn import UC_HOOK_CODE
 
 
 class FileMachine(StreamMachine):
-    def __init__(self, format_boundary=True):
-        super().__init__(imports={'USER!#23':(0xe000,0x800),'USER!#1':(0xe000,0x900)})
+    def __init__(self, format_boundary=True, imports=None, output_boundary=True):
+        slots={'USER!#23':(0xe000,0x800),'USER!#1':(0xe000,0x900)}
+        slots.update(imports or {})
+        super().__init__(imports=slots)
         self.format_boundary=format_boundary
+        self.output_boundary=output_boundary
         self.focus=0x1234
         self.message_result=1
         self.environments=[]
@@ -40,6 +43,7 @@ class FileMachine(StreamMachine):
             self._return_far()
 
     def _output(self,cpu,address,size,unused):
+        if not self.output_boundary:return
         channel,off,seg=struct.unpack('<hHH',bytes(cpu.mem_read(self._stack()+4,6)))
         self.events.append(('output',channel,self._string(seg*16+off)))
         self._return_far()

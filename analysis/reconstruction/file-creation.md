@@ -16,7 +16,7 @@ control-flow evidence. These are host adapters, not a Win16 executable.
 All use original far C calls with caller cleanup. FCreateFile, AlertSz and
 FBadFileError return signed words through AX; the other two return void.
 These routines extend [file streams](file-streams.md). OutputSz, PszFormatIds,
-FSaveRace and FWasRaceFile remain unreconstructed dependencies/callers.
+FSaveRace and FWasRaceFile are now integrated in the [race component](race-component.md).
 
 ## Filename rules
 

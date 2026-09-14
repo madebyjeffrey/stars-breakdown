@@ -1,6 +1,6 @@
 # Step 5: reviewed semantic core
 
-Status: **59 of 846 named game routines reconstructed**, covering 18,188 original
+Status: **99 of 846 named game routines reconstructed**, covering 45,906 original
 procedure bytes. Step 5 remains in progress. Unnamed/runtime code is additional
 work. These routines compile together as a host C89 library; they do not yet
 constitute a Win16 application or retain the original far-call ABI. Innate race
@@ -12,7 +12,8 @@ Additional routines and their limits are described in [codec](codec.md),
 [race scoring](race-scoring.md), [game strings](game-strings.md),
 [random race creation](random-race.md), [player records](player-records.md),
 [file headers and stream handling](file-streams.md), and
-[file creation and alerts](file-creation.md).
+[file creation and alerts](file-creation.md), the integrated
+[race component](race-component.md), and [message formatting](message-formatting.md).
 The table below covers the initial 15 routines.
 
 A complete host-side race-generation example is available with
@@ -22,8 +23,10 @@ original data and needs no emulator. Player-record serialization is now availabl
 header. Stream retry/transfer control flow is also reconstructed with explicit
 OS, error-presentation and nonlocal-exit boundaries. Filename generation, file
 creation recovery, error classification and dialog/log selection now have
-reviewed source as well. Message expansion, log writing, file dialogs and the
-wizard UI remain unreconstructed; see the reports for validation limits.
+reviewed source as well. Message expansion, logging, passwords, race save/load
+and all six wizard pages now execute as an integrated host component. Its
+[dependency audit](race-dependencies.json) and [Windows contract](race-window-api.md)
+define the scope of the forthcoming native acceptance build.
 
 ## Source and address mapping
 
@@ -139,6 +142,7 @@ python3 tools/baseline.py --check
 
 Unicorn is pinned to 2.1.4. On macOS its JIT needs execution permission outside
 the restricted process sandbox. Output is `build/libstars_core.dylib` on macOS
-and `build/libstars_core.so` on other supported hosts. The Visual C++ 1.5
-toolchain and original ABI remain unverified; C89 acceptance by the host compiler
-does not prove a native 16-bit build.
+and `build/libstars_core.so` on other supported hosts. The initial native
+VC++ 1.52c [compatibility checks](../compat/vc152-return2.md) passed for their
+selected source subset. The new race-component source still needs its native
+adapter/build; host C89 acceptance does not establish that result.

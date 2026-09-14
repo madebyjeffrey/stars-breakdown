@@ -787,5 +787,645 @@
       "tools/file_machine.py",
       "tests/test_file_machine.py"
     ]
+  },
+  "001d:58d4-5ab7": {
+    "reconstruction_path": "reconstructed/src/runtime.c",
+    "review_status": "manually_reviewed",
+    "compilation_status": "host_c89_compiled",
+    "validation_status": "original_x86_differential_checked; integrated_race_component; synthetic_Windows_services; native_Win16_integration_pending",
+    "evidence": [
+      "analysis/functions.json",
+      "analysis/debug/procedures.json",
+      "analysis/decompiler/export-manifest.json",
+      "analysis/reconstruction/race-component.md",
+      "analysis/reconstruction/message-formatting.md",
+      "tests/test_race_runtime.py",
+      "tests/test_race_format.py",
+      "tests/test_race_ui.py"
+    ]
+  },
+  "0005:5da8-5ffc": {
+    "reconstruction_path": "reconstructed/src/runtime.c",
+    "review_status": "manually_reviewed",
+    "compilation_status": "host_c89_compiled",
+    "validation_status": "original_x86_differential_checked; integrated_race_component; synthetic_Windows_services; native_Win16_integration_pending",
+    "evidence": [
+      "analysis/functions.json",
+      "analysis/debug/procedures.json",
+      "analysis/decompiler/export-manifest.json",
+      "analysis/reconstruction/race-component.md",
+      "analysis/reconstruction/message-formatting.md",
+      "tests/test_race_runtime.py",
+      "tests/test_race_format.py",
+      "tests/test_race_ui.py"
+    ]
+  },
+  "001e:3a3e-3ac1": {
+    "reconstruction_path": "reconstructed/src/password.c",
+    "review_status": "manually_reviewed",
+    "compilation_status": "host_c89_compiled",
+    "validation_status": "original_x86_differential_checked; integrated_race_component; synthetic_Windows_services; native_Win16_integration_pending",
+    "evidence": [
+      "analysis/functions.json",
+      "analysis/debug/procedures.json",
+      "analysis/decompiler/export-manifest.json",
+      "analysis/reconstruction/race-component.md",
+      "analysis/reconstruction/message-formatting.md",
+      "tests/test_race_runtime.py",
+      "tests/test_race_format.py",
+      "tests/test_race_ui.py"
+    ]
+  },
+  "0009:58d8-59ce": {
+    "reconstruction_path": "reconstructed/src/password.c",
+    "review_status": "manually_reviewed",
+    "compilation_status": "host_c89_compiled",
+    "validation_status": "original_x86_differential_checked; integrated_race_component; synthetic_Windows_services; native_Win16_integration_pending",
+    "evidence": [
+      "analysis/functions.json",
+      "analysis/debug/procedures.json",
+      "analysis/decompiler/export-manifest.json",
+      "analysis/reconstruction/race-component.md",
+      "analysis/reconstruction/message-formatting.md",
+      "tests/test_race_runtime.py",
+      "tests/test_race_format.py",
+      "tests/test_race_ui.py"
+    ]
+  },
+  "0009:59ce-5a71": {
+    "reconstruction_path": "reconstructed/src/password.c",
+    "review_status": "manually_reviewed",
+    "compilation_status": "host_c89_compiled",
+    "validation_status": "original_x86_differential_checked; integrated_race_component; synthetic_Windows_services; native_Win16_integration_pending",
+    "evidence": [
+      "analysis/functions.json",
+      "analysis/debug/procedures.json",
+      "analysis/decompiler/export-manifest.json",
+      "analysis/reconstruction/race-component.md",
+      "analysis/reconstruction/message-formatting.md",
+      "tests/test_race_runtime.py",
+      "tests/test_race_format.py",
+      "tests/test_race_ui.py"
+    ]
+  },
+  "0009:5a72-5cb9": {
+    "reconstruction_path": "reconstructed/src/password.c",
+    "review_status": "manually_reviewed",
+    "compilation_status": "host_c89_compiled",
+    "validation_status": "original_x86_differential_checked; integrated_race_component; synthetic_Windows_services; native_Win16_integration_pending",
+    "evidence": [
+      "analysis/functions.json",
+      "analysis/debug/procedures.json",
+      "analysis/decompiler/export-manifest.json",
+      "analysis/reconstruction/race-component.md",
+      "analysis/reconstruction/message-formatting.md",
+      "tests/test_race_runtime.py",
+      "tests/test_race_format.py",
+      "tests/test_race_ui.py"
+    ]
+  },
+  "0009:1f64-1ff9": {
+    "reconstruction_path": "reconstructed/src/output.c",
+    "review_status": "manually_reviewed",
+    "compilation_status": "host_c89_compiled",
+    "validation_status": "original_x86_differential_checked; integrated_race_component; synthetic_Windows_services; native_Win16_integration_pending",
+    "evidence": [
+      "analysis/functions.json",
+      "analysis/debug/procedures.json",
+      "analysis/decompiler/export-manifest.json",
+      "analysis/reconstruction/race-component.md",
+      "analysis/reconstruction/message-formatting.md",
+      "tests/test_race_runtime.py",
+      "tests/test_race_format.py",
+      "tests/test_race_ui.py"
+    ]
+  },
+  "0008:7fe6-80c2": {
+    "reconstruction_path": "reconstructed/src/output.c",
+    "review_status": "manually_reviewed",
+    "compilation_status": "host_c89_compiled",
+    "validation_status": "original_x86_differential_checked; integrated_race_component; synthetic_Windows_services; native_Win16_integration_pending",
+    "evidence": [
+      "analysis/functions.json",
+      "analysis/debug/procedures.json",
+      "analysis/decompiler/export-manifest.json",
+      "analysis/reconstruction/race-component.md",
+      "analysis/reconstruction/message-formatting.md",
+      "tests/test_race_runtime.py",
+      "tests/test_race_format.py",
+      "tests/test_race_ui.py"
+    ]
+  },
+  "0004:1212-1252": {
+    "reconstruction_path": "reconstructed/src/output.c",
+    "review_status": "manually_reviewed",
+    "compilation_status": "host_c89_compiled",
+    "validation_status": "original_x86_differential_checked; integrated_race_component; synthetic_Windows_services; native_Win16_integration_pending",
+    "evidence": [
+      "analysis/functions.json",
+      "analysis/debug/procedures.json",
+      "analysis/decompiler/export-manifest.json",
+      "analysis/reconstruction/race-component.md",
+      "analysis/reconstruction/message-formatting.md",
+      "tests/test_race_runtime.py",
+      "tests/test_race_format.py",
+      "tests/test_race_ui.py"
+    ]
+  },
+  "0007:85cc-8f67": {
+    "reconstruction_path": "reconstructed/src/format.c",
+    "review_status": "manually_reviewed",
+    "compilation_status": "host_c89_compiled",
+    "validation_status": "original_x86_differential_checked; integrated_race_component; synthetic_Windows_services; native_Win16_integration_pending",
+    "evidence": [
+      "analysis/functions.json",
+      "analysis/debug/procedures.json",
+      "analysis/decompiler/export-manifest.json",
+      "analysis/reconstruction/race-component.md",
+      "analysis/reconstruction/message-formatting.md",
+      "tests/test_race_runtime.py",
+      "tests/test_race_format.py",
+      "tests/test_race_ui.py"
+    ]
+  },
+  "0007:924c-9278": {
+    "reconstruction_path": "reconstructed/src/format.c",
+    "review_status": "manually_reviewed",
+    "compilation_status": "host_c89_compiled",
+    "validation_status": "original_x86_differential_checked; integrated_race_component; synthetic_Windows_services; native_Win16_integration_pending",
+    "evidence": [
+      "analysis/functions.json",
+      "analysis/debug/procedures.json",
+      "analysis/decompiler/export-manifest.json",
+      "analysis/reconstruction/race-component.md",
+      "analysis/reconstruction/message-formatting.md",
+      "tests/test_race_runtime.py",
+      "tests/test_race_format.py",
+      "tests/test_race_ui.py"
+    ]
+  },
+  "000a:5fcc-6057": {
+    "reconstruction_path": "reconstructed/src/format.c",
+    "review_status": "manually_reviewed",
+    "compilation_status": "host_c89_compiled",
+    "validation_status": "original_x86_differential_checked; integrated_race_component; synthetic_Windows_services; native_Win16_integration_pending",
+    "evidence": [
+      "analysis/functions.json",
+      "analysis/debug/procedures.json",
+      "analysis/decompiler/export-manifest.json",
+      "analysis/reconstruction/race-component.md",
+      "analysis/reconstruction/message-formatting.md",
+      "tests/test_race_runtime.py",
+      "tests/test_race_format.py",
+      "tests/test_race_ui.py"
+    ]
+  },
+  "000a:6058-60e6": {
+    "reconstruction_path": "reconstructed/src/format.c",
+    "review_status": "manually_reviewed",
+    "compilation_status": "host_c89_compiled",
+    "validation_status": "original_x86_differential_checked; integrated_race_component; synthetic_Windows_services; native_Win16_integration_pending",
+    "evidence": [
+      "analysis/functions.json",
+      "analysis/debug/procedures.json",
+      "analysis/decompiler/export-manifest.json",
+      "analysis/reconstruction/race-component.md",
+      "analysis/reconstruction/message-formatting.md",
+      "tests/test_race_runtime.py",
+      "tests/test_race_format.py",
+      "tests/test_race_ui.py"
+    ]
+  },
+  "0009:2534-2590": {
+    "reconstruction_path": "reconstructed/src/ui.c",
+    "review_status": "manually_reviewed",
+    "compilation_status": "host_c89_compiled",
+    "validation_status": "original_x86_differential_checked; integrated_race_component; synthetic_Windows_services; native_Win16_integration_pending",
+    "evidence": [
+      "analysis/functions.json",
+      "analysis/debug/procedures.json",
+      "analysis/decompiler/export-manifest.json",
+      "analysis/reconstruction/race-component.md",
+      "analysis/reconstruction/message-formatting.md",
+      "tests/test_race_runtime.py",
+      "tests/test_race_format.py",
+      "tests/test_race_ui.py"
+    ]
+  },
+  "0009:28fc-29d6": {
+    "reconstruction_path": "reconstructed/src/ui.c",
+    "review_status": "manually_reviewed",
+    "compilation_status": "host_c89_compiled",
+    "validation_status": "original_x86_differential_checked; integrated_race_component; synthetic_Windows_services; native_Win16_integration_pending",
+    "evidence": [
+      "analysis/functions.json",
+      "analysis/debug/procedures.json",
+      "analysis/decompiler/export-manifest.json",
+      "analysis/reconstruction/race-component.md",
+      "analysis/reconstruction/message-formatting.md",
+      "tests/test_race_runtime.py",
+      "tests/test_race_format.py",
+      "tests/test_race_ui.py"
+    ]
+  },
+  "0009:29d6-2afa": {
+    "reconstruction_path": "reconstructed/src/ui.c",
+    "review_status": "manually_reviewed",
+    "compilation_status": "host_c89_compiled",
+    "validation_status": "original_x86_differential_checked; integrated_race_component; synthetic_Windows_services; native_Win16_integration_pending",
+    "evidence": [
+      "analysis/functions.json",
+      "analysis/debug/procedures.json",
+      "analysis/decompiler/export-manifest.json",
+      "analysis/reconstruction/race-component.md",
+      "analysis/reconstruction/message-formatting.md",
+      "tests/test_race_runtime.py",
+      "tests/test_race_format.py",
+      "tests/test_race_ui.py"
+    ]
+  },
+  "0009:3094-31a2": {
+    "reconstruction_path": "reconstructed/src/ui.c",
+    "review_status": "manually_reviewed",
+    "compilation_status": "host_c89_compiled",
+    "validation_status": "original_x86_differential_checked; integrated_race_component; synthetic_Windows_services; native_Win16_integration_pending",
+    "evidence": [
+      "analysis/functions.json",
+      "analysis/debug/procedures.json",
+      "analysis/decompiler/export-manifest.json",
+      "analysis/reconstruction/race-component.md",
+      "analysis/reconstruction/message-formatting.md",
+      "tests/test_race_runtime.py",
+      "tests/test_race_format.py",
+      "tests/test_race_ui.py"
+    ]
+  },
+  "0009:336a-354b": {
+    "reconstruction_path": "reconstructed/src/ui.c",
+    "review_status": "manually_reviewed",
+    "compilation_status": "host_c89_compiled",
+    "validation_status": "original_x86_differential_checked; integrated_race_component; synthetic_Windows_services; native_Win16_integration_pending",
+    "evidence": [
+      "analysis/functions.json",
+      "analysis/debug/procedures.json",
+      "analysis/decompiler/export-manifest.json",
+      "analysis/reconstruction/race-component.md",
+      "analysis/reconstruction/message-formatting.md",
+      "tests/test_race_runtime.py",
+      "tests/test_race_format.py",
+      "tests/test_race_ui.py"
+    ]
+  },
+  "0009:354c-364a": {
+    "reconstruction_path": "reconstructed/src/ui.c",
+    "review_status": "manually_reviewed",
+    "compilation_status": "host_c89_compiled",
+    "validation_status": "original_x86_differential_checked; integrated_race_component; synthetic_Windows_services; native_Win16_integration_pending",
+    "evidence": [
+      "analysis/functions.json",
+      "analysis/debug/procedures.json",
+      "analysis/decompiler/export-manifest.json",
+      "analysis/reconstruction/race-component.md",
+      "analysis/reconstruction/message-formatting.md",
+      "tests/test_race_runtime.py",
+      "tests/test_race_format.py",
+      "tests/test_race_ui.py"
+    ]
+  },
+  "0009:364a-38b7": {
+    "reconstruction_path": "reconstructed/src/ui.c",
+    "review_status": "manually_reviewed",
+    "compilation_status": "host_c89_compiled",
+    "validation_status": "original_x86_differential_checked; integrated_race_component; synthetic_Windows_services; native_Win16_integration_pending",
+    "evidence": [
+      "analysis/functions.json",
+      "analysis/debug/procedures.json",
+      "analysis/decompiler/export-manifest.json",
+      "analysis/reconstruction/race-component.md",
+      "analysis/reconstruction/message-formatting.md",
+      "tests/test_race_runtime.py",
+      "tests/test_race_format.py",
+      "tests/test_race_ui.py"
+    ]
+  },
+  "0009:38b8-4146": {
+    "reconstruction_path": "reconstructed/src/ui.c",
+    "review_status": "manually_reviewed",
+    "compilation_status": "host_c89_compiled",
+    "validation_status": "original_x86_differential_checked; integrated_race_component; synthetic_Windows_services; native_Win16_integration_pending",
+    "evidence": [
+      "analysis/functions.json",
+      "analysis/debug/procedures.json",
+      "analysis/decompiler/export-manifest.json",
+      "analysis/reconstruction/race-component.md",
+      "analysis/reconstruction/message-formatting.md",
+      "tests/test_race_runtime.py",
+      "tests/test_race_format.py",
+      "tests/test_race_ui.py"
+    ]
+  },
+  "0009:4146-41df": {
+    "reconstruction_path": "reconstructed/src/ui.c",
+    "review_status": "manually_reviewed",
+    "compilation_status": "host_c89_compiled",
+    "validation_status": "original_x86_differential_checked; integrated_race_component; synthetic_Windows_services; native_Win16_integration_pending",
+    "evidence": [
+      "analysis/functions.json",
+      "analysis/debug/procedures.json",
+      "analysis/decompiler/export-manifest.json",
+      "analysis/reconstruction/race-component.md",
+      "analysis/reconstruction/message-formatting.md",
+      "tests/test_race_runtime.py",
+      "tests/test_race_format.py",
+      "tests/test_race_ui.py"
+    ]
+  },
+  "0009:4a9a-4b4f": {
+    "reconstruction_path": "reconstructed/src/ui.c",
+    "review_status": "manually_reviewed",
+    "compilation_status": "host_c89_compiled",
+    "validation_status": "original_x86_differential_checked; integrated_race_component; synthetic_Windows_services; native_Win16_integration_pending",
+    "evidence": [
+      "analysis/functions.json",
+      "analysis/debug/procedures.json",
+      "analysis/decompiler/export-manifest.json",
+      "analysis/reconstruction/race-component.md",
+      "analysis/reconstruction/message-formatting.md",
+      "tests/test_race_runtime.py",
+      "tests/test_race_format.py",
+      "tests/test_race_ui.py"
+    ]
+  },
+  "0009:4d60-4db8": {
+    "reconstruction_path": "reconstructed/src/ui.c",
+    "review_status": "manually_reviewed",
+    "compilation_status": "host_c89_compiled",
+    "validation_status": "original_x86_differential_checked; integrated_race_component; synthetic_Windows_services; native_Win16_integration_pending",
+    "evidence": [
+      "analysis/functions.json",
+      "analysis/debug/procedures.json",
+      "analysis/decompiler/export-manifest.json",
+      "analysis/reconstruction/race-component.md",
+      "analysis/reconstruction/message-formatting.md",
+      "tests/test_race_runtime.py",
+      "tests/test_race_format.py",
+      "tests/test_race_ui.py"
+    ]
+  },
+  "0009:4db8-4e8f": {
+    "reconstruction_path": "reconstructed/src/ui.c",
+    "review_status": "manually_reviewed",
+    "compilation_status": "host_c89_compiled",
+    "validation_status": "original_x86_differential_checked; integrated_race_component; synthetic_Windows_services; native_Win16_integration_pending",
+    "evidence": [
+      "analysis/functions.json",
+      "analysis/debug/procedures.json",
+      "analysis/decompiler/export-manifest.json",
+      "analysis/reconstruction/race-component.md",
+      "analysis/reconstruction/message-formatting.md",
+      "tests/test_race_runtime.py",
+      "tests/test_race_format.py",
+      "tests/test_race_ui.py"
+    ]
+  },
+  "001d:54d4-55c6": {
+    "reconstruction_path": "reconstructed/src/raceui.c",
+    "review_status": "manually_reviewed",
+    "compilation_status": "host_c89_compiled",
+    "validation_status": "original_x86_differential_checked; integrated_race_component; synthetic_Windows_services; native_Win16_integration_pending",
+    "evidence": [
+      "analysis/functions.json",
+      "analysis/debug/procedures.json",
+      "analysis/decompiler/export-manifest.json",
+      "analysis/reconstruction/race-component.md",
+      "analysis/reconstruction/message-formatting.md",
+      "tests/test_race_runtime.py",
+      "tests/test_race_format.py",
+      "tests/test_race_ui.py"
+    ]
+  },
+  "001d:55c6-5888": {
+    "reconstruction_path": "reconstructed/src/raceui.c",
+    "review_status": "manually_reviewed",
+    "compilation_status": "host_c89_compiled",
+    "validation_status": "original_x86_differential_checked; integrated_race_component; synthetic_Windows_services; native_Win16_integration_pending",
+    "evidence": [
+      "analysis/functions.json",
+      "analysis/debug/procedures.json",
+      "analysis/decompiler/export-manifest.json",
+      "analysis/reconstruction/race-component.md",
+      "analysis/reconstruction/message-formatting.md",
+      "tests/test_race_runtime.py",
+      "tests/test_race_format.py",
+      "tests/test_race_ui.py"
+    ]
+  },
+  "001d:5ab8-5b08": {
+    "reconstruction_path": "reconstructed/src/raceui.c",
+    "review_status": "manually_reviewed",
+    "compilation_status": "host_c89_compiled",
+    "validation_status": "original_x86_differential_checked; integrated_race_component; synthetic_Windows_services; native_Win16_integration_pending",
+    "evidence": [
+      "analysis/functions.json",
+      "analysis/debug/procedures.json",
+      "analysis/decompiler/export-manifest.json",
+      "analysis/reconstruction/race-component.md",
+      "analysis/reconstruction/message-formatting.md",
+      "tests/test_race_runtime.py",
+      "tests/test_race_format.py",
+      "tests/test_race_ui.py"
+    ]
+  },
+  "001d:0000-03ac": {
+    "reconstruction_path": "reconstructed/src/racewizard.c",
+    "review_status": "manually_reviewed",
+    "compilation_status": "host_c89_compiled",
+    "validation_status": "original_x86_differential_checked; integrated_race_component; synthetic_Windows_services; native_Win16_integration_pending",
+    "evidence": [
+      "analysis/functions.json",
+      "analysis/debug/procedures.json",
+      "analysis/decompiler/export-manifest.json",
+      "analysis/reconstruction/race-component.md",
+      "analysis/reconstruction/message-formatting.md",
+      "tests/test_race_runtime.py",
+      "tests/test_race_format.py",
+      "tests/test_race_ui.py"
+    ]
+  },
+  "001d:03ac-105f": {
+    "reconstruction_path": "reconstructed/src/racewizard.c",
+    "review_status": "manually_reviewed",
+    "compilation_status": "host_c89_compiled",
+    "validation_status": "original_x86_differential_checked; integrated_race_component; synthetic_Windows_services; native_Win16_integration_pending",
+    "evidence": [
+      "analysis/functions.json",
+      "analysis/debug/procedures.json",
+      "analysis/decompiler/export-manifest.json",
+      "analysis/reconstruction/race-component.md",
+      "analysis/reconstruction/message-formatting.md",
+      "tests/test_race_runtime.py",
+      "tests/test_race_format.py",
+      "tests/test_race_ui.py"
+    ]
+  },
+  "001d:1060-179a": {
+    "reconstruction_path": "reconstructed/src/racewizard.c",
+    "review_status": "manually_reviewed",
+    "compilation_status": "host_c89_compiled",
+    "validation_status": "original_x86_differential_checked; integrated_race_component; synthetic_Windows_services; native_Win16_integration_pending",
+    "evidence": [
+      "analysis/functions.json",
+      "analysis/debug/procedures.json",
+      "analysis/decompiler/export-manifest.json",
+      "analysis/reconstruction/race-component.md",
+      "analysis/reconstruction/message-formatting.md",
+      "tests/test_race_runtime.py",
+      "tests/test_race_format.py",
+      "tests/test_race_ui.py"
+    ]
+  },
+  "001d:2792-2a8c": {
+    "reconstruction_path": "reconstructed/src/racewizard.c",
+    "review_status": "manually_reviewed",
+    "compilation_status": "host_c89_compiled",
+    "validation_status": "original_x86_differential_checked; integrated_race_component; synthetic_Windows_services; native_Win16_integration_pending",
+    "evidence": [
+      "analysis/functions.json",
+      "analysis/debug/procedures.json",
+      "analysis/decompiler/export-manifest.json",
+      "analysis/reconstruction/race-component.md",
+      "analysis/reconstruction/message-formatting.md",
+      "tests/test_race_runtime.py",
+      "tests/test_race_format.py",
+      "tests/test_race_ui.py"
+    ]
+  },
+  "001d:320a-378e": {
+    "reconstruction_path": "reconstructed/src/racewizard.c",
+    "review_status": "manually_reviewed",
+    "compilation_status": "host_c89_compiled",
+    "validation_status": "original_x86_differential_checked; integrated_race_component; synthetic_Windows_services; native_Win16_integration_pending",
+    "evidence": [
+      "analysis/functions.json",
+      "analysis/debug/procedures.json",
+      "analysis/decompiler/export-manifest.json",
+      "analysis/reconstruction/race-component.md",
+      "analysis/reconstruction/message-formatting.md",
+      "tests/test_race_runtime.py",
+      "tests/test_race_format.py",
+      "tests/test_race_ui.py"
+    ]
+  },
+  "001d:378e-3bae": {
+    "reconstruction_path": "reconstructed/src/racewizard.c",
+    "review_status": "manually_reviewed",
+    "compilation_status": "host_c89_compiled",
+    "validation_status": "original_x86_differential_checked; integrated_race_component; synthetic_Windows_services; native_Win16_integration_pending",
+    "evidence": [
+      "analysis/functions.json",
+      "analysis/debug/procedures.json",
+      "analysis/decompiler/export-manifest.json",
+      "analysis/reconstruction/race-component.md",
+      "analysis/reconstruction/message-formatting.md",
+      "tests/test_race_runtime.py",
+      "tests/test_race_format.py",
+      "tests/test_race_ui.py"
+    ]
+  },
+  "001d:3bae-40ad": {
+    "reconstruction_path": "reconstructed/src/racewizard.c",
+    "review_status": "manually_reviewed",
+    "compilation_status": "host_c89_compiled",
+    "validation_status": "original_x86_differential_checked; integrated_race_component; synthetic_Windows_services; native_Win16_integration_pending",
+    "evidence": [
+      "analysis/functions.json",
+      "analysis/debug/procedures.json",
+      "analysis/decompiler/export-manifest.json",
+      "analysis/reconstruction/race-component.md",
+      "analysis/reconstruction/message-formatting.md",
+      "tests/test_race_runtime.py",
+      "tests/test_race_format.py",
+      "tests/test_race_ui.py"
+    ]
+  },
+  "001d:179a-2164": {
+    "reconstruction_path": "reconstructed/src/racedraw.c",
+    "review_status": "manually_reviewed",
+    "compilation_status": "host_c89_compiled",
+    "validation_status": "original_x86_differential_checked; integrated_race_component; synthetic_Windows_services; native_Win16_integration_pending",
+    "evidence": [
+      "analysis/functions.json",
+      "analysis/debug/procedures.json",
+      "analysis/decompiler/export-manifest.json",
+      "analysis/reconstruction/race-component.md",
+      "analysis/reconstruction/message-formatting.md",
+      "tests/test_race_runtime.py",
+      "tests/test_race_format.py",
+      "tests/test_race_ui.py"
+    ]
+  },
+  "001d:2aa4-2fb7": {
+    "reconstruction_path": "reconstructed/src/racedraw.c",
+    "review_status": "manually_reviewed",
+    "compilation_status": "host_c89_compiled",
+    "validation_status": "original_x86_differential_checked; integrated_race_component; synthetic_Windows_services; native_Win16_integration_pending",
+    "evidence": [
+      "analysis/functions.json",
+      "analysis/debug/procedures.json",
+      "analysis/decompiler/export-manifest.json",
+      "analysis/reconstruction/race-component.md",
+      "analysis/reconstruction/message-formatting.md",
+      "tests/test_race_runtime.py",
+      "tests/test_race_format.py",
+      "tests/test_race_ui.py"
+    ]
+  },
+  "001d:2164-2203": {
+    "reconstruction_path": "reconstructed/src/racedraw.c",
+    "review_status": "manually_reviewed",
+    "compilation_status": "host_c89_compiled",
+    "validation_status": "original_x86_differential_checked; integrated_race_component; synthetic_Windows_services; native_Win16_integration_pending",
+    "evidence": [
+      "analysis/functions.json",
+      "analysis/debug/procedures.json",
+      "analysis/decompiler/export-manifest.json",
+      "analysis/reconstruction/race-component.md",
+      "analysis/reconstruction/message-formatting.md",
+      "tests/test_race_runtime.py",
+      "tests/test_race_format.py",
+      "tests/test_race_ui.py"
+    ]
+  },
+  "001d:2204-2791": {
+    "reconstruction_path": "reconstructed/src/racedraw.c",
+    "review_status": "manually_reviewed",
+    "compilation_status": "host_c89_compiled",
+    "validation_status": "original_x86_differential_checked; integrated_race_component; synthetic_Windows_services; native_Win16_integration_pending",
+    "evidence": [
+      "analysis/functions.json",
+      "analysis/debug/procedures.json",
+      "analysis/decompiler/export-manifest.json",
+      "analysis/reconstruction/race-component.md",
+      "analysis/reconstruction/message-formatting.md",
+      "tests/test_race_runtime.py",
+      "tests/test_race_format.py",
+      "tests/test_race_ui.py"
+    ]
+  },
+  "001d:2fb8-30d1": {
+    "reconstruction_path": "reconstructed/src/racedraw.c",
+    "review_status": "manually_reviewed",
+    "compilation_status": "host_c89_compiled",
+    "validation_status": "original_x86_differential_checked; integrated_race_component; synthetic_Windows_services; native_Win16_integration_pending",
+    "evidence": [
+      "analysis/functions.json",
+      "analysis/debug/procedures.json",
+      "analysis/decompiler/export-manifest.json",
+      "analysis/reconstruction/race-component.md",
+      "analysis/reconstruction/message-formatting.md",
+      "tests/test_race_runtime.py",
+      "tests/test_race_format.py",
+      "tests/test_race_ui.py"
+    ]
   }
 }

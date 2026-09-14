@@ -18,7 +18,8 @@ class RecordMachine(OriginalCore):
                  'USER!#420': (0xe000,0x300)}
         slots.update(imports or {})
         super().__init__(slots)
-        self.cpu.mem_map(0xe0000,0x10000)
+        if max(self.SEGMENTS.values()) < 0xe000:
+            self.cpu.mem_map(0xe0000,0x10000)
         for offset,ret in [(0x100,b'\xca\x08\x00'),(0x200,b'\xca\x08\x00'),(0x300,b'\xcb')]:
             self.cpu.mem_write(0xe0000+offset,ret)
         self.cpu.hook_add(UC_HOOK_CODE,self._api,begin=0xe0100,end=0xe0300)

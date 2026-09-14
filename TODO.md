@@ -86,7 +86,7 @@ This does not promise the author's exact source text, comments, macros, or code 
 
 ## 5. Reconstruct the program, subsystem by subsystem
 
-**In progress:** 59 named routines (18,188 original procedure bytes) now have
+**In progress:** 99 named routines (45,906 original procedure bytes) now have
 reviewed C89 source and original-x86 differential tests. See
 [the core reconstruction report](analysis/reconstruction/core.md).
 This is a host semantic library; the subsystem checkboxes below remain open.
@@ -94,8 +94,10 @@ The race scoring/random-generation chain now runs independently of Windows;
 `python3 tools/race_demo.py --seed 0 --record-roundtrip` also exercises player
 serialization, header generation and record encryption. Stream retry/transfer
 control flow has explicit OS/error boundaries. Filename generation, file-creation
-recovery and alert selection are reconstructed. File dialogs, message expansion,
-log writing, password handling, wizard UI, and other creation routines remain.
+recovery and alert selection are reconstructed. The save/load and race-creation
+dependencies now form an integrated host component, including message expansion,
+logging, passwords and all six wizard pages. A native Windows adapter and
+acceptance package are the next integration task; other game subsystems remain.
 
 ### Work cadence and next milestones — revised 2026-09-14
 
@@ -129,7 +131,7 @@ The immediate work is:
   match the original and five CRT modules match exactly; see the
   [review](analysis/compat/vc152-return2.md). The console-spacing workaround in
   `ftp-share/VC152C/` changes status printing only; no repeated build is needed.
-- [ ] **Race-file save/load milestone:** reconstruct and integrate FSaveRace and
+- [x] **Race-file save/load dependencies and host integration:** reconstruct and integrate FSaveRace and
   FWasRaceFile with the existing creation, record, checksum and stream code.
   Close their message-formatting, logging and password dependencies, including
   PszFormatIds/PszFormatString, OutputSz/OutputFileString/SzVersion and
@@ -139,11 +141,27 @@ The immediate work is:
   password outcomes and I/O failure recovery with synthetic inputs, and check
   files in both directions against the original. Report any remaining OS boundary
   explicitly; a callback-only path does not complete its underlying behavior.
-- [ ] **Race-creation milestone:** integrate the complete wizard and generation
+  **Complete, 2026-09-14:** actual game helpers and password callbacks execute in
+  both implementations. Saved bytes match; invalid/truncated files, password
+  outcomes and I/O recovery are compared. See [the component report](analysis/reconstruction/race-component.md).
+- [x] **Race-creation dependencies and host integration:** integrate the complete wizard and generation
   path, including name-buffer initialization and U020, validation/scoring,
   save/load integration and the UI/resource contracts. Keep arithmetic and legacy
   edge cases mapped to their evidence. Use the resulting runnable component as
   the unit of delivery before proceeding to the next subsystem cluster.
+  **Complete, 2026-09-14:** New Race initialization, six dialog pages, shared
+  drawing/input helpers, scoring and save integration are reconstructed. The
+  original and C callbacks produce matching files and control/drawing events.
+  Random templates preserve the original deferred-generation behavior. U020's
+  affected callback sequence is reproduced under the documented OS model.
+  The [audit](analysis/reconstruction/race-dependencies.json) accounts for all
+  88 reachable game-code targets, including 12 caller-specific helper paths
+  that are not counted as complete standalone procedures.
+- [ ] **Native race-component acceptance:** create a VC++ 1.52c adapter and one
+  coherent build package after this dependency work. Map the documented Windows
+  services/resources, compile the new source, exercise both file directions and
+  race creation in the VM, check real rendering/input and U020's Windows text
+  copying. No new manual VM package was prepared in the dependency pass.
 
 Step 5 is finished only when its full exit criterion is met. These milestones
 change the size and usefulness of work sessions, not the definition of completion.

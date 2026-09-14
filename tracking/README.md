@@ -16,11 +16,14 @@ The user identified this executable on 2026-09-13 as **2.70j RC3**, the third re
 
 Initial coverage: 37 segments, 1,305 ranges, 1,042,584 memory bytes. Debug procedure ranges cover 890,384 bytes; 126,146 code-segment bytes remain unclassified and 26,054 bytes belong to the data segment. These are inventory measurements, not a decompilation percentage. Procedure extents may themselves contain inline data.
 
-Step 5 has 59 reviewed routines covering 18,188 original procedure bytes, compiled
+Step 5 has 99 reviewed routines covering 45,906 original procedure bytes, compiled
 as host C89 semantic adapters and compared with original x86 execution. See
 [the reconstruction report](../analysis/reconstruction/core.md). This is not a
 linked Win16 replacement. The historical GetRaceStat note has been superseded
 by reviewed source and the recorded static/runtime/differential evidence.
+The [race-component audit](../analysis/reconstruction/race-dependencies.json)
+also records caller-specific helper paths separately, without crediting their
+full procedure ranges. Native component acceptance remains the next integration task.
 
 Manual progress belongs in [reviews.json](reviews.json), keyed by the ledger range ID. Generation merges those annotations into the ledger without overwriting the editable source. If segmentation changes, generation rejects obsolete keys so a human must reconcile their evidence. Schema 2 counts `host_c89_compiled` rows separately and states their scope explicitly; this is original-byte mapping coverage, not generated object size or whole-program equivalence.
 

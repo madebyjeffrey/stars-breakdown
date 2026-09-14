@@ -10,9 +10,9 @@
     "debug_procedure_bytes": 890384,
     "unclassified_code_segment_bytes": 126146,
     "data_segment_bytes": 26054,
-    "compiled_reconstruction_bytes": 18188,
+    "compiled_reconstruction_bytes": 45906,
     "compiled_coverage_scope": "Host C89 semantic adapters; not a linked Win16 replacement or byte-matching build",
-    "manually_reviewed_bytes": 18188
+    "manually_reviewed_bytes": 45906
   },
   "ranges": [
     {
@@ -916,13 +916,19 @@
         "stars.obj"
       ],
       "evidence": [
-        "analysis/segments.json",
         "analysis/functions.json",
-        "analysis/segment_map.json"
+        "analysis/debug/procedures.json",
+        "analysis/decompiler/export-manifest.json",
+        "analysis/reconstruction/race-component.md",
+        "analysis/reconstruction/message-formatting.md",
+        "tests/test_race_runtime.py",
+        "tests/test_race_format.py",
+        "tests/test_race_ui.py"
       ],
-      "reconstruction_path": null,
-      "review_status": "not_started",
-      "validation_status": "not_started"
+      "reconstruction_path": "reconstructed/src/output.c",
+      "review_status": "manually_reviewed",
+      "validation_status": "original_x86_differential_checked; integrated_race_component; synthetic_Windows_services; native_Win16_integration_pending",
+      "compilation_status": "host_c89_compiled"
     },
     {
       "id": "0004:1252-151e",
@@ -1588,13 +1594,19 @@
         "mdi.obj"
       ],
       "evidence": [
-        "analysis/segments.json",
         "analysis/functions.json",
-        "analysis/segment_map.json"
+        "analysis/debug/procedures.json",
+        "analysis/decompiler/export-manifest.json",
+        "analysis/reconstruction/race-component.md",
+        "analysis/reconstruction/message-formatting.md",
+        "tests/test_race_runtime.py",
+        "tests/test_race_format.py",
+        "tests/test_race_ui.py"
       ],
-      "reconstruction_path": null,
-      "review_status": "not_started",
-      "validation_status": "not_started"
+      "reconstruction_path": "reconstructed/src/runtime.c",
+      "review_status": "manually_reviewed",
+      "validation_status": "original_x86_differential_checked; integrated_race_component; synthetic_Windows_services; native_Win16_integration_pending",
+      "compilation_status": "host_c89_compiled"
     },
     {
       "id": "0005:5ffc-6240",
@@ -3010,13 +3022,19 @@
         "msg.obj"
       ],
       "evidence": [
-        "analysis/segments.json",
         "analysis/functions.json",
-        "analysis/segment_map.json"
+        "analysis/debug/procedures.json",
+        "analysis/decompiler/export-manifest.json",
+        "analysis/reconstruction/race-component.md",
+        "analysis/reconstruction/message-formatting.md",
+        "tests/test_race_runtime.py",
+        "tests/test_race_format.py",
+        "tests/test_race_ui.py"
       ],
-      "reconstruction_path": null,
-      "review_status": "not_started",
-      "validation_status": "not_started"
+      "reconstruction_path": "reconstructed/src/format.c",
+      "review_status": "manually_reviewed",
+      "validation_status": "original_x86_differential_checked; integrated_race_component; synthetic_Windows_services; native_Win16_integration_pending",
+      "compilation_status": "host_c89_compiled"
     },
     {
       "id": "0007:8f67-8f68",
@@ -3100,13 +3118,19 @@
         "msg.obj"
       ],
       "evidence": [
-        "analysis/segments.json",
         "analysis/functions.json",
-        "analysis/segment_map.json"
+        "analysis/debug/procedures.json",
+        "analysis/decompiler/export-manifest.json",
+        "analysis/reconstruction/race-component.md",
+        "analysis/reconstruction/message-formatting.md",
+        "tests/test_race_runtime.py",
+        "tests/test_race_format.py",
+        "tests/test_race_ui.py"
       ],
-      "reconstruction_path": null,
-      "review_status": "not_started",
-      "validation_status": "not_started"
+      "reconstruction_path": "reconstructed/src/format.c",
+      "review_status": "manually_reviewed",
+      "validation_status": "original_x86_differential_checked; integrated_race_component; synthetic_Windows_services; native_Win16_integration_pending",
+      "compilation_status": "host_c89_compiled"
     },
     {
       "id": "0007:9278-932a",
@@ -5534,13 +5558,19 @@
         "util.obj"
       ],
       "evidence": [
-        "analysis/segments.json",
         "analysis/functions.json",
-        "analysis/segment_map.json"
+        "analysis/debug/procedures.json",
+        "analysis/decompiler/export-manifest.json",
+        "analysis/reconstruction/race-component.md",
+        "analysis/reconstruction/message-formatting.md",
+        "tests/test_race_runtime.py",
+        "tests/test_race_format.py",
+        "tests/test_race_ui.py"
       ],
-      "reconstruction_path": null,
-      "review_status": "not_started",
-      "validation_status": "not_started"
+      "reconstruction_path": "reconstructed/src/output.c",
+      "review_status": "manually_reviewed",
+      "validation_status": "original_x86_differential_checked; integrated_race_component; synthetic_Windows_services; native_Win16_integration_pending",
+      "compilation_status": "host_c89_compiled"
     },
     {
       "id": "0008:80c2-8126",
@@ -6071,13 +6101,19 @@
         "utilgen.obj"
       ],
       "evidence": [
-        "analysis/segments.json",
         "analysis/functions.json",
-        "analysis/segment_map.json"
+        "analysis/debug/procedures.json",
+        "analysis/decompiler/export-manifest.json",
+        "analysis/reconstruction/race-component.md",
+        "analysis/reconstruction/message-formatting.md",
+        "tests/test_race_runtime.py",
+        "tests/test_race_format.py",
+        "tests/test_race_ui.py"
       ],
-      "reconstruction_path": null,
-      "review_status": "not_started",
-      "validation_status": "not_started"
+      "reconstruction_path": "reconstructed/src/output.c",
+      "review_status": "manually_reviewed",
+      "validation_status": "original_x86_differential_checked; integrated_race_component; synthetic_Windows_services; native_Win16_integration_pending",
+      "compilation_status": "host_c89_compiled"
     },
     {
       "id": "0009:1ff9-1ffa",
@@ -6378,13 +6414,19 @@
         "utilgen.obj"
       ],
       "evidence": [
-        "analysis/segments.json",
         "analysis/functions.json",
-        "analysis/segment_map.json"
+        "analysis/debug/procedures.json",
+        "analysis/decompiler/export-manifest.json",
+        "analysis/reconstruction/race-component.md",
+        "analysis/reconstruction/message-formatting.md",
+        "tests/test_race_runtime.py",
+        "tests/test_race_format.py",
+        "tests/test_race_ui.py"
       ],
-      "reconstruction_path": null,
-      "review_status": "not_started",
-      "validation_status": "not_started"
+      "reconstruction_path": "reconstructed/src/ui.c",
+      "review_status": "manually_reviewed",
+      "validation_status": "original_x86_differential_checked; integrated_race_component; synthetic_Windows_services; native_Win16_integration_pending",
+      "compilation_status": "host_c89_compiled"
     },
     {
       "id": "0009:2590-25fd",
@@ -6585,13 +6627,19 @@
         "utilgen.obj"
       ],
       "evidence": [
-        "analysis/segments.json",
         "analysis/functions.json",
-        "analysis/segment_map.json"
+        "analysis/debug/procedures.json",
+        "analysis/decompiler/export-manifest.json",
+        "analysis/reconstruction/race-component.md",
+        "analysis/reconstruction/message-formatting.md",
+        "tests/test_race_runtime.py",
+        "tests/test_race_format.py",
+        "tests/test_race_ui.py"
       ],
-      "reconstruction_path": null,
-      "review_status": "not_started",
-      "validation_status": "not_started"
+      "reconstruction_path": "reconstructed/src/ui.c",
+      "review_status": "manually_reviewed",
+      "validation_status": "original_x86_differential_checked; integrated_race_component; synthetic_Windows_services; native_Win16_integration_pending",
+      "compilation_status": "host_c89_compiled"
     },
     {
       "id": "0009:29d6-2afa",
@@ -6609,13 +6657,19 @@
         "utilgen.obj"
       ],
       "evidence": [
-        "analysis/segments.json",
         "analysis/functions.json",
-        "analysis/segment_map.json"
+        "analysis/debug/procedures.json",
+        "analysis/decompiler/export-manifest.json",
+        "analysis/reconstruction/race-component.md",
+        "analysis/reconstruction/message-formatting.md",
+        "tests/test_race_runtime.py",
+        "tests/test_race_format.py",
+        "tests/test_race_ui.py"
       ],
-      "reconstruction_path": null,
-      "review_status": "not_started",
-      "validation_status": "not_started"
+      "reconstruction_path": "reconstructed/src/ui.c",
+      "review_status": "manually_reviewed",
+      "validation_status": "original_x86_differential_checked; integrated_race_component; synthetic_Windows_services; native_Win16_integration_pending",
+      "compilation_status": "host_c89_compiled"
     },
     {
       "id": "0009:2afa-2f0c",
@@ -6735,13 +6789,19 @@
         "utilgen.obj"
       ],
       "evidence": [
-        "analysis/segments.json",
         "analysis/functions.json",
-        "analysis/segment_map.json"
+        "analysis/debug/procedures.json",
+        "analysis/decompiler/export-manifest.json",
+        "analysis/reconstruction/race-component.md",
+        "analysis/reconstruction/message-formatting.md",
+        "tests/test_race_runtime.py",
+        "tests/test_race_format.py",
+        "tests/test_race_ui.py"
       ],
-      "reconstruction_path": null,
-      "review_status": "not_started",
-      "validation_status": "not_started"
+      "reconstruction_path": "reconstructed/src/ui.c",
+      "review_status": "manually_reviewed",
+      "validation_status": "original_x86_differential_checked; integrated_race_component; synthetic_Windows_services; native_Win16_integration_pending",
+      "compilation_status": "host_c89_compiled"
     },
     {
       "id": "0009:31a2-3369",
@@ -6801,13 +6861,19 @@
         "utilgen.obj"
       ],
       "evidence": [
-        "analysis/segments.json",
         "analysis/functions.json",
-        "analysis/segment_map.json"
+        "analysis/debug/procedures.json",
+        "analysis/decompiler/export-manifest.json",
+        "analysis/reconstruction/race-component.md",
+        "analysis/reconstruction/message-formatting.md",
+        "tests/test_race_runtime.py",
+        "tests/test_race_format.py",
+        "tests/test_race_ui.py"
       ],
-      "reconstruction_path": null,
-      "review_status": "not_started",
-      "validation_status": "not_started"
+      "reconstruction_path": "reconstructed/src/ui.c",
+      "review_status": "manually_reviewed",
+      "validation_status": "original_x86_differential_checked; integrated_race_component; synthetic_Windows_services; native_Win16_integration_pending",
+      "compilation_status": "host_c89_compiled"
     },
     {
       "id": "0009:354b-354c",
@@ -6843,13 +6909,19 @@
         "utilgen.obj"
       ],
       "evidence": [
-        "analysis/segments.json",
         "analysis/functions.json",
-        "analysis/segment_map.json"
+        "analysis/debug/procedures.json",
+        "analysis/decompiler/export-manifest.json",
+        "analysis/reconstruction/race-component.md",
+        "analysis/reconstruction/message-formatting.md",
+        "tests/test_race_runtime.py",
+        "tests/test_race_format.py",
+        "tests/test_race_ui.py"
       ],
-      "reconstruction_path": null,
-      "review_status": "not_started",
-      "validation_status": "not_started"
+      "reconstruction_path": "reconstructed/src/ui.c",
+      "review_status": "manually_reviewed",
+      "validation_status": "original_x86_differential_checked; integrated_race_component; synthetic_Windows_services; native_Win16_integration_pending",
+      "compilation_status": "host_c89_compiled"
     },
     {
       "id": "0009:364a-38b7",
@@ -6867,13 +6939,19 @@
         "utilgen.obj"
       ],
       "evidence": [
-        "analysis/segments.json",
         "analysis/functions.json",
-        "analysis/segment_map.json"
+        "analysis/debug/procedures.json",
+        "analysis/decompiler/export-manifest.json",
+        "analysis/reconstruction/race-component.md",
+        "analysis/reconstruction/message-formatting.md",
+        "tests/test_race_runtime.py",
+        "tests/test_race_format.py",
+        "tests/test_race_ui.py"
       ],
-      "reconstruction_path": null,
-      "review_status": "not_started",
-      "validation_status": "not_started"
+      "reconstruction_path": "reconstructed/src/ui.c",
+      "review_status": "manually_reviewed",
+      "validation_status": "original_x86_differential_checked; integrated_race_component; synthetic_Windows_services; native_Win16_integration_pending",
+      "compilation_status": "host_c89_compiled"
     },
     {
       "id": "0009:38b7-38b8",
@@ -6909,13 +6987,19 @@
         "utilgen.obj"
       ],
       "evidence": [
-        "analysis/segments.json",
         "analysis/functions.json",
-        "analysis/segment_map.json"
+        "analysis/debug/procedures.json",
+        "analysis/decompiler/export-manifest.json",
+        "analysis/reconstruction/race-component.md",
+        "analysis/reconstruction/message-formatting.md",
+        "tests/test_race_runtime.py",
+        "tests/test_race_format.py",
+        "tests/test_race_ui.py"
       ],
-      "reconstruction_path": null,
-      "review_status": "not_started",
-      "validation_status": "not_started"
+      "reconstruction_path": "reconstructed/src/ui.c",
+      "review_status": "manually_reviewed",
+      "validation_status": "original_x86_differential_checked; integrated_race_component; synthetic_Windows_services; native_Win16_integration_pending",
+      "compilation_status": "host_c89_compiled"
     },
     {
       "id": "0009:4146-41df",
@@ -6933,13 +7017,19 @@
         "utilgen.obj"
       ],
       "evidence": [
-        "analysis/segments.json",
         "analysis/functions.json",
-        "analysis/segment_map.json"
+        "analysis/debug/procedures.json",
+        "analysis/decompiler/export-manifest.json",
+        "analysis/reconstruction/race-component.md",
+        "analysis/reconstruction/message-formatting.md",
+        "tests/test_race_runtime.py",
+        "tests/test_race_format.py",
+        "tests/test_race_ui.py"
       ],
-      "reconstruction_path": null,
-      "review_status": "not_started",
-      "validation_status": "not_started"
+      "reconstruction_path": "reconstructed/src/ui.c",
+      "review_status": "manually_reviewed",
+      "validation_status": "original_x86_differential_checked; integrated_race_component; synthetic_Windows_services; native_Win16_integration_pending",
+      "compilation_status": "host_c89_compiled"
     },
     {
       "id": "0009:41df-41e0",
@@ -7311,13 +7401,19 @@
         "utilgen.obj"
       ],
       "evidence": [
-        "analysis/segments.json",
         "analysis/functions.json",
-        "analysis/segment_map.json"
+        "analysis/debug/procedures.json",
+        "analysis/decompiler/export-manifest.json",
+        "analysis/reconstruction/race-component.md",
+        "analysis/reconstruction/message-formatting.md",
+        "tests/test_race_runtime.py",
+        "tests/test_race_format.py",
+        "tests/test_race_ui.py"
       ],
-      "reconstruction_path": null,
-      "review_status": "not_started",
-      "validation_status": "not_started"
+      "reconstruction_path": "reconstructed/src/ui.c",
+      "review_status": "manually_reviewed",
+      "validation_status": "original_x86_differential_checked; integrated_race_component; synthetic_Windows_services; native_Win16_integration_pending",
+      "compilation_status": "host_c89_compiled"
     },
     {
       "id": "0009:4b4f-4b50",
@@ -7437,13 +7533,19 @@
         "utilgen.obj"
       ],
       "evidence": [
-        "analysis/segments.json",
         "analysis/functions.json",
-        "analysis/segment_map.json"
+        "analysis/debug/procedures.json",
+        "analysis/decompiler/export-manifest.json",
+        "analysis/reconstruction/race-component.md",
+        "analysis/reconstruction/message-formatting.md",
+        "tests/test_race_runtime.py",
+        "tests/test_race_format.py",
+        "tests/test_race_ui.py"
       ],
-      "reconstruction_path": null,
-      "review_status": "not_started",
-      "validation_status": "not_started"
+      "reconstruction_path": "reconstructed/src/ui.c",
+      "review_status": "manually_reviewed",
+      "validation_status": "original_x86_differential_checked; integrated_race_component; synthetic_Windows_services; native_Win16_integration_pending",
+      "compilation_status": "host_c89_compiled"
     },
     {
       "id": "0009:4db8-4e8f",
@@ -7461,13 +7563,19 @@
         "utilgen.obj"
       ],
       "evidence": [
-        "analysis/segments.json",
         "analysis/functions.json",
-        "analysis/segment_map.json"
+        "analysis/debug/procedures.json",
+        "analysis/decompiler/export-manifest.json",
+        "analysis/reconstruction/race-component.md",
+        "analysis/reconstruction/message-formatting.md",
+        "tests/test_race_runtime.py",
+        "tests/test_race_format.py",
+        "tests/test_race_ui.py"
       ],
-      "reconstruction_path": null,
-      "review_status": "not_started",
-      "validation_status": "not_started"
+      "reconstruction_path": "reconstructed/src/ui.c",
+      "review_status": "manually_reviewed",
+      "validation_status": "original_x86_differential_checked; integrated_race_component; synthetic_Windows_services; native_Win16_integration_pending",
+      "compilation_status": "host_c89_compiled"
     },
     {
       "id": "0009:4e8f-4e90",
@@ -7680,13 +7788,19 @@
         "utilgen.obj"
       ],
       "evidence": [
-        "analysis/segments.json",
         "analysis/functions.json",
-        "analysis/segment_map.json"
+        "analysis/debug/procedures.json",
+        "analysis/decompiler/export-manifest.json",
+        "analysis/reconstruction/race-component.md",
+        "analysis/reconstruction/message-formatting.md",
+        "tests/test_race_runtime.py",
+        "tests/test_race_format.py",
+        "tests/test_race_ui.py"
       ],
-      "reconstruction_path": null,
-      "review_status": "not_started",
-      "validation_status": "not_started"
+      "reconstruction_path": "reconstructed/src/password.c",
+      "review_status": "manually_reviewed",
+      "validation_status": "original_x86_differential_checked; integrated_race_component; synthetic_Windows_services; native_Win16_integration_pending",
+      "compilation_status": "host_c89_compiled"
     },
     {
       "id": "0009:59ce-5a71",
@@ -7704,13 +7818,19 @@
         "utilgen.obj"
       ],
       "evidence": [
-        "analysis/segments.json",
         "analysis/functions.json",
-        "analysis/segment_map.json"
+        "analysis/debug/procedures.json",
+        "analysis/decompiler/export-manifest.json",
+        "analysis/reconstruction/race-component.md",
+        "analysis/reconstruction/message-formatting.md",
+        "tests/test_race_runtime.py",
+        "tests/test_race_format.py",
+        "tests/test_race_ui.py"
       ],
-      "reconstruction_path": null,
-      "review_status": "not_started",
-      "validation_status": "not_started"
+      "reconstruction_path": "reconstructed/src/password.c",
+      "review_status": "manually_reviewed",
+      "validation_status": "original_x86_differential_checked; integrated_race_component; synthetic_Windows_services; native_Win16_integration_pending",
+      "compilation_status": "host_c89_compiled"
     },
     {
       "id": "0009:5a71-5a72",
@@ -7746,13 +7866,19 @@
         "utilgen.obj"
       ],
       "evidence": [
-        "analysis/segments.json",
         "analysis/functions.json",
-        "analysis/segment_map.json"
+        "analysis/debug/procedures.json",
+        "analysis/decompiler/export-manifest.json",
+        "analysis/reconstruction/race-component.md",
+        "analysis/reconstruction/message-formatting.md",
+        "tests/test_race_runtime.py",
+        "tests/test_race_format.py",
+        "tests/test_race_ui.py"
       ],
-      "reconstruction_path": null,
-      "review_status": "not_started",
-      "validation_status": "not_started"
+      "reconstruction_path": "reconstructed/src/password.c",
+      "review_status": "manually_reviewed",
+      "validation_status": "original_x86_differential_checked; integrated_race_component; synthetic_Windows_services; native_Win16_integration_pending",
+      "compilation_status": "host_c89_compiled"
     },
     {
       "id": "0009:5cb9-5cba",
@@ -8931,13 +9057,19 @@
         "planet.obj"
       ],
       "evidence": [
-        "analysis/segments.json",
         "analysis/functions.json",
-        "analysis/segment_map.json"
+        "analysis/debug/procedures.json",
+        "analysis/decompiler/export-manifest.json",
+        "analysis/reconstruction/race-component.md",
+        "analysis/reconstruction/message-formatting.md",
+        "tests/test_race_runtime.py",
+        "tests/test_race_format.py",
+        "tests/test_race_ui.py"
       ],
-      "reconstruction_path": null,
-      "review_status": "not_started",
-      "validation_status": "not_started"
+      "reconstruction_path": "reconstructed/src/format.c",
+      "review_status": "manually_reviewed",
+      "validation_status": "original_x86_differential_checked; integrated_race_component; synthetic_Windows_services; native_Win16_integration_pending",
+      "compilation_status": "host_c89_compiled"
     },
     {
       "id": "000a:6057-6058",
@@ -8973,13 +9105,19 @@
         "planet.obj"
       ],
       "evidence": [
-        "analysis/segments.json",
         "analysis/functions.json",
-        "analysis/segment_map.json"
+        "analysis/debug/procedures.json",
+        "analysis/decompiler/export-manifest.json",
+        "analysis/reconstruction/race-component.md",
+        "analysis/reconstruction/message-formatting.md",
+        "tests/test_race_runtime.py",
+        "tests/test_race_format.py",
+        "tests/test_race_ui.py"
       ],
-      "reconstruction_path": null,
-      "review_status": "not_started",
-      "validation_status": "not_started"
+      "reconstruction_path": "reconstructed/src/format.c",
+      "review_status": "manually_reviewed",
+      "validation_status": "original_x86_differential_checked; integrated_race_component; synthetic_Windows_services; native_Win16_integration_pending",
+      "compilation_status": "host_c89_compiled"
     },
     {
       "id": "000a:60e6-6127",
@@ -23718,13 +23856,19 @@
         "race.obj"
       ],
       "evidence": [
-        "analysis/segments.json",
         "analysis/functions.json",
-        "analysis/segment_map.json"
+        "analysis/debug/procedures.json",
+        "analysis/decompiler/export-manifest.json",
+        "analysis/reconstruction/race-component.md",
+        "analysis/reconstruction/message-formatting.md",
+        "tests/test_race_runtime.py",
+        "tests/test_race_format.py",
+        "tests/test_race_ui.py"
       ],
-      "reconstruction_path": null,
-      "review_status": "not_started",
-      "validation_status": "not_started"
+      "reconstruction_path": "reconstructed/src/racewizard.c",
+      "review_status": "manually_reviewed",
+      "validation_status": "original_x86_differential_checked; integrated_race_component; synthetic_Windows_services; native_Win16_integration_pending",
+      "compilation_status": "host_c89_compiled"
     },
     {
       "id": "001d:03ac-105f",
@@ -23742,13 +23886,19 @@
         "race.obj"
       ],
       "evidence": [
-        "analysis/segments.json",
         "analysis/functions.json",
-        "analysis/segment_map.json"
+        "analysis/debug/procedures.json",
+        "analysis/decompiler/export-manifest.json",
+        "analysis/reconstruction/race-component.md",
+        "analysis/reconstruction/message-formatting.md",
+        "tests/test_race_runtime.py",
+        "tests/test_race_format.py",
+        "tests/test_race_ui.py"
       ],
-      "reconstruction_path": null,
-      "review_status": "not_started",
-      "validation_status": "not_started"
+      "reconstruction_path": "reconstructed/src/racewizard.c",
+      "review_status": "manually_reviewed",
+      "validation_status": "original_x86_differential_checked; integrated_race_component; synthetic_Windows_services; native_Win16_integration_pending",
+      "compilation_status": "host_c89_compiled"
     },
     {
       "id": "001d:105f-1060",
@@ -23784,13 +23934,19 @@
         "race.obj"
       ],
       "evidence": [
-        "analysis/segments.json",
         "analysis/functions.json",
-        "analysis/segment_map.json"
+        "analysis/debug/procedures.json",
+        "analysis/decompiler/export-manifest.json",
+        "analysis/reconstruction/race-component.md",
+        "analysis/reconstruction/message-formatting.md",
+        "tests/test_race_runtime.py",
+        "tests/test_race_format.py",
+        "tests/test_race_ui.py"
       ],
-      "reconstruction_path": null,
-      "review_status": "not_started",
-      "validation_status": "not_started"
+      "reconstruction_path": "reconstructed/src/racewizard.c",
+      "review_status": "manually_reviewed",
+      "validation_status": "original_x86_differential_checked; integrated_race_component; synthetic_Windows_services; native_Win16_integration_pending",
+      "compilation_status": "host_c89_compiled"
     },
     {
       "id": "001d:179a-2164",
@@ -23808,13 +23964,19 @@
         "race.obj"
       ],
       "evidence": [
-        "analysis/segments.json",
         "analysis/functions.json",
-        "analysis/segment_map.json"
+        "analysis/debug/procedures.json",
+        "analysis/decompiler/export-manifest.json",
+        "analysis/reconstruction/race-component.md",
+        "analysis/reconstruction/message-formatting.md",
+        "tests/test_race_runtime.py",
+        "tests/test_race_format.py",
+        "tests/test_race_ui.py"
       ],
-      "reconstruction_path": null,
-      "review_status": "not_started",
-      "validation_status": "not_started"
+      "reconstruction_path": "reconstructed/src/racedraw.c",
+      "review_status": "manually_reviewed",
+      "validation_status": "original_x86_differential_checked; integrated_race_component; synthetic_Windows_services; native_Win16_integration_pending",
+      "compilation_status": "host_c89_compiled"
     },
     {
       "id": "001d:2164-2203",
@@ -23832,13 +23994,19 @@
         "race.obj"
       ],
       "evidence": [
-        "analysis/segments.json",
         "analysis/functions.json",
-        "analysis/segment_map.json"
+        "analysis/debug/procedures.json",
+        "analysis/decompiler/export-manifest.json",
+        "analysis/reconstruction/race-component.md",
+        "analysis/reconstruction/message-formatting.md",
+        "tests/test_race_runtime.py",
+        "tests/test_race_format.py",
+        "tests/test_race_ui.py"
       ],
-      "reconstruction_path": null,
-      "review_status": "not_started",
-      "validation_status": "not_started"
+      "reconstruction_path": "reconstructed/src/racedraw.c",
+      "review_status": "manually_reviewed",
+      "validation_status": "original_x86_differential_checked; integrated_race_component; synthetic_Windows_services; native_Win16_integration_pending",
+      "compilation_status": "host_c89_compiled"
     },
     {
       "id": "001d:2203-2204",
@@ -23874,13 +24042,19 @@
         "race.obj"
       ],
       "evidence": [
-        "analysis/segments.json",
         "analysis/functions.json",
-        "analysis/segment_map.json"
+        "analysis/debug/procedures.json",
+        "analysis/decompiler/export-manifest.json",
+        "analysis/reconstruction/race-component.md",
+        "analysis/reconstruction/message-formatting.md",
+        "tests/test_race_runtime.py",
+        "tests/test_race_format.py",
+        "tests/test_race_ui.py"
       ],
-      "reconstruction_path": null,
-      "review_status": "not_started",
-      "validation_status": "not_started"
+      "reconstruction_path": "reconstructed/src/racedraw.c",
+      "review_status": "manually_reviewed",
+      "validation_status": "original_x86_differential_checked; integrated_race_component; synthetic_Windows_services; native_Win16_integration_pending",
+      "compilation_status": "host_c89_compiled"
     },
     {
       "id": "001d:2791-2792",
@@ -23916,13 +24090,19 @@
         "race.obj"
       ],
       "evidence": [
-        "analysis/segments.json",
         "analysis/functions.json",
-        "analysis/segment_map.json"
+        "analysis/debug/procedures.json",
+        "analysis/decompiler/export-manifest.json",
+        "analysis/reconstruction/race-component.md",
+        "analysis/reconstruction/message-formatting.md",
+        "tests/test_race_runtime.py",
+        "tests/test_race_format.py",
+        "tests/test_race_ui.py"
       ],
-      "reconstruction_path": null,
-      "review_status": "not_started",
-      "validation_status": "not_started"
+      "reconstruction_path": "reconstructed/src/racewizard.c",
+      "review_status": "manually_reviewed",
+      "validation_status": "original_x86_differential_checked; integrated_race_component; synthetic_Windows_services; native_Win16_integration_pending",
+      "compilation_status": "host_c89_compiled"
     },
     {
       "id": "001d:2a8c-2aa4",
@@ -23958,13 +24138,19 @@
         "race.obj"
       ],
       "evidence": [
-        "analysis/segments.json",
         "analysis/functions.json",
-        "analysis/segment_map.json"
+        "analysis/debug/procedures.json",
+        "analysis/decompiler/export-manifest.json",
+        "analysis/reconstruction/race-component.md",
+        "analysis/reconstruction/message-formatting.md",
+        "tests/test_race_runtime.py",
+        "tests/test_race_format.py",
+        "tests/test_race_ui.py"
       ],
-      "reconstruction_path": null,
-      "review_status": "not_started",
-      "validation_status": "not_started"
+      "reconstruction_path": "reconstructed/src/racedraw.c",
+      "review_status": "manually_reviewed",
+      "validation_status": "original_x86_differential_checked; integrated_race_component; synthetic_Windows_services; native_Win16_integration_pending",
+      "compilation_status": "host_c89_compiled"
     },
     {
       "id": "001d:2fb7-2fb8",
@@ -24000,13 +24186,19 @@
         "race.obj"
       ],
       "evidence": [
-        "analysis/segments.json",
         "analysis/functions.json",
-        "analysis/segment_map.json"
+        "analysis/debug/procedures.json",
+        "analysis/decompiler/export-manifest.json",
+        "analysis/reconstruction/race-component.md",
+        "analysis/reconstruction/message-formatting.md",
+        "tests/test_race_runtime.py",
+        "tests/test_race_format.py",
+        "tests/test_race_ui.py"
       ],
-      "reconstruction_path": null,
-      "review_status": "not_started",
-      "validation_status": "not_started"
+      "reconstruction_path": "reconstructed/src/racedraw.c",
+      "review_status": "manually_reviewed",
+      "validation_status": "original_x86_differential_checked; integrated_race_component; synthetic_Windows_services; native_Win16_integration_pending",
+      "compilation_status": "host_c89_compiled"
     },
     {
       "id": "001d:30d1-30d2",
@@ -24204,13 +24396,19 @@
         "race.obj"
       ],
       "evidence": [
-        "analysis/segments.json",
         "analysis/functions.json",
-        "analysis/segment_map.json"
+        "analysis/debug/procedures.json",
+        "analysis/decompiler/export-manifest.json",
+        "analysis/reconstruction/race-component.md",
+        "analysis/reconstruction/message-formatting.md",
+        "tests/test_race_runtime.py",
+        "tests/test_race_format.py",
+        "tests/test_race_ui.py"
       ],
-      "reconstruction_path": null,
-      "review_status": "not_started",
-      "validation_status": "not_started"
+      "reconstruction_path": "reconstructed/src/racewizard.c",
+      "review_status": "manually_reviewed",
+      "validation_status": "original_x86_differential_checked; integrated_race_component; synthetic_Windows_services; native_Win16_integration_pending",
+      "compilation_status": "host_c89_compiled"
     },
     {
       "id": "001d:378e-3bae",
@@ -24228,13 +24426,19 @@
         "race.obj"
       ],
       "evidence": [
-        "analysis/segments.json",
         "analysis/functions.json",
-        "analysis/segment_map.json"
+        "analysis/debug/procedures.json",
+        "analysis/decompiler/export-manifest.json",
+        "analysis/reconstruction/race-component.md",
+        "analysis/reconstruction/message-formatting.md",
+        "tests/test_race_runtime.py",
+        "tests/test_race_format.py",
+        "tests/test_race_ui.py"
       ],
-      "reconstruction_path": null,
-      "review_status": "not_started",
-      "validation_status": "not_started"
+      "reconstruction_path": "reconstructed/src/racewizard.c",
+      "review_status": "manually_reviewed",
+      "validation_status": "original_x86_differential_checked; integrated_race_component; synthetic_Windows_services; native_Win16_integration_pending",
+      "compilation_status": "host_c89_compiled"
     },
     {
       "id": "001d:3bae-40ad",
@@ -24252,13 +24456,19 @@
         "race.obj"
       ],
       "evidence": [
-        "analysis/segments.json",
         "analysis/functions.json",
-        "analysis/segment_map.json"
+        "analysis/debug/procedures.json",
+        "analysis/decompiler/export-manifest.json",
+        "analysis/reconstruction/race-component.md",
+        "analysis/reconstruction/message-formatting.md",
+        "tests/test_race_runtime.py",
+        "tests/test_race_format.py",
+        "tests/test_race_ui.py"
       ],
-      "reconstruction_path": null,
-      "review_status": "not_started",
-      "validation_status": "not_started"
+      "reconstruction_path": "reconstructed/src/racewizard.c",
+      "review_status": "manually_reviewed",
+      "validation_status": "original_x86_differential_checked; integrated_race_component; synthetic_Windows_services; native_Win16_integration_pending",
+      "compilation_status": "host_c89_compiled"
     },
     {
       "id": "001d:40ad-40ae",
@@ -24413,13 +24623,19 @@
         "race.obj"
       ],
       "evidence": [
-        "analysis/segments.json",
         "analysis/functions.json",
-        "analysis/segment_map.json"
+        "analysis/debug/procedures.json",
+        "analysis/decompiler/export-manifest.json",
+        "analysis/reconstruction/race-component.md",
+        "analysis/reconstruction/message-formatting.md",
+        "tests/test_race_runtime.py",
+        "tests/test_race_format.py",
+        "tests/test_race_ui.py"
       ],
-      "reconstruction_path": null,
-      "review_status": "not_started",
-      "validation_status": "not_started"
+      "reconstruction_path": "reconstructed/src/raceui.c",
+      "review_status": "manually_reviewed",
+      "validation_status": "original_x86_differential_checked; integrated_race_component; synthetic_Windows_services; native_Win16_integration_pending",
+      "compilation_status": "host_c89_compiled"
     },
     {
       "id": "001d:55c6-5888",
@@ -24437,13 +24653,19 @@
         "race.obj"
       ],
       "evidence": [
-        "analysis/segments.json",
         "analysis/functions.json",
-        "analysis/segment_map.json"
+        "analysis/debug/procedures.json",
+        "analysis/decompiler/export-manifest.json",
+        "analysis/reconstruction/race-component.md",
+        "analysis/reconstruction/message-formatting.md",
+        "tests/test_race_runtime.py",
+        "tests/test_race_format.py",
+        "tests/test_race_ui.py"
       ],
-      "reconstruction_path": null,
-      "review_status": "not_started",
-      "validation_status": "not_started"
+      "reconstruction_path": "reconstructed/src/raceui.c",
+      "review_status": "manually_reviewed",
+      "validation_status": "original_x86_differential_checked; integrated_race_component; synthetic_Windows_services; native_Win16_integration_pending",
+      "compilation_status": "host_c89_compiled"
     },
     {
       "id": "001d:5888-58d3",
@@ -24506,13 +24728,19 @@
         "race.obj"
       ],
       "evidence": [
-        "analysis/segments.json",
         "analysis/functions.json",
-        "analysis/segment_map.json"
+        "analysis/debug/procedures.json",
+        "analysis/decompiler/export-manifest.json",
+        "analysis/reconstruction/race-component.md",
+        "analysis/reconstruction/message-formatting.md",
+        "tests/test_race_runtime.py",
+        "tests/test_race_format.py",
+        "tests/test_race_ui.py"
       ],
-      "reconstruction_path": null,
-      "review_status": "not_started",
-      "validation_status": "not_started"
+      "reconstruction_path": "reconstructed/src/runtime.c",
+      "review_status": "manually_reviewed",
+      "validation_status": "original_x86_differential_checked; integrated_race_component; synthetic_Windows_services; native_Win16_integration_pending",
+      "compilation_status": "host_c89_compiled"
     },
     {
       "id": "001d:5ab7-5ab8",
@@ -24548,13 +24776,19 @@
         "race.obj"
       ],
       "evidence": [
-        "analysis/segments.json",
         "analysis/functions.json",
-        "analysis/segment_map.json"
+        "analysis/debug/procedures.json",
+        "analysis/decompiler/export-manifest.json",
+        "analysis/reconstruction/race-component.md",
+        "analysis/reconstruction/message-formatting.md",
+        "tests/test_race_runtime.py",
+        "tests/test_race_format.py",
+        "tests/test_race_ui.py"
       ],
-      "reconstruction_path": null,
-      "review_status": "not_started",
-      "validation_status": "not_started"
+      "reconstruction_path": "reconstructed/src/raceui.c",
+      "review_status": "manually_reviewed",
+      "validation_status": "original_x86_differential_checked; integrated_race_component; synthetic_Windows_services; native_Win16_integration_pending",
+      "compilation_status": "host_c89_compiled"
     },
     {
       "id": "001d:5b08-65d4",
@@ -24920,13 +25154,19 @@
         "vcr.obj"
       ],
       "evidence": [
-        "analysis/segments.json",
         "analysis/functions.json",
-        "analysis/segment_map.json"
+        "analysis/debug/procedures.json",
+        "analysis/decompiler/export-manifest.json",
+        "analysis/reconstruction/race-component.md",
+        "analysis/reconstruction/message-formatting.md",
+        "tests/test_race_runtime.py",
+        "tests/test_race_format.py",
+        "tests/test_race_ui.py"
       ],
-      "reconstruction_path": null,
-      "review_status": "not_started",
-      "validation_status": "not_started"
+      "reconstruction_path": "reconstructed/src/password.c",
+      "review_status": "manually_reviewed",
+      "validation_status": "original_x86_differential_checked; integrated_race_component; synthetic_Windows_services; native_Win16_integration_pending",
+      "compilation_status": "host_c89_compiled"
     },
     {
       "id": "001e:3ac1-3ac2",

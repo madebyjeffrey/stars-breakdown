@@ -1,0 +1,1453 @@
+{
+  "schema_version": 1,
+  "scope": "Race save/load, six-page wizard and deferred random-race generation; OS/runtime contracts are explicit.",
+  "roots": [
+    "FSaveRace",
+    "FWasRaceFile",
+    "RaceCreationWizard",
+    "CreateRandomRace",
+    "PasswordDlg",
+    "RaceWizardDlg1",
+    "RaceWizardDlg2",
+    "RaceWizardDlg3",
+    "RaceWizardDlg4",
+    "RaceWizardDlg5",
+    "RaceWizardDlg6"
+  ],
+  "callbacks": [
+    {
+      "resource": 146,
+      "procedure": "RaceWizardDlg1"
+    },
+    {
+      "resource": 149,
+      "procedure": "RaceWizardDlg4"
+    },
+    {
+      "resource": 150,
+      "procedure": "RaceWizardDlg5"
+    },
+    {
+      "resource": 147,
+      "procedure": "RaceWizardDlg2"
+    },
+    {
+      "resource": 148,
+      "procedure": "RaceWizardDlg3"
+    },
+    {
+      "resource": 151,
+      "procedure": "RaceWizardDlg6"
+    },
+    {
+      "resource": 140,
+      "procedure": "PasswordDlg"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "FLookupPart",
+      "analysis_address": "1008:524e",
+      "ne_segment": 2,
+      "offset": 21070,
+      "end_exclusive": 24765,
+      "procedure_bytes": 3695,
+      "status": "required_call_path_implemented",
+      "source": "reconstructed/src/format.c",
+      "scope": "The formatter observes only the selected component pointer. part_name implements that data path; availability results are discarded and queries do not mutate game globals. All valid table entries compared while the original executes these queries."
+    },
+    {
+      "name": "TechStatus",
+      "analysis_address": "1008:6148",
+      "ne_segment": 2,
+      "offset": 24904,
+      "end_exclusive": 25256,
+      "procedure_bytes": 352,
+      "status": "required_call_path_implemented",
+      "source": "reconstructed/src/format.c",
+      "scope": "The formatter observes only the selected component pointer. part_name implements that data path; availability results are discarded and queries do not mutate game globals. All valid table entries compared while the original executes these queries."
+    },
+    {
+      "name": "PszGetCompressedString",
+      "analysis_address": "1010:743a",
+      "ne_segment": 3,
+      "offset": 29754,
+      "end_exclusive": 30105,
+      "procedure_bytes": 351,
+      "status": "previously_reconstructed",
+      "source": "reconstructed/src/strings.c"
+    },
+    {
+      "name": "SzVersion",
+      "analysis_address": "1018:1212",
+      "ne_segment": 4,
+      "offset": 4626,
+      "end_exclusive": 4690,
+      "procedure_bytes": 64,
+      "source": "reconstructed/src/output.c",
+      "host_entry": "stars_version_string",
+      "status": "reconstructed_entry"
+    },
+    {
+      "name": "FWasRaceFile",
+      "analysis_address": "1020:5da8",
+      "ne_segment": 5,
+      "offset": 23976,
+      "end_exclusive": 24572,
+      "procedure_bytes": 596,
+      "source": "reconstructed/src/runtime.c",
+      "host_entry": "stars_was_race_file",
+      "status": "reconstructed_entry"
+    },
+    {
+      "name": "PszFormatString",
+      "analysis_address": "1030:85cc",
+      "ne_segment": 7,
+      "offset": 34252,
+      "end_exclusive": 36711,
+      "procedure_bytes": 2459,
+      "source": "reconstructed/src/format.c",
+      "host_entry": "stars_format_string",
+      "status": "reconstructed_entry"
+    },
+    {
+      "name": "PszFormatIds",
+      "analysis_address": "1030:924c",
+      "ne_segment": 7,
+      "offset": 37452,
+      "end_exclusive": 37496,
+      "procedure_bytes": 44,
+      "source": "reconstructed/src/format.c",
+      "host_entry": "stars_format_id",
+      "status": "reconstructed_entry"
+    },
+    {
+      "name": "LpthFromId",
+      "analysis_address": "1038:01b2",
+      "ne_segment": 8,
+      "offset": 434,
+      "end_exclusive": 542,
+      "procedure_bytes": 108,
+      "status": "required_call_path_implemented",
+      "source": "reconstructed/src/format.c",
+      "scope": "Private name-lookup implementation inside format.c; validated through PszFormatString, not credited as a separately reconstructed entry point."
+    },
+    {
+      "name": "PszPlayerName",
+      "analysis_address": "1038:11f2",
+      "ne_segment": 8,
+      "offset": 4594,
+      "end_exclusive": 5212,
+      "procedure_bytes": 618,
+      "status": "previously_reconstructed",
+      "source": "reconstructed/src/strings.c"
+    },
+    {
+      "name": "LpflFromId",
+      "analysis_address": "1038:2078",
+      "ne_segment": 8,
+      "offset": 8312,
+      "end_exclusive": 8544,
+      "procedure_bytes": 232,
+      "status": "required_call_path_implemented",
+      "source": "reconstructed/src/format.c",
+      "scope": "Private name-lookup implementation inside format.c; validated through PszFormatString, not credited as a separately reconstructed entry point."
+    },
+    {
+      "name": "PszGetThingName",
+      "analysis_address": "1038:26de",
+      "ne_segment": 8,
+      "offset": 9950,
+      "end_exclusive": 10540,
+      "procedure_bytes": 590,
+      "status": "required_call_path_implemented",
+      "source": "reconstructed/src/format.c",
+      "scope": "Private name-lookup implementation inside format.c; validated through PszFormatString, not credited as a separately reconstructed entry point."
+    },
+    {
+      "name": "PszGetFleetName",
+      "analysis_address": "1038:292c",
+      "ne_segment": 8,
+      "offset": 10540,
+      "end_exclusive": 11024,
+      "procedure_bytes": 484,
+      "status": "required_call_path_implemented",
+      "source": "reconstructed/src/format.c",
+      "scope": "Private name-lookup implementation inside format.c; validated through PszFormatString, not credited as a separately reconstructed entry point."
+    },
+    {
+      "name": "PszFleetNameFromWord",
+      "analysis_address": "1038:2b5e",
+      "ne_segment": 8,
+      "offset": 11102,
+      "end_exclusive": 11369,
+      "procedure_bytes": 267,
+      "status": "required_call_path_implemented",
+      "source": "reconstructed/src/format.c",
+      "scope": "Private name-lookup implementation inside format.c; validated through PszFormatString, not credited as a separately reconstructed entry point."
+    },
+    {
+      "name": "PszGetPlanetName",
+      "analysis_address": "1038:2c6a",
+      "ne_segment": 8,
+      "offset": 11370,
+      "end_exclusive": 11496,
+      "procedure_bytes": 126,
+      "status": "required_call_path_implemented",
+      "source": "reconstructed/src/format.c",
+      "scope": "Private name-lookup implementation inside format.c; validated through PszFormatString, not credited as a separately reconstructed entry point."
+    },
+    {
+      "name": "PszGetLocName",
+      "analysis_address": "1038:3b08",
+      "ne_segment": 8,
+      "offset": 15112,
+      "end_exclusive": 15303,
+      "procedure_bytes": 191,
+      "status": "required_call_path_implemented",
+      "source": "reconstructed/src/format.c",
+      "scope": "Only the grobj=0, id=-1 coordinate-formatting path is required by this caller."
+    },
+    {
+      "name": "IshdefPrimaryFromLpfl",
+      "analysis_address": "1038:3e1c",
+      "ne_segment": 8,
+      "offset": 15900,
+      "end_exclusive": 16128,
+      "procedure_bytes": 228,
+      "status": "required_call_path_implemented",
+      "source": "reconstructed/src/format.c",
+      "scope": "Only the non-null pcDiff path is required by fleet_name; valid owner/design storage required."
+    },
+    {
+      "name": "OutputSz",
+      "analysis_address": "1038:7fe6",
+      "ne_segment": 8,
+      "offset": 32742,
+      "end_exclusive": 32962,
+      "procedure_bytes": 220,
+      "source": "reconstructed/src/output.c",
+      "host_entry": "stars_output_string",
+      "status": "reconstructed_entry"
+    },
+    {
+      "name": "Random",
+      "analysis_address": "1040:16d2",
+      "ne_segment": 9,
+      "offset": 5842,
+      "end_exclusive": 6281,
+      "procedure_bytes": 439,
+      "status": "previously_reconstructed",
+      "source": "reconstructed/src/utilgen.c"
+    },
+    {
+      "name": "SetFileXorStream",
+      "analysis_address": "1040:1aa6",
+      "ne_segment": 9,
+      "offset": 6822,
+      "end_exclusive": 6995,
+      "procedure_bytes": 173,
+      "status": "previously_reconstructed",
+      "source": "reconstructed/src/utilgen.c"
+    },
+    {
+      "name": "LGetNextFileXor",
+      "analysis_address": "1040:1b54",
+      "ne_segment": 9,
+      "offset": 6996,
+      "end_exclusive": 7363,
+      "procedure_bytes": 367,
+      "status": "previously_reconstructed",
+      "source": "reconstructed/src/utilgen.c"
+    },
+    {
+      "name": "XorFileBuf",
+      "analysis_address": "1040:1cc4",
+      "ne_segment": 9,
+      "offset": 7364,
+      "end_exclusive": 7540,
+      "procedure_bytes": 176,
+      "status": "previously_reconstructed",
+      "source": "reconstructed/src/near_state.c"
+    },
+    {
+      "name": "PszGetCompressedPlanet",
+      "analysis_address": "1040:1d96",
+      "ne_segment": 9,
+      "offset": 7574,
+      "end_exclusive": 8036,
+      "procedure_bytes": 462,
+      "status": "required_call_path_implemented",
+      "source": "reconstructed/src/format.c",
+      "scope": "Private name-lookup implementation inside format.c; validated through PszFormatString, not credited as a separately reconstructed entry point."
+    },
+    {
+      "name": "OutputFileString",
+      "analysis_address": "1040:1f64",
+      "ne_segment": 9,
+      "offset": 8036,
+      "end_exclusive": 8185,
+      "procedure_bytes": 149,
+      "source": "reconstructed/src/output.c",
+      "host_entry": "stars_output_file_string",
+      "status": "reconstructed_entry"
+    },
+    {
+      "name": "AlertSz",
+      "analysis_address": "1040:2160",
+      "ne_segment": 9,
+      "offset": 8544,
+      "end_exclusive": 8733,
+      "procedure_bytes": 189,
+      "status": "previously_reconstructed",
+      "source": "reconstructed/src/alerts.c"
+    },
+    {
+      "name": "CchGetString",
+      "analysis_address": "1040:221e",
+      "ne_segment": 9,
+      "offset": 8734,
+      "end_exclusive": 8819,
+      "procedure_bytes": 85,
+      "status": "previously_reconstructed",
+      "source": "reconstructed/src/strings.c"
+    },
+    {
+      "name": "CtrTextOut",
+      "analysis_address": "1040:2534",
+      "ne_segment": 9,
+      "offset": 9524,
+      "end_exclusive": 9616,
+      "procedure_bytes": 92,
+      "source": "reconstructed/src/ui.c",
+      "host_entry": "stars_center_text",
+      "status": "reconstructed_entry"
+    },
+    {
+      "name": "RcCtrTextOut",
+      "analysis_address": "1040:28fc",
+      "ne_segment": 9,
+      "offset": 10492,
+      "end_exclusive": 10710,
+      "procedure_bytes": 218,
+      "source": "reconstructed/src/ui.c",
+      "host_entry": "stars_rect_center_text",
+      "status": "reconstructed_entry"
+    },
+    {
+      "name": "RightTextOut",
+      "analysis_address": "1040:29d6",
+      "ne_segment": 9,
+      "offset": 10710,
+      "end_exclusive": 11002,
+      "procedure_bytes": 292,
+      "source": "reconstructed/src/ui.c",
+      "host_entry": "stars_right_text",
+      "status": "reconstructed_entry"
+    },
+    {
+      "name": "ExpandRc",
+      "analysis_address": "1040:2f0c",
+      "ne_segment": 9,
+      "offset": 12044,
+      "end_exclusive": 12094,
+      "procedure_bytes": 50,
+      "status": "previously_reconstructed",
+      "source": "reconstructed/src/utilgen.c"
+    },
+    {
+      "name": "OffsetRc",
+      "analysis_address": "1040:2f3e",
+      "ne_segment": 9,
+      "offset": 12094,
+      "end_exclusive": 12144,
+      "procedure_bytes": 50,
+      "status": "previously_reconstructed",
+      "source": "reconstructed/src/utilgen.c"
+    },
+    {
+      "name": "StickyDlgPos",
+      "analysis_address": "1040:3094",
+      "ne_segment": 9,
+      "offset": 12436,
+      "end_exclusive": 12706,
+      "procedure_bytes": 270,
+      "source": "reconstructed/src/ui.c",
+      "host_entry": "stars_sticky_dialog",
+      "status": "reconstructed_entry"
+    },
+    {
+      "name": "_Draw3dFrame",
+      "analysis_address": "1040:336a",
+      "ne_segment": 9,
+      "offset": 13162,
+      "end_exclusive": 13643,
+      "procedure_bytes": 481,
+      "source": "reconstructed/src/ui.c",
+      "host_entry": "stars_draw_frame",
+      "status": "reconstructed_entry"
+    },
+    {
+      "name": "InitBtnTrack",
+      "analysis_address": "1040:354c",
+      "ne_segment": 9,
+      "offset": 13644,
+      "end_exclusive": 13898,
+      "procedure_bytes": 254,
+      "source": "reconstructed/src/ui.c",
+      "host_entry": "stars_init_button_track",
+      "status": "reconstructed_entry"
+    },
+    {
+      "name": "FTrackBtn",
+      "analysis_address": "1040:364a",
+      "ne_segment": 9,
+      "offset": 13898,
+      "end_exclusive": 14519,
+      "procedure_bytes": 621,
+      "source": "reconstructed/src/ui.c",
+      "host_entry": "stars_track_button",
+      "status": "reconstructed_entry"
+    },
+    {
+      "name": "DrawBtn",
+      "analysis_address": "1040:38b8",
+      "ne_segment": 9,
+      "offset": 14520,
+      "end_exclusive": 16710,
+      "procedure_bytes": 2190,
+      "source": "reconstructed/src/ui.c",
+      "host_entry": "stars_draw_button",
+      "status": "reconstructed_entry"
+    },
+    {
+      "name": "FGetMouseMove",
+      "analysis_address": "1040:4146",
+      "ne_segment": 9,
+      "offset": 16710,
+      "end_exclusive": 16863,
+      "procedure_bytes": 153,
+      "source": "reconstructed/src/ui.c",
+      "host_entry": "stars_get_mouse_move",
+      "status": "reconstructed_entry"
+    },
+    {
+      "name": "FCompressUserString",
+      "analysis_address": "1040:45a0",
+      "ne_segment": 9,
+      "offset": 17824,
+      "end_exclusive": 18152,
+      "procedure_bytes": 328,
+      "status": "previously_reconstructed",
+      "source": "reconstructed/src/codec.c"
+    },
+    {
+      "name": "FDecompressUserString",
+      "analysis_address": "1040:46e8",
+      "ne_segment": 9,
+      "offset": 18152,
+      "end_exclusive": 18559,
+      "procedure_bytes": 407,
+      "status": "previously_reconstructed",
+      "source": "reconstructed/src/codec.c"
+    },
+    {
+      "name": "NybbleFromCh",
+      "analysis_address": "1040:4880",
+      "ne_segment": 9,
+      "offset": 18560,
+      "end_exclusive": 18921,
+      "procedure_bytes": 361,
+      "status": "previously_reconstructed",
+      "source": "reconstructed/src/codec.c"
+    },
+    {
+      "name": "ChFromNybble",
+      "analysis_address": "1040:49ea",
+      "ne_segment": 9,
+      "offset": 18922,
+      "end_exclusive": 19097,
+      "procedure_bytes": 175,
+      "status": "previously_reconstructed",
+      "source": "reconstructed/src/codec.c"
+    },
+    {
+      "name": "DibNumColors",
+      "analysis_address": "1040:4a9a",
+      "ne_segment": 9,
+      "offset": 19098,
+      "end_exclusive": 19279,
+      "procedure_bytes": 181,
+      "source": "reconstructed/src/ui.c",
+      "host_entry": "stars_dib_num_colors",
+      "status": "reconstructed_entry"
+    },
+    {
+      "name": "PaletteSize",
+      "analysis_address": "1040:4d60",
+      "ne_segment": 9,
+      "offset": 19808,
+      "end_exclusive": 19896,
+      "procedure_bytes": 88,
+      "source": "reconstructed/src/ui.c",
+      "host_entry": "stars_palette_size",
+      "status": "reconstructed_entry"
+    },
+    {
+      "name": "DibBlt",
+      "analysis_address": "1040:4db8",
+      "ne_segment": 9,
+      "offset": 19896,
+      "end_exclusive": 20111,
+      "procedure_bytes": 215,
+      "source": "reconstructed/src/ui.c",
+      "host_entry": "stars_dib_blt",
+      "status": "reconstructed_entry"
+    },
+    {
+      "name": "FCheckPassword",
+      "analysis_address": "1040:58d8",
+      "ne_segment": 9,
+      "offset": 22744,
+      "end_exclusive": 22990,
+      "procedure_bytes": 246,
+      "source": "reconstructed/src/password.c",
+      "host_entry": "stars_check_password",
+      "status": "reconstructed_entry"
+    },
+    {
+      "name": "LSaltFromSz",
+      "analysis_address": "1040:59ce",
+      "ne_segment": 9,
+      "offset": 22990,
+      "end_exclusive": 23153,
+      "procedure_bytes": 163,
+      "source": "reconstructed/src/password.c",
+      "host_entry": "stars_password_salt",
+      "status": "reconstructed_entry"
+    },
+    {
+      "name": "PasswordDlg",
+      "analysis_address": "1040:5a72",
+      "ne_segment": 9,
+      "offset": 23154,
+      "end_exclusive": 23737,
+      "procedure_bytes": 583,
+      "source": "reconstructed/src/password.c",
+      "host_entry": "stars_password_dialog",
+      "status": "reconstructed_entry"
+    },
+    {
+      "name": "PszCalcEnvVar",
+      "analysis_address": "1048:5fcc",
+      "ne_segment": 10,
+      "offset": 24524,
+      "end_exclusive": 24663,
+      "procedure_bytes": 139,
+      "source": "reconstructed/src/format.c",
+      "host_entry": "stars_environment_string",
+      "status": "reconstructed_entry"
+    },
+    {
+      "name": "PszCalcGravity",
+      "analysis_address": "1048:6058",
+      "ne_segment": 10,
+      "offset": 24664,
+      "end_exclusive": 24806,
+      "procedure_bytes": 142,
+      "source": "reconstructed/src/format.c",
+      "host_entry": "stars_gravity_string",
+      "status": "reconstructed_entry"
+    },
+    {
+      "name": "PctPlanetDesirability",
+      "analysis_address": "1048:6e1e",
+      "ne_segment": 10,
+      "offset": 28190,
+      "end_exclusive": 28821,
+      "procedure_bytes": 631,
+      "status": "previously_reconstructed",
+      "source": "reconstructed/src/planet.c"
+    },
+    {
+      "name": "ReadRtPlr",
+      "analysis_address": "1070:05e2",
+      "ne_segment": 15,
+      "offset": 1506,
+      "end_exclusive": 2063,
+      "procedure_bytes": 557,
+      "status": "previously_reconstructed",
+      "source": "reconstructed/src/records.c"
+    },
+    {
+      "name": "FileError",
+      "analysis_address": "1070:4a10",
+      "ne_segment": 15,
+      "offset": 18960,
+      "end_exclusive": 19039,
+      "procedure_bytes": 79,
+      "status": "previously_reconstructed",
+      "source": "reconstructed/src/alerts.c"
+    },
+    {
+      "name": "ReadRt",
+      "analysis_address": "1070:5168",
+      "ne_segment": 15,
+      "offset": 20840,
+      "end_exclusive": 21069,
+      "procedure_bytes": 229,
+      "status": "previously_reconstructed",
+      "source": "reconstructed/src/records.c"
+    },
+    {
+      "name": "StreamOpen",
+      "analysis_address": "1070:52ae",
+      "ne_segment": 15,
+      "offset": 21166,
+      "end_exclusive": 21452,
+      "procedure_bytes": 286,
+      "status": "previously_reconstructed",
+      "source": "reconstructed/src/stream.c"
+    },
+    {
+      "name": "StreamClose",
+      "analysis_address": "1070:53cc",
+      "ne_segment": 15,
+      "offset": 21452,
+      "end_exclusive": 21492,
+      "procedure_bytes": 40,
+      "status": "previously_reconstructed",
+      "source": "reconstructed/src/stream.c"
+    },
+    {
+      "name": "RgFromStream",
+      "analysis_address": "1070:53f4",
+      "ne_segment": 15,
+      "offset": 21492,
+      "end_exclusive": 21630,
+      "procedure_bytes": 138,
+      "status": "previously_reconstructed",
+      "source": "reconstructed/src/stream.c"
+    },
+    {
+      "name": "WriteRtPlr",
+      "analysis_address": "1070:551c",
+      "ne_segment": 15,
+      "offset": 21788,
+      "end_exclusive": 22349,
+      "procedure_bytes": 561,
+      "status": "previously_reconstructed",
+      "source": "reconstructed/src/records.c"
+    },
+    {
+      "name": "SetSzWorkFromDt",
+      "analysis_address": "1070:8cfe",
+      "ne_segment": 15,
+      "offset": 36094,
+      "end_exclusive": 36373,
+      "procedure_bytes": 279,
+      "status": "previously_reconstructed",
+      "source": "reconstructed/src/file.c"
+    },
+    {
+      "name": "FCreateFile",
+      "analysis_address": "1070:8e16",
+      "ne_segment": 15,
+      "offset": 36374,
+      "end_exclusive": 36516,
+      "procedure_bytes": 142,
+      "status": "previously_reconstructed",
+      "source": "reconstructed/src/file.c"
+    },
+    {
+      "name": "WriteBOF",
+      "analysis_address": "1070:8ea4",
+      "ne_segment": 15,
+      "offset": 36516,
+      "end_exclusive": 36937,
+      "procedure_bytes": 421,
+      "status": "previously_reconstructed",
+      "source": "reconstructed/src/records.c"
+    },
+    {
+      "name": "WriteRt",
+      "analysis_address": "1070:947c",
+      "ne_segment": 15,
+      "offset": 38012,
+      "end_exclusive": 38227,
+      "procedure_bytes": 215,
+      "status": "previously_reconstructed",
+      "source": "reconstructed/src/records.c"
+    },
+    {
+      "name": "RgToStream",
+      "analysis_address": "1070:9554",
+      "ne_segment": 15,
+      "offset": 38228,
+      "end_exclusive": 38332,
+      "procedure_bytes": 104,
+      "status": "previously_reconstructed",
+      "source": "reconstructed/src/stream.c"
+    },
+    {
+      "name": "FShouldPartBeHidden",
+      "analysis_address": "10d8:68c4",
+      "ne_segment": 28,
+      "offset": 26820,
+      "end_exclusive": 27221,
+      "procedure_bytes": 401,
+      "status": "required_call_path_implemented",
+      "source": "reconstructed/src/format.c",
+      "scope": "The formatter observes only the selected component pointer. part_name implements that data path; availability results are discarded and queries do not mutate game globals. All valid table entries compared while the original executes these queries."
+    },
+    {
+      "name": "RaceCreationWizard",
+      "analysis_address": "10e0:0000",
+      "ne_segment": 29,
+      "offset": 0,
+      "end_exclusive": 940,
+      "procedure_bytes": 940,
+      "source": "reconstructed/src/racewizard.c",
+      "host_entry": "stars_race_wizard",
+      "status": "reconstructed_entry"
+    },
+    {
+      "name": "RaceWizardDlg1",
+      "analysis_address": "10e0:03ac",
+      "ne_segment": 29,
+      "offset": 940,
+      "end_exclusive": 4191,
+      "procedure_bytes": 3251,
+      "source": "reconstructed/src/racewizard.c",
+      "host_entry": "stars_race_dialog1",
+      "status": "reconstructed_entry"
+    },
+    {
+      "name": "RaceWizardDlg2",
+      "analysis_address": "10e0:1060",
+      "ne_segment": 29,
+      "offset": 4192,
+      "end_exclusive": 6042,
+      "procedure_bytes": 1850,
+      "source": "reconstructed/src/racewizard.c",
+      "host_entry": "stars_race_dialog2",
+      "status": "reconstructed_entry"
+    },
+    {
+      "name": "DrawRace2",
+      "analysis_address": "10e0:179a",
+      "ne_segment": 29,
+      "offset": 6042,
+      "end_exclusive": 8548,
+      "procedure_bytes": 2506,
+      "source": "reconstructed/src/racedraw.c",
+      "host_entry": "stars_draw_race2",
+      "status": "reconstructed_entry"
+    },
+    {
+      "name": "IrcRaceDlgHitTest",
+      "analysis_address": "10e0:2164",
+      "ne_segment": 29,
+      "offset": 8548,
+      "end_exclusive": 8707,
+      "procedure_bytes": 159,
+      "source": "reconstructed/src/racedraw.c",
+      "host_entry": "stars_race_hit_test",
+      "status": "reconstructed_entry"
+    },
+    {
+      "name": "FTrackRaceDlg2",
+      "analysis_address": "10e0:2204",
+      "ne_segment": 29,
+      "offset": 8708,
+      "end_exclusive": 10129,
+      "procedure_bytes": 1421,
+      "source": "reconstructed/src/racedraw.c",
+      "host_entry": "stars_track_race2",
+      "status": "reconstructed_entry"
+    },
+    {
+      "name": "RaceWizardDlg3",
+      "analysis_address": "10e0:2792",
+      "ne_segment": 29,
+      "offset": 10130,
+      "end_exclusive": 10892,
+      "procedure_bytes": 762,
+      "source": "reconstructed/src/racewizard.c",
+      "host_entry": "stars_race_dialog3",
+      "status": "reconstructed_entry"
+    },
+    {
+      "name": "DrawRace3",
+      "analysis_address": "10e0:2aa4",
+      "ne_segment": 29,
+      "offset": 10916,
+      "end_exclusive": 12215,
+      "procedure_bytes": 1299,
+      "source": "reconstructed/src/racedraw.c",
+      "host_entry": "stars_draw_race3",
+      "status": "reconstructed_entry"
+    },
+    {
+      "name": "FTrackRaceDlg3",
+      "analysis_address": "10e0:2fb8",
+      "ne_segment": 29,
+      "offset": 12216,
+      "end_exclusive": 12497,
+      "procedure_bytes": 281,
+      "source": "reconstructed/src/racedraw.c",
+      "host_entry": "stars_track_race3",
+      "status": "reconstructed_entry"
+    },
+    {
+      "name": "GetRaceStat",
+      "analysis_address": "10e0:30d2",
+      "ne_segment": 29,
+      "offset": 12498,
+      "end_exclusive": 12532,
+      "procedure_bytes": 34,
+      "status": "previously_reconstructed",
+      "source": "reconstructed/src/race.c"
+    },
+    {
+      "name": "SetRaceStat",
+      "analysis_address": "10e0:3114",
+      "ne_segment": 29,
+      "offset": 12564,
+      "end_exclusive": 12661,
+      "procedure_bytes": 97,
+      "status": "previously_reconstructed",
+      "source": "reconstructed/src/race.c"
+    },
+    {
+      "name": "GetRaceGrbit",
+      "analysis_address": "10e0:3176",
+      "ne_segment": 29,
+      "offset": 12662,
+      "end_exclusive": 12728,
+      "procedure_bytes": 66,
+      "status": "previously_reconstructed",
+      "source": "reconstructed/src/race.c"
+    },
+    {
+      "name": "SetRaceGrbit",
+      "analysis_address": "10e0:31b8",
+      "ne_segment": 29,
+      "offset": 12728,
+      "end_exclusive": 12809,
+      "procedure_bytes": 81,
+      "status": "previously_reconstructed",
+      "source": "reconstructed/src/race.c"
+    },
+    {
+      "name": "RaceWizardDlg4",
+      "analysis_address": "10e0:320a",
+      "ne_segment": 29,
+      "offset": 12810,
+      "end_exclusive": 14222,
+      "procedure_bytes": 1412,
+      "source": "reconstructed/src/racewizard.c",
+      "host_entry": "stars_race_dialog4",
+      "status": "reconstructed_entry"
+    },
+    {
+      "name": "RaceWizardDlg5",
+      "analysis_address": "10e0:378e",
+      "ne_segment": 29,
+      "offset": 14222,
+      "end_exclusive": 15278,
+      "procedure_bytes": 1056,
+      "source": "reconstructed/src/racewizard.c",
+      "host_entry": "stars_race_dialog5",
+      "status": "reconstructed_entry"
+    },
+    {
+      "name": "RaceWizardDlg6",
+      "analysis_address": "10e0:3bae",
+      "ne_segment": 29,
+      "offset": 15278,
+      "end_exclusive": 16557,
+      "procedure_bytes": 1279,
+      "source": "reconstructed/src/racewizard.c",
+      "host_entry": "stars_race_dialog6",
+      "status": "reconstructed_entry"
+    },
+    {
+      "name": "BoundsCheckPlayer",
+      "analysis_address": "10e0:40ae",
+      "ne_segment": 29,
+      "offset": 16558,
+      "end_exclusive": 17423,
+      "procedure_bytes": 865,
+      "status": "previously_reconstructed",
+      "source": "reconstructed/src/race.c"
+    },
+    {
+      "name": "CAdvantagePoints",
+      "analysis_address": "10e0:444c",
+      "ne_segment": 29,
+      "offset": 17484,
+      "end_exclusive": 19565,
+      "procedure_bytes": 2081,
+      "status": "previously_reconstructed",
+      "source": "reconstructed/src/race.c"
+    },
+    {
+      "name": "LInnateRaceHabitability",
+      "analysis_address": "10e0:4c6e",
+      "ne_segment": 29,
+      "offset": 19566,
+      "end_exclusive": 21716,
+      "procedure_bytes": 2150,
+      "status": "previously_reconstructed",
+      "source": "reconstructed/src/planet.c"
+    },
+    {
+      "name": "InvalidateAdvPtsRect",
+      "analysis_address": "10e0:54d4",
+      "ne_segment": 29,
+      "offset": 21716,
+      "end_exclusive": 21958,
+      "procedure_bytes": 242,
+      "source": "reconstructed/src/raceui.c",
+      "host_entry": "stars_invalidate_advantage",
+      "status": "reconstructed_entry"
+    },
+    {
+      "name": "DrawRaceAdvantagePoints",
+      "analysis_address": "10e0:55c6",
+      "ne_segment": 29,
+      "offset": 21958,
+      "end_exclusive": 22664,
+      "procedure_bytes": 706,
+      "source": "reconstructed/src/raceui.c",
+      "host_entry": "stars_draw_advantage",
+      "status": "reconstructed_entry"
+    },
+    {
+      "name": "IRaceChecksum",
+      "analysis_address": "10e0:5888",
+      "ne_segment": 29,
+      "offset": 22664,
+      "end_exclusive": 22739,
+      "procedure_bytes": 75,
+      "status": "previously_reconstructed",
+      "source": "reconstructed/src/race.c"
+    },
+    {
+      "name": "FSaveRace",
+      "analysis_address": "10e0:58d4",
+      "ne_segment": 29,
+      "offset": 22740,
+      "end_exclusive": 23223,
+      "procedure_bytes": 483,
+      "source": "reconstructed/src/runtime.c",
+      "host_entry": "stars_save_race",
+      "status": "reconstructed_entry"
+    },
+    {
+      "name": "SetRCWTitle",
+      "analysis_address": "10e0:5ab8",
+      "ne_segment": 29,
+      "offset": 23224,
+      "end_exclusive": 23304,
+      "procedure_bytes": 80,
+      "source": "reconstructed/src/raceui.c",
+      "host_entry": "stars_race_title",
+      "status": "reconstructed_entry"
+    },
+    {
+      "name": "CreateRandomRace",
+      "analysis_address": "10e0:5b08",
+      "ne_segment": 29,
+      "offset": 23304,
+      "end_exclusive": 26068,
+      "procedure_bytes": 2764,
+      "status": "previously_reconstructed",
+      "source": "reconstructed/src/race.c"
+    },
+    {
+      "name": "Delay",
+      "analysis_address": "10e8:3a3e",
+      "ne_segment": 30,
+      "offset": 14910,
+      "end_exclusive": 15041,
+      "procedure_bytes": 131,
+      "source": "reconstructed/src/password.c",
+      "host_entry": "stars_delay",
+      "status": "reconstructed_entry"
+    }
+  ],
+  "runtime_and_import_targets": [
+    {
+      "analysis_address": "1118:027e",
+      "name": "__lseek"
+    },
+    {
+      "analysis_address": "1118:0352",
+      "name": "_strcat"
+    },
+    {
+      "analysis_address": "1118:0392",
+      "name": "_strcpy"
+    },
+    {
+      "analysis_address": "1118:03c4",
+      "name": "_strcmp"
+    },
+    {
+      "analysis_address": "1118:03f0",
+      "name": "_strlen"
+    },
+    {
+      "analysis_address": "1118:040c",
+      "name": "_strncpy"
+    },
+    {
+      "analysis_address": "1118:050a",
+      "name": "__strdate"
+    },
+    {
+      "analysis_address": "1118:056e",
+      "name": "__strtime"
+    },
+    {
+      "analysis_address": "1118:05c8",
+      "name": "_strchr"
+    },
+    {
+      "analysis_address": "1118:068c",
+      "name": "_strrchr"
+    },
+    {
+      "analysis_address": "1118:06d2",
+      "name": "_memmove"
+    },
+    {
+      "analysis_address": "1118:0742",
+      "name": "_memcpy"
+    },
+    {
+      "analysis_address": "1118:076e",
+      "name": "_memset"
+    },
+    {
+      "analysis_address": "1118:079c",
+      "name": "_abs"
+    },
+    {
+      "analysis_address": "1118:09c8",
+      "name": "__setjmp"
+    },
+    {
+      "analysis_address": "1118:09ed",
+      "name": "_longjmp"
+    },
+    {
+      "analysis_address": "1118:0a16",
+      "name": "__access"
+    },
+    {
+      "analysis_address": "1118:0be4",
+      "name": "__aFldiv"
+    },
+    {
+      "analysis_address": "1118:0c7e",
+      "name": "__aFlmul"
+    },
+    {
+      "analysis_address": "1118:0d50",
+      "name": "__aFlshl"
+    },
+    {
+      "analysis_address": "1118:0d5c",
+      "name": "__aFlshr"
+    },
+    {
+      "analysis_address": "1118:0dc8",
+      "name": "__aFulrem"
+    },
+    {
+      "analysis_address": "1118:0e32",
+      "name": "__aFulshr"
+    },
+    {
+      "analysis_address": "1118:0e3e",
+      "name": "__fmemcmp"
+    },
+    {
+      "analysis_address": "1118:0e9a",
+      "name": "__fmemcpy"
+    },
+    {
+      "analysis_address": "1118:0f3e",
+      "name": "__fstrlen"
+    },
+    {
+      "analysis_address": "1118:0f82",
+      "name": "__fstrcpy"
+    },
+    {
+      "analysis_address": "1118:105a",
+      "name": "__fmemmove"
+    },
+    {
+      "analysis_address": "1118:1124",
+      "name": "_sqrt"
+    },
+    {
+      "analysis_address": "1118:11d7",
+      "name": "__aFfcompp"
+    },
+    {
+      "analysis_address": "1118:11fc",
+      "name": "__aFftol"
+    },
+    {
+      "analysis_address": "14f8:000c",
+      "name": "14f8:000c"
+    },
+    {
+      "analysis_address": "14f8:0014",
+      "name": "14f8:0014"
+    },
+    {
+      "analysis_address": "14f8:0028",
+      "name": "14f8:0028"
+    },
+    {
+      "analysis_address": "14f8:002c",
+      "name": "14f8:002c"
+    },
+    {
+      "analysis_address": "14f8:0048",
+      "name": "14f8:0048"
+    },
+    {
+      "analysis_address": "14f8:004c",
+      "name": "14f8:004c"
+    },
+    {
+      "analysis_address": "14f8:006c",
+      "name": "14f8:006c"
+    },
+    {
+      "analysis_address": "14f8:0070",
+      "name": "14f8:0070"
+    },
+    {
+      "analysis_address": "14f8:0074",
+      "name": "14f8:0074"
+    },
+    {
+      "analysis_address": "14f8:0078",
+      "name": "14f8:0078"
+    },
+    {
+      "analysis_address": "14f8:0084",
+      "name": "14f8:0084"
+    },
+    {
+      "analysis_address": "14f8:00b4",
+      "name": "14f8:00b4"
+    },
+    {
+      "analysis_address": "14f8:00b8",
+      "name": "14f8:00b8"
+    },
+    {
+      "analysis_address": "14f8:00c0",
+      "name": "14f8:00c0"
+    },
+    {
+      "analysis_address": "14f8:00e0",
+      "name": "14f8:00e0"
+    },
+    {
+      "analysis_address": "14f8:00e8",
+      "name": "14f8:00e8"
+    },
+    {
+      "analysis_address": "14f8:00f8",
+      "name": "14f8:00f8"
+    },
+    {
+      "analysis_address": "14f8:0104",
+      "name": "14f8:0104"
+    },
+    {
+      "analysis_address": "14f8:011c",
+      "name": "14f8:011c"
+    },
+    {
+      "analysis_address": "14f8:0134",
+      "name": "14f8:0134"
+    },
+    {
+      "analysis_address": "14f8:0138",
+      "name": "14f8:0138"
+    },
+    {
+      "analysis_address": "14f8:013c",
+      "name": "14f8:013c"
+    },
+    {
+      "analysis_address": "14f8:0148",
+      "name": "14f8:0148"
+    },
+    {
+      "analysis_address": "14f8:0150",
+      "name": "14f8:0150"
+    },
+    {
+      "analysis_address": "14f8:0158",
+      "name": "14f8:0158"
+    },
+    {
+      "analysis_address": "14f8:0170",
+      "name": "14f8:0170"
+    },
+    {
+      "analysis_address": "14f8:0174",
+      "name": "14f8:0174"
+    },
+    {
+      "analysis_address": "14f8:0178",
+      "name": "14f8:0178"
+    },
+    {
+      "analysis_address": "14f8:017c",
+      "name": "14f8:017c"
+    },
+    {
+      "analysis_address": "14f8:0180",
+      "name": "14f8:0180"
+    },
+    {
+      "analysis_address": "14f8:0184",
+      "name": "14f8:0184"
+    },
+    {
+      "analysis_address": "14f8:0188",
+      "name": "14f8:0188"
+    },
+    {
+      "analysis_address": "14f8:0190",
+      "name": "14f8:0190"
+    },
+    {
+      "analysis_address": "14f8:019c",
+      "name": "14f8:019c"
+    },
+    {
+      "analysis_address": "14f8:01a0",
+      "name": "14f8:01a0"
+    },
+    {
+      "analysis_address": "14f8:01a4",
+      "name": "14f8:01a4"
+    },
+    {
+      "analysis_address": "14f8:01ac",
+      "name": "14f8:01ac"
+    },
+    {
+      "analysis_address": "14f8:01b0",
+      "name": "14f8:01b0"
+    },
+    {
+      "analysis_address": "14f8:01b4",
+      "name": "14f8:01b4"
+    },
+    {
+      "analysis_address": "14f8:01e8",
+      "name": "14f8:01e8"
+    },
+    {
+      "analysis_address": "14f8:01ec",
+      "name": "14f8:01ec"
+    },
+    {
+      "analysis_address": "14f8:01f0",
+      "name": "14f8:01f0"
+    },
+    {
+      "analysis_address": "14f8:01f4",
+      "name": "14f8:01f4"
+    },
+    {
+      "analysis_address": "14f8:01fc",
+      "name": "14f8:01fc"
+    },
+    {
+      "analysis_address": "14f8:0200",
+      "name": "14f8:0200"
+    },
+    {
+      "analysis_address": "14f8:020c",
+      "name": "14f8:020c"
+    },
+    {
+      "analysis_address": "14f8:0210",
+      "name": "14f8:0210"
+    },
+    {
+      "analysis_address": "14f8:0218",
+      "name": "14f8:0218"
+    },
+    {
+      "analysis_address": "14f8:021c",
+      "name": "14f8:021c"
+    },
+    {
+      "analysis_address": "14f8:0220",
+      "name": "14f8:0220"
+    },
+    {
+      "analysis_address": "14f8:0228",
+      "name": "14f8:0228"
+    },
+    {
+      "analysis_address": "14f8:022c",
+      "name": "14f8:022c"
+    },
+    {
+      "analysis_address": "14f8:0230",
+      "name": "14f8:0230"
+    },
+    {
+      "analysis_address": "14f8:0234",
+      "name": "14f8:0234"
+    },
+    {
+      "analysis_address": "14f8:0238",
+      "name": "14f8:0238"
+    },
+    {
+      "analysis_address": "14f8:023c",
+      "name": "14f8:023c"
+    },
+    {
+      "analysis_address": "14f8:0240",
+      "name": "14f8:0240"
+    },
+    {
+      "analysis_address": "14f8:0258",
+      "name": "14f8:0258"
+    },
+    {
+      "analysis_address": "14f8:0260",
+      "name": "14f8:0260"
+    },
+    {
+      "analysis_address": "14f8:0274",
+      "name": "14f8:0274"
+    },
+    {
+      "analysis_address": "14f8:029c",
+      "name": "14f8:029c"
+    },
+    {
+      "analysis_address": "14f8:02b4",
+      "name": "14f8:02b4"
+    },
+    {
+      "analysis_address": "14f8:02bc",
+      "name": "14f8:02bc"
+    },
+    {
+      "analysis_address": "14f8:02d8",
+      "name": "14f8:02d8"
+    },
+    {
+      "analysis_address": "14f8:02dc",
+      "name": "14f8:02dc"
+    },
+    {
+      "analysis_address": "14f8:02f8",
+      "name": "14f8:02f8"
+    },
+    {
+      "analysis_address": "14f8:0308",
+      "name": "14f8:0308"
+    },
+    {
+      "analysis_address": "14f8:0310",
+      "name": "14f8:0310"
+    }
+  ],
+  "resources": [
+    {
+      "type": 2,
+      "id": 133,
+      "bytes": 33856,
+      "sha256": "efe0d08fe777513f6a13d51ced95556c05ed174a87e48258cc5b560cc6a755a0",
+      "extracted_path": "resources/resource_052_type_2.bin"
+    },
+    {
+      "type": 5,
+      "id": 146,
+      "bytes": 576,
+      "sha256": "92ec7cbd67cb759d80b1971d92fbceeb1300b083dd4a7da53b8e24f6a586d435",
+      "extracted_path": "resources/resource_074_type_5.bin"
+    },
+    {
+      "type": 5,
+      "id": 147,
+      "bytes": 320,
+      "sha256": "1511096e25007b13c22654b6f08c1d53ab368ed02b20b89505267f8ba57fe896",
+      "extracted_path": "resources/resource_075_type_5.bin"
+    },
+    {
+      "type": 5,
+      "id": 148,
+      "bytes": 256,
+      "sha256": "6f11c9a06702edeecd17ebcbfd6231cfa9451dd95f245bfb8b958744180907cc",
+      "extracted_path": "resources/resource_076_type_5.bin"
+    },
+    {
+      "type": 5,
+      "id": 149,
+      "bytes": 512,
+      "sha256": "cc37af8676382d24c5248b3c450efd3ccaa55e0fae6377ad56e652a5725bf023",
+      "extracted_path": "resources/resource_077_type_5.bin"
+    },
+    {
+      "type": 5,
+      "id": 150,
+      "bytes": 448,
+      "sha256": "d7484fcebd79da230902478831f4c03ad769985bc6a150bc512eddbf6c6b02c0",
+      "extracted_path": "resources/resource_078_type_5.bin"
+    },
+    {
+      "type": 5,
+      "id": 151,
+      "bytes": 832,
+      "sha256": "1fed27f6bc3474169c63507e892a541a540aea545db819e91a2bbf942a06d096",
+      "extracted_path": "resources/resource_079_type_5.bin"
+    },
+    {
+      "type": 5,
+      "id": 140,
+      "bytes": 192,
+      "sha256": "e0808847df69b6a9c467526909921557fbb881c0e7fa69428eda3bbd0aaa4ecc",
+      "extracted_path": "resources/resource_090_type_5.bin"
+    }
+  ],
+  "entry_slice": {
+    "name": "CommandHandler(hwnd, 0x81)",
+    "ne_segment": 5,
+    "offset": 12867,
+    "end_exclusive": 12905,
+    "host_entry": "stars_new_race",
+    "scope": "Copy the default 192-byte player then call the wizard. Other menu actions and startup are outside this component."
+  },
+  "summary": {
+    "accounted_game_targets": 88,
+    "unaccounted_game_targets": 0,
+    "new_reviewed_entries": 40,
+    "new_reviewed_procedure_bytes": 27718,
+    "scoped_helper_paths": 12,
+    "native_windows_acceptance": "pending; no new VM test package prepared"
+  }
+}
