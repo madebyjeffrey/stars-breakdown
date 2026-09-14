@@ -69,6 +69,11 @@ controlled VC1.52 build reproduced 256 for each directly linked object. This
 resolves the observed provenance convention under U011 without inventing a
 256th library or claiming universal/documented sentinel semantics.
 
+The [Step 5 runtime audit](../reconstruction/runtime-library.json) now maps
+all 101 code-bearing CRT records to the installed VC library, with 15,192 code
+bytes and 856 fixups checked. Seven records have no code span. Remaining CRT
+data and provenance limits are described in the [foundation report](../reconstruction/foundations.md).
+
 The enriched `coverage.json` keeps the baseline's non-overlapping segment ranges and adds public-symbol anchors. It finds 323 public-symbol records in 44 otherwise-unclassified code ranges. Those anchors do not prove routine lengths or turn those ranges into decompiled code. The 126,146 unclassified code-segment bytes remain outstanding for step 3.
 
 Hash tables are debugger lookup accelerators; sequentially decoded semantic records replace their lookup role. Their formats, lengths, and hashes are recorded in `subsection_audit.json`, with the exact bytes retained in the original input. Alignment records and record padding have no reconstructed source semantics. These exclusions are explicit, not unknown symbol kinds.

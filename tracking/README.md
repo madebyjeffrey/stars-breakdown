@@ -16,7 +16,7 @@ The user identified this executable on 2026-09-13 as **2.70j RC3**, the third re
 
 Initial coverage: 37 segments, 1,305 ranges, 1,042,584 memory bytes. Debug procedure ranges cover 890,384 bytes; 126,146 code-segment bytes remain unclassified and 26,054 bytes belong to the data segment. These are inventory measurements, not a decompilation percentage. Procedure extents may themselves contain inline data.
 
-Step 5 has 99 reviewed routines covering 45,906 original procedure bytes, compiled
+Step 5 has 122 reviewed routines covering 53,170 original procedure bytes, compiled
 as host C89 semantic adapters and compared with original x86 execution. See
 [the reconstruction report](../analysis/reconstruction/core.md). This is not a
 linked Win16 replacement. The historical GetRaceStat note has been superseded
@@ -31,6 +31,16 @@ checks in the user's Win98 SE workflow with revision 3 and a complete trace; its
 returned EXE also passes visible progress and keyboard cancellation checks in
 WfW 3.11. See the [RETURN5 review](../analysis/compat/racevc-return5.md). Real
 race-wizard UI acceptance remains separate.
+
+The [foundation work](../analysis/reconstruction/foundations.md) completes all
+11 memory-manager routines, the startup resource lifecycle and six additional
+numeric/bounds helpers. Their 23 routines / 7,264 bytes have original-instruction
+comparisons and host C89 builds; native integration remains pending. Separate
+from named-game coverage, the DOS entry assembles to the exact 98 bytes and
+the [runtime library audit](../analysis/reconstruction/runtime-library.json)
+maps all 101 code-bearing CRT records (15,192 bytes / 856 fixups). Seven records
+without code, CRT data fixups and whole-link layout are not credited by that
+code mapping. The broad startup/common subsystem boxes remain open.
 
 Manual progress belongs in [reviews.json](reviews.json), keyed by the ledger range ID. Generation merges those annotations into the ledger without overwriting the editable source. If segmentation changes, generation rejects obsolete keys so a human must reconcile their evidence. Schema 2 counts `host_c89_compiled` rows separately and states their scope explicitly; this is original-byte mapping coverage, not generated object size or whole-program equivalence.
 

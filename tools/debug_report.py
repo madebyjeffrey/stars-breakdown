@@ -46,12 +46,21 @@ Files are in `reconstructed/include/` with 8.3-compatible filenames:
 - `sglobals.h`: declarations for every data record, with address/linkage comments and distinct record-based names. These are declarations, not allocations or initialized definitions.
 - `sconst.h`: raw values for the 23 absolute linker symbols, explicitly distinct from loaded addresses or recovered source macros.
 - `checklay.c`: a compilation-only entry point including all four headers.
+- `soffsets.inc`: the complete 1,469-entry offset checklist. Headers assert it
+  at compile time by default; an explicitly configured runtime runner can
+  evaluate the same entries for older compilers that reject the expressions
+  in file-scope array bounds.
 
 The default host mode represents near pointers as 16-bit integers and far/huge pointers as 32-bit integers. These are encoded addresses, not host pointers you can dereference. `STARS_NATIVE16` selects actual VC-style near/far/huge declarations. Native compiler checks deliberately require two-byte near pointers and four-byte far pointers. Extended 80-bit floating storage is a ten-byte wrapper, not a claim that host `long double` has the right representation.
 
 Overlaps are modeled as independent named views rather than guessed anonymous unions. For example, `player.rgAttr.value[index]` accesses the recorded array in a storage view; `player.raw` exposes its bytes. Bit-field views expose the backing storage, not C bit-field assignments: use recorded bit masks/positions, preserve unrelated bits, and sign-extend signed fields when implementing accessors. Variable tails have offsets and incomplete array typedefs, with no fake fixed element appended to their parent. The headers preserve storage and type information; final source spelling, ergonomic declarations, and native aggregate ABI behavior remain reconstruction work.
 
-The host C89 check passes 2,241 generated type-size/member-offset assertions, plus primitive width assertions. All field extents and bit ranges are independently checked against metadata. This is not evidence that Visual C++ 1.5 has compiled them: the user's toolchain setup is still pending. Native validation belongs with that toolchain work; any difference must be resolved before relying on these declarations for a rebuilt executable.
+The host C89 check passes 2,241 generated type-size/member-offset assertions,
+plus primitive width assertions. All field extents and bit ranges are
+independently checked against metadata. RETURN2 also compiled the 772 type-size
+assertions and primitive checks in VC++ 1.52c, and executed all 1,469 field-offset
+checks successfully in its Win16 layout runner. See the
+[native validation report](../compat/vc152-return2.md) for scope and evidence.
 
 ## Machine-code validation
 
@@ -68,7 +77,17 @@ These are representative instruction-backed checks plus exhaustive structural/co
 
 ## Provenance and remaining gaps
 
-The library table contains `mlibcew.lib`, `libw.lib`, `commdlg.lib`, and `toolhelp.lib`. The 108 runtime module records use library index 1 (`mlibcew.lib`). All 40 game-object records use 256, outside the list. That number is retained as unresolved provenance; no nonexistent library or specific sentinel meaning is inferred. See U011.
+The library table contains `mlibcew.lib`, `libw.lib`, `commdlg.lib`, and
+`toolhelp.lib`. The 108 runtime module records use library index 1
+(`mlibcew.lib`). All 40 game-object records use 256, outside the list. The
+controlled VC1.52 build reproduced 256 for each directly linked object. This
+resolves the observed provenance convention under U011 without inventing a
+256th library or claiming universal/documented sentinel semantics.
+
+The [Step 5 runtime audit](../reconstruction/runtime-library.json) now maps
+all 101 code-bearing CRT records to the installed VC library, with 15,192 code
+bytes and 856 fixups checked. Seven records have no code span. Remaining CRT
+data and provenance limits are described in the [foundation report](../reconstruction/foundations.md).
 
 The enriched `coverage.json` keeps the baseline's non-overlapping segment ranges and adds public-symbol anchors. It finds 323 public-symbol records in 44 otherwise-unclassified code ranges. Those anchors do not prove routine lengths or turn those ranges into decompiled code. The 126,146 unclassified code-segment bytes remain outstanding for step 3.
 
@@ -88,7 +107,12 @@ clang -std=c89 -pedantic-errors -Wno-strict-prototypes -fsyntax-only reconstruct
 python3 -m unittest discover -s tests
 ```
 
-For an eventual native check, copy the five generated files to a short DOS path and compile `checklay.c` with `STARS_NATIVE16` defined. Record the compiler banner, command and diagnostics. This only checks declarations and storage: it does not build Stars!.
+The first VC++ 1.52c native experiment rejected `offsetof` expressions in
+file-scope array bounds (C2057). The [revised compatibility fixture](../../compat/vc152/README.md)
+sets `STARS_NATIVE16` and `STARS_RUNTIME_OFFSETS`, preserves every size check,
+and evaluates the complete `soffsets.inc` checklist in `LAYOUT.EXE`. Defining
+`STARS_RUNTIME_OFFSETS` alone does not validate offsets: the runner must execute
+and pass. This checks declarations/storage and does not build Stars!.
 
 ## Primary format references
 

@@ -10,6 +10,9 @@ SOURCES = ['utilgen.c', 'race.c', 'near_state.c', 'codec.c', 'text.c', 'create.c
            'planet.c', 'strings.c', 'records.c', 'stream.c', 'file.c', 'alerts.c',
            'runtime.c', 'password.c', 'output.c', 'format.c', 'ui.c', 'raceui.c',
            'racedraw.c', 'racewizard.c']
+# Keep the frozen race-export source set stable; foundation modules join the
+# host library without silently changing the already accepted native package.
+FOUNDATION_SOURCES = ['memory.c', 'common.c', 'startup.c']
 
 
 def main():
@@ -20,7 +23,7 @@ def main():
     output.parent.mkdir(exist_ok=True)
     subprocess.run([args.cc, '-std=c89', '-pedantic', '-Wall', '-Wextra', '-Werror',
                     '-O2', '-shared', '-fPIC', '-I', str(ROOT / 'reconstructed/include'),
-                    *[str(ROOT / 'reconstructed/src' / name) for name in SOURCES], '-o', str(output)], check=True)
+                    *[str(ROOT / 'reconstructed/src' / name) for name in SOURCES + FOUNDATION_SOURCES], '-o', str(output)], check=True)
     print(output)
 
 

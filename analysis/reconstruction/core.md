@@ -1,8 +1,10 @@
 # Step 5: reviewed semantic core
 
-Status: **99 of 846 named game routines reconstructed**, covering 45,906 original
-procedure bytes. Step 5 remains in progress. Unnamed/runtime code is additional
-work. These routines compile together as a host C89 library; they do not yet
+Status: **122 of 846 named game routines reconstructed**, covering 53,170 original
+procedure bytes. Step 5 remains in progress. A separate
+[CRT audit](runtime-library.json) maps the linked runtime code; other unnamed
+code and remaining CRT data still need review. These routines compile together
+as a host C89 library; they do not yet
 constitute a Win16 application or retain the original far-call ABI. Innate race
 scoring uses explicit bounded x87 rounding; see the U018 resolution.
 
@@ -13,7 +15,8 @@ Additional routines and their limits are described in [codec](codec.md),
 [random race creation](random-race.md), [player records](player-records.md),
 [file headers and stream handling](file-streams.md), and
 [file creation and alerts](file-creation.md), the integrated
-[race component](race-component.md), and [message formatting](message-formatting.md).
+[race component](race-component.md), [message formatting](message-formatting.md),
+and [memory, startup resources and runtime mapping](foundations.md).
 The table below covers the initial 15 routines.
 
 A complete host-side race-generation example is available with
@@ -118,7 +121,9 @@ must stay inside the segment. Original faults from invalid selectors, segment
 crossings, stack/code aliasing, or unbounded corrupt-memory execution are not
 certified by these tests. A reconstructed Windows adapter and integration tests
 remain necessary. Original runtime helpers used as the oracle are **not** counted
-as reconstructed runtime code.
+as reconstructed C source. The separate [library audit](runtime-library.json)
+now supplies implementation mappings for all 101 code-bearing CRT records;
+its data/provenance limits are recorded in [foundations](foundations.md).
 
 The step 4 GetRaceStat trace independently anchors that routine in the live
 Windows runtime. A new attempt to rewind a live Random call did not reach its

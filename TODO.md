@@ -86,7 +86,7 @@ This does not promise the author's exact source text, comments, macros, or code 
 
 ## 5. Reconstruct the program, subsystem by subsystem
 
-**In progress:** 99 named routines (45,906 original procedure bytes) now have
+**In progress:** 122 named routines (53,170 original procedure bytes) now have
 reviewed C89 source and original-x86 differential tests. See
 [the core reconstruction report](analysis/reconstruction/core.md).
 This is a host semantic library; the subsystem checkboxes below remain open.
@@ -97,7 +97,9 @@ control flow has explicit OS/error boundaries. Filename generation, file-creatio
 recovery and alert selection are reconstructed. The save/load and race-creation
 dependencies now form an integrated host component, including message expansion,
 logging, passwords and all six wizard pages. A native Windows adapter and
-acceptance package are the next integration task; other game subsystems remain.
+acceptance package remain an integration task. Current work targets startup,
+runtime, memory and common utilities; see the completed component milestones
+below and the [foundation report](analysis/reconstruction/foundations.md).
 
 ### Work cadence and next milestones — revised 2026-09-14
 
@@ -119,6 +121,36 @@ throughput. Continue independent work while a manual VM experiment is pending.
 
 The immediate work is:
 
+- [x] **Complete memory manager:** reconstruct all 11 memory.obj routines,
+  including block growth/movement, allocation/free/reset, owner lookup and packed
+  list storage. **Complete, 2026-09-14:** 2,390 original bytes; stateful tests
+  compare full heap contents, ownership links, allocation failures, nonlocal
+  aborts and Windows-service order. Terminal resource cleanup uses this manager.
+  Native Windows heap integration remains separate. See the
+  [foundation report](analysis/reconstruction/foundations.md).
+- [x] **Startup resource lifecycle:** reconstruct font creation, system colors,
+  brush caching, tile layout and complete FreeStuff termination. **Complete,
+  2026-09-14:** six routines / 3,785 bytes with integrated creation, refresh and
+  cleanup comparisons. Startup configuration/WinMain remain below.
+- [x] **Common numeric and bounds helpers:** reconstruct PszFromInt,
+  PszFromLong, PszFromLongK, CommaFormatLong, BoundPoints and WPackLong.
+  **Complete, 2026-09-14:** six routines / 1,089 bytes, preserving original
+  pointer/value tests, unterminated suffixes, signed overflow and aliasing.
+  Earlier RNG/arithmetic helpers remain verified; collections are still open.
+- [x] **DOS entry and CRT code mapping:** reconstruct the DOS stub and audit
+  the installed VC runtime against every original code-bearing library record.
+  **Complete for this scope, 2026-09-14:** DOS stub assembles to the same 98 bytes;
+  all 101 CRT code-bearing records match 15,192 bytes with 856 checked fixups.
+  Seven records contain no code. Data fixups, data-only records and complete
+  linker layout remain separate. See the [runtime audit](analysis/reconstruction/runtime-library.json).
+- [ ] **Startup/configuration integration:** finish application initialization,
+  INI settings, WinMain, command-line/batch setup and their dependencies, then
+  connect the mapped runtime entry and recovered resource lifecycle. Validate
+  real Windows heap/resource adapters before claiming native startup completion.
+- [ ] **Common collection ownership and remaining geometry:** finish shared
+  lookup/duplication/ownership helpers and arithmetic/geometry dependency paths,
+  with explicit boundaries to simulation, UI and persistence. These remaining
+  paths prevent checking off the whole Memory and common utilities section.
 - [x] **Early VC++ compatibility check:** prepare one small Win16 fixture package
   for the user's VC++ 1.52c / Windows 98 SE / 86Box environment. Capture compiler
   and linker banners, commands and outputs; test integer widths, near/far pointers,
