@@ -1,6 +1,6 @@
 # Full decompilation TODO
 
-This checklist targets the exact supplied `target/stars.exe`. Complete the stages in order, revisiting earlier stages when later analysis exposes mistakes. Check an item only when its output and supporting evidence exist in this repository.
+This checklist targets the exact supplied `target/stars.exe`. The stages describe completion criteria, not a ban on overlapping work: bring compiler checks and integration scaffolding forward during step 5, and revisit earlier stages when later analysis exposes mistakes. Check an item only when its output and supporting evidence exist in this repository.
 
 ## What “complete” means
 
@@ -96,6 +96,51 @@ serialization, header generation and record encryption. Stream retry/transfer
 control flow has explicit OS/error boundaries. Filename generation, file-creation
 recovery and alert selection are reconstructed. File dialogs, message expansion,
 log writing, password handling, wizard UI, and other creation routines remain.
+
+### Work cadence and next milestones — revised 2026-09-14
+
+The user requested larger, less tedious work sessions. The preceding batches of
+roughly five routines were checkpoint choices, not a technical requirement.
+Continue toward a coherent subsystem outcome; do not end a work session merely
+because a handful of functions or a local commit is complete. Internal commits
+remain useful recovery points. Report functioning paths, dependencies closed,
+remaining boundaries and validation results, with function counts as supporting
+coverage rather than the work quota.
+
+Use the existing complete raw exports and call graph to assemble each dependency
+cluster before implementation. Reuse common ABI, state and comparison machinery
+across related routines. Run focused checks during development and the full
+regression suite at a substantial integration checkpoint or when shared changes
+require it. Retain the per-function review standard; raw decompiler output and
+untested callbacks must not be promoted to completed reconstruction to increase
+throughput. Continue independent work while a manual VM experiment is pending.
+
+The immediate work is:
+
+- [ ] **Early VC++ compatibility check:** prepare one small Win16 fixture package
+  for the user's VC++ 1.52c / Windows 98 SE / 86Box environment. Capture compiler
+  and linker banners, commands and outputs; test integer widths, near/far pointers,
+  representative recovered layouts and calling conventions, plus a small group
+  of reconstructed routines. Record what the comparison establishes under U002.
+  This is a step-5 integration check, not completion of the step-6 application.
+- [ ] **Race-file save/load milestone:** reconstruct and integrate FSaveRace and
+  FWasRaceFile with the existing creation, record, checksum and stream code.
+  Close their message-formatting, logging and password dependencies, including
+  PszFormatIds/PszFormatString, OutputSz/OutputFileString/SzVersion and
+  FCheckPassword/LSaltFromSz/PasswordDlg/Delay as required by the verified graph.
+  Account for additional dependencies and indirect callbacks rather than assuming
+  this initial list is exhaustive. Exercise save, load, cancel, invalid files,
+  password outcomes and I/O failure recovery with synthetic inputs, and check
+  files in both directions against the original. Report any remaining OS boundary
+  explicitly; a callback-only path does not complete its underlying behavior.
+- [ ] **Race-creation milestone:** integrate the complete wizard and generation
+  path, including name-buffer initialization and U020, validation/scoring,
+  save/load integration and the UI/resource contracts. Keep arithmetic and legacy
+  edge cases mapped to their evidence. Use the resulting runnable component as
+  the unit of delivery before proceeding to the next subsystem cluster.
+
+Step 5 is finished only when its full exit criterion is met. These milestones
+change the size and usefulness of work sessions, not the definition of completion.
 
 For each group below, follow the per-function checklist. The order is provisional: use the recovered dependency graph to adjust it. Module names identify initial study areas, not verified architectural boundaries.
 
