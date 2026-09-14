@@ -1,8 +1,13 @@
-STARS RECONSTRUCTION - START2: STARTING SCREEN AND RACE WORKSHOP
+STARS RECONSTRUCTION - START2A: STARTING SCREEN AND RACE WORKSHOP
+
+FIX IN START2A
+The missing blue/red/green habitability ranges on wizard page 4 are restored.
+The automatic check now verifies rendered bar colors as well as save/load.
+Use a new folder to preserve your previous test run.
 
 QUICK START
 Copy this entire folder to a NEW directory in the Windows 98 / 86Box VM,
-for example C:\START2. Run START.EXE while Windows is running.
+for example C:\START2A. Run START.EXE while Windows is running.
 A prebuilt executable is included; compilation is optional.
 
 Click Race Workshop, or press F6 / Alt+W on the starting screen.
@@ -28,7 +33,8 @@ It visibly visits and paints all six wizard pages, writes a new CHECKnnn.R1,
 reloads it, compares all 192 player-state bytes, then checks cancellation.
 The command-line check closes the application on completion. Its APP.LOG
 must end EXIT=PASS and contain ACCEPTANCE=PASS, WIZARD_CHECK=PASS,
-ROUNDTRIP=PASS and CANCEL_CHECK=PASS. Existing CHECK files are preserved.
+ROUNDTRIP=PASS, CANCEL_CHECK=PASS and HABITABILITY_COLORS=PASS.
+Existing CHECK files are preserved.
 The Help-menu version displays a result dialog and leaves the workshop open.
 CHECK.LOG records the developer's completed native check, when supplied.
 
@@ -79,6 +85,9 @@ Other useful commands:
   START.EXE /SMOKE             title repaint and automatic exit
   START.EXE /FALLBACK /SMOKE   starfield repaint and automatic exit
 The /FALLBACK option forces starfield drawing for that run.
-The earlier guest drawing fault did not recur in the current checks; its
-cause remains unresolved. Windows 98 / 86Box acceptance of START2 is pending
-your run. User will provide serial number if a later milestone requires it.
+Developer color/save/load acceptance passed on WfW 3.11 with standard VGA.
+The DOSBox ET4000 / SVGA256 driver showed misplaced color fills in BOTH the
+original and reconstructed wizard; restarting Windows did not remove it.
+That display issue and the earlier guest fault remain under investigation.
+Windows 98 / 86Box acceptance of START2A is pending your run.
+User will provide serial number if a later milestone requires it.

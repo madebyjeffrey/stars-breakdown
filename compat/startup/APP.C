@@ -262,7 +262,7 @@ int PASCAL WinMain(HINSTANCE instance, HINSTANCE previous, LPSTR command, int sh
     strcpy(filename,directory);
     if(i>3 && filename[i-1]=='\\') filename[i-1]=0;
     if(_chdir(filename)) {MessageBox(NULL,"Cannot use the package directory.","Stars!",MB_OK);return 1;}
-    log_file=fopen(path("APP.LOG"),"wt");log_line("STARTUP_MILESTONE=2");
+    log_file=fopen(path("APP.LOG"),"wt");log_line("STARTUP_MILESTONE=2");log_line("BUILD_ID=START2A");
     smoke=strstr(command,"/SMOKE")!=NULL;
     data=load_image("INDATA.BIN",&data_handle);
     strings=load_image("STRINGS.BIN",&strings_handle);

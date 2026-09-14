@@ -1,0 +1,17 @@
+{
+  "package": "ftp-share/START2A",
+  "archive": "ftp-share/START2A.ZIP",
+  "files": 171,
+  "archive_bytes": 1917892,
+  "archive_sha256": "77a7941fec60eeb9e220668f35d5fc8aea5f49b8ef20fb00ba3bea3dd454c39e",
+  "executable_sha256": "a4b99b37c72eafb6cceb9ff596b92557cbbbe024407ea650fd4ee53221d00197",
+  "checks": [
+    "All parent and regression manifests match delivered bytes",
+    "ZIP exactly matches directory",
+    "All text is ASCII/CRLF",
+    "All 122 resources match original",
+    "No earlier user-run outputs or INI bundled",
+    "Passing standard-VGA CHECK.LOG belongs to this EXE; SVGA limitation recorded separately",
+    "Previous START2 archive remains unchanged"
+  ]
+}

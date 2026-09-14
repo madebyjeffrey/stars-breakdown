@@ -1,5 +1,5 @@
 NAME START
-DESCRIPTION 'Stars reconstructed race workshop - milestone 2'
+DESCRIPTION 'Stars reconstructed race workshop - milestone 2a'
 EXETYPE WINDOWS 3.1
 CODE PRELOAD MOVEABLE DISCARDABLE
 DATA PRELOAD MOVEABLE MULTIPLE

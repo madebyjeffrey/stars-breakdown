@@ -1,0 +1,76 @@
+{
+  "date": "2026-09-14",
+  "scope": "START2A page-4 habitability color initialization and native pixel acceptance",
+  "executable_sha256": "a4b99b37c72eafb6cceb9ff596b92557cbbbe024407ea650fd4ee53221d00197",
+  "compiler": "Microsoft C/C++ 8.00c (VC++ 1.52c)",
+  "linker": "5.60",
+  "resource_compiler": "Microsoft Windows RC 3.11",
+  "build_flags": "/AL /GA /GEs /Zp1 /Od /Zi /W3; /NOLOGO /NOD /MAP /CO /ALIGN:64",
+  "original_resource_matches": 122,
+  "cause": "START2 omitted the six rghbrPlanetAttr brushes; DrawRace2 selected empty handles. Prior acceptance checked painting and race state, not actual pixels.",
+  "original_slice": {
+    "procedure": "FCreateStuff",
+    "ne_segment": 1,
+    "start": "023d",
+    "end_exclusive": "02af",
+    "dgroup": "5680-568b",
+    "COLORREF": [
+      "007f0000",
+      "00ff0000",
+      "0000007f",
+      "000000ff",
+      "00007f00",
+      "0000ff00"
+    ],
+    "whole_procedure_credit": false
+  },
+  "build_logs": {
+    "BLDSTAT.TXT": "BUILD=START2A\nCOMPILE=PASS\nLINK=PASS\nRESOURCES=PASS\n",
+    "BUILD.LOG": "utilgen.c\nrace.c\nnearstat.c\ncodec.c\ntext.c\ncreate.c\nplanet.c\nstrings.c\nrecords.c\nstream.c\nfile.c\nalerts.c\nruntime.c\npassword.c\noutput.c\nformat.c\nui.c\nraceui.c\nracedraw.c\nracewiz.c\nmemory.c\ncommon.c\nstartup.c\nresource.c\ntitle.c\nconfig.c\nnative.c\napp.c\n",
+    "LINK.LOG": "Object Modules [.obj]: /NOLOGO /NOD /MAP /CO /ALIGN:64 UTILGEN.OBJ+\nObject Modules [.obj]: RACE.OBJ+\nObject Modules [.obj]: NEARSTAT.OBJ+\nObject Modules [.obj]: CODEC.OBJ+\nObject Modules [.obj]: TEXT.OBJ+\nObject Modules [.obj]: CREATE.OBJ+\nObject Modules [.obj]: PLANET.OBJ+\nObject Modules [.obj]: STRINGS.OBJ+\nObject Modules [.obj]: RECORDS.OBJ+\nObject Modules [.obj]: STREAM.OBJ+\nObject Modules [.obj]: FILE.OBJ+\nObject Modules [.obj]: ALERTS.OBJ+\nObject Modules [.obj]: RUNTIME.OBJ+\nObject Modules [.obj]: PASSWORD.OBJ+\nObject Modules [.obj]: OUTPUT.OBJ+\nObject Modules [.obj]: FORMAT.OBJ+\nObject Modules [.obj]: UI.OBJ+\nObject Modules [.obj]: RACEUI.OBJ+\nObject Modules [.obj]: RACEDRAW.OBJ+\nObject Modules [.obj]: RACEWIZ.OBJ+\nObject Modules [.obj]: MEMORY.OBJ+\nObject Modules [.obj]: COMMON.OBJ+\nObject Modules [.obj]: STARTUP.OBJ+\nObject Modules [.obj]: RESOURCE.OBJ+\nObject Modules [.obj]: TITLE.OBJ+\nObject Modules [.obj]: CONFIG.OBJ+\nObject Modules [.obj]: NATIVE.OBJ+\nObject Modules [.obj]: APP.OBJ\nRun File [UTILGEN.exe]: START.EXE\nList File [c:START.map]: START.MAP\nLibraries [.lib]: LLIBCEW LIBW COMMDLG TOOLHELP\nDefinitions File [nul.def]: START.DEF;\n",
+    "RC.LOG": "Microsoft (R) Windows Resource Compiler Version 3.11\nCopyright (C) Microsoft Corp. 1985-1992. All rights reserved.\n\n"
+  },
+  "environment": {
+    "emulator": "DOSBox-X 2026.08.31",
+    "windows": "Windows for Workgroups 3.11",
+    "machine": "svga_et4000",
+    "observed_cycles": 53430,
+    "acceptance_display": "VGA.DRV / 640x480 / 16 colors",
+    "comparison_display": "SVGA256.DRV / Tseng ET4000 / 800x600 / 256 colors",
+    "previous_system_ini_restored": true
+  },
+  "check_log": "STARTUP_MILESTONE=2\nBUILD_ID=START2A\nSTATIC_DATA=PASS\nCONFIGURATION=PASS\nHABITABILITY_BRUSHES=PASS\nRACE_RESOURCES=PASS\nDRAWING=STARFIELD\nMEMORY_ALLOC_FREE=PASS\nTITLE_CREATE=PASS\nFIRST_PAINT=PASS\nACCEPTANCE=RUNNING\nDIALOG_OPEN=PASS\nDIALOG_PAINT_MS=439\nDIALOG_OPEN=PASS\nDIALOG_PAINT_MS=439\nDIALOG_OPEN=PASS\nDIALOG_PAINT_MS=384\nDIALOG_OPEN=PASS\nDIALOG_PAINT_MS=439\nHABITABILITY_SAMPLE row=0 x=249 y=52 want=7f0000 near=800000 got=800000\nHABITABILITY_SAMPLE row=1 x=249 y=115 want=7f near=80 got=80\nHABITABILITY_SAMPLE row=2 x=249 y=178 want=7f00 near=8000 got=8000\nHABITABILITY_COLORS=PASS\nDIALOG_OPEN=PASS\nDIALOG_PAINT_MS=439\nDIALOG_PAINT_MS=385\nDIALOG_OPEN=PASS\nDIALOG_PAINT_MS=439\nWIZARD_CHECK=PASS\nROUNDTRIP=PASS\nDIALOG_OPEN=PASS\nDIALOG_PAINT_MS=439\nCANCEL_CHECK=PASS\nACCEPTANCE=PASS\nTITLE_RELEASE=PASS\nCLEANUP=PASS\nRESOURCE_READS=4\nRESOURCE_BYTES=46272\nPAINTS=1\nEXIT=PASS\n",
+  "interactive_validation_log": "STARTUP_MILESTONE=2\nBUILD_ID=START2A\nSTATIC_DATA=PASS\nCONFIGURATION=PASS\nHABITABILITY_BRUSHES=PASS\nRACE_RESOURCES=PASS\nDRAWING=STARFIELD\nMEMORY_ALLOC_FREE=PASS\nTITLE_CREATE=PASS\nFIRST_PAINT=PASS\nDIALOG_OPEN=PASS\nDIALOG_PAINT_MS=440\nDIALOG_OPEN=PASS\nDIALOG_PAINT_MS=385\nDIALOG_OPEN=PASS\nDIALOG_PAINT_MS=439\nDIALOG_OPEN=PASS\nDIALOG_PAINT_MS=439\nRACE_CANCEL=PASS\nTITLE_RELEASE=PASS\nCLEANUP=PASS\nRESOURCE_READS=4\nRESOURCE_BYTES=46272\nPAINTS=1\nEXIT=PASS\n",
+  "visual_observation": "Final reconstructed page 4 showed blue gravity, red temperature and green radiation fills inside their black range tracks under standard VGA.",
+  "display_comparison": {
+    "same_final_executable": true,
+    "svga_bitmap_log": "STARTUP_MILESTONE=2\nBUILD_ID=START2A\nSTATIC_DATA=PASS\nCONFIGURATION=PASS\nHABITABILITY_BRUSHES=PASS\nRACE_RESOURCES=PASS\nDRAWING=BITMAP\nMEMORY_ALLOC_FREE=PASS\nTITLE_CREATE=PASS\nFIRST_PAINT=PASS\nACCEPTANCE=RUNNING\nDIALOG_OPEN=PASS\nDIALOG_PAINT_MS=605\nDIALOG_OPEN=PASS\nDIALOG_PAINT_MS=440\nDIALOG_OPEN=PASS\nDIALOG_PAINT_MS=385\nDIALOG_OPEN=PASS\nDIALOG_PAINT_MS=440\nHABITABILITY_SAMPLE row=0 x=249 y=52 want=7f0000 near=800000 got=0\nHABITABILITY_SAMPLE row=1 x=249 y=115 want=7f near=80 got=0\nHABITABILITY_SAMPLE row=2 x=249 y=178 want=7f00 near=8000 got=0\nHABITABILITY_COLORS=FAIL\nDIALOG_OPEN=PASS\nDIALOG_PAINT_MS=440\nDIALOG_PAINT_MS=439\nDIALOG_OPEN=PASS\nDIALOG_PAINT_MS=439\nWIZARD_CHECK=FAIL\nTITLE_RELEASE=PASS\nCLEANUP=PASS\nRESOURCE_READS=21\nRESOURCE_BYTES=527360\nPAINTS=1\nEXIT=FAIL\n",
+    "svga_starfield_log": "STARTUP_MILESTONE=2\nBUILD_ID=START2A\nSTATIC_DATA=PASS\nCONFIGURATION=PASS\nHABITABILITY_BRUSHES=PASS\nRACE_RESOURCES=PASS\nDRAWING=STARFIELD\nMEMORY_ALLOC_FREE=PASS\nTITLE_CREATE=PASS\nFIRST_PAINT=PASS\nACCEPTANCE=RUNNING\nDIALOG_OPEN=PASS\nDIALOG_PAINT_MS=495\nDIALOG_OPEN=PASS\nDIALOG_PAINT_MS=440\nDIALOG_OPEN=PASS\nDIALOG_PAINT_MS=440\nDIALOG_OPEN=PASS\nDIALOG_PAINT_MS=440\nHABITABILITY_SAMPLE row=0 x=249 y=52 want=7f0000 near=800000 got=0\nHABITABILITY_SAMPLE row=1 x=249 y=115 want=7f near=80 got=0\nHABITABILITY_SAMPLE row=2 x=249 y=178 want=7f00 near=8000 got=0\nHABITABILITY_COLORS=FAIL\nDIALOG_OPEN=PASS\nDIALOG_PAINT_MS=385\nDIALOG_PAINT_MS=439\nDIALOG_OPEN=PASS\nDIALOG_PAINT_MS=439\nWIZARD_CHECK=FAIL\nTITLE_RELEASE=PASS\nCLEANUP=PASS\nRESOURCE_READS=4\nRESOURCE_BYTES=46272\nPAINTS=1\nEXIT=FAIL\n",
+    "original_game_observation": "Original Stars! opened synthetic ORIGIN.R1; page 4 showed the same black ranges and misplaced color fills below the dialog in the SVGA session.",
+    "restart_control": "Restarting Windows without changing the driver did not eliminate the misplaced fills.",
+    "latch_control": "Inconclusive: the driver rewrote attempted LatchCapable=No back to Yes at startup.",
+    "inference": "The SVGA display path is implicated in the misplaced-fill symptom; the precise driver/emulator cause is not isolated. The earlier USER.EXE fault remains unexplained (U023)."
+  },
+  "host_validation": {
+    "command": "python3 -m unittest tests.test_startup_machine tests.test_startup_package",
+    "tests": 13,
+    "result": "PASS",
+    "new_original_instruction_test": "Fresh, shared and failed brush allocation, all DGROUP bytes and OS events, followed by cached reference release"
+  },
+  "regression": {
+    "status": "Reused unchanged START2 native baseline after exact payload comparison; not rerun for this startup-only fix",
+    "previous_evidence": "analysis/compat/startup2-native.json",
+    "executable_sha256": "d77bccfa506a9aded4c4f01b1fa7962b8245fec144570cc0f365b9c5266b2a4b",
+    "cases": 88,
+    "sessions": 89,
+    "checks": 816,
+    "failures": 0,
+    "matching_race_files": 61,
+    "matching_player_snapshots": 89
+  },
+  "validation_limits": [
+    "Windows 98 SE / 86Box START2A acceptance awaits the user.",
+    "Native pixel acceptance passed with standard VGA; SVGA256 fails in this DOSBox configuration, including the original game.",
+    "All prior incomplete application, original ABI/linker-layout and guest-fault limitations still apply."
+  ]
+}

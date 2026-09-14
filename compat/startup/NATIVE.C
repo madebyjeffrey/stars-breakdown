@@ -41,6 +41,38 @@ static StarsU32 native_timer(void *ctx)
 static void native_abort(void *ctx,StarsU16 token,StarsI16 value)
 { (void)ctx;(void)token;(void)value;log_line("RECOVERY=FAIL");FatalAppExit(0,"Unhandled race file error"); }
 
+/* Check rendered pixels, not merely that WM_PAINT was delivered. The three
+ * range interiors must contain their original blue/red/green brush colors.
+ * Accept the device's nearest solid color and sample a small area for palette
+ * dithering; gray/black empty bars cannot satisfy this check. */
+static int habitability_colors(HWND h)
+{
+    static const COLORREF colors[3]={0x7f0000UL,0x7fUL,0x7f00UL};
+    HDC dc=GetDC(h);
+    int row,dx,dy,x,y,left,top,width,height,low,high,found,ok=1;
+    StarsU16 at,rects=stars_word(runtime.data,0x48ac);
+    COLORREF nearest,pixel;
+    char diagnostic[120];
+    if(!dc) {log_line("HABITABILITY_COLORS=FAIL");return 0;}
+    for(row=0;row<3;++row) {
+        at=(StarsU16)(rects+(row*5+1)*8);
+        left=(short)stars_word(runtime.data,at);top=(short)stars_word(runtime.data,at+2);
+        width=(short)stars_word(runtime.data,at+4)-left-2;
+        height=(short)stars_word(runtime.data,at+6)-top-2;
+        low=runtime.data[0x4fad+row];high=runtime.data[0x4fb0+row];
+        x=left+1+MulDiv((low+high)/2,width,100);y=top+1+height/2;
+        nearest=GetNearestColor(dc,colors[row]);found=0;
+        sprintf(diagnostic,"HABITABILITY_SAMPLE row=%d x=%d y=%d want=%lx near=%lx got=%lx",row,x,y,colors[row],nearest,GetPixel(dc,x,y));log_line(diagnostic);
+        for(dy=-1;dy<=1;++dy) for(dx=-1;dx<=1;++dx) {
+            pixel=GetPixel(dc,x+dx,y+dy);
+            if(pixel==colors[row] || (nearest!=0xffffffffUL && pixel==nearest)) found=1;
+        }
+        if(!found) ok=0;
+    }
+    ReleaseDC(h,dc);log_line(ok ? "HABITABILITY_COLORS=PASS":"HABITABILITY_COLORS=FAIL");
+    return ok;
+}
+
 /* Each modal invocation retains its own callback, including password dialogs
  * nested during wizard completion. MakeProcInstance supplies Win16 DS. */
 BOOL CALLBACK RaceProc(HWND h,UINT m,WPARAM w,LPARAM l)
@@ -58,6 +90,7 @@ BOOL CALLBACK RaceProc(HWND h,UINT m,WPARAM w,LPARAM l)
     if (check_mode && m==WM_TIMER && w==7) {
         KillTimer(h,7);
         if (!check_paints) check_fail=1;
+        if(check_mode==1 && check_page==4 && !habitability_colors(h)) check_fail=1;
         if (check_mode==2) { PostMessage(h,WM_COMMAND,2,0);return TRUE; }
         if (check_page==1) {
             SetDlgItemText(h,0x10c,"Start Test");
@@ -173,6 +206,11 @@ int race_resources(void)
     static const StarsU16 ids[3]={0x85,0x50,0x4f};
     static const StarsU16 offsets[3]={0x5476,0x2606,0x2604};
     int i;StarsU16 h;
+    stars_create_planet_brushes(&runtime);
+    for(i=0;i<6;++i) if(!stars_word(runtime.data,(StarsU16)(0x5680+i*2))) {
+        log_line("HABITABILITY_BRUSHES=FAIL");return 0;
+    }
+    log_line("HABITABILITY_BRUSHES=PASS");
     for(i=0;i<3;++i) {
         h=stars_load_big_resource(&runtime,ids[i]);
         stars_put_word(runtime.data,offsets[i],h);

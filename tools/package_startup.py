@@ -76,7 +76,7 @@ def payload():
         '\n'.join(name_for(n) for n in SOURCES + FOUNDATION_SOURCES) + '\nNATIVE.C\nAPP.C\n')
     files['START.LNK'] = dos_text('/NOLOGO /NOD /MAP /CO /ALIGN:64 ' + '+\n'.join(objects) +
                                 '\nSTART.EXE\nSTART.MAP\nLLIBCEW LIBW COMMDLG TOOLHELP\nSTART.DEF;\n')
-    manifest = {'revision':2, 'original_sha256':ORIGINAL, 'sources':sources,
+    manifest = {'revision':3, 'package':'START2A', 'original_sha256':ORIGINAL, 'sources':sources,
                 'resources':[dict(type=r['type'],id=r['id'],bytes=r['bytes'],flags=r['flags'],sha256=r['sha256']) for r in ne.resources],
                 'files':{n:dict(bytes=len(b),sha256=sha(b)) for n,b in files.items()}}
     files['MANIFEST.TXT'] = dos_text(json.dumps(manifest,indent=2,ensure_ascii=True)+'\n')
@@ -103,7 +103,7 @@ def export(output, development=False, native_build=None, race_build=None):
         manifest=json.loads(files['MANIFEST.TXT'])
         manifest['native_build']={name:dict(bytes=len(files[name]),sha256=sha(files[name])) for name in
                                   ['START.EXE','START.MAP','BLDSTAT.TXT','BUILD.LOG','LINK.LOG','RC.LOG']}
-        accept=ROOT/'analysis/compat/startup2-native.json'
+        accept=ROOT/'analysis/compat/startup2a-native.json'
         if accept.exists():
             report=json.loads(accept.read_text())
             if report['executable_sha256']!=sha(files['START.EXE']):
@@ -162,7 +162,7 @@ def export(output, development=False, native_build=None, race_build=None):
 
 def main():
     p=argparse.ArgumentParser(description=__doc__)
-    p.add_argument('--output',type=Path,default=ROOT/'ftp-share/START2')
+    p.add_argument('--output',type=Path,default=ROOT/'ftp-share/START2A')
     p.add_argument('--development',action='store_true')
     p.add_argument('--verify-exe',type=Path)
     p.add_argument('--race-build',type=Path,help='Include a matching completed native race regression build')

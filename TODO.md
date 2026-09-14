@@ -239,6 +239,11 @@ provisional; module names identify study areas rather than architectural boundar
     font settings paths and a new native settings dialog are integrated. This
     scoped component does not complete ReadIniSettings or WriteIniSettings.
     See [START2](analysis/reconstruction/start2.md).
+  - [x] **START2A habitability color correction:** recover and connect the six
+    original planet-attribute brushes; compare the startup slice against x86
+    and require rendered blue/red/green range pixels in native acceptance.
+    Standard VGA acceptance passed; the existing SVGA setup also misdraws the
+    original game's bars. See [evidence](analysis/compat/startup2a-native.json).
   - [x] **Starting-screen source milestone:** recover large-resource loading,
     palette construction, saved-window parsing and the fallback starfield;
     connect recovered title creation, painting and palette handling to a new
@@ -258,8 +263,10 @@ provisional; module names identify study areas rather than architectural boundar
     see the [acceptance record](analysis/compat/startup1-acceptance.json).
   - [ ] **Intermittent guest graphics/fault investigation:** the first session's
     PROGMAN/USER.EXE fault did not recur during fresh acceptance or an original
-    title-screen comparison. Cause remains open (U023); neither the Windows
-    edition nor a specific driver has been established as responsible.
+    title-screen comparison. Page-4 colored fills now misdraw in both original
+    and reconstruction under SVGA256; the same rebuilt EXE passes with standard
+    VGA. The display path is implicated in that symptom, while its mechanism
+    and the earlier fault remain open (U023).
   - [x] **CRT data member identification and bounded audit:** identify all seven
     records without code; six mappings are complete. Across all CRT records,
     compare 2,199 initialized literals and 98 of 99 data fixups. Preserve the

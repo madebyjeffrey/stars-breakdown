@@ -48,6 +48,7 @@ class StartupMachineTests(unittest.TestCase):
                 ('brush_get', C.c_uint16, [C.POINTER(Runtime), C.c_uint32]),
                 ('brush_free', None, [C.POINTER(Runtime), C.c_uint16]),
                 ('system_colors', C.c_int16, [C.POINTER(Runtime)]),
+                ('create_planet_brushes', None, [C.POINTER(Runtime)]),
                 ('create_fonts', C.c_int16, [C.POINTER(Runtime), C.c_uint16]),
                 ('init_tiles', None, [PTR]),
                 ('free_stuff', None, [C.POINTER(Memory)])]:
@@ -108,6 +109,38 @@ class StartupMachineTests(unittest.TestCase):
         self.assertEqual(self.call('brush_get', 0xabcdef), 0)
         self.call('brush_free', 0)
         self.call('brush_free', 0xffff)
+
+    def test_planet_color_startup_slice_and_cached_ownership(self):
+        from unicorn import UC_HOOK_CODE
+        from tools.startup_machine import reg
+        colors=[0x7f0000,0xff0000,0x7f,0xff,0x7f00,0xff00]
+        for case in ['fresh','shared','failed_allocation']:
+            self.setUp()
+            if case=='shared':
+                self.call('brush_get',colors[0]);self.call('brush_get',colors[4])
+            if self.host is None:self.start()
+            if case=='failed_allocation':
+                self.host.world.fail_brush=self.machine.world.fail_brush=True
+            self.host.world.events.clear();self.machine.world.events.clear()
+            self.lib.stars_create_planet_brushes(C.byref(self.host.runtime))
+            # This self-contained original slice balances its own stack. Exit
+            # through an existing RETF after its sixth store, before unrelated
+            # FCreateStuff work. No game call is replaced with a stub.
+            def stop(cpu,address,size,user):
+                if address==0x702af:cpu.reg_write(reg.UC_X86_REG_IP,0xab1)
+            hook=self.machine.cpu.hook_add(UC_HOOK_CODE,stop)
+            self.machine.call(0x23d,b'',segment=1,shared_stack=True)
+            self.machine.cpu.hook_del(hook)
+            self.assertEqual(self.host.errors,[])
+            self.assertEqual(self.host.world.events,self.machine.world.events)
+            self.assertEqual(bytes(self.host.data[:0xe000]),self.machine.get(0,0xe000))
+            if case=='fresh':
+                self.assertEqual([e[4] for e in self.host.world.events if e[0]=='CreateSolidBrush'],colors)
+            # FreeStuff already releases these same six references. Check
+            # sharing and failure behavior against the original FreeHbr here.
+            handles=struct.unpack('<6H',bytes(self.host.data[0x5680:0x568c]))
+            self.assertEqual(all(handles),case!='failed_allocation')
+            for h in handles:self.call('brush_free',h)
 
     def test_brush_reference_count_wrap(self):
         first = self.call('brush_get', 0x76543210)

@@ -86,3 +86,44 @@ It also requires a matching completed regression build. Each original resource i
 compared by type, identifier, flags, size and SHA-256. Text is ASCII with CRLF.
 The user can run START.EXE immediately; rebuilding is optional. Windows 98 / 86Box
 acceptance is pending the user's returned package.
+
+## START2A: habitability colors
+
+The user found that page 4's blue/red/green ranges were missing in START2.
+The bootstrap loaded the race bitmaps and palette but omitted the six
+`rghbrPlanetAttr[3][2]` brushes at DGROUP 5680h-568Bh. DrawRace2 therefore
+selected empty handles. The original range geometry and race state were present.
+
+START2A adds the bounded FCreateStuff slice at NE 1:023d-02af (end exclusive).
+It obtains the original dark/bright blue, red and green pairs through HbrGet;
+FreeStuff already releases these six references. Tests compare the original
+instructions' complete data state and OS calls for fresh, shared and failed
+allocations, then compare reference release. This partial slice does not count
+as a completed FCreateStuff or change the 130-procedure / 55,942-byte total.
+
+The previous automatic acceptance checked dialog painting and race bytes but
+did not inspect rendered colors, so it missed the omission. START2A samples
+each range interior on page 4 and requires its original color or the device's
+nearest color, allowing a small neighborhood for palette dithering. A failure
+is included in the acceptance result. The log records all three sampled colors.
+
+The final VC++ 1.52c build passed all six pages, color sampling, 192-byte
+save/reload, cancellation and cleanup with WfW 3.11's standard VGA driver.
+Manual inspection also showed the three filled ranges. The same final executable
+failed the color check after restoring the existing ET4000 / SVGA256 display
+setup: black ranges remained, with colored fills appearing below the dialog.
+The original Stars! wizard showed the same misplaced fills in that SVGA session.
+A Windows restart alone did not remove the issue. An attempted LatchCapable=No
+test was inconclusive because the driver rewrote it to Yes during startup.
+SVGA also failed with `/FALLBACK /CHECK`, excluding title-bitmap loading as a
+necessary trigger for the misplaced fills.
+These observations implicate the SVGA display path in this symptom, but do not
+isolate its driver/emulator mechanism or explain the older USER.EXE fault (U023).
+The previous display configuration was restored after the VGA test.
+
+See [START2A native evidence](../compat/startup2a-native.json) and
+[delivery audit](../compat/startup2a-delivery.json). The new `ftp-share/START2A`
+folder and ZIP contain the tested executable, sources and updated checks.
+START1 and START2 remain frozen. The separate regression runner and its 816-pass
+baseline are reused only after verifying every regression input is unchanged;
+that runner was not rebuilt or rerun for this startup-only correction.

@@ -1,4 +1,4 @@
-START2 MANUAL ACCEPTANCE - USE SYNTHETIC TEST RACES
+START2A MANUAL ACCEPTANCE - USE SYNTHETIC TEST RACES
 
 [ ] Run START.EXE. Check the artwork, version text and Race Workshop button.
 [ ] Open Race Workshop with the button, or F6 / Alt+W.
@@ -7,6 +7,9 @@ START2 MANUAL ACCEPTANCE - USE SYNTHETIC TEST RACES
 [ ] Visit all six pages. Try primary/lesser traits, the habitability controls,
     growth, factories/mines and research choices. Try Next and Back.
     Some custom settings legitimately leave negative points and cannot save.
+[ ] On page 4, Gravity has a blue range, Temperature red, Radiation green.
+    Move/widen a range and check that its colored fill follows the controls.
+    Immunity intentionally removes that range's colored fill.
 [ ] Select a predefined race for a valid baseline, rename it to Pioneer /
     Pioneers, Finish, and save as a NEW PIONEER.R1 in the package directory.
 [ ] Race > Open Race: open PIONEER.R1. Confirm names, traits and points.
@@ -17,7 +20,7 @@ START2 MANUAL ACCEPTANCE - USE SYNTHETIC TEST RACES
 [ ] Open your new PIONEER.R1 with the original Stars!: launch the original
     with the race file as its command-line argument, or use its file picker.
     Confirm the same race. Save a separate copy as ORIGIN.R1, then open that
-    copy in START2. Report any differences.
+    copy in START2A. Report any differences.
 [ ] Help > Settings: change a font or a startup preference, Save, exit and
     restart. Confirm it persisted. Restore your preferred setting afterward.
 [ ] Try resizing/moving the workshop, switch to the starting screen and back,

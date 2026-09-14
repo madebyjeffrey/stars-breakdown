@@ -1,8 +1,8 @@
-START2 BUNDLED RACE COMPILER/OUTPUT REGRESSION
+START2A BUNDLED RACE COMPILER/OUTPUT REGRESSION
 
 Run RACEVC.EXE while Windows is running. The executable is prebuilt with
 VC++ 1.52c using the same reconstructed race sources and faster exact integer
-arithmetic as START2. The frozen original-executable test expectations and
+arithmetic as START2A. The frozen original-executable test expectations and
 revision-3 test runner are unchanged.
 
 The developer's native run passed all 88 scenarios / 89 sessions, 816 checks,
@@ -29,7 +29,7 @@ outcomes. START.EXE separately exercises the real Windows wizard and drawing.
 The tests generate their output; they do not copy EXPECT into ACTUAL.
 
 Keep RESULTS.TXT, TRACE.TXT, ACTUAL and your build logs when returning the
-whole START2 folder. Use a fresh copy for a repeated regression run; this
+whole START2A folder. Use a fresh copy for a repeated regression run; this
 runner deliberately refuses to overwrite earlier results.
 
 Optional rebuild, from this REGRESS directory in a DOS prompt:

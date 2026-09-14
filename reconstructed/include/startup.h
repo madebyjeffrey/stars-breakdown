@@ -3,6 +3,7 @@
 #include "memory.h"
 StarsU16 stars_brush_get(StarsRuntime *, StarsU32);
 void stars_brush_free(StarsRuntime *, StarsU16);
+void stars_create_planet_brushes(StarsRuntime *);
 StarsI16 stars_system_colors(StarsRuntime *);
 StarsI16 stars_create_fonts(StarsRuntime *, StarsU16);
 void stars_init_tiles(StarsU8 *);

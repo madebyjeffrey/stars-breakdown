@@ -44,6 +44,20 @@ void stars_brush_free(StarsRuntime *r, StarsU16 brush)
     stars_window(r, "DeleteObject", brush, 0, 0, 0, 0, 0);
 }
 
+/* FCreateStuff slice, NE 1:023d-02af (exclusive): rghbrPlanetAttr[3][2].
+ * COLORREF uses low-byte red. Each environment has a dark/bright pair.
+ * This is startup-only; FreeStuff releases all six cached references. */
+void stars_create_planet_brushes(StarsRuntime *r)
+{
+    static const StarsU32 colors[6] = {
+        0x7f0000UL, 0xff0000UL, 0x00007fUL, 0x0000ffUL,
+        0x007f00UL, 0x00ff00UL};
+    StarsU16 i;
+    for (i = 0; i < 6; ++i)
+        stars_put_word(r->data, (StarsU16)(0x5680U + i * 2U),
+            stars_brush_get(r, colors[i]));
+}
+
 /* NE 4:08d2-0bad, FGetSystemColors. Returns success even if brush creation
  * fails. The two DIB palette edits store COLORREF's RGB bytes in BGR order. */
 StarsI16 stars_system_colors(StarsRuntime *r)
