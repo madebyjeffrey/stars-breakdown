@@ -11,6 +11,11 @@ No complete application implementation exists yet. The core API in `include/core
 uses explicit state and memory instead of the original far-call ABI. Header
 compilation alone is not counted as compiled function reconstruction.
 
+The [VC++ 1.52c compatibility fixture](../compat/vc152/README.md) packages eleven
+utility routines and a separate native recovered-header check for the user's
+Win98 SE / 86Box VM. Its host checks pass; the Win16 compiler/build/run results
+are pending. Guest build instructions accompany the files in `ftp-share/VC152/`.
+
 Try the reconstructed race generator without Windows:
 
 ```sh

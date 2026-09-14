@@ -1,0 +1,2 @@
+/c /AM /GA /GEs /Zp1 /Od /Zi /W3
+PROBE.C ABI.C VECTEST.C UTILGEN.C

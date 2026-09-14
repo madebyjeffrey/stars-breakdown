@@ -123,6 +123,12 @@ The immediate work is:
   representative recovered layouts and calling conventions, plus a small group
   of reconstructed routines. Record what the comparison establishes under U002.
   This is a step-5 integration check, not completion of the step-6 application.
+  **Package prepared 2026-09-14:** [VC1.52 fixture](compat/vc152/README.md),
+  exported to `ftp-share/VC152/` and `ftp-share/VC152.ZIP`. Eleven utility
+  routines have 113 retained original-x86 cases; the host probe passes 552
+  checks. The native probe expects 563 checks and separately compiles all
+  recovered headers. User VM build/run and returned-artifact comparison remain
+  pending; this checkbox stays open until that evidence is reviewed.
 - [ ] **Race-file save/load milestone:** reconstruct and integrate FSaveRace and
   FWasRaceFile with the existing creation, record, checksum and stream code.
   Close their message-formatting, logging and password dependencies, including

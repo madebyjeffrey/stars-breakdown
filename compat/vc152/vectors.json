@@ -1,0 +1,1498 @@
+{
+  "schema": 1,
+  "original_sha256": "ccab6682b55dae14dbf104e491cfbd3b32a6280022020032ae0615500949ba59",
+  "method": "OriginalCore executes relocated original x86 instructions; no host C expected values.",
+  "cases": [
+    {
+      "kind": "randomize",
+      "original": "NE 9:15EA",
+      "args": [
+        0
+      ],
+      "state": [
+        3,
+        5
+      ]
+    },
+    {
+      "kind": "randomize",
+      "original": "NE 9:15EA",
+      "args": [
+        1
+      ],
+      "state": [
+        5,
+        3
+      ]
+    },
+    {
+      "kind": "randomize",
+      "original": "NE 9:15EA",
+      "args": [
+        63
+      ],
+      "state": [
+        313,
+        3
+      ]
+    },
+    {
+      "kind": "randomize",
+      "original": "NE 9:15EA",
+      "args": [
+        64
+      ],
+      "state": [
+        3,
+        5
+      ]
+    },
+    {
+      "kind": "randomize",
+      "original": "NE 9:15EA",
+      "args": [
+        65
+      ],
+      "state": [
+        5,
+        7
+      ]
+    },
+    {
+      "kind": "randomize",
+      "original": "NE 9:15EA",
+      "args": [
+        127
+      ],
+      "state": [
+        313,
+        5
+      ]
+    },
+    {
+      "kind": "randomize",
+      "original": "NE 9:15EA",
+      "args": [
+        128
+      ],
+      "state": [
+        3,
+        7
+      ]
+    },
+    {
+      "kind": "randomize",
+      "original": "NE 9:15EA",
+      "args": [
+        4095
+      ],
+      "state": [
+        313,
+        3
+      ]
+    },
+    {
+      "kind": "randomize",
+      "original": "NE 9:15EA",
+      "args": [
+        11829
+      ],
+      "state": [
+        257,
+        271
+      ]
+    },
+    {
+      "kind": "randomize",
+      "original": "NE 9:15EA",
+      "args": [
+        16383
+      ],
+      "state": [
+        313,
+        3
+      ]
+    },
+    {
+      "kind": "randomize",
+      "original": "NE 9:15EA",
+      "args": [
+        4294967295
+      ],
+      "state": [
+        313,
+        3
+      ]
+    },
+    {
+      "kind": "randomize2",
+      "original": "NE 9:165A",
+      "args": [
+        0
+      ],
+      "state": [
+        257,
+        491
+      ]
+    },
+    {
+      "kind": "randomize2",
+      "original": "NE 9:165A",
+      "args": [
+        1
+      ],
+      "state": [
+        251,
+        491
+      ]
+    },
+    {
+      "kind": "randomize2",
+      "original": "NE 9:165A",
+      "args": [
+        63
+      ],
+      "state": [
+        37,
+        491
+      ]
+    },
+    {
+      "kind": "randomize2",
+      "original": "NE 9:165A",
+      "args": [
+        64
+      ],
+      "state": [
+        653,
+        491
+      ]
+    },
+    {
+      "kind": "randomize2",
+      "original": "NE 9:165A",
+      "args": [
+        65
+      ],
+      "state": [
+        647,
+        491
+      ]
+    },
+    {
+      "kind": "randomize2",
+      "original": "NE 9:165A",
+      "args": [
+        127
+      ],
+      "state": [
+        383,
+        491
+      ]
+    },
+    {
+      "kind": "randomize2",
+      "original": "NE 9:165A",
+      "args": [
+        128
+      ],
+      "state": [
+        257,
+        499
+      ]
+    },
+    {
+      "kind": "randomize2",
+      "original": "NE 9:165A",
+      "args": [
+        4095
+      ],
+      "state": [
+        383,
+        347
+      ]
+    },
+    {
+      "kind": "randomize2",
+      "original": "NE 9:165A",
+      "args": [
+        11829
+      ],
+      "state": [
+        3,
+        5
+      ]
+    },
+    {
+      "kind": "randomize2",
+      "original": "NE 9:165A",
+      "args": [
+        16383
+      ],
+      "state": [
+        383,
+        157
+      ]
+    },
+    {
+      "kind": "randomize2",
+      "original": "NE 9:165A",
+      "args": [
+        4294967295
+      ],
+      "state": [
+        383,
+        157
+      ]
+    },
+    {
+      "kind": "random",
+      "original": "NE 9:16D2",
+      "args": [
+        0,
+        0,
+        -32768
+      ],
+      "result": 0,
+      "state": [
+        0,
+        0
+      ]
+    },
+    {
+      "kind": "random",
+      "original": "NE 9:16D2",
+      "args": [
+        0,
+        0,
+        -1
+      ],
+      "result": 0,
+      "state": [
+        0,
+        0
+      ]
+    },
+    {
+      "kind": "random",
+      "original": "NE 9:16D2",
+      "args": [
+        0,
+        0,
+        0
+      ],
+      "result": 0,
+      "state": [
+        0,
+        0
+      ]
+    },
+    {
+      "kind": "random",
+      "original": "NE 9:16D2",
+      "args": [
+        0,
+        0,
+        17
+      ],
+      "result": 8,
+      "state": [
+        0,
+        0
+      ]
+    },
+    {
+      "kind": "random",
+      "original": "NE 9:16D2",
+      "args": [
+        0,
+        0,
+        32767
+      ],
+      "result": 32683,
+      "state": [
+        0,
+        0
+      ]
+    },
+    {
+      "kind": "next_file_xor",
+      "original": "NE 9:1B54",
+      "args": [
+        0,
+        0
+      ],
+      "result": 0,
+      "state": [
+        0,
+        0
+      ]
+    },
+    {
+      "kind": "random",
+      "original": "NE 9:16D2",
+      "args": [
+        1,
+        1,
+        -32768
+      ],
+      "result": 0,
+      "state": [
+        40014,
+        40692
+      ]
+    },
+    {
+      "kind": "random",
+      "original": "NE 9:16D2",
+      "args": [
+        1,
+        1,
+        -1
+      ],
+      "result": 0,
+      "state": [
+        40014,
+        40692
+      ]
+    },
+    {
+      "kind": "random",
+      "original": "NE 9:16D2",
+      "args": [
+        1,
+        1,
+        0
+      ],
+      "result": 0,
+      "state": [
+        40014,
+        40692
+      ]
+    },
+    {
+      "kind": "random",
+      "original": "NE 9:16D2",
+      "args": [
+        1,
+        1,
+        17
+      ],
+      "result": 10,
+      "state": [
+        40014,
+        40692
+      ]
+    },
+    {
+      "kind": "random",
+      "original": "NE 9:16D2",
+      "args": [
+        1,
+        1,
+        32767
+      ],
+      "result": 32005,
+      "state": [
+        40014,
+        40692
+      ]
+    },
+    {
+      "kind": "next_file_xor",
+      "original": "NE 9:1B54",
+      "args": [
+        1,
+        1
+      ],
+      "result": 4294966618,
+      "state": [
+        40014,
+        40692
+      ]
+    },
+    {
+      "kind": "random",
+      "original": "NE 9:16D2",
+      "args": [
+        17,
+        41,
+        -32768
+      ],
+      "result": 0,
+      "state": [
+        680238,
+        1668372
+      ]
+    },
+    {
+      "kind": "random",
+      "original": "NE 9:16D2",
+      "args": [
+        17,
+        41,
+        -1
+      ],
+      "result": 0,
+      "state": [
+        680238,
+        1668372
+      ]
+    },
+    {
+      "kind": "random",
+      "original": "NE 9:16D2",
+      "args": [
+        17,
+        41,
+        0
+      ],
+      "result": 0,
+      "state": [
+        680238,
+        1668372
+      ]
+    },
+    {
+      "kind": "random",
+      "original": "NE 9:16D2",
+      "args": [
+        17,
+        41,
+        17
+      ],
+      "result": 16,
+      "state": [
+        680238,
+        1668372
+      ]
+    },
+    {
+      "kind": "random",
+      "original": "NE 9:16D2",
+      "args": [
+        17,
+        41,
+        32767
+      ],
+      "result": 27559,
+      "state": [
+        680238,
+        1668372
+      ]
+    },
+    {
+      "kind": "next_file_xor",
+      "original": "NE 9:1B54",
+      "args": [
+        17,
+        41
+      ],
+      "result": 4293979162,
+      "state": [
+        680238,
+        1668372
+      ]
+    },
+    {
+      "kind": "random",
+      "original": "NE 9:16D2",
+      "args": [
+        53668,
+        52774,
+        -32768
+      ],
+      "result": 0,
+      "state": [
+        2147471352,
+        2147479608
+      ]
+    },
+    {
+      "kind": "random",
+      "original": "NE 9:16D2",
+      "args": [
+        53668,
+        52774,
+        -1
+      ],
+      "result": 0,
+      "state": [
+        2147471352,
+        2147479608
+      ]
+    },
+    {
+      "kind": "random",
+      "original": "NE 9:16D2",
+      "args": [
+        53668,
+        52774,
+        0
+      ],
+      "result": 0,
+      "state": [
+        2147471352,
+        2147479608
+      ]
+    },
+    {
+      "kind": "random",
+      "original": "NE 9:16D2",
+      "args": [
+        53668,
+        52774,
+        17
+      ],
+      "result": 14,
+      "state": [
+        2147471352,
+        2147479608
+      ]
+    },
+    {
+      "kind": "random",
+      "original": "NE 9:16D2",
+      "args": [
+        53668,
+        52774,
+        32767
+      ],
+      "result": 24427,
+      "state": [
+        2147471352,
+        2147479608
+      ]
+    },
+    {
+      "kind": "next_file_xor",
+      "original": "NE 9:1B54",
+      "args": [
+        53668,
+        52774
+      ],
+      "result": 4294959040,
+      "state": [
+        2147471352,
+        2147479608
+      ]
+    },
+    {
+      "kind": "random",
+      "original": "NE 9:16D2",
+      "args": [
+        2147483562,
+        2147483398,
+        -32768
+      ],
+      "result": 0,
+      "state": [
+        2147443549,
+        2147442707
+      ]
+    },
+    {
+      "kind": "random",
+      "original": "NE 9:16D2",
+      "args": [
+        2147483562,
+        2147483398,
+        -1
+      ],
+      "result": 0,
+      "state": [
+        2147443549,
+        2147442707
+      ]
+    },
+    {
+      "kind": "random",
+      "original": "NE 9:16D2",
+      "args": [
+        2147483562,
+        2147483398,
+        0
+      ],
+      "result": 0,
+      "state": [
+        2147443549,
+        2147442707
+      ]
+    },
+    {
+      "kind": "random",
+      "original": "NE 9:16D2",
+      "args": [
+        2147483562,
+        2147483398,
+        17
+      ],
+      "result": 9,
+      "state": [
+        2147443549,
+        2147442707
+      ]
+    },
+    {
+      "kind": "random",
+      "original": "NE 9:16D2",
+      "args": [
+        2147483562,
+        2147483398,
+        32767
+      ],
+      "result": 842,
+      "state": [
+        2147443549,
+        2147442707
+      ]
+    },
+    {
+      "kind": "next_file_xor",
+      "original": "NE 9:1B54",
+      "args": [
+        2147483562,
+        2147483398
+      ],
+      "result": 842,
+      "state": [
+        2147443549,
+        2147442707
+      ]
+    },
+    {
+      "kind": "random",
+      "original": "NE 9:16D2",
+      "args": [
+        2147483647,
+        2147483647,
+        -32768
+      ],
+      "result": 0,
+      "state": [
+        3361176,
+        10091616
+      ]
+    },
+    {
+      "kind": "random",
+      "original": "NE 9:16D2",
+      "args": [
+        2147483647,
+        2147483647,
+        -1
+      ],
+      "result": 0,
+      "state": [
+        3361176,
+        10091616
+      ]
+    },
+    {
+      "kind": "random",
+      "original": "NE 9:16D2",
+      "args": [
+        2147483647,
+        2147483647,
+        0
+      ],
+      "result": 0,
+      "state": [
+        3361176,
+        10091616
+      ]
+    },
+    {
+      "kind": "random",
+      "original": "NE 9:16D2",
+      "args": [
+        2147483647,
+        2147483647,
+        17
+      ],
+      "result": 4,
+      "state": [
+        3361176,
+        10091616
+      ]
+    },
+    {
+      "kind": "random",
+      "original": "NE 9:16D2",
+      "args": [
+        2147483647,
+        2147483647,
+        32767
+      ],
+      "result": 19478,
+      "state": [
+        3361176,
+        10091616
+      ]
+    },
+    {
+      "kind": "next_file_xor",
+      "original": "NE 9:1B54",
+      "args": [
+        2147483647,
+        2147483647
+      ],
+      "result": 4288236856,
+      "state": [
+        3361176,
+        10091616
+      ]
+    },
+    {
+      "kind": "random",
+      "original": "NE 9:16D2",
+      "args": [
+        2147483648,
+        4294967295,
+        -32768
+      ],
+      "result": 0,
+      "state": [
+        2144082373,
+        2147442707
+      ]
+    },
+    {
+      "kind": "random",
+      "original": "NE 9:16D2",
+      "args": [
+        2147483648,
+        4294967295,
+        -1
+      ],
+      "result": 0,
+      "state": [
+        2144082373,
+        2147442707
+      ]
+    },
+    {
+      "kind": "random",
+      "original": "NE 9:16D2",
+      "args": [
+        2147483648,
+        4294967295,
+        0
+      ],
+      "result": 0,
+      "state": [
+        2144082373,
+        2147442707
+      ]
+    },
+    {
+      "kind": "random",
+      "original": "NE 9:16D2",
+      "args": [
+        2147483648,
+        4294967295,
+        17
+      ],
+      "result": 13,
+      "state": [
+        2144082373,
+        2147442707
+      ]
+    },
+    {
+      "kind": "random",
+      "original": "NE 9:16D2",
+      "args": [
+        2147483648,
+        4294967295,
+        32767
+      ],
+      "result": 14583,
+      "state": [
+        2144082373,
+        2147442707
+      ]
+    },
+    {
+      "kind": "next_file_xor",
+      "original": "NE 9:1B54",
+      "args": [
+        2147483648,
+        4294967295
+      ],
+      "result": 4291606962,
+      "state": [
+        2144082373,
+        2147442707
+      ]
+    },
+    {
+      "kind": "random",
+      "original": "NE 9:16D2",
+      "args": [
+        4294967295,
+        2147483648,
+        -32768
+      ],
+      "result": 0,
+      "state": [
+        2147443549,
+        2137351091
+      ]
+    },
+    {
+      "kind": "random",
+      "original": "NE 9:16D2",
+      "args": [
+        4294967295,
+        2147483648,
+        -1
+      ],
+      "result": 0,
+      "state": [
+        2147443549,
+        2137351091
+      ]
+    },
+    {
+      "kind": "random",
+      "original": "NE 9:16D2",
+      "args": [
+        4294967295,
+        2147483648,
+        0
+      ],
+      "result": 0,
+      "state": [
+        2147443549,
+        2137351091
+      ]
+    },
+    {
+      "kind": "random",
+      "original": "NE 9:16D2",
+      "args": [
+        4294967295,
+        2147483648,
+        17
+      ],
+      "result": 0,
+      "state": [
+        2147443549,
+        2137351091
+      ]
+    },
+    {
+      "kind": "random",
+      "original": "NE 9:16D2",
+      "args": [
+        4294967295,
+        2147483648,
+        32767
+      ],
+      "result": 222,
+      "state": [
+        2147443549,
+        2137351091
+      ]
+    },
+    {
+      "kind": "next_file_xor",
+      "original": "NE 9:1B54",
+      "args": [
+        4294967295,
+        2147483648
+      ],
+      "result": 10092458,
+      "state": [
+        2147443549,
+        2137351091
+      ]
+    },
+    {
+      "kind": "random",
+      "original": "NE 9:16D2",
+      "args": [
+        305419896,
+        2596069104,
+        -32768
+      ],
+      "result": 0,
+      "state": [
+        1890245074,
+        220351744
+      ]
+    },
+    {
+      "kind": "random",
+      "original": "NE 9:16D2",
+      "args": [
+        305419896,
+        2596069104,
+        -1
+      ],
+      "result": 0,
+      "state": [
+        1890245074,
+        220351744
+      ]
+    },
+    {
+      "kind": "random",
+      "original": "NE 9:16D2",
+      "args": [
+        305419896,
+        2596069104,
+        0
+      ],
+      "result": 0,
+      "state": [
+        1890245074,
+        220351744
+      ]
+    },
+    {
+      "kind": "random",
+      "original": "NE 9:16D2",
+      "args": [
+        305419896,
+        2596069104,
+        17
+      ],
+      "result": 7,
+      "state": [
+        1890245074,
+        220351744
+      ]
+    },
+    {
+      "kind": "random",
+      "original": "NE 9:16D2",
+      "args": [
+        305419896,
+        2596069104,
+        32767
+      ],
+      "result": 21476,
+      "state": [
+        1890245074,
+        220351744
+      ]
+    },
+    {
+      "kind": "next_file_xor",
+      "original": "NE 9:1B54",
+      "args": [
+        305419896,
+        2596069104
+      ],
+      "result": 1669893330,
+      "state": [
+        1890245074,
+        220351744
+      ]
+    },
+    {
+      "kind": "set_file_xor_stream",
+      "original": "NE 9:1AA6",
+      "args": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "state": [
+        120042,
+        5656188
+      ]
+    },
+    {
+      "kind": "set_file_xor_stream",
+      "original": "NE 9:1AA6",
+      "args": [
+        3,
+        1024,
+        3,
+        3,
+        0
+      ],
+      "state": [
+        1053797486,
+        1908387560
+      ]
+    },
+    {
+      "kind": "set_file_xor_stream",
+      "original": "NE 9:1AA6",
+      "args": [
+        3735928559,
+        2047,
+        -1,
+        -1,
+        0
+      ],
+      "state": [
+        2063949222,
+        1966190413
+      ]
+    },
+    {
+      "kind": "set_file_xor_stream",
+      "original": "NE 9:1AA6",
+      "args": [
+        4294967295,
+        -1,
+        -32768,
+        32767,
+        0
+      ],
+      "state": [
+        1538447396,
+        421912824
+      ]
+    },
+    {
+      "kind": "set_file_xor_stream",
+      "original": "NE 9:1AA6",
+      "args": [
+        3,
+        1024,
+        3,
+        3,
+        -32768
+      ],
+      "state": [
+        139,
+        3
+      ]
+    },
+    {
+      "kind": "set_file_xor_stream",
+      "original": "NE 9:1AA6",
+      "args": [
+        3,
+        1024,
+        3,
+        3,
+        -65
+      ],
+      "state": [
+        139,
+        3
+      ]
+    },
+    {
+      "kind": "set_file_xor_stream",
+      "original": "NE 9:1AA6",
+      "args": [
+        3,
+        1024,
+        3,
+        3,
+        -64
+      ],
+      "state": [
+        139,
+        3
+      ]
+    },
+    {
+      "kind": "set_file_xor_stream",
+      "original": "NE 9:1AA6",
+      "args": [
+        3,
+        1024,
+        3,
+        3,
+        -63
+      ],
+      "state": [
+        5561946,
+        122076
+      ]
+    },
+    {
+      "kind": "set_file_xor_stream",
+      "original": "NE 9:1AA6",
+      "args": [
+        3,
+        1024,
+        3,
+        3,
+        32767
+      ],
+      "state": [
+        139,
+        3
+      ]
+    },
+    {
+      "kind": "file_seeds",
+      "original": "NE 9:1A7C",
+      "args": [
+        0,
+        0
+      ],
+      "state": [
+        0,
+        0
+      ],
+      "outputs": [
+        0,
+        0
+      ],
+      "alias": 0,
+      "getter_original": "NE 9:1A4E"
+    },
+    {
+      "kind": "file_seeds",
+      "original": "NE 9:1A7C",
+      "args": [
+        4294967295,
+        2147483648
+      ],
+      "state": [
+        4294967295,
+        2147483648
+      ],
+      "outputs": [
+        4294967295,
+        2147483648
+      ],
+      "alias": 2147483648,
+      "getter_original": "NE 9:1A4E"
+    },
+    {
+      "kind": "file_seeds",
+      "original": "NE 9:1A7C",
+      "args": [
+        17,
+        41
+      ],
+      "state": [
+        17,
+        41
+      ],
+      "outputs": [
+        17,
+        41
+      ],
+      "alias": 41,
+      "getter_original": "NE 9:1A4E"
+    },
+    {
+      "kind": "distance_squared",
+      "original": "NE 9:685C",
+      "args": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "result": 0
+    },
+    {
+      "kind": "distance_squared",
+      "original": "NE 9:685C",
+      "args": [
+        0,
+        0,
+        3,
+        4
+      ],
+      "result": 25
+    },
+    {
+      "kind": "distance_squared",
+      "original": "NE 9:685C",
+      "args": [
+        -1,
+        -1,
+        1,
+        1
+      ],
+      "result": 8
+    },
+    {
+      "kind": "distance_squared",
+      "original": "NE 9:685C",
+      "args": [
+        -32768,
+        -32768,
+        0,
+        0
+      ],
+      "result": 2147483648
+    },
+    {
+      "kind": "distance_squared",
+      "original": "NE 9:685C",
+      "args": [
+        32767,
+        32767,
+        -32768,
+        -32768
+      ],
+      "result": 2
+    },
+    {
+      "kind": "distance_squared",
+      "original": "NE 9:685C",
+      "args": [
+        -32768,
+        32767,
+        32767,
+        -32768
+      ],
+      "result": 2
+    },
+    {
+      "kind": "distance_squared",
+      "original": "NE 9:685C",
+      "args": [
+        30000,
+        -30000,
+        -30000,
+        30000
+      ],
+      "result": 61294592
+    },
+    {
+      "kind": "distance_squared",
+      "original": "NE 9:685C",
+      "args": [
+        32767,
+        0,
+        -1,
+        -32768
+      ],
+      "result": 2147483648
+    },
+    {
+      "kind": "compare_long",
+      "original": "NE 9:1D74",
+      "args": [
+        0,
+        0
+      ],
+      "result": 0
+    },
+    {
+      "kind": "compare_long",
+      "original": "NE 9:1D74",
+      "args": [
+        0,
+        1
+      ],
+      "result": 65535
+    },
+    {
+      "kind": "compare_long",
+      "original": "NE 9:1D74",
+      "args": [
+        1,
+        0
+      ],
+      "result": 1
+    },
+    {
+      "kind": "compare_long",
+      "original": "NE 9:1D74",
+      "args": [
+        65536,
+        0
+      ],
+      "result": 0
+    },
+    {
+      "kind": "compare_long",
+      "original": "NE 9:1D74",
+      "args": [
+        32768,
+        0
+      ],
+      "result": 32768
+    },
+    {
+      "kind": "compare_long",
+      "original": "NE 9:1D74",
+      "args": [
+        32767,
+        0
+      ],
+      "result": 32767
+    },
+    {
+      "kind": "compare_long",
+      "original": "NE 9:1D74",
+      "args": [
+        4294967295,
+        0
+      ],
+      "result": 65535
+    },
+    {
+      "kind": "compare_long",
+      "original": "NE 9:1D74",
+      "args": [
+        2147483648,
+        2147483647
+      ],
+      "result": 1
+    },
+    {
+      "kind": "compare_long",
+      "original": "NE 9:1D74",
+      "args": [
+        2147483647,
+        2147483648
+      ],
+      "result": 65535
+    },
+    {
+      "kind": "expand_rect",
+      "original": "NE 9:2F0C",
+      "args": [
+        0,
+        32768,
+        65535,
+        32767,
+        0,
+        0
+      ],
+      "rect": [
+        0,
+        32768,
+        65535,
+        32767
+      ]
+    },
+    {
+      "kind": "expand_rect",
+      "original": "NE 9:2F0C",
+      "args": [
+        0,
+        32768,
+        65535,
+        32767,
+        1,
+        -1
+      ],
+      "rect": [
+        65535,
+        32769,
+        0,
+        32766
+      ]
+    },
+    {
+      "kind": "expand_rect",
+      "original": "NE 9:2F0C",
+      "args": [
+        0,
+        32768,
+        65535,
+        32767,
+        -32768,
+        32767
+      ],
+      "rect": [
+        32768,
+        1,
+        32767,
+        65534
+      ]
+    },
+    {
+      "kind": "expand_rect",
+      "original": "NE 9:2F0C",
+      "args": [
+        0,
+        32768,
+        65535,
+        32767,
+        32767,
+        -32768
+      ],
+      "rect": [
+        32769,
+        0,
+        32766,
+        65535
+      ]
+    },
+    {
+      "kind": "offset_rect",
+      "original": "NE 9:2F3E",
+      "args": [
+        0,
+        32768,
+        65535,
+        32767,
+        0,
+        0
+      ],
+      "rect": [
+        0,
+        32768,
+        65535,
+        32767
+      ]
+    },
+    {
+      "kind": "offset_rect",
+      "original": "NE 9:2F3E",
+      "args": [
+        0,
+        32768,
+        65535,
+        32767,
+        1,
+        -1
+      ],
+      "rect": [
+        1,
+        32767,
+        0,
+        32766
+      ]
+    },
+    {
+      "kind": "offset_rect",
+      "original": "NE 9:2F3E",
+      "args": [
+        0,
+        32768,
+        65535,
+        32767,
+        -32768,
+        32767
+      ],
+      "rect": [
+        32768,
+        65535,
+        32767,
+        65534
+      ]
+    },
+    {
+      "kind": "offset_rect",
+      "original": "NE 9:2F3E",
+      "args": [
+        0,
+        32768,
+        65535,
+        32767,
+        32767,
+        -32768
+      ],
+      "rect": [
+        32767,
+        0,
+        32766,
+        65535
+      ]
+    }
+  ]
+}

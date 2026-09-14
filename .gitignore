@@ -17,3 +17,5 @@ __pycache__/
 # Full disassembly, pseudocode, memory dumps and per-run logs are reproducible.
 /analysis/decompiler/export/
 /analysis/decompiler/export-*/
+# Transfer staging and user-returned VM artifacts; fixture sources are in compat/.
+/ftp-share/
