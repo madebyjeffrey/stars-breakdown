@@ -193,5 +193,57 @@
       "analysis/reconstruction/core.md",
       "tests/test_core_machine.py"
     ]
+  },
+  "0009:45a0-46e8": {
+    "reconstruction_path": "reconstructed/src/codec.c",
+    "review_status": "manually_reviewed",
+    "compilation_status": "host_c89_compiled",
+    "validation_status": "original_x86_differential_checked_with_documented_memory_limits; host_semantic_adapter; Win16_integration_pending",
+    "evidence": [
+      "analysis/functions.json",
+      "analysis/debug/procedures.json",
+      "analysis/decompiler/export-manifest.json",
+      "analysis/reconstruction/codec.md",
+      "tests/test_codec_machine.py"
+    ]
+  },
+  "0009:46e8-487f": {
+    "reconstruction_path": "reconstructed/src/codec.c",
+    "review_status": "manually_reviewed",
+    "compilation_status": "host_c89_compiled",
+    "validation_status": "original_x86_differential_checked_with_documented_memory_limits; host_semantic_adapter; Win16_integration_pending",
+    "evidence": [
+      "analysis/functions.json",
+      "analysis/debug/procedures.json",
+      "analysis/decompiler/export-manifest.json",
+      "analysis/reconstruction/codec.md",
+      "tests/test_codec_machine.py"
+    ]
+  },
+  "0009:4880-49e9": {
+    "reconstruction_path": "reconstructed/src/codec.c",
+    "review_status": "manually_reviewed",
+    "compilation_status": "host_c89_compiled",
+    "validation_status": "original_x86_differential_checked_with_documented_memory_limits; host_semantic_adapter; Win16_integration_pending",
+    "evidence": [
+      "analysis/functions.json",
+      "analysis/debug/procedures.json",
+      "analysis/decompiler/export-manifest.json",
+      "analysis/reconstruction/codec.md",
+      "tests/test_codec_machine.py"
+    ]
+  },
+  "0009:49ea-4a99": {
+    "reconstruction_path": "reconstructed/src/codec.c",
+    "review_status": "manually_reviewed",
+    "compilation_status": "host_c89_compiled",
+    "validation_status": "original_x86_differential_checked_with_documented_memory_limits; host_semantic_adapter; Win16_integration_pending",
+    "evidence": [
+      "analysis/functions.json",
+      "analysis/debug/procedures.json",
+      "analysis/decompiler/export-manifest.json",
+      "analysis/reconstruction/codec.md",
+      "tests/test_codec_machine.py"
+    ]
   }
 }

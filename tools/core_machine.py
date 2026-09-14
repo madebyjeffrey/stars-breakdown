@@ -60,15 +60,16 @@ class OriginalCore:
             self.put(offset, struct.pack('<II', *value))
         return struct.unpack('<II', self.get(offset, 8))
 
-    def call(self, offset, arguments=b'', segment=9):
+    def call(self, offset, arguments=b'', segment=9, shared_stack=False):
         cpu = self.cpu
         self.returned = False
         for name, value in dict(CS=self.SEGMENTS[segment], IP=offset,
-                                DS=0x3000, ES=0x3000, SS=0x5000,
+                                DS=0x3000, ES=0x3000, SS=0x3000 if shared_stack else 0x5000,
                                 SP=0xff00, BP=0, AX=0, BX=0, CX=0, DX=0,
                                 SI=0x1234, DI=0x5678, EFLAGS=2).items():
             cpu.reg_write(getattr(reg, 'UC_X86_REG_' + name), value)
-        cpu.mem_write(0x5ff00, struct.pack('<HH', 0, 0x6000) + arguments)
+        cpu.mem_write(0x3ff00 if shared_stack else 0x5ff00,
+                      struct.pack('<HH', 0, 0x6000) + arguments)
         cpu.emu_start(self.SEGMENTS[segment] * 16 + offset, self.STOP + 1,
                       count=20000000)
         if not self.returned:

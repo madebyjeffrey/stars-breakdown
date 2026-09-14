@@ -41,4 +41,11 @@ void stars_pop_random(StarsU8 *dgroup);
 /* Requires each original word access to remain inside the 64 KiB segment.
  * Retains unsigned end-pointer comparison, even for a negative count. */
 void stars_xor_file_buffer(StarsU8 *dgroup, StarsU16 buffer, StarsI16 count);
+/* Codec tables are read from original DGROUP; see codec.md for input limits. */
+StarsU16 stars_nybble_from_char(const StarsU8 *dgroup, StarsU8 ch);
+StarsU8 stars_char_from_nybble(const StarsU8 *dgroup, StarsI16 code);
+int stars_compress_user_string(const StarsU8 *dgroup, const StarsU8 *input,
+    StarsU8 *output, StarsI16 *capacity);
+int stars_decompress_user_string(const StarsU8 *dgroup, const StarsU8 *input,
+    StarsI16 length, StarsU8 *output, const StarsI16 *capacity);
 #endif
