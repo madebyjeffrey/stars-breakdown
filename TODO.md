@@ -179,14 +179,16 @@ The immediate work is:
   **816 checks, zero failures; all 89 states and 61 race files match.** The
   initial RETURN3 alias and signed-comparison issues are resolved. See the
   [returned-build and replay review](analysis/compat/racevc-return4.md).
-- [ ] **Runner progress window in the VM:** build fresh RACEVC3 and verify its
-  immediate progress display, message processing and completion in Win98 SE.
-  Cancel/Esc must preserve partial results and report CANCELLED when used in a
-  separate fresh copy. The silent revision-2 runner never explicitly pumped
-  real Windows messages during its lengthy work. Revision 3 adds visible
-  scenario/action/time/counts, deferred cancellation and closed stage writes to
-  TRACE.TXT. Eight host checks pass, including the full 812-assertion catalog and
-  a Windows-message shim; the new native window/link still needs verification.
+  RETURN5 also completes the full revision-3 run in the user's Win98 SE VM.
+- [x] **Native runner progress and cancellation:** revision 3 compiled/linked
+  cleanly in RETURN5 and completed all **816 checks** in the user's Win98 SE
+  workflow. All 61 race files, 89 player states and 3,158 trace checkpoints are
+  verified; reported guest elapsed time is 536 seconds. The exact returned EXE
+  visibly displayed progress in DOSBox / WfW 3.11. Esc, Space on Cancel and
+  Alt+F4 each stopped safely with CANCELLED and zero failures; the 13 completed
+  sessions in the button run retained all matching outputs. Mouse automation
+  delivery is not credited by those keyboard checks. See the
+  [RETURN5 review](analysis/compat/racevc-return5.md). No rebuild is needed.
 - [ ] **Native race-component acceptance:** create a VC++ 1.52c adapter and one
   coherent build package after this dependency work. Map the documented Windows
   services/resources, compile the new source, exercise both file directions and

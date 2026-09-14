@@ -147,5 +147,7 @@ VC++ 1.52c [compatibility checks](../compat/vc152-return2.md) passed for their
 selected source subset. The race component subsequently compiled and linked
 with VC++ 1.52c and passed all 816 native checks in the
 [RETURN4 replay](../compat/racevc-return4.md), with exact file/state matches for
-the 88-case catalog. Its Windows services remain modeled; a real race-wizard UI
+the 88-case catalog. [RETURN5](../compat/racevc-return5.md) also passes all 816
+checks in Win98 SE, with native progress/keyboard cancellation checked in
+WfW 3.11. Its race-wizard Windows services remain modeled; a real wizard UI
 adapter is still required.

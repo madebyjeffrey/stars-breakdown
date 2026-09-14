@@ -5,7 +5,7 @@ A reverse-engineering study of `target/stars.exe`, preserving the supplied execu
 ## Start here
 
 - [Race component](analysis/reconstruction/race-component.md): completed game-code dependencies, original-instruction comparisons, and the Windows contract for the next native build.
-- [Buildable race test](compat/racevc/README.md): VC++ package for 88 automatic race-creation/save/load scenarios; the returned executable passes all 816 native checks with matching files and states. Revision 3 adds visible progress and cancellation.
+- [Buildable race test](compat/racevc/README.md): VC++ package for 88 automatic race-creation/save/load scenarios; RETURN5 passes all 816 checks in Win98 SE with matching files and states. The returned progress/cancellation controls also pass native keyboard checks in WfW 3.11.
 - [Reviewed semantic core](analysis/reconstruction/core.md): current source coverage and validation scope.
 
 - [Decompiler workflow](analysis/decompiler/README.md): tested import, initial C/assembly exports, call/data maps, acceptance checks, and remaining analysis limits (step 3 complete).

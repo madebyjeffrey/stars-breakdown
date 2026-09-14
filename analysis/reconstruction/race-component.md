@@ -10,7 +10,9 @@ revision 2 cleanly; the exact returned executable then passed **816 native
 checks** in DOSBox / WfW 3.11, with all 89 states and 61 race files matching.
 See the [native review](../compat/racevc-return4.md). It models UI services and
 uses real CRT file I/O. Revision 3 adds a real runner progress window and
-cancellation, whose native behavior remains to be verified. The earlier
+cancellation. [RETURN5](../compat/racevc-return5.md) passes all 816 checks in
+the user's Win98 SE workflow, and the same EXE passes native progress/keyboard
+cancellation checks in WfW 3.11. The earlier
 [scenario package](../../compat/race/README.md) supplies live replay recipes;
 a real Windows UI adapter and completion of that pilot remain separate work.
 
@@ -189,8 +191,8 @@ This establishes component behavior under the stated service/input contracts.
 It does not establish native Windows rendering, protected-mode selector faults,
 arbitrary malformed pointer graphs, allocation-exhaustion behavior, or a
 byte-identical executable. Native linking/execution is now independently
-established for the 88-case compiler/output catalog in the RETURN4 replay;
-that catalog retains modeled Windows services. The earlier native VC++
+established for the 88-case compiler/output catalog in the RETURN4 replay and
+RETURN5's complete Win98 SE run; that catalog retains modeled Windows services. The earlier native VC++
 compatibility results remain valid for their tested source subset.
 
 ```sh

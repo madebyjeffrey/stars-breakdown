@@ -26,9 +26,11 @@ also records caller-specific helper paths separately, without crediting their
 full procedure ranges. The [race compiler/output package](../compat/racevc/README.md)
 compiled and linked cleanly in RETURN4; its returned EXE passed all 816 native
 checks in DOSBox / WfW 3.11, with 61 matching race files and 89 matching states.
-See the [review](../analysis/compat/racevc-return4.md). Revision 3 adds runner
-progress/cancellation, pending VM verification; real race-wizard UI acceptance
-remains separate.
+See the [review](../analysis/compat/racevc-return4.md). RETURN5 repeats all 816
+checks in the user's Win98 SE workflow with revision 3 and a complete trace; its
+returned EXE also passes visible progress and keyboard cancellation checks in
+WfW 3.11. See the [RETURN5 review](../analysis/compat/racevc-return5.md). Real
+race-wizard UI acceptance remains separate.
 
 Manual progress belongs in [reviews.json](reviews.json), keyed by the ledger range ID. Generation merges those annotations into the ledger without overwriting the editable source. If segmentation changes, generation rejects obsolete keys so a human must reconcile their evidence. Schema 2 counts `host_c89_compiled` rows separately and states their scope explicitly; this is original-byte mapping coverage, not generated object size or whole-program equivalence.
 

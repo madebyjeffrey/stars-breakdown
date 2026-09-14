@@ -4,15 +4,20 @@ This is the buildable successor to the RACEACC1 fixture/recipe package. It
 compiles all 20 recovered component source files plus a small automatic runner.
 The runner drives the actual recovered wizard procedures, saves new race files
 through recovered game code and real CRT file I/O, and compares their outputs
-with frozen original-x86 observations. **RETURN4 compiled and linked revision 2
-without reported warnings.** Its interrupted run completed 11 cases; all 11
-player snapshots and nine saved files match the original expectations. The
-runner was silent and did not explicitly pump Windows messages while working.
-The exact returned executable subsequently completed all **816 native checks
-with zero failures** in DOSBox / WfW 3.11. All 89 states and 61 saved files
-match the original expectations byte for byte.
-See the [RETURN4 review](../../analysis/compat/racevc-return4.md) for the returned
-artifacts and independent DOSBox replay.
+with frozen original-x86 observations. **RETURN5 compiled and linked revision 3
+cleanly and passed all 816 checks in the user's 86Box / Windows 98 SE workflow.**
+All 89 player snapshots and 61 saved race files independently match the original
+expectations byte for byte. The report records 536 guest seconds (8:56) and
+3,158 valid checkpoints. No replacement package or repeated full build is
+required. See the [RETURN5 review](../../analysis/compat/racevc-return5.md).
+
+The same returned executable also visibly rendered progress in DOSBox / WfW
+3.11. Esc, Space on the focused Cancel button and Alt+F4 each stopped cleanly,
+retaining partial reports and outputs. The button run preserved all matching
+files/states from 13 completed sessions. These are native keyboard/control
+checks; an automated pointer click did not activate Cancel. RETURN4's
+[earlier review](../../analysis/compat/racevc-return4.md) retains the silent-run
+investigation and complete revision-2 replay.
 
 The current exported package is **`ftp-share/RACEVC3/`**, also available as
 `ftp-share/RACEVC3.ZIP`. Revision 3 adds a real progress window with the current
@@ -99,7 +104,8 @@ small message shim: initial display/update, time/counters, bounded message
 pumping, prevention of nested pumping, Cancel, Esc, close, and window-creation
 failure. This verifies our routing logic on the host; it does **not** substitute
 for VC headers, Win16 calling conventions, native linking or visible rendering.
-Revision 3's native build and progress/cancel behavior still require the VM.
+RETURN5 now supplies the real VC build and complete Win98 SE run; the returned
+executable's progress/cancel controls were also checked natively in WfW 3.11.
 
 Each trace entry is written and closed **before** its named stage. The next
 entry proves that stage returned. Closing matters: during the DOSBox replay,

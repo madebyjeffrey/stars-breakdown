@@ -1,0 +1,2048 @@
+{
+  "schema": 1,
+  "date": "2026-09-14",
+  "returned": "ftp-share/RETURN5/Racevc3",
+  "package": "ftp-share/RACEVC3",
+  "package_revision": 3,
+  "original_sha256": "ccab6682b55dae14dbf104e491cfbd3b32a6280022020032ae0615500949ba59",
+  "artifacts": {
+    "MANIFEST.JSN": {
+      "bytes": 13504,
+      "sha256": "d5dfb26c21cb5751d47b277c7bdd5353eb659afd44b4d4b32045e194bb10750e"
+    },
+    "BLDSTAT.TXT": {
+      "bytes": 61,
+      "sha256": "23757999cc54ce3d4be9b8b4d26875651be2bf584e6a28c92501b47ebe321de6"
+    },
+    "BUILD.LOG": {
+      "bytes": 265,
+      "sha256": "548564c3986f67140cdf997f78174ae9ed8452325ab9ccda75dea5e141b100dd"
+    },
+    "LINK.LOG": {
+      "bytes": 1202,
+      "sha256": "936e598de53920b1016bfd5bf8c5638eeb938d6cbae7779753a6585ffef3530b"
+    },
+    "RACEVC.MAP": {
+      "bytes": 31410,
+      "sha256": "057f441f3a33d91ad5568e9c29b3011df5d3d00fc4ca8cfb07469e369e61d6fb"
+    },
+    "RACEVC.EXE": {
+      "bytes": 223584,
+      "sha256": "63d3fa1ab762fcc632656715e633ec06a209c5fe55782780fa9ea091011006cb"
+    },
+    "RESULTS.TXT": {
+      "bytes": 8538,
+      "sha256": "2a8933ed5a9db5b5b02048f91f79b21d972bf7efc66f1d958c17d06eac68bb77"
+    },
+    "TRACE.TXT": {
+      "bytes": 382308,
+      "sha256": "7c3381d8b4b02b028bae01ee6e249cc72c876bc533569988f56d2ebc175421dc"
+    },
+    "ALERTS.OBJ": {
+      "bytes": 1892,
+      "sha256": "655b9d71ef27aeb3be8d20fd1a289c25b95d517797452d59239d5051e57fbb06"
+    },
+    "CODEC.OBJ": {
+      "bytes": 3971,
+      "sha256": "df90d962fbff4512460666133aed57d0e8a3e36e33d2b7b0b70160bcf393bd59"
+    },
+    "CREATE.OBJ": {
+      "bytes": 4257,
+      "sha256": "36e816a463932df7dc5162996b1369cf3d60325dac57704200b63b8b61fb664c"
+    },
+    "FILE.OBJ": {
+      "bytes": 4304,
+      "sha256": "e74054bda59cfd060a1379eb0d6b4561cb9c1bde60d79366067d07563bd4c4aa"
+    },
+    "FILES.OBJ": {
+      "bytes": 6225,
+      "sha256": "fa0d180780551925c0eb376147d65775408c62a73a3bce85df9ffd94c54a8ddb"
+    },
+    "FORMAT.OBJ": {
+      "bytes": 16009,
+      "sha256": "7ba66a308b08d6a94367133692e6b40ed720b41078205a029fe3b04be046fe1f"
+    },
+    "NEARSTAT.OBJ": {
+      "bytes": 3558,
+      "sha256": "5b62c20b21108c29b8d4a251051a65cc0861f19705b8feea2d9024e2846ed7be"
+    },
+    "OUTPUT.OBJ": {
+      "bytes": 2412,
+      "sha256": "3a303023a5e92358c18729697299cc8c57b3bc3d2bf04dc59d45634fa8a1813b"
+    },
+    "PASSWORD.OBJ": {
+      "bytes": 4567,
+      "sha256": "7ba83aa69144696966309c86c8341083dd76156e7ca3f403f7171a60c3d4f956"
+    },
+    "PLANET.OBJ": {
+      "bytes": 12653,
+      "sha256": "91f7c5b48053b284728b7df5f3de64f8ca0458d5db554a69b3fcbe400382159f"
+    },
+    "PROGRESS.OBJ": {
+      "bytes": 4933,
+      "sha256": "229d02a4a80220b0e9b4184548ad11e9c08df46b2c504a43ad23c1ee3b2b19cc"
+    },
+    "RACE.OBJ": {
+      "bytes": 15231,
+      "sha256": "655c42fee3a2e7e3145418fe66217dcaae91e82933ba35761bd160e559f3515c"
+    },
+    "RACEDRAW.OBJ": {
+      "bytes": 14530,
+      "sha256": "9a091930e820f63d9162041dd5025fc19c920b97ffcc498d2b36e79ef439c377"
+    },
+    "RACEUI.OBJ": {
+      "bytes": 6388,
+      "sha256": "db2cd563b3a14bad0778ce043fc8105b88c4372c8dfdb7788159a886d2448310"
+    },
+    "RACEWIZ.OBJ": {
+      "bytes": 28285,
+      "sha256": "1c1952a1c68e682efe23505cb9d472567a68aa2d0ffeabe5f3acd7557eec00c6"
+    },
+    "RECORDS.OBJ": {
+      "bytes": 6584,
+      "sha256": "deebbec13ae40733ba755f6969f75c396508dd1768eacbbf1eec8f11ef990ff0"
+    },
+    "RUNNER.OBJ": {
+      "bytes": 17996,
+      "sha256": "0cdfade4a4578d3eb2aca39abf015aec06e8620cb959f751c2a719f415b51844"
+    },
+    "RUNTIME.OBJ": {
+      "bytes": 12178,
+      "sha256": "638977e9b348f1226a1cc4d50de970367923b6523cde076b785422611c76f5e6"
+    },
+    "STREAM.OBJ": {
+      "bytes": 3567,
+      "sha256": "7f16d2048a2952f6160b7ad0840b0771fddba623868e48fe8b7912d7da3cd115"
+    },
+    "STRINGS.OBJ": {
+      "bytes": 3598,
+      "sha256": "5a700de344670f9e68f6f113e01a23d4fde682d67b63657d5ac4b9518b9e50a6"
+    },
+    "TEXT.OBJ": {
+      "bytes": 4307,
+      "sha256": "86f126d5f507637a10dfc711af9079ec15fb10e8aac284db8c19ca8709a2b583"
+    },
+    "UI.OBJ": {
+      "bytes": 17715,
+      "sha256": "16e3fecc013df1dc60efbd75d2d8947bd7ba958179c18502275d4c60d6d6009c"
+    },
+    "UTILGEN.OBJ": {
+      "bytes": 5748,
+      "sha256": "fa4f809981c0ee1adcb556a961f5e24632f43bf7adf0ee1a38c2bd0ad1ed1722"
+    },
+    "WORLD.OBJ": {
+      "bytes": 15424,
+      "sha256": "35fec3b134a9a54a6b14d55a02399095aa3f69dd9b6873635a96204aef35ffff"
+    }
+  },
+  "logs": {
+    "BLDSTAT.TXT": "STARS_RACEVC_BUILD=3\nROOT=c:\\msvc\nCOMPILE=PASS\nLINK=PASS\n",
+    "BUILD.LOG": "COMMAND: CL @RACEVC.RSP\nrunner.c\nworld.c\nfiles.c\nprogress.c\nutilgen.c\nrace.c\nnearstat.c\ncodec.c\ntext.c\ncreate.c\nplanet.c\nstrings.c\nrecords.c\nstream.c\nfile.c\nalerts.c\nruntime.c\npassword.c\noutput.c\nformat.c\nui.c\nraceui.c\nracedraw.c\nracewiz.c\n",
+    "LINK.LOG": "COMMAND: LINK @RACEVC.LNK\n\nMicrosoft (R) Segmented Executable Linker  Version 5.60.339 Dec  5 1994\nCopyright (C) Microsoft Corp 1984-1993.  All rights reserved.\n\nObject Modules [.obj]: RUNNER.OBJ+\nObject Modules [.obj]: WORLD.OBJ+\nObject Modules [.obj]: FILES.OBJ+\nObject Modules [.obj]: PROGRESS.OBJ+\nObject Modules [.obj]: UTILGEN.OBJ+\nObject Modules [.obj]: RACE.OBJ+\nObject Modules [.obj]: NEARSTAT.OBJ+\nObject Modules [.obj]: CODEC.OBJ+\nObject Modules [.obj]: TEXT.OBJ+\nObject Modules [.obj]: CREATE.OBJ+\nObject Modules [.obj]: PLANET.OBJ+\nObject Modules [.obj]: STRINGS.OBJ+\nObject Modules [.obj]: RECORDS.OBJ+\nObject Modules [.obj]: STREAM.OBJ+\nObject Modules [.obj]: FILE.OBJ+\nObject Modules [.obj]: ALERTS.OBJ+\nObject Modules [.obj]: RUNTIME.OBJ+\nObject Modules [.obj]: PASSWORD.OBJ+\nObject Modules [.obj]: OUTPUT.OBJ+\nObject Modules [.obj]: FORMAT.OBJ+\nObject Modules [.obj]: UI.OBJ+\nObject Modules [.obj]: RACEUI.OBJ+\nObject Modules [.obj]: RACEDRAW.OBJ+\nObject Modules [.obj]: RACEWIZ.OBJ\nRun File [RUNNER.exe]: RACEVC.EXE\nList File [nul.map]: RACEVC.MAP\nLibraries [.lib]: LLIBCEW.LIB LIBW.LIB /NOD /ALIGN:16 /CO /MAP\nDefinitions File [nul.def]: RACEVC.DEF\n",
+    "RESULTS.TXT": "STARS RACE COMPILER/OUTPUT ACCEPTANCE 3\nMODE=WIN16_LARGE; MSC=800\nUI=MODELED; game callbacks=recovered C; file I/O=real CRT\nExpected data=original x86 observations with fixed inputs\nRUN B000 B000.R1\nPASS B000.R1 points=25 load=1\nRUN T000 T000.R1\nPASS T000.R1 points=25 load=1\nRUN T001 T001.R1\nPASS T001.R1 points=32 load=1\nRUN T002 T002.R1\nPASS T002.R1 points=43 load=1\nRUN T003 T003.R1\nPASS T003.R1 points=11 load=1\nRUN T004 T004.R1\nPASS T004.R1 points=9 load=1\nRUN T005 T005.R1\nPASS T005.R1 points=7 load=1\nRUN T006 T006.R1\nPASS T006.R1 points=12 load=1\nRUN T007 T007.R1\nPASS T007.R1 points=25 load=1\nRUN P000 P000.R1\n  ALERT: Your advantage points are currently in the hole by 10 points. You cannot save a race definition which has a negative balance.\nPASS P000.R1 points=-10 load=-1\nRUN P001 P001.R1\n  ALERT: Your advantage points are currently in the hole by 28 points. You cannot save a race definition which has a negative balance.\nPASS P001.R1 points=-28 load=-1\nRUN P002 P002.R1\n  ALERT: Your advantage points are currently in the hole by 12 points. You cannot save a race definition which has a negative balance.\nPASS P002.R1 points=-12 load=-1\nRUN P003 P003.R1\nPASS P003.R1 points=0 load=1\nRUN P004 P004.R1\nPASS P004.R1 points=36 load=1\nRUN P005 P005.R1\nPASS P005.R1 points=53 load=1\nRUN P006 P006.R1\n  ALERT: Your advantage points are currently in the hole by 37 points. You cannot save a race definition which has a negative balance.\nPASS P006.R1 points=-37 load=-1\nRUN P007 P007.R1\n  ALERT: Your advantage points are currently in the hole by 57 points. You cannot save a race definition which has a negative balance.\nPASS P007.R1 points=-57 load=-1\nRUN P008 P008.R1\n  ALERT: Your advantage points are currently in the hole by 27 points. You cannot save a race definition which has a negative balance.\nPASS P008.R1 points=-27 load=-1\nRUN P009 P009.R1\nPASS P009.R1 points=25 load=1\nRUN L000 L000.R1\n  ALERT: Your advantage points are currently in the hole by 53 points. You cannot save a race definition which has a negative balance.\nPASS L000.R1 points=-53 load=-1\nRUN L001 L001.R1\n  ALERT: Your advantage points are currently in the hole by 115 points. You cannot save a race definition which has a negative balance.\nPASS L001.R1 points=-115 load=-1\nRUN L002 L002.R1\n  ALERT: Your advantage points are currently in the hole by 28 points. You cannot save a race definition which has a negative balance.\nPASS L002.R1 points=-28 load=-1\nRUN L003 L003.R1\n  ALERT: Your advantage points are currently in the hole by 42 points. You cannot save a race definition which has a negative balance.\nPASS L003.R1 points=-42 load=-1\nRUN L004 L004.R1\nPASS L004.R1 points=38 load=1\nRUN L005 L005.R1\n  ALERT: Your advantage points are currently in the hole by 55 points. You cannot save a race definition which has a negative balance.\nPASS L005.R1 points=-55 load=-1\nRUN L006 L006.R1\n  ALERT: Your advantage points are currently in the hole by 26 points. You cannot save a race definition which has a negative balance.\nPASS L006.R1 points=-26 load=-1\nRUN L007 L007.R1\nPASS L007.R1 points=78 load=1\nRUN L008 L008.R1\nPASS L008.R1 points=105 load=1\nRUN L009 L009.R1\nPASS L009.R1 points=110 load=1\nRUN L010 L010.R1\nPASS L010.R1 points=120 load=1\nRUN L011 L011.R1\nPASS L011.R1 points=85 load=1\nRUN L012 L012.R1\nPASS L012.R1 points=48 load=1\nRUN L013 L013.R1\nPASS L013.R1 points=35 load=1\nRUN I000 I000.R1\n  ALERT: Your advantage points are currently in the hole by 547 points. You cannot save a race definition which has a negative balance.\nPASS I000.R1 points=-547 load=-1\nRUN I003 I003.R1\nPASS I003.R1 points=81 load=1\nRUN E000 E000.R1\nPASS E000.R1 points=52 load=1\nRUN E003 E003.R1\nPASS E003.R1 points=65 load=1\nRUN I001 I001.R1\n  ALERT: Your advantage points are currently in the hole by 547 points. You cannot save a race definition which has a negative balance.\nPASS I001.R1 points=-547 load=-1\nRUN I004 I004.R1\nPASS I004.R1 points=81 load=1\nRUN E001 E001.R1\nPASS E001.R1 points=52 load=1\nRUN E004 E004.R1\nPASS E004.R1 points=65 load=1\nRUN I002 I002.R1\n  ALERT: Your advantage points are currently in the hole by 547 points. You cannot save a race definition which has a negative balance.\nPASS I002.R1 points=-547 load=-1\nRUN I005 I005.R1\nPASS I005.R1 points=81 load=1\nRUN E002 E002.R1\nPASS E002.R1 points=52 load=1\nRUN E005 E005.R1\nPASS E005.R1 points=65 load=1\nRUN E006 E006.R1\nPASS E006.R1 points=311 load=1\nRUN E007 E007.R1\n  ALERT: Your advantage points are currently in the hole by 118 points. You cannot save a race definition which has a negative balance.\nPASS E007.R1 points=-118 load=-1\nRUN G000 G000.R1\nPASS G000.R1 points=7619 load=1\nRUN G001 G001.R1\n  ALERT: Your advantage points are currently in the hole by 386 points. You cannot save a race definition which has a negative balance.\nPASS G001.R1 points=-386 load=-1\nRUN F000 F000.R1\nPASS F000.R1 points=65 load=1\nRUN F001 F001.R1\n  ALERT: Your advantage points are currently in the hole by 175 points. You cannot save a race definition which has a negative balance.\nPASS F001.R1 points=-175 load=-1\nRUN F002 F002.R1\n  ALERT: Your advantage points are currently in the hole by 17 points. You cannot save a race definition which has a negative balance.\nPASS F002.R1 points=-17 load=-1\nRUN F003 F003.R1\nPASS F003.R1 points=58 load=1\nRUN F004 F004.R1\nPASS F004.R1 points=43 load=1\nRUN F005 F005.R1\nPASS F005.R1 points=5 load=1\nRUN F006 F006.R1\nPASS F006.R1 points=11 load=1\nRUN F007 F007.R1\nPASS F007.R1 points=38 load=1\nRUN F008 F008.R1\n  ALERT: Your advantage points are currently in the hole by 31 points. You cannot save a race definition which has a negative balance.\nPASS F008.R1 points=-31 load=-1\nRUN F009 F009.R1\nPASS F009.R1 points=58 load=1\nRUN F010 F010.R1\nPASS F010.R1 points=46 load=1\nRUN F011 F011.R1\nPASS F011.R1 points=3 load=1\nRUN F012 F012.R1\nPASS F012.R1 points=13 load=1\nRUN F013 F013.R1\nPASS F013.R1 points=38 load=1\nRUN F014 F014.R1\n  ALERT: Your advantage points are currently in the hole by 33 points. You cannot save a race definition which has a negative balance.\nPASS F014.R1 points=-33 load=-1\nRUN R000 R000.R1\nPASS R000.R1 points=75 load=1\nRUN R001 R001.R1\n  ALERT: Your advantage points are currently in the hole by 18 points. You cannot save a race definition which has a negative balance.\nPASS R001.R1 points=-18 load=-1\nRUN R002 R002.R1\nPASS R002.R1 points=75 load=1\nRUN R003 R003.R1\n  ALERT: Your advantage points are currently in the hole by 18 points. You cannot save a race definition which has a negative balance.\nPASS R003.R1 points=-18 load=-1\nRUN R004 R004.R1\nPASS R004.R1 points=75 load=1\nRUN R005 R005.R1\n  ALERT: Your advantage points are currently in the hole by 18 points. You cannot save a race definition which has a negative balance.\nPASS R005.R1 points=-18 load=-1\nRUN R006 R006.R1\nPASS R006.R1 points=75 load=1\nRUN R007 R007.R1\n  ALERT: Your advantage points are currently in the hole by 18 points. You cannot save a race definition which has a negative balance.\nPASS R007.R1 points=-18 load=-1\nRUN R008 R008.R1\nPASS R008.R1 points=75 load=1\nRUN R009 R009.R1\n  ALERT: Your advantage points are currently in the hole by 18 points. You cannot save a race definition which has a negative balance.\nPASS R009.R1 points=-18 load=-1\nRUN R010 R010.R1\nPASS R010.R1 points=75 load=1\nRUN R011 R011.R1\n  ALERT: Your advantage points are currently in the hole by 18 points. You cannot save a race definition which has a negative balance.\nPASS R011.R1 points=-18 load=-1\nRUN R012 R012.R1\nPASS R012.R1 points=425 load=1\nRUN V000 V000.R1\nPASS V000.R1 points=25 load=1\nRUN V001 V001.R1\nPASS V001.R1 points=25 load=1\nRUN A000 A000.R1\nPASS A000.R1 points=25 load=1\nRUN A001 A001.R1\nPASS A001.R1 points=25 load=1\nRUN A002 A002.R1\nPASS A002.R1 points=25 load=1\nRUN A003 A003.R1\nPASS A003.R1 points=25 load=1\nRUN A004 A004.R1\nPASS A004.R1 points=25 load=1\nRUN W000 W000.R1\n  ALERT: The password you have entered is incorrect, please try again.\nPASS W000.R1 points=25 load=1\nRUN N000 N000.R1\nPASS N000.R1 points=25 load=1\nRUN N001 N001.R1\nPASS N001.R1 points=25 load=-1\nRUN U020 U020A.R1\nPASS U020A.R1 points=25 load=1\nRUN U020 U020B.R1\n  ALERT: The game file U020B.R1 appears to be corrupt, unable to load file.\nPASS U020B.R1 points=25 load=0\nCASES=88 SESSIONS=89 CHECKS=816 FAILURES=0\nELAPSED_SECONDS=536 CHECKPOINTS=3158\nSTATUS=PASS\n"
+  },
+  "package_inputs": [
+    {
+      "name": "ACTUAL/README.TXT",
+      "sha256": "c842db2baef0e2e31bc9b6c6933a0788bc639049b89a7e7b5f0eeaeea361e47d",
+      "unchanged": true
+    },
+    {
+      "name": "ALERTS.C",
+      "sha256": "8164fe4840c9e006d2115b173667856d75a51e9656c3bcc72077ba3f62602141",
+      "unchanged": true
+    },
+    {
+      "name": "BPLANS.INC",
+      "sha256": "36a7bdc022096f46bc67248ca193d3a3099bf1a929fc27181272eaf2436485c3",
+      "unchanged": true
+    },
+    {
+      "name": "BUILD.BAT",
+      "sha256": "daa7a0fc41bd0ad331faf2e5c5d53cfb3a7388c9157351946d0deda9803aa8e3",
+      "unchanged": true
+    },
+    {
+      "name": "CASES.DAT",
+      "sha256": "2ff0854440903084b271fe652026a0f2ccdf003b6ed0cc10d2ae814ac6c8f073",
+      "unchanged": true
+    },
+    {
+      "name": "CODEC.C",
+      "sha256": "4a279578a451b7dce531cedb95ea048295711b0839a9eaee48fee207cf659362",
+      "unchanged": true
+    },
+    {
+      "name": "CORE.H",
+      "sha256": "1aa44a48a518a1d59cde43d80df56e71e22b663506d8c070b2e02eeee1ff679d",
+      "unchanged": true
+    },
+    {
+      "name": "CREATE.C",
+      "sha256": "516582347c6a0bbefb530cc2800506e43550e7aae2d666f805ee872f00c4d3a0",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/A000.R1",
+      "sha256": "3b8702975d023016b4256465326662a6ebfd9a07280c8b892ec552b7600517d1",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/A001.R1",
+      "sha256": "b28ed649b25131fa18281863e6691ef3bed9d4eea9dcd325625b7f904fe126a3",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/A002.R1",
+      "sha256": "dc54d91dd91ab773101e42e080c1fc5eb033db764db03114a2ec97802fc8e916",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/A003.R1",
+      "sha256": "821ae06d5ad5ae92bee06be6bd7638e6b63de28620be009b5b79bc3593e237e8",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/A004.R1",
+      "sha256": "bc4de127bc291970cf55c38075e9ac57fbf86d8c4e2bb8a12a5b4f2855b75741",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/B000.R1",
+      "sha256": "fd08aecb11e983a6882823ccb755319a77d682aa123c15ac5c24a35ade617202",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/E000.R1",
+      "sha256": "b9c0932e6bb31b31258f5fe84bb72b44e49511b9c75a681f3c920c5d58a5f15c",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/E001.R1",
+      "sha256": "4d14b39df2704df0134e0f7eaad54fc0c52b52dd413342c46588a94793e86604",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/E002.R1",
+      "sha256": "62981036f088d112f8ab12d8e718d86110f01c168195322a4e3c6abf33f3d3c5",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/E003.R1",
+      "sha256": "63d5e9abb20652580825e2420107dd51c5c701eb2519c9b1e132d8327dfde8bb",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/E004.R1",
+      "sha256": "0c84fe2dbdb2e644a0564fbaa9bf287ab4f73ee1a63b9c7ef791d8f8b9aacd50",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/E005.R1",
+      "sha256": "48700cb86251a001400c53eeced4ef33b177fb35296d77e75bcc52d95111ac15",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/E006.R1",
+      "sha256": "03b86471d1113039b55bbc8ef51e2304a6f6abb63d08726d0e8bfe96e26674e0",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/F000.R1",
+      "sha256": "c329d5cf4028fb6d53b924a6b6dc29db3e396fbf35ee831ef19bcb7afba9a186",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/F003.R1",
+      "sha256": "9aeb47ea589391dea0a883060a8ad4176ff4ef38f383163bd22491329c9302cd",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/F004.R1",
+      "sha256": "b5ad15f1990ff405bf7b1b9a8154b0ec20ccd5d3a65f7d56210bd6f90eb3ccf2",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/F005.R1",
+      "sha256": "dc22f4120d9c0a33f576a23a4152b7e35e8849871918940f690f1d116c8c3c61",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/F006.R1",
+      "sha256": "2be302d4c3d2baa0994038d7bb5a388884f863cced21c86993947df6a06d947b",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/F007.R1",
+      "sha256": "3c642dcf1b360f146105ff3f8f94d65f73bf7a38a070b7cb6f566655768a5095",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/F009.R1",
+      "sha256": "8a16f91fb848add9492c6c9408623ed0939e555e601df6b64856f15b547b6bcc",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/F010.R1",
+      "sha256": "45787b84b26e531b02c6feff142fdcc470684793499287e60be5c973dc602dcf",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/F011.R1",
+      "sha256": "c8b015bf2788f67f50fa173cd63d1d894b2d6fba67689d0d38ea96ac63edb0c9",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/F012.R1",
+      "sha256": "da4cbf288ef774cde1ef2de67bc119280a0986c2194b949de841cbd85e9f67db",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/F013.R1",
+      "sha256": "af69a3536aedd9f284045644ae3143eab767172639ebeac184a2d0e823281fc5",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/G000.R1",
+      "sha256": "402f3486522892b3d888ec0857d025eeba8b2214e2eeb73366de296ff6542f13",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/I003.R1",
+      "sha256": "857b5a0f8b1d14751630fc5c209d287813876ed9f878cb5b4d85701801e9e06e",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/I004.R1",
+      "sha256": "ddabc1b8aa7cd570cf8e06b7efd46bef130856009f0786e12906ddc1601cb6c7",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/I005.R1",
+      "sha256": "19449ab2332035cb74dac3e3adbfa6b613754102d181ce8a59ea11fed0a888d4",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/L004.R1",
+      "sha256": "cbbbc6e93d866a524428cc015c44a82141903dabbfa1e7d83b52b8bc97606f67",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/L007.R1",
+      "sha256": "5bbb68da511e17b61f67c60e7b550402724b54d64881826d5632b0ac418ca61d",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/L008.R1",
+      "sha256": "f55cb2d221c40e4eafc593685a0b0173a6121e75fdfa88602c815882399ff556",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/L009.R1",
+      "sha256": "20d5044cc16901aef61e490570a333655436cb98e2f7e0c009c3f1cbac05530f",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/L010.R1",
+      "sha256": "f30336898e98653523a35e3869ec5e46f33f270dbc7bb5be37747b3a6a0b8798",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/L011.R1",
+      "sha256": "c4be58e4483bfcf7d9c6a22fe04adc1bc1306b04bfa1cb449403ece280d4e3c1",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/L012.R1",
+      "sha256": "f3f02db67c5c883a753a2bb8b19612d03d8bf8e94c8a9bbf59cf46f3e6955b56",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/L013.R1",
+      "sha256": "5c614cf29c07deddaa30b299f9b06eadf23b9f1a99948be06b2249f298299dc0",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/N000.R1",
+      "sha256": "1b1ad048ec216806ae1cf2117c7f0960fa6c0bfd37eb4921aeada9609f47bd5d",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/P003.R1",
+      "sha256": "02c6da0881c3ea584e60b09a684bcf86f02d25f6020d35daabd08887fa2a49bb",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/P004.R1",
+      "sha256": "fbf39d9fe85e6df1eebb698dc6ce3ccd3c0218a4590eefe0056f4502b74388b3",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/P005.R1",
+      "sha256": "9dcd841e206093e846f43a16d92e1d809557277e7fed21071dce6ecf4c8a912a",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/P009.R1",
+      "sha256": "4968b95248cdc456865519deda15f2a706e2890e2437d2f7e1f6797ebb4ae866",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/R000.R1",
+      "sha256": "abdd7c775343182001a9a5581c41642995356dae0171d474ca71fe35f090d7df",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/R002.R1",
+      "sha256": "85ee7bac15912146e0652b2342daf4e38a5c13a0d041829cf492860fb74fb19e",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/R004.R1",
+      "sha256": "59d2546d97ea919693caf7c9f6e7999e9199a16f595b28a1fb52edb34e9b9d46",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/R006.R1",
+      "sha256": "9310230637a77eac4f7010635b5c25fe26d8386c1e8b4b3213e22110a3e8905f",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/R008.R1",
+      "sha256": "1aacc2bc862f65fd18c8eb0274d8865172e929502a9f58c379136589a48634f1",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/R010.R1",
+      "sha256": "7c88788bb5ad5cb89026f1e03f0242585d58b873b4ff5882d965b42119b9d803",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/R012.R1",
+      "sha256": "b93a1fa8b8032793a0700233ccf3920afa52d7e1df625cbf981d4ba3c015a815",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/T000.R1",
+      "sha256": "d0be3b597fae8ad34156a463c0be6e807f1028a9a97bca314b295921386de8d1",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/T001.R1",
+      "sha256": "417fa7aed840b6f03e6e7d33f77a96ad435db41758edb1bafcafe8f54dacff66",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/T002.R1",
+      "sha256": "7b9f50d2bc031532b4a7a192bc4c259f76077272b84ee195e19f867b6f64f9b4",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/T003.R1",
+      "sha256": "49c1b38594894c58960fc26094ce91876f9710dfa0e2d5a7924ea7eb90e8b000",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/T004.R1",
+      "sha256": "fee5298d60b0649792210281d7da13a0b276d1ca5ad61d91dcd144c6b9325e80",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/T005.R1",
+      "sha256": "cf84a64cf3e6da4643ffeba0ea6d8bb9a53bef3a75aacc07f6dc8add07d11306",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/T006.R1",
+      "sha256": "b139b89a9d940bc31a28abde1a0ac1c5d7b14fbe3288a613c3a7e7f0e4a1a4cb",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/T007.R1",
+      "sha256": "fac680b3a20eb67531385096ac1e4e80518f9c4a0363debdbbcbebd73187c3aa",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/U020A.R1",
+      "sha256": "713136f702fd1b40c62cca016d14343cc68d6f4c93d94d09e1a6189842c97fad",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/U020B.R1",
+      "sha256": "3af5ca378977d8e2a9ab8ca70771693054c056b1b72e457ede5cc5bb63eedd06",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/V000.R1",
+      "sha256": "18f9169cba4a5d704a85f2427631dd51caf662e30e9a7e1cff4e4b28736a1cef",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/V001.R1",
+      "sha256": "a1d24cd37f2a9e6095dbb6565b4096f83b4485b33e48b733b1c2e3c82d93b4c4",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/W000.R1",
+      "sha256": "826b594b0314b4a75fe98cee3f8bc40f369e385131f7aafdc5d662f23f6569aa",
+      "unchanged": true
+    },
+    {
+      "name": "FILE.C",
+      "sha256": "2cbe9e7eb4c2ef852ef066c52403aa1ebf9e920d5030e2f93611c2fae229b7a4",
+      "unchanged": true
+    },
+    {
+      "name": "FILES.C",
+      "sha256": "7a2161d2046e2a1fcbd5f3f0d1f4c9065937fbcbc15e79342d7290b9b360f6f7",
+      "unchanged": true
+    },
+    {
+      "name": "FORMAT.C",
+      "sha256": "035234ff62b76722f422757f0962ca18a80a297549c367ff3282b7dafd05a44d",
+      "unchanged": true
+    },
+    {
+      "name": "INDATA.BIN",
+      "sha256": "0642e821f9a803821d8858cbd16e1c6e8bf43ca66952d7efbfb2dcc0fd8c4ccd",
+      "unchanged": true
+    },
+    {
+      "name": "INNATE.H",
+      "sha256": "dadc256f425d84cb10389c559cc5e1863dbb5f1c09b6630dbc15443f1de3bd1c",
+      "unchanged": true
+    },
+    {
+      "name": "NEARSTAT.C",
+      "sha256": "c5a242bc4f69563f0b22d6a194f695da36e25856ed80fd70118168eafc669070",
+      "unchanged": true
+    },
+    {
+      "name": "OUTPUT.C",
+      "sha256": "86aef5321fb1375b87e12fa483397780093a299f85f5740ec7cd34634b3024ac",
+      "unchanged": true
+    },
+    {
+      "name": "PASSWORD.C",
+      "sha256": "0c21314a9638f2a5b50ba1a24d82063532be9d945299ec6b333d823cae051792",
+      "unchanged": true
+    },
+    {
+      "name": "PLANET.C",
+      "sha256": "b72e176c1f40b31be879c64910c39d63474784c2ca3b97f27665120ec29d7975",
+      "unchanged": true
+    },
+    {
+      "name": "PLANETS.BIN",
+      "sha256": "123cc31c7d0c54faf21a38d163469108b3be7664673d3695eb10ed5ff2380560",
+      "unchanged": true
+    },
+    {
+      "name": "PROGRESS.C",
+      "sha256": "48f33d993746293b0eb3a5258d915514852c5ef36a7bbdca6bfdd83a9e90d80a",
+      "unchanged": true
+    },
+    {
+      "name": "RACE.C",
+      "sha256": "3a8da9b5dd5bd7675c28313733f95198f990da503c751891bc02583b8d3872fe",
+      "unchanged": true
+    },
+    {
+      "name": "RACEDRAW.C",
+      "sha256": "c70a39500040423a55f5a28a8bc5886b507831ce5de44141877bf584e10764e8",
+      "unchanged": true
+    },
+    {
+      "name": "RACEUI.C",
+      "sha256": "09b0d78650c3f2990bf75faab8d63eb225fb95114fc8b88a687490c4254047d0",
+      "unchanged": true
+    },
+    {
+      "name": "RACEUI.H",
+      "sha256": "da4d180deb8c5c6652750185d541ba124a2efeb4fe4bc38a89204a92a533682c",
+      "unchanged": true
+    },
+    {
+      "name": "RACEVC.DEF",
+      "sha256": "b0d2156b1910466e98e038178d1df533916f57098fc1cf33fbadcc3bbda27f32",
+      "unchanged": true
+    },
+    {
+      "name": "RACEVC.LNK",
+      "sha256": "d98e8c3ef9f543da3be79432b39814394ee152f13047dea0641729d34f32b665",
+      "unchanged": true
+    },
+    {
+      "name": "RACEVC.RSP",
+      "sha256": "566a1e010c625a50a0864d72698871bba5c634a94a3288043de979fccfc2018e",
+      "unchanged": true
+    },
+    {
+      "name": "RACEWIZ.C",
+      "sha256": "3d8b271e303ca6e3624f59c794ba23bdc3fa81acd6f82805277a5b0eb764816d",
+      "unchanged": true
+    },
+    {
+      "name": "README.TXT",
+      "sha256": "53b234c0af4a18724d1236be07064079c13b32788d57e2912cea9badec52445e",
+      "unchanged": true
+    },
+    {
+      "name": "RECORDS.C",
+      "sha256": "af9f67bef1b30154180bb3628148c8712abb45d07e924d176a656d1a3afbbe7a",
+      "unchanged": true
+    },
+    {
+      "name": "RSDATA.DAT",
+      "sha256": "5c945a99a8915527f34deb851aaf19908dc1847c0577674e7de31133901f59c1",
+      "unchanged": true
+    },
+    {
+      "name": "RTINT.H",
+      "sha256": "abb92fc9afd3a30d111b28c6c6c196885a1c98fc901eaf7af18f6d5c029995ae",
+      "unchanged": true
+    },
+    {
+      "name": "RUNNER.C",
+      "sha256": "9d74ac02f3adfca72a721109057454db1abf1d1923cf1aba4778adf78925b38e",
+      "unchanged": true
+    },
+    {
+      "name": "RUNTIME.C",
+      "sha256": "7b722dba4185cd672eb51ba58268247fff056995aeb6f795fe479c4aa704bcab",
+      "unchanged": true
+    },
+    {
+      "name": "RUNTIME.H",
+      "sha256": "43024554ee7dd6bdd0f2423a986f9fb01cb20db892bc8f9d626d22e8b8d3c322",
+      "unchanged": true
+    },
+    {
+      "name": "SEEDTAB.INC",
+      "sha256": "e41d3c2cb444a569e176f814d34d96d700e8cefb0ce740349a00b7bd55563f5d",
+      "unchanged": true
+    },
+    {
+      "name": "STREAM.C",
+      "sha256": "97cad1737ec96737b5aeffabb70763e66ecac404b9417c77f2d4c3bfcc5afd2c",
+      "unchanged": true
+    },
+    {
+      "name": "STRINGS.BIN",
+      "sha256": "f2827b392fdbeefc3cfee79933ec0157f6a27e92c3ca5e133018689cede3186c",
+      "unchanged": true
+    },
+    {
+      "name": "STRINGS.C",
+      "sha256": "418fd9448e5a1d0061ed2b814d606db39941a7c9975a55ceff2db167f5703ddf",
+      "unchanged": true
+    },
+    {
+      "name": "TEST.H",
+      "sha256": "e4647590fd7b9bfa8db1542c9176b593e555641c18c45da457893142259c52e3",
+      "unchanged": true
+    },
+    {
+      "name": "TEXT.C",
+      "sha256": "08f64fb523c8c704b8ac4dc4fc65b7875451635b6ffe3190aa991deee7491517",
+      "unchanged": true
+    },
+    {
+      "name": "UI.C",
+      "sha256": "3870f0120709d64f3b0cb59105703e1fff19e3cbe4519c373f5d136d0c8b6994",
+      "unchanged": true
+    },
+    {
+      "name": "UIINT.H",
+      "sha256": "7108c325c38ff55276e3e81d484920853e106b2100e377c96810185c010424ce",
+      "unchanged": true
+    },
+    {
+      "name": "UTILGEN.C",
+      "sha256": "0a63f4b3c4c6067711e2907cce94e1e648bf7bd86a4065eada5bfbbc77b8f4ef",
+      "unchanged": true
+    },
+    {
+      "name": "WORLD.C",
+      "sha256": "85454452025f60332e67881554d8177a1b3915f656588d9db1796c1fc49629d0",
+      "unchanged": true
+    }
+  ],
+  "assessment": {
+    "package_input_count": 105,
+    "package_inputs_unchanged": true,
+    "returned_manifest_unchanged": true,
+    "compile": "PASS",
+    "link": "PASS",
+    "source_modules": 24,
+    "compiler_warnings": [],
+    "linker_errors": [],
+    "additional_output_capture_present": false,
+    "status": "PASS",
+    "cases": 88,
+    "sessions": 89,
+    "checks": 816,
+    "failures": 0,
+    "matching_player_states": 89,
+    "matching_race_files": 61,
+    "accepted_reloads": 60,
+    "predicted_rejected_reloads": 1,
+    "fileless_sessions": 28,
+    "elapsed_seconds_reported": 536,
+    "timing_scope": "Guest GetTickCount; not an independently measured wall-clock duration.",
+    "returned_run_environment": "User VC++ 1.52c / 86Box / Windows 98 SE workflow"
+  },
+  "actual_outputs": [
+    {
+      "name": "B000.STA",
+      "bytes": 192,
+      "sha256": "b9d863c4ec577c99ec5adf232a7acf24c63c8a43df09a63b644d3e9bdb6f0109",
+      "matches": true
+    },
+    {
+      "name": "B000.R1",
+      "bytes": 164,
+      "sha256": "fd08aecb11e983a6882823ccb755319a77d682aa123c15ac5c24a35ade617202",
+      "matches": true
+    },
+    {
+      "name": "T000.STA",
+      "bytes": 192,
+      "sha256": "ee5904bed83d040dff9242466abfcd9df4a07197e941ba196527acd3f7785f5e",
+      "matches": true
+    },
+    {
+      "name": "T000.R1",
+      "bytes": 164,
+      "sha256": "d0be3b597fae8ad34156a463c0be6e807f1028a9a97bca314b295921386de8d1",
+      "matches": true
+    },
+    {
+      "name": "T001.STA",
+      "bytes": 192,
+      "sha256": "20f0c51eefe170c67df79655202b46ff1c9d40fafe2b014c3c8d674e58f01613",
+      "matches": true
+    },
+    {
+      "name": "T001.R1",
+      "bytes": 164,
+      "sha256": "417fa7aed840b6f03e6e7d33f77a96ad435db41758edb1bafcafe8f54dacff66",
+      "matches": true
+    },
+    {
+      "name": "T002.STA",
+      "bytes": 192,
+      "sha256": "a6805d04bba9778681a16151ee49289571a7a557ed78e5dbb8d98d45ce9f367b",
+      "matches": true
+    },
+    {
+      "name": "T002.R1",
+      "bytes": 164,
+      "sha256": "7b9f50d2bc031532b4a7a192bc4c259f76077272b84ee195e19f867b6f64f9b4",
+      "matches": true
+    },
+    {
+      "name": "T003.STA",
+      "bytes": 192,
+      "sha256": "a9c29886089efbd593e213b65781e851c83063750111a4a6ad0d169b8b3e48c6",
+      "matches": true
+    },
+    {
+      "name": "T003.R1",
+      "bytes": 164,
+      "sha256": "49c1b38594894c58960fc26094ce91876f9710dfa0e2d5a7924ea7eb90e8b000",
+      "matches": true
+    },
+    {
+      "name": "T004.STA",
+      "bytes": 192,
+      "sha256": "777646ebccdd212f03dbc8389578755ea5a06743f5d5ec6e81a5b8efddf994a5",
+      "matches": true
+    },
+    {
+      "name": "T004.R1",
+      "bytes": 164,
+      "sha256": "fee5298d60b0649792210281d7da13a0b276d1ca5ad61d91dcd144c6b9325e80",
+      "matches": true
+    },
+    {
+      "name": "T005.STA",
+      "bytes": 192,
+      "sha256": "a43b5cf95107efa2b98909f32141e680efe36a2fcd6b7430f6a720060f2ba9b5",
+      "matches": true
+    },
+    {
+      "name": "T005.R1",
+      "bytes": 164,
+      "sha256": "cf84a64cf3e6da4643ffeba0ea6d8bb9a53bef3a75aacc07f6dc8add07d11306",
+      "matches": true
+    },
+    {
+      "name": "T006.STA",
+      "bytes": 192,
+      "sha256": "df7f79b73bdf854147ca51b08efc1b2c1ac7a1591cc11df615726ee8fa5e9d18",
+      "matches": true
+    },
+    {
+      "name": "T006.R1",
+      "bytes": 164,
+      "sha256": "b139b89a9d940bc31a28abde1a0ac1c5d7b14fbe3288a613c3a7e7f0e4a1a4cb",
+      "matches": true
+    },
+    {
+      "name": "T007.STA",
+      "bytes": 192,
+      "sha256": "ec34d4057ea1c6d363284cb298478817544d694180c0ca86f1c5a1cc3850b7c2",
+      "matches": true
+    },
+    {
+      "name": "T007.R1",
+      "bytes": 164,
+      "sha256": "fac680b3a20eb67531385096ac1e4e80518f9c4a0363debdbbcbebd73187c3aa",
+      "matches": true
+    },
+    {
+      "name": "P000.STA",
+      "bytes": 192,
+      "sha256": "2de2487b5c52fa4c7e87af6895e7885c922687470b730725ee51d309ed9d75e5",
+      "matches": true
+    },
+    {
+      "name": "P001.STA",
+      "bytes": 192,
+      "sha256": "340c027dea61fd7298a1b2f22614735958bf03b291ac89ec445e2e33cde96320",
+      "matches": true
+    },
+    {
+      "name": "P002.STA",
+      "bytes": 192,
+      "sha256": "d90f5c14d392b215f4ebd562d78fc5d9b16b1caddd42d124dfcc7453e80b9e05",
+      "matches": true
+    },
+    {
+      "name": "P003.STA",
+      "bytes": 192,
+      "sha256": "eb3d70bc0826f1c6a99d8a744480de38774f4d3def5f30a4fefda5b01bbd647c",
+      "matches": true
+    },
+    {
+      "name": "P003.R1",
+      "bytes": 164,
+      "sha256": "02c6da0881c3ea584e60b09a684bcf86f02d25f6020d35daabd08887fa2a49bb",
+      "matches": true
+    },
+    {
+      "name": "P004.STA",
+      "bytes": 192,
+      "sha256": "119c2611820f3681ce644ac60b865c6dce7541db5bf241202ebb0b27e0c8c2b6",
+      "matches": true
+    },
+    {
+      "name": "P004.R1",
+      "bytes": 164,
+      "sha256": "fbf39d9fe85e6df1eebb698dc6ce3ccd3c0218a4590eefe0056f4502b74388b3",
+      "matches": true
+    },
+    {
+      "name": "P005.STA",
+      "bytes": 192,
+      "sha256": "81524c5c027551439b6780422ddbbe2fe5010caaef9b18b0759a6dacb9d79092",
+      "matches": true
+    },
+    {
+      "name": "P005.R1",
+      "bytes": 164,
+      "sha256": "9dcd841e206093e846f43a16d92e1d809557277e7fed21071dce6ecf4c8a912a",
+      "matches": true
+    },
+    {
+      "name": "P006.STA",
+      "bytes": 192,
+      "sha256": "f35a83329e8332e7c42d2021caef4d1de9f3bbf366aa5b1db42b7dcd3dd88da8",
+      "matches": true
+    },
+    {
+      "name": "P007.STA",
+      "bytes": 192,
+      "sha256": "319b49648ec75aedca0a875bedcc65ea20d9adf7c5df366d4757ba1d5d2045be",
+      "matches": true
+    },
+    {
+      "name": "P008.STA",
+      "bytes": 192,
+      "sha256": "4ad3cfb92dadf12822b59b380b469bf8f2d8219eb2d4b902d7b5bc368e8be017",
+      "matches": true
+    },
+    {
+      "name": "P009.STA",
+      "bytes": 192,
+      "sha256": "255e0d2aafc0d2d0a3e2110ce53d95cfb2d28cc25d51b45f5761b6e9dd27c611",
+      "matches": true
+    },
+    {
+      "name": "P009.R1",
+      "bytes": 164,
+      "sha256": "4968b95248cdc456865519deda15f2a706e2890e2437d2f7e1f6797ebb4ae866",
+      "matches": true
+    },
+    {
+      "name": "L000.STA",
+      "bytes": 192,
+      "sha256": "aa12c98024ce43918bef97fecd9f400f281daeadda568548c32ee8a8c6a27802",
+      "matches": true
+    },
+    {
+      "name": "L001.STA",
+      "bytes": 192,
+      "sha256": "2420aff73187cc96417fea21a2f3c2a3ef37c09f972b7633dfb335c0ff2bd1b0",
+      "matches": true
+    },
+    {
+      "name": "L002.STA",
+      "bytes": 192,
+      "sha256": "936cac023fcd5d74a5563ee5efa329dec2b9d4e086d2656bd28d06d3cfcfbce9",
+      "matches": true
+    },
+    {
+      "name": "L003.STA",
+      "bytes": 192,
+      "sha256": "dfecd60e1ba933c89e7867d89833a8442f64a89a49cbca438bcdd07ecd28825b",
+      "matches": true
+    },
+    {
+      "name": "L004.STA",
+      "bytes": 192,
+      "sha256": "8745f6a083205cda6ba00db4928991a75782422719e08feb3f308ad20c2acd45",
+      "matches": true
+    },
+    {
+      "name": "L004.R1",
+      "bytes": 164,
+      "sha256": "cbbbc6e93d866a524428cc015c44a82141903dabbfa1e7d83b52b8bc97606f67",
+      "matches": true
+    },
+    {
+      "name": "L005.STA",
+      "bytes": 192,
+      "sha256": "8a80e2297c1b236caa82a444984a0e3a111e7df6934e0f2ac02969b280bcfe2a",
+      "matches": true
+    },
+    {
+      "name": "L006.STA",
+      "bytes": 192,
+      "sha256": "90c05aaa512d8c850789683f5a5e0ae15a7822981fbf2d081431cea3bbf5fa35",
+      "matches": true
+    },
+    {
+      "name": "L007.STA",
+      "bytes": 192,
+      "sha256": "d21f6e83a8e70e294982306f9dae5c6502c814aaf30f2a874fe46296222dfc6e",
+      "matches": true
+    },
+    {
+      "name": "L007.R1",
+      "bytes": 164,
+      "sha256": "5bbb68da511e17b61f67c60e7b550402724b54d64881826d5632b0ac418ca61d",
+      "matches": true
+    },
+    {
+      "name": "L008.STA",
+      "bytes": 192,
+      "sha256": "326f51c529e3c6cab57313e0078901452522fab1ca8f64c8361f452e9bbeb1b6",
+      "matches": true
+    },
+    {
+      "name": "L008.R1",
+      "bytes": 164,
+      "sha256": "f55cb2d221c40e4eafc593685a0b0173a6121e75fdfa88602c815882399ff556",
+      "matches": true
+    },
+    {
+      "name": "L009.STA",
+      "bytes": 192,
+      "sha256": "3880343dfe89e779211521fa363de795adbd35b9d93064aa97f97f8b76d0ca3c",
+      "matches": true
+    },
+    {
+      "name": "L009.R1",
+      "bytes": 164,
+      "sha256": "20d5044cc16901aef61e490570a333655436cb98e2f7e0c009c3f1cbac05530f",
+      "matches": true
+    },
+    {
+      "name": "L010.STA",
+      "bytes": 192,
+      "sha256": "093ebebcbfed5394768a17e9c78b07578beb522a01ad9cc9cca57bbb3c92858b",
+      "matches": true
+    },
+    {
+      "name": "L010.R1",
+      "bytes": 164,
+      "sha256": "f30336898e98653523a35e3869ec5e46f33f270dbc7bb5be37747b3a6a0b8798",
+      "matches": true
+    },
+    {
+      "name": "L011.STA",
+      "bytes": 192,
+      "sha256": "5f9d6dc76cb65bc0e51e6aafa012a0495c121fbce7fe7045d1b8b06596e3f961",
+      "matches": true
+    },
+    {
+      "name": "L011.R1",
+      "bytes": 164,
+      "sha256": "c4be58e4483bfcf7d9c6a22fe04adc1bc1306b04bfa1cb449403ece280d4e3c1",
+      "matches": true
+    },
+    {
+      "name": "L012.STA",
+      "bytes": 192,
+      "sha256": "ce2296e3d9b23bd29c7ac242abbe178153fbfc471a1986d3b68d1aceb9b5979d",
+      "matches": true
+    },
+    {
+      "name": "L012.R1",
+      "bytes": 164,
+      "sha256": "f3f02db67c5c883a753a2bb8b19612d03d8bf8e94c8a9bbf59cf46f3e6955b56",
+      "matches": true
+    },
+    {
+      "name": "L013.STA",
+      "bytes": 192,
+      "sha256": "1ee68c08762fdeb5bc89bc678f4ebb12b6c2740c90f01fa7fd470761d113dece",
+      "matches": true
+    },
+    {
+      "name": "L013.R1",
+      "bytes": 164,
+      "sha256": "5c614cf29c07deddaa30b299f9b06eadf23b9f1a99948be06b2249f298299dc0",
+      "matches": true
+    },
+    {
+      "name": "I000.STA",
+      "bytes": 192,
+      "sha256": "d48acbc8464dbb562f1db65f8a2c28d5ec08cbfb3131ac013f73bb22519c7a92",
+      "matches": true
+    },
+    {
+      "name": "I003.STA",
+      "bytes": 192,
+      "sha256": "a124089b00b40591c1685f8704549d944e4d63405ca630fef5eb925f0cc035c8",
+      "matches": true
+    },
+    {
+      "name": "I003.R1",
+      "bytes": 164,
+      "sha256": "857b5a0f8b1d14751630fc5c209d287813876ed9f878cb5b4d85701801e9e06e",
+      "matches": true
+    },
+    {
+      "name": "E000.STA",
+      "bytes": 192,
+      "sha256": "490f885d9e59ae3809170dfbb762037b050a1120d900a138f9b77f18d79e40e0",
+      "matches": true
+    },
+    {
+      "name": "E000.R1",
+      "bytes": 164,
+      "sha256": "b9c0932e6bb31b31258f5fe84bb72b44e49511b9c75a681f3c920c5d58a5f15c",
+      "matches": true
+    },
+    {
+      "name": "E003.STA",
+      "bytes": 192,
+      "sha256": "eaea6aee49bb09277f9c831203f6258235b4d006e781ccb5ee00e1a8b3e092aa",
+      "matches": true
+    },
+    {
+      "name": "E003.R1",
+      "bytes": 164,
+      "sha256": "63d5e9abb20652580825e2420107dd51c5c701eb2519c9b1e132d8327dfde8bb",
+      "matches": true
+    },
+    {
+      "name": "I001.STA",
+      "bytes": 192,
+      "sha256": "faaa41b04d3a9dc58648430e7c2287ed90ac7fa93f77846b5a5b63c31242ec97",
+      "matches": true
+    },
+    {
+      "name": "I004.STA",
+      "bytes": 192,
+      "sha256": "15257eb754ce8404187202d414b2745b8b62141b94e9870372b9d98d405494a1",
+      "matches": true
+    },
+    {
+      "name": "I004.R1",
+      "bytes": 164,
+      "sha256": "ddabc1b8aa7cd570cf8e06b7efd46bef130856009f0786e12906ddc1601cb6c7",
+      "matches": true
+    },
+    {
+      "name": "E001.STA",
+      "bytes": 192,
+      "sha256": "7dd0de92acc6f7f4ed450e12214a5393679641ab005a1a0288bda06c7474e002",
+      "matches": true
+    },
+    {
+      "name": "E001.R1",
+      "bytes": 164,
+      "sha256": "4d14b39df2704df0134e0f7eaad54fc0c52b52dd413342c46588a94793e86604",
+      "matches": true
+    },
+    {
+      "name": "E004.STA",
+      "bytes": 192,
+      "sha256": "c902b3ac0bada0e1d5148a672fba20bc15d873367e104924a4f39fb7577df7b2",
+      "matches": true
+    },
+    {
+      "name": "E004.R1",
+      "bytes": 164,
+      "sha256": "0c84fe2dbdb2e644a0564fbaa9bf287ab4f73ee1a63b9c7ef791d8f8b9aacd50",
+      "matches": true
+    },
+    {
+      "name": "I002.STA",
+      "bytes": 192,
+      "sha256": "f9610bf327090f2d40a8360fbe23bd0dc1e188836664f08c14938f7e98e13159",
+      "matches": true
+    },
+    {
+      "name": "I005.STA",
+      "bytes": 192,
+      "sha256": "9a69eb77c0a1e65dddb2caabd8f967664383bf9dfeccf3beeecbbf119dd97798",
+      "matches": true
+    },
+    {
+      "name": "I005.R1",
+      "bytes": 164,
+      "sha256": "19449ab2332035cb74dac3e3adbfa6b613754102d181ce8a59ea11fed0a888d4",
+      "matches": true
+    },
+    {
+      "name": "E002.STA",
+      "bytes": 192,
+      "sha256": "a99bdc2d7d018d90ed0864138a54fadffbf5b62f1326a10835d7bdd49ce09cec",
+      "matches": true
+    },
+    {
+      "name": "E002.R1",
+      "bytes": 164,
+      "sha256": "62981036f088d112f8ab12d8e718d86110f01c168195322a4e3c6abf33f3d3c5",
+      "matches": true
+    },
+    {
+      "name": "E005.STA",
+      "bytes": 192,
+      "sha256": "05701a173f1f4ac28f5d1d6ab90a25483072e10d8172b9bcf3bde05d1ccf201c",
+      "matches": true
+    },
+    {
+      "name": "E005.R1",
+      "bytes": 164,
+      "sha256": "48700cb86251a001400c53eeced4ef33b177fb35296d77e75bcc52d95111ac15",
+      "matches": true
+    },
+    {
+      "name": "E006.STA",
+      "bytes": 192,
+      "sha256": "b2ab8562efbc895533751bfc144bc9aea02fb05c142f01f1fe15b015f053de7e",
+      "matches": true
+    },
+    {
+      "name": "E006.R1",
+      "bytes": 164,
+      "sha256": "03b86471d1113039b55bbc8ef51e2304a6f6abb63d08726d0e8bfe96e26674e0",
+      "matches": true
+    },
+    {
+      "name": "E007.STA",
+      "bytes": 192,
+      "sha256": "2ed50adb5a2bfb3d0169786c11d36cff0fc555f90136cfbefdf8f44b959ced88",
+      "matches": true
+    },
+    {
+      "name": "G000.STA",
+      "bytes": 192,
+      "sha256": "288973907ff0f52b0f52e95f2c4200fab8162c561075e974c0a2c75f88acc22c",
+      "matches": true
+    },
+    {
+      "name": "G000.R1",
+      "bytes": 164,
+      "sha256": "402f3486522892b3d888ec0857d025eeba8b2214e2eeb73366de296ff6542f13",
+      "matches": true
+    },
+    {
+      "name": "G001.STA",
+      "bytes": 192,
+      "sha256": "f686587b861d2f14c8d4ae771fc6251d2b7890b8416d5138ff45c24ce960ac9a",
+      "matches": true
+    },
+    {
+      "name": "F000.STA",
+      "bytes": 192,
+      "sha256": "008c12c3fc3c229515387bc896844d81c5644b6c5ee003ed7f5a69f781eabe33",
+      "matches": true
+    },
+    {
+      "name": "F000.R1",
+      "bytes": 164,
+      "sha256": "c329d5cf4028fb6d53b924a6b6dc29db3e396fbf35ee831ef19bcb7afba9a186",
+      "matches": true
+    },
+    {
+      "name": "F001.STA",
+      "bytes": 192,
+      "sha256": "9834b87c6fa931ca9b124675808d45d019392c698b04915b2254a78f140b090a",
+      "matches": true
+    },
+    {
+      "name": "F002.STA",
+      "bytes": 192,
+      "sha256": "a593ff316d9f644faf190d810ca6c977c7d8207c877d669a9fd9d1b9530e7b9b",
+      "matches": true
+    },
+    {
+      "name": "F003.STA",
+      "bytes": 192,
+      "sha256": "8d78723eb021a9516f4c8f582b4a0e7686eed7b106a357082b45c1c061fe0263",
+      "matches": true
+    },
+    {
+      "name": "F003.R1",
+      "bytes": 164,
+      "sha256": "9aeb47ea589391dea0a883060a8ad4176ff4ef38f383163bd22491329c9302cd",
+      "matches": true
+    },
+    {
+      "name": "F004.STA",
+      "bytes": 192,
+      "sha256": "3b5f59daf102263af537e506b0b31b0444e12710a578a0de0c44eaf1b0f2f4cf",
+      "matches": true
+    },
+    {
+      "name": "F004.R1",
+      "bytes": 164,
+      "sha256": "b5ad15f1990ff405bf7b1b9a8154b0ec20ccd5d3a65f7d56210bd6f90eb3ccf2",
+      "matches": true
+    },
+    {
+      "name": "F005.STA",
+      "bytes": 192,
+      "sha256": "1e0f487919c25fa806a06e275312d8309126289742957bf7288d94efd459fa87",
+      "matches": true
+    },
+    {
+      "name": "F005.R1",
+      "bytes": 164,
+      "sha256": "dc22f4120d9c0a33f576a23a4152b7e35e8849871918940f690f1d116c8c3c61",
+      "matches": true
+    },
+    {
+      "name": "F006.STA",
+      "bytes": 192,
+      "sha256": "976013e0d9bbad58863931305d6d15bd3e142f0c918347c544300737568b7a44",
+      "matches": true
+    },
+    {
+      "name": "F006.R1",
+      "bytes": 164,
+      "sha256": "2be302d4c3d2baa0994038d7bb5a388884f863cced21c86993947df6a06d947b",
+      "matches": true
+    },
+    {
+      "name": "F007.STA",
+      "bytes": 192,
+      "sha256": "336616f7c9d6ba06e733699ed881c74f433b3332df512a97c339fab3aa20d135",
+      "matches": true
+    },
+    {
+      "name": "F007.R1",
+      "bytes": 164,
+      "sha256": "3c642dcf1b360f146105ff3f8f94d65f73bf7a38a070b7cb6f566655768a5095",
+      "matches": true
+    },
+    {
+      "name": "F008.STA",
+      "bytes": 192,
+      "sha256": "ecbc7153abee80517716c5dde4ced3b717f4e4eb25df49547141cc4aa187263f",
+      "matches": true
+    },
+    {
+      "name": "F009.STA",
+      "bytes": 192,
+      "sha256": "243d11ab48a09cdf503d6c6983eb0b9833b66a422107cd599bc2221f1d3e4f51",
+      "matches": true
+    },
+    {
+      "name": "F009.R1",
+      "bytes": 164,
+      "sha256": "8a16f91fb848add9492c6c9408623ed0939e555e601df6b64856f15b547b6bcc",
+      "matches": true
+    },
+    {
+      "name": "F010.STA",
+      "bytes": 192,
+      "sha256": "71721db372fa218d60a38a654339eea4d2b980973e77dc7a77d98a9e1cce4011",
+      "matches": true
+    },
+    {
+      "name": "F010.R1",
+      "bytes": 164,
+      "sha256": "45787b84b26e531b02c6feff142fdcc470684793499287e60be5c973dc602dcf",
+      "matches": true
+    },
+    {
+      "name": "F011.STA",
+      "bytes": 192,
+      "sha256": "b251fa9a8b49017ba688f0519c7c5ebff099d48f520a1e438595671fa8140104",
+      "matches": true
+    },
+    {
+      "name": "F011.R1",
+      "bytes": 164,
+      "sha256": "c8b015bf2788f67f50fa173cd63d1d894b2d6fba67689d0d38ea96ac63edb0c9",
+      "matches": true
+    },
+    {
+      "name": "F012.STA",
+      "bytes": 192,
+      "sha256": "9765324d3537e5e46ff3f7e8b90bb846a338517e451a61d9312eae77c307e0fd",
+      "matches": true
+    },
+    {
+      "name": "F012.R1",
+      "bytes": 164,
+      "sha256": "da4cbf288ef774cde1ef2de67bc119280a0986c2194b949de841cbd85e9f67db",
+      "matches": true
+    },
+    {
+      "name": "F013.STA",
+      "bytes": 192,
+      "sha256": "37d1f66905e963b8049cfa779a337d2bae56691fea82300eaeeccc96340f191b",
+      "matches": true
+    },
+    {
+      "name": "F013.R1",
+      "bytes": 164,
+      "sha256": "af69a3536aedd9f284045644ae3143eab767172639ebeac184a2d0e823281fc5",
+      "matches": true
+    },
+    {
+      "name": "F014.STA",
+      "bytes": 192,
+      "sha256": "f47d04b8cac1aba0cfecb8d276604fa9f85f794602670f724af815c0fa073faf",
+      "matches": true
+    },
+    {
+      "name": "R000.STA",
+      "bytes": 192,
+      "sha256": "f9fcfb55b9483ed6edda65b99661e65e22ce4d622edb5536c19b7ce140afd724",
+      "matches": true
+    },
+    {
+      "name": "R000.R1",
+      "bytes": 164,
+      "sha256": "abdd7c775343182001a9a5581c41642995356dae0171d474ca71fe35f090d7df",
+      "matches": true
+    },
+    {
+      "name": "R001.STA",
+      "bytes": 192,
+      "sha256": "ccfcafd98ff0185cd554e082bdf99d4072cbe0b053aec0ebd6c21ad47dd6629e",
+      "matches": true
+    },
+    {
+      "name": "R002.STA",
+      "bytes": 192,
+      "sha256": "eb67da0721422c8b259257ffc4c7f68ed5c382b3c6d99e4851308d6284fe5dd9",
+      "matches": true
+    },
+    {
+      "name": "R002.R1",
+      "bytes": 164,
+      "sha256": "85ee7bac15912146e0652b2342daf4e38a5c13a0d041829cf492860fb74fb19e",
+      "matches": true
+    },
+    {
+      "name": "R003.STA",
+      "bytes": 192,
+      "sha256": "b389ad9229ae659ccfbec0ed6056bb1586bf271a96af8bc8a46d86c05e98e4b3",
+      "matches": true
+    },
+    {
+      "name": "R004.STA",
+      "bytes": 192,
+      "sha256": "097d6511d7a8d59864bad054166b20ba1931e9bee9c52ba689a87078cc16f323",
+      "matches": true
+    },
+    {
+      "name": "R004.R1",
+      "bytes": 164,
+      "sha256": "59d2546d97ea919693caf7c9f6e7999e9199a16f595b28a1fb52edb34e9b9d46",
+      "matches": true
+    },
+    {
+      "name": "R005.STA",
+      "bytes": 192,
+      "sha256": "f31e7111469b0267ad7d28a7485103c01f08cf01bc1e0b56f89c8c2c42b81b5d",
+      "matches": true
+    },
+    {
+      "name": "R006.STA",
+      "bytes": 192,
+      "sha256": "be534d92ceb7ba105873affb73091dfde6111d09733f972768bfaaa24a7cd59f",
+      "matches": true
+    },
+    {
+      "name": "R006.R1",
+      "bytes": 164,
+      "sha256": "9310230637a77eac4f7010635b5c25fe26d8386c1e8b4b3213e22110a3e8905f",
+      "matches": true
+    },
+    {
+      "name": "R007.STA",
+      "bytes": 192,
+      "sha256": "a1171c248a4058818a4f817f693d64d7fa6b973b06ca1c40573e4cc534d6cb0c",
+      "matches": true
+    },
+    {
+      "name": "R008.STA",
+      "bytes": 192,
+      "sha256": "bdf618258129408a41137a2198125b721cc82af961fd9531ddd8f9c4721dd5ea",
+      "matches": true
+    },
+    {
+      "name": "R008.R1",
+      "bytes": 164,
+      "sha256": "1aacc2bc862f65fd18c8eb0274d8865172e929502a9f58c379136589a48634f1",
+      "matches": true
+    },
+    {
+      "name": "R009.STA",
+      "bytes": 192,
+      "sha256": "ffa0cb2784fdb292fcdb92045f12043d8833c10e0ca7fc65da137c32708250cd",
+      "matches": true
+    },
+    {
+      "name": "R010.STA",
+      "bytes": 192,
+      "sha256": "ab87d66d6cc12456b2d58ceb1ba33d3199ebeb9da60a5e856b78654b62f8b9ef",
+      "matches": true
+    },
+    {
+      "name": "R010.R1",
+      "bytes": 164,
+      "sha256": "7c88788bb5ad5cb89026f1e03f0242585d58b873b4ff5882d965b42119b9d803",
+      "matches": true
+    },
+    {
+      "name": "R011.STA",
+      "bytes": 192,
+      "sha256": "8572e3f6040dc7ec1a8be5490012fee12c0d194de30d0039082a0913412362fd",
+      "matches": true
+    },
+    {
+      "name": "R012.STA",
+      "bytes": 192,
+      "sha256": "78b3a6afb56165e84570b148bf00a8153b88b2880b67c2e077152abf403fd999",
+      "matches": true
+    },
+    {
+      "name": "R012.R1",
+      "bytes": 164,
+      "sha256": "b93a1fa8b8032793a0700233ccf3920afa52d7e1df625cbf981d4ba3c015a815",
+      "matches": true
+    },
+    {
+      "name": "V000.STA",
+      "bytes": 192,
+      "sha256": "601038110e3dc33fe1a50f4f5ffdb172c75b7a87d83607be58235a591ea3416a",
+      "matches": true
+    },
+    {
+      "name": "V000.R1",
+      "bytes": 164,
+      "sha256": "18f9169cba4a5d704a85f2427631dd51caf662e30e9a7e1cff4e4b28736a1cef",
+      "matches": true
+    },
+    {
+      "name": "V001.STA",
+      "bytes": 192,
+      "sha256": "07219244b018c39bf319764afa10093649f7617bbdb7c37c37b2fd0ade074f90",
+      "matches": true
+    },
+    {
+      "name": "V001.R1",
+      "bytes": 164,
+      "sha256": "a1d24cd37f2a9e6095dbb6565b4096f83b4485b33e48b733b1c2e3c82d93b4c4",
+      "matches": true
+    },
+    {
+      "name": "A000.STA",
+      "bytes": 192,
+      "sha256": "83fa6ac9468e3e7879a58d1a66dca8232cfb9c6cfa845a092862d461f489eee4",
+      "matches": true
+    },
+    {
+      "name": "A000.R1",
+      "bytes": 164,
+      "sha256": "3b8702975d023016b4256465326662a6ebfd9a07280c8b892ec552b7600517d1",
+      "matches": true
+    },
+    {
+      "name": "A001.STA",
+      "bytes": 192,
+      "sha256": "4158a5b1a2a0e2e67a8dc4ea8f74aef21b5ba1228663cc30bfdf66b9c076d118",
+      "matches": true
+    },
+    {
+      "name": "A001.R1",
+      "bytes": 164,
+      "sha256": "b28ed649b25131fa18281863e6691ef3bed9d4eea9dcd325625b7f904fe126a3",
+      "matches": true
+    },
+    {
+      "name": "A002.STA",
+      "bytes": 192,
+      "sha256": "9a94c7a67614e59a16ec74419bc98d79fbf9dd938fd03855b64408a88aab2e44",
+      "matches": true
+    },
+    {
+      "name": "A002.R1",
+      "bytes": 164,
+      "sha256": "dc54d91dd91ab773101e42e080c1fc5eb033db764db03114a2ec97802fc8e916",
+      "matches": true
+    },
+    {
+      "name": "A003.STA",
+      "bytes": 192,
+      "sha256": "4b42b22852903db50727f1885ab0fd72d4e10af242b33b6f06ee0532e8966c65",
+      "matches": true
+    },
+    {
+      "name": "A003.R1",
+      "bytes": 164,
+      "sha256": "821ae06d5ad5ae92bee06be6bd7638e6b63de28620be009b5b79bc3593e237e8",
+      "matches": true
+    },
+    {
+      "name": "A004.STA",
+      "bytes": 192,
+      "sha256": "2c5658eddd29074ef50ddc9441a2e082d87581d36c69dcf3293ebd17a8000abf",
+      "matches": true
+    },
+    {
+      "name": "A004.R1",
+      "bytes": 164,
+      "sha256": "bc4de127bc291970cf55c38075e9ac57fbf86d8c4e2bb8a12a5b4f2855b75741",
+      "matches": true
+    },
+    {
+      "name": "W000.STA",
+      "bytes": 192,
+      "sha256": "524c34a173e53043e0d19e0aa04bf29d8e82b876fc3855746defda617181995c",
+      "matches": true
+    },
+    {
+      "name": "W000.R1",
+      "bytes": 164,
+      "sha256": "826b594b0314b4a75fe98cee3f8bc40f369e385131f7aafdc5d662f23f6569aa",
+      "matches": true
+    },
+    {
+      "name": "N000.STA",
+      "bytes": 192,
+      "sha256": "fb3de52843a5d4075f4b5bcf02f4390e12cba0f5ad453ba249b559faaa6c87e8",
+      "matches": true
+    },
+    {
+      "name": "N000.R1",
+      "bytes": 164,
+      "sha256": "1b1ad048ec216806ae1cf2117c7f0960fa6c0bfd37eb4921aeada9609f47bd5d",
+      "matches": true
+    },
+    {
+      "name": "N001.STA",
+      "bytes": 192,
+      "sha256": "dbb8ecbbef4dfe9275d064a1d0ed4c4449b14e1b0bbf805cef9aeecc5a1c4495",
+      "matches": true
+    },
+    {
+      "name": "U020A.STA",
+      "bytes": 192,
+      "sha256": "53a559fbb94b8aeb15849c8a305b407e872d1aff5caa3afd5c26dd11909e3fb9",
+      "matches": true
+    },
+    {
+      "name": "U020A.R1",
+      "bytes": 158,
+      "sha256": "713136f702fd1b40c62cca016d14343cc68d6f4c93d94d09e1a6189842c97fad",
+      "matches": true
+    },
+    {
+      "name": "U020B.STA",
+      "bytes": 192,
+      "sha256": "d6402752f07b9e46779e2c795d90635a92bda911927f96e853336618926ce395",
+      "matches": true
+    },
+    {
+      "name": "U020B.R1",
+      "bytes": 142,
+      "sha256": "3af5ca378977d8e2a9ab8ca70771693054c056b1b72e457ede5cc5bb63eedd06",
+      "matches": true
+    }
+  ],
+  "fileless_outputs_absent": [
+    "P000.R1",
+    "P001.R1",
+    "P002.R1",
+    "P006.R1",
+    "P007.R1",
+    "P008.R1",
+    "L000.R1",
+    "L001.R1",
+    "L002.R1",
+    "L003.R1",
+    "L005.R1",
+    "L006.R1",
+    "I000.R1",
+    "I001.R1",
+    "I002.R1",
+    "E007.R1",
+    "G001.R1",
+    "F001.R1",
+    "F002.R1",
+    "F008.R1",
+    "F014.R1",
+    "R001.R1",
+    "R003.R1",
+    "R005.R1",
+    "R007.R1",
+    "R009.R1",
+    "R011.R1",
+    "N001.R1"
+  ],
+  "trace": {
+    "checkpoints": 3158,
+    "first": {
+      "number": 1,
+      "seconds": 0,
+      "filename": "",
+      "completed": 0,
+      "checks": 0,
+      "failures": 0,
+      "stage": "Initialize segment images and scenario inputs"
+    },
+    "last": {
+      "number": 3158,
+      "seconds": 536,
+      "filename": "U020B.R1",
+      "completed": 89,
+      "checks": 812,
+      "failures": 0,
+      "stage": "Session complete"
+    },
+    "max_intercheckpoint_seconds": 1,
+    "longest_spans": [
+      {
+        "seconds": 1,
+        "filename": "B000.R1",
+        "stage": "Names and template: action 8/9 | Dialog 146 kind=0 message/control=15",
+        "checkpoint": 10
+      },
+      {
+        "seconds": 1,
+        "filename": "B000.R1",
+        "stage": "Primary trait: action 3/4 | Dialog 149 kind=0 message/control=15",
+        "checkpoint": 14
+      },
+      {
+        "seconds": 1,
+        "filename": "B000.R1",
+        "stage": "Lesser traits: action 3/4 | Dialog 150 kind=0 message/control=15",
+        "checkpoint": 18
+      },
+      {
+        "seconds": 1,
+        "filename": "B000.R1",
+        "stage": "Environment and growth: action 3/4 | Dialog 147 kind=0 message/control=15",
+        "checkpoint": 22
+      },
+      {
+        "seconds": 1,
+        "filename": "B000.R1",
+        "stage": "Research: action 2/4 | Dialog 151 kind=0 message/control=15",
+        "checkpoint": 29
+      },
+      {
+        "seconds": 1,
+        "filename": "B000.R1",
+        "stage": "Research: action 4/4 | Dialog 151 kind=0 message/control=273",
+        "checkpoint": 31
+      },
+      {
+        "seconds": 1,
+        "filename": "T000.R1",
+        "stage": "Names and template: action 2/8 | Dialog 146 kind=0 message/control=15",
+        "checkpoint": 40
+      },
+      {
+        "seconds": 1,
+        "filename": "T000.R1",
+        "stage": "Names and template: action 8/8 | Dialog 146 kind=0 message/control=273",
+        "checkpoint": 46
+      },
+      {
+        "seconds": 1,
+        "filename": "T001.R1",
+        "stage": "Names and template: action 8/9 | Dialog 146 kind=0 message/control=15",
+        "checkpoint": 61
+      },
+      {
+        "seconds": 1,
+        "filename": "T001.R1",
+        "stage": "Wizard returned; calculate final advantage points",
+        "checkpoint": 63
+      }
+    ],
+    "complete_sequence_valid": true
+  },
+  "progress_symbols": [
+    "0001:36D2 003C7H     PROGRESS_TEXT          CODE",
+    "0001:3704 ProgressWndProc         ProgressWndProc",
+    "0001:3704       ProgressWndProc",
+    "0001:0018       _checkpoint",
+    "0001:3912       _progress_close",
+    "0001:376C       _progress_open",
+    "0001:39F2       _progress_poll",
+    "0001:36D2       _progress_seconds",
+    "0001:3944       _progress_show",
+    "0001:0000       _runner_yield",
+    "0001:0000       _runner_yield",
+    "0001:0018       _checkpoint",
+    "0001:36D2       _progress_seconds",
+    "0001:3704       ProgressWndProc",
+    "0001:376C       _progress_open",
+    "0001:3912       _progress_close",
+    "0001:3944       _progress_show",
+    "0001:39F2       _progress_poll"
+  ],
+  "native_progress_checks": {
+    "environment": "DOSBox-X 2026.08.31 / WfW 3.11",
+    "timing_scope": "CPU title initially 20000 cycles/ms, later observed at 114657 cycles/ms; no performance benchmark claimed.",
+    "progress_rendering": "Scenario, session count, readable page/action, elapsed time, checks/failures and Cancel button visibly rendered and updated.",
+    "mouse_observation": "An automated coordinate click did not cancel the button run. The focused button subsequently cancelled with Space. Physical mouse delivery is not validated by this check.",
+    "checks": [
+      {
+        "folder": "runs/step4/guest/RVC3ESC",
+        "input_action": "Escape key",
+        "executable_identical_to_return": true,
+        "package_inputs_unchanged": true,
+        "visible_progress_observed": true,
+        "visible_cancelled_summary_observed": true,
+        "status": "CANCELLED",
+        "counts": {
+          "CASES": 1,
+          "SESSIONS": 0,
+          "CHECKS": 6,
+          "FAILURES": 0,
+          "ELAPSED_SECONDS": 9,
+          "CHECKPOINTS": 15
+        },
+        "report": "STARS RACE COMPILER/OUTPUT ACCEPTANCE 3\nMODE=WIN16_LARGE; MSC=800\nUI=MODELED; game callbacks=recovered C; file I/O=real CRT\nExpected data=original x86 observations with fixed inputs\nRUN B000 B000.R1\nCANCELLED at B000.R1: Primary trait: action 4/4 | Dialog 149 kind=0 message/control=273\nCASES=1 SESSIONS=0 CHECKS=6 FAILURES=0\nELAPSED_SECONDS=9 CHECKPOINTS=15\nSTATUS=CANCELLED\n",
+        "report_sha256": "42020c00c5d8d10e105c96ade08f450694b7ea74c6d298afc936ce71c718430c",
+        "trace_sha256": "2e55a5dfe01db4396ae8379f6851e18912df0f1ed4d955a1315e82e1fdd3b433",
+        "trace_last_line": "15 t=9s case=B000.R1 completed=0 checks=6 failures=0 Primary trait: action 4/4 | Dialog 149 kind=0 message/control=273",
+        "actual_outputs": []
+      },
+      {
+        "folder": "runs/step4/guest/RVC3BTN",
+        "input_action": "Space activates focused Cancel button",
+        "executable_identical_to_return": true,
+        "package_inputs_unchanged": true,
+        "visible_progress_observed": true,
+        "visible_cancelled_summary_observed": true,
+        "status": "CANCELLED",
+        "counts": {
+          "CASES": 14,
+          "SESSIONS": 13,
+          "CHECKS": 127,
+          "FAILURES": 0,
+          "ELAPSED_SECONDS": 70,
+          "CHECKPOINTS": 319
+        },
+        "report": "STARS RACE COMPILER/OUTPUT ACCEPTANCE 3\nMODE=WIN16_LARGE; MSC=800\nUI=MODELED; game callbacks=recovered C; file I/O=real CRT\nExpected data=original x86 observations with fixed inputs\nRUN B000 B000.R1\nPASS B000.R1 points=25 load=1\nRUN T000 T000.R1\nPASS T000.R1 points=25 load=1\nRUN T001 T001.R1\nPASS T001.R1 points=32 load=1\nRUN T002 T002.R1\nPASS T002.R1 points=43 load=1\nRUN T003 T003.R1\nPASS T003.R1 points=11 load=1\nRUN T004 T004.R1\nPASS T004.R1 points=9 load=1\nRUN T005 T005.R1\nPASS T005.R1 points=7 load=1\nRUN T006 T006.R1\nPASS T006.R1 points=12 load=1\nRUN T007 T007.R1\nPASS T007.R1 points=25 load=1\nRUN P000 P000.R1\n  ALERT: Your advantage points are currently in the hole by 10 points. You cannot save a race definition which has a negative balance.\nPASS P000.R1 points=-10 load=-1\nRUN P001 P001.R1\n  ALERT: Your advantage points are currently in the hole by 28 points. You cannot save a race definition which has a negative balance.\nPASS P001.R1 points=-28 load=-1\nRUN P002 P002.R1\n  ALERT: Your advantage points are currently in the hole by 12 points. You cannot save a race definition which has a negative balance.\nPASS P002.R1 points=-12 load=-1\nRUN P003 P003.R1\nPASS P003.R1 points=0 load=1\nRUN P004 P004.R1\nCANCELLED at P004.R1: Names and template: action 3/9 | Dialog 146 kind=2 message/control=271\nCASES=14 SESSIONS=13 CHECKS=127 FAILURES=0\nELAPSED_SECONDS=70 CHECKPOINTS=319\nSTATUS=CANCELLED\n",
+        "report_sha256": "ccb5704255e5a7d5e2c63c1b09be3d76b72d7e1256389879c00bf500e8ee3e5a",
+        "trace_sha256": "03089237ec92f1995052d72f61eb15085519d2ec756af5c3beff4a6394045f92",
+        "trace_last_line": "319 t=70s case=P004.R1 completed=13 checks=127 failures=0 Names and template: action 3/9 | Dialog 146 kind=2 message/control=271",
+        "actual_outputs": [
+          {
+            "name": "B000.R1",
+            "bytes": 164,
+            "sha256": "fd08aecb11e983a6882823ccb755319a77d682aa123c15ac5c24a35ade617202",
+            "matches": true
+          },
+          {
+            "name": "B000.STA",
+            "bytes": 192,
+            "sha256": "b9d863c4ec577c99ec5adf232a7acf24c63c8a43df09a63b644d3e9bdb6f0109",
+            "matches": true
+          },
+          {
+            "name": "P000.STA",
+            "bytes": 192,
+            "sha256": "2de2487b5c52fa4c7e87af6895e7885c922687470b730725ee51d309ed9d75e5",
+            "matches": true
+          },
+          {
+            "name": "P001.STA",
+            "bytes": 192,
+            "sha256": "340c027dea61fd7298a1b2f22614735958bf03b291ac89ec445e2e33cde96320",
+            "matches": true
+          },
+          {
+            "name": "P002.STA",
+            "bytes": 192,
+            "sha256": "d90f5c14d392b215f4ebd562d78fc5d9b16b1caddd42d124dfcc7453e80b9e05",
+            "matches": true
+          },
+          {
+            "name": "P003.R1",
+            "bytes": 164,
+            "sha256": "02c6da0881c3ea584e60b09a684bcf86f02d25f6020d35daabd08887fa2a49bb",
+            "matches": true
+          },
+          {
+            "name": "P003.STA",
+            "bytes": 192,
+            "sha256": "eb3d70bc0826f1c6a99d8a744480de38774f4d3def5f30a4fefda5b01bbd647c",
+            "matches": true
+          },
+          {
+            "name": "T000.R1",
+            "bytes": 164,
+            "sha256": "d0be3b597fae8ad34156a463c0be6e807f1028a9a97bca314b295921386de8d1",
+            "matches": true
+          },
+          {
+            "name": "T000.STA",
+            "bytes": 192,
+            "sha256": "ee5904bed83d040dff9242466abfcd9df4a07197e941ba196527acd3f7785f5e",
+            "matches": true
+          },
+          {
+            "name": "T001.R1",
+            "bytes": 164,
+            "sha256": "417fa7aed840b6f03e6e7d33f77a96ad435db41758edb1bafcafe8f54dacff66",
+            "matches": true
+          },
+          {
+            "name": "T001.STA",
+            "bytes": 192,
+            "sha256": "20f0c51eefe170c67df79655202b46ff1c9d40fafe2b014c3c8d674e58f01613",
+            "matches": true
+          },
+          {
+            "name": "T002.R1",
+            "bytes": 164,
+            "sha256": "7b9f50d2bc031532b4a7a192bc4c259f76077272b84ee195e19f867b6f64f9b4",
+            "matches": true
+          },
+          {
+            "name": "T002.STA",
+            "bytes": 192,
+            "sha256": "a6805d04bba9778681a16151ee49289571a7a557ed78e5dbb8d98d45ce9f367b",
+            "matches": true
+          },
+          {
+            "name": "T003.R1",
+            "bytes": 164,
+            "sha256": "49c1b38594894c58960fc26094ce91876f9710dfa0e2d5a7924ea7eb90e8b000",
+            "matches": true
+          },
+          {
+            "name": "T003.STA",
+            "bytes": 192,
+            "sha256": "a9c29886089efbd593e213b65781e851c83063750111a4a6ad0d169b8b3e48c6",
+            "matches": true
+          },
+          {
+            "name": "T004.R1",
+            "bytes": 164,
+            "sha256": "fee5298d60b0649792210281d7da13a0b276d1ca5ad61d91dcd144c6b9325e80",
+            "matches": true
+          },
+          {
+            "name": "T004.STA",
+            "bytes": 192,
+            "sha256": "777646ebccdd212f03dbc8389578755ea5a06743f5d5ec6e81a5b8efddf994a5",
+            "matches": true
+          },
+          {
+            "name": "T005.R1",
+            "bytes": 164,
+            "sha256": "cf84a64cf3e6da4643ffeba0ea6d8bb9a53bef3a75aacc07f6dc8add07d11306",
+            "matches": true
+          },
+          {
+            "name": "T005.STA",
+            "bytes": 192,
+            "sha256": "a43b5cf95107efa2b98909f32141e680efe36a2fcd6b7430f6a720060f2ba9b5",
+            "matches": true
+          },
+          {
+            "name": "T006.R1",
+            "bytes": 164,
+            "sha256": "b139b89a9d940bc31a28abde1a0ac1c5d7b14fbe3288a613c3a7e7f0e4a1a4cb",
+            "matches": true
+          },
+          {
+            "name": "T006.STA",
+            "bytes": 192,
+            "sha256": "df7f79b73bdf854147ca51b08efc1b2c1ac7a1591cc11df615726ee8fa5e9d18",
+            "matches": true
+          },
+          {
+            "name": "T007.R1",
+            "bytes": 164,
+            "sha256": "fac680b3a20eb67531385096ac1e4e80518f9c4a0363debdbbcbebd73187c3aa",
+            "matches": true
+          },
+          {
+            "name": "T007.STA",
+            "bytes": 192,
+            "sha256": "ec34d4057ea1c6d363284cb298478817544d694180c0ca86f1c5a1cc3850b7c2",
+            "matches": true
+          }
+        ]
+      },
+      {
+        "folder": "runs/step4/guest/RVC3CLS",
+        "input_action": "Alt+F4 closes runner window",
+        "executable_identical_to_return": true,
+        "package_inputs_unchanged": true,
+        "visible_progress_observed": true,
+        "visible_cancelled_summary_observed": true,
+        "status": "CANCELLED",
+        "counts": {
+          "CASES": 1,
+          "SESSIONS": 0,
+          "CHECKS": 6,
+          "FAILURES": 0,
+          "ELAPSED_SECONDS": 4,
+          "CHECKPOINTS": 30
+        },
+        "report": "STARS RACE COMPILER/OUTPUT ACCEPTANCE 3\nMODE=WIN16_LARGE; MSC=800\nUI=MODELED; game callbacks=recovered C; file I/O=real CRT\nExpected data=original x86 observations with fixed inputs\nRUN B000 B000.R1\nCANCELLED at B000.R1: Research: action 3/4 | Dialog 151 kind=0 message/control=15\nCASES=1 SESSIONS=0 CHECKS=6 FAILURES=0\nELAPSED_SECONDS=4 CHECKPOINTS=30\nSTATUS=CANCELLED\n",
+        "report_sha256": "ffeb0557692bc5b316f7fbac93ac4c7680c436a2ee05d112ae4f43537cea16af",
+        "trace_sha256": "d7a540911ad57a2597d45d94994a71e71be5f99ff04817b1059b08a8dfb343f5",
+        "trace_last_line": "30 t=4s case=B000.R1 completed=0 checks=6 failures=0 Research: action 3/4 | Dialog 151 kind=0 message/control=15",
+        "actual_outputs": []
+      }
+    ]
+  },
+  "game_objects_vs_return4": [
+    {
+      "name": "UTILGEN.OBJ",
+      "identical": false,
+      "sha256": "fa4f809981c0ee1adcb556a961f5e24632f43bf7adf0ee1a38c2bd0ad1ed1722"
+    },
+    {
+      "name": "RACE.OBJ",
+      "identical": false,
+      "sha256": "655c42fee3a2e7e3145418fe66217dcaae91e82933ba35761bd160e559f3515c"
+    },
+    {
+      "name": "NEARSTAT.OBJ",
+      "identical": false,
+      "sha256": "5b62c20b21108c29b8d4a251051a65cc0861f19705b8feea2d9024e2846ed7be"
+    },
+    {
+      "name": "CODEC.OBJ",
+      "identical": false,
+      "sha256": "df90d962fbff4512460666133aed57d0e8a3e36e33d2b7b0b70160bcf393bd59"
+    },
+    {
+      "name": "TEXT.OBJ",
+      "identical": false,
+      "sha256": "86f126d5f507637a10dfc711af9079ec15fb10e8aac284db8c19ca8709a2b583"
+    },
+    {
+      "name": "CREATE.OBJ",
+      "identical": false,
+      "sha256": "36e816a463932df7dc5162996b1369cf3d60325dac57704200b63b8b61fb664c"
+    },
+    {
+      "name": "PLANET.OBJ",
+      "identical": false,
+      "sha256": "91f7c5b48053b284728b7df5f3de64f8ca0458d5db554a69b3fcbe400382159f"
+    },
+    {
+      "name": "STRINGS.OBJ",
+      "identical": false,
+      "sha256": "5a700de344670f9e68f6f113e01a23d4fde682d67b63657d5ac4b9518b9e50a6"
+    },
+    {
+      "name": "RECORDS.OBJ",
+      "identical": false,
+      "sha256": "deebbec13ae40733ba755f6969f75c396508dd1768eacbbf1eec8f11ef990ff0"
+    },
+    {
+      "name": "STREAM.OBJ",
+      "identical": false,
+      "sha256": "7f16d2048a2952f6160b7ad0840b0771fddba623868e48fe8b7912d7da3cd115"
+    },
+    {
+      "name": "FILE.OBJ",
+      "identical": false,
+      "sha256": "e74054bda59cfd060a1379eb0d6b4561cb9c1bde60d79366067d07563bd4c4aa"
+    },
+    {
+      "name": "ALERTS.OBJ",
+      "identical": false,
+      "sha256": "655b9d71ef27aeb3be8d20fd1a289c25b95d517797452d59239d5051e57fbb06"
+    },
+    {
+      "name": "RUNTIME.OBJ",
+      "identical": false,
+      "sha256": "638977e9b348f1226a1cc4d50de970367923b6523cde076b785422611c76f5e6"
+    },
+    {
+      "name": "PASSWORD.OBJ",
+      "identical": false,
+      "sha256": "7ba83aa69144696966309c86c8341083dd76156e7ca3f403f7171a60c3d4f956"
+    },
+    {
+      "name": "OUTPUT.OBJ",
+      "identical": false,
+      "sha256": "3a303023a5e92358c18729697299cc8c57b3bc3d2bf04dc59d45634fa8a1813b"
+    },
+    {
+      "name": "FORMAT.OBJ",
+      "identical": false,
+      "sha256": "7ba66a308b08d6a94367133692e6b40ed720b41078205a029fe3b04be046fe1f"
+    },
+    {
+      "name": "UI.OBJ",
+      "identical": false,
+      "sha256": "16e3fecc013df1dc60efbd75d2d8947bd7ba958179c18502275d4c60d6d6009c"
+    },
+    {
+      "name": "RACEUI.OBJ",
+      "identical": false,
+      "sha256": "db2cd563b3a14bad0778ce043fc8105b88c4372c8dfdb7788159a886d2448310"
+    },
+    {
+      "name": "RACEDRAW.OBJ",
+      "identical": false,
+      "sha256": "9a091930e820f63d9162041dd5025fc19c920b97ffcc498d2b36e79ef439c377"
+    },
+    {
+      "name": "RACEWIZ.OBJ",
+      "identical": false,
+      "sha256": "1c1952a1c68e682efe23505cb9d472567a68aa2d0ffeabe5f3acd7557eec00c6"
+    }
+  ],
+  "object_comparison_scope": "Full OBJ bytes, including debug records and metadata. Source/output agreement does not assert byte-identical object files; a machine-code-only comparison is outside this review."
+}
