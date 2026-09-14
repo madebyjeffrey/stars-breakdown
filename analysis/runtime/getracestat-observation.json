@@ -1,0 +1,55 @@
+{
+  "function": "GetRaceStat",
+  "ne_segment": 29,
+  "ne_offset": 12498,
+  "length": 34,
+  "runtime_selector": "1FEF",
+  "code_match": "all 34 original bytes match",
+  "entry": {
+    "cs": "1FEF",
+    "ip": "30D2",
+    "ds": "141F",
+    "ss": "141F",
+    "sp": "A0A2",
+    "return_cs": "1FE7",
+    "return_ip": "526D",
+    "player_near_pointer": "59A2",
+    "stat_index": 14
+  },
+  "input": {
+    "address": "141F:59EE",
+    "signed_byte": 9
+  },
+  "before_retf": {
+    "ip": "30F3",
+    "sp": "A0A2",
+    "ax": 9
+  },
+  "trace": [
+    "1FEF:000030D2",
+    "1FEF:000030D3",
+    "1FEF:000030D5",
+    "1FEF:000030D9",
+    "1FEF:000030DA",
+    "1FEF:000030DB",
+    "1FEF:000030DE",
+    "1FEF:000030E1",
+    "1FEF:000030E3",
+    "1FEF:000030E6",
+    "1FEF:000030E8",
+    "1FEF:000030EA",
+    "1FEF:000030EB",
+    "1FEF:000030EE",
+    "1FEF:000030EF",
+    "1FEF:000030F0",
+    "1FEF:000030F2",
+    "1FEF:000030F3"
+  ],
+  "scope": "One naturally reached input; validates address mapping and positive return case, not full function equivalence.",
+  "after_return": {
+    "cs": "1FE7",
+    "ip": "526D",
+    "sp": "A0A6",
+    "ax": 9
+  }
+}

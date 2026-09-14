@@ -1,0 +1,46 @@
+{
+  "equal": false,
+  "normalization": "none",
+  "files": [
+    {
+      "name": "SMOKE.HST",
+      "equal": false,
+      "left_size": 4096,
+      "right_size": 4088,
+      "differing_bytes": 3727,
+      "first_difference": 14
+    },
+    {
+      "name": "SMOKE.M1",
+      "equal": false,
+      "left_size": 1650,
+      "right_size": 1650,
+      "differing_bytes": 751,
+      "first_difference": 833
+    },
+    {
+      "name": "SMOKE.M2",
+      "equal": false,
+      "left_size": 831,
+      "right_size": 824,
+      "differing_bytes": 790,
+      "first_difference": 14
+    },
+    {
+      "name": "SMOKE.M3",
+      "equal": false,
+      "left_size": 826,
+      "right_size": 825,
+      "differing_bytes": 781,
+      "first_difference": 14
+    },
+    {
+      "name": "SMOKE.XY",
+      "equal": true,
+      "left_size": 600,
+      "right_size": 600,
+      "differing_bytes": 0,
+      "first_difference": null
+    }
+  ]
+}

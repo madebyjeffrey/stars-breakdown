@@ -1,0 +1,40 @@
+{
+  "os": "Windows for Workgroups 3.11",
+  "emulator": "DOSBox-X 2026.08.31",
+  "commit": "0e5c2f9",
+  "core": "normal",
+  "cpu": "pentium",
+  "cycles": 20000,
+  "ram_mb": 32,
+  "video": "ET4000, 800x600, 256 colors, small fonts",
+  "network": "not installed",
+  "sound": "disabled",
+  "host_clock_sync": false,
+  "components": [
+    {
+      "component": "dosbox-x.conf",
+      "size": 618,
+      "sha256": "f9d3d0a44a5c3a21498f80ce938354398b63d791e50847bc343faea34e422792"
+    },
+    {
+      "component": "dosbox-x",
+      "size": 15991872,
+      "sha256": "48e41e17dc8808aa15fdf756e0b3d256d4582498b183b34fe8a89372c955c95e"
+    },
+    {
+      "component": "DBOXMPI.DRV",
+      "size": 1470,
+      "sha256": "b14b4a116567e0f780a6548dedd0cb30f8e32e62a056f2ab3594cf27a9f76b18"
+    },
+    {
+      "component": "SVGA256.DRV",
+      "size": 117440,
+      "sha256": "86f6ab101d879806c62f4e9b172bffb7caa8796be7e04773fa2a0932dc343d0d"
+    }
+  ],
+  "driver_source": "https://github.com/joncampbell123/doslib/releases/tag/doslib-20250729",
+  "clock_initial_requested": "2000-01-01 12:00:00",
+  "clock_verified": false,
+  "debugger_observed_date": "2026-09-13",
+  "mouse_verified": false
+}

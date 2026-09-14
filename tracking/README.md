@@ -4,7 +4,7 @@ Step 0 is complete when the retained inventory is verified, the ledgers exist, a
 
 ## Input identity
 
-[Input inventory](../analysis/input_inventory.json) records every current file under `target/`, including macOS metadata, and every ZIP member with size and SHA-256. ZIP timestamps are untrusted provenance metadata, not asserted build dates. Archive members are read without extracting or executing anything.
+[Input inventory](../analysis/input_inventory.json) records the explicitly selected original inputs, including their original macOS metadata, and every member of the selected ZIP archive with size and SHA-256. Verification uses that fixed allowlist; additional files are never automatically inventoried. ZIP timestamps are untrusted provenance metadata, not asserted build dates. Archive members are read without extracting or executing anything.
 
 `target/stars.exe` is byte-identical to the archive's `stars.exe`. Both on-disk copies of `26JFIN.txt` match its archive member. There is only one distinct supplied executable. No comparison with unprovided releases has been performed; a different hash must receive a separate inventory and analysis baseline.
 

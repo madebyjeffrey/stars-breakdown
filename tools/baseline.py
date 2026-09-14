@@ -19,9 +19,12 @@ def read(path):
 
 def inventory():
     files, archives = [], []
-    for p in sorted((ROOT/'target').rglob('*')):
+    # Verify only the explicitly recorded baseline; never sweep unrelated inputs.
+    manifest = read('analysis/input_inventory.json')
+    for entry in sorted(manifest['files'], key=lambda item: Path(item['path'])):
+        p = ROOT / entry['path']
         if not p.is_file():
-            continue
+            raise FileNotFoundError('A recorded baseline input is missing')
         b=p.read_bytes()
         files.append(dict(path=p.relative_to(ROOT).as_posix(),size=len(b),sha256=digest(b),
                           role='macOS metadata' if p.name=='.DS_Store' else 'supplied input'))
