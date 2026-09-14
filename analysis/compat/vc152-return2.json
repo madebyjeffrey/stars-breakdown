@@ -1,0 +1,563 @@
+{
+  "schema": 1,
+  "returned": "ftp-share/RETURN2/Vc152b",
+  "artifacts": {
+    "BLDSTAT.TXT": {
+      "bytes": 87,
+      "sha256": "bb8032c72c76677855cff39607acb48050531eef52dec0b4cada4379a5ab73dd",
+      "text_bytes": {
+        "ascii_only": true,
+        "nul_bytes": 0,
+        "crlf_count": 6,
+        "lone_lf_count": 0
+      }
+    },
+    "BUILD.LOG": {
+      "bytes": 74,
+      "sha256": "057867d791c9a7790b248c8ee78fa228c7b1e6ef36bac3618012a076691da657",
+      "text_bytes": {
+        "ascii_only": true,
+        "nul_bytes": 0,
+        "crlf_count": 5,
+        "lone_lf_count": 0
+      }
+    },
+    "LINK.LOG": {
+      "bytes": 413,
+      "sha256": "de5c3294c574d5e60c2a83fec794626f941baf1347329fc9fa23d18f91dbac59",
+      "text_bytes": {
+        "ascii_only": true,
+        "nul_bytes": 0,
+        "crlf_count": 10,
+        "lone_lf_count": 0
+      }
+    },
+    "LAYOUT.LOG": {
+      "bytes": 94,
+      "sha256": "89e692c06ce56ca91afd69dec0d5a95ef72d74f9de8e0fb00ed0f5c5189ab1c1",
+      "text_bytes": {
+        "ascii_only": true,
+        "nul_bytes": 0,
+        "crlf_count": 4,
+        "lone_lf_count": 0
+      }
+    },
+    "LAYLINK.LOG": {
+      "bytes": 400,
+      "sha256": "2ccbe2d2065fe6cdfa4c6fbdafc03dd2556e149211837571cc82fa848bc244ce",
+      "text_bytes": {
+        "ascii_only": true,
+        "nul_bytes": 0,
+        "crlf_count": 10,
+        "lone_lf_count": 0
+      }
+    },
+    "RESULTS.TXT": {
+      "bytes": 256,
+      "sha256": "72c00fc488dc197cbb896e2addd9424b01259d03430e47b412a4f7337ac04fb2",
+      "text_bytes": {
+        "ascii_only": true,
+        "nul_bytes": 0,
+        "crlf_count": 12,
+        "lone_lf_count": 0
+      }
+    },
+    "LAYRES.TXT": {
+      "bytes": 256,
+      "sha256": "990e220865e437db26067ddb43e7f2a6881f94b59dd7795af7eefbf022b1d74b",
+      "text_bytes": {
+        "ascii_only": true,
+        "nul_bytes": 0,
+        "crlf_count": 12,
+        "lone_lf_count": 0
+      }
+    },
+    "PROBE.EXE": {
+      "bytes": 55316,
+      "sha256": "3b1653abee0dd5413c7b4c48eff4658cbcc4658c10d82649dd279b9763332999"
+    },
+    "PROBE.MAP": {
+      "bytes": 15889,
+      "sha256": "f292f7e1b3c6545acdd3418e8abc1464862608c37d68ce28378ca715a62cc603"
+    },
+    "PROBE.OBJ": {
+      "bytes": 5386,
+      "sha256": "bcebf79984faad8046fb2f8380815b5f16c97e146f48442a378ea78b6c354168"
+    },
+    "ABI.OBJ": {
+      "bytes": 1439,
+      "sha256": "694a0549b37b14989e7760bf47c015ee5837d383e078858c337b9dc3b6a2a617"
+    },
+    "UTILGEN.OBJ": {
+      "bytes": 5686,
+      "sha256": "bd741a2483261a95f5da0c0db334eddf4761fa5584a5db8ed4a9f80144c39e02"
+    },
+    "VECTEST.OBJ": {
+      "bytes": 25260,
+      "sha256": "3bf4255a6504267f07bc18a51a07788b0afca439908189d60a2ee3fdbd1795d5"
+    },
+    "LAYMAIN.OBJ": {
+      "bytes": 4780,
+      "sha256": "8f926da683b45be85729d05aa5eecba1b3cd245ce54e8f609bd7b2507794bf9c"
+    },
+    "LAYOUT.OBJ": {
+      "bytes": 103409,
+      "sha256": "47695f2d05eecb609893743a483e2783b60ba43839dd3a075aaebf478f809724"
+    },
+    "LAYOUT.EXE": {
+      "bytes": 131732,
+      "sha256": "b7aa3a639bffc88cbec902ce5af83c3916a0d1878df02b1702905033f88b735a"
+    },
+    "LAYOUT.MAP": {
+      "bytes": 14414,
+      "sha256": "f428c4888fd74b93c4938e9f4548e08c57fa3cd5da2f3cddfc32c989096eab5b"
+    },
+    "msvc.pdb": {
+      "bytes": 12636,
+      "sha256": "1ca62098dc6744cb5034d391c5f4171a963611f1575da2e753ec4d45715ed2e6"
+    }
+  },
+  "logs": {
+    "BLDSTAT.TXT": "STARS_VC152_BUILD=2\nROOT=c:\\msvc\nCOMPILE=PASS\nLINK=PASS\nLAYOUT=PASS\nLAYLINK=PASS\n",
+    "BUILD.LOG": "COMMAND: c:\\msvc\\BIN\\CL @PROBE.RSP\nprobe.c\nabi.c\nvectest.c\nutilgen.c\n",
+    "LINK.LOG": "COMMAND: c:\\msvc\\BIN\\LINK @PROBE.LNK\n\nMicrosoft (R) Segmented Executable Linker  Version 5.60.339 Dec  5 1994\nCopyright (C) Microsoft Corp 1984-1993.  All rights reserved.\n\nObject Modules [.obj]: PROBE.OBJ ABI.OBJ VECTEST.OBJ UTILGEN.OBJ \nRun File [PROBE.exe]: PROBE.EXE\nList File [nul.map]: PROBE.MAP\nLibraries [.lib]: MLIBCEW.LIB LIBW.LIB /NOD /ALIGN:16 /CO /MAP\nDefinitions File [nul.def]: PROBE.DEF\n",
+    "LAYOUT.LOG": "COMMAND: c:\\msvc\\BIN\\CL @LAYOUT.RSP\nlayout.c\nCOMMAND: c:\\msvc\\BIN\\CL @LAYMAIN.RSP\nprobe.c\n",
+    "LAYLINK.LOG": "COMMAND: c:\\msvc\\BIN\\LINK @LAYOUT.LNK\n\nMicrosoft (R) Segmented Executable Linker  Version 5.60.339 Dec  5 1994\nCopyright (C) Microsoft Corp 1984-1993.  All rights reserved.\n\nObject Modules [.obj]: LAYMAIN.OBJ LAYOUT.OBJ \nRun File [LAYMAIN.exe]: LAYOUT.EXE\nList File [nul.map]: LAYOUT.MAP\nLibraries [.lib]: MLIBCEW.LIB LIBW.LIB /NOD /ALIGN:16 /CO /MAP\nDefinitions File [nul.def]: LAYOUT.DEF\n",
+    "RESULTS.TXT": "STARS_VC152_PROBE=2\nKIND=UTILITY\nBUILD=Sep 14 2026 01:07:06\nMODE=WIN16_MEDIUM\n_MSC_VER=800\n_M_I86=1\n_M_I86MM=1\nsizeof(int)=2 sizeof(long)=4 sizeof(void*)=2\nnear_data=2 far_data=4 huge_data=4 default_function=4\nCHECKS=563\nFAILURES=0\nRESULT=PASS\n",
+    "LAYRES.TXT": "STARS_VC152_PROBE=2\nKIND=LAYOUT\nBUILD=Sep 14 2026 01:07:08\nMODE=WIN16_MEDIUM\n_MSC_VER=800\n_M_I86=1\n_M_I86MM=1\nsizeof(int)=2 sizeof(long)=4 sizeof(void*)=2\nnear_data=2 far_data=4 huge_data=4 default_function=4\nCHECKS=1491\nFAILURES=0\nRESULT=PASS\n"
+  },
+  "package_inputs": [
+    {
+      "name": "ABI.C",
+      "sha256": "607ddb147e427f1b4f747aeebec57029395a3a51f57b6e37a6d8cb54ba9098d4",
+      "unchanged": true
+    },
+    {
+      "name": "BUILD.BAT",
+      "sha256": "5cf3dc22543497e440ebc3a70fc66c4e78466487f79b65311956d0b17a6dc227",
+      "unchanged": true
+    },
+    {
+      "name": "CORE.H",
+      "sha256": "1aa44a48a518a1d59cde43d80df56e71e22b663506d8c070b2e02eeee1ff679d",
+      "unchanged": true
+    },
+    {
+      "name": "LAYMAIN.RSP",
+      "sha256": "8bcd82700d75ede867f9fc7c93e5d292b5e42499f3331d9e4296baeba233d3af",
+      "unchanged": true
+    },
+    {
+      "name": "LAYOUT.C",
+      "sha256": "d31e7ce1d154ff988761d3b21982f25f74426bc162a4ff65ab5b306fd7c6da1e",
+      "unchanged": true
+    },
+    {
+      "name": "LAYOUT.DEF",
+      "sha256": "804c86c765afe5f9dbce8490e65cfb0699d42c6ea2545fcb07699e3d056d6680",
+      "unchanged": true
+    },
+    {
+      "name": "LAYOUT.LNK",
+      "sha256": "b34781c3869e92f2ad731562cc53866cb28396b61aabbed1df5c1a6c962b6d39",
+      "unchanged": true
+    },
+    {
+      "name": "LAYOUT.RSP",
+      "sha256": "51f01020c0514f62492ccf8db99b9dd2ea3f96f812db03fe0ba70c1faba816c9",
+      "unchanged": true
+    },
+    {
+      "name": "MANIFEST.TXT",
+      "sha256": "9ce8c50449dfef6eff2b7eda4892217e37185dbda298fbccc8a60d71c267bbef",
+      "unchanged": true
+    },
+    {
+      "name": "PROBE.C",
+      "sha256": "3cd722276914f2eec5b09995b8ab9fc365ba1044f1d58885c57e4260c73ae85e",
+      "unchanged": true
+    },
+    {
+      "name": "PROBE.DEF",
+      "sha256": "7dbce061dbfc45cf2f2de1f552987d32698638ad82bc132da1a559aa8bb1548b",
+      "unchanged": true
+    },
+    {
+      "name": "PROBE.H",
+      "sha256": "f4bda24dd56f960620994ce25d576d1ef8a95e52ac5ee1ca540d19fd3a80c76c",
+      "unchanged": true
+    },
+    {
+      "name": "PROBE.LNK",
+      "sha256": "ae5722943b51a6357a6b10cc205d856cf4ace3174c3f6fa75f7a43b7d752abef",
+      "unchanged": true
+    },
+    {
+      "name": "PROBE.RSP",
+      "sha256": "56ba0d48e5d6c5b7d16265c0cb3b2cdb6066c1603b136c13cf238bf8945a1470",
+      "unchanged": true
+    },
+    {
+      "name": "README.TXT",
+      "sha256": "007253d9ee0ca2688983a869c6b7cf0e00c1d4fd6254ddc23fad94d8c780e02a",
+      "unchanged": true
+    },
+    {
+      "name": "SCONST.H",
+      "sha256": "7df8ceba73129ef0bc634a1e1d048f4120237d4628241766ace9a4415fef2b5e",
+      "unchanged": true
+    },
+    {
+      "name": "SEEDTAB.INC",
+      "sha256": "e41d3c2cb444a569e176f814d34d96d700e8cefb0ce740349a00b7bd55563f5d",
+      "unchanged": true
+    },
+    {
+      "name": "SFUNCS.H",
+      "sha256": "56a9a62a6dc8bfce605e2685cb55334ef9f8c5eb344adeb2c74a37e970280b1f",
+      "unchanged": true
+    },
+    {
+      "name": "SGLOBALS.H",
+      "sha256": "46cc1c26cdbc316829382667b999fe842061fb2804572a255830668e09f51318",
+      "unchanged": true
+    },
+    {
+      "name": "SOFFSETS.INC",
+      "sha256": "f09faeb1d79f13ff2b38062649298d4524466f02cc163cbe6f98b98d7d41cdc6",
+      "unchanged": true
+    },
+    {
+      "name": "STYPES.H",
+      "sha256": "f728fd33dcdef2d5608b0793aa136b1a4bcc56f14c57bfa16a87c400ffb4cdf3",
+      "unchanged": true
+    },
+    {
+      "name": "UTILGEN.C",
+      "sha256": "0a63f4b3c4c6067711e2907cce94e1e648bf7bd86a4065eada5bfbbc77b8f4ef",
+      "unchanged": true
+    },
+    {
+      "name": "VECTEST.C",
+      "sha256": "3d4daa7d1d82e99c07c66e621cc2755f88b66ca70b0bacf97ff4c324fbf98b6a",
+      "unchanged": true
+    }
+  ],
+  "original_sha256": "ccab6682b55dae14dbf104e491cfbd3b32a6280022020032ae0615500949ba59",
+  "probe_debug_summary": {
+    "input": "ftp-share/RETURN2/Vc152b/PROBE.EXE",
+    "bytes": 55316,
+    "sha256": "3b1653abee0dd5413c7b4c48eff4658cbcc4658c10d82649dd279b9763332999",
+    "debug_offset": 30548,
+    "debug_bytes": 24768,
+    "ne_segments": 2,
+    "modules": 57,
+    "functions": 34,
+    "symbol_records": 479,
+    "types": 59,
+    "source_files": [
+      "abi.c",
+      "probe.c",
+      "utilgen.c",
+      "vectest.c"
+    ],
+    "source_line_records": 670,
+    "symbol_record_kinds": {
+      "0005": 4,
+      "0009": 4,
+      "0104": 17,
+      "0100": 85,
+      "0006": 34,
+      "0105": 17,
+      "0101": 5,
+      "0001": 4,
+      "0103": 196,
+      "0402": 3,
+      "0004": 71,
+      "0400": 34,
+      "0401": 5
+    },
+    "compilers": [
+      "8.00c    "
+    ]
+  },
+  "layout_debug_summary": {
+    "input": "ftp-share/RETURN2/Vc152b/LAYOUT.EXE",
+    "bytes": 131732,
+    "sha256": "b7aa3a639bffc88cbec902ce5af83c3916a0d1878df02b1702905033f88b735a",
+    "debug_offset": 84056,
+    "debug_bytes": 47676,
+    "ne_segments": 2,
+    "modules": 50,
+    "functions": 5,
+    "symbol_records": 695,
+    "types": 457,
+    "source_files": [
+      "SOFFSETS.INC",
+      "layout.c",
+      "probe.c"
+    ],
+    "source_line_records": 1525,
+    "symbol_record_kinds": {
+      "0005": 2,
+      "0009": 2,
+      "0105": 3,
+      "0100": 11,
+      "0006": 5,
+      "0001": 2,
+      "0104": 2,
+      "0101": 3,
+      "0103": 176,
+      "0402": 4,
+      "0004": 477,
+      "0400": 5,
+      "0401": 3
+    },
+    "compilers": [
+      "8.00c    "
+    ]
+  },
+  "layout_compiler_records": [
+    {
+      "module": 49,
+      "record_offset": 100,
+      "kind": "0001",
+      "raw": "120001000000080109382e303063202020200000",
+      "compiler": "8.00c    ",
+      "machine": 0,
+      "compiler_flags": "000801"
+    },
+    {
+      "module": 50,
+      "record_offset": 456,
+      "kind": "0001",
+      "raw": "120001000000080109382e303063202020200000",
+      "compiler": "8.00c    ",
+      "machine": 0,
+      "compiler_flags": "000801"
+    }
+  ],
+  "compiler_records": [
+    {
+      "module": 54,
+      "record_offset": 1632,
+      "kind": "0001",
+      "raw": "120001000000080109382e303063202020200000",
+      "compiler": "8.00c    ",
+      "machine": 0,
+      "compiler_flags": "000801"
+    },
+    {
+      "module": 55,
+      "record_offset": 768,
+      "kind": "0001",
+      "raw": "120001000000080109382e303063202020200000",
+      "compiler": "8.00c    ",
+      "machine": 0,
+      "compiler_flags": "000801"
+    },
+    {
+      "module": 56,
+      "record_offset": 416,
+      "kind": "0001",
+      "raw": "120001000000080109382e303063202020200000",
+      "compiler": "8.00c    ",
+      "machine": 0,
+      "compiler_flags": "000801"
+    },
+    {
+      "module": 57,
+      "record_offset": 536,
+      "kind": "0001",
+      "raw": "120001000000080109382e303063202020200000",
+      "compiler": "8.00c    ",
+      "machine": 0,
+      "compiler_flags": "000801"
+    }
+  ],
+  "compiler_record_bytes_match_all_original_game_objects": true,
+  "original_game_compiler_records": 40,
+  "direct_object_modules": {
+    "54": {
+      "name": "UTILGEN.OBJ",
+      "spans": [
+        {
+          "segment": 4,
+          "padding": 0,
+          "offset": 0,
+          "size": 1735
+        }
+      ],
+      "library": 256
+    },
+    "55": {
+      "name": "VECTEST.OBJ",
+      "spans": [
+        {
+          "segment": 3,
+          "padding": 0,
+          "offset": 0,
+          "size": 12453
+        }
+      ],
+      "library": 256
+    },
+    "56": {
+      "name": "ABI.OBJ",
+      "spans": [
+        {
+          "segment": 2,
+          "padding": 0,
+          "offset": 0,
+          "size": 256
+        }
+      ],
+      "library": 256
+    },
+    "57": {
+      "name": "PROBE.OBJ",
+      "spans": [
+        {
+          "segment": 1,
+          "padding": 0,
+          "offset": 0,
+          "size": 1376
+        }
+      ],
+      "library": 256
+    }
+  },
+  "library_module_counts": {
+    "1": 53,
+    "256": 4
+  },
+  "libraries": [
+    "",
+    "MLIBCEW.LIB",
+    "LIBW.LIB"
+  ],
+  "ne_linker_version": "5.60",
+  "abi_procedures": [
+    {
+      "name": "probe_cdecl",
+      "ne_segment": 1,
+      "ne_offset": 1376,
+      "file_offset": 1648,
+      "size": 69,
+      "raw": "558becb806009ac240fe0456578a460c25ff00998b4e06bb00008946fa8956fc8bc18bd3b910009a7058690533460833560a8b4efa8b5efc03c113d3e900005f5e8be55dcb",
+      "type_record": {
+        "index": 4138,
+        "leaf": "0008",
+        "raw": "08002200010003002910",
+        "return_type": 34,
+        "calling_convention": 1,
+        "parameter_count": 3,
+        "argument_list": 4137
+      }
+    },
+    {
+      "name": "probe_pascal",
+      "ne_segment": 1,
+      "ne_offset": 1446,
+      "file_offset": 1718,
+      "size": 71,
+      "raw": "558becb806009ac2408a0556578a460625ff00998b4e0cbb00008946fa8956fc8bc18bd3b910009a7058af0533460833560a8b4efa8b5efc2bc11bd3e900005f5e8be55dca0800",
+      "type_record": {
+        "index": 4139,
+        "leaf": "0008",
+        "raw": "08002200030003002910",
+        "return_type": 34,
+        "calling_convention": 3,
+        "parameter_count": 3,
+        "argument_list": 4137
+      }
+    },
+    {
+      "name": "probe_near",
+      "ne_segment": 1,
+      "ne_offset": 1518,
+      "file_offset": 1790,
+      "size": 69,
+      "raw": "558becb806009ac240d00556578a460a25ff00998b4e04bb00008946fa8956fc8bc18bd3b910009a7058f7053346063356088b4efa8b5efc33c133d3e900005f5e8be55dc3",
+      "type_record": {
+        "index": 4140,
+        "leaf": "0008",
+        "raw": "08002200000003002910",
+        "return_type": 34,
+        "calling_convention": 0,
+        "parameter_count": 3,
+        "argument_list": 4137
+      }
+    },
+    {
+      "name": "probe_near_wrapper",
+      "ne_segment": 1,
+      "ne_offset": 1588,
+      "file_offset": 1860,
+      "size": 44,
+      "raw": "558becb802009ac240180656578a460c25ff0050ff760aff7608ff7606e89aff83c408e900005f5e8be55dcb",
+      "type_record": {
+        "index": 4138,
+        "leaf": "0008",
+        "raw": "08002200010003002910",
+        "return_type": 34,
+        "calling_convention": 1,
+        "parameter_count": 3,
+        "argument_list": 4137
+      }
+    }
+  ],
+  "arithmetic_runtime_fingerprints": [
+    {
+      "module": "lmul.asm",
+      "original_bytes": 50,
+      "probe_bytes": 50,
+      "original_sha256": "8c62adb4c675947443e01a6ed0c071c6226326bcf97f2e8dc07a2e3461f161d4",
+      "probe_sha256": "8c62adb4c675947443e01a6ed0c071c6226326bcf97f2e8dc07a2e3461f161d4",
+      "exact_unmodified_byte_match": true
+    },
+    {
+      "module": "lshl.asm",
+      "original_bytes": 11,
+      "probe_bytes": 11,
+      "original_sha256": "dda4a262ac108716fcc6bff13976eb59132e8232fed1db53d7ae8cd97bf66338",
+      "probe_sha256": "dda4a262ac108716fcc6bff13976eb59132e8232fed1db53d7ae8cd97bf66338",
+      "exact_unmodified_byte_match": true
+    },
+    {
+      "module": "uldiv.asm",
+      "original_bytes": 95,
+      "probe_bytes": 95,
+      "original_sha256": "7a5aec7334e3d937127ffc7c0250792e5b586c0d4182d528f8580ea91011f7d4",
+      "probe_sha256": "7a5aec7334e3d937127ffc7c0250792e5b586c0d4182d528f8580ea91011f7d4",
+      "exact_unmodified_byte_match": true
+    },
+    {
+      "module": "ulrem.asm",
+      "original_bytes": 106,
+      "probe_bytes": 106,
+      "original_sha256": "8b67ce939046f85985596229fc8cd44eb18b6ad797c5fa5fec197c4552a979a8",
+      "probe_sha256": "8b67ce939046f85985596229fc8cd44eb18b6ad797c5fa5fec197c4552a979a8",
+      "exact_unmodified_byte_match": true
+    },
+    {
+      "module": "ulshr.asm",
+      "original_bytes": 11,
+      "probe_bytes": 11,
+      "original_sha256": "632c324dfc508785f14589cb43fac0185cd7c895859e655d8046322da332eb45",
+      "probe_sha256": "632c324dfc508785f14589cb43fac0185cd7c895859e655d8046322da332eb45",
+      "exact_unmodified_byte_match": true
+    }
+  ],
+  "assessment": {
+    "conditions": {
+      "package_inputs_unchanged": true,
+      "utility_compile_and_link": true,
+      "layout_compile_and_link": true,
+      "utility_native_report_pass": true,
+      "layout_native_report_pass": true,
+      "both_ne_debug_executables_present": true
+    },
+    "native_compatibility_pass": true
+  }
+}

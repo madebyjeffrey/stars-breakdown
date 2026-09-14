@@ -1,14 +1,20 @@
-STARS VC++ 1.52c COMPATIBILITY PROBE - PACKAGE 2
+STARS VC++ 1.52c COMPATIBILITY PROBE - PACKAGE 2A
 ==============================================
 
-RETURN1 PASSED THE UTILITY TEST; THIS PACKAGE FIXES THE LAYOUT TEST
+RETURN2 PASSED BOTH NATIVE TESTS - NO REPEAT BUILD NEEDED
 
-The first Win16 executable passed all 563 runtime checks. The compiler
-rejected field-offset expressions in file-scope array bounds (C2057).
-Package 2 retains all size assertions and runs all 1,469 offset checks
-in a separate LAYOUT.EXE. No field-offset checks have been discarded.
+RETURN2 passed 563 utility and 1,491 layout checks with zero failures.
+Package 2A changes only BUILD.BAT's status display and documentation.
+The native C code, headers, compiler/linker inputs and test cases are unchanged.
+The completed early compatibility check does not need another build/return.
 
-BUILD AND RUN IN YOUR WINDOWS 98 SE / 86BOX VM
+The returned logs are ASCII/CRLF, without UTF-16 or embedded NUL bytes.
+The user's DOS window displayed the TYPE summary with extra spaces. BUILD
+now prints four status lines directly and shows a run instruction only when
+that executable linked successfully. BLDSTAT.TXT is still retained as evidence.
+This display workaround can be observed during a future ordinary build.
+
+FOR FUTURE BUILDS IN YOUR WINDOWS 98 SE / 86BOX VM
 
 1. Copy every file into a FRESH directory, for example C:\STPROB2.
    Use binary FTP mode. The ZIP contains the same files, without an enclosing

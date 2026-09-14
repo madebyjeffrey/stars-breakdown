@@ -2,10 +2,10 @@
 
 This is the early step-5 compiler integration fixture for the user's Visual
 C++ 1.52c environment in an 86Box Windows 98 SE VM. The guest instructions are
-in [README.TXT](README.TXT). **RETURN1 passed all 563 native utility checks**;
-the header check stopped at C2057 field-offset assertions. Package 2 moves
-those offsets to a separate runtime test. Its native results remain pending.
-See the [returned-build review](../../analysis/compat/vc152-return1.md).
+in [README.TXT](README.TXT). **RETURN2 passed all 563 native utility checks
+and all 1,491 native layout checks**, completing the early compatibility
+milestone. The offset runner resolves RETURN1's C2057 issue without removing
+checks. See the [returned-build review](../../analysis/compat/vc152-return2.md).
 
 Generate a fresh transfer folder and ZIP with:
 
@@ -13,7 +13,10 @@ Generate a fresh transfer folder and ZIP with:
 python3 tools/package_vc152.py
 ```
 
-The current outputs are `ftp-share/VC152B/` and `ftp-share/VC152B.ZIP`. The exporter
+The current outputs are `ftp-share/VC152C/` and `ftp-share/VC152C.ZIP`. This is
+package 2A: a status-display/documentation revision of the validated package 2.
+All C sources, compiler/linker response files and expectations are unchanged. No repeat VM build
+is needed for the completed compatibility milestone. The exporter
 uses a fixed allowlist and refuses to overwrite either output. Use `--output`
 with a new directory for another package. The share is ignored by Git; canonical
 fixture source, original-machine expectations, and the exporter are tracked.
@@ -63,8 +66,10 @@ of prior return artifacts, and deliberate vector mismatch detection. These
 results preceded RETURN1's native utility success. Package 2 additionally
 passes 1,480 host layout checks; the native layout executable expects 1,491.
 Ten focused package/debug-recovery tests pass, including a deliberately moved
-field that causes the new runtime layout check to fail. Package 2's native
-build/run remains pending; no failed assertion has been deleted.
+field that causes the new runtime layout check to fail. RETURN2 subsequently
+passed both native builds and executions; no failed assertion was deleted.
+The three additional return-assessment tests reject incomplete/incorrect
+evidence, for 13 focused tests in total.
 
 Capture/recheck expectations by executing the pinned original x86 instructions:
 
@@ -100,7 +105,7 @@ The read-only reviewer can record an allowlisted return without ingesting FTP
 client/server configuration:
 
 ```sh
-python3 -m tools.review_vc152 ftp-share/RETURN1/Vc152 --package ftp-share/VC152 --out analysis/compat/vc152-return1.json
+python3 -m tools.review_vc152 ftp-share/RETURN2/Vc152b --package ftp-share/VC152B --out analysis/compat/vc152-return2.json
 ```
 
 Check `MODE=WIN16_MEDIUM`, the expected check count, zero failures, successful

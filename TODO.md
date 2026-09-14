@@ -117,19 +117,18 @@ throughput. Continue independent work while a manual VM experiment is pending.
 
 The immediate work is:
 
-- [ ] **Early VC++ compatibility check:** prepare one small Win16 fixture package
+- [x] **Early VC++ compatibility check:** prepare one small Win16 fixture package
   for the user's VC++ 1.52c / Windows 98 SE / 86Box environment. Capture compiler
   and linker banners, commands and outputs; test integer widths, near/far pointers,
   representative recovered layouts and calling conventions, plus a small group
   of reconstructed routines. Record what the comparison establishes under U002.
   This is a step-5 integration check, not completion of the step-6 application.
-  **RETURN1 reviewed 2026-09-14:** all 563 native utility checks passed;
-  compiler records match the original and five CRT modules match exactly.
-  The [review](analysis/compat/vc152-return1.md) also explains the C2057 header
-  failure. Revised [VC1.52 fixture](compat/vc152/README.md) package 2 is in
-  `ftp-share/VC152B/` and `ftp-share/VC152B.ZIP`, retaining every size assertion
-  and moving all 1,469 offset checks to a separate runtime test. Its native
-  layout run (1,491 checks) remains pending, so this checkbox stays open.
+  **Complete with RETURN2, 2026-09-14:** all 563 utility and 1,491 layout checks
+  passed natively, including all 1,469 recovered field offsets. Every type-size
+  assertion compiled. All 23 returned inputs match package 2. Compiler records
+  match the original and five CRT modules match exactly; see the
+  [review](analysis/compat/vc152-return2.md). The console-spacing workaround in
+  `ftp-share/VC152C/` changes status printing only; no repeated build is needed.
 - [ ] **Race-file save/load milestone:** reconstruct and integrate FSaveRace and
   FWasRaceFile with the existing creation, record, checksum and stream code.
   Close their message-formatting, logging and password dependencies, including

@@ -21,6 +21,48 @@ def sha(data):
     return hashlib.sha256(data).hexdigest()
 
 
+def fields(text):
+    """Keep whole key names/values; never accept a substring as a passing result."""
+    result = {}
+    for line in text.splitlines():
+        if '=' in line:
+            key, value = line.split('=', 1)
+            if key in result:
+                raise ValueError(f'Duplicate report field: {key}')
+            result[key] = value
+    return result
+
+
+def assess_return(evidence, manifest):
+    expected = {}
+    for line in manifest.splitlines():
+        for name in ('WIN16_RUNTIME_CHECKS', 'WIN16_LAYOUT_CHECKS'):
+            if line.startswith(name + ' '):
+                expected[name] = line.split(' ', 1)[1]
+    logs = evidence['logs']
+    build = fields(logs.get('BLDSTAT.TXT', ''))
+    utility = fields(logs.get('RESULTS.TXT', ''))
+    layout = fields(logs.get('LAYRES.TXT', ''))
+    conditions = {
+        'package_inputs_unchanged': bool(evidence['package_inputs']) and all(
+            r['unchanged'] for r in evidence['package_inputs']),
+        'utility_compile_and_link': all(build.get(k) == 'PASS' for k in ('COMPILE', 'LINK')),
+        'layout_compile_and_link': all(build.get(k) == 'PASS' for k in ('LAYOUT', 'LAYLINK')),
+    }
+    for name, report, log, kind, key in (
+        ('utility', utility, 'RESULTS.TXT', 'UTILITY', 'WIN16_RUNTIME_CHECKS'),
+        ('layout', layout, 'LAYRES.TXT', 'LAYOUT', 'WIN16_LAYOUT_CHECKS'),
+    ):
+        conditions[name + '_native_report_pass'] = (
+            key in expected and report.get('CHECKS') == expected[key]
+            and report.get('KIND') == kind and report.get('MODE') == 'WIN16_MEDIUM'
+            and report.get('FAILURES') == '0' and report.get('RESULT') == 'PASS'
+            and not any(line.startswith('FAIL ') for line in logs.get(log, '').splitlines()))
+    conditions['both_ne_debug_executables_present'] = (
+        'probe_debug_summary' in evidence and 'layout_debug_summary' in evidence)
+    return dict(conditions=conditions, native_compatibility_pass=all(conditions.values()))
+
+
 def module_bytes(directory, blob, name):
     modules = read_json(directory / 'modules.json')
     maps = read_json(directory / 'segment_map.json')
@@ -52,6 +94,10 @@ def review(returned, package, scratch):
             evidence['artifacts'][name] = dict(bytes=len(data), sha256=sha(data))
             if name in log_names:
                 evidence['logs'][name] = data.decode('cp437').replace('\r\n', '\n')
+                evidence['artifacts'][name]['text_bytes'] = dict(
+                    ascii_only=data.isascii(), nul_bytes=data.count(b'\0'),
+                    crlf_count=data.count(b'\r\n'),
+                    lone_lf_count=data.replace(b'\r\n', b'').count(b'\n'))
     evidence['package_inputs'] = []
     for source in sorted(package.iterdir()):
         if not source.is_file():
@@ -72,6 +118,15 @@ def review(returned, package, scratch):
     evidence['original_sha256'] = sha(original)
     evidence['probe_debug_summary'] = read_json(debug / 'summary.json')
     evidence['probe_debug_summary']['input'] = str(executable.relative_to(ROOT))
+    layout_executable = returned / 'LAYOUT.EXE'
+    if layout_executable.exists():
+        layout_debug = scratch / 'layout-debug'
+        with contextlib.redirect_stdout(io.StringIO()):
+            extract(layout_executable, layout_debug)
+        evidence['layout_debug_summary'] = read_json(layout_debug / 'summary.json')
+        evidence['layout_debug_summary']['input'] = str(layout_executable.relative_to(ROOT))
+        evidence['layout_compiler_records'] = [r for r in read_json(layout_debug / 'symbols.json')
+                                               if r['kind'] == '0001']
     symbols = read_json(debug / 'symbols.json')
     modules = read_json(debug / 'modules.json')
     compilers = [r for r in symbols if r['kind'] == '0001']
@@ -113,6 +168,7 @@ def review(returned, package, scratch):
         evidence['arithmetic_runtime_fingerprints'].append(dict(module=name,
             original_bytes=len(first), probe_bytes=len(second), original_sha256=sha(first),
             probe_sha256=sha(second), exact_unmodified_byte_match=first == second))
+    evidence['assessment'] = assess_return(evidence, (package / 'MANIFEST.TXT').read_text())
     return evidence
 
 

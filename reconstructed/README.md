@@ -13,10 +13,10 @@ compilation alone is not counted as compiled function reconstruction.
 
 The [VC++ 1.52c compatibility fixture](../compat/vc152/README.md) packages eleven
 utility routines and a separate native recovered-header check for the user's
-Win98 SE / 86Box VM. The first returned Win16 utility build passed all 563
-checks. The revised full layout runner is pending after C2057 errors in the
-original compile-time offset assertions; guest instructions accompany
-`ftp-share/VC152B/`. See the [returned-build review](../analysis/compat/vc152-return1.md).
+Win98 SE / 86Box VM. RETURN2 passed all 563 native utility checks and 1,491
+native layout checks, completing this early integration milestone. The offset
+runner avoids the old compiler's C2057 constant-expression limitation while
+retaining every size/offset check. See the [returned-build review](../analysis/compat/vc152-return2.md).
 
 Try the reconstructed race generator without Windows:
 
