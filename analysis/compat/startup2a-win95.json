@@ -1,0 +1,35 @@
+{
+  "date": "2026-09-14",
+  "scope": "Fresh image-backed Windows 95 compiler and START2A GUI acceptance",
+  "environment": {
+    "windows": "Windows 95 version 4.00.1111 (guest VER)",
+    "emulator": "DOSBox-X 2026.08.31",
+    "configuration": "runtime/win95.conf",
+    "machine": "svga_s3trio64v+",
+    "compiler_directory": "C:\\MSVC",
+    "transfer_drive": "D:",
+    "compiler_cd": "E: MSVC152C"
+  },
+  "return_directory": "runs/win95-acceptance/export/RETURN/WIN95A",
+  "returned_files": 205,
+  "executable_sha256": "1890c417515b71240ae6420366f1f25b5aaec93ddaf57b89b869ad70051b8e2c",
+  "source_comparison": "Returned source/header/include/resource/build inputs match frozen START2A",
+  "logs": {
+    "BLDSTAT.TXT": "BUILD=START2A\nCOMPILE=PASS\nLINK=PASS\nRESOURCES=PASS\n",
+    "BUILD.LOG": "utilgen.c\nrace.c\nnearstat.c\ncodec.c\ntext.c\ncreate.c\nplanet.c\nstrings.c\nrecords.c\nstream.c\nfile.c\nalerts.c\nruntime.c\npassword.c\noutput.c\nformat.c\nui.c\nraceui.c\nracedraw.c\nracewiz.c\nmemory.c\ncommon.c\nstartup.c\nresource.c\ntitle.c\nconfig.c\nnative.c\napp.c\n",
+    "LINK.LOG": "Object Modules [.obj]: /NOLOGO /NOD /MAP /CO /ALIGN:64 UTILGEN.OBJ+\nObject Modules [.obj]: RACE.OBJ+\nObject Modules [.obj]: NEARSTAT.OBJ+\nObject Modules [.obj]: CODEC.OBJ+\nObject Modules [.obj]: TEXT.OBJ+\nObject Modules [.obj]: CREATE.OBJ+\nObject Modules [.obj]: PLANET.OBJ+\nObject Modules [.obj]: STRINGS.OBJ+\nObject Modules [.obj]: RECORDS.OBJ+\nObject Modules [.obj]: STREAM.OBJ+\nObject Modules [.obj]: FILE.OBJ+\nObject Modules [.obj]: ALERTS.OBJ+\nObject Modules [.obj]: RUNTIME.OBJ+\nObject Modules [.obj]: PASSWORD.OBJ+\nObject Modules [.obj]: OUTPUT.OBJ+\nObject Modules [.obj]: FORMAT.OBJ+\nObject Modules [.obj]: UI.OBJ+\nObject Modules [.obj]: RACEUI.OBJ+\nObject Modules [.obj]: RACEDRAW.OBJ+\nObject Modules [.obj]: RACEWIZ.OBJ+\nObject Modules [.obj]: MEMORY.OBJ+\nObject Modules [.obj]: COMMON.OBJ+\nObject Modules [.obj]: STARTUP.OBJ+\nObject Modules [.obj]: RESOURCE.OBJ+\nObject Modules [.obj]: TITLE.OBJ+\nObject Modules [.obj]: CONFIG.OBJ+\nObject Modules [.obj]: NATIVE.OBJ+\nObject Modules [.obj]: APP.OBJ\nRun File [UTILGEN.exe]: START.EXE\nList File [c:START.map]: START.MAP\nLibraries [.lib]: LLIBCEW LIBW COMMDLG TOOLHELP\nDefinitions File [nul.def]: START.DEF;\n",
+    "RC.LOG": "Microsoft (R) Windows Resource Compiler Version 3.11\nCopyright (C) Microsoft Corp. 1985-1992. All rights reserved.\n\n",
+    "output.txt": "",
+    "win9hk.log": "STARTUP_MILESTONE=2\nBUILD_ID=START2A\nSTATIC_DATA=PASS\nCONFIGURATION=PASS\nHABITABILITY_BRUSHES=PASS\nRACE_RESOURCES=PASS\nDRAWING=BITMAP\nMEMORY_ALLOC_FREE=PASS\nTITLE_CREATE=PASS\nFIRST_PAINT=PASS\nACCEPTANCE=RUNNING\nDIALOG_OPEN=PASS\nDIALOG_PAINT_MS=1730\nDIALOG_OPEN=PASS\nDIALOG_PAINT_MS=257\nDIALOG_OPEN=PASS\nDIALOG_PAINT_MS=1316\nDIALOG_OPEN=PASS\nDIALOG_PAINT_MS=522\nHABITABILITY_SAMPLE row=0 x=249 y=52 want=7f0000 near=800000 got=800000\nHABITABILITY_SAMPLE row=1 x=249 y=115 want=7f near=80 got=80\nHABITABILITY_SAMPLE row=2 x=249 y=178 want=7f00 near=8000 got=8000\nHABITABILITY_COLORS=PASS\nDIALOG_OPEN=PASS\nDIALOG_PAINT_MS=1222\nDIALOG_PAINT_MS=522\nDIALOG_OPEN=PASS\nDIALOG_PAINT_MS=330\nWIZARD_CHECK=PASS\nROUNDTRIP=PASS\nDIALOG_OPEN=PASS\nDIALOG_PAINT_MS=522\nCANCEL_CHECK=PASS\nACCEPTANCE=PASS\nTITLE_RELEASE=PASS\nCLEANUP=PASS\nRESOURCE_READS=21\nRESOURCE_BYTES=527360\nPAINTS=1\nEXIT=PASS\n",
+    "APP.LOG": "STARTUP_MILESTONE=2\nBUILD_ID=START2A\nSTATIC_DATA=PASS\nCONFIGURATION=PASS\nHABITABILITY_BRUSHES=PASS\nRACE_RESOURCES=PASS\nDRAWING=BITMAP\nMEMORY_ALLOC_FREE=PASS\nTITLE_CREATE=PASS\nFIRST_PAINT=PASS\nDIALOG_OPEN=PASS\nDIALOG_PAINT_MS=1555\nDIALOG_OPEN=PASS\nDIALOG_PAINT_MS=1483\nDIALOG_OPEN=PASS\nDIALOG_PAINT_MS=1414\nDIALOG_OPEN=PASS\nDIALOG_PAINT_MS=1469\nRACE_CANCEL=PASS\nTITLE_RELEASE=PASS\nCLEANUP=PASS\nRESOURCE_READS=21\nRESOURCE_BYTES=527360\nPAINTS=2\nEXIT=PASS\n"
+  },
+  "log_provenance": "win9hk.log is the fresh Win95 acceptance APP.LOG, preserved before manual run. CHECK.LOG in the package is older WfW evidence and was not used for this result. output.txt is empty; the separate build/link/RC logs provide build diagnostics.",
+  "visual_observation": "Bitmap title clean; manual page 4 shows blue gravity, red temperature, green radiation fills correctly placed inside black tracks.",
+  "limitations": [
+    "Full 816-check regression not rerun",
+    "Original game not installed or tested in the new guest",
+    "Does not isolate old WfW/ET4000 driver/emulator fault",
+    "Fresh executable hash differs from earlier build; byte-identical rebuild not claimed",
+    "Rapid injected text can drop characters; guest commands require visual verification"
+  ]
+}
