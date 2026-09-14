@@ -8,7 +8,7 @@ set LIB=%1\LIB
 set CL=
 set LINK=
 echo Compiling the reconstructed application...
-echo BUILD=START1>BLDSTAT.TXT
+echo BUILD=START2>BLDSTAT.TXT
 %1\BIN\CL @START.RSP >BUILD.LOG
 if errorlevel 1 goto failed
 echo COMPILE=PASS>>BLDSTAT.TXT

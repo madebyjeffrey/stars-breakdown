@@ -1,0 +1,42 @@
+START2 BUNDLED RACE COMPILER/OUTPUT REGRESSION
+
+Run RACEVC.EXE while Windows is running. The executable is prebuilt with
+VC++ 1.52c using the same reconstructed race sources and faster exact integer
+arithmetic as START2. The frozen original-executable test expectations and
+revision-3 test runner are unchanged.
+
+The developer's native run passed all 88 scenarios / 89 sessions, 816 checks,
+61 complete race files and 89 complete player-state snapshots, with zero
+failures. It reported 679 seconds in DOSBox / WfW 3.11. See BASELINE.TXT.
+This baseline is separate from the new RESULTS.TXT your run will create.
+
+Visible progress includes the scenario, stage, elapsed time and check count.
+Cancel, Escape or closing the progress window stops at the next checkpoint.
+A stopped run is incomplete even if it has no failures. Return partial output
+if a failure or apparent freeze occurs; TRACE.TXT records the last stage.
+
+Expected result:
+  STATUS=PASS
+  CASES=88 SESSIONS=89 CHECKS=816 FAILURES=0
+There should be 61 .R1 files and 89 .STA files in ACTUAL.
+U020B.R1 is intentionally expected to fail reload with the original checksum
+behavior. That predicted rejection counts as a passing assertion.
+Twenty-eight sessions intentionally produce no file.
+
+This test feeds modeled UI events and uses real native file I/O. It verifies
+race logic, passwords, full player bytes, full encoded files and reload/error
+outcomes. START.EXE separately exercises the real Windows wizard and drawing.
+The tests generate their output; they do not copy EXPECT into ACTUAL.
+
+Keep RESULTS.TXT, TRACE.TXT, ACTUAL and your build logs when returning the
+whole START2 folder. Use a fresh copy for a repeated regression run; this
+runner deliberately refuses to overwrite earlier results.
+
+Optional rebuild, from this REGRESS directory in a DOS prompt:
+  BUILD C:\MSVC
+Then run RACEVC.EXE from Windows. All sources are included.
+The build uses /AL /GA /GEs /Zp1 /Od /Zi /W3 and LLIBCEW/LIBW.
+This validates the semantic interface, not the original whole-game link layout.
+All text is ASCII with CRLF line endings. MANIFEST.JSN records the vectors,
+sources and the original payload; the parent MANIFEST.TXT additionally hashes
+the prebuilt regression executable, logs and this bundled README.

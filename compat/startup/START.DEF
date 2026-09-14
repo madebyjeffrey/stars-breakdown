@@ -1,5 +1,5 @@
 NAME START
-DESCRIPTION 'Stars reconstructed starting screen - milestone 1'
+DESCRIPTION 'Stars reconstructed race workshop - milestone 2'
 EXETYPE WINDOWS 3.1
 CODE PRELOAD MOVEABLE DISCARDABLE
 DATA PRELOAD MOVEABLE MULTIPLE
@@ -8,3 +8,5 @@ STACKSIZE 16384
 EXPORTS
     TitleProc
     FrameProc
+    RaceProc
+    SettingsProc

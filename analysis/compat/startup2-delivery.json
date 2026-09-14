@@ -1,0 +1,15 @@
+{
+  "package": "ftp-share/START2",
+  "archive": "ftp-share/START2.ZIP",
+  "files": 171,
+  "archive_bytes": 1915082,
+  "archive_sha256": "1dd174f979f0a47222aeab641e0a29c4e164edaafe7c6e531a974d92daf115f0",
+  "executable_sha256": "14ce101acea0398871b6efa5c6d60a07f8624194f17d83d7e7050532ea405408",
+  "checks": [
+    "All parent and regression manifests match delivered bytes",
+    "ZIP exactly matches directory",
+    "All text is ASCII/CRLF",
+    "All 122 resources match original",
+    "No earlier user-run outputs or INI bundled"
+  ]
+}

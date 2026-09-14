@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build an isolated Win16 starting-screen source/resource transfer package."""
+"""Build the isolated Win16 starting-screen/race-workshop transfer package."""
 import argparse
 import json
 from pathlib import Path
@@ -59,8 +59,8 @@ def payload():
     files, sources = {}, {}
     inputs = {name_for(n):ROOT/'reconstructed/src'/n for n in SOURCES + FOUNDATION_SOURCES +
               ['runtime_internal.h','ui_internal.h','innate_fp.h','seed_table.inc','battle_plan_templates.inc']}
-    inputs.update({n.upper():ROOT/'reconstructed/include'/n for n in ['core.h','runtime.h','raceui.h','memory.h','common.h','startup.h','title.h']})
-    inputs.update({n:ROOT/'compat/startup'/n for n in ['APP.C','START.DEF','BUILD.BAT','README.TXT']})
+    inputs.update({n.upper():ROOT/'reconstructed/include'/n for n in ['core.h','runtime.h','raceui.h','memory.h','common.h','startup.h','title.h','config.h']})
+    inputs.update({n:ROOT/'compat/startup'/n for n in ['APP.C','APP.H','NATIVE.C','START.DEF','BUILD.BAT','README.TXT','CHECKS.TXT']})
     for name, path in inputs.items():
         raw = path.read_bytes()
         code = re.sub(r'(#include\s+")([^"]+)(")', lambda m:m[1]+name_for(m[2])+m[3], raw.decode('ascii'))
@@ -71,12 +71,12 @@ def payload():
     files['STRINGS.BIN'] = ne.raw[2][:0x743a].ljust(65536, b'\0')
     files['INDATA.BIN'] = ne.raw[36].ljust(65536, b'\0')
     files['STARS.RES'] = resource_file(ne)
-    objects = [name_for(n).replace('.C','.OBJ') for n in SOURCES + FOUNDATION_SOURCES] + ['APP.OBJ']
+    objects = [name_for(n).replace('.C','.OBJ') for n in SOURCES + FOUNDATION_SOURCES] + ['NATIVE.OBJ','APP.OBJ']
     files['START.RSP'] = dos_text('/c /AL /GA /GEs /Zp1 /Od /Zi /W3\n' +
-        '\n'.join(name_for(n) for n in SOURCES + FOUNDATION_SOURCES) + '\nAPP.C\n')
+        '\n'.join(name_for(n) for n in SOURCES + FOUNDATION_SOURCES) + '\nNATIVE.C\nAPP.C\n')
     files['START.LNK'] = dos_text('/NOLOGO /NOD /MAP /CO /ALIGN:64 ' + '+\n'.join(objects) +
-                                '\nSTART.EXE\nSTART.MAP\nLLIBCEW LIBW\nSTART.DEF;\n')
-    manifest = {'revision':1, 'original_sha256':ORIGINAL, 'sources':sources,
+                                '\nSTART.EXE\nSTART.MAP\nLLIBCEW LIBW COMMDLG TOOLHELP\nSTART.DEF;\n')
+    manifest = {'revision':2, 'original_sha256':ORIGINAL, 'sources':sources,
                 'resources':[dict(type=r['type'],id=r['id'],bytes=r['bytes'],flags=r['flags'],sha256=r['sha256']) for r in ne.resources],
                 'files':{n:dict(bytes=len(b),sha256=sha(b)) for n,b in files.items()}}
     files['MANIFEST.TXT'] = dos_text(json.dumps(manifest,indent=2,ensure_ascii=True)+'\n')
@@ -85,7 +85,7 @@ def payload():
     return files
 
 
-def export(output, development=False, native_build=None):
+def export(output, development=False, native_build=None, race_build=None):
     files = payload()
     if native_build:
         # Require every executable input to match the current generated files.
@@ -103,13 +103,55 @@ def export(output, development=False, native_build=None):
         manifest=json.loads(files['MANIFEST.TXT'])
         manifest['native_build']={name:dict(bytes=len(files[name]),sha256=sha(files[name])) for name in
                                   ['START.EXE','START.MAP','BLDSTAT.TXT','BUILD.LOG','LINK.LOG','RC.LOG']}
+        accept=ROOT/'analysis/compat/startup2-native.json'
+        if accept.exists():
+            report=json.loads(accept.read_text())
+            if report['executable_sha256']!=sha(files['START.EXE']):
+                raise ValueError('Acceptance log belongs to a different executable')
+            files['CHECK.LOG']=dos_text(report['check_log'])
+            manifest['acceptance_log_sha256']=sha(files['CHECK.LOG'])
+        files['MANIFEST.TXT']=dos_text(json.dumps(manifest,indent=2,ensure_ascii=True)+'\n')
+    if race_build:
+        from tools.package_racevc import payload as race_payload
+        regression=race_payload()
+        for name,data in regression.items():
+            if (race_build/name).read_bytes()!=data:
+                raise ValueError('Regression input differs: '+name)
+        result=(race_build/'RESULTS.TXT').read_text()
+        if not all(re.search(r'\b'+x+r'\b',result) for x in ['STATUS=PASS','CASES=88','SESSIONS=89','CHECKS=816','FAILURES=0']):
+            raise ValueError('Native regression must complete before export')
+        vectors=json.loads((ROOT/'compat/racevc/vectors.json').read_text())
+        for case in vectors['cases']:
+            for session in case['sessions']:
+                player=race_build/'ACTUAL'/(Path(session['filename']).stem+'.STA')
+                if player.read_bytes()!=bytes.fromhex(session['player']):
+                    raise ValueError('Native regression state mismatch: '+player.name)
+                if session['wire'] is not None:
+                    if (race_build/'ACTUAL'/session['filename']).read_bytes()!=bytes.fromhex(session['wire']):
+                        raise ValueError('Native regression file mismatch: '+session['filename'])
+        # Carry the developer's result as BASELINE, leaving new-run files absent.
+        for name in ['RACEVC.EXE','RACEVC.MAP','BLDSTAT.TXT','BUILD.LOG','LINK.LOG']:
+            regression[name]=(race_build/name).read_bytes()
+        regression['BASELINE.TXT']=(race_build/'RESULTS.TXT').read_bytes()
+        readme=(ROOT/'compat/startup/REGRESS.TXT').read_bytes()
+        regression['README.TXT']=dos_text(readme.decode('ascii'))
+        child=json.loads(regression['MANIFEST.JSN'])
+        child['files']['README.TXT']=sha(regression['README.TXT'])
+        child['bundled_readme_override']='compat/startup/REGRESS.TXT replaces the historical compat/racevc/README.TXT text'
+        child['source_hashes']['compat/startup/REGRESS.TXT']=sha(readme)
+        child['native_status']='Developer VC152/WfW311 run passed 816 checks; user Win98/86Box run pending'
+        regression['MANIFEST.JSN']=dos_text(json.dumps(child,indent=2)+'\n')
+        manifest=json.loads(files['MANIFEST.TXT'])
+        manifest['regression']={name:dict(bytes=len(data),sha256=sha(data)) for name,data in regression.items()}
+        files.update({'REGRESS/'+name:data for name,data in regression.items()})
         files['MANIFEST.TXT']=dos_text(json.dumps(manifest,indent=2,ensure_ascii=True)+'\n')
     if development:
         if output.resolve() != ROOT/'runs/step4/guest/STARTDEV': raise ValueError('Development output must be STARTDEV')
     elif output.exists() or output.with_suffix('.ZIP').exists():
         raise FileExistsError('Preserve prior builds; choose a new folder')
     output.mkdir(parents=True,exist_ok=development)
-    for name,data in files.items(): (output/name).write_bytes(data)
+    for name,data in files.items():
+        path=output/name;path.parent.mkdir(parents=True,exist_ok=True);path.write_bytes(data)
     if not development:
         with zipfile.ZipFile(output.with_suffix('.ZIP'),'x',compression=zipfile.ZIP_DEFLATED) as package:
             for name,data in sorted(files.items()):
@@ -120,16 +162,17 @@ def export(output, development=False, native_build=None):
 
 def main():
     p=argparse.ArgumentParser(description=__doc__)
-    p.add_argument('--output',type=Path,default=ROOT/'ftp-share/START1')
+    p.add_argument('--output',type=Path,default=ROOT/'ftp-share/START2')
     p.add_argument('--development',action='store_true')
     p.add_argument('--verify-exe',type=Path)
+    p.add_argument('--race-build',type=Path,help='Include a matching completed native race regression build')
     p.add_argument('--native-build',type=Path,help='Include a verified matching native executable and build logs')
     a=p.parse_args()
     if a.verify_exe:
         count=compare_resources(NE(ROOT/'target/stars.exe'),NE(a.verify_exe))
         print(f'PASS: all {count} resource identifiers, sizes, flags and SHA-256 hashes match')
     else:
-        export(a.output,a.development,a.native_build);print(a.output)
+        export(a.output,a.development,a.native_build,a.race_build);print(a.output)
 
 
 if __name__ == '__main__': main()

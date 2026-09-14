@@ -21,34 +21,56 @@ static int innate_fp_bit(InnateFP value, int bit)
     return (int)((value.w[bit / 32] >> (bit % 32)) & 1U);
 }
 
+/* Word operations avoid hundreds of single-bit shifts per x87 operation on
+ * a 16-bit compiler. Every intermediate still uses the same integer value. */
 static int innate_fp_bits(InnateFP value)
 {
-    int bit;
-    for (bit = 127; bit >= 0; --bit)
-        if (innate_fp_bit(value, bit)) return bit + 1;
+    int i, bits;
+    StarsU32 word;
+    for (i = 3; i >= 0; --i) {
+        word = value.w[i];
+        if (!word) continue;
+        bits = i * 32 + 1;
+        if (word >> 16) { bits += 16; word >>= 16; }
+        if (word >> 8) { bits += 8; word >>= 8; }
+        if (word >> 4) { bits += 4; word >>= 4; }
+        if (word >> 2) { bits += 2; word >>= 2; }
+        if (word >> 1) ++bits;
+        return bits;
+    }
     return 0;
 }
 
 static InnateFP innate_fp_left(InnateFP value, int count)
 {
-    int i;
-    while (count-- > 0) {
-        for (i = 3; i > 0; --i)
-            value.w[i] = (value.w[i] << 1) | (value.w[i - 1] >> 31);
-        value.w[0] <<= 1;
+    InnateFP result = innate_fp_integer(0);
+    int i, words, bits;
+    if (count <= 0) return value;
+    result.exponent = value.exponent;
+    if (count >= 128) return result;
+    words = count / 32; bits = count % 32;
+    for (i = words; i < 4; ++i) {
+        result.w[i] = value.w[i - words] << bits;
+        if (bits && i > words)
+            result.w[i] |= value.w[i - words - 1] >> (32 - bits);
     }
-    return value;
+    return result;
 }
 
 static InnateFP innate_fp_right(InnateFP value, int count)
 {
-    int i;
-    while (count-- > 0) {
-        for (i = 0; i < 3; ++i)
-            value.w[i] = (value.w[i] >> 1) | (value.w[i + 1] << 31);
-        value.w[3] >>= 1;
+    InnateFP result = innate_fp_integer(0);
+    int i, words, bits;
+    if (count <= 0) return value;
+    result.exponent = value.exponent;
+    if (count >= 128) return result;
+    words = count / 32; bits = count % 32;
+    for (i = 0; i + words < 4; ++i) {
+        result.w[i] = value.w[i + words] >> bits;
+        if (bits && i + words + 1 < 4)
+            result.w[i] |= value.w[i + words + 1] << (32 - bits);
     }
-    return value;
+    return result;
 }
 
 static InnateFP innate_fp_sum_words(InnateFP a, InnateFP b)
@@ -101,11 +123,14 @@ static InnateFP innate_fp_add(InnateFP a, InnateFP b)
 static InnateFP innate_fp_multiply(InnateFP value, unsigned int factor)
 {
     InnateFP result = innate_fp_integer(0);
+    StarsU32 part, carry = 0;
+    int i, shift;
     result.exponent = value.exponent;
-    while (factor) {
-        if (factor & 1U) result = innate_fp_sum_words(result, value);
-        value = innate_fp_left(value, 1);
-        factor >>= 1;
+    for (i = 0; i < 8; ++i) {
+        shift = (i % 2) * 16;
+        part = ((value.w[i / 2] >> shift) & 65535UL) * factor + carry;
+        result.w[i / 2] |= (part & 65535UL) << shift;
+        carry = part >> 16;
     }
     return innate_fp_round(result, 64, 0);
 }
@@ -114,17 +139,18 @@ static InnateFP innate_fp_divide(InnateFP value, unsigned int divisor)
 {
     InnateFP numerator;
     InnateFP result = innate_fp_integer(0);
-    unsigned int remainder = 0;
-    int i, shift = 128 - innate_fp_bits(value);
+    StarsU32 part, remainder = 0;
+    int i, bits, shift = 128 - innate_fp_bits(value);
     if (shift == 128) return value;
     numerator = innate_fp_left(value, shift);
     result.exponent = value.exponent - shift;
-    for (i = 127; i >= 0; --i) {
-        remainder = remainder * 2U + (unsigned int)innate_fp_bit(numerator, i);
-        if (remainder >= divisor) {
-            remainder -= divisor;
-            result.w[i / 32] |= (StarsU32)1 << (i % 32);
-        }
+    /* Base-65536 long division. Divisors and factors fit a Win16 unsigned
+     * int, so the remainder/next-digit intermediate fits 32 bits. */
+    for (i = 7; i >= 0; --i) {
+        bits = (i % 2) * 16;
+        part = (remainder << 16) | ((numerator.w[i / 2] >> bits) & 65535UL);
+        result.w[i / 2] |= (part / divisor) << bits;
+        remainder = part % divisor;
     }
     return innate_fp_round(result, 64, remainder != 0);
 }

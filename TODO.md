@@ -86,7 +86,7 @@ This does not promise the author's exact source text, comments, macros, or code 
 
 ## 5. Reconstruct the program, subsystem by subsystem
 
-**In progress:** 127 named routines (55,129 original procedure bytes) now have
+**In progress:** 130 named routines (55,942 original procedure bytes) now have
 reviewed C89 source and original-x86 differential tests. See
 [the core reconstruction report](analysis/reconstruction/core.md).
 Completed components are checked under their subsystem below. A parent checkbox
@@ -97,8 +97,8 @@ serialization, header generation and record encryption. Stream retry/transfer
 control flow has explicit OS/error boundaries. Filename generation, file-creation
 recovery and alert selection are reconstructed. The save/load and race-creation
 dependencies now form an integrated host component, including message expansion,
-logging, passwords and all six wizard pages. A native Windows adapter and
-acceptance package remain an integration task. Current work targets startup,
+logging, passwords and all six wizard pages. START2 now connects this component
+to real Win16 dialogs, drawing, file pickers and settings. Current work targets startup,
 runtime, memory and common utilities; see the completed component milestones
 below and the [foundation report](analysis/reconstruction/foundations.md).
 
@@ -193,16 +193,22 @@ under **Subsystem completion** below. Earlier build and race milestones follow.
   sessions in the button run retained all matching outputs. Mouse automation
   delivery is not credited by those keyboard checks. See the
   [RETURN5 review](analysis/compat/racevc-return5.md). No rebuild is needed.
-- [ ] **Native race-component acceptance:** create a VC++ 1.52c adapter and one
-  coherent build package after this dependency work. Map the documented Windows
-  services/resources, compile the new source, exercise both file directions and
-  race creation in the VM, check real rendering/input and U020's Windows text
-  copying. Use the scenario package's IDs and expectations; its live pilot and
-  generated file cross-loading can run before the native adapter is complete.
-  **Execution preference, 2026-09-14:** the user has Stars! and VC++ 1.52c in
-  86Box/Windows 98 SE and prefers instructions for any checks needed there.
-  Provide exact actions, expected results and files to return through the existing
-  FTP share. DOSBox remains authorized for agent-operated reference checks.
+- [x] **Native race workshop and initial acceptance (START2):** built the new
+  VC++ 1.52c application with all six original-resource dialogs, real USER/GDI
+  services, file dialogs, save/reopen, Recent Race, settings and complete cleanup.
+  The final executable passes real six-page creation/save/load/cancel checks,
+  bitmap repaint, interactive file exchange with the original, negative-point
+  validation and invalid-file recovery. Its bundled regression passes all 816
+  native checks, 61 files and 89 states. Source, prebuilt programs, automatic
+  checks and manual instructions are in START2. See the
+  [report](analysis/reconstruction/start2.md) and
+  [evidence](analysis/compat/startup2-native.json).
+- [ ] **Broader native race acceptance:** run the complete input matrix with
+  actual Windows controls, including U020 text-tail behavior and password dialogs;
+  verify physical mouse controls and the user's Windows 98 SE / 86Box run.
+  CHECKS.TXT and REGRESS in START2 provide exact actions and expected output.
+  Return the whole package in a new RETURN folder. DOSBox remains authorized
+  for agent-operated reference checks.
 
 Step 5 is finished only when its full exit criterion is met. These milestones
 change the size and usefulness of work sessions, not the definition of completion.
@@ -228,6 +234,11 @@ provisional; module names identify study areas rather than architectural boundar
     InitInstance, INI settings, WinMain, command-line/batch setup, class
     registration and message-loop dependencies; connect the mapped NE entry
     and recovered resource helpers and validate the integrated startup path.
+  - [x] **START2 configuration component:** ReadIniTileSettings, GetWindowRc
+    and SetWindowIniString add 813 reviewed bytes. Main-frame/layout/pane/tile/
+    font settings paths and a new native settings dialog are integrated. This
+    scoped component does not complete ReadIniSettings or WriteIniSettings.
+    See [START2](analysis/reconstruction/start2.md).
   - [x] **Starting-screen source milestone:** recover large-resource loading,
     palette construction, saved-window parsing and the fallback starfield;
     connect recovered title creation, painting and palette handling to a new
@@ -249,9 +260,14 @@ provisional; module names identify study areas rather than architectural boundar
     PROGMAN/USER.EXE fault did not recur during fresh acceptance or an original
     title-screen comparison. Cause remains open (U023); neither the Windows
     edition nor a specific driver has been established as responsible.
-  - [ ] **Remaining runtime data:** audit the seven records without code,
-    remaining CRT data fixups and placement dependencies. The code-byte match
-    does not complete these data mappings or prove the full linker layout.
+  - [x] **CRT data member identification and bounded audit:** identify all seven
+    records without code; six mappings are complete. Across all CRT records,
+    compare 2,199 initialized literals and 98 of 99 data fixups. Preserve the
+    Windows stub slot and common message-padding ambiguities in the
+    [data audit](analysis/reconstruction/runtime-data.md).
+  - [ ] **Remaining runtime data and linker placement:** independently reproduce
+    the __fptaskdata zero-slot transformation and locate common PAD/EPAD markers.
+    The mapped members do not prove the complete original linker layout.
 - [ ] **Memory and common utilities — in progress:** `memory`, `utilgen`, relevant parts of `util`, allocation/ownership, collections, arithmetic helpers, and random-number generation.
 
   - [x] **Complete memory manager:** all 11 memory.obj routines / 2,390 bytes,

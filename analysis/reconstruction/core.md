@@ -1,11 +1,11 @@
 # Step 5: reviewed semantic core
 
-Status: **127 of 846 named game routines reconstructed**, covering 55,129 original
+Status: **130 of 846 named game routines reconstructed**, covering 55,942 original
 procedure bytes. Step 5 remains in progress. A separate
 [CRT audit](runtime-library.json) maps the linked runtime code; other unnamed
 code and remaining CRT data still need review. These routines compile together
 as a host C89 library and now support a partial native
-[Win16 starting-screen application](starting-screen.md). The complete application
+[Win16 starting-screen and race-workshop application](start2.md). The complete application
 and original far-call ABI remain unfinished. Innate race
 scoring uses explicit bounded x87 rounding; see the U018 resolution.
 
@@ -18,7 +18,7 @@ Additional routines and their limits are described in [codec](codec.md),
 [file creation and alerts](file-creation.md), the integrated
 [race component](race-component.md), [message formatting](message-formatting.md),
 and [memory, startup resources and runtime mapping](foundations.md), plus the
-[starting-screen milestone](starting-screen.md).
+[starting-screen milestone](starting-screen.md) and [START2 race workshop](start2.md).
 The table below covers the initial 15 routines.
 
 A complete host-side race-generation example is available with
@@ -31,7 +31,8 @@ creation recovery, error classification and dialog/log selection now have
 reviewed source as well. Message expansion, logging, passwords, race save/load
 and all six wizard pages now execute as an integrated host component. Its
 [dependency audit](race-dependencies.json) and [Windows contract](race-window-api.md)
-define the scope of the forthcoming native acceptance build.
+define the OS boundary now connected by START2; its native build and real-dialog
+acceptance are recorded separately in the START2 report.
 
 ## Source and address mapping
 

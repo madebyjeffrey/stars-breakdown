@@ -25,10 +25,10 @@ class BaselineChecks(unittest.TestCase):
                 self.assertGreater(row['end_exclusive'],cursor)
                 cursor=row['end_exclusive']
             self.assertEqual(cursor,max(seg['size'],seg['allocation']))
-        self.assertEqual(ledger['summary']['manually_reviewed_bytes'],55129)
-        self.assertEqual(ledger['summary']['compiled_reconstruction_bytes'],55129)
+        self.assertEqual(ledger['summary']['manually_reviewed_bytes'],55942)
+        self.assertEqual(ledger['summary']['compiled_reconstruction_bytes'],55942)
         compiled=[r for r in ledger['ranges'] if r.get('compilation_status')=='host_c89_compiled']
-        self.assertEqual(len(compiled),127)
+        self.assertEqual(len(compiled),130)
         memory=[r for r in compiled if 'memory.obj' in r['modules']]
         self.assertEqual(len(memory),11)
         self.assertEqual(sum(r['bytes'] for r in memory),2390)

@@ -1,54 +1,84 @@
-STARS RECONSTRUCTED STARTING SCREEN - MILESTONE 1
+STARS RECONSTRUCTION - START2: STARTING SCREEN AND RACE WORKSHOP
 
-This is a new Win16 program compiled from reconstructed C89 source.
-It contains the original resources. It does not run the original executable.
+QUICK START
+Copy this entire folder to a NEW directory in the Windows 98 / 86Box VM,
+for example C:\START2. Run START.EXE while Windows is running.
+A prebuilt executable is included; compilation is optional.
 
-BUILD
-The delivered package includes a prebuilt START.EXE and successful build logs.
-You can run that executable directly, or rebuild it with the following steps.
-Copy the whole folder to a new directory in Windows 98 or Windows 3.1.
-From that directory at a DOS prompt, run:
+Click Race Workshop, or press F6 / Alt+W on the starting screen.
+In the workshop, choose Race > New Race. The original six-page race wizard
+is live: names, predefined/random/custom races, primary and lesser traits,
+habitability/growth, economy, research, advantage points and race artwork.
+Next, Back, Finish and Cancel use the recovered game code.
+Finish opens the real Windows Save dialog. Choose a new .R1 filename.
+Race > Open Race reopens saved files; Recent Race opens the last saved/opened
+race. These files can also be opened by the original Stars! executable.
+
+Help > Settings exposes font names and two new package preferences:
+use the starfield title, and start directly in Race Workshop. Save settings,
+exit using Race > Exit, then restart. Window position and race-dialog position
+are remembered in STARSREC.INI beside START.EXE. That file is separate from
+any installed game's settings. Settings take effect on the next launch.
+The workshop's close button returns to the starting screen; Race > Exit
+closes the application. Starting-screen Exit / Alt+X also exits.
+
+AUTOMATIC CHECK
+Run START.EXE /CHECK from Windows, or use Help > Run Acceptance Check.
+It visibly visits and paints all six wizard pages, writes a new CHECKnnn.R1,
+reloads it, compares all 192 player-state bytes, then checks cancellation.
+The command-line check closes the application on completion. Its APP.LOG
+must end EXIT=PASS and contain ACCEPTANCE=PASS, WIZARD_CHECK=PASS,
+ROUNDTRIP=PASS and CANCEL_CHECK=PASS. Existing CHECK files are preserved.
+The Help-menu version displays a result dialog and leaves the workshop open.
+CHECK.LOG records the developer's completed native check, when supplied.
+
+For the broader compiler/output regression, open the REGRESS subfolder and
+run RACEVC.EXE from Windows. It runs 88 scenarios / 89 wizard sessions with
+visible progress. Expected RESULTS.TXT: STATUS=PASS, CHECKS=816, FAILURES=0.
+It creates 61 race files and 89 state snapshots. This separate test uses
+modeled UI inputs; START.EXE exercises the real Windows dialogs and drawing.
+Preserve an old REGRESS results folder and use a fresh copy for another run.
+
+MANUAL ACCEPTANCE
+See CHECKS.TXT for a short sequence covering interaction, file exchange,
+settings and cancellation. Use new filenames for test races.
+Page painting took about 1.1-1.2 seconds on the developer's DOSBox setup;
+VM speed can differ. APP.LOG is closed after each checkpoint so progress
+can be inspected even during a slow operation. No long initial silent test
+run is necessary: the interactive application is available immediately.
+
+WHAT TO RETURN
+Return this entire folder in a new RETURN directory on the FTP share.
+Include APP.LOG, STARSREC.INI, your synthetic test race files and notes about
+any wrong drawing or behavior. If run, include REGRESS/RESULTS.TXT, TRACE.TXT
+and ACTUAL. Preserve any build-screen errors in OUTPUT.TXT as well.
+APP.LOG starts fresh each launch; copy a failing log before another launch.
+Do not include personal game files or private passwords in the return.
+
+OPTIONAL BUILD
+From a DOS prompt inside Windows, change into this folder and run:
   BUILD C:\MSVC
-Use your compiler's actual installation directory if different.
-See BLDSTAT.TXT, BUILD.LOG, LINK.LOG and RC.LOG. Keep screen errors too.
+Use your actual VC++ installation directory if different.
+Read BLDSTAT.TXT, BUILD.LOG, LINK.LOG and RC.LOG. All must pass.
+REGRESS has its own BUILD.BAT if you also want to rebuild that test.
+All delivered text is ASCII with DOS CRLF endings, not UTF-16.
 
-RUN
-From Windows Program Manager or Explorer, run START.EXE in this folder.
-The original title artwork, button layout, font selection and version text
-are reconstructed. On a 16-color display the original starfield path is used.
-New Game and Open Game display a clear milestone notice. Continue is disabled.
-Exit and Alt+X close the application. Alt+F4 also works.
-Game creation, loading and the main game window are not connected yet.
+BOUNDARIES
+This is newly compiled C89 source with all 122 original resources embedded.
+It does not launch or use the original executable to perform race operations.
+New Game and Open Game still display milestone notices; game generation,
+turn processing, the full game frame, full startup and all game preferences
+are later work. Help-file browsing is not bundled. This is a study build.
 
-The program reads only its own STARSREC.INI in this folder. Optional [Fonts]
-settings use the original font keys; use defaults for the first run.
-It does not read settings from any installed copy of the original game.
-APP.LOG records initialization, first paint, cleanup and any adapter error.
-The original starfield consumes unspecified stack values as a second seed;
-this executable uses zero for that explicit input so repaints are stable.
+It uses the validated large-model semantic interface and exact bounded x87
+arithmetic implemented with integer words. It does not yet reproduce the
+original medium-model linker layout or yield a byte-identical executable.
+The original stack-dependent starfield seed is explicitly zero here.
 
-OPTIONAL CHECKS
-START.EXE /FALLBACK forces the original starfield drawing path.
-START.EXE /SMOKE automatically repaints and closes after several seconds.
-START.EXE /FALLBACK /SMOKE combines these checks.
-Return the entire folder if anything fails. User will provide serial number
-if a later milestone requires it; this starting-screen milestone does not.
-
-All text files are ordinary ASCII with DOS CRLF line endings.
-This build uses the validated large-model semantic adapter, not the original
-medium-model segment/link layout. Byte-identical executable matching remains
-a separate, later objective. MANIFEST.TXT records source and resource hashes.
-
-RECORDED TEST STATUS
-The unchanged START1 executable passed a fresh WfW 3.11 session:
-  /SMOKE: bitmap load, repaint, automatic exit and cleanup passed.
-  /FALLBACK /SMOKE: starfield drawing, repaint, exit and cleanup passed.
-  Alt+N and Alt+O: notices appeared and dismissal restored the artwork.
-  Alt+X and a separate Alt+F4 run: exit and cleanup passed.
-The original title also drew and closed cleanly in the same session.
-No guest fault appeared; the user confirmed the artifacts were absent.
-The earlier session's PROGMAN fault remains unexplained. These checks used
-800x600/256 colors and keyboard controls. Other display drivers/resolutions
-and mouse automation remain unverified. This is a development milestone.
-The delivered START1 folder and ZIP are preserved as originally packaged;
-their README contains the earlier first-run status. No rebuild is needed.
+Other useful commands:
+  START.EXE /SMOKE             title repaint and automatic exit
+  START.EXE /FALLBACK /SMOKE   starfield repaint and automatic exit
+The /FALLBACK option forces starfield drawing for that run.
+The earlier guest drawing fault did not recur in the current checks; its
+cause remains unresolved. Windows 98 / 86Box acceptance of START2 is pending
+your run. User will provide serial number if a later milestone requires it.

@@ -1,0 +1,89 @@
+{
+  "date": "2026-09-14",
+  "scope": "START2 real Win16 race wizard/save-load and startup configuration milestone; incomplete game application",
+  "executable_sha256": "14ce101acea0398871b6efa5c6d60a07f8624194f17d83d7e7050532ea405408",
+  "compiler": "Microsoft C/C++ 8.00c (VC++ 1.52c)",
+  "linker": "5.60",
+  "resource_compiler": "Microsoft Windows RC 3.11",
+  "build_flags": "/AL /GA /GEs /Zp1 /Od /Zi /W3; /NOLOGO /NOD /MAP /CO /ALIGN:64",
+  "original_resource_matches": 122,
+  "environment": {
+    "emulator": "DOSBox-X 2026.08.31",
+    "windows": "Windows for Workgroups 3.11",
+    "display": "800x600 256 colors / ET4000",
+    "configured_cycles": "fixed 20000",
+    "observed_cycles": "20000 earlier; 53430 displayed during final checks. The live cycle-setting change was not attributed; timings are observations, not a controlled performance comparison."
+  },
+  "build_logs": {
+    "BLDSTAT.TXT": "BUILD=START2\nCOMPILE=PASS\nLINK=PASS\nRESOURCES=PASS\n",
+    "BUILD.LOG": "utilgen.c\nrace.c\nnearstat.c\ncodec.c\ntext.c\ncreate.c\nplanet.c\nstrings.c\nrecords.c\nstream.c\nfile.c\nalerts.c\nruntime.c\npassword.c\noutput.c\nformat.c\nui.c\nraceui.c\nracedraw.c\nracewiz.c\nmemory.c\ncommon.c\nstartup.c\nresource.c\ntitle.c\nconfig.c\nnative.c\napp.c\n",
+    "LINK.LOG": "Object Modules [.obj]: /NOLOGO /NOD /MAP /CO /ALIGN:64 UTILGEN.OBJ+\nObject Modules [.obj]: RACE.OBJ+\nObject Modules [.obj]: NEARSTAT.OBJ+\nObject Modules [.obj]: CODEC.OBJ+\nObject Modules [.obj]: TEXT.OBJ+\nObject Modules [.obj]: CREATE.OBJ+\nObject Modules [.obj]: PLANET.OBJ+\nObject Modules [.obj]: STRINGS.OBJ+\nObject Modules [.obj]: RECORDS.OBJ+\nObject Modules [.obj]: STREAM.OBJ+\nObject Modules [.obj]: FILE.OBJ+\nObject Modules [.obj]: ALERTS.OBJ+\nObject Modules [.obj]: RUNTIME.OBJ+\nObject Modules [.obj]: PASSWORD.OBJ+\nObject Modules [.obj]: OUTPUT.OBJ+\nObject Modules [.obj]: FORMAT.OBJ+\nObject Modules [.obj]: UI.OBJ+\nObject Modules [.obj]: RACEUI.OBJ+\nObject Modules [.obj]: RACEDRAW.OBJ+\nObject Modules [.obj]: RACEWIZ.OBJ+\nObject Modules [.obj]: MEMORY.OBJ+\nObject Modules [.obj]: COMMON.OBJ+\nObject Modules [.obj]: STARTUP.OBJ+\nObject Modules [.obj]: RESOURCE.OBJ+\nObject Modules [.obj]: TITLE.OBJ+\nObject Modules [.obj]: CONFIG.OBJ+\nObject Modules [.obj]: NATIVE.OBJ+\nObject Modules [.obj]: APP.OBJ\nRun File [UTILGEN.exe]: START.EXE\nList File [c:START.map]: START.MAP\nLibraries [.lib]: LLIBCEW LIBW COMMDLG TOOLHELP\nDefinitions File [nul.def]: START.DEF;\n",
+    "RC.LOG": "Microsoft (R) Windows Resource Compiler Version 3.11\nCopyright (C) Microsoft Corp. 1985-1992. All rights reserved.\n\n"
+  },
+  "check_log": "STARTUP_MILESTONE=2\nSTATIC_DATA=PASS\nCONFIGURATION=PASS\nRACE_RESOURCES=PASS\nDRAWING=STARFIELD\nMEMORY_ALLOC_FREE=PASS\nTITLE_CREATE=PASS\nFIRST_PAINT=PASS\nACCEPTANCE=RUNNING\nDIALOG_OPEN=PASS\nDIALOG_PAINT_MS=439\nDIALOG_OPEN=PASS\nDIALOG_PAINT_MS=439\nDIALOG_OPEN=PASS\nDIALOG_PAINT_MS=439\nDIALOG_OPEN=PASS\nDIALOG_PAINT_MS=439\nDIALOG_OPEN=PASS\nDIALOG_PAINT_MS=439\nDIALOG_PAINT_MS=385\nDIALOG_OPEN=PASS\nDIALOG_PAINT_MS=439\nWIZARD_CHECK=PASS\nROUNDTRIP=PASS\nDIALOG_OPEN=PASS\nDIALOG_PAINT_MS=439\nCANCEL_CHECK=PASS\nACCEPTANCE=PASS\nTITLE_RELEASE=PASS\nCLEANUP=PASS\nRESOURCE_READS=4\nRESOURCE_BYTES=46272\nPAINTS=1\nEXIT=PASS\n",
+  "bitmap_smoke_log": "STARTUP_MILESTONE=2\nSTATIC_DATA=PASS\nCONFIGURATION=PASS\nRACE_RESOURCES=PASS\nDRAWING=BITMAP\nMEMORY_ALLOC_FREE=PASS\nTITLE_CREATE=PASS\nFIRST_PAINT=PASS\nREPAINT=PASS\nTITLE_RELEASE=PASS\nCLEANUP=PASS\nRESOURCE_READS=21\nRESOURCE_BYTES=527360\nPAINTS=2\nEXIT=PASS\n",
+  "interactive_validation_log": "STARTUP_MILESTONE=2\nSTATIC_DATA=PASS\nCONFIGURATION=PASS\nRACE_RESOURCES=PASS\nDRAWING=STARFIELD\nMEMORY_ALLOC_FREE=PASS\nTITLE_CREATE=PASS\nFIRST_PAINT=PASS\nRACE_LOAD=PASS\nDIALOG_OPEN=PASS\nDIALOG_PAINT_MS=440\nDIALOG_OPEN=PASS\nDIALOG_PAINT_MS=439\nDIALOG_PAINT_MS=440\nDIALOG_OPEN=PASS\nDIALOG_PAINT_MS=384\nRACE_CANCEL=PASS\nRACE_LOAD=REJECTED\nSETTINGS_SAVE=PASS\nTITLE_RELEASE=PASS\nCLEANUP=PASS\nRESOURCE_READS=4\nRESOURCE_BYTES=46272\nPAINTS=1\nEXIT=PASS\n",
+  "interactive_save_log": "STARTUP_MILESTONE=2\nSTATIC_DATA=PASS\nCONFIGURATION=PASS\nRACE_RESOURCES=PASS\nDRAWING=BITMAP\nMEMORY_ALLOC_FREE=PASS\nTITLE_CREATE=PASS\nFIRST_PAINT=PASS\nRACE_LOAD=PASS\nDIALOG_OPEN=PASS\nDIALOG_PAINT_MS=549\nRACE_SAVE=PASS\nRACE_LOAD=PASS\nDIALOG_OPEN=PASS\nDIALOG_PAINT_MS=440\nDIALOG_OPEN=PASS\nDIALOG_PAINT_MS=439\nRACE_CANCEL=PASS\nTITLE_RELEASE=PASS\nCLEANUP=PASS\nRESOURCE_READS=21\nRESOURCE_BYTES=527360\nPAINTS=1\nEXIT=PASS\n",
+  "regression": {
+    "executable_sha256": "d77bccfa506a9aded4c4f01b1fa7962b8245fec144570cc0f365b9c5266b2a4b",
+    "result": "STARS RACE COMPILER/OUTPUT ACCEPTANCE 3\nMODE=WIN16_LARGE; MSC=800\nUI=MODELED; game callbacks=recovered C; file I/O=real CRT\nExpected data=original x86 observations with fixed inputs\nRUN B000 B000.R1\nPASS B000.R1 points=25 load=1\nRUN T000 T000.R1\nPASS T000.R1 points=25 load=1\nRUN T001 T001.R1\nPASS T001.R1 points=32 load=1\nRUN T002 T002.R1\nPASS T002.R1 points=43 load=1\nRUN T003 T003.R1\nPASS T003.R1 points=11 load=1\nRUN T004 T004.R1\nPASS T004.R1 points=9 load=1\nRUN T005 T005.R1\nPASS T005.R1 points=7 load=1\nRUN T006 T006.R1\nPASS T006.R1 points=12 load=1\nRUN T007 T007.R1\nPASS T007.R1 points=25 load=1\nRUN P000 P000.R1\n  ALERT: Your advantage points are currently in the hole by 10 points. You cannot save a race definition which has a negative balance.\nPASS P000.R1 points=-10 load=-1\nRUN P001 P001.R1\n  ALERT: Your advantage points are currently in the hole by 28 points. You cannot save a race definition which has a negative balance.\nPASS P001.R1 points=-28 load=-1\nRUN P002 P002.R1\n  ALERT: Your advantage points are currently in the hole by 12 points. You cannot save a race definition which has a negative balance.\nPASS P002.R1 points=-12 load=-1\nRUN P003 P003.R1\nPASS P003.R1 points=0 load=1\nRUN P004 P004.R1\nPASS P004.R1 points=36 load=1\nRUN P005 P005.R1\nPASS P005.R1 points=53 load=1\nRUN P006 P006.R1\n  ALERT: Your advantage points are currently in the hole by 37 points. You cannot save a race definition which has a negative balance.\nPASS P006.R1 points=-37 load=-1\nRUN P007 P007.R1\n  ALERT: Your advantage points are currently in the hole by 57 points. You cannot save a race definition which has a negative balance.\nPASS P007.R1 points=-57 load=-1\nRUN P008 P008.R1\n  ALERT: Your advantage points are currently in the hole by 27 points. You cannot save a race definition which has a negative balance.\nPASS P008.R1 points=-27 load=-1\nRUN P009 P009.R1\nPASS P009.R1 points=25 load=1\nRUN L000 L000.R1\n  ALERT: Your advantage points are currently in the hole by 53 points. You cannot save a race definition which has a negative balance.\nPASS L000.R1 points=-53 load=-1\nRUN L001 L001.R1\n  ALERT: Your advantage points are currently in the hole by 115 points. You cannot save a race definition which has a negative balance.\nPASS L001.R1 points=-115 load=-1\nRUN L002 L002.R1\n  ALERT: Your advantage points are currently in the hole by 28 points. You cannot save a race definition which has a negative balance.\nPASS L002.R1 points=-28 load=-1\nRUN L003 L003.R1\n  ALERT: Your advantage points are currently in the hole by 42 points. You cannot save a race definition which has a negative balance.\nPASS L003.R1 points=-42 load=-1\nRUN L004 L004.R1\nPASS L004.R1 points=38 load=1\nRUN L005 L005.R1\n  ALERT: Your advantage points are currently in the hole by 55 points. You cannot save a race definition which has a negative balance.\nPASS L005.R1 points=-55 load=-1\nRUN L006 L006.R1\n  ALERT: Your advantage points are currently in the hole by 26 points. You cannot save a race definition which has a negative balance.\nPASS L006.R1 points=-26 load=-1\nRUN L007 L007.R1\nPASS L007.R1 points=78 load=1\nRUN L008 L008.R1\nPASS L008.R1 points=105 load=1\nRUN L009 L009.R1\nPASS L009.R1 points=110 load=1\nRUN L010 L010.R1\nPASS L010.R1 points=120 load=1\nRUN L011 L011.R1\nPASS L011.R1 points=85 load=1\nRUN L012 L012.R1\nPASS L012.R1 points=48 load=1\nRUN L013 L013.R1\nPASS L013.R1 points=35 load=1\nRUN I000 I000.R1\n  ALERT: Your advantage points are currently in the hole by 547 points. You cannot save a race definition which has a negative balance.\nPASS I000.R1 points=-547 load=-1\nRUN I003 I003.R1\nPASS I003.R1 points=81 load=1\nRUN E000 E000.R1\nPASS E000.R1 points=52 load=1\nRUN E003 E003.R1\nPASS E003.R1 points=65 load=1\nRUN I001 I001.R1\n  ALERT: Your advantage points are currently in the hole by 547 points. You cannot save a race definition which has a negative balance.\nPASS I001.R1 points=-547 load=-1\nRUN I004 I004.R1\nPASS I004.R1 points=81 load=1\nRUN E001 E001.R1\nPASS E001.R1 points=52 load=1\nRUN E004 E004.R1\nPASS E004.R1 points=65 load=1\nRUN I002 I002.R1\n  ALERT: Your advantage points are currently in the hole by 547 points. You cannot save a race definition which has a negative balance.\nPASS I002.R1 points=-547 load=-1\nRUN I005 I005.R1\nPASS I005.R1 points=81 load=1\nRUN E002 E002.R1\nPASS E002.R1 points=52 load=1\nRUN E005 E005.R1\nPASS E005.R1 points=65 load=1\nRUN E006 E006.R1\nPASS E006.R1 points=311 load=1\nRUN E007 E007.R1\n  ALERT: Your advantage points are currently in the hole by 118 points. You cannot save a race definition which has a negative balance.\nPASS E007.R1 points=-118 load=-1\nRUN G000 G000.R1\nPASS G000.R1 points=7619 load=1\nRUN G001 G001.R1\n  ALERT: Your advantage points are currently in the hole by 386 points. You cannot save a race definition which has a negative balance.\nPASS G001.R1 points=-386 load=-1\nRUN F000 F000.R1\nPASS F000.R1 points=65 load=1\nRUN F001 F001.R1\n  ALERT: Your advantage points are currently in the hole by 175 points. You cannot save a race definition which has a negative balance.\nPASS F001.R1 points=-175 load=-1\nRUN F002 F002.R1\n  ALERT: Your advantage points are currently in the hole by 17 points. You cannot save a race definition which has a negative balance.\nPASS F002.R1 points=-17 load=-1\nRUN F003 F003.R1\nPASS F003.R1 points=58 load=1\nRUN F004 F004.R1\nPASS F004.R1 points=43 load=1\nRUN F005 F005.R1\nPASS F005.R1 points=5 load=1\nRUN F006 F006.R1\nPASS F006.R1 points=11 load=1\nRUN F007 F007.R1\nPASS F007.R1 points=38 load=1\nRUN F008 F008.R1\n  ALERT: Your advantage points are currently in the hole by 31 points. You cannot save a race definition which has a negative balance.\nPASS F008.R1 points=-31 load=-1\nRUN F009 F009.R1\nPASS F009.R1 points=58 load=1\nRUN F010 F010.R1\nPASS F010.R1 points=46 load=1\nRUN F011 F011.R1\nPASS F011.R1 points=3 load=1\nRUN F012 F012.R1\nPASS F012.R1 points=13 load=1\nRUN F013 F013.R1\nPASS F013.R1 points=38 load=1\nRUN F014 F014.R1\n  ALERT: Your advantage points are currently in the hole by 33 points. You cannot save a race definition which has a negative balance.\nPASS F014.R1 points=-33 load=-1\nRUN R000 R000.R1\nPASS R000.R1 points=75 load=1\nRUN R001 R001.R1\n  ALERT: Your advantage points are currently in the hole by 18 points. You cannot save a race definition which has a negative balance.\nPASS R001.R1 points=-18 load=-1\nRUN R002 R002.R1\nPASS R002.R1 points=75 load=1\nRUN R003 R003.R1\n  ALERT: Your advantage points are currently in the hole by 18 points. You cannot save a race definition which has a negative balance.\nPASS R003.R1 points=-18 load=-1\nRUN R004 R004.R1\nPASS R004.R1 points=75 load=1\nRUN R005 R005.R1\n  ALERT: Your advantage points are currently in the hole by 18 points. You cannot save a race definition which has a negative balance.\nPASS R005.R1 points=-18 load=-1\nRUN R006 R006.R1\nPASS R006.R1 points=75 load=1\nRUN R007 R007.R1\n  ALERT: Your advantage points are currently in the hole by 18 points. You cannot save a race definition which has a negative balance.\nPASS R007.R1 points=-18 load=-1\nRUN R008 R008.R1\nPASS R008.R1 points=75 load=1\nRUN R009 R009.R1\n  ALERT: Your advantage points are currently in the hole by 18 points. You cannot save a race definition which has a negative balance.\nPASS R009.R1 points=-18 load=-1\nRUN R010 R010.R1\nPASS R010.R1 points=75 load=1\nRUN R011 R011.R1\n  ALERT: Your advantage points are currently in the hole by 18 points. You cannot save a race definition which has a negative balance.\nPASS R011.R1 points=-18 load=-1\nRUN R012 R012.R1\nPASS R012.R1 points=425 load=1\nRUN V000 V000.R1\nPASS V000.R1 points=25 load=1\nRUN V001 V001.R1\nPASS V001.R1 points=25 load=1\nRUN A000 A000.R1\nPASS A000.R1 points=25 load=1\nRUN A001 A001.R1\nPASS A001.R1 points=25 load=1\nRUN A002 A002.R1\nPASS A002.R1 points=25 load=1\nRUN A003 A003.R1\nPASS A003.R1 points=25 load=1\nRUN A004 A004.R1\nPASS A004.R1 points=25 load=1\nRUN W000 W000.R1\n  ALERT: The password you have entered is incorrect, please try again.\nPASS W000.R1 points=25 load=1\nRUN N000 N000.R1\nPASS N000.R1 points=25 load=1\nRUN N001 N001.R1\nPASS N001.R1 points=25 load=-1\nRUN U020 U020A.R1\nPASS U020A.R1 points=25 load=1\nRUN U020 U020B.R1\n  ALERT: The game file U020B.R1 appears to be corrupt, unable to load file.\nPASS U020B.R1 points=25 load=0\nCASES=88 SESSIONS=89 CHECKS=816 FAILURES=0\nELAPSED_SECONDS=679 CHECKPOINTS=3158\nSTATUS=PASS\n",
+    "trace_sha256": "d6cf60b22fec22538d1e4d10b38e9fbe2d07549509402aa9d5fc77c677c69b5e",
+    "cases": 88,
+    "sessions": 89,
+    "checks": 816,
+    "failures": 0,
+    "matching_race_files": 61,
+    "matching_player_snapshots": 89,
+    "elapsed_seconds": 679,
+    "scope": "Native compiler/output run with modeled USER/GDI input; real file I/O, frozen original-x86 expectations"
+  },
+  "cross_application_files": [
+    {
+      "file": "PIONEER.R1",
+      "wire_sha256": "94a938fe9b33eac77f6dad0c6f04059074d3b094c8118ebbacd48858872807ef",
+      "player_sha256": "f0422d2292a44de7f9e227e1748d6fb53c2ce707db2201cd4155f490ef97a80e",
+      "player": "ff00000000000f0000000000000000003232320f0f0f5555550f0000000000000000000000000000000000000000000000000000000000000f00000000000a0a0a0a0a050a000101010101010900000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000050696f6e6565720000000000000000000000000000000000000000000000000050696f6e65657273000000000000000000000000000000000000000000000000",
+      "original_x86_and_c_loader": "PASS"
+    },
+    {
+      "file": "ORIGIN.R1",
+      "wire_sha256": "e62167b86ad1837cf979f0d5820feac477d5b6fe515d004312047934f4136d23",
+      "player_sha256": "f0422d2292a44de7f9e227e1748d6fb53c2ce707db2201cd4155f490ef97a80e",
+      "player": "ff00000000000f0000000000000000003232320f0f0f5555550f0000000000000000000000000000000000000000000000000000000000000f00000000000a0a0a0a0a050a000101010101010900000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000050696f6e6565720000000000000000000000000000000000000000000000000050696f6e65657273000000000000000000000000000000000000000000000000",
+      "original_x86_and_c_loader": "PASS"
+    }
+  ],
+  "final_interactive_file": {
+    "name": "FINAL.R1",
+    "sha256": "8c7791b051c2199339c665f8db4ce0da776b9fbe4be710abc8053fd7ceee10f6",
+    "save_and_reload": "PASS",
+    "save_cancellation_preserved_file": "PASS"
+  },
+  "observed": [
+    "Final /CHECK painted six actual original-resource dialogs, saved an unused CHECKnnn.R1, reloaded all 192 player bytes, cancelled the next wizard and exited cleanly.",
+    "Final /SMOKE used the bitmap after saving the starfield preference off; repaint, cleanup and automatic exit passed.",
+    "Pioneer/Pioneers created and saved via real Windows dialogs; original Stars! opened it with 25 points and saved a separate ORIGIN.R1.",
+    "Original-x86 and reconstructed loaders accepted PIONEER.R1 and ORIGIN.R1; all 192 player-state bytes matched.",
+    "Final START2 opened ORIGIN.R1 through the Windows file picker and displayed Pioneer/Pioneers with 25 points.",
+    "Changing Jack of All Trades to Alternate Reality changed the description and points to -27; Finish showed the original validation alert and returned to page 2.",
+    "Cancelling the modified wizard left the original saved files byte-for-byte unchanged.",
+    "Opening the three-byte BROKEN.R1 displayed an error and returned safely to the workshop.",
+    "Settings dialog retained both saved checkboxes after restart; saving them off restored bitmap/title startup.",
+    "Final START2 saved FINAL.R1 through the real Save dialog, reopened it through Recent Race, and cancelled a subsequent Save without changing the file.",
+    "An automated mouse click on Next did not advance the page; Alt+N did. Physical mouse operation remains for user acceptance.",
+    "No persistent drawing corruption or guest fault was observed during these runs."
+  ],
+  "host_validation": {
+    "unique_tests_exercised": 228,
+    "full_suite": "225 tests: 224 passed; one stale generated coverage snapshot failed. Snapshot regenerated and its test passed on rerun.",
+    "followup": "13 focused tests passed, including the corrected snapshot and three newly added configuration/package tests. Arithmetic/original-instruction and runtime-data negative controls also passed."
+  },
+  "validation_limits": [
+    "User Windows 98 SE / 86Box START2 acceptance pending.",
+    "Mouse automation, full native input matrix including U020 tail copying, and real password-dialog interaction are not established by this initial UI acceptance. The regression covers password behavior through modeled UI.",
+    "Complete WinMain/FCreateStuff/ReadIniSettings/WriteIniSettings and game creation/loading/turn paths remain unreconstructed or unconnected.",
+    "Large-model semantic interface; no original medium-model ABI/link-layout or byte-identical build claim.",
+    "Starfield selects zero for the original caller-stack-dependent second seed.",
+    "Earlier U023 guest drawing/fault cause remains unresolved."
+  ]
+}

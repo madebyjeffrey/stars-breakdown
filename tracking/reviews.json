@@ -1791,5 +1791,44 @@
       "analysis/reconstruction/starting-screen.md",
       "tests/test_title_machine.py"
     ]
+  },
+  "0001:2b8a-2dee": {
+    "reconstruction_path": "reconstructed/src/config.c",
+    "review_status": "manually_reviewed",
+    "compilation_status": "host_c89_compiled",
+    "validation_status": "original_x86_differential_checked; VC152_large_model_compiled; scoped_native_startup_integration",
+    "evidence": [
+      "analysis/functions.json",
+      "analysis/debug/procedures.json",
+      "analysis/decompiler/export-manifest.json",
+      "analysis/reconstruction/start2.md",
+      "tests/test_config_machine.py"
+    ]
+  },
+  "0005:79ac-79f5": {
+    "reconstruction_path": "reconstructed/src/config.c",
+    "review_status": "manually_reviewed",
+    "compilation_status": "host_c89_compiled",
+    "validation_status": "original_x86_differential_checked; VC152_large_model_compiled; scoped_native_startup_integration",
+    "evidence": [
+      "analysis/functions.json",
+      "analysis/debug/procedures.json",
+      "analysis/decompiler/export-manifest.json",
+      "analysis/reconstruction/start2.md",
+      "tests/test_config_machine.py"
+    ]
+  },
+  "0005:79f6-7a76": {
+    "reconstruction_path": "reconstructed/src/config.c",
+    "review_status": "manually_reviewed",
+    "compilation_status": "host_c89_compiled",
+    "validation_status": "original_x86_differential_checked; VC152_large_model_compiled; scoped_native_startup_integration",
+    "evidence": [
+      "analysis/functions.json",
+      "analysis/debug/procedures.json",
+      "analysis/decompiler/export-manifest.json",
+      "analysis/reconstruction/start2.md",
+      "tests/test_config_machine.py"
+    ]
   }
 }

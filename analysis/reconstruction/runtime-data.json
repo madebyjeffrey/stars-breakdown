@@ -1,0 +1,2944 @@
+{
+  "schema": 1,
+  "original_sha256": "ccab6682b55dae14dbf104e491cfbd3b32a6280022020032ae0615500949ba59",
+  "library_sha256": "cd162afbba20b1a2799d5ac71b9aab34f55ea48c8b7a47af648bddebc797214e",
+  "scope": "CRT data member identity, initialized literals, pointer/near fixups and zero-fill extents. No original linker ordering or byte-identical whole build is claimed.",
+  "summary": {
+    "modules": 108,
+    "records_without_code": 7,
+    "data_segments": 44,
+    "initialized_literal_bytes": 2199,
+    "data_fixups": 99,
+    "unresolved": 4
+  },
+  "modules": [
+    {
+      "module": 1,
+      "name": ".\\mantold.asm",
+      "member_offset": 158752,
+      "member_sha256": "590a831349dfce6fbabd661062f5ea5b1b0fe0ef5bbadfb1ea922f3ee5f73504",
+      "original_code_bytes": 185,
+      "data": [],
+      "absolute_symbols": [],
+      "status": "verified_data_mapping"
+    },
+    {
+      "module": 2,
+      "name": ".\\tenpow.asm",
+      "member_offset": 157136,
+      "member_sha256": "38f57f7794575143332aff8c80ca41126605b284ea811d4671374fcc3e31150a",
+      "original_code_bytes": 1297,
+      "data": [],
+      "absolute_symbols": [],
+      "status": "verified_data_mapping"
+    },
+    {
+      "module": 3,
+      "name": ".\\strgtold.asm",
+      "member_offset": 159472,
+      "member_sha256": "f6752d4d587e855d13920270d02f60544c5814fed61a767be4341dc0387a445f",
+      "original_code_bytes": 616,
+      "data": [],
+      "absolute_symbols": [],
+      "status": "verified_data_mapping"
+    },
+    {
+      "module": 4,
+      "name": ".\\strgtod.asm",
+      "member_offset": 159072,
+      "member_sha256": "0c9273af524dfb6da2e9d75611d2c268961165e2d7dc96438855c16337070e64",
+      "original_code_bytes": 104,
+      "data": [
+        {
+          "object_segment": 1,
+          "name": "_DATA",
+          "size": 10,
+          "ne_segment": 37,
+          "base": 7290,
+          "placement_evidence": "unique_initialized_bytes_and_resolved_pointers",
+          "initialized_literals": 10,
+          "zero_fill_bytes": 0,
+          "literal_mismatches": [],
+          "fixups": [],
+          "status": "verified_data"
+        }
+      ],
+      "absolute_symbols": [],
+      "status": "verified_data_mapping"
+    },
+    {
+      "module": 5,
+      "name": ".\\x8tmul.asm",
+      "member_offset": 153808,
+      "member_sha256": "1a14aa2b87bf093ba5fc7757f9b180f53d667609bac9176934e1726088b780cc",
+      "original_code_bytes": 441,
+      "data": [],
+      "absolute_symbols": [],
+      "status": "verified_data_mapping"
+    },
+    {
+      "module": 6,
+      "name": "windows\\nheap.c",
+      "member_offset": 27776,
+      "member_sha256": "f33eda1aa71d86ae716ff7f3ee8cb057c7dd446e5477d8f9cde9dd0bb01112b3",
+      "original_code_bytes": 248,
+      "data": [
+        {
+          "object_segment": 2,
+          "name": "_DATA",
+          "size": 4,
+          "ne_segment": 37,
+          "base": 7286,
+          "placement_evidence": "public_symbol_or_verified_code_reference",
+          "initialized_literals": 4,
+          "zero_fill_bytes": 0,
+          "literal_mismatches": [],
+          "fixups": [],
+          "status": "verified_data"
+        }
+      ],
+      "absolute_symbols": [],
+      "status": "verified_data_mapping"
+    },
+    {
+      "module": 7,
+      "name": ".\\cfinn.c",
+      "member_offset": 191360,
+      "member_sha256": "f8bbf67cda1cf4efb2c8d9789ab582e2755c358f5727687750a30734b6cbaffb",
+      "original_code_bytes": 96,
+      "data": [
+        {
+          "object_segment": 4,
+          "name": "_BSS",
+          "size": 16,
+          "ne_segment": 37,
+          "base": 8828,
+          "placement_evidence": "public_symbol_or_verified_code_reference",
+          "initialized_literals": 0,
+          "zero_fill_bytes": 16,
+          "literal_mismatches": [],
+          "fixups": [],
+          "status": "verified_data"
+        }
+      ],
+      "absolute_symbols": [],
+      "status": "verified_data_mapping"
+    },
+    {
+      "module": 8,
+      "name": ".\\fastmult.asm",
+      "member_offset": 155024,
+      "member_sha256": "a60b2e2a42bbfc547a02f194fe3815cd9ede653424cc5d74f95a56b0b2370a16",
+      "original_code_bytes": 271,
+      "data": [],
+      "absolute_symbols": [],
+      "status": "verified_data_mapping"
+    },
+    {
+      "module": 9,
+      "name": ".\\fastadd.asm",
+      "member_offset": 154496,
+      "member_sha256": "2d2895d3ea5a483ec19d07fc7a9e6190ea1f087d63c92980c6bc0e9e8f24244b",
+      "original_code_bytes": 384,
+      "data": [],
+      "absolute_symbols": [],
+      "status": "verified_data_mapping"
+    },
+    {
+      "module": 10,
+      "name": ".\\x8fout.asm",
+      "member_offset": 152928,
+      "member_sha256": "62a02353a802a4d6b7584da5d2d0bc59b37bdd7507c4eb37d43226b4c1cffd01",
+      "original_code_bytes": 403,
+      "data": [
+        {
+          "object_segment": 1,
+          "name": "_DATA",
+          "size": 73,
+          "ne_segment": 37,
+          "base": 7212,
+          "placement_evidence": "public_symbol_or_verified_code_reference",
+          "initialized_literals": 44,
+          "zero_fill_bytes": 29,
+          "literal_mismatches": [],
+          "fixups": [],
+          "status": "verified_data"
+        }
+      ],
+      "absolute_symbols": [],
+      "status": "verified_data_mapping"
+    },
+    {
+      "module": 11,
+      "name": "growseg.asm",
+      "member_offset": 30384,
+      "member_sha256": "e88ec33c4ebdf805ec965d772005e3cbd381f0455ae33bacb4845c1a1aa7ab53",
+      "original_code_bytes": 274,
+      "data": [
+        {
+          "object_segment": 2,
+          "name": "_DATA",
+          "size": 2,
+          "ne_segment": 37,
+          "base": 7210,
+          "placement_evidence": "public_symbol_or_verified_code_reference",
+          "initialized_literals": 2,
+          "zero_fill_bytes": 0,
+          "literal_mismatches": [],
+          "fixups": [],
+          "status": "verified_data"
+        }
+      ],
+      "absolute_symbols": [],
+      "status": "verified_data_mapping"
+    },
+    {
+      "module": 12,
+      "name": "malloc.asm",
+      "member_offset": 27536,
+      "member_sha256": "eea83f15b34aed6310c66f44116a811afef22860608d076e93e6efe1be25e544",
+      "original_code_bytes": 0,
+      "data": [],
+      "absolute_symbols": [],
+      "status": "verified_data_mapping",
+      "note": "This member contributes no loadable segment bytes; its record/absolute-symbol role is mapped."
+    },
+    {
+      "module": 13,
+      "name": "windows\\windgrpx.c",
+      "member_offset": 10768,
+      "member_sha256": "bce9c62c195b8a3f2d50b061b43e5cc9f2415407cc71ae62a5ec902320f0bc58",
+      "original_code_bytes": 20,
+      "data": [],
+      "absolute_symbols": [],
+      "status": "verified_data_mapping"
+    },
+    {
+      "module": 14,
+      "name": ".\\matherr.asm",
+      "member_offset": 195312,
+      "member_sha256": "92635f9213dd08c012b51e1e33443c4abdec399913ef3cb431ad9d93eecff651",
+      "original_code_bytes": 25,
+      "data": [
+        {
+          "object_segment": 4,
+          "name": "XI",
+          "size": 4,
+          "ne_segment": 37,
+          "base": 7322,
+          "placement_evidence": "unique_initialized_bytes_and_resolved_pointers",
+          "initialized_literals": 0,
+          "zero_fill_bytes": 0,
+          "literal_mismatches": [],
+          "fixups": [
+            {
+              "offset": 0,
+              "width": 4,
+              "location": 3,
+              "target": [
+                0,
+                1
+              ],
+              "status": "verified_pointer_relocation"
+            }
+          ],
+          "status": "verified_data"
+        }
+      ],
+      "absolute_symbols": [],
+      "status": "verified_data_mapping"
+    },
+    {
+      "module": 15,
+      "name": ".\\huge.asm",
+      "member_offset": 194848,
+      "member_sha256": "1764aae9e2c2ed940b361728a36b5d1b34ec662921a8ef3407d1173d3d920171",
+      "original_code_bytes": 0,
+      "data": [
+        {
+          "object_segment": 2,
+          "name": "_DATA",
+          "size": 9,
+          "ne_segment": 37,
+          "base": 7200,
+          "placement_evidence": "public_symbol_or_verified_code_reference",
+          "initialized_literals": 9,
+          "zero_fill_bytes": 0,
+          "literal_mismatches": [],
+          "fixups": [],
+          "status": "verified_data"
+        }
+      ],
+      "absolute_symbols": [],
+      "status": "verified_data_mapping"
+    },
+    {
+      "module": 16,
+      "name": ".\\cfout.asm",
+      "member_offset": 191712,
+      "member_sha256": "8d4f9c31662daaf1d247c3a69659344565fa601060de6bde401e0a01e801c26f",
+      "original_code_bytes": 80,
+      "data": [
+        {
+          "object_segment": 2,
+          "name": "_DATA",
+          "size": 35,
+          "ne_segment": 37,
+          "base": 7164,
+          "placement_evidence": "public_symbol_or_verified_code_reference",
+          "initialized_literals": 0,
+          "zero_fill_bytes": 35,
+          "literal_mismatches": [],
+          "fixups": [],
+          "status": "verified_data"
+        }
+      ],
+      "absolute_symbols": [],
+      "status": "verified_data_mapping"
+    },
+    {
+      "module": 17,
+      "name": ".\\87exist.asm",
+      "member_offset": 181376,
+      "member_sha256": "3536f178dace8b525e5b7f19b1de9329da542fa6b3fa287ca905c9ed250fc37e",
+      "original_code_bytes": 133,
+      "data": [
+        {
+          "object_segment": 2,
+          "name": "_DATA",
+          "size": 2,
+          "ne_segment": 37,
+          "base": 7162,
+          "placement_evidence": "public_symbol_or_verified_code_reference",
+          "initialized_literals": 2,
+          "zero_fill_bytes": 0,
+          "literal_mismatches": [],
+          "fixups": [],
+          "status": "verified_data"
+        },
+        {
+          "object_segment": 4,
+          "name": "XI",
+          "size": 4,
+          "ne_segment": 37,
+          "base": 7318,
+          "placement_evidence": "unique_initialized_bytes_and_resolved_pointers",
+          "initialized_literals": 0,
+          "zero_fill_bytes": 0,
+          "literal_mismatches": [],
+          "fixups": [
+            {
+              "offset": 0,
+              "width": 4,
+              "location": 3,
+              "target": [
+                0,
+                1
+              ],
+              "status": "verified_pointer_relocation"
+            }
+          ],
+          "status": "verified_data"
+        }
+      ],
+      "absolute_symbols": [],
+      "status": "verified_data_mapping"
+    },
+    {
+      "module": 18,
+      "name": ".\\emtrigx.asm",
+      "member_offset": 147248,
+      "member_sha256": "4509ba8c510a351481b6517c896278367ea159ba019587c75759bd6a93352829",
+      "original_code_bytes": 1229,
+      "data": [
+        {
+          "object_segment": 2,
+          "name": "_DATA",
+          "size": 300,
+          "ne_segment": 37,
+          "base": 6862,
+          "placement_evidence": "public_symbol_or_verified_code_reference",
+          "initialized_literals": 284,
+          "zero_fill_bytes": 16,
+          "literal_mismatches": [],
+          "fixups": [],
+          "status": "verified_data"
+        }
+      ],
+      "absolute_symbols": [],
+      "status": "verified_data_mapping"
+    },
+    {
+      "module": 19,
+      "name": ".\\87disp.asm",
+      "member_offset": 140480,
+      "member_sha256": "8fe73db8d96337eeae7aab6b37eba763289c9d966e40ebcc2341fe387f7528d7",
+      "original_code_bytes": 255,
+      "data": [
+        {
+          "object_segment": 2,
+          "name": "_DATA",
+          "size": 37,
+          "ne_segment": 37,
+          "base": 6824,
+          "placement_evidence": "public_symbol_or_verified_code_reference",
+          "initialized_literals": 37,
+          "zero_fill_bytes": 0,
+          "literal_mismatches": [],
+          "fixups": [],
+          "status": "verified_data"
+        }
+      ],
+      "absolute_symbols": [],
+      "status": "verified_data_mapping"
+    },
+    {
+      "module": 20,
+      "name": "dos\\wrt2err.asm",
+      "member_offset": 101328,
+      "member_sha256": "4113b397975d9b94acd2f833955a0944179a4604a6f4debed7ddd0a1aaee7c5f",
+      "original_code_bytes": 77,
+      "data": [],
+      "absolute_symbols": [],
+      "status": "verified_data_mapping"
+    },
+    {
+      "module": 21,
+      "name": "_fptostr.c",
+      "member_offset": 37424,
+      "member_sha256": "e3d01cda9889f11d8b6d9d3f8695d56291b93ec8052f925f648430563c2fa217",
+      "original_code_bytes": 154,
+      "data": [],
+      "absolute_symbols": [],
+      "status": "verified_data_mapping"
+    },
+    {
+      "module": 22,
+      "name": "atof.c",
+      "member_offset": 36544,
+      "member_sha256": "3c8da2315d80aef5206fb2ee0ce9ab236ce15b767aa36ecfec40b914b544b6e1",
+      "original_code_bytes": 76,
+      "data": [],
+      "absolute_symbols": [],
+      "status": "verified_data_mapping"
+    },
+    {
+      "module": 23,
+      "name": "windows\\windgrp.asm",
+      "member_offset": 10576,
+      "member_sha256": "b860963c806dde4711d86c39e5e61d18adb726e72d5ad6895b4466188b30a465",
+      "original_code_bytes": 16,
+      "data": [],
+      "absolute_symbols": [],
+      "status": "verified_data_mapping"
+    },
+    {
+      "module": 24,
+      "name": "dos\\stdalloc.asm",
+      "member_offset": 7216,
+      "member_sha256": "8ae3019fb3e2b18375c3dad876d308bd57f042e4f28607c9b6b602edce91fee9",
+      "original_code_bytes": 45,
+      "data": [],
+      "absolute_symbols": [],
+      "status": "verified_data_mapping"
+    },
+    {
+      "module": 25,
+      "name": "dos\\nmsghdr.asm",
+      "member_offset": 6416,
+      "member_sha256": "644a9cd64788894795c1632c033a563da7429e9c91813ca591d132c320ca6ef6",
+      "original_code_bytes": 116,
+      "data": [
+        {
+          "object_segment": 3,
+          "name": "HDR",
+          "size": 8,
+          "ne_segment": 37,
+          "base": 7790,
+          "placement_evidence": "public_symbol_or_verified_code_reference",
+          "initialized_literals": 8,
+          "zero_fill_bytes": 0,
+          "literal_mismatches": [],
+          "fixups": [],
+          "status": "verified_data"
+        },
+        {
+          "object_segment": 5,
+          "name": "PAD",
+          "size": 2,
+          "status": "unresolved_placement",
+          "candidate_count": 145,
+          "candidate_examples": [
+            [
+              37,
+              62
+            ],
+            [
+              37,
+              71
+            ],
+            [
+              37,
+              1046
+            ],
+            [
+              37,
+              1047
+            ],
+            [
+              37,
+              1048
+            ],
+            [
+              37,
+              1104
+            ],
+            [
+              37,
+              1108
+            ],
+            [
+              37,
+              1109
+            ]
+          ]
+        },
+        {
+          "object_segment": 6,
+          "name": "EPAD",
+          "size": 1,
+          "status": "unresolved_placement",
+          "candidate_count": 239,
+          "candidate_examples": [
+            [
+              37,
+              50
+            ],
+            [
+              37,
+              55
+            ],
+            [
+              37,
+              60
+            ],
+            [
+              37,
+              62
+            ],
+            [
+              37,
+              63
+            ],
+            [
+              37,
+              66
+            ],
+            [
+              37,
+              68
+            ],
+            [
+              37,
+              71
+            ]
+          ]
+        }
+      ],
+      "absolute_symbols": [],
+      "status": "unresolved"
+    },
+    {
+      "module": 26,
+      "name": "windows\\wnull.asm",
+      "member_offset": 1568,
+      "member_sha256": "abee82854d3fb53796fb5f7fc1496746fe871a4cb32a267e6e98eb792443dca2",
+      "original_code_bytes": 0,
+      "data": [],
+      "absolute_symbols": [
+        {
+          "name": "pAtomTable",
+          "value": 8,
+          "verified": true
+        },
+        {
+          "name": "pStackMin",
+          "value": 12,
+          "verified": true
+        },
+        {
+          "name": "pLocalHeap",
+          "value": 6,
+          "verified": true
+        },
+        {
+          "name": "pStackBot",
+          "value": 14,
+          "verified": true
+        },
+        {
+          "name": "pStackTop",
+          "value": 10,
+          "verified": true
+        }
+      ],
+      "status": "verified_data_mapping",
+      "note": "This member contributes no loadable segment bytes; its record/absolute-symbol role is mapped."
+    },
+    {
+      "module": 27,
+      "name": "windows\\noqwin.asm",
+      "member_offset": 282976,
+      "member_sha256": "ab7632ff362fea6345ec5fd9731893bfed597b3614ee9e21eb60c5102a769985",
+      "original_code_bytes": 11,
+      "data": [
+        {
+          "object_segment": 2,
+          "name": "_DATA",
+          "size": 2,
+          "ne_segment": 37,
+          "base": 6822,
+          "placement_evidence": "public_symbol_or_verified_code_reference",
+          "initialized_literals": 2,
+          "zero_fill_bytes": 0,
+          "literal_mismatches": [],
+          "fixups": [],
+          "status": "verified_data"
+        }
+      ],
+      "absolute_symbols": [
+        {
+          "name": "__wiobused",
+          "value": 0,
+          "verified": true
+        }
+      ],
+      "status": "verified_data_mapping"
+    },
+    {
+      "module": 28,
+      "name": ".\\cfpsig.asm",
+      "member_offset": 191984,
+      "member_sha256": "d61d45737d14000b6b9e5ca0d3ca9c509e471b1be037f79bb338cf501c6b95f6",
+      "original_code_bytes": 36,
+      "data": [
+        {
+          "object_segment": 4,
+          "name": "MSG",
+          "size": 640,
+          "ne_segment": 37,
+          "base": 8175,
+          "placement_evidence": "unique_initialized_bytes_and_resolved_pointers",
+          "initialized_literals": 640,
+          "zero_fill_bytes": 0,
+          "literal_mismatches": [],
+          "fixups": [],
+          "status": "verified_data"
+        }
+      ],
+      "absolute_symbols": [],
+      "status": "verified_data_mapping"
+    },
+    {
+      "module": 29,
+      "name": ".\\87cdisp.asm",
+      "member_offset": 185568,
+      "member_sha256": "7486a7d091c34f1932e7d827aa73507e71a089bc1cd7bc090a99761e370651f0",
+      "original_code_bytes": 432,
+      "data": [
+        {
+          "object_segment": 2,
+          "name": "_DATA",
+          "size": 53,
+          "ne_segment": 37,
+          "base": 6768,
+          "placement_evidence": "public_symbol_or_verified_code_reference",
+          "initialized_literals": 45,
+          "zero_fill_bytes": 0,
+          "literal_mismatches": [],
+          "fixups": [
+            {
+              "offset": 28,
+              "width": 2,
+              "location": 1,
+              "target": [
+                0,
+                1
+              ],
+              "status": "verified_linked_word",
+              "expected": 8557,
+              "actual": 8557
+            },
+            {
+              "offset": 30,
+              "width": 2,
+              "location": 1,
+              "target": [
+                0,
+                1
+              ],
+              "status": "verified_linked_word",
+              "expected": 8513,
+              "actual": 8513
+            },
+            {
+              "offset": 32,
+              "width": 2,
+              "location": 1,
+              "target": [
+                0,
+                1
+              ],
+              "status": "verified_linked_word",
+              "expected": 8521,
+              "actual": 8521
+            },
+            {
+              "offset": 34,
+              "width": 2,
+              "location": 1,
+              "target": [
+                0,
+                1
+              ],
+              "status": "verified_linked_word",
+              "expected": 8546,
+              "actual": 8546
+            }
+          ],
+          "status": "verified_data"
+        },
+        {
+          "object_segment": 4,
+          "name": "MSG",
+          "size": 51,
+          "ne_segment": 37,
+          "base": 8124,
+          "placement_evidence": "unique_initialized_bytes_and_resolved_pointers",
+          "initialized_literals": 51,
+          "zero_fill_bytes": 0,
+          "literal_mismatches": [],
+          "fixups": [],
+          "status": "verified_data"
+        }
+      ],
+      "absolute_symbols": [],
+      "status": "verified_data_mapping"
+    },
+    {
+      "module": 30,
+      "name": ".\\cvt.c",
+      "member_offset": 176848,
+      "member_sha256": "fceb1927eb1b2821c7f7db85c08a9a60730a8601e60cd6624e3011b7e72bc687",
+      "original_code_bytes": 1578,
+      "data": [
+        {
+          "object_segment": 2,
+          "name": "_DATA",
+          "size": 11,
+          "ne_segment": 37,
+          "base": 6756,
+          "placement_evidence": "public_symbol_or_verified_code_reference",
+          "initialized_literals": 10,
+          "zero_fill_bytes": 1,
+          "literal_mismatches": [],
+          "fixups": [],
+          "status": "verified_data"
+        },
+        {
+          "object_segment": 3,
+          "name": "CONST",
+          "size": 8,
+          "ne_segment": 37,
+          "base": 7782,
+          "placement_evidence": "public_symbol_or_verified_code_reference",
+          "initialized_literals": 8,
+          "zero_fill_bytes": 0,
+          "literal_mismatches": [],
+          "fixups": [],
+          "status": "verified_data"
+        },
+        {
+          "object_segment": 4,
+          "name": "_BSS",
+          "size": 2,
+          "ne_segment": 37,
+          "base": 8826,
+          "placement_evidence": "public_symbol_or_verified_code_reference",
+          "initialized_literals": 0,
+          "zero_fill_bytes": 2,
+          "literal_mismatches": [],
+          "fixups": [],
+          "status": "verified_data"
+        }
+      ],
+      "absolute_symbols": [],
+      "status": "verified_data_mapping"
+    },
+    {
+      "module": 31,
+      "name": ".\\87triga.asm",
+      "member_offset": 145152,
+      "member_sha256": "bde13b82ab633dd01a054589de4babc7be52a4a96865fece687fedf4d81dcd13",
+      "original_code_bytes": 198,
+      "data": [
+        {
+          "object_segment": 2,
+          "name": "_DATA",
+          "size": 120,
+          "ne_segment": 37,
+          "base": 6636,
+          "placement_evidence": "public_symbol_or_verified_code_reference",
+          "initialized_literals": 64,
+          "zero_fill_bytes": 0,
+          "literal_mismatches": [],
+          "fixups": [
+            {
+              "offset": 16,
+              "width": 2,
+              "location": 1,
+              "target": [
+                0,
+                1
+              ],
+              "status": "verified_linked_word",
+              "expected": 6442,
+              "actual": 6442
+            },
+            {
+              "offset": 18,
+              "width": 2,
+              "location": 1,
+              "target": "__rttosnpop",
+              "status": "verified_linked_word",
+              "expected": 9358,
+              "actual": 9358
+            },
+            {
+              "offset": 20,
+              "width": 2,
+              "location": 1,
+              "target": "__rttosnpopde",
+              "status": "verified_linked_word",
+              "expected": 9415,
+              "actual": 9415
+            },
+            {
+              "offset": 22,
+              "width": 2,
+              "location": 1,
+              "target": "__rtindfnpop",
+              "status": "verified_linked_word",
+              "expected": 9401,
+              "actual": 9401
+            },
+            {
+              "offset": 40,
+              "width": 2,
+              "location": 1,
+              "target": [
+                0,
+                1
+              ],
+              "status": "verified_linked_word",
+              "expected": 6449,
+              "actual": 6449
+            },
+            {
+              "offset": 42,
+              "width": 2,
+              "location": 1,
+              "target": [
+                0,
+                1
+              ],
+              "status": "verified_linked_word",
+              "expected": 6586,
+              "actual": 6586
+            },
+            {
+              "offset": 44,
+              "width": 2,
+              "location": 1,
+              "target": "__rttosnpopde",
+              "status": "verified_linked_word",
+              "expected": 9415,
+              "actual": 9415
+            },
+            {
+              "offset": 46,
+              "width": 2,
+              "location": 1,
+              "target": "__rtindfnpop",
+              "status": "verified_linked_word",
+              "expected": 9401,
+              "actual": 9401
+            },
+            {
+              "offset": 64,
+              "width": 2,
+              "location": 1,
+              "target": [
+                0,
+                1
+              ],
+              "status": "verified_linked_word",
+              "expected": 6457,
+              "actual": 6457
+            },
+            {
+              "offset": 66,
+              "width": 2,
+              "location": 1,
+              "target": "__rttosnpop",
+              "status": "verified_linked_word",
+              "expected": 9358,
+              "actual": 9358
+            },
+            {
+              "offset": 68,
+              "width": 2,
+              "location": 1,
+              "target": "__rttosnpopde",
+              "status": "verified_linked_word",
+              "expected": 9415,
+              "actual": 9415
+            },
+            {
+              "offset": 70,
+              "width": 2,
+              "location": 1,
+              "target": [
+                0,
+                1
+              ],
+              "status": "verified_linked_word",
+              "expected": 6631,
+              "actual": 6631
+            },
+            {
+              "offset": 88,
+              "width": 2,
+              "location": 1,
+              "target": [
+                0,
+                1
+              ],
+              "status": "verified_linked_word",
+              "expected": 6469,
+              "actual": 6469
+            },
+            {
+              "offset": 90,
+              "width": 2,
+              "location": 1,
+              "target": [
+                0,
+                1
+              ],
+              "status": "verified_linked_word",
+              "expected": 6624,
+              "actual": 6624
+            },
+            {
+              "offset": 92,
+              "width": 2,
+              "location": 1,
+              "target": "__rttospopde",
+              "status": "verified_linked_word",
+              "expected": 9349,
+              "actual": 9349
+            },
+            {
+              "offset": 94,
+              "width": 2,
+              "location": 1,
+              "target": [
+                0,
+                1
+              ],
+              "status": "verified_linked_word",
+              "expected": 6595,
+              "actual": 6595
+            },
+            {
+              "offset": 96,
+              "width": 2,
+              "location": 1,
+              "target": [
+                0,
+                1
+              ],
+              "status": "verified_linked_word",
+              "expected": 6595,
+              "actual": 6595
+            },
+            {
+              "offset": 98,
+              "width": 2,
+              "location": 1,
+              "target": [
+                0,
+                1
+              ],
+              "status": "verified_linked_word",
+              "expected": 6618,
+              "actual": 6618
+            },
+            {
+              "offset": 100,
+              "width": 2,
+              "location": 1,
+              "target": "__rttospopde",
+              "status": "verified_linked_word",
+              "expected": 9349,
+              "actual": 9349
+            },
+            {
+              "offset": 102,
+              "width": 2,
+              "location": 1,
+              "target": [
+                0,
+                1
+              ],
+              "status": "verified_linked_word",
+              "expected": 6595,
+              "actual": 6595
+            },
+            {
+              "offset": 104,
+              "width": 2,
+              "location": 1,
+              "target": "__rtnospopde",
+              "status": "verified_linked_word",
+              "expected": 9359,
+              "actual": 9359
+            },
+            {
+              "offset": 106,
+              "width": 2,
+              "location": 1,
+              "target": "__rtnospopde",
+              "status": "verified_linked_word",
+              "expected": 9359,
+              "actual": 9359
+            },
+            {
+              "offset": 108,
+              "width": 2,
+              "location": 1,
+              "target": "__rtbignan",
+              "status": "verified_linked_word",
+              "expected": 9384,
+              "actual": 9384
+            },
+            {
+              "offset": 110,
+              "width": 2,
+              "location": 1,
+              "target": "__rtnospopde",
+              "status": "verified_linked_word",
+              "expected": 9359,
+              "actual": 9359
+            },
+            {
+              "offset": 112,
+              "width": 2,
+              "location": 1,
+              "target": [
+                0,
+                1
+              ],
+              "status": "verified_linked_word",
+              "expected": 6612,
+              "actual": 6612
+            },
+            {
+              "offset": 114,
+              "width": 2,
+              "location": 1,
+              "target": [
+                0,
+                1
+              ],
+              "status": "verified_linked_word",
+              "expected": 6612,
+              "actual": 6612
+            },
+            {
+              "offset": 116,
+              "width": 2,
+              "location": 1,
+              "target": "__rttospopde",
+              "status": "verified_linked_word",
+              "expected": 9349,
+              "actual": 9349
+            },
+            {
+              "offset": 118,
+              "width": 2,
+              "location": 1,
+              "target": "__rtindfpop",
+              "status": "verified_linked_word",
+              "expected": 9398,
+              "actual": 9398
+            }
+          ],
+          "status": "verified_data"
+        }
+      ],
+      "absolute_symbols": [],
+      "status": "verified_data_mapping"
+    },
+    {
+      "module": 32,
+      "name": ".\\87trig.asm",
+      "member_offset": 144096,
+      "member_sha256": "6dd8e4c3cc54a497c5d2e684d9d1973c6ec24ce61ec60a6da9dc37bc86f79eda",
+      "original_code_bytes": 260,
+      "data": [
+        {
+          "object_segment": 2,
+          "name": "_DATA",
+          "size": 114,
+          "ne_segment": 37,
+          "base": 6522,
+          "placement_evidence": "public_symbol_or_verified_code_reference",
+          "initialized_literals": 82,
+          "zero_fill_bytes": 0,
+          "literal_mismatches": [],
+          "fixups": [
+            {
+              "offset": 34,
+              "width": 2,
+              "location": 1,
+              "target": [
+                0,
+                1
+              ],
+              "status": "verified_linked_word",
+              "expected": 6204,
+              "actual": 6204
+            },
+            {
+              "offset": 36,
+              "width": 2,
+              "location": 1,
+              "target": "__rttosnpop",
+              "status": "verified_linked_word",
+              "expected": 9358,
+              "actual": 9358
+            },
+            {
+              "offset": 38,
+              "width": 2,
+              "location": 1,
+              "target": "__rttosnpopde",
+              "status": "verified_linked_word",
+              "expected": 9415,
+              "actual": 9415
+            },
+            {
+              "offset": 40,
+              "width": 2,
+              "location": 1,
+              "target": [
+                0,
+                1
+              ],
+              "status": "verified_linked_word",
+              "expected": 6276,
+              "actual": 6276
+            },
+            {
+              "offset": 58,
+              "width": 2,
+              "location": 1,
+              "target": [
+                0,
+                1
+              ],
+              "status": "verified_linked_word",
+              "expected": 6188,
+              "actual": 6188
+            },
+            {
+              "offset": 60,
+              "width": 2,
+              "location": 1,
+              "target": "__rtonenpop",
+              "status": "verified_linked_word",
+              "expected": 9377,
+              "actual": 9377
+            },
+            {
+              "offset": 62,
+              "width": 2,
+              "location": 1,
+              "target": "__rttosnpopde",
+              "status": "verified_linked_word",
+              "expected": 9415,
+              "actual": 9415
+            },
+            {
+              "offset": 64,
+              "width": 2,
+              "location": 1,
+              "target": [
+                0,
+                1
+              ],
+              "status": "verified_linked_word",
+              "expected": 6276,
+              "actual": 6276
+            },
+            {
+              "offset": 82,
+              "width": 2,
+              "location": 1,
+              "target": [
+                0,
+                1
+              ],
+              "status": "verified_linked_word",
+              "expected": 6222,
+              "actual": 6222
+            },
+            {
+              "offset": 84,
+              "width": 2,
+              "location": 1,
+              "target": "__rttosnpop",
+              "status": "verified_linked_word",
+              "expected": 9358,
+              "actual": 9358
+            },
+            {
+              "offset": 86,
+              "width": 2,
+              "location": 1,
+              "target": "__rttosnpopde",
+              "status": "verified_linked_word",
+              "expected": 9415,
+              "actual": 9415
+            },
+            {
+              "offset": 88,
+              "width": 2,
+              "location": 1,
+              "target": [
+                0,
+                1
+              ],
+              "status": "verified_linked_word",
+              "expected": 6276,
+              "actual": 6276
+            },
+            {
+              "offset": 106,
+              "width": 2,
+              "location": 1,
+              "target": [
+                0,
+                1
+              ],
+              "status": "verified_linked_word",
+              "expected": 6243,
+              "actual": 6243
+            },
+            {
+              "offset": 108,
+              "width": 2,
+              "location": 1,
+              "target": "__rtinfnpopse",
+              "status": "verified_linked_word",
+              "expected": 5978,
+              "actual": 5978
+            },
+            {
+              "offset": 110,
+              "width": 2,
+              "location": 1,
+              "target": "__rttosnpopde",
+              "status": "verified_linked_word",
+              "expected": 9415,
+              "actual": 9415
+            },
+            {
+              "offset": 112,
+              "width": 2,
+              "location": 1,
+              "target": [
+                0,
+                1
+              ],
+              "status": "verified_linked_word",
+              "expected": 6276,
+              "actual": 6276
+            }
+          ],
+          "status": "verified_data"
+        }
+      ],
+      "absolute_symbols": [],
+      "status": "verified_data_mapping"
+    },
+    {
+      "module": 33,
+      "name": ".\\87tran.asm",
+      "member_offset": 142448,
+      "member_sha256": "37e1c58a143465c9cb3b70dce16835cad2a2072d179f951d5aaa0f977624e82f",
+      "original_code_bytes": 376,
+      "data": [
+        {
+          "object_segment": 2,
+          "name": "_DATA",
+          "size": 170,
+          "ne_segment": 37,
+          "base": 6352,
+          "placement_evidence": "public_symbol_or_verified_code_reference",
+          "initialized_literals": 114,
+          "zero_fill_bytes": 0,
+          "literal_mismatches": [],
+          "fixups": [
+            {
+              "offset": 66,
+              "width": 2,
+              "location": 1,
+              "target": [
+                0,
+                1
+              ],
+              "status": "verified_linked_word",
+              "expected": 5806,
+              "actual": 5806
+            },
+            {
+              "offset": 68,
+              "width": 2,
+              "location": 1,
+              "target": [
+                0,
+                1
+              ],
+              "status": "verified_linked_word",
+              "expected": 6035,
+              "actual": 6035
+            },
+            {
+              "offset": 70,
+              "width": 2,
+              "location": 1,
+              "target": "__rttospopde",
+              "status": "verified_linked_word",
+              "expected": 9349,
+              "actual": 9349
+            },
+            {
+              "offset": 72,
+              "width": 2,
+              "location": 1,
+              "target": [
+                0,
+                1
+              ],
+              "status": "verified_linked_word",
+              "expected": 6075,
+              "actual": 6075
+            },
+            {
+              "offset": 74,
+              "width": 2,
+              "location": 1,
+              "target": [
+                0,
+                1
+              ],
+              "status": "verified_linked_word",
+              "expected": 6041,
+              "actual": 6041
+            },
+            {
+              "offset": 76,
+              "width": 2,
+              "location": 1,
+              "target": [
+                0,
+                1
+              ],
+              "status": "verified_linked_word",
+              "expected": 5948,
+              "actual": 5948
+            },
+            {
+              "offset": 78,
+              "width": 2,
+              "location": 1,
+              "target": "__rttospopde",
+              "status": "verified_linked_word",
+              "expected": 9349,
+              "actual": 9349
+            },
+            {
+              "offset": 80,
+              "width": 2,
+              "location": 1,
+              "target": [
+                0,
+                1
+              ],
+              "status": "verified_linked_word",
+              "expected": 6038,
+              "actual": 6038
+            },
+            {
+              "offset": 82,
+              "width": 2,
+              "location": 1,
+              "target": "__rtnospopde",
+              "status": "verified_linked_word",
+              "expected": 9359,
+              "actual": 9359
+            },
+            {
+              "offset": 84,
+              "width": 2,
+              "location": 1,
+              "target": "__rtnospopde",
+              "status": "verified_linked_word",
+              "expected": 9359,
+              "actual": 9359
+            },
+            {
+              "offset": 86,
+              "width": 2,
+              "location": 1,
+              "target": "__rtbignan",
+              "status": "verified_linked_word",
+              "expected": 9384,
+              "actual": 9384
+            },
+            {
+              "offset": 88,
+              "width": 2,
+              "location": 1,
+              "target": "__rtnospopde",
+              "status": "verified_linked_word",
+              "expected": 9359,
+              "actual": 9359
+            },
+            {
+              "offset": 90,
+              "width": 2,
+              "location": 1,
+              "target": [
+                0,
+                1
+              ],
+              "status": "verified_linked_word",
+              "expected": 6075,
+              "actual": 6075
+            },
+            {
+              "offset": 92,
+              "width": 2,
+              "location": 1,
+              "target": "__rtindfpop",
+              "status": "verified_linked_word",
+              "expected": 9398,
+              "actual": 9398
+            },
+            {
+              "offset": 94,
+              "width": 2,
+              "location": 1,
+              "target": "__rttospopde",
+              "status": "verified_linked_word",
+              "expected": 9349,
+              "actual": 9349
+            },
+            {
+              "offset": 96,
+              "width": 2,
+              "location": 1,
+              "target": [
+                0,
+                1
+              ],
+              "status": "verified_linked_word",
+              "expected": 6075,
+              "actual": 6075
+            },
+            {
+              "offset": 114,
+              "width": 2,
+              "location": 1,
+              "target": [
+                0,
+                1
+              ],
+              "status": "verified_linked_word",
+              "expected": 6016,
+              "actual": 6016
+            },
+            {
+              "offset": 116,
+              "width": 2,
+              "location": 1,
+              "target": [
+                0,
+                1
+              ],
+              "status": "verified_linked_word",
+              "expected": 5958,
+              "actual": 5958
+            },
+            {
+              "offset": 118,
+              "width": 2,
+              "location": 1,
+              "target": "__rttosnpopde",
+              "status": "verified_linked_word",
+              "expected": 9415,
+              "actual": 9415
+            },
+            {
+              "offset": 120,
+              "width": 2,
+              "location": 1,
+              "target": [
+                0,
+                1
+              ],
+              "status": "verified_linked_word",
+              "expected": 6107,
+              "actual": 6107
+            },
+            {
+              "offset": 138,
+              "width": 2,
+              "location": 1,
+              "target": [
+                0,
+                1
+              ],
+              "status": "verified_linked_word",
+              "expected": 6021,
+              "actual": 6021
+            },
+            {
+              "offset": 140,
+              "width": 2,
+              "location": 1,
+              "target": [
+                0,
+                1
+              ],
+              "status": "verified_linked_word",
+              "expected": 5958,
+              "actual": 5958
+            },
+            {
+              "offset": 142,
+              "width": 2,
+              "location": 1,
+              "target": "__rttosnpopde",
+              "status": "verified_linked_word",
+              "expected": 9415,
+              "actual": 9415
+            },
+            {
+              "offset": 144,
+              "width": 2,
+              "location": 1,
+              "target": [
+                0,
+                1
+              ],
+              "status": "verified_linked_word",
+              "expected": 6107,
+              "actual": 6107
+            },
+            {
+              "offset": 162,
+              "width": 2,
+              "location": 1,
+              "target": [
+                0,
+                1
+              ],
+              "status": "verified_linked_word",
+              "expected": 5818,
+              "actual": 5818
+            },
+            {
+              "offset": 164,
+              "width": 2,
+              "location": 1,
+              "target": "__rtonenpop",
+              "status": "verified_linked_word",
+              "expected": 9377,
+              "actual": 9377
+            },
+            {
+              "offset": 166,
+              "width": 2,
+              "location": 1,
+              "target": "__rttosnpopde",
+              "status": "verified_linked_word",
+              "expected": 9415,
+              "actual": 9415
+            },
+            {
+              "offset": 168,
+              "width": 2,
+              "location": 1,
+              "target": [
+                0,
+                1
+              ],
+              "status": "verified_linked_word",
+              "expected": 6100,
+              "actual": 6100
+            }
+          ],
+          "status": "verified_data"
+        }
+      ],
+      "absolute_symbols": [],
+      "status": "verified_data_mapping"
+    },
+    {
+      "module": 34,
+      "name": ".\\87sqrt.asm",
+      "member_offset": 142080,
+      "member_sha256": "fb173866e50e50810f6d9000585f5b54982b3f3e9425896a241d81db97e6fe77",
+      "original_code_bytes": 21,
+      "data": [
+        {
+          "object_segment": 2,
+          "name": "_DATA",
+          "size": 24,
+          "ne_segment": 37,
+          "base": 6328,
+          "placement_evidence": "public_symbol_or_verified_code_reference",
+          "initialized_literals": 16,
+          "zero_fill_bytes": 0,
+          "literal_mismatches": [],
+          "fixups": [
+            {
+              "offset": 16,
+              "width": 2,
+              "location": 1,
+              "target": [
+                0,
+                1
+              ],
+              "status": "verified_linked_word",
+              "expected": 5784,
+              "actual": 5784
+            },
+            {
+              "offset": 18,
+              "width": 2,
+              "location": 1,
+              "target": "__rtzeronpop",
+              "status": "verified_linked_word",
+              "expected": 9367,
+              "actual": 9367
+            },
+            {
+              "offset": 20,
+              "width": 2,
+              "location": 1,
+              "target": "__rttosnpopde",
+              "status": "verified_linked_word",
+              "expected": 9415,
+              "actual": 9415
+            },
+            {
+              "offset": 22,
+              "width": 2,
+              "location": 1,
+              "target": [
+                0,
+                1
+              ],
+              "status": "verified_linked_word",
+              "expected": 5792,
+              "actual": 5792
+            }
+          ],
+          "status": "verified_data"
+        }
+      ],
+      "absolute_symbols": [],
+      "status": "verified_data_mapping"
+    },
+    {
+      "module": 35,
+      "name": "xtoa.asm",
+      "member_offset": 84768,
+      "member_sha256": "3d75b45b532a7145d8b28f8e917cf86b7ed48a3fe6fa80bc1533797ccd229b89",
+      "original_code_bytes": 95,
+      "data": [],
+      "absolute_symbols": [],
+      "status": "verified_data_mapping"
+    },
+    {
+      "module": 36,
+      "name": "os2\\hdiff.asm",
+      "member_offset": 40848,
+      "member_sha256": "bc43f597f2d9729332320fcc0152e9a69b1f34cd1c3c9156030835b5190b992c",
+      "original_code_bytes": 32,
+      "data": [],
+      "absolute_symbols": [],
+      "status": "verified_data_mapping"
+    },
+    {
+      "module": 37,
+      "name": "cmiscdat.asm",
+      "member_offset": 38848,
+      "member_sha256": "1cc04a98ef661ab298de030c72a0cf8dde4904a0dfcd5cf8851b9067b1d9675d",
+      "original_code_bytes": 0,
+      "data": [
+        {
+          "object_segment": 2,
+          "name": "_DATA",
+          "size": 34,
+          "ne_segment": 37,
+          "base": 6294,
+          "placement_evidence": "public_symbol_or_verified_code_reference",
+          "initialized_literals": 6,
+          "zero_fill_bytes": 0,
+          "literal_mismatches": [],
+          "fixups": [
+            {
+              "offset": 0,
+              "width": 4,
+              "location": 3,
+              "target": "__fptrap",
+              "status": "verified_pointer_relocation"
+            },
+            {
+              "offset": 4,
+              "width": 4,
+              "location": 3,
+              "target": "__fptrap",
+              "status": "verified_pointer_relocation"
+            },
+            {
+              "offset": 8,
+              "width": 4,
+              "location": 3,
+              "target": "__fptrap",
+              "status": "verified_pointer_relocation"
+            },
+            {
+              "offset": 12,
+              "width": 4,
+              "location": 3,
+              "target": "__fptrap",
+              "status": "verified_pointer_relocation"
+            },
+            {
+              "offset": 16,
+              "width": 4,
+              "location": 3,
+              "target": "__fptrap",
+              "status": "verified_pointer_relocation"
+            },
+            {
+              "offset": 20,
+              "width": 4,
+              "location": 3,
+              "target": "__fptrap",
+              "status": "verified_pointer_relocation"
+            },
+            {
+              "offset": 24,
+              "width": 4,
+              "location": 3,
+              "target": "__fptrap",
+              "status": "verified_pointer_relocation"
+            }
+          ],
+          "status": "verified_data"
+        }
+      ],
+      "absolute_symbols": [],
+      "status": "verified_data_mapping"
+    },
+    {
+      "module": 38,
+      "name": "atox.asm",
+      "member_offset": 36880,
+      "member_sha256": "8eb8d5fdcd56197835f4d1ac3cb7c0f2c31ee7c8e10dfb170a81e45ffef2073d",
+      "original_code_bytes": 84,
+      "data": [],
+      "absolute_symbols": [],
+      "status": "verified_data_mapping"
+    },
+    {
+      "module": 39,
+      "name": "seekfast.asm",
+      "member_offset": 27392,
+      "member_sha256": "655ea86fb6ade48e6f006583c20dc986439da7b74007493f03abddde9fc05b10",
+      "original_code_bytes": 0,
+      "data": [
+        {
+          "object_segment": 2,
+          "name": "_DATA",
+          "size": 2,
+          "ne_segment": 37,
+          "base": 6292,
+          "placement_evidence": "public_symbol_or_verified_code_reference",
+          "initialized_literals": 2,
+          "zero_fill_bytes": 0,
+          "literal_mismatches": [],
+          "fixups": [],
+          "status": "verified_data"
+        }
+      ],
+      "absolute_symbols": [],
+      "status": "verified_data_mapping"
+    },
+    {
+      "module": 40,
+      "name": "stackava.asm",
+      "member_offset": 26928,
+      "member_sha256": "7089c4676c8bb57aff9d1f794897832468aeef66cb5fc0ea01566b92101d64b1",
+      "original_code_bytes": 20,
+      "data": [],
+      "absolute_symbols": [],
+      "status": "verified_data_mapping"
+    },
+    {
+      "module": 41,
+      "name": "dos\\dosret.asm",
+      "member_offset": 7456,
+      "member_sha256": "14d43ba2b0cbb667263786db9b3e1e6e081d372cd83e83593beea2482971a542",
+      "original_code_bytes": 93,
+      "data": [
+        {
+          "object_segment": 2,
+          "name": "_DATA",
+          "size": 20,
+          "ne_segment": 37,
+          "base": 6272,
+          "placement_evidence": "public_symbol_or_verified_code_reference",
+          "initialized_literals": 20,
+          "zero_fill_bytes": 0,
+          "literal_mismatches": [],
+          "fixups": [],
+          "status": "verified_data"
+        }
+      ],
+      "absolute_symbols": [],
+      "status": "verified_data_mapping"
+    },
+    {
+      "module": 42,
+      "name": "windows\\fatal.asm",
+      "member_offset": 6032,
+      "member_sha256": "197967440f8196f5136119aa9d598c386b8f84e42c7f0071048e6f52dd8bd470",
+      "original_code_bytes": 71,
+      "data": [],
+      "absolute_symbols": [],
+      "status": "verified_data_mapping"
+    },
+    {
+      "module": 43,
+      "name": "dos\\stdenvp.asm",
+      "member_offset": 5664,
+      "member_sha256": "760c509127f8974d2ed43fca4332b2119945a4c055244ee4976651ea91dc1730",
+      "original_code_bytes": 144,
+      "data": [],
+      "absolute_symbols": [],
+      "status": "verified_data_mapping"
+    },
+    {
+      "module": 44,
+      "name": "dos\\stdargv.asm",
+      "member_offset": 4976,
+      "member_sha256": "602c55c8885a93243278fd00d12723a133560e467802e5deac392fbfe48e10e1",
+      "original_code_bytes": 385,
+      "data": [
+        {
+          "object_segment": 2,
+          "name": "_DATA",
+          "size": 4,
+          "ne_segment": 37,
+          "base": 6268,
+          "placement_evidence": "public_symbol_or_verified_code_reference",
+          "initialized_literals": 4,
+          "zero_fill_bytes": 0,
+          "literal_mismatches": [],
+          "fixups": [],
+          "status": "verified_data"
+        }
+      ],
+      "absolute_symbols": [],
+      "status": "verified_data_mapping"
+    },
+    {
+      "module": 45,
+      "name": "windows\\wchkstk.asm",
+      "member_offset": 4592,
+      "member_sha256": "7f09cfbee051a04ce339f2b19de3507f6ced0537167418a7b5975e9b2846f6a1",
+      "original_code_bytes": 83,
+      "data": [
+        {
+          "object_segment": 2,
+          "name": "_DATA",
+          "size": 4,
+          "ne_segment": 37,
+          "base": 6264,
+          "placement_evidence": "public_symbol_or_verified_code_reference",
+          "initialized_literals": 4,
+          "zero_fill_bytes": 0,
+          "literal_mismatches": [],
+          "fixups": [],
+          "status": "verified_data"
+        }
+      ],
+      "absolute_symbols": [],
+      "status": "verified_data_mapping"
+    },
+    {
+      "module": 46,
+      "name": "crt0fp.asm",
+      "member_offset": 4288,
+      "member_sha256": "c51115c003c9800e1a5e42b717c6b1290b4f73e563d39a5bcdd9a25fb6c7cf8f",
+      "original_code_bytes": 6,
+      "data": [
+        {
+          "object_segment": 4,
+          "name": "MSG",
+          "size": 47,
+          "ne_segment": 37,
+          "base": 8077,
+          "placement_evidence": "unique_initialized_bytes_and_resolved_pointers",
+          "initialized_literals": 47,
+          "zero_fill_bytes": 0,
+          "literal_mismatches": [],
+          "fixups": [],
+          "status": "verified_data"
+        },
+        {
+          "object_segment": 5,
+          "name": "PAD",
+          "size": 2,
+          "status": "unresolved_placement",
+          "candidate_count": 145,
+          "candidate_examples": [
+            [
+              37,
+              62
+            ],
+            [
+              37,
+              71
+            ],
+            [
+              37,
+              1046
+            ],
+            [
+              37,
+              1047
+            ],
+            [
+              37,
+              1048
+            ],
+            [
+              37,
+              1104
+            ],
+            [
+              37,
+              1108
+            ],
+            [
+              37,
+              1109
+            ]
+          ]
+        }
+      ],
+      "absolute_symbols": [],
+      "status": "unresolved"
+    },
+    {
+      "module": 47,
+      "name": "dos\\crt0msg.asm",
+      "member_offset": 3664,
+      "member_sha256": "a2f10dc1ad88fd7832e1d670c932047fcbc852de89364a48d485fdba60138539",
+      "original_code_bytes": 35,
+      "data": [
+        {
+          "object_segment": 2,
+          "name": "MSG",
+          "size": 279,
+          "ne_segment": 37,
+          "base": 7798,
+          "placement_evidence": "unique_initialized_bytes_and_resolved_pointers",
+          "initialized_literals": 279,
+          "zero_fill_bytes": 0,
+          "literal_mismatches": [],
+          "fixups": [],
+          "status": "verified_data"
+        },
+        {
+          "object_segment": 3,
+          "name": "PAD",
+          "size": 2,
+          "status": "unresolved_placement",
+          "candidate_count": 145,
+          "candidate_examples": [
+            [
+              37,
+              62
+            ],
+            [
+              37,
+              71
+            ],
+            [
+              37,
+              1046
+            ],
+            [
+              37,
+              1047
+            ],
+            [
+              37,
+              1048
+            ],
+            [
+              37,
+              1104
+            ],
+            [
+              37,
+              1108
+            ],
+            [
+              37,
+              1109
+            ]
+          ]
+        },
+        {
+          "object_segment": 6,
+          "name": "_DATA",
+          "size": 4,
+          "ne_segment": 37,
+          "base": 6260,
+          "placement_evidence": "public_symbol_or_verified_code_reference",
+          "initialized_literals": 4,
+          "zero_fill_bytes": 0,
+          "literal_mismatches": [],
+          "fixups": [],
+          "status": "verified_data"
+        }
+      ],
+      "absolute_symbols": [
+        {
+          "name": "__acrtmsg",
+          "value": 39030,
+          "verified": true
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "module": 48,
+      "name": "windows\\stubmain.asm",
+      "member_offset": 1248,
+      "member_sha256": "41d5a4b123bc02602ead9784ddb38c9ded87920d183c016d2fa0a6f63a25aa3f",
+      "original_code_bytes": 44,
+      "data": [],
+      "absolute_symbols": [],
+      "status": "verified_data_mapping"
+    },
+    {
+      "module": 49,
+      "name": ".\\fltusedc.asm",
+      "member_offset": 193488,
+      "member_sha256": "5d73ed827afc218e93a01d8c8974db914ba480e9f92273b6a653fb3c465a7030",
+      "original_code_bytes": 20,
+      "data": [
+        {
+          "object_segment": 2,
+          "name": "_DATA",
+          "size": 20,
+          "ne_segment": 37,
+          "base": 6240,
+          "placement_evidence": "public_symbol_or_verified_code_reference",
+          "initialized_literals": 0,
+          "zero_fill_bytes": 0,
+          "literal_mismatches": [],
+          "fixups": [
+            {
+              "offset": 0,
+              "width": 4,
+              "location": 3,
+              "target": "__cfltcvt",
+              "status": "verified_pointer_relocation"
+            },
+            {
+              "offset": 4,
+              "width": 4,
+              "location": 3,
+              "target": "__fassign",
+              "status": "verified_pointer_relocation"
+            },
+            {
+              "offset": 8,
+              "width": 4,
+              "location": 3,
+              "target": "__cropzeros",
+              "status": "verified_pointer_relocation"
+            },
+            {
+              "offset": 12,
+              "width": 4,
+              "location": 3,
+              "target": "__forcdecpt",
+              "status": "verified_pointer_relocation"
+            },
+            {
+              "offset": 16,
+              "width": 4,
+              "location": 3,
+              "target": "__positive",
+              "status": "verified_pointer_relocation"
+            }
+          ],
+          "status": "verified_data"
+        },
+        {
+          "object_segment": 4,
+          "name": "XI",
+          "size": 4,
+          "ne_segment": 37,
+          "base": 7314,
+          "placement_evidence": "unique_initialized_bytes_and_resolved_pointers",
+          "initialized_literals": 0,
+          "zero_fill_bytes": 0,
+          "literal_mismatches": [],
+          "fixups": [
+            {
+              "offset": 0,
+              "width": 4,
+              "location": 3,
+              "target": [
+                0,
+                1
+              ],
+              "status": "verified_pointer_relocation"
+            }
+          ],
+          "status": "verified_data"
+        }
+      ],
+      "absolute_symbols": [
+        {
+          "name": "__fltused",
+          "value": 39030,
+          "verified": true
+        }
+      ],
+      "status": "verified_data_mapping"
+    },
+    {
+      "module": 50,
+      "name": ".\\87ftol.asm",
+      "member_offset": 189664,
+      "member_sha256": "204a023acb4a1246adc2fb24ff5768003b8c76a1691ffe5903f9ad5fff9acdc0",
+      "original_code_bytes": 61,
+      "data": [],
+      "absolute_symbols": [],
+      "status": "verified_data_mapping"
+    },
+    {
+      "module": 51,
+      "name": ".\\87fcmp.asm",
+      "member_offset": 188544,
+      "member_sha256": "7538248ed1593eda214b474cc41d290968ec60c9fc7254e59e98834fad424ba3",
+      "original_code_bytes": 84,
+      "data": [],
+      "absolute_symbols": [],
+      "status": "verified_data_mapping"
+    },
+    {
+      "module": 52,
+      "name": ".\\87ctriga.asm",
+      "member_offset": 180544,
+      "member_sha256": "7317a92bb8c3fa2374b71114a3b06b3f8284ce722c2fef2ba8ed1dfcd638e41f",
+      "original_code_bytes": 44,
+      "data": [],
+      "absolute_symbols": [],
+      "status": "verified_data_mapping"
+    },
+    {
+      "module": 53,
+      "name": ".\\87ctrig.asm",
+      "member_offset": 180176,
+      "member_sha256": "a0e01629e71a8da79ad305a250eda1f1efac8992fc1d1f343ffccd0214b29cca",
+      "original_code_bytes": 32,
+      "data": [],
+      "absolute_symbols": [],
+      "status": "verified_data_mapping"
+    },
+    {
+      "module": 54,
+      "name": ".\\87ctran.asm",
+      "member_offset": 179744,
+      "member_sha256": "19c2f2046d2ef01bebd48ece9454b9b3947ef6c83980eb29294142759cb1f9d6",
+      "original_code_bytes": 44,
+      "data": [],
+      "absolute_symbols": [],
+      "status": "verified_data_mapping"
+    },
+    {
+      "module": 55,
+      "name": ".\\87csqrt.asm",
+      "member_offset": 179520,
+      "member_sha256": "88120ef3f8090e0bd634f1fa21a88374d5d8901b7d62ea0029856b3840f4758e",
+      "original_code_bytes": 12,
+      "data": [],
+      "absolute_symbols": [],
+      "status": "verified_data_mapping"
+    },
+    {
+      "module": 56,
+      "name": ".\\fixups.asm",
+      "member_offset": 150224,
+      "member_sha256": "e88001f76da2a624a79e554688bb47d731e91335ca738c7580772fd5ba05aed8",
+      "original_code_bytes": 0,
+      "data": [
+        {
+          "object_segment": 3,
+          "name": "CDATA",
+          "size": 14,
+          "ne_segment": 37,
+          "base": 7300,
+          "placement_evidence": "unique_initialized_bytes_and_resolved_pointers",
+          "initialized_literals": 2,
+          "zero_fill_bytes": 0,
+          "literal_mismatches": [],
+          "fixups": [
+            {
+              "offset": 2,
+              "width": 4,
+              "location": 3,
+              "target": "__fpmath",
+              "status": "verified_import"
+            },
+            {
+              "offset": 6,
+              "width": 4,
+              "location": 3,
+              "target": "__fptaskdata",
+              "status": "observed_windows_stub_slot",
+              "note": "WIN/CRT0.ASM declares this absolute symbol solely to exclude the non-Windows emulator. This linked slot is zero; the historical linker transformation is not yet independently reproduced."
+            },
+            {
+              "offset": 10,
+              "width": 4,
+              "location": 3,
+              "target": "__fpsignal",
+              "status": "verified_pointer_relocation"
+            }
+          ],
+          "status": "unresolved_data"
+        }
+      ],
+      "absolute_symbols": [
+        {
+          "name": "FICRQQ",
+          "value": 3634,
+          "verified": true
+        },
+        {
+          "name": "FISRQQ",
+          "value": 1586,
+          "verified": true
+        },
+        {
+          "name": "FIARQQ",
+          "value": 65074,
+          "verified": true
+        },
+        {
+          "name": "FIWRQQ",
+          "value": 41533,
+          "verified": true
+        },
+        {
+          "name": "FIERQQ",
+          "value": 5682,
+          "verified": true
+        },
+        {
+          "name": "FIDRQQ",
+          "value": 23602,
+          "verified": true
+        },
+        {
+          "name": "FJCRQQ",
+          "value": 49152,
+          "verified": true
+        },
+        {
+          "name": "FJSRQQ",
+          "value": 32768,
+          "verified": true
+        },
+        {
+          "name": "FJARQQ",
+          "value": 16384,
+          "verified": true
+        }
+      ],
+      "status": "unresolved"
+    },
+    {
+      "module": 57,
+      "name": "hmemcpy.asm",
+      "member_offset": 130240,
+      "member_sha256": "7c8819592a29f8e1950522f881537255070ba27109101384c155955595f064b4",
+      "original_code_bytes": 202,
+      "data": [],
+      "absolute_symbols": [],
+      "status": "verified_data_mapping"
+    },
+    {
+      "module": 58,
+      "name": "hmemset.asm",
+      "member_offset": 128736,
+      "member_sha256": "9a3e659ad2d2f406e2e5de413b872aa44d63ad82e288db19040908e834fa13c3",
+      "original_code_bytes": 72,
+      "data": [],
+      "absolute_symbols": [],
+      "status": "verified_data_mapping"
+    },
+    {
+      "module": 59,
+      "name": "strcat.asm",
+      "member_offset": 128512,
+      "member_sha256": "dbe8f9730af4349c94a311441600e15d11d0113d37f3509693c32bb3e0dbf6ee",
+      "original_code_bytes": 84,
+      "data": [],
+      "absolute_symbols": [],
+      "status": "verified_data_mapping"
+    },
+    {
+      "module": 60,
+      "name": "strcpy.asm",
+      "member_offset": 128320,
+      "member_sha256": "7f9889231848f934a6099e4f177990eef4444ed4bb93dee3dd541288691cacde",
+      "original_code_bytes": 60,
+      "data": [],
+      "absolute_symbols": [],
+      "status": "verified_data_mapping"
+    },
+    {
+      "module": 61,
+      "name": "strcmp.asm",
+      "member_offset": 128144,
+      "member_sha256": "8bf02039882d9dde0219fefbb0017428142e44036f1dfaf67b61aec4c97f754b",
+      "original_code_bytes": 41,
+      "data": [],
+      "absolute_symbols": [],
+      "status": "verified_data_mapping"
+    },
+    {
+      "module": 62,
+      "name": "strlen.asm",
+      "member_offset": 127984,
+      "member_sha256": "05630884b36532c09e356619961312525ccd51aad7663e236017a85f4f9cb066",
+      "original_code_bytes": 25,
+      "data": [],
+      "absolute_symbols": [],
+      "status": "verified_data_mapping"
+    },
+    {
+      "module": 63,
+      "name": "stricmp.asm",
+      "member_offset": 126128,
+      "member_sha256": "4efcbb932a23a2e758589a8ac3b3eb708667a90521e4fe4889b7b7c1870f2e04",
+      "original_code_bytes": 69,
+      "data": [],
+      "absolute_symbols": [],
+      "status": "verified_data_mapping"
+    },
+    {
+      "module": 64,
+      "name": "hmemcpy.asm",
+      "member_offset": 125680,
+      "member_sha256": "c7e7207cd86bd0f738f2562559dffc7fcc93310891548b4224036b1e6266c5ef",
+      "original_code_bytes": 94,
+      "data": [],
+      "absolute_symbols": [],
+      "status": "verified_data_mapping"
+    },
+    {
+      "module": 65,
+      "name": "hmemcmp.asm",
+      "member_offset": 125424,
+      "member_sha256": "032c9597fe431cbe5e9dcf5535726484113ece9352e87bdb451d9e2314d5af95",
+      "original_code_bytes": 91,
+      "data": [],
+      "absolute_symbols": [],
+      "status": "verified_data_mapping"
+    },
+    {
+      "module": 66,
+      "name": "ulshr.asm",
+      "member_offset": 118976,
+      "member_sha256": "8207f748c237adf4fe8c30d77a7c01657cf78604568f4978b6093ef184c8516b",
+      "original_code_bytes": 11,
+      "data": [],
+      "absolute_symbols": [],
+      "status": "verified_data_mapping"
+    },
+    {
+      "module": 67,
+      "name": "ulrem.asm",
+      "member_offset": 118720,
+      "member_sha256": "e62a4e089f40e06313583f266290cf8c90af3f0e7e555d6f4141d4027fad1785",
+      "original_code_bytes": 106,
+      "data": [],
+      "absolute_symbols": [],
+      "status": "verified_data_mapping"
+    },
+    {
+      "module": 68,
+      "name": "uldiv.asm",
+      "member_offset": 118480,
+      "member_sha256": "7b835bb8a8af468764e53398ddff9d870a6821a444053990388e06e737d6db63",
+      "original_code_bytes": 95,
+      "data": [],
+      "absolute_symbols": [],
+      "status": "verified_data_mapping"
+    },
+    {
+      "module": 69,
+      "name": "lshr.asm",
+      "member_offset": 116752,
+      "member_sha256": "2f492de2d6a81359124f55e8f0512e8ef921a012dab84fa551553a84248d5132",
+      "original_code_bytes": 11,
+      "data": [],
+      "absolute_symbols": [],
+      "status": "verified_data_mapping"
+    },
+    {
+      "module": 70,
+      "name": "lshl.asm",
+      "member_offset": 116608,
+      "member_sha256": "663d64468bdc56d7b267b75ca63820eef7d7717434a2803e6fcaee9a5c8da3ce",
+      "original_code_bytes": 11,
+      "data": [],
+      "absolute_symbols": [],
+      "status": "verified_data_mapping"
+    },
+    {
+      "module": 71,
+      "name": "lrem.asm",
+      "member_offset": 116304,
+      "member_sha256": "522bf8aefb04993eaa3a4f4493841673d0cff1f1369feeecaae2d0e55d1ca73f",
+      "original_code_bytes": 160,
+      "data": [],
+      "absolute_symbols": [],
+      "status": "verified_data_mapping"
+    },
+    {
+      "module": 72,
+      "name": "lmul.asm",
+      "member_offset": 116096,
+      "member_sha256": "b3a96967f958549913159daec24bd7df15de404b1ad34edaf6a1ebc2bcd0b18c",
+      "original_code_bytes": 50,
+      "data": [],
+      "absolute_symbols": [],
+      "status": "verified_data_mapping"
+    },
+    {
+      "module": 73,
+      "name": "ldiv.asm",
+      "member_offset": 115808,
+      "member_sha256": "9eb27a272047d07839c92739cc7d9471385bcd0805132f95f3adb39bd0863e99",
+      "original_code_bytes": 154,
+      "data": [],
+      "absolute_symbols": [],
+      "status": "verified_data_mapping"
+    },
+    {
+      "module": 74,
+      "name": "dos\\diskfree.asm",
+      "member_offset": 111584,
+      "member_sha256": "936e90e379ade81157a8a2235fda9e73bb79ad5cc3dc4afadaa01402043b8a8d",
+      "original_code_bytes": 73,
+      "data": [],
+      "absolute_symbols": [],
+      "status": "verified_data_mapping"
+    },
+    {
+      "module": 75,
+      "name": "dos\\d_find.asm",
+      "member_offset": 109088,
+      "member_sha256": "9e49cf40ace12fa9776f21b3b4a2d229abaaa1ad331be25a2867427df7d9fd2b",
+      "original_code_bytes": 140,
+      "data": [],
+      "absolute_symbols": [],
+      "status": "verified_data_mapping"
+    },
+    {
+      "module": 76,
+      "name": "dos\\unlink.asm",
+      "member_offset": 107296,
+      "member_sha256": "23f49ecbad6de9bb93159a1ff0f84eb275707cac8078167524477c245c424c3f",
+      "original_code_bytes": 36,
+      "data": [],
+      "absolute_symbols": [],
+      "status": "verified_data_mapping"
+    },
+    {
+      "module": 77,
+      "name": "dos\\rename.asm",
+      "member_offset": 104832,
+      "member_sha256": "d38ee00a68569a8f5c9db36b239e95c4436fe13bb3c3aca3586617742b4f94e6",
+      "original_code_bytes": 43,
+      "data": [],
+      "absolute_symbols": [],
+      "status": "verified_data_mapping"
+    },
+    {
+      "module": 78,
+      "name": "dos\\dir.asm",
+      "member_offset": 102256,
+      "member_sha256": "e89842cfa2d0968195a43865bf2b94409b2d3c7658338f18e18d40bc2089242e",
+      "original_code_bytes": 113,
+      "data": [],
+      "absolute_symbols": [],
+      "status": "verified_data_mapping"
+    },
+    {
+      "module": 79,
+      "name": "dos\\access.asm",
+      "member_offset": 101744,
+      "member_sha256": "37e9f8c581ba7e1a73dbb48dd7acc138bdd873d4e5666f9363b24410069bdf4f",
+      "original_code_bytes": 54,
+      "data": [],
+      "absolute_symbols": [],
+      "status": "verified_data_mapping"
+    },
+    {
+      "module": 80,
+      "name": "setjmp.asm",
+      "member_offset": 94992,
+      "member_sha256": "8cce581dbe13b1b0f1fe3813c80fcd44df130c6846703283738524ab9c5a5c0d",
+      "original_code_bytes": 77,
+      "data": [],
+      "absolute_symbols": [],
+      "status": "verified_data_mapping"
+    },
+    {
+      "module": 81,
+      "name": "qsort.asm",
+      "member_offset": 93776,
+      "member_sha256": "24956a823b2cdca87aeaa1336b836e632b71ecfb351e710215a676c6648479e8",
+      "original_code_bytes": 353,
+      "data": [],
+      "absolute_symbols": [],
+      "status": "verified_data_mapping"
+    },
+    {
+      "module": 82,
+      "name": "labs.c",
+      "member_offset": 92272,
+      "member_sha256": "4e3284ed4fd1cd90007c9e21b853f56cb3333cf541b5efef57b5eb7b0164c09c",
+      "original_code_bytes": 30,
+      "data": [],
+      "absolute_symbols": [],
+      "status": "verified_data_mapping"
+    },
+    {
+      "module": 83,
+      "name": "bsearch.c",
+      "member_offset": 91328,
+      "member_sha256": "0525240609710b72c441c3ee5c2a10110fa24348a750fefaacf2e6f50752f990",
+      "original_code_bytes": 152,
+      "data": [],
+      "absolute_symbols": [],
+      "status": "verified_data_mapping"
+    },
+    {
+      "module": 84,
+      "name": "abs.c",
+      "member_offset": 91120,
+      "member_sha256": "3296f6bd5a60ed134e4edadd08a5404b9e051ffa0a42154bfef6e62c8e134159",
+      "original_code_bytes": 20,
+      "data": [],
+      "absolute_symbols": [],
+      "status": "verified_data_mapping"
+    },
+    {
+      "module": 85,
+      "name": "memset.asm",
+      "member_offset": 84592,
+      "member_sha256": "043fc04ad61a109f6de2878b3894e04fa120af0e4bcb6c5b90c8f78dae106a89",
+      "original_code_bytes": 45,
+      "data": [],
+      "absolute_symbols": [],
+      "status": "verified_data_mapping"
+    },
+    {
+      "module": 86,
+      "name": "memcpy.asm",
+      "member_offset": 84416,
+      "member_sha256": "b0105f319ed12921032924a185466dcdb43c98b4ce1a7c815085eac4efe52bbf",
+      "original_code_bytes": 44,
+      "data": [],
+      "absolute_symbols": [],
+      "status": "verified_data_mapping"
+    },
+    {
+      "module": 87,
+      "name": "memcmp.asm",
+      "member_offset": 84240,
+      "member_sha256": "64cd47156359e28fde8f8c1bbe98ccdf4aea0ae666fa209b297dfba05b618ddb",
+      "original_code_bytes": 39,
+      "data": [],
+      "absolute_symbols": [],
+      "status": "verified_data_mapping"
+    },
+    {
+      "module": 88,
+      "name": "memcpy.asm",
+      "member_offset": 83824,
+      "member_sha256": "37a4ef91e1c8d24a8208f1e06de79224afdd3281ffc42578f90d35cd964681a1",
+      "original_code_bytes": 72,
+      "data": [],
+      "absolute_symbols": [],
+      "status": "verified_data_mapping"
+    },
+    {
+      "module": 89,
+      "name": "strlwr.asm",
+      "member_offset": 80912,
+      "member_sha256": "465f70c42f330b7756081fc529b4458077f5474262cf655a15b2b17629964154",
+      "original_code_bytes": 30,
+      "data": [],
+      "absolute_symbols": [],
+      "status": "verified_data_mapping"
+    },
+    {
+      "module": 90,
+      "name": "strrchr.asm",
+      "member_offset": 80368,
+      "member_sha256": "022b0e36e74f539852f3f56d9e1b675a6f88efaac60e66dee0b326ed4068aa39",
+      "original_code_bytes": 40,
+      "data": [],
+      "absolute_symbols": [],
+      "status": "verified_data_mapping"
+    },
+    {
+      "module": 91,
+      "name": "strnicmp.asm",
+      "member_offset": 79968,
+      "member_sha256": "3f9c60177a0ffa6f3c79f5df4382009585b4f1bca6adec77a455ddc17dc1d8d3",
+      "original_code_bytes": 87,
+      "data": [],
+      "absolute_symbols": [],
+      "status": "verified_data_mapping"
+    },
+    {
+      "module": 92,
+      "name": "stricmp.asm",
+      "member_offset": 79520,
+      "member_sha256": "9999d505266d9119c13920af84c211459899cacdd54038a2e7b6f6b5ffd652e6",
+      "original_code_bytes": 66,
+      "data": [],
+      "absolute_symbols": [],
+      "status": "verified_data_mapping"
+    },
+    {
+      "module": 93,
+      "name": "strchr.asm",
+      "member_offset": 79344,
+      "member_sha256": "b3d04a5a9b122f3537efb899c0b95aa65d10c6eb13fcd50c95e1a81e3bde538b",
+      "original_code_bytes": 41,
+      "data": [],
+      "absolute_symbols": [],
+      "status": "verified_data_mapping"
+    },
+    {
+      "module": 94,
+      "name": "dos\\strtime.asm",
+      "member_offset": 76800,
+      "member_sha256": "2a59b650114e9309cb68ccf0dd7cc3ba73afd0f0c160e7fd9897b9f68d1b2053",
+      "original_code_bytes": 89,
+      "data": [],
+      "absolute_symbols": [],
+      "status": "verified_data_mapping"
+    },
+    {
+      "module": 95,
+      "name": "dos\\strdate.asm",
+      "member_offset": 76528,
+      "member_sha256": "65fe1dfdf36dc43d937a3a5ab7a735332e3e7df6e828e6a6937a1c76e3b0431e",
+      "original_code_bytes": 99,
+      "data": [],
+      "absolute_symbols": [],
+      "status": "verified_data_mapping"
+    },
+    {
+      "module": 96,
+      "name": "flength.c",
+      "member_offset": 54272,
+      "member_sha256": "dc8385075c4ce8e1998058cd567f41d95122d44a6fd2fb462e7937faa33ade6a",
+      "original_code_bytes": 154,
+      "data": [],
+      "absolute_symbols": [],
+      "status": "verified_data_mapping"
+    },
+    {
+      "module": 97,
+      "name": "tell.c",
+      "member_offset": 52384,
+      "member_sha256": "a96806aa21d8b5f20f01ba98ab0034b4b0bfa52a4ce8b284939264e5b5389abf",
+      "original_code_bytes": 28,
+      "data": [],
+      "absolute_symbols": [],
+      "status": "verified_data_mapping"
+    },
+    {
+      "module": 98,
+      "name": "ctype.asm",
+      "member_offset": 39120,
+      "member_sha256": "5b45019a7bd3c4ae6778509c573b07692c26e3bc16d3d8ff64578146a4defa4c",
+      "original_code_bytes": 0,
+      "data": [
+        {
+          "object_segment": 2,
+          "name": "_DATA",
+          "size": 257,
+          "ne_segment": 37,
+          "base": 5982,
+          "placement_evidence": "public_symbol_or_verified_code_reference",
+          "initialized_literals": 257,
+          "zero_fill_bytes": 0,
+          "literal_mismatches": [],
+          "fixups": [],
+          "status": "verified_data"
+        }
+      ],
+      "absolute_symbols": [],
+      "status": "verified_data_mapping"
+    },
+    {
+      "module": 99,
+      "name": "itoa.asm",
+      "member_offset": 37088,
+      "member_sha256": "a5b941d768b8da7db176c7721c57fad5ef8cf1bbf53b454482c75e10fc598050",
+      "original_code_bytes": 27,
+      "data": [],
+      "absolute_symbols": [],
+      "status": "verified_data_mapping"
+    },
+    {
+      "module": 100,
+      "name": "atoi.asm",
+      "member_offset": 36256,
+      "member_sha256": "d668bd2b48f9a93006bb4bb30433196094386bd09dbeabe3f7d619d8a3e1f6ec",
+      "original_code_bytes": 3,
+      "data": [],
+      "absolute_symbols": [],
+      "status": "verified_data_mapping"
+    },
+    {
+      "module": 101,
+      "name": "strncpy.asm",
+      "member_offset": 35888,
+      "member_sha256": "e61b17ab0362ea3f84ea8e1afac7286522081faf5d6613868edda5bc8f4c16bb",
+      "original_code_bytes": 40,
+      "data": [],
+      "absolute_symbols": [],
+      "status": "verified_data_mapping"
+    },
+    {
+      "module": 102,
+      "name": "strlen.asm",
+      "member_offset": 35536,
+      "member_sha256": "077229e39aa4841ba189d22acb032c0a2f1697dfdbfa63dc0adc2aede4cf537b",
+      "original_code_bytes": 27,
+      "data": [],
+      "absolute_symbols": [],
+      "status": "verified_data_mapping"
+    },
+    {
+      "module": 103,
+      "name": "strcmp.asm",
+      "member_offset": 35360,
+      "member_sha256": "846868e0fed5549bfb9a35c816a0a226d0932bd31369ff7efc1a1d3b788f20dd",
+      "original_code_bytes": 43,
+      "data": [],
+      "absolute_symbols": [],
+      "status": "verified_data_mapping"
+    },
+    {
+      "module": 104,
+      "name": "strcpy.asm",
+      "member_offset": 35184,
+      "member_sha256": "cab68f894abfcad1e1229feafb63b478508cc08092de399fca9ea2b26e860411",
+      "original_code_bytes": 50,
+      "data": [],
+      "absolute_symbols": [],
+      "status": "verified_data_mapping"
+    },
+    {
+      "module": 105,
+      "name": "strcat.asm",
+      "member_offset": 34992,
+      "member_sha256": "abcbc829ed8d8287bcee15e26176237379de35f7db7041c1518b36fe46e77d05",
+      "original_code_bytes": 63,
+      "data": [],
+      "absolute_symbols": [],
+      "status": "verified_data_mapping"
+    },
+    {
+      "module": 106,
+      "name": "dos\\lseek.asm",
+      "member_offset": 23808,
+      "member_sha256": "d05e3098d43bef58c541291fec41aa104e9ea2a7ce2ba067b09f3b2231f2e912",
+      "original_code_bytes": 212,
+      "data": [],
+      "absolute_symbols": [],
+      "status": "verified_data_mapping"
+    },
+    {
+      "module": 107,
+      "name": "dos\\crt0dat.asm",
+      "member_offset": 1696,
+      "member_sha256": "d5102715da4bff3a6e051fb5b793da724815e54f29a71f92f6b07b89ed34f171",
+      "original_code_bytes": 441,
+      "data": [
+        {
+          "object_segment": 2,
+          "name": "CDATA",
+          "size": 14,
+          "ne_segment": 37,
+          "base": 7300,
+          "placement_evidence": "public_symbol_or_verified_code_reference",
+          "initialized_literals": 2,
+          "zero_fill_bytes": 12,
+          "literal_mismatches": [],
+          "fixups": [],
+          "status": "verified_data"
+        },
+        {
+          "object_segment": 3,
+          "name": "_DATA",
+          "size": 106,
+          "ne_segment": 37,
+          "base": 5876,
+          "placement_evidence": "public_symbol_or_verified_code_reference",
+          "initialized_literals": 104,
+          "zero_fill_bytes": 0,
+          "literal_mismatches": [],
+          "fixups": [
+            {
+              "offset": 98,
+              "width": 2,
+              "location": 1,
+              "target": [
+                0,
+                3
+              ],
+              "status": "verified_linked_word",
+              "expected": 5978,
+              "actual": 5978
+            }
+          ],
+          "status": "verified_data"
+        }
+      ],
+      "absolute_symbols": [],
+      "status": "verified_data_mapping"
+    },
+    {
+      "module": 108,
+      "name": "windows\\crt0.asm",
+      "member_offset": 16,
+      "member_sha256": "9deb7222e612bd54252a8d6665b7525ae2fd7e1fb6eeaab89ba0e2ebd004b983",
+      "original_code_bytes": 179,
+      "data": [
+        {
+          "object_segment": 2,
+          "name": "NULL",
+          "size": 16,
+          "ne_segment": 37,
+          "base": 0,
+          "placement_evidence": "public_symbol_or_verified_code_reference",
+          "initialized_literals": 16,
+          "zero_fill_bytes": 0,
+          "literal_mismatches": [],
+          "fixups": [],
+          "status": "verified_data"
+        },
+        {
+          "object_segment": 3,
+          "name": "_DATA",
+          "size": 20,
+          "ne_segment": 37,
+          "base": 5856,
+          "placement_evidence": "public_symbol_or_verified_code_reference",
+          "initialized_literals": 20,
+          "zero_fill_bytes": 0,
+          "literal_mismatches": [],
+          "fixups": [],
+          "status": "verified_data"
+        }
+      ],
+      "absolute_symbols": [
+        {
+          "name": "__acrtused",
+          "value": 39030,
+          "verified": true
+        },
+        {
+          "name": "__fptaskdata",
+          "value": 39030,
+          "verified": true
+        },
+        {
+          "name": "__sizec",
+          "value": 1,
+          "verified": true
+        },
+        {
+          "name": "__sized",
+          "value": 0,
+          "verified": true
+        },
+        {
+          "name": "__aDBdoswp",
+          "value": 54998,
+          "verified": true
+        },
+        {
+          "name": "__aDBused",
+          "value": 54998,
+          "verified": true
+        }
+      ],
+      "status": "verified_data_mapping"
+    }
+  ]
+}

@@ -2,6 +2,7 @@
 import ctypes as C
 from pathlib import Path
 import struct
+import tempfile
 import unittest
 from tools import package_startup as package
 from tools.ne_layout import NE
@@ -29,6 +30,29 @@ class StartupPackageTests(unittest.TestCase):
             rows.append((typ,name,flags,count,package.sha(data)))
         self.assertEqual(rows,[(r['type'],r['id'],r['flags'],r['bytes'],r['sha256']) for r in ne.resources])
         self.assertEqual(cursor,len(blob));self.assertEqual(len(rows),122)
+
+    def test_workshop_payload_is_dos_text_and_has_all_native_inputs(self):
+        files=package.payload()
+        for name in ['APP.H','NATIVE.C','CONFIG.C','CONFIG.H','CHECKS.TXT']:
+            self.assertIn(name,files)
+        self.assertIn(b'COMMDLG TOOLHELP',files['START.LNK'])
+        for name,data in files.items():
+            self.assertRegex(name,r'^[A-Z0-9_]{1,8}\.[A-Z0-9_]{1,3}$')
+            if Path(name).suffix in ['.C','.H','.INC','.TXT','.BAT','.LNK','.RSP','.DEF']:
+                data.decode('ascii')
+                self.assertNotIn(b'\n',data.replace(b'\r\n',b''))
+        self.assertIn(b'REGRESS',files['README.TXT'])
+        self.assertNotIn('STARSREC.INI',files)
+
+    def test_stale_native_source_is_rejected_before_export(self):
+        files=package.payload()
+        first=next(n for n in files if Path(n).suffix in ['.C','.H','.INC','.RES','.BIN','.RSP','.LNK','.DEF'])
+        with tempfile.TemporaryDirectory() as directory:
+            root=Path(directory);build=root/'build';build.mkdir()
+            (build/first).write_bytes(b'stale input')
+            with self.assertRaisesRegex(ValueError,'Native build input differs'):
+                package.export(root/'output',native_build=build)
+            self.assertFalse((root/'output').exists())
 
     def test_native_roundtrip_when_local_build_available(self):
         exe=package.ROOT/'runs/step4/guest/STARTDEV/START.EXE'

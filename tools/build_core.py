@@ -12,7 +12,7 @@ SOURCES = ['utilgen.c', 'race.c', 'near_state.c', 'codec.c', 'text.c', 'create.c
            'racedraw.c', 'racewizard.c']
 # Keep the frozen race-export source set stable; foundation modules join the
 # host library without silently changing the already accepted native package.
-FOUNDATION_SOURCES = ['memory.c', 'common.c', 'startup.c', 'resources.c', 'title.c']
+FOUNDATION_SOURCES = ['memory.c', 'common.c', 'startup.c', 'resources.c', 'title.c', 'config.c']
 
 
 def main():
