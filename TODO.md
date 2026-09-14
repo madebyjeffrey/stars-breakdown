@@ -157,11 +157,23 @@ The immediate work is:
   The [audit](analysis/reconstruction/race-dependencies.json) accounts for all
   88 reachable game-code targets, including 12 caller-specific helper paths
   that are not counted as complete standalone procedures.
+- [x] **Race acceptance scenarios:** prepare a generated catalog shared by the
+  reconstructed component, original-instruction comparisons and live replay
+  recipes. Include valid saves, expected rejections, U020 and file comparison
+  that accounts explicitly for the BOF salt. See the [scenario package](compat/race/README.md).
+  **2026-09-14:** 88 scenarios match under modeled Windows services; one live
+  DOSBox baseline passes both file directions. The 15-case live pilot and native
+  build of the new source remain incomplete.
 - [ ] **Native race-component acceptance:** create a VC++ 1.52c adapter and one
   coherent build package after this dependency work. Map the documented Windows
   services/resources, compile the new source, exercise both file directions and
   race creation in the VM, check real rendering/input and U020's Windows text
-  copying. No new manual VM package was prepared in the dependency pass.
+  copying. Use the scenario package's IDs and expectations; its live pilot and
+  generated file cross-loading can run before the native adapter is complete.
+  **Execution preference, 2026-09-14:** the user has Stars! and VC++ 1.52c in
+  86Box/Windows 98 SE and prefers instructions for any checks needed there.
+  Provide exact actions, expected results and files to return through the existing
+  FTP share. DOSBox remains authorized for agent-operated reference checks.
 
 Step 5 is finished only when its full exit criterion is met. These milestones
 change the size and usefulness of work sessions, not the definition of completion.

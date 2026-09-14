@@ -6,6 +6,19 @@ The user resolved registration after the initial experiments. Subsequent clean g
 
 ## Environment and reproduction
 
+For upcoming acceptance checks, the user has Stars! and VC++ 1.52c in an
+86Box/Windows 98 SE VM and prefers to perform its checks from precise
+instructions. Give the actions, expected results and files to return through
+the existing FTP share when needed. DOSBox remains authorized for checks the
+agent can perform directly (user preference recorded 2026-09-14).
+
+The subsequent [race acceptance package](../../compat/race/README.md) records
+88 generated scenarios and a first live T000 baseline with matching plaintext
+and successful cross-loading in both directions. For title-screen race creation,
+use New Game (Alt+N), then Customize Race (Alt+C), without generating a world.
+For loading, navigate the Open dialog into the fixture directory before entering
+the bare filename. Refresh DOSBox's mounted C drive after host-side file copies.
+
 `environment.json` records the emulator binary, configuration and driver hashes. `install-media.json` identifies user-provided Windows installation media. Original executable identity remains the step 0 SHA-256; only that executable was copied into the guest. Windows, settings, raw fixtures and captures stay in ignored local directories. User will provide serial number.
 
 1. Install Homebrew DOSBox-X 2026.08.31 with its heavy debugger. Run `python3 -m tools.runtime.prepare --windows-media /path/to/W311` to prepare a fresh guest. It verifies pinned input hashes and refuses to replace an existing guest. The macOS app wrapper depends on this Homebrew installation's libraries; it is not a self-contained emulator distribution.

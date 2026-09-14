@@ -4,7 +4,9 @@ The game-code dependencies for both milestones are implemented and integrated.
 The component can open, edit, create, password-check and save a race through
 recovered C code. All six wizard procedures execute; the platform supplies
 Windows services and messages. A native Windows test application is the next
-integration task and has not been packaged in this dependency pass.
+integration task and has not been packaged in this dependency pass. The subsequent
+[scenario acceptance package](../../compat/race/README.md) generates checked race
+variations and live replay recipes in preparation for that native integration.
 
 This adds **40 reviewed entry points, covering 27,718 original procedure bytes**.
 The project now has **99 reviewed named routines / 45,906 procedure bytes**.

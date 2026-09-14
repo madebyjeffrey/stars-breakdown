@@ -139,8 +139,10 @@ class RaceUiMachine(RaceRuntimeMachine):
         assert frame['actions'],'dialog script ended without EndDialog'
         action=frame['actions'].pop(0)
         while callable(action):
-            action(self.world,self.put)
-            assert frame['actions'];action=frame['actions'].pop(0)
+            # Resolve input coordinates only after the original has laid out controls.
+            action=action(self.world,self.put)
+            if action is None:
+                assert frame['actions'];action=frame['actions'].pop(0)
         msg,wp,lp=action
         sp=frame['sp']-14
         cpu.mem_write(0x30000+sp,struct.pack('<HHIHHH',0x1900,0xe000,lp,wp,msg,100))

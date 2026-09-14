@@ -88,7 +88,7 @@ def audit():
         summary={'accounted_game_targets':len(rows),'unaccounted_game_targets':len(unaccounted),
                  'new_reviewed_entries':len(BINDINGS),'new_reviewed_procedure_bytes':sum(p['size'] for p in procedures.values() if p['name'] in BINDINGS),
                  'scoped_helper_paths':sum(r['status']=='required_call_path_implemented' for r in rows),
-                 'native_windows_acceptance':'pending; no new VM test package prepared'})
+                 'native_windows_acceptance':'pending native adapter/build; scenario package and one live cross-load baseline available'})
 
 def main():
     parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--check',action='store_true');parser.add_argument('--update-reviews',action='store_true')

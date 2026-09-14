@@ -31,8 +31,9 @@ class UiHost(Host):
         self.window_events.append(('DialogBox',resource,owner));self.world.load_resource(resource);self.world.result=None
         callback=C.CFUNCTYPE(C.c_int16,C.POINTER(Runtime),C.c_uint16,C.c_uint16,C.c_uint16,C.c_uint32)(proc)
         for action in actions:
-            if callable(action):action(self.world,self.world.write_near)
-            else:callback(r,100,*action)
+            # An input action may resolve a mouse message from live dialog geometry.
+            if callable(action):action=action(self.world,self.world.write_near)
+            if action is not None:callback(r,100,*action)
             if self.world.result is not None:break
         assert self.world.result is not None,'dialog script ended without EndDialog'
         return self.world.result

@@ -1,0 +1,1397 @@
+{
+  "schema": 1,
+  "date": "2026-09-14",
+  "original_sha256": "ccab6682b55dae14dbf104e491cfbd3b32a6280022020032ae0615500949ba59",
+  "package": "ftp-share/RACEACC1.ZIP",
+  "package_sha256": "eb12bc6039b3ac1e2193c91e7b258d1c23d341db3715b202782c9b07d93be9e9",
+  "model": {
+    "method": "Original x86 and recovered C callbacks; modeled Windows services. Live VM results pending.",
+    "cases": 88,
+    "sessions": 89,
+    "saved_file_pairs": 61,
+    "accepted_reloads": 60,
+    "rejected_reloads": 1,
+    "fileless_sessions": 28,
+    "focused_tests_passed": 17,
+    "controlled_inputs": {
+      "game_id": 0,
+      "turn": 0,
+      "game_flags": 0,
+      "initial_game_rng": [
+        53668,
+        52774
+      ],
+      "tick": 123
+    }
+  },
+  "cases": [
+    {
+      "id": "B000",
+      "title": "Humanoid custom baseline; visit all six pages",
+      "pilot": true,
+      "sessions": [
+        {
+          "filename": "B000.R1",
+          "result": 1,
+          "points": 25,
+          "load_result": 1,
+          "wire_sha256": "fd08aecb11e983a6882823ccb755319a77d682aa123c15ac5c24a35ade617202",
+          "player_sha256": "b9d863c4ec577c99ec5adf232a7acf24c63c8a43df09a63b644d3e9bdb6f0109"
+        }
+      ]
+    },
+    {
+      "id": "T000",
+      "title": "Humanoid template",
+      "pilot": false,
+      "sessions": [
+        {
+          "filename": "T000.R1",
+          "result": 1,
+          "points": 25,
+          "load_result": 1,
+          "wire_sha256": "d0be3b597fae8ad34156a463c0be6e807f1028a9a97bca314b295921386de8d1",
+          "player_sha256": "ee5904bed83d040dff9242466abfcd9df4a07197e941ba196527acd3f7785f5e"
+        }
+      ]
+    },
+    {
+      "id": "T001",
+      "title": "Rabbitoid template",
+      "pilot": true,
+      "sessions": [
+        {
+          "filename": "T001.R1",
+          "result": 1,
+          "points": 32,
+          "load_result": 1,
+          "wire_sha256": "417fa7aed840b6f03e6e7d33f77a96ad435db41758edb1bafcafe8f54dacff66",
+          "player_sha256": "20f0c51eefe170c67df79655202b46ff1c9d40fafe2b014c3c8d674e58f01613"
+        }
+      ]
+    },
+    {
+      "id": "T002",
+      "title": "Insectoid template",
+      "pilot": false,
+      "sessions": [
+        {
+          "filename": "T002.R1",
+          "result": 1,
+          "points": 43,
+          "load_result": 1,
+          "wire_sha256": "7b9f50d2bc031532b4a7a192bc4c259f76077272b84ee195e19f867b6f64f9b4",
+          "player_sha256": "a6805d04bba9778681a16151ee49289571a7a557ed78e5dbb8d98d45ce9f367b"
+        }
+      ]
+    },
+    {
+      "id": "T003",
+      "title": "Nucleotid template",
+      "pilot": false,
+      "sessions": [
+        {
+          "filename": "T003.R1",
+          "result": 1,
+          "points": 11,
+          "load_result": 1,
+          "wire_sha256": "49c1b38594894c58960fc26094ce91876f9710dfa0e2d5a7924ea7eb90e8b000",
+          "player_sha256": "a9c29886089efbd593e213b65781e851c83063750111a4a6ad0d169b8b3e48c6"
+        }
+      ]
+    },
+    {
+      "id": "T004",
+      "title": "Silicanoid template",
+      "pilot": false,
+      "sessions": [
+        {
+          "filename": "T004.R1",
+          "result": 1,
+          "points": 9,
+          "load_result": 1,
+          "wire_sha256": "fee5298d60b0649792210281d7da13a0b276d1ca5ad61d91dcd144c6b9325e80",
+          "player_sha256": "777646ebccdd212f03dbc8389578755ea5a06743f5d5ec6e81a5b8efddf994a5"
+        }
+      ]
+    },
+    {
+      "id": "T005",
+      "title": "Antetheral template",
+      "pilot": false,
+      "sessions": [
+        {
+          "filename": "T005.R1",
+          "result": 1,
+          "points": 7,
+          "load_result": 1,
+          "wire_sha256": "cf84a64cf3e6da4643ffeba0ea6d8bb9a53bef3a75aacc07f6dc8add07d11306",
+          "player_sha256": "a43b5cf95107efa2b98909f32141e680efe36a2fcd6b7430f6a720060f2ba9b5"
+        }
+      ]
+    },
+    {
+      "id": "T006",
+      "title": "Random template",
+      "pilot": true,
+      "sessions": [
+        {
+          "filename": "T006.R1",
+          "result": 1,
+          "points": 12,
+          "load_result": 1,
+          "wire_sha256": "b139b89a9d940bc31a28abde1a0ac1c5d7b14fbe3288a613c3a7e7f0e4a1a4cb",
+          "player_sha256": "df7f79b73bdf854147ca51b08efc1b2c1ac7a1591cc11df615726ee8fa5e9d18"
+        }
+      ]
+    },
+    {
+      "id": "T007",
+      "title": "Custom template",
+      "pilot": false,
+      "sessions": [
+        {
+          "filename": "T007.R1",
+          "result": 1,
+          "points": 25,
+          "load_result": 1,
+          "wire_sha256": "fac680b3a20eb67531385096ac1e4e80518f9c4a0363debdbbcbebd73187c3aa",
+          "player_sha256": "ec34d4057ea1c6d363284cb298478817544d694180c0ca86f1c5a1cc3850b7c2"
+        }
+      ]
+    },
+    {
+      "id": "P000",
+      "title": "Primary trait: Hyper-Expansion",
+      "pilot": false,
+      "sessions": [
+        {
+          "filename": "P000.R1",
+          "result": 0,
+          "points": -10,
+          "load_result": null,
+          "wire_sha256": null,
+          "player_sha256": "2de2487b5c52fa4c7e87af6895e7885c922687470b730725ee51d309ed9d75e5"
+        }
+      ]
+    },
+    {
+      "id": "P001",
+      "title": "Primary trait: Super Stealth",
+      "pilot": false,
+      "sessions": [
+        {
+          "filename": "P001.R1",
+          "result": 0,
+          "points": -28,
+          "load_result": null,
+          "wire_sha256": null,
+          "player_sha256": "340c027dea61fd7298a1b2f22614735958bf03b291ac89ec445e2e33cde96320"
+        }
+      ]
+    },
+    {
+      "id": "P002",
+      "title": "Primary trait: War Monger",
+      "pilot": false,
+      "sessions": [
+        {
+          "filename": "P002.R1",
+          "result": 0,
+          "points": -12,
+          "load_result": null,
+          "wire_sha256": null,
+          "player_sha256": "d90f5c14d392b215f4ebd562d78fc5d9b16b1caddd42d124dfcc7453e80b9e05"
+        }
+      ]
+    },
+    {
+      "id": "P003",
+      "title": "Primary trait: Claim Adjuster",
+      "pilot": false,
+      "sessions": [
+        {
+          "filename": "P003.R1",
+          "result": 1,
+          "points": 0,
+          "load_result": 1,
+          "wire_sha256": "02c6da0881c3ea584e60b09a684bcf86f02d25f6020d35daabd08887fa2a49bb",
+          "player_sha256": "eb3d70bc0826f1c6a99d8a744480de38774f4d3def5f30a4fefda5b01bbd647c"
+        }
+      ]
+    },
+    {
+      "id": "P004",
+      "title": "Primary trait: Inner-Strength",
+      "pilot": false,
+      "sessions": [
+        {
+          "filename": "P004.R1",
+          "result": 1,
+          "points": 36,
+          "load_result": 1,
+          "wire_sha256": "fbf39d9fe85e6df1eebb698dc6ce3ccd3c0218a4590eefe0056f4502b74388b3",
+          "player_sha256": "119c2611820f3681ce644ac60b865c6dce7541db5bf241202ebb0b27e0c8c2b6"
+        }
+      ]
+    },
+    {
+      "id": "P005",
+      "title": "Primary trait: Space Demolition",
+      "pilot": false,
+      "sessions": [
+        {
+          "filename": "P005.R1",
+          "result": 1,
+          "points": 53,
+          "load_result": 1,
+          "wire_sha256": "9dcd841e206093e846f43a16d92e1d809557277e7fed21071dce6ecf4c8a912a",
+          "player_sha256": "81524c5c027551439b6780422ddbbe2fe5010caaef9b18b0759a6dacb9d79092"
+        }
+      ]
+    },
+    {
+      "id": "P006",
+      "title": "Primary trait: Packet Physics",
+      "pilot": false,
+      "sessions": [
+        {
+          "filename": "P006.R1",
+          "result": 0,
+          "points": -37,
+          "load_result": null,
+          "wire_sha256": null,
+          "player_sha256": "f35a83329e8332e7c42d2021caef4d1de9f3bbf366aa5b1db42b7dcd3dd88da8"
+        }
+      ]
+    },
+    {
+      "id": "P007",
+      "title": "Primary trait: Interstellar Traveler",
+      "pilot": false,
+      "sessions": [
+        {
+          "filename": "P007.R1",
+          "result": 0,
+          "points": -57,
+          "load_result": null,
+          "wire_sha256": null,
+          "player_sha256": "319b49648ec75aedca0a875bedcc65ea20d9adf7c5df366d4757ba1d5d2045be"
+        }
+      ]
+    },
+    {
+      "id": "P008",
+      "title": "Primary trait: Alternate Reality",
+      "pilot": true,
+      "sessions": [
+        {
+          "filename": "P008.R1",
+          "result": 0,
+          "points": -27,
+          "load_result": null,
+          "wire_sha256": null,
+          "player_sha256": "4ad3cfb92dadf12822b59b380b469bf8f2d8219eb2d4b902d7b5bc368e8be017"
+        }
+      ]
+    },
+    {
+      "id": "P009",
+      "title": "Primary trait: Jack of All Trades",
+      "pilot": false,
+      "sessions": [
+        {
+          "filename": "P009.R1",
+          "result": 1,
+          "points": 25,
+          "load_result": 1,
+          "wire_sha256": "4968b95248cdc456865519deda15f2a706e2890e2437d2f7e1f6797ebb4ae866",
+          "player_sha256": "255e0d2aafc0d2d0a3e2110ce53d95cfb2d28cc25d51b45f5761b6e9dd27c611"
+        }
+      ]
+    },
+    {
+      "id": "L000",
+      "title": "Lesser trait: Improved Fuel Efficiency",
+      "pilot": false,
+      "sessions": [
+        {
+          "filename": "L000.R1",
+          "result": 0,
+          "points": -53,
+          "load_result": null,
+          "wire_sha256": null,
+          "player_sha256": "aa12c98024ce43918bef97fecd9f400f281daeadda568548c32ee8a8c6a27802"
+        }
+      ]
+    },
+    {
+      "id": "L001",
+      "title": "Lesser trait: Total Terraforming",
+      "pilot": false,
+      "sessions": [
+        {
+          "filename": "L001.R1",
+          "result": 0,
+          "points": -115,
+          "load_result": null,
+          "wire_sha256": null,
+          "player_sha256": "2420aff73187cc96417fea21a2f3c2a3ef37c09f972b7633dfb335c0ff2bd1b0"
+        }
+      ]
+    },
+    {
+      "id": "L002",
+      "title": "Lesser trait: Advanced Remote Mining",
+      "pilot": false,
+      "sessions": [
+        {
+          "filename": "L002.R1",
+          "result": 0,
+          "points": -28,
+          "load_result": null,
+          "wire_sha256": null,
+          "player_sha256": "936cac023fcd5d74a5563ee5efa329dec2b9d4e086d2656bd28d06d3cfcfbce9"
+        }
+      ]
+    },
+    {
+      "id": "L003",
+      "title": "Lesser trait: Improved Starbases",
+      "pilot": false,
+      "sessions": [
+        {
+          "filename": "L003.R1",
+          "result": 0,
+          "points": -42,
+          "load_result": null,
+          "wire_sha256": null,
+          "player_sha256": "dfecd60e1ba933c89e7867d89833a8442f64a89a49cbca438bcdd07ecd28825b"
+        }
+      ]
+    },
+    {
+      "id": "L004",
+      "title": "Lesser trait: Generalized Research",
+      "pilot": false,
+      "sessions": [
+        {
+          "filename": "L004.R1",
+          "result": 1,
+          "points": 38,
+          "load_result": 1,
+          "wire_sha256": "cbbbc6e93d866a524428cc015c44a82141903dabbfa1e7d83b52b8bc97606f67",
+          "player_sha256": "8745f6a083205cda6ba00db4928991a75782422719e08feb3f308ad20c2acd45"
+        }
+      ]
+    },
+    {
+      "id": "L005",
+      "title": "Lesser trait: Ultimate Recycling",
+      "pilot": false,
+      "sessions": [
+        {
+          "filename": "L005.R1",
+          "result": 0,
+          "points": -55,
+          "load_result": null,
+          "wire_sha256": null,
+          "player_sha256": "8a80e2297c1b236caa82a444984a0e3a111e7df6934e0f2ac02969b280bcfe2a"
+        }
+      ]
+    },
+    {
+      "id": "L006",
+      "title": "Lesser trait: Mineral Alchemy",
+      "pilot": false,
+      "sessions": [
+        {
+          "filename": "L006.R1",
+          "result": 0,
+          "points": -26,
+          "load_result": null,
+          "wire_sha256": null,
+          "player_sha256": "90c05aaa512d8c850789683f5a5e0ae15a7822981fbf2d081431cea3bbf5fa35"
+        }
+      ]
+    },
+    {
+      "id": "L007",
+      "title": "Lesser trait: No Ram Scoop Engines",
+      "pilot": false,
+      "sessions": [
+        {
+          "filename": "L007.R1",
+          "result": 1,
+          "points": 78,
+          "load_result": 1,
+          "wire_sha256": "5bbb68da511e17b61f67c60e7b550402724b54d64881826d5632b0ac418ca61d",
+          "player_sha256": "d21f6e83a8e70e294982306f9dae5c6502c814aaf30f2a874fe46296222dfc6e"
+        }
+      ]
+    },
+    {
+      "id": "L008",
+      "title": "Lesser trait: Cheap Engines",
+      "pilot": false,
+      "sessions": [
+        {
+          "filename": "L008.R1",
+          "result": 1,
+          "points": 105,
+          "load_result": 1,
+          "wire_sha256": "f55cb2d221c40e4eafc593685a0b0173a6121e75fdfa88602c815882399ff556",
+          "player_sha256": "326f51c529e3c6cab57313e0078901452522fab1ca8f64c8361f452e9bbeb1b6"
+        }
+      ]
+    },
+    {
+      "id": "L009",
+      "title": "Lesser trait: Only Basic Remote Mining",
+      "pilot": true,
+      "sessions": [
+        {
+          "filename": "L009.R1",
+          "result": 1,
+          "points": 110,
+          "load_result": 1,
+          "wire_sha256": "20d5044cc16901aef61e490570a333655436cb98e2f7e0c009c3f1cbac05530f",
+          "player_sha256": "3880343dfe89e779211521fa363de795adbd35b9d93064aa97f97f8b76d0ca3c"
+        }
+      ]
+    },
+    {
+      "id": "L010",
+      "title": "Lesser trait: No Advanced Scanners",
+      "pilot": false,
+      "sessions": [
+        {
+          "filename": "L010.R1",
+          "result": 1,
+          "points": 120,
+          "load_result": 1,
+          "wire_sha256": "f30336898e98653523a35e3869ec5e46f33f270dbc7bb5be37747b3a6a0b8798",
+          "player_sha256": "093ebebcbfed5394768a17e9c78b07578beb522a01ad9cc9cca57bbb3c92858b"
+        }
+      ]
+    },
+    {
+      "id": "L011",
+      "title": "Lesser trait: Low Starting Population",
+      "pilot": false,
+      "sessions": [
+        {
+          "filename": "L011.R1",
+          "result": 1,
+          "points": 85,
+          "load_result": 1,
+          "wire_sha256": "c4be58e4483bfcf7d9c6a22fe04adc1bc1306b04bfa1cb449403ece280d4e3c1",
+          "player_sha256": "5f9d6dc76cb65bc0e51e6aafa012a0495c121fbce7fe7045d1b8b06596e3f961"
+        }
+      ]
+    },
+    {
+      "id": "L012",
+      "title": "Lesser trait: Bleeding Edge Technology",
+      "pilot": false,
+      "sessions": [
+        {
+          "filename": "L012.R1",
+          "result": 1,
+          "points": 48,
+          "load_result": 1,
+          "wire_sha256": "f3f02db67c5c883a753a2bb8b19612d03d8bf8e94c8a9bbf59cf46f3e6955b56",
+          "player_sha256": "ce2296e3d9b23bd29c7ac242abbe178153fbfc471a1986d3b68d1aceb9b5979d"
+        }
+      ]
+    },
+    {
+      "id": "L013",
+      "title": "Lesser trait: Regenerating Shields",
+      "pilot": false,
+      "sessions": [
+        {
+          "filename": "L013.R1",
+          "result": 1,
+          "points": 35,
+          "load_result": 1,
+          "wire_sha256": "5c614cf29c07deddaa30b299f9b06eadf23b9f1a99948be06b2249f298299dc0",
+          "player_sha256": "1ee68c08762fdeb5bc89bc678f4ebb12b6c2740c90f01fa7fd470761d113dece"
+        }
+      ]
+    },
+    {
+      "id": "I000",
+      "title": "Immunity: gravity",
+      "pilot": true,
+      "sessions": [
+        {
+          "filename": "I000.R1",
+          "result": 0,
+          "points": -547,
+          "load_result": null,
+          "wire_sha256": null,
+          "player_sha256": "d48acbc8464dbb562f1db65f8a2c28d5ec08cbfb3131ac013f73bb22519c7a92"
+        }
+      ]
+    },
+    {
+      "id": "I003",
+      "title": "Toggle gravity immunity on then off",
+      "pilot": false,
+      "sessions": [
+        {
+          "filename": "I003.R1",
+          "result": 1,
+          "points": 81,
+          "load_result": 1,
+          "wire_sha256": "857b5a0f8b1d14751630fc5c209d287813876ed9f878cb5b4d85701801e9e06e",
+          "player_sha256": "a124089b00b40591c1685f8704549d944e4d63405ca630fef5eb925f0cc035c8"
+        }
+      ]
+    },
+    {
+      "id": "E000",
+      "title": "Drag gravity band to its lowest endpoint",
+      "pilot": true,
+      "sessions": [
+        {
+          "filename": "E000.R1",
+          "result": 1,
+          "points": 52,
+          "load_result": 1,
+          "wire_sha256": "b9c0932e6bb31b31258f5fe84bb72b44e49511b9c75a681f3c920c5d58a5f15c",
+          "player_sha256": "490f885d9e59ae3809170dfbb762037b050a1120d900a138f9b77f18d79e40e0"
+        }
+      ]
+    },
+    {
+      "id": "E003",
+      "title": "Drag gravity band to its highest endpoint",
+      "pilot": false,
+      "sessions": [
+        {
+          "filename": "E003.R1",
+          "result": 1,
+          "points": 65,
+          "load_result": 1,
+          "wire_sha256": "63d5e9abb20652580825e2420107dd51c5c701eb2519c9b1e132d8327dfde8bb",
+          "player_sha256": "eaea6aee49bb09277f9c831203f6258235b4d006e781ccb5ee00e1a8b3e092aa"
+        }
+      ]
+    },
+    {
+      "id": "I001",
+      "title": "Immunity: temperature",
+      "pilot": false,
+      "sessions": [
+        {
+          "filename": "I001.R1",
+          "result": 0,
+          "points": -547,
+          "load_result": null,
+          "wire_sha256": null,
+          "player_sha256": "faaa41b04d3a9dc58648430e7c2287ed90ac7fa93f77846b5a5b63c31242ec97"
+        }
+      ]
+    },
+    {
+      "id": "I004",
+      "title": "Toggle temperature immunity on then off",
+      "pilot": false,
+      "sessions": [
+        {
+          "filename": "I004.R1",
+          "result": 1,
+          "points": 81,
+          "load_result": 1,
+          "wire_sha256": "ddabc1b8aa7cd570cf8e06b7efd46bef130856009f0786e12906ddc1601cb6c7",
+          "player_sha256": "15257eb754ce8404187202d414b2745b8b62141b94e9870372b9d98d405494a1"
+        }
+      ]
+    },
+    {
+      "id": "E001",
+      "title": "Drag temperature band to its lowest endpoint",
+      "pilot": false,
+      "sessions": [
+        {
+          "filename": "E001.R1",
+          "result": 1,
+          "points": 52,
+          "load_result": 1,
+          "wire_sha256": "4d14b39df2704df0134e0f7eaad54fc0c52b52dd413342c46588a94793e86604",
+          "player_sha256": "7dd0de92acc6f7f4ed450e12214a5393679641ab005a1a0288bda06c7474e002"
+        }
+      ]
+    },
+    {
+      "id": "E004",
+      "title": "Drag temperature band to its highest endpoint",
+      "pilot": false,
+      "sessions": [
+        {
+          "filename": "E004.R1",
+          "result": 1,
+          "points": 65,
+          "load_result": 1,
+          "wire_sha256": "0c84fe2dbdb2e644a0564fbaa9bf287ab4f73ee1a63b9c7ef791d8f8b9aacd50",
+          "player_sha256": "c902b3ac0bada0e1d5148a672fba20bc15d873367e104924a4f39fb7577df7b2"
+        }
+      ]
+    },
+    {
+      "id": "I002",
+      "title": "Immunity: radiation",
+      "pilot": false,
+      "sessions": [
+        {
+          "filename": "I002.R1",
+          "result": 0,
+          "points": -547,
+          "load_result": null,
+          "wire_sha256": null,
+          "player_sha256": "f9610bf327090f2d40a8360fbe23bd0dc1e188836664f08c14938f7e98e13159"
+        }
+      ]
+    },
+    {
+      "id": "I005",
+      "title": "Toggle radiation immunity on then off",
+      "pilot": false,
+      "sessions": [
+        {
+          "filename": "I005.R1",
+          "result": 1,
+          "points": 81,
+          "load_result": 1,
+          "wire_sha256": "19449ab2332035cb74dac3e3adbfa6b613754102d181ce8a59ea11fed0a888d4",
+          "player_sha256": "9a69eb77c0a1e65dddb2caabd8f967664383bf9dfeccf3beeecbbf119dd97798"
+        }
+      ]
+    },
+    {
+      "id": "E002",
+      "title": "Drag radiation band to its lowest endpoint",
+      "pilot": false,
+      "sessions": [
+        {
+          "filename": "E002.R1",
+          "result": 1,
+          "points": 52,
+          "load_result": 1,
+          "wire_sha256": "62981036f088d112f8ab12d8e718d86110f01c168195322a4e3c6abf33f3d3c5",
+          "player_sha256": "a99bdc2d7d018d90ed0864138a54fadffbf5b62f1326a10835d7bdd49ce09cec"
+        }
+      ]
+    },
+    {
+      "id": "E005",
+      "title": "Drag radiation band to its highest endpoint",
+      "pilot": false,
+      "sessions": [
+        {
+          "filename": "E005.R1",
+          "result": 1,
+          "points": 65,
+          "load_result": 1,
+          "wire_sha256": "48700cb86251a001400c53eeced4ef33b177fb35296d77e75bcc52d95111ac15",
+          "player_sha256": "05701a173f1f4ac28f5d1d6ab90a25483072e10d8172b9bcf3bde05d1ccf201c"
+        }
+      ]
+    },
+    {
+      "id": "E006",
+      "title": "Narrow gravity band to its minimum width",
+      "pilot": false,
+      "sessions": [
+        {
+          "filename": "E006.R1",
+          "result": 1,
+          "points": 311,
+          "load_result": 1,
+          "wire_sha256": "03b86471d1113039b55bbc8ef51e2304a6f6abb63d08726d0e8bfe96e26674e0",
+          "player_sha256": "b2ab8562efbc895533751bfc144bc9aea02fb05c142f01f1fe15b015f053de7e"
+        }
+      ]
+    },
+    {
+      "id": "E007",
+      "title": "Widen temperature band to its maximum width",
+      "pilot": false,
+      "sessions": [
+        {
+          "filename": "E007.R1",
+          "result": 0,
+          "points": -118,
+          "load_result": null,
+          "wire_sha256": null,
+          "player_sha256": "2ed50adb5a2bfb3d0169786c11d36cff0fc555f90136cfbefdf8f44b959ced88"
+        }
+      ]
+    },
+    {
+      "id": "G000",
+      "title": "Growth rate at lower limit",
+      "pilot": true,
+      "sessions": [
+        {
+          "filename": "G000.R1",
+          "result": 1,
+          "points": 7619,
+          "load_result": 1,
+          "wire_sha256": "402f3486522892b3d888ec0857d025eeba8b2214e2eeb73366de296ff6542f13",
+          "player_sha256": "288973907ff0f52b0f52e95f2c4200fab8162c561075e974c0a2c75f88acc22c"
+        }
+      ]
+    },
+    {
+      "id": "G001",
+      "title": "Growth rate at upper limit",
+      "pilot": false,
+      "sessions": [
+        {
+          "filename": "G001.R1",
+          "result": 0,
+          "points": -386,
+          "load_result": null,
+          "wire_sha256": null,
+          "player_sha256": "f686587b861d2f14c8d4ae771fc6251d2b7890b8416d5138ff45c24ce960ac9a"
+        }
+      ]
+    },
+    {
+      "id": "F000",
+      "title": "population resource divisor: one step up",
+      "pilot": false,
+      "sessions": [
+        {
+          "filename": "F000.R1",
+          "result": 1,
+          "points": 65,
+          "load_result": 1,
+          "wire_sha256": "c329d5cf4028fb6d53b924a6b6dc29db3e396fbf35ee831ef19bcb7afba9a186",
+          "player_sha256": "008c12c3fc3c229515387bc896844d81c5644b6c5ee003ed7f5a69f781eabe33"
+        }
+      ]
+    },
+    {
+      "id": "F001",
+      "title": "population resource divisor: one step down",
+      "pilot": false,
+      "sessions": [
+        {
+          "filename": "F001.R1",
+          "result": 0,
+          "points": -175,
+          "load_result": null,
+          "wire_sha256": null,
+          "player_sha256": "9834b87c6fa931ca9b124675808d45d019392c698b04915b2254a78f140b090a"
+        }
+      ]
+    },
+    {
+      "id": "F002",
+      "title": "factory production: one step up",
+      "pilot": true,
+      "sessions": [
+        {
+          "filename": "F002.R1",
+          "result": 0,
+          "points": -17,
+          "load_result": null,
+          "wire_sha256": null,
+          "player_sha256": "a593ff316d9f644faf190d810ca6c977c7d8207c877d669a9fd9d1b9530e7b9b"
+        }
+      ]
+    },
+    {
+      "id": "F003",
+      "title": "factory production: one step down",
+      "pilot": false,
+      "sessions": [
+        {
+          "filename": "F003.R1",
+          "result": 1,
+          "points": 58,
+          "load_result": 1,
+          "wire_sha256": "9aeb47ea589391dea0a883060a8ad4176ff4ef38f383163bd22491329c9302cd",
+          "player_sha256": "8d78723eb021a9516f4c8f582b4a0e7686eed7b106a357082b45c1c061fe0263"
+        }
+      ]
+    },
+    {
+      "id": "F004",
+      "title": "factory resource cost: one step up",
+      "pilot": false,
+      "sessions": [
+        {
+          "filename": "F004.R1",
+          "result": 1,
+          "points": 43,
+          "load_result": 1,
+          "wire_sha256": "b5ad15f1990ff405bf7b1b9a8154b0ec20ccd5d3a65f7d56210bd6f90eb3ccf2",
+          "player_sha256": "3b5f59daf102263af537e506b0b31b0444e12710a578a0de0c44eaf1b0f2f4cf"
+        }
+      ]
+    },
+    {
+      "id": "F005",
+      "title": "factory resource cost: one step down",
+      "pilot": false,
+      "sessions": [
+        {
+          "filename": "F005.R1",
+          "result": 1,
+          "points": 5,
+          "load_result": 1,
+          "wire_sha256": "dc22f4120d9c0a33f576a23a4152b7e35e8849871918940f690f1d116c8c3c61",
+          "player_sha256": "1e0f487919c25fa806a06e275312d8309126289742957bf7288d94efd459fa87"
+        }
+      ]
+    },
+    {
+      "id": "F006",
+      "title": "factories operated: one step up",
+      "pilot": false,
+      "sessions": [
+        {
+          "filename": "F006.R1",
+          "result": 1,
+          "points": 11,
+          "load_result": 1,
+          "wire_sha256": "2be302d4c3d2baa0994038d7bb5a388884f863cced21c86993947df6a06d947b",
+          "player_sha256": "976013e0d9bbad58863931305d6d15bd3e142f0c918347c544300737568b7a44"
+        }
+      ]
+    },
+    {
+      "id": "F007",
+      "title": "factories operated: one step down",
+      "pilot": false,
+      "sessions": [
+        {
+          "filename": "F007.R1",
+          "result": 1,
+          "points": 38,
+          "load_result": 1,
+          "wire_sha256": "3c642dcf1b360f146105ff3f8f94d65f73bf7a38a070b7cb6f566655768a5095",
+          "player_sha256": "336616f7c9d6ba06e733699ed881c74f433b3332df512a97c339fab3aa20d135"
+        }
+      ]
+    },
+    {
+      "id": "F008",
+      "title": "mine production: one step up",
+      "pilot": false,
+      "sessions": [
+        {
+          "filename": "F008.R1",
+          "result": 0,
+          "points": -31,
+          "load_result": null,
+          "wire_sha256": null,
+          "player_sha256": "ecbc7153abee80517716c5dde4ced3b717f4e4eb25df49547141cc4aa187263f"
+        }
+      ]
+    },
+    {
+      "id": "F009",
+      "title": "mine production: one step down",
+      "pilot": false,
+      "sessions": [
+        {
+          "filename": "F009.R1",
+          "result": 1,
+          "points": 58,
+          "load_result": 1,
+          "wire_sha256": "8a16f91fb848add9492c6c9408623ed0939e555e601df6b64856f15b547b6bcc",
+          "player_sha256": "243d11ab48a09cdf503d6c6983eb0b9833b66a422107cd599bc2221f1d3e4f51"
+        }
+      ]
+    },
+    {
+      "id": "F010",
+      "title": "mine resource cost: one step up",
+      "pilot": false,
+      "sessions": [
+        {
+          "filename": "F010.R1",
+          "result": 1,
+          "points": 46,
+          "load_result": 1,
+          "wire_sha256": "45787b84b26e531b02c6feff142fdcc470684793499287e60be5c973dc602dcf",
+          "player_sha256": "71721db372fa218d60a38a654339eea4d2b980973e77dc7a77d98a9e1cce4011"
+        }
+      ]
+    },
+    {
+      "id": "F011",
+      "title": "mine resource cost: one step down",
+      "pilot": false,
+      "sessions": [
+        {
+          "filename": "F011.R1",
+          "result": 1,
+          "points": 3,
+          "load_result": 1,
+          "wire_sha256": "c8b015bf2788f67f50fa173cd63d1d894b2d6fba67689d0d38ea96ac63edb0c9",
+          "player_sha256": "b251fa9a8b49017ba688f0519c7c5ebff099d48f520a1e438595671fa8140104"
+        }
+      ]
+    },
+    {
+      "id": "F012",
+      "title": "mines operated: one step up",
+      "pilot": false,
+      "sessions": [
+        {
+          "filename": "F012.R1",
+          "result": 1,
+          "points": 13,
+          "load_result": 1,
+          "wire_sha256": "da4cbf288ef774cde1ef2de67bc119280a0986c2194b949de841cbd85e9f67db",
+          "player_sha256": "9765324d3537e5e46ff3f7e8b90bb846a338517e451a61d9312eae77c307e0fd"
+        }
+      ]
+    },
+    {
+      "id": "F013",
+      "title": "mines operated: one step down",
+      "pilot": false,
+      "sessions": [
+        {
+          "filename": "F013.R1",
+          "result": 1,
+          "points": 38,
+          "load_result": 1,
+          "wire_sha256": "af69a3536aedd9f284045644ae3143eab767172639ebeac184a2d0e823281fc5",
+          "player_sha256": "37d1f66905e963b8049cfa779a337d2bae56691fea82300eaeeccc96340f191b"
+        }
+      ]
+    },
+    {
+      "id": "F014",
+      "title": "Factories cost less Germanium",
+      "pilot": false,
+      "sessions": [
+        {
+          "filename": "F014.R1",
+          "result": 0,
+          "points": -33,
+          "load_result": null,
+          "wire_sha256": null,
+          "player_sha256": "f47d04b8cac1aba0cfecb8d276604fa9f85f794602670f724af815c0fa073faf"
+        }
+      ]
+    },
+    {
+      "id": "R000",
+      "title": "Energy: 75% extra",
+      "pilot": false,
+      "sessions": [
+        {
+          "filename": "R000.R1",
+          "result": 1,
+          "points": 75,
+          "load_result": 1,
+          "wire_sha256": "abdd7c775343182001a9a5581c41642995356dae0171d474ca71fe35f090d7df",
+          "player_sha256": "f9fcfb55b9483ed6edda65b99661e65e22ce4d622edb5536c19b7ce140afd724"
+        }
+      ]
+    },
+    {
+      "id": "R001",
+      "title": "Energy: 50% less",
+      "pilot": false,
+      "sessions": [
+        {
+          "filename": "R001.R1",
+          "result": 0,
+          "points": -18,
+          "load_result": null,
+          "wire_sha256": null,
+          "player_sha256": "ccfcafd98ff0185cd554e082bdf99d4072cbe0b053aec0ebd6c21ad47dd6629e"
+        }
+      ]
+    },
+    {
+      "id": "R002",
+      "title": "Weapons: 75% extra",
+      "pilot": false,
+      "sessions": [
+        {
+          "filename": "R002.R1",
+          "result": 1,
+          "points": 75,
+          "load_result": 1,
+          "wire_sha256": "85ee7bac15912146e0652b2342daf4e38a5c13a0d041829cf492860fb74fb19e",
+          "player_sha256": "eb67da0721422c8b259257ffc4c7f68ed5c382b3c6d99e4851308d6284fe5dd9"
+        }
+      ]
+    },
+    {
+      "id": "R003",
+      "title": "Weapons: 50% less",
+      "pilot": false,
+      "sessions": [
+        {
+          "filename": "R003.R1",
+          "result": 0,
+          "points": -18,
+          "load_result": null,
+          "wire_sha256": null,
+          "player_sha256": "b389ad9229ae659ccfbec0ed6056bb1586bf271a96af8bc8a46d86c05e98e4b3"
+        }
+      ]
+    },
+    {
+      "id": "R004",
+      "title": "Propulsion: 75% extra",
+      "pilot": false,
+      "sessions": [
+        {
+          "filename": "R004.R1",
+          "result": 1,
+          "points": 75,
+          "load_result": 1,
+          "wire_sha256": "59d2546d97ea919693caf7c9f6e7999e9199a16f595b28a1fb52edb34e9b9d46",
+          "player_sha256": "097d6511d7a8d59864bad054166b20ba1931e9bee9c52ba689a87078cc16f323"
+        }
+      ]
+    },
+    {
+      "id": "R005",
+      "title": "Propulsion: 50% less",
+      "pilot": false,
+      "sessions": [
+        {
+          "filename": "R005.R1",
+          "result": 0,
+          "points": -18,
+          "load_result": null,
+          "wire_sha256": null,
+          "player_sha256": "f31e7111469b0267ad7d28a7485103c01f08cf01bc1e0b56f89c8c2c42b81b5d"
+        }
+      ]
+    },
+    {
+      "id": "R006",
+      "title": "Construction: 75% extra",
+      "pilot": false,
+      "sessions": [
+        {
+          "filename": "R006.R1",
+          "result": 1,
+          "points": 75,
+          "load_result": 1,
+          "wire_sha256": "9310230637a77eac4f7010635b5c25fe26d8386c1e8b4b3213e22110a3e8905f",
+          "player_sha256": "be534d92ceb7ba105873affb73091dfde6111d09733f972768bfaaa24a7cd59f"
+        }
+      ]
+    },
+    {
+      "id": "R007",
+      "title": "Construction: 50% less",
+      "pilot": false,
+      "sessions": [
+        {
+          "filename": "R007.R1",
+          "result": 0,
+          "points": -18,
+          "load_result": null,
+          "wire_sha256": null,
+          "player_sha256": "a1171c248a4058818a4f817f693d64d7fa6b973b06ca1c40573e4cc534d6cb0c"
+        }
+      ]
+    },
+    {
+      "id": "R008",
+      "title": "Electronics: 75% extra",
+      "pilot": false,
+      "sessions": [
+        {
+          "filename": "R008.R1",
+          "result": 1,
+          "points": 75,
+          "load_result": 1,
+          "wire_sha256": "1aacc2bc862f65fd18c8eb0274d8865172e929502a9f58c379136589a48634f1",
+          "player_sha256": "bdf618258129408a41137a2198125b721cc82af961fd9531ddd8f9c4721dd5ea"
+        }
+      ]
+    },
+    {
+      "id": "R009",
+      "title": "Electronics: 50% less",
+      "pilot": false,
+      "sessions": [
+        {
+          "filename": "R009.R1",
+          "result": 0,
+          "points": -18,
+          "load_result": null,
+          "wire_sha256": null,
+          "player_sha256": "ffa0cb2784fdb292fcdb92045f12043d8833c10e0ca7fc65da137c32708250cd"
+        }
+      ]
+    },
+    {
+      "id": "R010",
+      "title": "Biotechnology: 75% extra",
+      "pilot": false,
+      "sessions": [
+        {
+          "filename": "R010.R1",
+          "result": 1,
+          "points": 75,
+          "load_result": 1,
+          "wire_sha256": "7c88788bb5ad5cb89026f1e03f0242585d58b873b4ff5882d965b42119b9d803",
+          "player_sha256": "ab87d66d6cc12456b2d58ceb1ba33d3199ebeb9da60a5e856b78654b62f8b9ef"
+        }
+      ]
+    },
+    {
+      "id": "R011",
+      "title": "Biotechnology: 50% less",
+      "pilot": false,
+      "sessions": [
+        {
+          "filename": "R011.R1",
+          "result": 0,
+          "points": -18,
+          "load_result": null,
+          "wire_sha256": null,
+          "player_sha256": "8572e3f6040dc7ec1a8be5490012fee12c0d194de30d0039082a0913412362fd"
+        }
+      ]
+    },
+    {
+      "id": "R012",
+      "title": "All research expensive; starting-tech checkbox enabled",
+      "pilot": true,
+      "sessions": [
+        {
+          "filename": "R012.R1",
+          "result": 1,
+          "points": 425,
+          "load_result": 1,
+          "wire_sha256": "b93a1fa8b8032793a0700233ccf3920afa52d7e1df625cbf981d4ba3c015a815",
+          "player_sha256": "78b3a6afb56165e84570b148bf00a8153b88b2880b67c2e077152abf403fd999"
+        }
+      ]
+    },
+    {
+      "id": "V000",
+      "title": "Portrait cycles backwards across zero",
+      "pilot": true,
+      "sessions": [
+        {
+          "filename": "V000.R1",
+          "result": 1,
+          "points": 25,
+          "load_result": 1,
+          "wire_sha256": "18f9169cba4a5d704a85f2427631dd51caf662e30e9a7e1cff4e4b28736a1cef",
+          "player_sha256": "601038110e3dc33fe1a50f4f5ffdb172c75b7a87d83607be58235a591ea3416a"
+        }
+      ]
+    },
+    {
+      "id": "V001",
+      "title": "Portrait cycles forwards through all 32 images",
+      "pilot": false,
+      "sessions": [
+        {
+          "filename": "V001.R1",
+          "result": 1,
+          "points": 25,
+          "load_result": 1,
+          "wire_sha256": "a1d24cd37f2a9e6095dbb6565b4096f83b4485b33e48b733b1c2e3c82d93b4c4",
+          "player_sha256": "07219244b018c39bf319764afa10093649f7617bbdb7c37c37b2fd0ade074f90"
+        }
+      ]
+    },
+    {
+      "id": "A000",
+      "title": "Leftover-point allocation choice 1",
+      "pilot": false,
+      "sessions": [
+        {
+          "filename": "A000.R1",
+          "result": 1,
+          "points": 25,
+          "load_result": 1,
+          "wire_sha256": "3b8702975d023016b4256465326662a6ebfd9a07280c8b892ec552b7600517d1",
+          "player_sha256": "83fa6ac9468e3e7879a58d1a66dca8232cfb9c6cfa845a092862d461f489eee4"
+        }
+      ]
+    },
+    {
+      "id": "A001",
+      "title": "Leftover-point allocation choice 2",
+      "pilot": false,
+      "sessions": [
+        {
+          "filename": "A001.R1",
+          "result": 1,
+          "points": 25,
+          "load_result": 1,
+          "wire_sha256": "b28ed649b25131fa18281863e6691ef3bed9d4eea9dcd325625b7f904fe126a3",
+          "player_sha256": "4158a5b1a2a0e2e67a8dc4ea8f74aef21b5ba1228663cc30bfdf66b9c076d118"
+        }
+      ]
+    },
+    {
+      "id": "A002",
+      "title": "Leftover-point allocation choice 3",
+      "pilot": false,
+      "sessions": [
+        {
+          "filename": "A002.R1",
+          "result": 1,
+          "points": 25,
+          "load_result": 1,
+          "wire_sha256": "dc54d91dd91ab773101e42e080c1fc5eb033db764db03114a2ec97802fc8e916",
+          "player_sha256": "9a94c7a67614e59a16ec74419bc98d79fbf9dd938fd03855b64408a88aab2e44"
+        }
+      ]
+    },
+    {
+      "id": "A003",
+      "title": "Leftover-point allocation choice 4",
+      "pilot": false,
+      "sessions": [
+        {
+          "filename": "A003.R1",
+          "result": 1,
+          "points": 25,
+          "load_result": 1,
+          "wire_sha256": "821ae06d5ad5ae92bee06be6bd7638e6b63de28620be009b5b79bc3593e237e8",
+          "player_sha256": "4b42b22852903db50727f1885ab0fd72d4e10af242b33b6f06ee0532e8966c65"
+        }
+      ]
+    },
+    {
+      "id": "A004",
+      "title": "Leftover-point allocation choice 5",
+      "pilot": false,
+      "sessions": [
+        {
+          "filename": "A004.R1",
+          "result": 1,
+          "points": 25,
+          "load_result": 1,
+          "wire_sha256": "bc4de127bc291970cf55c38075e9ac57fbf86d8c4e2bb8a12a5b4f2855b75741",
+          "player_sha256": "2c5658eddd29074ef50ddc9441a2e082d87581d36c69dcf3293ebd17a8000abf"
+        }
+      ]
+    },
+    {
+      "id": "W000",
+      "title": "Synthetic password; incorrect then correct confirmation",
+      "pilot": true,
+      "sessions": [
+        {
+          "filename": "W000.R1",
+          "result": 1,
+          "points": 25,
+          "load_result": 1,
+          "wire_sha256": "826b594b0314b4a75fe98cee3f8bc40f369e385131f7aafdc5d662f23f6569aa",
+          "player_sha256": "524c34a173e53043e0d19e0aa04bf29d8e82b876fc3855746defda617181995c"
+        }
+      ]
+    },
+    {
+      "id": "N000",
+      "title": "Back from primary traits; names persist",
+      "pilot": true,
+      "sessions": [
+        {
+          "filename": "N000.R1",
+          "result": 1,
+          "points": 25,
+          "load_result": 1,
+          "wire_sha256": "1b1ad048ec216806ae1cf2117c7f0960fa6c0bfd37eb4921aeada9609f47bd5d",
+          "player_sha256": "fb3de52843a5d4075f4b5bcf02f4390e12cba0f5ad453ba249b559faaa6c87e8"
+        }
+      ]
+    },
+    {
+      "id": "N001",
+      "title": "Cancel on final wizard page",
+      "pilot": true,
+      "sessions": [
+        {
+          "filename": "N001.R1",
+          "result": 0,
+          "points": 25,
+          "load_result": null,
+          "wire_sha256": null,
+          "player_sha256": "dbb8ecbbef4dfe9275d064a1d0ed4c4449b14e1b0bbf805cef9aeecc5a1c4495"
+        }
+      ]
+    },
+    {
+      "id": "U020",
+      "title": "Long names loaded, then shortened after selecting Custom",
+      "pilot": true,
+      "sessions": [
+        {
+          "filename": "U020A.R1",
+          "result": 1,
+          "points": 25,
+          "load_result": 1,
+          "wire_sha256": "713136f702fd1b40c62cca016d14343cc68d6f4c93d94d09e1a6189842c97fad",
+          "player_sha256": "53a559fbb94b8aeb15849c8a305b407e872d1aff5caa3afd5c26dd11909e3fb9"
+        },
+        {
+          "filename": "U020B.R1",
+          "result": 1,
+          "points": 25,
+          "load_result": 0,
+          "wire_sha256": "3af5ca378977d8e2a9ab8ca70771693054c056b1b72e457ede5cc5bb63eedd06",
+          "player_sha256": "d6402752f07b9e46779e2c795d90635a92bda911927f96e853336618926ce395"
+        }
+      ]
+    }
+  ],
+  "live": {
+    "case": "T000",
+    "environment": "DOSBox-X 2026.08.31 / Windows for Workgroups 3.11",
+    "procedure": "Fresh process; New Game, Customize Race; Humanoid, synthetic T000 names, blank password; Finish on page 1; save separately.",
+    "observed_score": 25,
+    "fixture": "runs/race-acceptance/live/T000.R1",
+    "wire_sha256": "3d7289c89e78bd5a1f8dd26b9c14d7db0cfbb3be26a7ab3b47304039e759d8c9",
+    "file_comparison": {
+      "status": "PASS",
+      "exact_file": false,
+      "plaintext_equal": true,
+      "decoded_player_differences": [],
+      "bof_differences": {
+        "salt": {
+          "expected": 1429,
+          "actual": 68
+        }
+      },
+      "checksum": {
+        "stored": 27859,
+        "computed": 27859,
+        "valid": true
+      }
+    },
+    "original_live_reload": "accepted",
+    "reconstructed_loader_result": 1,
+    "original_instruction_loader_result": 1,
+    "candidate_original_live_load": "accepted in fresh process",
+    "candidate_wire_sha256": "d0be3b597fae8ad34156a463c0be6e807f1028a9a97bca314b295921386de8d1",
+    "observations": [
+      "Open by full filename path while another folder was displayed produced a missing-XY error; navigating to the folder first and opening the basename succeeded.",
+      "DOSBox Drive > C > Rescan drive was used after copying the candidate into the mounted folder.",
+      "Automated mouse clicks did not select radio buttons; baseline used keyboard."
+    ]
+  },
+  "remaining": [
+    "15-case live pilot",
+    "real Windows confirmation of U020",
+    "native VC++ adapter/build of new race component source"
+  ]
+}

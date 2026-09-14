@@ -1448,6 +1448,6 @@
     "new_reviewed_entries": 40,
     "new_reviewed_procedure_bytes": 27718,
     "scoped_helper_paths": 12,
-    "native_windows_acceptance": "pending; no new VM test package prepared"
+    "native_windows_acceptance": "pending native adapter/build; scenario package and one live cross-load baseline available"
   }
 }
