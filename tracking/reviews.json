@@ -492,5 +492,20 @@
       "analysis/reconstruction/habitability.md",
       "tests/test_habitability_machine.py"
     ]
+  },
+  "001d:4c6e-54d4": {
+    "reconstruction_path": "reconstructed/src/planet.c",
+    "review_status": "manually_reviewed",
+    "compilation_status": "host_c89_compiled",
+    "validation_status": "original_x86_x87_differential_checked_with_documented_valid_environment_and_FPCW_037F_limits; exact_rational_checked_bounded_64_53_bit_rounding; host_semantic_adapter; Win16_integration_pending",
+    "evidence": [
+      "analysis/functions.json",
+      "analysis/debug/procedures.json",
+      "analysis/decompiler/export-manifest.json",
+      "analysis/reconstruction/innate-habitability.md",
+      "tests/test_innate_machine.py",
+      "reconstructed/src/innate_fp.h",
+      "tests/test_innate_fp.py"
+    ]
   }
 }

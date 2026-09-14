@@ -86,7 +86,7 @@ This does not promise the author's exact source text, comments, macros, or code 
 
 ## 5. Reconstruct the program, subsystem by subsystem
 
-**In progress:** 38 named routines (6,716 original procedure bytes) now have
+**In progress:** 39 named routines (8,866 original procedure bytes) now have
 reviewed C89 source and original-x86 differential tests. See
 [the core reconstruction report](analysis/reconstruction/core.md).
 This is a host semantic library; the subsystem checkboxes below remain open.

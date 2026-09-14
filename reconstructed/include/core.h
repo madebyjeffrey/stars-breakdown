@@ -73,4 +73,8 @@ void stars_bounds_check_player(StarsU8 *data, StarsU16 player);
 /* Valid environmental ranges and nonzero selected half-width required.
  * Planet and global player array refer to the same supplied data image. */
 StarsI16 stars_planet_desirability(const StarsU8 *data, StarsU16 planet, StarsI16 player_index);
+/* Ordered, nondegenerate ranges or invalid triples repaired to immunity.
+ * Player record must be disjoint from player zero or exactly player zero.
+ * See innate-habitability.md for the bounded x87 rounding model. */
+StarsI32 stars_innate_race_habitability(StarsU8 *data, StarsU16 player);
 #endif

@@ -2,8 +2,9 @@
 
 `PctPlanetDesirability`, NE 10:6E1E–7095, now has reviewed C89 source in
 `reconstructed/src/planet.c` as `stars_planet_desirability`. It contributes 631
-original procedure bytes. `LInnateRaceHabitability` and `CAdvantagePoints` remain
-unreconstructed; no coverage is claimed for their partial analysis below.
+original procedure bytes. `LInnateRaceHabitability` is now described in [its own report](innate-habitability.md),
+including its portable x87 rounding implementation. `CAdvantagePoints` remains
+unreconstructed.
 
 ## Planet desirability algorithm
 
@@ -75,23 +76,8 @@ the C adapter outside its nonzero-width contract. No fallback score or silent
 repair has been introduced. The fact that BoundsCheckPlayer can leave degenerate
 ranges means caller guarantees still need auditing before integration.
 
-## Innate-race calculation: next implementation boundary
+## Next integration boundary
 
-Static review of `LInnateRaceHabitability` (NE 29:4C6E–54D4) establishes:
-
-* It saves global player zero, copies the supplied player into that slot, and
-  restores the saved record only when the supplied pointer differs from it.
-* It samples three terraforming scenarios: adjustments 0, 5, 15 normally,
-  or 0, 8, 17 when race trait bit 1 is enabled. Their score weights are 7, 5, 6.
-* Nonimmune dimensions use eleven samples; immune dimensions use one sample
-  and compensating factors of eleven. PctPlanetDesirability supplies each sample.
-* It can replace invalid environmental triples with immunity and set the
-  correction flag. This is another mutating calculation.
-* It combines integer inner sums with stored double accumulators and finally
-  divides by 10.0, adds 0.5, and converts to long. The constants at DGROUP:1DD2
-  and 1DDA differ from the planet routine's 0.9 bias.
-
-The raw decompiler output omits important floating accumulator operations, so it
-is insufficient as source. Remaining work is to reconstruct the full loop and
-state-restoration sequence, preserve each integer/double rounding boundary, and
-compare it under original x87 execution before connecting advantage-point scoring.
+See [innate race scoring](innate-habitability.md) for the reconstructed sampling,
+mutation/restoration, and accumulator sequence. Its U018 precision mismatch is resolved for the documented FPU path; caller
+guarantees for degenerate ranges still need auditing before CAdvantagePoints integration.

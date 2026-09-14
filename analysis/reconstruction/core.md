@@ -1,13 +1,14 @@
 # Step 5: reviewed integer and near-memory core
 
-Status: **38 of 846 named game routines reconstructed**, covering 6,716 original
+Status: **39 of 846 named game routines reconstructed**, covering 8,866 original
 procedure bytes. Step 5 remains in progress. Unnamed/runtime code is additional
 work. These routines compile together as a host C89 library; they do not yet
-constitute a Win16 application or retain the original far-call ABI.
+constitute a Win16 application or retain the original far-call ABI. Innate race
+scoring uses explicit bounded x87 rounding; see the U018 resolution.
 
 Additional routines and their memory-domain limits are described in
 [the codec report](codec.md), [the text-utility report](text.md), and
-[the game-creation report](create.md), and [race validation](race-validation.md), and [habitability](habitability.md).
+[the game-creation report](create.md), and [race validation](race-validation.md), and [habitability](habitability.md), and [innate race scoring](innate-habitability.md).
 The table below covers the initial 15 routines.
 
 ## Source and address mapping
