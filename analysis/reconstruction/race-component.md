@@ -5,10 +5,12 @@ The component can open, edit, create, password-check and save a race through
 recovered C code. All six wizard procedures execute; the platform supplies
 Windows services and messages. The [compiler/output package](../../compat/racevc/README.md)
 now contains the recovered source, an automatic runner and a VC++ 1.52c build
-recipe. Its host build passes all 88 scenarios. RETURN3 compiled all source;
-revision 2 addresses its launcher linker failure and two signed-comparison
-warnings. Native linking and execution remain pending. It models UI services
-and uses real CRT file I/O. The earlier
+recipe. Its host build passes all 88 scenarios. RETURN4 compiled and linked
+revision 2 cleanly; the exact returned executable then passed **816 native
+checks** in DOSBox / WfW 3.11, with all 89 states and 61 race files matching.
+See the [native review](../compat/racevc-return4.md). It models UI services and
+uses real CRT file I/O. Revision 3 adds a real runner progress window and
+cancellation, whose native behavior remains to be verified. The earlier
 [scenario package](../../compat/race/README.md) supplies live replay recipes;
 a real Windows UI adapter and completion of that pilot remain separate work.
 
@@ -185,9 +187,11 @@ under the larger outer menu-handler frame are not portable host state.
 
 This establishes component behavior under the stated service/input contracts.
 It does not establish native Windows rendering, protected-mode selector faults,
-arbitrary malformed pointer graphs, allocation-exhaustion behavior, successful
-native linking/execution of these files, or a byte-identical executable. The earlier native
-VC++ compatibility results remain valid for their tested source subset.
+arbitrary malformed pointer graphs, allocation-exhaustion behavior, or a
+byte-identical executable. Native linking/execution is now independently
+established for the 88-case compiler/output catalog in the RETURN4 replay;
+that catalog retains modeled Windows services. The earlier native VC++
+compatibility results remain valid for their tested source subset.
 
 ```sh
 python3 tools/build_core.py

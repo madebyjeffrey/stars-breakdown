@@ -22,7 +22,7 @@ RENAMES = {
     'seed_table.inc': 'SEEDTAB.INC', 'battle_plan_templates.inc': 'BPLANS.INC',
     'innate_fp.h': 'INNATE.H',
 }
-FIXTURES = ('TEST.H', 'RUNNER.C', 'WORLD.C', 'FILES.C', 'BUILD.BAT', 'RACEVC.DEF', 'README.TXT')
+FIXTURES = ('TEST.H', 'RUNNER.C', 'WORLD.C', 'FILES.C', 'PROGRESS.C', 'BUILD.BAT', 'RACEVC.DEF', 'README.TXT')
 EXTRAS = ('runtime_internal.h', 'ui_internal.h', 'innate_fp.h',
           'seed_table.inc', 'battle_plan_templates.inc')
 
@@ -168,12 +168,12 @@ def payload():
     files['CASES.DAT'], expectations = scenario_data(document)
     files.update(expectations)
     files['ACTUAL/README.TXT'] = dos_text('The test program writes newly generated race files here.\n')
-    c_sources = ['RUNNER.C', 'WORLD.C', 'FILES.C']+[name_for(n) for n in SOURCES]
+    c_sources = ['RUNNER.C', 'WORLD.C', 'FILES.C', 'PROGRESS.C']+[name_for(n) for n in SOURCES]
     files['RACEVC.RSP'] = dos_text('/c /AL /GA /GEs /Zp1 /Od /Zi /W3\n'+'\n'.join(c_sources)+'\n')
     # Five LINK fields; continuations keep each physical line short.
     files['RACEVC.LNK'] = dos_text('+\n'.join(Path(n).stem+'.OBJ' for n in c_sources)+
         '\nRACEVC.EXE\nRACEVC.MAP\nLLIBCEW.LIB LIBW.LIB /NOD /ALIGN:16 /CO /MAP\nRACEVC.DEF\n')
-    manifest = dict(schema=1, package_revision=2,
+    manifest = dict(schema=1, package_revision=3,
                     kind='VC152 compiler/output acceptance; UI services modeled',
                     original_sha256=document['original_sha256'], vectors_sha256=sha(vector_bytes),
                     cases=88, sessions=89, expected_files=len(expectations), native_status='pending user build/run',
@@ -203,7 +203,7 @@ def export(output):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--output', type=Path, default=ROOT / 'ftp-share/RACEVC2')
+    parser.add_argument('--output', type=Path, default=ROOT / 'ftp-share/RACEVC3')
     args = parser.parse_args()
     print(export(args.output.resolve()))
 

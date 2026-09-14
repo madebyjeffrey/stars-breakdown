@@ -1,5 +1,6 @@
 """Portable runner/output checks; these do not stand in for a native VC build."""
 import json
+import os
 from pathlib import Path
 import subprocess
 import tempfile
@@ -74,6 +75,11 @@ class RaceVcPackageTests(unittest.TestCase):
         log = (folder / 'RESULTS.TXT').read_text()
         self.assertIn('CASES=88 SESSIONS=89 CHECKS=812 FAILURES=0', log)
         self.assertIn('STATUS=PASS', log)
+        trace = (folder / 'TRACE.TXT').read_text()
+        self.assertIn('Dialog ', trace)
+        self.assertIn('Reload newly saved race file', trace)
+        self.assertIn('completed=89', trace.splitlines()[-1])
+        self.assertTrue(trace.splitlines()[-1].endswith('Session complete'))
         self.assertIn('PASS U020B.R1 points=25 load=0', log)
         self.assertEqual(len(list((folder / 'ACTUAL').glob('*.R1'))), 61)
         self.assertEqual(len(list((folder / 'ACTUAL').glob('*.STA'))), 89)
@@ -87,6 +93,7 @@ class RaceVcPackageTests(unittest.TestCase):
         repeat = subprocess.run([str(self.executable)], cwd=folder, timeout=30)
         self.assertEqual(repeat.returncode, 2)
         self.assertEqual(log, (folder / 'RESULTS.TXT').read_text())
+        self.assertEqual(trace, (folder / 'TRACE.TXT').read_text())
         self.assertEqual(hashes, {p.name: sha(p.read_bytes()) for p in (folder / 'ACTUAL').iterdir()})
 
     def test_wrong_expectation_fails_without_changing_generated_output(self):
@@ -109,30 +116,38 @@ class RaceVcPackageTests(unittest.TestCase):
         self.assertEqual(run.returncode, 1)
         self.assertIn('FATAL: Truncated test input', (folder / 'RESULTS.TXT').read_text())
 
+    def test_cancel_preserves_partial_results_and_marks_incomplete(self):
+        folder = self.run_at('cancel')
+        run = subprocess.run([str(self.executable)], cwd=folder, timeout=30,
+                             env={**os.environ, 'RACEVC_CANCEL_AT': 'P002.R1'})
+        self.assertEqual(run.returncode, 5)
+        log = (folder / 'RESULTS.TXT').read_text()
+        self.assertIn('CANCELLED at P002.R1', log)
+        self.assertIn('SESSIONS=11', log)
+        self.assertIn('FAILURES=0', log)
+        self.assertIn('STATUS=CANCELLED', log)
+        self.assertNotIn('STATUS=PASS', log)
+        self.assertEqual(len(list((folder / 'ACTUAL').glob('*.STA'))), 11)
+        self.assertEqual(len(list((folder / 'ACTUAL').glob('*.R1'))), 9)
+        self.assertEqual((folder / 'ACTUAL/B000.R1').read_bytes(), self.files['EXPECT/B000.R1'])
+        self.assertIn('case=P002.R1 completed=11', (folder / 'TRACE.TXT').read_text().splitlines()[-1])
+        self.assertFalse((folder / 'ACTUAL/P002.STA').exists())
+
+    def test_existing_trace_is_preserved(self):
+        folder = self.run_at('existing-trace')
+        (folder / 'TRACE.TXT').write_text('prior incomplete run\n')
+        run = subprocess.run([str(self.executable)], cwd=folder, timeout=30)
+        self.assertEqual(run.returncode, 2)
+        self.assertEqual((folder / 'TRACE.TXT').read_text(), 'prior incomplete run\n')
+        self.assertFalse((folder / 'RESULTS.TXT').exists())
+
     def test_windows_launcher_uses_declared_crt_entry(self):
         # Compile the normally excluded Windows branch against the documented
         # declaration subset. This catches the RETURN3 alias mistake; it is
         # not a native Win16 compiler, ABI, SDK-header or library-link test.
         headers = self.root / 'declarations'
         headers.mkdir()
-        (headers / 'windows.h').write_text('''
-typedef unsigned short HGLOBAL;
-typedef unsigned short HINSTANCE;
-typedef void *HWND;
-typedef char *LPSTR;
-#define PASCAL
-#define GMEM_FIXED 0
-#define GMEM_ZEROINIT 0x40
-#define MB_OK 0
-#define MB_ICONEXCLAMATION 0x30
-#define MB_ICONINFORMATION 0x40
-HGLOBAL GlobalAlloc(unsigned, unsigned long);
-void *GlobalLock(HGLOBAL);
-int GlobalUnlock(HGLOBAL);
-HGLOBAL GlobalFree(HGLOBAL);
-unsigned GetModuleFileName(HINSTANCE, LPSTR, unsigned);
-int MessageBox(HWND, const char *, const char *, unsigned);
-''')
+        (headers / 'windows.h').write_bytes((ROOT / 'tests/fixtures/racevc_windows.h').read_bytes())
         (headers / 'dos.h').write_text('#define FP_OFF(p) ((unsigned long)(p) & 65535UL)\n')
         (headers / 'direct.h').write_text('int _chdir(const char *);\nint _chdrive(int);\n')
         flags = ['cc', '-x', 'c', '-std=c89', '-pedantic', '-Wall', '-Wextra', '-Werror',
@@ -146,6 +161,20 @@ int MessageBox(HWND, const char *, const char *, unsigned);
         result = subprocess.run(flags+[str(wrong)], capture_output=True, text=True)
         self.assertNotEqual(result.returncode, 0)
         self.assertIn('chdir', result.stderr)
+
+    def test_windows_progress_routes_events_without_reentering_game(self):
+        headers = self.root / 'progress-declarations'
+        headers.mkdir()
+        (headers / 'windows.h').write_bytes((ROOT / 'tests/fixtures/racevc_windows.h').read_bytes())
+        exe = headers / 'progress-test'
+        subprocess.run(['cc', '-x', 'c', '-std=c89', '-pedantic', '-Wall', '-Wextra', '-Werror',
+                        '-I', str(headers), '-I', str(self.source),
+                        str(self.source / 'PROGRESS.C'), str(ROOT / 'tests/fixtures/racevc_progress.c'),
+                        '-o', str(exe)], check=True, capture_output=True)
+        for mode in ['pump', 'escape', 'close', 'cancel', 'open-failure']:
+            with self.subTest(mode=mode):
+                subprocess.run([str(exe), mode], check=True, timeout=10)
+        self.assertIn(b'EXPORTS\r\n    ProgressWndProc', self.files['RACEVC.DEF'])
 
 
 if __name__ == '__main__':

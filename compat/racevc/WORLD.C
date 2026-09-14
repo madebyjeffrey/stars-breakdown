@@ -91,6 +91,7 @@ StarsU32 test_window(void *context, const StarsWindowCall *c)
     long product, denominator, magnitude;
     (void)context;
     if (++api_calls > 1000000UL) fatal("Model API-call budget exhausted");
+    if (!(api_calls % 64UL)) runner_yield();
 #define IS(s) (strcmp(n, s) == 0)
     if (IS("GetFocus")) return 0x1234;
     if (IS("MessageBox")) {
@@ -207,6 +208,19 @@ static void mouse_message(unsigned i, StarsU16 msg, StarsU16 x, StarsU16 y)
     memset(mouse[i], 0, 18U); mouse[i][0] = 100; mouse[i][1] = msg;
     mouse[i][3] = mouse[i][7] = x; mouse[i][4] = mouse[i][8] = y;
 }
+static const char *page_name(StarsU16 resource)
+{
+    switch (resource) {
+    case 0x92: return "Names and template";
+    case 0x95: return "Primary trait";
+    case 0x96: return "Lesser traits";
+    case 0x93: return "Environment and growth";
+    case 0x94: return "Economy";
+    case 0x97: return "Research";
+    case 0x8c: return "Password confirmation";
+    default: return "Wizard";
+    }
+}
 StarsI16 test_dialog(void *context, StarsRuntime *r, StarsU16 resource,
     StarsU16 owner, StarsDialogProc proc)
 {
@@ -215,6 +229,7 @@ StarsI16 test_dialog(void *context, StarsRuntime *r, StarsU16 resource,
     unsigned i, j;
     StarsU16 base, x, y, l, top, right, bottom;
     StarsU32 lp;
+    char stage[160];
     (void)context; (void)owner;
     if (dialog_next == dialog_count) fatal("Dialog script exhausted");
     dialog = &dialogs[dialog_next++];
@@ -222,6 +237,10 @@ StarsI16 test_dialog(void *context, StarsRuntime *r, StarsU16 resource,
     load_resource(resource); ended = 0;
     for (i = 0; i < dialog->count; ++i) {
         action = &actions[dialog->first + i];
+        sprintf(stage, "%s: action %u/%u | Dialog %u kind=%u message/control=%u",
+            page_name(resource), i + 1U, (unsigned)dialog->count,
+            (unsigned)resource, (unsigned)action->kind, (unsigned)action->a);
+        checkpoint(stage);
         switch (action->kind) {
         case 0: /* Actual Windows message delivered to recovered procedure. */
             lp = (StarsU32)action->c | ((StarsU32)action->d << 16);

@@ -36,4 +36,11 @@ StarsI16 test_dialog(void *context, StarsRuntime *r, StarsU16 resource,
     StarsU16 owner, StarsDialogProc proc);
 extern const StarsPlatform test_platform;
 void close_data_file(void);
+/* Runner UI only; it never feeds clocks or messages into the game model. */
+void progress_show(const char *file, unsigned cases, unsigned sessions,
+    unsigned long checks, unsigned long failures, const char *stage);
+int progress_poll(void);
+unsigned long progress_seconds(void);
+void checkpoint(const char *stage);
+void runner_yield(void);
 #endif

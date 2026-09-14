@@ -26,6 +26,35 @@ static HGLOBAL handles[3];
 static FILE *vectors;
 static unsigned sessions, cases, load_ok, load_rejected;
 static char case_id[5];
+static int cancelled;
+static unsigned long checkpoint_count;
+#ifndef HOST_TEST
+int progress_open(HINSTANCE instance, HINSTANCE previous);
+void progress_close(void);
+#endif
+
+void runner_yield(void) { (void)progress_poll(); }
+
+void checkpoint(const char *stage)
+{
+    FILE *trace;
+    /* Close each checkpoint so DOS updates the file length even if the next
+     * callback never returns. fflush alone left an open file invisible to
+     * host-side DOSBox inspection in the revision-2 replay. */
+    trace = fopen("TRACE.TXT", "a");
+    if (!trace) fatal("Cannot append TRACE.TXT");
+    ++checkpoint_count;
+    fprintf(trace, "%lu t=%lus case=%s completed=%u checks=%lu failures=%lu %s\n",
+        checkpoint_count, progress_seconds(), filename, sessions, checks, failures, stage);
+    if (fclose(trace)) fatal("Cannot finish TRACE.TXT checkpoint");
+    if (fflush(report)) fatal("Cannot flush RESULTS.TXT");
+    progress_show(filename, cases, sessions, checks, failures, stage);
+    if (progress_poll()) {
+        cancelled = 1;
+        fprintf(report, "CANCELLED at %s: %s\n", filename, stage);
+        longjmp(fatal_jump, 2);
+    }
+}
 
 void fatal(const char *message)
 {
@@ -177,9 +206,12 @@ static void run_session(void)
     }
     before = failures; alerts = files_created = 0;
     fprintf(report, "RUN %s %s\n", case_id, filename); fflush(report);
+    checkpoint("Run recovered race wizard");
     actual = fresh ? stars_new_race(&runtime, 200) : stars_race_wizard(&runtime, 200, 0, 0);
+    checkpoint("Wizard returned; calculate final advantage points");
     check("wizard result", actual, signed_word(result));
     actual_points = stars_race_advantage_points(images[0], 0x4f9aU);
+    checkpoint("Compare player state and wizard outcome");
     check("advantage points", actual_points, signed_word(points));
     compare_player(player);
     check("wizard alerts", alerts, alert_count);
@@ -187,9 +219,12 @@ static void run_session(void)
     check("script complete (optional final Cancel may remain)", dialog_count - dialog_next > 1, 0);
     check("file count", files_created, load_result == 0xffffU ? 0 : 1);
     if (load_result != 0xffffU) {
+        checkpoint("Compare newly saved race file");
         compare_file();
         strcpy((char *)images[0] + 0x3000U, filename);
+        checkpoint("Reload newly saved race file");
         loaded = stars_was_race_file(&runtime, 0x3000U, 0);
+        checkpoint("Check reload result");
         check("reload result", loaded, signed_word(load_result));
         check("reload scratch scope restored", runtime.scratch_top, 0xff00L);
         if (loaded == 1) ++load_ok; else ++load_rejected;
@@ -197,6 +232,7 @@ static void run_session(void)
     close_data_file(); ++sessions;
     fprintf(report, "%s %s points=%ld load=%ld\n", failures == before ? "PASS" : "FAIL",
         filename, (long)actual_points, (long)loaded); fflush(report);
+    checkpoint("Session complete");
 }
 static int run_tests(void)
 {
@@ -205,9 +241,11 @@ static int run_tests(void)
     char magic[8];
     existing = fopen("RESULTS.TXT", "rb");
     if (existing) { fclose(existing); return 2; }
+    existing = fopen("TRACE.TXT", "rb");
+    if (existing) { fclose(existing); return 2; }
     report = fopen("RESULTS.TXT", "w");
     if (!report) return 3;
-    fprintf(report, "STARS RACE COMPILER/OUTPUT ACCEPTANCE 2\n");
+    fprintf(report, "STARS RACE COMPILER/OUTPUT ACCEPTANCE 3\n");
 #ifdef HOST_TEST
     fprintf(report, "MODE=HOST_C89; native VC152 execution remains pending\n");
 #else
@@ -216,6 +254,7 @@ static int run_tests(void)
     fprintf(report, "UI=MODELED; game callbacks=recovered C; file I/O=real CRT\n");
     fprintf(report, "Expected data=original x86 observations with fixed inputs\n");
     if (!setjmp(fatal_jump)) {
+        checkpoint("Initialize segment images and scenario inputs");
         check("short width", sizeof(short), 2); check("StarsU32 width", sizeof(StarsU32), 4);
 #ifndef HOST_TEST
         check("int width", sizeof(int), 2); check("long width", sizeof(long), 4);
@@ -237,10 +276,11 @@ static int run_tests(void)
     if (vectors) { fclose(vectors); vectors = NULL; }
     close_data_file(); release_images();
     fprintf(report, "CASES=%u SESSIONS=%u CHECKS=%lu FAILURES=%lu\n", cases, sessions, checks, failures);
-    fprintf(report, "STATUS=%s\n", failures ? "FAIL" : "PASS");
+    fprintf(report, "ELAPSED_SECONDS=%lu CHECKPOINTS=%lu\n", progress_seconds(), checkpoint_count);
+    fprintf(report, "STATUS=%s\n", cancelled ? "CANCELLED" : failures ? "FAIL" : "PASS");
     if (fclose(report)) { report = NULL; return 4; }
     report = NULL;
-    return failures ? 1 : 0;
+    return cancelled ? 5 : failures ? 1 : 0;
 }
 #ifdef HOST_TEST
 int main(void) { return run_tests(); }
@@ -249,7 +289,7 @@ int PASCAL WinMain(HINSTANCE instance, HINSTANCE previous, LPSTR command, int sh
 {
     int result;
     char message[256], *slash;
-    (void)previous; (void)command; (void)show;
+    (void)command; (void)show;
     /* Always write beside the executable, independent of File Manager's cwd. */
     if (!GetModuleFileName(instance, message, sizeof(message))) return 3;
     slash = strrchr(message, '\\');
@@ -259,11 +299,18 @@ int PASCAL WinMain(HINSTANCE instance, HINSTANCE previous, LPSTR command, int sh
         /* Use the CRT entry directly; /NOD does not link old-name aliases. */
         if (_chdir(message)) return 3;
     }
+    if (!progress_open(instance, previous)) {
+        MessageBox(NULL, "Cannot create the test progress window. No tests were started.",
+            "Stars race test", MB_OK | MB_ICONEXCLAMATION);
+        return 6;
+    }
     result = run_tests();
-    if (result == 2) strcpy(message, "RESULTS.TXT already exists. Preserve this folder and run a fresh copy.");
+    progress_close();
+    if (result == 2) strcpy(message, "RESULTS.TXT or TRACE.TXT already exists. Preserve this folder and run a fresh copy.");
     else if (result == 3 || result == 4) strcpy(message, "Cannot create or finish RESULTS.TXT in the package folder.");
-    else sprintf(message, "%u scenarios, %u sessions, %lu checks, %lu failures.\nReturn the entire folder, including RESULTS.TXT and ACTUAL.",
-        cases, sessions, checks, failures);
+    else sprintf(message, "%s\n%u / 89 sessions completed, %lu checks, %lu failures.\nElapsed: %lu seconds.\nReturn the entire folder, including RESULTS.TXT, TRACE.TXT and ACTUAL.",
+        result == 5 ? "CANCELLED - partial results preserved." : result ? "FAIL - see RESULTS.TXT." : "PASS - all 88 scenarios completed.",
+        sessions, checks, failures, progress_seconds());
     MessageBox(NULL, message, "Stars race compiler/output acceptance", MB_OK | (result ? MB_ICONEXCLAMATION : MB_ICONINFORMATION));
     return result;
 }

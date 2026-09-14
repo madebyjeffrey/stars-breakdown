@@ -10,12 +10,13 @@ if not exist RACEVC.RSP goto wrongdir
 if exist BLDSTAT.TXT goto used
 if exist RACEVC.EXE goto used
 if exist RESULTS.TXT goto used
+if exist TRACE.TXT goto used
 set PATH=%1\BIN;%PATH%
 set INCLUDE=%1\INCLUDE
 set LIB=%1\LIB
 set CL=
 set LINK=
->BLDSTAT.TXT echo STARS_RACEVC_BUILD=2
+>BLDSTAT.TXT echo STARS_RACEVC_BUILD=3
 >>BLDSTAT.TXT echo ROOT=%1
 echo Compiling the race component and automatic test program.
 echo Keep any on-screen diagnostics in OUTPUT.TXT as well as these logs.
@@ -33,7 +34,8 @@ if not exist RACEVC.EXE goto linkfail
 echo Link: PASS
 echo Run RACEVC.EXE here while Windows is running.
 echo It runs all 88 scenarios automatically. No wizard clicking is needed.
-echo Return this whole folder, including ACTUAL and RESULTS.TXT.
+echo Watch the progress window. Cancel or Esc preserves partial results.
+echo Return this whole folder, including ACTUAL, RESULTS.TXT and TRACE.TXT.
 goto end
 :compilefail
 >>BLDSTAT.TXT echo COMPILE=FAIL
@@ -52,7 +54,7 @@ echo Supply the compiler root containing BIN, INCLUDE, and LIB.
 echo Example: BUILD C:\MSVC
 goto end
 :wrongdir
-echo Change into the copied RACEVC2 folder first.
+echo Change into the copied RACEVC3 folder first.
 goto end
 :used
 echo Preserve the results here. Use a fresh package copy for another attempt.

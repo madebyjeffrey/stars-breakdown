@@ -1,27 +1,41 @@
-STARS RACE COMPONENT - VC++ 1.52c COMPILE AND OUTPUT TEST, REVISION 2
+STARS RACE COMPONENT - VC++ 1.52c COMPILE AND OUTPUT TEST, REVISION 3
 
 This package contains C source to compile, an automatic test program, and
-frozen original-executable expectations. RETURN3 compiled every source file;
-linking failed on the launcher's chdir alias. This revision uses _chdir and
-makes two formatter comparisons explicitly signed, as in the original x86.
-The corrected native link and execution remain pending.
+frozen original-executable expectations. RETURN4 compiled and linked revision
+2 cleanly. Its interrupted run completed 11 cases with matching outputs.
+The same returned EXE then passed all 816 checks in DOSBox / WfW 3.11, with
+all 61 race files and 89 player snapshots matching the original expectations.
+Revision 3 adds a visible progress window, Windows message processing,
+Cancel/Esc, elapsed time, and TRACE.TXT checkpoints closed after each stage.
+Recovered game code and the frozen test inputs are unchanged from revision 2.
 
-1. Copy the complete RACEVC2 folder, including EXPECT and ACTUAL, to a fresh
-   folder in the Windows 98 VM, for example C:\RACEVC2. Preserve RETURN3.
-2. Open a DOS prompt INSIDE Windows. Change into C:\RACEVC2.
+1. Copy the complete RACEVC3 folder, including EXPECT and ACTUAL, to a fresh
+   folder in the Windows 98 VM, for example C:\RACEVC3. Preserve prior returns.
+2. Open a DOS prompt INSIDE Windows. Change into C:\RACEVC3.
 3. Run BUILD C:\MSVC (replace C:\MSVC with your compiler installation root).
 4. If both compile and link say PASS, run RACEVC.EXE while Windows is running.
-   It runs 88 scenarios / 89 wizard sessions automatically. It shows a summary
-   when finished. The wizard is driven internally; no mouse input is needed.
-5. Return the ENTIRE folder in a new return directory on the FTP share.
-   Include RESULTS.TXT, ACTUAL, BUILD.LOG, LINK.LOG, BLDSTAT.TXT, EXE, OBJ, MAP.
-   Preserve on-screen compiler/linker errors in OUTPUT.TXT too: this old DOS
-   shell can leave diagnostics out of redirected logs. Return failures too.
-   Use a fresh copy for another attempt; existing results are not overwritten.
+   A progress window should appear immediately. It shows the scenario, wizard
+   action, elapsed time, completed sessions, check count and failure count.
+   The test runs 88 scenarios / 89 wizard sessions without wizard clicking.
+   This unoptimized diagnostic build can take several minutes or longer,
+   depending on VM speed. A single scoring action may take several seconds.
+5. Let it reach a PASS/FAIL summary. Cancel, Esc, or the close button requests
+   a safe stop at the next checkpoint; it does not discard partial results.
+   If a stage stays unchanged for two minutes, request Cancel and report the
+   stage. If it cannot stop, recover the VM and return the partial folder.
+6. Return the ENTIRE folder in a new return directory on the FTP share.
+   Include RESULTS.TXT, TRACE.TXT, ACTUAL, BUILD.LOG, LINK.LOG, BLDSTAT.TXT,
+   EXE, OBJ, and MAP. Preserve any on-screen compiler/linker errors in
+   OUTPUT.TXT too: the old DOS shell can omit them from redirected logs.
+   Return failures or cancelled runs too. Use a fresh copy for another attempt;
+   existing results or traces are not overwritten.
 
 RESULTS
 
-Expected success: STATUS=PASS; CASES=88; SESSIONS=89; FAILURES=0.
+Expected success: STATUS=PASS; CASES=88; SESSIONS=89; CHECKS=816; FAILURES=0.
+STATUS=CANCELLED means incomplete, even when FAILURES=0. TRACE.TXT records the
+last entered stage, and its next line establishes that the preceding stage
+returned. A final STATUS in RESULTS.TXT is required for a complete run.
 There should be 61 newly generated .R1 files in ACTUAL. Sixty reloads succeed.
 ACTUAL also contains 89 .STA files: full 192-byte player-state snapshots.
 U020B.R1 is intentionally expected to fail reload with the original checksum

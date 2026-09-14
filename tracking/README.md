@@ -24,8 +24,11 @@ by reviewed source and the recorded static/runtime/differential evidence.
 The [race-component audit](../analysis/reconstruction/race-dependencies.json)
 also records caller-specific helper paths separately, without crediting their
 full procedure ranges. The [race compiler/output package](../compat/racevc/README.md)
-compiled all source in RETURN3; revision 2 addresses its linker failure. Native
-execution and real Windows UI acceptance remain pending.
+compiled and linked cleanly in RETURN4; its returned EXE passed all 816 native
+checks in DOSBox / WfW 3.11, with 61 matching race files and 89 matching states.
+See the [review](../analysis/compat/racevc-return4.md). Revision 3 adds runner
+progress/cancellation, pending VM verification; real race-wizard UI acceptance
+remains separate.
 
 Manual progress belongs in [reviews.json](reviews.json), keyed by the ledger range ID. Generation merges those annotations into the ledger without overwriting the editable source. If segmentation changes, generation rejects obsolete keys so a human must reconcile their evidence. Schema 2 counts `host_c89_compiled` rows separately and states their scope explicitly; this is original-byte mapping coverage, not generated object size or whole-program equivalence.
 

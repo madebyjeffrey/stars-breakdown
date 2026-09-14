@@ -144,5 +144,8 @@ Unicorn is pinned to 2.1.4. On macOS its JIT needs execution permission outside
 the restricted process sandbox. Output is `build/libstars_core.dylib` on macOS
 and `build/libstars_core.so` on other supported hosts. The initial native
 VC++ 1.52c [compatibility checks](../compat/vc152-return2.md) passed for their
-selected source subset. The new race-component source still needs its native
-adapter/build; host C89 acceptance does not establish that result.
+selected source subset. The race component subsequently compiled and linked
+with VC++ 1.52c and passed all 816 native checks in the
+[RETURN4 replay](../compat/racevc-return4.md), with exact file/state matches for
+the 88-case catalog. Its Windows services remain modeled; a real race-wizard UI
+adapter is still required.
