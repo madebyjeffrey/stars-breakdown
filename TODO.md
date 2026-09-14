@@ -89,7 +89,8 @@ This does not promise the author's exact source text, comments, macros, or code 
 **In progress:** 122 named routines (53,170 original procedure bytes) now have
 reviewed C89 source and original-x86 differential tests. See
 [the core reconstruction report](analysis/reconstruction/core.md).
-This is a host semantic library; the subsystem checkboxes below remain open.
+Completed components are checked under their subsystem below. A parent checkbox
+stays open until the whole subsystem meets the Step 5 completion criterion.
 The race scoring/random-generation chain now runs independently of Windows;
 `python3 tools/race_demo.py --seed 0 --record-roundtrip` also exercises player
 serialization, header generation and record encryption. Stream retry/transfer
@@ -119,38 +120,9 @@ require it. Retain the per-function review standard; raw decompiler output and
 untested callbacks must not be promoted to completed reconstruction to increase
 throughput. Continue independent work while a manual VM experiment is pending.
 
-The immediate work is:
+The startup/runtime and memory/common component checklists are now grouped
+under **Subsystem completion** below. Earlier build and race milestones follow.
 
-- [x] **Complete memory manager:** reconstruct all 11 memory.obj routines,
-  including block growth/movement, allocation/free/reset, owner lookup and packed
-  list storage. **Complete, 2026-09-14:** 2,390 original bytes; stateful tests
-  compare full heap contents, ownership links, allocation failures, nonlocal
-  aborts and Windows-service order. Terminal resource cleanup uses this manager.
-  Native Windows heap integration remains separate. See the
-  [foundation report](analysis/reconstruction/foundations.md).
-- [x] **Startup resource lifecycle:** reconstruct font creation, system colors,
-  brush caching, tile layout and complete FreeStuff termination. **Complete,
-  2026-09-14:** six routines / 3,785 bytes with integrated creation, refresh and
-  cleanup comparisons. Startup configuration/WinMain remain below.
-- [x] **Common numeric and bounds helpers:** reconstruct PszFromInt,
-  PszFromLong, PszFromLongK, CommaFormatLong, BoundPoints and WPackLong.
-  **Complete, 2026-09-14:** six routines / 1,089 bytes, preserving original
-  pointer/value tests, unterminated suffixes, signed overflow and aliasing.
-  Earlier RNG/arithmetic helpers remain verified; collections are still open.
-- [x] **DOS entry and CRT code mapping:** reconstruct the DOS stub and audit
-  the installed VC runtime against every original code-bearing library record.
-  **Complete for this scope, 2026-09-14:** DOS stub assembles to the same 98 bytes;
-  all 101 CRT code-bearing records match 15,192 bytes with 856 checked fixups.
-  Seven records contain no code. Data fixups, data-only records and complete
-  linker layout remain separate. See the [runtime audit](analysis/reconstruction/runtime-library.json).
-- [ ] **Startup/configuration integration:** finish application initialization,
-  INI settings, WinMain, command-line/batch setup and their dependencies, then
-  connect the mapped runtime entry and recovered resource lifecycle. Validate
-  real Windows heap/resource adapters before claiming native startup completion.
-- [ ] **Common collection ownership and remaining geometry:** finish shared
-  lookup/duplication/ownership helpers and arithmetic/geometry dependency paths,
-  with explicit boundaries to simulation, UI and persistence. These remaining
-  paths prevent checking off the whole Memory and common utilities section.
 - [x] **Early VC++ compatibility check:** prepare one small Win16 fixture package
   for the user's VC++ 1.52c / Windows 98 SE / 86Box environment. Capture compiler
   and linker banners, commands and outputs; test integer widths, near/far pointers,
@@ -235,10 +207,48 @@ The immediate work is:
 Step 5 is finished only when its full exit criterion is met. These milestones
 change the size and usefulness of work sessions, not the definition of completion.
 
-For each group below, follow the per-function checklist. The order is provisional: use the recovered dependency graph to adjust it. Module names identify initial study areas, not verified architectural boundaries.
+### Subsystem completion
 
-- [ ] **Startup and runtime:** NE/DOS entry paths, initialization/termination, compiler helpers, memory model, and linked runtime code.
-- [ ] **Memory and common utilities:** `memory`, `utilgen`, relevant parts of `util`, allocation/ownership, collections, arithmetic helpers, and random-number generation.
+Checked child items are complete for their stated scope. An unchecked parent
+with checked children is **partly complete**, not unstarted. The order remains
+provisional; module names identify study areas rather than architectural boundaries.
+
+- [ ] **Startup and runtime — in progress:** NE/DOS entry paths, initialization/termination, compiler helpers, memory model, and linked runtime code.
+
+  - [x] **DOS entry:** reviewed assembly reproduces the original 98 bytes and its
+    print/exit behavior. Complete 2026-09-14.
+  - [x] **Linked CRT code mapping:** all 101 code-bearing records match 15,192
+    original bytes, including 856 checked linker fixups. Seven further records
+    contain no code. See the [runtime audit](analysis/reconstruction/runtime-library.json).
+  - [x] **Fonts, colors, brush cache, tiles and complete FreeStuff cleanup:**
+    six routines / 3,785 bytes with original-instruction comparisons, including
+    integrated font creation, color refresh and terminal cleanup. Complete
+    2026-09-14; see the [foundation report](analysis/reconstruction/foundations.md).
+  - [ ] **Application startup and configuration:** finish FCreateStuff,
+    InitInstance, INI settings, WinMain, command-line/batch setup, class
+    registration and message-loop dependencies; connect the mapped NE entry
+    and recovered resource helpers and validate the integrated startup path.
+  - [ ] **Remaining runtime data:** audit the seven records without code,
+    remaining CRT data fixups and placement dependencies. The code-byte match
+    does not complete these data mappings or prove the full linker layout.
+- [ ] **Memory and common utilities — in progress:** `memory`, `utilgen`, relevant parts of `util`, allocation/ownership, collections, arithmetic helpers, and random-number generation.
+
+  - [x] **Complete memory manager:** all 11 memory.obj routines / 2,390 bytes,
+    including block growth/movement, allocation/free/reset, owner lookup and
+    packed list storage. Tests compare full heap contents, ownership links,
+    allocation failures, nonlocal aborts and Windows-service order. Terminal
+    cleanup uses this implementation. Complete 2026-09-14; see the
+    [foundation report](analysis/reconstruction/foundations.md).
+  - [x] **Reviewed RNG core and seed helpers:** initialization, seed handling,
+    random generation and saved RNG state, with original-instruction comparisons.
+    See the [core report](analysis/reconstruction/core.md).
+  - [x] **Additional numeric and bounds helpers:** PszFromInt, PszFromLong,
+    PszFromLongK, CommaFormatLong, BoundPoints and WPackLong; six routines /
+    1,089 bytes. Preserve the original pointer/value tests, unterminated suffixes,
+    integer wrap and aliasing. Complete 2026-09-14.
+  - [ ] **Collection ownership and remaining shared helpers:** finish relevant
+    planet/fleet/thing lookup, duplication and ownership paths, remaining
+    arithmetic/geometry such as FIntersectCircleLine, and their dependencies.
 - [ ] **Core data and component definitions:** `parts`, `thing`, shared globals, tables, identifiers, and resource-backed constants.
 - [ ] **Files and persistence:** `file`, `save`, `log`; reconstruct record formats, encoding, checksums, seeds, version handling, and validation paths as found.
 - [ ] **Game/race creation:** `create`, `race`, `init`, `build`, including configuration and command-line paths.
@@ -249,7 +259,15 @@ For each group below, follow the per-function checklist. The order is provisiona
 - [ ] **Tutorial and remaining behavior:** `tutor`, `tutor2`, `dummy`, `debug`, and every module or unnamed routine not covered above.
 - [ ] **Resources and non-code data:** incorporate extracted assets, dialogs, menus, strings, and tables into the build with preserved identifiers and semantics.
 
+The checked C components above have host builds and original-instruction tests.
+Their native Windows heap/resource adapters and live startup acceptance remain
+integration work; compiler installation alone does not complete those checks.
+
 ### Per-function completion checklist
+
+This is a template for each routine, not a global progress checklist. Completed
+routine reviews are recorded in [the coverage ledger](analysis/coverage.json);
+122 named game routines currently meet the reviewed-source standard.
 
 - [ ] Record address range(s), names, source mappings, signature, calling convention, and evidence links.
 - [ ] Resolve control flow, call targets, global references, structure accesses, and local-variable roles.
