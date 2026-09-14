@@ -61,7 +61,8 @@ with code or the private stack. Native Win16 selector fault behavior remains
 outside the host adapter. The original arithmetic helpers execute in the oracle
 but are not counted as reconstructed runtime source.
 
-Stream record decoding and ReadRtPlr remain pending. Innate habitability,
+Record framing, stream XOR transformations and ReadRtPlr now have reviewed
+source; see [player records](player-records.md). Full stream/file I/O remains pending. Innate habitability,
 CAdvantagePoints and CreateRandomRace now have reviewed source and original-machine
 comparisons. Their reports record mutation ordering, arithmetic and input limits.
 

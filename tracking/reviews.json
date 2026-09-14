@@ -572,5 +572,75 @@
       "analysis/reconstruction/random-race.md",
       "tests/test_random_race_machine.py"
     ]
+  },
+  "000f:5168-524d": {
+    "reconstruction_path": "reconstructed/src/records.c",
+    "review_status": "manually_reviewed",
+    "compilation_status": "host_c89_compiled",
+    "validation_status": "original_x86_differential_checked_with_explicit_simulated_Windows_boundary; exact_transfer_boundary; host_semantic_adapter; Win16_and_error_UI_integration_pending",
+    "evidence": [
+      "analysis/functions.json",
+      "analysis/debug/procedures.json",
+      "analysis/decompiler/export-manifest.json",
+      "analysis/reconstruction/player-records.md",
+      "tools/record_machine.py",
+      "tests/test_record_machine.py"
+    ]
+  },
+  "000f:947c-9553": {
+    "reconstruction_path": "reconstructed/src/records.c",
+    "review_status": "manually_reviewed",
+    "compilation_status": "host_c89_compiled",
+    "validation_status": "original_x86_differential_checked_with_explicit_simulated_Windows_boundary; exact_transfer_boundary; host_semantic_adapter; Win16_and_error_UI_integration_pending",
+    "evidence": [
+      "analysis/functions.json",
+      "analysis/debug/procedures.json",
+      "analysis/decompiler/export-manifest.json",
+      "analysis/reconstruction/player-records.md",
+      "tools/record_machine.py",
+      "tests/test_record_machine.py"
+    ]
+  },
+  "000f:05e2-080f": {
+    "reconstruction_path": "reconstructed/src/records.c",
+    "review_status": "manually_reviewed",
+    "compilation_status": "host_c89_compiled",
+    "validation_status": "original_x86_differential_checked_with_explicit_simulated_Windows_boundary; bounded_buffers_legacy_U019_limit; host_semantic_adapter; Win16_and_error_UI_integration_pending",
+    "evidence": [
+      "analysis/functions.json",
+      "analysis/debug/procedures.json",
+      "analysis/decompiler/export-manifest.json",
+      "analysis/reconstruction/player-records.md",
+      "tools/record_machine.py",
+      "tests/test_record_machine.py"
+    ]
+  },
+  "000f:551c-574d": {
+    "reconstruction_path": "reconstructed/src/records.c",
+    "review_status": "manually_reviewed",
+    "compilation_status": "host_c89_compiled",
+    "validation_status": "original_x86_differential_checked_with_explicit_simulated_Windows_boundary; bounded_buffers_exact_transfer_boundary; host_semantic_adapter; Win16_and_error_UI_integration_pending",
+    "evidence": [
+      "analysis/functions.json",
+      "analysis/debug/procedures.json",
+      "analysis/decompiler/export-manifest.json",
+      "analysis/reconstruction/player-records.md",
+      "tools/record_machine.py",
+      "tests/test_record_machine.py"
+    ]
+  },
+  "0008:11f2-145c": {
+    "reconstruction_path": "reconstructed/src/strings.c",
+    "review_status": "manually_reviewed",
+    "compilation_status": "host_c89_compiled",
+    "validation_status": "original_x86_differential_checked_with_explicit_simulated_Windows_boundary; bounded_buffers_U019_limit_verified_wsprintf_format; host_semantic_adapter; Win16_and_error_UI_integration_pending",
+    "evidence": [
+      "analysis/functions.json",
+      "analysis/debug/procedures.json",
+      "analysis/decompiler/export-manifest.json",
+      "analysis/reconstruction/player-records.md",
+      "tools/record_machine.py",
+      "tests/test_record_machine.py"
+    ]
   }
 }

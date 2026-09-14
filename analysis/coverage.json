@@ -10,9 +10,9 @@
     "debug_procedure_bytes": 890384,
     "unclassified_code_segment_bytes": 126146,
     "data_segment_bytes": 26054,
-    "compiled_reconstruction_bytes": 14235,
+    "compiled_reconstruction_bytes": 16415,
     "compiled_coverage_scope": "Host C89 semantic adapters; not a linked Win16 replacement or byte-matching build",
-    "manually_reviewed_bytes": 14235
+    "manually_reviewed_bytes": 16415
   },
   "ranges": [
     {
@@ -3892,13 +3892,17 @@
         "util.obj"
       ],
       "evidence": [
-        "analysis/segments.json",
         "analysis/functions.json",
-        "analysis/segment_map.json"
+        "analysis/debug/procedures.json",
+        "analysis/decompiler/export-manifest.json",
+        "analysis/reconstruction/player-records.md",
+        "tools/record_machine.py",
+        "tests/test_record_machine.py"
       ],
-      "reconstruction_path": null,
-      "review_status": "not_started",
-      "validation_status": "not_started"
+      "reconstruction_path": "reconstructed/src/strings.c",
+      "review_status": "manually_reviewed",
+      "validation_status": "original_x86_differential_checked_with_explicit_simulated_Windows_boundary; bounded_buffers_U019_limit_verified_wsprintf_format; host_semantic_adapter; Win16_and_error_UI_integration_pending",
+      "compilation_status": "host_c89_compiled"
     },
     {
       "id": "0008:145c-1bb4",
@@ -14104,13 +14108,17 @@
         "file.obj"
       ],
       "evidence": [
-        "analysis/segments.json",
         "analysis/functions.json",
-        "analysis/segment_map.json"
+        "analysis/debug/procedures.json",
+        "analysis/decompiler/export-manifest.json",
+        "analysis/reconstruction/player-records.md",
+        "tools/record_machine.py",
+        "tests/test_record_machine.py"
       ],
-      "reconstruction_path": null,
-      "review_status": "not_started",
-      "validation_status": "not_started"
+      "reconstruction_path": "reconstructed/src/records.c",
+      "review_status": "manually_reviewed",
+      "validation_status": "original_x86_differential_checked_with_explicit_simulated_Windows_boundary; bounded_buffers_legacy_U019_limit; host_semantic_adapter; Win16_and_error_UI_integration_pending",
+      "compilation_status": "host_c89_compiled"
     },
     {
       "id": "000f:080f-0810",
@@ -14650,13 +14658,17 @@
         "file.obj"
       ],
       "evidence": [
-        "analysis/segments.json",
         "analysis/functions.json",
-        "analysis/segment_map.json"
+        "analysis/debug/procedures.json",
+        "analysis/decompiler/export-manifest.json",
+        "analysis/reconstruction/player-records.md",
+        "tools/record_machine.py",
+        "tests/test_record_machine.py"
       ],
-      "reconstruction_path": null,
-      "review_status": "not_started",
-      "validation_status": "not_started"
+      "reconstruction_path": "reconstructed/src/records.c",
+      "review_status": "manually_reviewed",
+      "validation_status": "original_x86_differential_checked_with_explicit_simulated_Windows_boundary; exact_transfer_boundary; host_semantic_adapter; Win16_and_error_UI_integration_pending",
+      "compilation_status": "host_c89_compiled"
     },
     {
       "id": "000f:524d-524e",
@@ -14848,13 +14860,17 @@
         "save.obj"
       ],
       "evidence": [
-        "analysis/segments.json",
         "analysis/functions.json",
-        "analysis/segment_map.json"
+        "analysis/debug/procedures.json",
+        "analysis/decompiler/export-manifest.json",
+        "analysis/reconstruction/player-records.md",
+        "tools/record_machine.py",
+        "tests/test_record_machine.py"
       ],
-      "reconstruction_path": null,
-      "review_status": "not_started",
-      "validation_status": "not_started"
+      "reconstruction_path": "reconstructed/src/records.c",
+      "review_status": "manually_reviewed",
+      "validation_status": "original_x86_differential_checked_with_explicit_simulated_Windows_boundary; bounded_buffers_exact_transfer_boundary; host_semantic_adapter; Win16_and_error_UI_integration_pending",
+      "compilation_status": "host_c89_compiled"
     },
     {
       "id": "000f:574d-574e",
@@ -15406,13 +15422,17 @@
         "save.obj"
       ],
       "evidence": [
-        "analysis/segments.json",
         "analysis/functions.json",
-        "analysis/segment_map.json"
+        "analysis/debug/procedures.json",
+        "analysis/decompiler/export-manifest.json",
+        "analysis/reconstruction/player-records.md",
+        "tools/record_machine.py",
+        "tests/test_record_machine.py"
       ],
-      "reconstruction_path": null,
-      "review_status": "not_started",
-      "validation_status": "not_started"
+      "reconstruction_path": "reconstructed/src/records.c",
+      "review_status": "manually_reviewed",
+      "validation_status": "original_x86_differential_checked_with_explicit_simulated_Windows_boundary; exact_transfer_boundary; host_semantic_adapter; Win16_and_error_UI_integration_pending",
+      "compilation_status": "host_c89_compiled"
     },
     {
       "id": "000f:9553-9554",

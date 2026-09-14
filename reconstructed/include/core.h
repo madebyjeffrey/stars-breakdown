@@ -86,4 +86,20 @@ StarsI16 stars_copy_game_string(StarsU8 *data, const StarsU8 *strings, StarsI16 
 /* Existing initialized record, static template and RNG seeds in data.
  * Name must terminate within its 32-byte field; see random-race.md. */
 void stars_create_random_race(StarsU8 *data, const StarsU8 *strings, StarsU16 player);
+/* Exact-count stream transfers, or nonlocal abort on failure. These are
+ * integration boundaries for RgFromStream/RgToStream, not Windows APIs. */
+typedef void (*StarsReadTransfer)(void *context, StarsU8 *output, StarsU16 count);
+typedef void (*StarsWriteTransfer)(void *context, const StarsU8 *input, StarsU16 count);
+void stars_read_record(StarsU8 *data, StarsReadTransfer read, void *context);
+void stars_write_record(StarsU8 *data, StarsI16 type, StarsU16 count, const StarsU8 *input,
+    StarsWriteTransfer write, void *context);
+/* Fixed original strings; result must fit 50-byte temporary. Automatic
+ * pluralization of trimmed single lowercase e needs saved-SI context (U019). */
+StarsU16 stars_player_name(StarsU8 *data, const StarsU8 *strings, StarsI16 index,
+    StarsI16 capital, StarsI16 plural, StarsI16 article, StarsI16 grammar, StarsU16 player);
+/* Disjoint, contiguous records/buffers. At decoded length 32 the terminator
+ * can extend beyond a name field; see documented writable-span requirements. */
+void stars_read_player_record(StarsU8 *data, const StarsU8 *strings, StarsU16 player, StarsU16 input);
+void stars_write_player_record(StarsU8 *data, StarsU16 player, StarsU16 storage,
+    StarsWriteTransfer write, void *context);
 #endif

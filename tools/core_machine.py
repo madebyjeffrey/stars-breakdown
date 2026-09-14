@@ -1,7 +1,8 @@
 """Execute selected original routines, with real NE relocations.
 
 This is a CPU-level oracle, not a Windows/selector-protection emulator.
-Unmapped modules/imports trap; no operating-system functions are substituted.
+Unmapped modules/imports trap. Explicit import slots may be supplied by
+specialized harnesses; the base harness substitutes no operating-system functions.
 """
 from pathlib import Path
 import hashlib
@@ -20,13 +21,13 @@ class OriginalCore:
     DATA = 0x30000
     STOP = 0x60000
 
-    def __init__(self):
+    def __init__(self, imports=None):
         path = ROOT / 'target/stars.exe'
         assert hashlib.sha256(path.read_bytes()).hexdigest() == (
             'ccab6682b55dae14dbf104e491cfbd3b32a6280022020032ae0615500949ba59')
         ne = NE(path)
         self.cpu = Uc(UC_ARCH_X86, UC_MODE_16)
-        self.cpu.mem_map(0x10000, 0x90000)
+        self.cpu.mem_map(0x10000, max(self.SEGMENTS.values()) * 16)
         for number, selector in self.SEGMENTS.items():
             memory = bytearray(ne.raw[number - 1])
             for relocation in ne.relocations:
@@ -36,6 +37,8 @@ class OriginalCore:
                     continue
                 target = self.SEGMENTS.get(relocation.get('target_segment'), 0xd000)
                 offset = relocation.get('target_offset', 0)
+                if relocation.get('import_key') in (imports or {}):
+                    target, offset = imports[relocation['import_key']]
                 for site in relocation['sites']:
                     patch(memory, site, relocation['address_kind'], target,
                           offset, relocation['additive'])
@@ -60,13 +63,13 @@ class OriginalCore:
             self.put(offset, struct.pack('<II', *value))
         return struct.unpack('<II', self.get(offset, 8))
 
-    def call(self, offset, arguments=b'', segment=9, shared_stack=False, instruction_budget=20000000):
+    def call(self, offset, arguments=b'', segment=9, shared_stack=False, instruction_budget=20000000, entry_si=0x1234):
         cpu = self.cpu
         self.returned = False
         for name, value in dict(CS=self.SEGMENTS[segment], IP=offset,
                                 DS=0x3000, ES=0x3000, SS=0x3000 if shared_stack else 0x5000,
                                 SP=0xff00, BP=0, AX=0, BX=0, CX=0, DX=0,
-                                SI=0x1234, DI=0x5678, EFLAGS=2).items():
+                                SI=entry_si, DI=0x5678, EFLAGS=2).items():
             cpu.reg_write(getattr(reg, 'UC_X86_REG_' + name), value)
         cpu.mem_write(0x3ff00 if shared_stack else 0x5ff00,
                       struct.pack('<HH', 0, 0x6000) + arguments)
@@ -75,6 +78,6 @@ class OriginalCore:
         if not self.returned:
             raise RuntimeError('Original routine exceeded instruction budget')
         assert cpu.reg_read(reg.UC_X86_REG_SP) == 0xff04, 'Unexpected calling convention'
-        assert cpu.reg_read(reg.UC_X86_REG_SI) == 0x1234
+        assert cpu.reg_read(reg.UC_X86_REG_SI) == entry_si
         assert cpu.reg_read(reg.UC_X86_REG_DI) == 0x5678
         return cpu.reg_read(reg.UC_X86_REG_AX) | (cpu.reg_read(reg.UC_X86_REG_DX) << 16)

@@ -55,3 +55,7 @@ source terminator. Unbounded forward overwrite, invalid ids/tables, private
 stack aliasing and protected-mode selector faults remain outside the adapter.
 These functions decode strings embedded in the executable; they do not implement
 Windows string resources or all of the UI subsystem.
+
+The additional PszPlayerName formatter is now covered in
+[player records and legacy names](player-records.md), including its 50-byte
+temporary and the saved-SI-dependent single-letter pluralization case.

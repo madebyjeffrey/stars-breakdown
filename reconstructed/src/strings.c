@@ -1,4 +1,6 @@
 #include "core.h"
+#include <stdio.h>
+#include <string.h>
 
 /* NE 3:743A-7599. The separate image is the original strings code segment,
  * including its length, group-offset and character tables. Valid ids 0..1413,
@@ -43,4 +45,53 @@ StarsI16 stars_copy_game_string(StarsU8 *data, const StarsU8 *strings, StarsI16 
     data[output] = 0;
     length = (StarsU16)(output - start);
     return length < 32768U ? (StarsI16)length : (StarsI16)((StarsI32)length - 65536L);
+}
+
+/* NE 8:11F2-145C. Formatting uses the verified static "Player %d" string.
+ * 50-byte temporary limit; see player-records.md for the one-letter-e edge. */
+StarsU16 stars_player_name(StarsU8 *data, const StarsU8 *strings, StarsI16 index,
+    StarsI16 capital, StarsI16 plural, StarsI16 article, StarsI16 grammar, StarsU16 player)
+{
+    char temporary[50];
+    StarsU16 text, number_word;
+    StarsI16 number;
+    unsigned int length;
+    if (!player) player = (StarsU16)(0x59a2U + (StarsU16)index * 192U);
+    if (!data[player + 128U]) {
+        number_word = (StarsU16)((StarsU16)index + 1U);
+        number = number_word < 32768U ? (StarsI16)number_word : (StarsI16)((StarsI32)number_word - 65536L);
+        text = stars_get_compressed_string(data, strings, 0x55e);
+        sprintf(temporary, (const char *)data + text, (int)number);
+        if (!plural) strcat(temporary, (const char *)data + 0x515U);
+        if (grammar == 1 || grammar == 2) {
+            text = stars_get_compressed_string(data, strings, (StarsI16)(0x55b + grammar));
+            strcat(temporary, (const char *)data + text);
+        }
+    } else {
+        temporary[0] = 0;
+        if (article) {
+            strcpy(temporary, (const char *)data + 0x50eU);
+            if (capital) temporary[0] = 'T';
+        }
+        text = (StarsU16)(player + (plural && data[player + 160U] ? 160U : 128U));
+        strcat(temporary, (const char *)data + text);
+        length = (unsigned int)strlen(temporary);
+        while (length && temporary[length - 1U] == ' ') temporary[--length] = 0;
+        if (!length) {
+            text = stars_get_compressed_string(data, strings, 0x559);
+            strcpy(temporary, (const char *)data + text);
+        }
+        if (plural && !data[player + 160U]) {
+            length = (unsigned int)strlen(temporary);
+            if (temporary[length - 1U] != 's' &&
+                !(length >= 2U && temporary[length - 1U] == 'e' && temporary[length - 2U] == 's'))
+                strcat(temporary, (const char *)data + 0x513U);
+        }
+        if (grammar == 1 || grammar == 2) {
+            text = stars_get_compressed_string(data, strings, (StarsI16)(0x559 + grammar));
+            strcat(temporary, (const char *)data + text);
+        }
+    }
+    strcpy((char *)data + 0x57a4U, temporary);
+    return 0x57a4U;
 }

@@ -1,6 +1,6 @@
 # Step 5: reviewed semantic core
 
-Status: **44 of 846 named game routines reconstructed**, covering 14,235 original
+Status: **49 of 846 named game routines reconstructed**, covering 16,415 original
 procedure bytes. Step 5 remains in progress. Unnamed/runtime code is additional
 work. These routines compile together as a host C89 library; they do not yet
 constitute a Win16 application or retain the original far-call ABI. Innate race
@@ -9,14 +9,16 @@ scoring uses explicit bounded x87 rounding; see the U018 resolution.
 Additional routines and their limits are described in [codec](codec.md),
 [text utilities](text.md), [game creation](create.md), [race validation](race-validation.md),
 [planet habitability](habitability.md), [innate habitability](innate-habitability.md),
-[race scoring](race-scoring.md), [game strings](game-strings.md), and
-[random race creation](random-race.md).
+[race scoring](race-scoring.md), [game strings](game-strings.md),
+[random race creation](random-race.md), and [player records](player-records.md).
 The table below covers the initial 15 routines.
 
 A complete host-side race-generation example is available with
 `python3 tools/race_demo.py --seed 0`. It runs reconstructed C code with static
-original data and needs no emulator. Race-file I/O and the wizard UI remain
-unreconstructed.
+original data and needs no emulator. Player-record serialization is now available through
+`--record-roundtrip`; file dialogs, error handling and the wizard UI remain
+unreconstructed. Successful Windows file transfers are explicitly simulated
+only in the specialized record tests; see that report for limits.
 
 ## Source and address mapping
 
@@ -87,8 +89,8 @@ errors and optimization enabled, then compares it with original x86 execution.
 `tools/core_machine.py` verifies the original executable's SHA-256, loads only
 the selected original NE segments, and applies their real relocation records
 to isolated segment addresses. Original compiler arithmetic helpers execute
-unchanged. Imports and unavailable segments are unmapped and fail on use;
-there are no substitute Windows calls. Far return, stack balance, and SI/DI
+unchanged. In the base harness, imports and unavailable segments are unmapped
+and fail on use; there are no substitute Windows calls. Far return, stack balance, and SI/DI
 preservation are checked on every invocation.
 
 The ten differential test groups cover all 4,096/16,384 effective seed inputs;
