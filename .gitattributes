@@ -1,2 +1,5 @@
 # Preserve raw decompiler formatting in evidence fixtures, including blank-line spaces.
 analysis/decompiler/acceptance/** -whitespace
+
+# The standalone DOS compiler probe must retain DOS batch line endings.
+compat/bytematch/BUILD.BAT text eol=crlf
