@@ -11,3 +11,9 @@ __pycache__/
 # Reproducible original resource bytes and synthetic static memory images.
 /analysis/ne/memory/
 /analysis/ne/resources/
+
+# Isolated third-party analysis tools and caches.
+/.tools/
+# Full disassembly, pseudocode, memory dumps and per-run logs are reproducible.
+/analysis/decompiler/export/
+/analysis/decompiler/export-*/

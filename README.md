@@ -1,8 +1,10 @@
 # Stars! executable study
 
-A reverse-engineering study of `target/stars.exe`, preserving the supplied executable unchanged. This repository currently contains a debug-information extractor, a function index, recovered data layouts, a relocation-aware NE layout/resource extractor, and one manually reconstructed function. It is not a complete decompilation or a buildable recreation of the game.
+A reverse-engineering study of `target/stars.exe`, preserving the supplied executable unchanged. This repository currently contains a debug-information extractor, a function index, recovered data layouts, a relocation-aware NE layout/resource extractor, a tested Ghidra workflow with initial exports for 1,043 identified functions, and one manually reconstructed function. It is not a complete decompilation or a buildable recreation of the game.
 
 ## Start here
+
+- [Decompiler workflow](analysis/decompiler/README.md): tested import, initial C/assembly exports, call/data maps, acceptance checks, and remaining analysis limits (step 3 complete).
 
 - [Debug recovery report](analysis/debug/README.md): complete semantic record recovery, effective signatures, and generated storage headers (step 2 complete).
 
@@ -48,12 +50,12 @@ CodeView logical segment numbers are translated through `sstSegMap` to NE segmen
 
 ## Next decompilation stage
 
-Steps 0, 1 and 2 are complete. Step 3 is next: establish and verify a decompiler workflow, import the recovered metadata, discover remaining functions and resolve control flow. The full checklist is in [TODO.md](TODO.md).
+Steps 0–3 are complete. Step 4 is next: run the original in a reproducible environment and capture controlled behavior for comparison. The full checklist is in [TODO.md](TODO.md).
 
-The NE extractor accounts for every file byte, decodes all relocation records, resolves imports to symbolic identities, extracts every resource, and emits static memory images with synthetic selectors. Its hardware-x87 policy and remaining runtime limitations are documented in [the layout report](analysis/ne/README.md). Actual native execution and decompiler import are still pending.
+The NE extractor accounts for every file byte, decodes all relocation records, resolves imports to symbolic identities, extracts every resource, and emits static memory images with synthetic selectors. Its hardware-x87 policy and remaining runtime limitations are documented in [the layout report](analysis/ne/README.md). Decompiler import and static acceptance are complete in [step 3](analysis/decompiler/README.md). Actual native execution remains step 4.
 
 Debug information greatly improves names and layouts, but comments, macros, original expressions, and optimized-away code generally require interpretation or are unrecoverable.
 
 ## Format references
 
-The parser follows the 16-bit records in [Microsoft's CodeView definitions](https://github.com/microsoft/microsoft-pdb/blob/master/include/cvinfo.h) and the directory/module definitions in [Wine's CodeView header](https://github.com/wine-mirror/wine/blob/master/include/wine/mscvpdb.h). The decompiler candidate is the [official Ghidra project](https://github.com/NationalSecurityAgency/ghidra).
+The parser follows the 16-bit records in [Microsoft's CodeView definitions](https://github.com/microsoft/microsoft-pdb/blob/master/include/cvinfo.h) and the directory/module definitions in [Wine's CodeView header](https://github.com/wine-mirror/wine/blob/master/include/wine/mscvpdb.h). The tested decompiler is version 12.1.3 of the [official Ghidra project](https://github.com/NationalSecurityAgency/ghidra).

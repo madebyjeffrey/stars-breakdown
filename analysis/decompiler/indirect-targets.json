@@ -1,0 +1,1713 @@
+[
+  {
+    "address": "1008:584d",
+    "instruction": "JMP word ptr CS:[BX + 0x5852]",
+    "kind": "COMPUTED_JUMP",
+    "owners": [
+      "FLookupPart"
+    ],
+    "targets": [
+      "1008:57e4",
+      "1008:57f6",
+      "1008:5808",
+      "1008:581a",
+      "1008:582c",
+      "1008:5874"
+    ],
+    "status": "static target set recovered",
+    "resolution_task": "Review table/index bounds or trace the pointer producer and validate in step 4/5."
+  },
+  {
+    "address": "1018:0498",
+    "instruction": "JMP word ptr CS:[BX + 0x49d]",
+    "kind": "COMPUTED_JUMP",
+    "owners": [
+      "WinMain"
+    ],
+    "targets": [
+      "1018:0190",
+      "1018:0193",
+      "1018:01a2",
+      "1018:023f",
+      "1018:02e0",
+      "1018:02ef",
+      "1018:02fe",
+      "1018:030d",
+      "1018:03aa",
+      "1018:03b9",
+      "1018:03c8",
+      "1018:03d7",
+      "1018:0409"
+    ],
+    "status": "static target set recovered",
+    "resolution_task": "Review table/index bounds or trace the pointer producer and validate in step 4/5."
+  },
+  {
+    "address": "1020:248d",
+    "instruction": "JMP word ptr CS:[BX + 0x2492]",
+    "kind": "COMPUTED_JUMP",
+    "owners": [
+      "InvertPaneBorder"
+    ],
+    "targets": [
+      "1020:2164",
+      "1020:2264",
+      "1020:2295",
+      "1020:2303",
+      "1020:2358",
+      "1020:23f0"
+    ],
+    "status": "static target set recovered",
+    "resolution_task": "Review table/index bounds or trace the pointer producer and validate in step 4/5."
+  },
+  {
+    "address": "1028:47b2",
+    "instruction": "JMP word ptr CS:[BX + 0x47b7]",
+    "kind": "COMPUTED_JUMP",
+    "owners": [
+      "MineClick"
+    ],
+    "targets": [
+      "1028:3b91",
+      "1028:3b94",
+      "1028:3c2a",
+      "1028:3c9f",
+      "1028:3e99",
+      "1028:3f20",
+      "1028:3f41",
+      "1028:4085",
+      "1028:443c",
+      "1028:456f"
+    ],
+    "status": "static target set recovered",
+    "resolution_task": "Review table/index bounds or trace the pointer producer and validate in step 4/5."
+  },
+  {
+    "address": "1030:7146",
+    "instruction": "JMP word ptr CS:[BX + 0x714b]",
+    "kind": "COMPUTED_JUMP",
+    "owners": [
+      "MessageWndProc"
+    ],
+    "targets": [
+      "1030:6db5",
+      "1030:6db8",
+      "1030:6e71",
+      "1030:6ea6",
+      "1030:6f05",
+      "1030:6f4d",
+      "1030:6f69",
+      "1030:6f85",
+      "1030:6fa1",
+      "1030:6fbd",
+      "1030:6fee",
+      "1030:70b3"
+    ],
+    "status": "static target set recovered",
+    "resolution_task": "Review table/index bounds or trace the pointer producer and validate in step 4/5."
+  },
+  {
+    "address": "1030:8edc",
+    "instruction": "JMP word ptr CS:[BX + 0x8ee1]",
+    "kind": "COMPUTED_JUMP",
+    "owners": [
+      "PszFormatString"
+    ],
+    "targets": [
+      "1030:8628",
+      "1030:864b",
+      "1030:8755",
+      "1030:8767",
+      "1030:8791",
+      "1030:87a9",
+      "1030:87d7",
+      "1030:8850",
+      "1030:898e",
+      "1030:8a09",
+      "1030:8a21",
+      "1030:8a33",
+      "1030:8ad8",
+      "1030:8b0e",
+      "1030:8b11",
+      "1030:8b26",
+      "1030:8b46",
+      "1030:8b5e",
+      "1030:8bec",
+      "1030:8c00",
+      "1030:8c2f",
+      "1030:8c7c",
+      "1030:8c96",
+      "1030:8ccf",
+      "1030:8cfd",
+      "1030:8db5",
+      "1030:8eba"
+    ],
+    "status": "static target set recovered",
+    "resolution_task": "Review table/index bounds or trace the pointer producer and validate in step 4/5."
+  },
+  {
+    "address": "1048:102f",
+    "instruction": "CALLF [BX + 0x6]",
+    "kind": "COMPUTED_CALL",
+    "owners": [
+      "DrawPlanShip"
+    ],
+    "targets": [],
+    "status": "unresolved",
+    "resolution_task": "Review table/index bounds or trace the pointer producer and validate in step 4/5."
+  },
+  {
+    "address": "1048:c733",
+    "instruction": "JMP word ptr CS:[BX + 0xc738]",
+    "kind": "COMPUTED_JUMP",
+    "owners": [
+      "FRunLogRecord"
+    ],
+    "targets": [
+      "1048:a3a5",
+      "1048:a3a8",
+      "1048:a7dd",
+      "1048:a807",
+      "1048:a852",
+      "1048:a9bc",
+      "1048:aa16",
+      "1048:ad1d",
+      "1048:b819",
+      "1048:ba30",
+      "1048:bde1",
+      "1048:bf1c",
+      "1048:c155",
+      "1048:c287",
+      "1048:c3b5",
+      "1048:c3f0",
+      "1048:c50b",
+      "1048:c65c",
+      "1048:c69b",
+      "1048:c721"
+    ],
+    "status": "static target set recovered",
+    "resolution_task": "Review table/index bounds or trace the pointer producer and validate in step 4/5."
+  },
+  {
+    "address": "1048:d752",
+    "instruction": "CALLF [BP + 0x6]",
+    "kind": "COMPUTED_CALL",
+    "owners": [
+      "EnumLogRts"
+    ],
+    "targets": [],
+    "status": "unresolved",
+    "resolution_task": "Review table/index bounds or trace the pointer producer and validate in step 4/5."
+  },
+  {
+    "address": "1058:0db1",
+    "instruction": "JMP word ptr CS:[BX + 0xdb6]",
+    "kind": "COMPUTED_JUMP",
+    "owners": [
+      "ScannerWndProc"
+    ],
+    "targets": [
+      "1058:0d4d",
+      "1058:0d58",
+      "1058:0d61",
+      "1058:0d6c",
+      "1058:0d75"
+    ],
+    "status": "static target set recovered",
+    "resolution_task": "Review table/index bounds or trace the pointer producer and validate in step 4/5."
+  },
+  {
+    "address": "1058:0f9e",
+    "instruction": "JMP word ptr CS:[BX + 0xfa3]",
+    "kind": "COMPUTED_JUMP",
+    "owners": [
+      "PtToScan"
+    ],
+    "targets": [
+      "1058:0f1b",
+      "1058:0f1e",
+      "1058:0f27",
+      "1058:0f30",
+      "1058:0f39",
+      "1058:0f42",
+      "1058:0f56",
+      "1058:0f68",
+      "1058:0f7c"
+    ],
+    "status": "static target set recovered",
+    "resolution_task": "Review table/index bounds or trace the pointer producer and validate in step 4/5."
+  },
+  {
+    "address": "1058:1066",
+    "instruction": "JMP word ptr CS:[BX + 0x106b]",
+    "kind": "COMPUTED_JUMP",
+    "owners": [
+      "ScanToPt"
+    ],
+    "targets": [
+      "1058:0fe1",
+      "1058:0fe4",
+      "1058:0fed",
+      "1058:0ff6",
+      "1058:0fff",
+      "1058:1008",
+      "1058:101d",
+      "1058:1030",
+      "1058:1043"
+    ],
+    "status": "static target set recovered",
+    "resolution_task": "Review table/index bounds or trace the pointer producer and validate in step 4/5."
+  },
+  {
+    "address": "1058:2d63",
+    "instruction": "JMP word ptr CS:[BX + 0x2d68]",
+    "kind": "COMPUTED_JUMP",
+    "owners": [
+      "DrawScanner"
+    ],
+    "targets": [
+      "1058:2d15",
+      "1058:2d24",
+      "1058:2d33",
+      "1058:2d42"
+    ],
+    "status": "static target set recovered",
+    "resolution_task": "Review table/index bounds or trace the pointer producer and validate in step 4/5."
+  },
+  {
+    "address": "1068:0d6e",
+    "instruction": "JMP word ptr CS:[BX + 0xd73]",
+    "kind": "COMPUTED_JUMP",
+    "owners": [
+      "FIsButtonDown"
+    ],
+    "targets": [
+      "1068:0c49",
+      "1068:0c65",
+      "1068:0c7f",
+      "1068:0c99",
+      "1068:0cbd",
+      "1068:0cd7",
+      "1068:0cf1",
+      "1068:0d0b",
+      "1068:0d25",
+      "1068:0d3f",
+      "1068:0d59"
+    ],
+    "status": "static target set recovered",
+    "resolution_task": "Review table/index bounds or trace the pointer producer and validate in step 4/5."
+  },
+  {
+    "address": "1068:161b",
+    "instruction": "JMP word ptr CS:[BX + 0x1620]",
+    "kind": "COMPUTED_JUMP",
+    "owners": [
+      "ExecuteButton"
+    ],
+    "targets": [
+      "1068:0dd4",
+      "1068:0df2",
+      "1068:0e16",
+      "1068:0e1e",
+      "1068:0e26",
+      "1068:0e2e",
+      "1068:0e36",
+      "1068:0e3e",
+      "1068:0e46",
+      "1068:0e4e",
+      "1068:1076",
+      "1068:12fa",
+      "1068:1519"
+    ],
+    "status": "static target set recovered",
+    "resolution_task": "Review table/index bounds or trace the pointer producer and validate in step 4/5."
+  },
+  {
+    "address": "1078:188b",
+    "instruction": "JMP word ptr CS:[BX + 0x1890]",
+    "kind": "COMPUTED_JUMP",
+    "owners": [
+      "GenerateWorld"
+    ],
+    "targets": [
+      "1078:173f",
+      "1078:1772",
+      "1078:1795",
+      "1078:17a8",
+      "1078:17bb",
+      "1078:17de",
+      "1078:1831",
+      "1078:1844",
+      "1078:18a2"
+    ],
+    "status": "static target set recovered",
+    "resolution_task": "Review table/index bounds or trace the pointer producer and validate in step 4/5."
+  },
+  {
+    "address": "1078:b81a",
+    "instruction": "JMP word ptr CS:[BX + 0xb81f]",
+    "kind": "COMPUTED_JUMP",
+    "owners": [
+      "GetVCVal"
+    ],
+    "targets": [
+      "1078:b746",
+      "1078:b755",
+      "1078:b761",
+      "1078:b76d",
+      "1078:b77c",
+      "1078:b78b",
+      "1078:b79a",
+      "1078:b7a9",
+      "1078:b7b8"
+    ],
+    "status": "static target set recovered",
+    "resolution_task": "Review table/index bounds or trace the pointer producer and validate in step 4/5."
+  },
+  {
+    "address": "1080:1d13",
+    "instruction": "JMP word ptr CS:[BX + 0x1d18]",
+    "kind": "COMPUTED_JUMP",
+    "owners": [
+      "KillUsedWaypoints"
+    ],
+    "targets": [
+      "1080:1c79",
+      "1080:1c7c",
+      "1080:1cc6"
+    ],
+    "status": "static target set recovered",
+    "resolution_task": "Review table/index bounds or trace the pointer producer and validate in step 4/5."
+  },
+  {
+    "address": "1088:0224",
+    "instruction": "JMP word ptr CS:[BX + 0x229]",
+    "kind": "COMPUTED_JUMP",
+    "owners": [
+      "DoAiTurn"
+    ],
+    "targets": [
+      "1088:01a5",
+      "1088:01b5",
+      "1088:01c5",
+      "1088:01d5",
+      "1088:01e5",
+      "1088:01f5",
+      "1088:0205",
+      "1088:0215"
+    ],
+    "status": "static target set recovered",
+    "resolution_task": "Review table/index bounds or trace the pointer producer and validate in step 4/5."
+  },
+  {
+    "address": "1090:5c9c",
+    "instruction": "CALLF [BP + 0xa]",
+    "kind": "COMPUTED_CALL",
+    "owners": [
+      "LpflFindClosestEnum"
+    ],
+    "targets": [],
+    "status": "unresolved",
+    "resolution_task": "Review table/index bounds or trace the pointer producer and validate in step 4/5."
+  },
+  {
+    "address": "1090:5dbf",
+    "instruction": "CALLF [BP + 0xa]",
+    "kind": "COMPUTED_CALL",
+    "owners": [
+      "LpplFindClosestEnum"
+    ],
+    "targets": [],
+    "status": "unresolved",
+    "resolution_task": "Review table/index bounds or trace the pointer producer and validate in step 4/5."
+  },
+  {
+    "address": "1090:5edb",
+    "instruction": "CALLF [BP + 0xa]",
+    "kind": "COMPUTED_CALL",
+    "owners": [
+      "LpplFindBestEnum"
+    ],
+    "targets": [],
+    "status": "unresolved",
+    "resolution_task": "Review table/index bounds or trace the pointer producer and validate in step 4/5."
+  },
+  {
+    "address": "10a8:2975",
+    "instruction": "JMP word ptr CS:[BX + 0x297a]",
+    "kind": "COMPUTED_JUMP",
+    "owners": [
+      "IdGetBestScannerDest"
+    ],
+    "targets": [
+      "10a8:2889",
+      "10a8:2892",
+      "10a8:28c0",
+      "10a8:28c8",
+      "10a8:28ef",
+      "10a8:28f7",
+      "10a8:2925",
+      "10a8:292e"
+    ],
+    "status": "static target set recovered",
+    "resolution_task": "Review table/index bounds or trace the pointer producer and validate in step 4/5."
+  },
+  {
+    "address": "10b0:7001",
+    "instruction": "JMP word ptr CS:[BX + 0x7006]",
+    "kind": "COMPUTED_JUMP",
+    "owners": [
+      "SatisfyOrders"
+    ],
+    "targets": [
+      "10b0:6e05",
+      "10b0:6f4c",
+      "10b0:6f75",
+      "10b0:6f81",
+      "10b0:6f9e",
+      "10b0:6faa",
+      "10b0:6fbb"
+    ],
+    "status": "static target set recovered",
+    "resolution_task": "Review table/index bounds or trace the pointer producer and validate in step 4/5."
+  },
+  {
+    "address": "10b0:7b5d",
+    "instruction": "JMP word ptr CS:[BX + 0x7b62]",
+    "kind": "COMPUTED_JUMP",
+    "owners": [
+      "SatisfyOrders"
+    ],
+    "targets": [
+      "10b0:7021",
+      "10b0:70db",
+      "10b0:71d3",
+      "10b0:7232",
+      "10b0:775e"
+    ],
+    "status": "static target set recovered",
+    "resolution_task": "Review table/index bounds or trace the pointer producer and validate in step 4/5."
+  },
+  {
+    "address": "10b8:2f83",
+    "instruction": "JMP word ptr CS:[BX + 0x2f88]",
+    "kind": "COMPUTED_JUMP",
+    "owners": [
+      "FBuildObject"
+    ],
+    "targets": [
+      "10b8:23dc",
+      "10b8:2505",
+      "10b8:25c4",
+      "10b8:267b",
+      "10b8:267e",
+      "10b8:2681",
+      "10b8:2c05",
+      "10b8:2da8",
+      "10b8:2ec1",
+      "10b8:2ee9"
+    ],
+    "status": "static target set recovered",
+    "resolution_task": "Review table/index bounds or trace the pointer producer and validate in step 4/5."
+  },
+  {
+    "address": "10c0:0c23",
+    "instruction": "JMP word ptr CS:[BX + 0xc28]",
+    "kind": "COMPUTED_JUMP",
+    "owners": [
+      "DrawPopup"
+    ],
+    "targets": [
+      "10c0:0228",
+      "10c0:022b",
+      "10c0:04dc",
+      "10c0:0561",
+      "10c0:08f7",
+      "10c0:0ad0",
+      "10c0:0ae2",
+      "10c0:0afa",
+      "10c0:0b0c",
+      "10c0:0b21",
+      "10c0:0b36",
+      "10c0:0b4e",
+      "10c0:0b63"
+    ],
+    "status": "static target set recovered",
+    "resolution_task": "Review table/index bounds or trace the pointer producer and validate in step 4/5."
+  },
+  {
+    "address": "10c0:1204",
+    "instruction": "JMP word ptr CS:[BX + 0x1209]",
+    "kind": "COMPUTED_JUMP",
+    "owners": [
+      "Popup"
+    ],
+    "targets": [
+      "10c0:0cc3",
+      "10c0:0d22",
+      "10c0:0daa",
+      "10c0:0fd7",
+      "10c0:1092",
+      "10c0:10aa",
+      "10c0:10c6",
+      "10c0:10de",
+      "10c0:10fa",
+      "10c0:1128",
+      "10c0:115a",
+      "10c0:1176",
+      "10c0:11e5"
+    ],
+    "status": "static target set recovered",
+    "resolution_task": "Review table/index bounds or trace the pointer producer and validate in step 4/5."
+  },
+  {
+    "address": "10c0:3302",
+    "instruction": "JMP word ptr CS:[BX + 0x3307]",
+    "kind": "COMPUTED_JUMP",
+    "owners": [
+      "PtDisplayFactoryMineInfo"
+    ],
+    "targets": [
+      "10c0:3256",
+      "10c0:3277",
+      "10c0:32b6",
+      "10c0:32c8",
+      "10c0:32d1"
+    ],
+    "status": "static target set recovered",
+    "resolution_task": "Review table/index bounds or trace the pointer producer and validate in step 4/5."
+  },
+  {
+    "address": "10c0:34e2",
+    "instruction": "JMP word ptr CS:[BX + 0x34e7]",
+    "kind": "COMPUTED_JUMP",
+    "owners": [
+      "PtDisplayResourceInfo"
+    ],
+    "targets": [
+      "10c0:3439",
+      "10c0:3448",
+      "10c0:3469",
+      "10c0:3490",
+      "10c0:34a2",
+      "10c0:34ca"
+    ],
+    "status": "static target set recovered",
+    "resolution_task": "Review table/index bounds or trace the pointer producer and validate in step 4/5."
+  },
+  {
+    "address": "10d8:3ad5",
+    "instruction": "JMP word ptr CS:[BX + 0x3ada]",
+    "kind": "COMPUTED_JUMP",
+    "owners": [
+      "DisplayComponentInfo"
+    ],
+    "targets": [
+      "10d8:3a6c",
+      "10d8:3a96",
+      "10d8:3a9e",
+      "10d8:3aa6",
+      "10d8:3aae",
+      "10d8:3ab6",
+      "10d8:3abe"
+    ],
+    "status": "static target set recovered",
+    "resolution_task": "Review table/index bounds or trace the pointer producer and validate in step 4/5."
+  },
+  {
+    "address": "10d8:5141",
+    "instruction": "JMP word ptr CS:[BX + 0x5146]",
+    "kind": "COMPUTED_JUMP",
+    "owners": [
+      "DisplayComponentInfo"
+    ],
+    "targets": [
+      "10d8:4fd1",
+      "10d8:4fde",
+      "10d8:5041",
+      "10d8:504e",
+      "10d8:505b",
+      "10d8:5068",
+      "10d8:5075",
+      "10d8:507a",
+      "10d8:50ba",
+      "10d8:50bf",
+      "10d8:50f2"
+    ],
+    "status": "static target set recovered",
+    "resolution_task": "Review table/index bounds or trace the pointer producer and validate in step 4/5."
+  },
+  {
+    "address": "10d8:531b",
+    "instruction": "JMP word ptr CS:[BX + 0x5320]",
+    "kind": "COMPUTED_JUMP",
+    "owners": [
+      "DisplayComponentInfo"
+    ],
+    "targets": [
+      "10d8:5210",
+      "10d8:5250",
+      "10d8:5290",
+      "10d8:52d0",
+      "10d8:52dd",
+      "10d8:52ea",
+      "10d8:52f7",
+      "10d8:5304"
+    ],
+    "status": "static target set recovered",
+    "resolution_task": "Review table/index bounds or trace the pointer producer and validate in step 4/5."
+  },
+  {
+    "address": "10d8:53d9",
+    "instruction": "JMP word ptr CS:[BX + 0x53de]",
+    "kind": "COMPUTED_JUMP",
+    "owners": [
+      "DisplayComponentInfo"
+    ],
+    "targets": [
+      "10d8:53a3",
+      "10d8:53b0",
+      "10d8:53bd",
+      "10d8:53c2"
+    ],
+    "status": "static target set recovered",
+    "resolution_task": "Review table/index bounds or trace the pointer producer and validate in step 4/5."
+  },
+  {
+    "address": "10d8:5973",
+    "instruction": "JMP word ptr CS:[BX + 0x5978]",
+    "kind": "COMPUTED_JUMP",
+    "owners": [
+      "DisplayComponentInfo"
+    ],
+    "targets": [
+      "10d8:58c0",
+      "10d8:58ff",
+      "10d8:5925"
+    ],
+    "status": "static target set recovered",
+    "resolution_task": "Review table/index bounds or trace the pointer producer and validate in step 4/5."
+  },
+  {
+    "address": "10d8:5c55",
+    "instruction": "JMP word ptr CS:[BX + 0x5c5a]",
+    "kind": "COMPUTED_JUMP",
+    "owners": [
+      "DisplayComponentInfo"
+    ],
+    "targets": [
+      "10d8:5b9a",
+      "10d8:5b9f",
+      "10d8:5bad",
+      "10d8:5c2b"
+    ],
+    "status": "static target set recovered",
+    "resolution_task": "Review table/index bounds or trace the pointer producer and validate in step 4/5."
+  },
+  {
+    "address": "10f0:411b",
+    "instruction": "JMP word ptr CS:[BX + 0x4120]",
+    "kind": "COMPUTED_JUMP",
+    "owners": [
+      "CheckWeapons"
+    ],
+    "targets": [
+      "10f0:4041",
+      "10f0:4070",
+      "10f0:4078",
+      "10f0:4082",
+      "10f0:4099",
+      "10f0:4138"
+    ],
+    "status": "static target set recovered",
+    "resolution_task": "Review table/index bounds or trace the pointer producer and validate in step 4/5."
+  },
+  {
+    "address": "10f0:584b",
+    "instruction": "JMP word ptr CS:[BX + 0x5850]",
+    "kind": "COMPUTED_JUMP",
+    "owners": [
+      "FDoesPrimaryTargetTypeExist"
+    ],
+    "targets": [
+      "10f0:578a",
+      "10f0:581c",
+      "10f0:5822"
+    ],
+    "status": "static target set recovered",
+    "resolution_task": "Review table/index bounds or trace the pointer producer and validate in step 4/5."
+  },
+  {
+    "address": "10f0:5970",
+    "instruction": "JMP word ptr CS:[BX + 0x5975]",
+    "kind": "COMPUTED_JUMP",
+    "owners": [
+      "FIsTargetOfMdTarget"
+    ],
+    "targets": [
+      "10f0:5889",
+      "10f0:588f",
+      "10f0:5895",
+      "10f0:58b3",
+      "10f0:58ed",
+      "10f0:5910"
+    ],
+    "status": "static target set recovered",
+    "resolution_task": "Review table/index bounds or trace the pointer producer and validate in step 4/5."
+  },
+  {
+    "address": "10f0:5f00",
+    "instruction": "JMP word ptr CS:[BX + 0x5f05]",
+    "kind": "COMPUTED_JUMP",
+    "owners": [
+      "ScoreFromGiveAndTakeAndTactic"
+    ],
+    "targets": [
+      "10f0:5e4c",
+      "10f0:5e55",
+      "10f0:5e65"
+    ],
+    "status": "static target set recovered",
+    "resolution_task": "Review table/index bounds or trace the pointer producer and validate in step 4/5."
+  },
+  {
+    "address": "10f8:640a",
+    "instruction": "JMP word ptr CS:[BX + 0x640f]",
+    "kind": "COMPUTED_JUMP",
+    "owners": [
+      "FTutorTaskDone"
+    ],
+    "targets": [
+      "10f8:0fcb",
+      "10f8:1235",
+      "10f8:12b5",
+      "10f8:1968",
+      "10f8:1cdc",
+      "10f8:1e96",
+      "10f8:2097",
+      "10f8:22b5",
+      "10f8:25e0",
+      "10f8:2961",
+      "10f8:2b27",
+      "10f8:2df0",
+      "10f8:32af",
+      "10f8:34d4",
+      "10f8:39a1",
+      "10f8:3a80",
+      "10f8:3c59",
+      "10f8:3e50",
+      "10f8:3ed8",
+      "10f8:4014",
+      "10f8:42f1",
+      "10f8:4484",
+      "10f8:46a2",
+      "10f8:49d0",
+      "10f8:4f6a",
+      "10f8:5070",
+      "10f8:536b",
+      "10f8:5625",
+      "10f8:5a1f",
+      "10f8:5b57",
+      "10f8:5ef0",
+      "10f8:5f9f",
+      "10f8:60a8",
+      "10f8:61ab",
+      "10f8:62b1",
+      "10f8:6311",
+      "10f8:6377"
+    ],
+    "status": "static target set recovered",
+    "resolution_task": "Review table/index bounds or trace the pointer producer and validate in step 4/5."
+  },
+  {
+    "address": "10f8:8167",
+    "instruction": "JMP word ptr CS:[BX + 0x816c]",
+    "kind": "COMPUTED_JUMP",
+    "owners": [
+      "FTutorialEnabledShipBuilder"
+    ],
+    "targets": [
+      "10f8:7ca4",
+      "10f8:7ca7",
+      "10f8:7d67",
+      "10f8:7e24",
+      "10f8:7ee6",
+      "10f8:7f47",
+      "10f8:8092"
+    ],
+    "status": "static target set recovered",
+    "resolution_task": "Review table/index bounds or trace the pointer producer and validate in step 4/5."
+  },
+  {
+    "address": "1108:0582",
+    "instruction": "JMP word ptr CS:[BX + 0x587]",
+    "kind": "COMPUTED_JUMP",
+    "owners": [
+      "ReportDlg"
+    ],
+    "targets": [
+      "1108:0529",
+      "1108:0531",
+      "1108:0538",
+      "1108:053f",
+      "1108:054f",
+      "1108:055f",
+      "1108:056b"
+    ],
+    "status": "static target set recovered",
+    "resolution_task": "Review table/index bounds or trace the pointer producer and validate in step 4/5."
+  },
+  {
+    "address": "1108:06f0",
+    "instruction": "JMP word ptr CS:[BX + 0x6f5]",
+    "kind": "COMPUTED_JUMP",
+    "owners": [
+      "ReportDlg"
+    ],
+    "targets": [
+      "1108:06a9",
+      "1108:06b1",
+      "1108:06b8",
+      "1108:06bf",
+      "1108:06c6",
+      "1108:06cd",
+      "1108:06d9"
+    ],
+    "status": "static target set recovered",
+    "resolution_task": "Review table/index bounds or trace the pointer producer and validate in step 4/5."
+  },
+  {
+    "address": "1108:22de",
+    "instruction": "JMP word ptr CS:[BX + 0x22e3]",
+    "kind": "COMPUTED_JUMP",
+    "owners": [
+      "DrawScoreReport"
+    ],
+    "targets": [
+      "1108:2198",
+      "1108:21b8",
+      "1108:21d8",
+      "1108:2249",
+      "1108:2269",
+      "1108:228c",
+      "1108:22af"
+    ],
+    "status": "static target set recovered",
+    "resolution_task": "Review table/index bounds or trace the pointer producer and validate in step 4/5."
+  },
+  {
+    "address": "1108:303a",
+    "instruction": "JMP word ptr CS:[BX + 0x303f]",
+    "kind": "COMPUTED_JUMP",
+    "owners": [
+      "LFetchScoreXVal"
+    ],
+    "targets": [
+      "1108:2fa3",
+      "1108:2fae",
+      "1108:2fb9",
+      "1108:3004",
+      "1108:300f",
+      "1108:301d"
+    ],
+    "status": "static target set recovered",
+    "resolution_task": "Review table/index bounds or trace the pointer producer and validate in step 4/5."
+  },
+  {
+    "address": "1108:3174",
+    "instruction": "JMP word ptr CS:[BX + 0x3179]",
+    "kind": "COMPUTED_JUMP",
+    "owners": [
+      "DxReportColHdr"
+    ],
+    "targets": [
+      "1108:30c3",
+      "1108:30cf",
+      "1108:30da",
+      "1108:30e9",
+      "1108:3129",
+      "1108:3131",
+      "1108:313d",
+      "1108:3149",
+      "1108:3155",
+      "1108:3197"
+    ],
+    "status": "static target set recovered",
+    "resolution_task": "Review table/index bounds or trace the pointer producer and validate in step 4/5."
+  },
+  {
+    "address": "1108:325a",
+    "instruction": "JMP word ptr CS:[BX + 0x325f]",
+    "kind": "COMPUTED_JUMP",
+    "owners": [
+      "DxReportColHdr"
+    ],
+    "targets": [
+      "1108:31ca",
+      "1108:31e0",
+      "1108:31eb",
+      "1108:31f9",
+      "1108:3211",
+      "1108:322e",
+      "1108:3277"
+    ],
+    "status": "static target set recovered",
+    "resolution_task": "Review table/index bounds or trace the pointer producer and validate in step 4/5."
+  },
+  {
+    "address": "1108:3e3e",
+    "instruction": "JMP word ptr CS:[BX + 0x3e43]",
+    "kind": "COMPUTED_JUMP",
+    "owners": [
+      "DrawReportItem"
+    ],
+    "targets": [
+      "1108:3419",
+      "1108:34a8",
+      "1108:3518",
+      "1108:3588",
+      "1108:374b",
+      "1108:37da",
+      "1108:3829",
+      "1108:3936",
+      "1108:396e",
+      "1108:3a0e",
+      "1108:3b49",
+      "1108:3c2c",
+      "1108:3c99",
+      "1108:3d0e"
+    ],
+    "status": "static target set recovered",
+    "resolution_task": "Review table/index bounds or trace the pointer producer and validate in step 4/5."
+  },
+  {
+    "address": "1108:44e3",
+    "instruction": "JMP word ptr CS:[BX + 0x44e8]",
+    "kind": "COMPUTED_JUMP",
+    "owners": [
+      "DrawReportItem"
+    ],
+    "targets": [
+      "1108:3ec3",
+      "1108:3f53",
+      "1108:3fc9",
+      "1108:405a",
+      "1108:40aa",
+      "1108:411b",
+      "1108:4160",
+      "1108:41c7",
+      "1108:4263",
+      "1108:43cd",
+      "1108:444c",
+      "1108:447e"
+    ],
+    "status": "static target set recovered",
+    "resolution_task": "Review table/index bounds or trace the pointer producer and validate in step 4/5."
+  },
+  {
+    "address": "1108:4837",
+    "instruction": "JMP word ptr CS:[BX + 0x483c]",
+    "kind": "COMPUTED_JUMP",
+    "owners": [
+      "DrawReportItem"
+    ],
+    "targets": [
+      "1108:4569",
+      "1108:462e",
+      "1108:465f",
+      "1108:46e8",
+      "1108:46f0",
+      "1108:46f8",
+      "1108:4700",
+      "1108:4708",
+      "1108:4710",
+      "1108:4718",
+      "1108:4720",
+      "1108:475b",
+      "1108:47ae",
+      "1108:4820"
+    ],
+    "status": "static target set recovered",
+    "resolution_task": "Review table/index bounds or trace the pointer producer and validate in step 4/5."
+  },
+  {
+    "address": "1108:4e72",
+    "instruction": "JMP word ptr CS:[BX + 0x4e77]",
+    "kind": "COMPUTED_JUMP",
+    "owners": [
+      "DrawReportItem"
+    ],
+    "targets": [
+      "1108:48bc",
+      "1108:4948",
+      "1108:49d9",
+      "1108:4b2b",
+      "1108:4b96",
+      "1108:4c6b",
+      "1108:4d3a",
+      "1108:4d42",
+      "1108:4d4a",
+      "1108:4d52",
+      "1108:4d7f",
+      "1108:4dd5"
+    ],
+    "status": "static target set recovered",
+    "resolution_task": "Review table/index bounds or trace the pointer producer and validate in step 4/5."
+  },
+  {
+    "address": "1108:5461",
+    "instruction": "JMP word ptr CS:[BX + 0x5466]",
+    "kind": "COMPUTED_JUMP",
+    "owners": [
+      "PszGetTaskName"
+    ],
+    "targets": [
+      "1108:540c",
+      "1108:544c",
+      "1108:5476"
+    ],
+    "status": "static target set recovered",
+    "resolution_task": "Review table/index bounds or trace the pointer producer and validate in step 4/5."
+  },
+  {
+    "address": "1108:57a3",
+    "instruction": "JMP word ptr CS:[BX + 0x57a8]",
+    "kind": "COMPUTED_JUMP",
+    "owners": [
+      "PszGetTaskName"
+    ],
+    "targets": [
+      "1108:56cf",
+      "1108:56dd",
+      "1108:56eb",
+      "1108:56f0",
+      "1108:57ba"
+    ],
+    "status": "static target set recovered",
+    "resolution_task": "Review table/index bounds or trace the pointer producer and validate in step 4/5."
+  },
+  {
+    "address": "1108:63af",
+    "instruction": "JMP word ptr CS:[BX + 0x63b4]",
+    "kind": "COMPUTED_JUMP",
+    "owners": [
+      "ICompReport"
+    ],
+    "targets": [
+      "1108:5c35",
+      "1108:5cf0",
+      "1108:5d94",
+      "1108:5e38",
+      "1108:5e7e",
+      "1108:5ed8",
+      "1108:5f02",
+      "1108:5f1e",
+      "1108:5f50",
+      "1108:5ff4",
+      "1108:60f4",
+      "1108:6148",
+      "1108:619c",
+      "1108:6283",
+      "1108:636e"
+    ],
+    "status": "static target set recovered",
+    "resolution_task": "Review table/index bounds or trace the pointer producer and validate in step 4/5."
+  },
+  {
+    "address": "1108:69cb",
+    "instruction": "JMP word ptr CS:[BX + 0x69d0]",
+    "kind": "COMPUTED_JUMP",
+    "owners": [
+      "ICompReport"
+    ],
+    "targets": [
+      "1108:6422",
+      "1108:6468",
+      "1108:652f",
+      "1108:6553",
+      "1108:65c0",
+      "1108:65f8",
+      "1108:6625",
+      "1108:67b3",
+      "1108:6846",
+      "1108:684b",
+      "1108:6974",
+      "1108:699f"
+    ],
+    "status": "static target set recovered",
+    "resolution_task": "Review table/index bounds or trace the pointer producer and validate in step 4/5."
+  },
+  {
+    "address": "1108:6d39",
+    "instruction": "JMP word ptr CS:[BX + 0x6d3e]",
+    "kind": "COMPUTED_JUMP",
+    "owners": [
+      "ICompReport"
+    ],
+    "targets": [
+      "1108:6a52",
+      "1108:6b1b",
+      "1108:6bb2",
+      "1108:6bdb",
+      "1108:6be3",
+      "1108:6beb",
+      "1108:6bf3",
+      "1108:6bfb",
+      "1108:6c03",
+      "1108:6c0b",
+      "1108:6c13",
+      "1108:6c4b",
+      "1108:6c9c",
+      "1108:6d22"
+    ],
+    "status": "static target set recovered",
+    "resolution_task": "Review table/index bounds or trace the pointer producer and validate in step 4/5."
+  },
+  {
+    "address": "1108:7428",
+    "instruction": "JMP word ptr CS:[BX + 0x742d]",
+    "kind": "COMPUTED_JUMP",
+    "owners": [
+      "ICompReport"
+    ],
+    "targets": [
+      "1108:6dac",
+      "1108:6df2",
+      "1108:6eb9",
+      "1108:7069",
+      "1108:708e",
+      "1108:70b5",
+      "1108:711f",
+      "1108:725d",
+      "1108:738a",
+      "1108:7392",
+      "1108:739a",
+      "1108:73a2"
+    ],
+    "status": "static target set recovered",
+    "resolution_task": "Review table/index bounds or trace the pointer producer and validate in step 4/5."
+  },
+  {
+    "address": "1108:8152",
+    "instruction": "JMP word ptr CS:[BX + 0x8157]",
+    "kind": "COMPUTED_JUMP",
+    "owners": [
+      "ExecuteReportClick"
+    ],
+    "targets": [
+      "1108:7d56",
+      "1108:7ddc",
+      "1108:7df9",
+      "1108:7e1a",
+      "1108:7e5e",
+      "1108:7edf",
+      "1108:8057",
+      "1108:8070",
+      "1108:8171"
+    ],
+    "status": "static target set recovered",
+    "resolution_task": "Review table/index bounds or trace the pointer producer and validate in step 4/5."
+  },
+  {
+    "address": "1108:82b9",
+    "instruction": "JMP word ptr CS:[BX + 0x82be]",
+    "kind": "COMPUTED_JUMP",
+    "owners": [
+      "ExecuteReportClick"
+    ],
+    "targets": [
+      "1108:81e3",
+      "1108:8235",
+      "1108:8273"
+    ],
+    "status": "static target set recovered",
+    "resolution_task": "Review table/index bounds or trace the pointer producer and validate in step 4/5."
+  },
+  {
+    "address": "1118:0064",
+    "instruction": "INT 0x21",
+    "kind": "COMPUTED_CALL",
+    "owners": [
+      "__astart"
+    ],
+    "targets": [],
+    "status": "OS interrupt; service behavior requires runtime review",
+    "resolution_task": "Review table/index bounds or trace the pointer producer and validate in step 4/5."
+  },
+  {
+    "address": "1118:00e1",
+    "instruction": "INT 0x21",
+    "kind": "COMPUTED_CALL",
+    "owners": [
+      "__cinit"
+    ],
+    "targets": [],
+    "status": "OS interrupt; service behavior requires runtime review",
+    "resolution_task": "Review table/index bounds or trace the pointer producer and validate in step 4/5."
+  },
+  {
+    "address": "1118:0103",
+    "instruction": "INT 0x21",
+    "kind": "COMPUTED_CALL",
+    "owners": [
+      "__cinit"
+    ],
+    "targets": [],
+    "status": "OS interrupt; service behavior requires runtime review",
+    "resolution_task": "Review table/index bounds or trace the pointer producer and validate in step 4/5."
+  },
+  {
+    "address": "1118:011f",
+    "instruction": "CALLF [0x1c86]",
+    "kind": "COMPUTED_CALL",
+    "owners": [
+      "__cinit"
+    ],
+    "targets": [],
+    "status": "unresolved",
+    "resolution_task": "Review table/index bounds or trace the pointer producer and validate in step 4/5."
+  },
+  {
+    "address": "1118:0132",
+    "instruction": "CALLF [0x1c86]",
+    "kind": "COMPUTED_CALL",
+    "owners": [
+      "__cinit"
+    ],
+    "targets": [],
+    "status": "unresolved",
+    "resolution_task": "Review table/index bounds or trace the pointer producer and validate in step 4/5."
+  },
+  {
+    "address": "1118:0234",
+    "instruction": "INT 0x21",
+    "kind": "COMPUTED_CALL",
+    "owners": [
+      "__c_exit"
+    ],
+    "targets": [],
+    "status": "OS interrupt; service behavior requires runtime review",
+    "resolution_task": "Review table/index bounds or trace the pointer producer and validate in step 4/5."
+  },
+  {
+    "address": "1118:024a",
+    "instruction": "CALLF [0x1c86]",
+    "kind": "COMPUTED_CALL",
+    "owners": [
+      "__ctermsub"
+    ],
+    "targets": [],
+    "status": "unresolved",
+    "resolution_task": "Review table/index bounds or trace the pointer producer and validate in step 4/5."
+  },
+  {
+    "address": "1118:0266",
+    "instruction": "INT 0x21",
+    "kind": "COMPUTED_CALL",
+    "owners": [
+      "__ctermsub"
+    ],
+    "targets": [],
+    "status": "OS interrupt; service behavior requires runtime review",
+    "resolution_task": "Review table/index bounds or trace the pointer producer and validate in step 4/5."
+  },
+  {
+    "address": "1118:0278",
+    "instruction": "CALLF [DI]",
+    "kind": "COMPUTED_CALL",
+    "owners": [
+      "FUN_1118_026a"
+    ],
+    "targets": [],
+    "status": "unresolved",
+    "resolution_task": "Review table/index bounds or trace the pointer producer and validate in step 4/5."
+  },
+  {
+    "address": "1118:02d0",
+    "instruction": "INT 0x21",
+    "kind": "COMPUTED_CALL",
+    "owners": [
+      "__lseek"
+    ],
+    "targets": [],
+    "status": "OS interrupt; service behavior requires runtime review",
+    "resolution_task": "Review table/index bounds or trace the pointer producer and validate in step 4/5."
+  },
+  {
+    "address": "1118:0304",
+    "instruction": "INT 0x21",
+    "kind": "COMPUTED_CALL",
+    "owners": [
+      "__lseek"
+    ],
+    "targets": [],
+    "status": "OS interrupt; service behavior requires runtime review",
+    "resolution_task": "Review table/index bounds or trace the pointer producer and validate in step 4/5."
+  },
+  {
+    "address": "1118:0327",
+    "instruction": "INT 0x21",
+    "kind": "COMPUTED_CALL",
+    "owners": [
+      "__lseek"
+    ],
+    "targets": [],
+    "status": "OS interrupt; service behavior requires runtime review",
+    "resolution_task": "Review table/index bounds or trace the pointer producer and validate in step 4/5."
+  },
+  {
+    "address": "1118:0346",
+    "instruction": "INT 0x21",
+    "kind": "COMPUTED_CALL",
+    "owners": [
+      "__lseek"
+    ],
+    "targets": [],
+    "status": "OS interrupt; service behavior requires runtime review",
+    "resolution_task": "Review table/index bounds or trace the pointer producer and validate in step 4/5."
+  },
+  {
+    "address": "1118:0526",
+    "instruction": "INT 0x21",
+    "kind": "COMPUTED_CALL",
+    "owners": [
+      "__strdate"
+    ],
+    "targets": [],
+    "status": "OS interrupt; service behavior requires runtime review",
+    "resolution_task": "Review table/index bounds or trace the pointer producer and validate in step 4/5."
+  },
+  {
+    "address": "1118:058a",
+    "instruction": "INT 0x21",
+    "kind": "COMPUTED_CALL",
+    "owners": [
+      "__strtime"
+    ],
+    "targets": [],
+    "status": "OS interrupt; service behavior requires runtime review",
+    "resolution_task": "Review table/index bounds or trace the pointer producer and validate in step 4/5."
+  },
+  {
+    "address": "1118:07ee",
+    "instruction": "CALLF [BP + 0xe]",
+    "kind": "COMPUTED_CALL",
+    "owners": [
+      "_bsearch"
+    ],
+    "targets": [],
+    "status": "unresolved",
+    "resolution_task": "Review table/index bounds or trace the pointer producer and validate in step 4/5."
+  },
+  {
+    "address": "1118:082e",
+    "instruction": "CALLF [BP + 0xe]",
+    "kind": "COMPUTED_CALL",
+    "owners": [
+      "_bsearch"
+    ],
+    "targets": [],
+    "status": "unresolved",
+    "resolution_task": "Review table/index bounds or trace the pointer producer and validate in step 4/5."
+  },
+  {
+    "address": "1118:088a",
+    "instruction": "CALLF [BP + 0xc]",
+    "kind": "COMPUTED_CALL",
+    "owners": [
+      "_qsort"
+    ],
+    "targets": [],
+    "status": "unresolved",
+    "resolution_task": "Review table/index bounds or trace the pointer producer and validate in step 4/5."
+  },
+  {
+    "address": "1118:0911",
+    "instruction": "CALLF [DI + 0x14]",
+    "kind": "COMPUTED_CALL",
+    "owners": [
+      "_qsort"
+    ],
+    "targets": [],
+    "status": "unresolved",
+    "resolution_task": "Review table/index bounds or trace the pointer producer and validate in step 4/5."
+  },
+  {
+    "address": "1118:092f",
+    "instruction": "CALLF [DI + 0x14]",
+    "kind": "COMPUTED_CALL",
+    "owners": [
+      "_qsort"
+    ],
+    "targets": [],
+    "status": "unresolved",
+    "resolution_task": "Review table/index bounds or trace the pointer producer and validate in step 4/5."
+  },
+  {
+    "address": "1118:0a36",
+    "instruction": "INT 0x21",
+    "kind": "COMPUTED_CALL",
+    "owners": [
+      "__access"
+    ],
+    "targets": [],
+    "status": "OS interrupt; service behavior requires runtime review",
+    "resolution_task": "Review table/index bounds or trace the pointer producer and validate in step 4/5."
+  },
+  {
+    "address": "1118:0a79",
+    "instruction": "INT 0x21",
+    "kind": "COMPUTED_CALL",
+    "owners": [
+      "__chdir"
+    ],
+    "targets": [],
+    "status": "OS interrupt; service behavior requires runtime review",
+    "resolution_task": "Review table/index bounds or trace the pointer producer and validate in step 4/5."
+  },
+  {
+    "address": "1118:0a9d",
+    "instruction": "INT 0x21",
+    "kind": "COMPUTED_CALL",
+    "owners": [
+      "__rmdir"
+    ],
+    "targets": [],
+    "status": "OS interrupt; service behavior requires runtime review",
+    "resolution_task": "Review table/index bounds or trace the pointer producer and validate in step 4/5."
+  },
+  {
+    "address": "1118:0ae3",
+    "instruction": "INT 0x21",
+    "kind": "COMPUTED_CALL",
+    "owners": [
+      "_rename"
+    ],
+    "targets": [],
+    "status": "OS interrupt; service behavior requires runtime review",
+    "resolution_task": "Review table/index bounds or trace the pointer producer and validate in step 4/5."
+  },
+  {
+    "address": "1118:0b09",
+    "instruction": "INT 0x21",
+    "kind": "COMPUTED_CALL",
+    "owners": [
+      "__unlink"
+    ],
+    "targets": [],
+    "status": "OS interrupt; service behavior requires runtime review",
+    "resolution_task": "Review table/index bounds or trace the pointer producer and validate in step 4/5."
+  },
+  {
+    "address": "1118:0b42",
+    "instruction": "INT 0x21",
+    "kind": "COMPUTED_CALL",
+    "owners": [
+      "__dos_findfirst"
+    ],
+    "targets": [],
+    "status": "OS interrupt; service behavior requires runtime review",
+    "resolution_task": "Review table/index bounds or trace the pointer producer and validate in step 4/5."
+  },
+  {
+    "address": "1118:0b56",
+    "instruction": "INT 0x21",
+    "kind": "COMPUTED_CALL",
+    "owners": [
+      "__dos_findfirst"
+    ],
+    "targets": [],
+    "status": "OS interrupt; service behavior requires runtime review",
+    "resolution_task": "Review table/index bounds or trace the pointer producer and validate in step 4/5."
+  },
+  {
+    "address": "1118:0b74",
+    "instruction": "INT 0x21",
+    "kind": "COMPUTED_CALL",
+    "owners": [
+      "__dos_findfirst"
+    ],
+    "targets": [],
+    "status": "OS interrupt; service behavior requires runtime review",
+    "resolution_task": "Review table/index bounds or trace the pointer producer and validate in step 4/5."
+  },
+  {
+    "address": "1118:0b91",
+    "instruction": "INT 0x21",
+    "kind": "COMPUTED_CALL",
+    "owners": [
+      "__dos_findfirst"
+    ],
+    "targets": [],
+    "status": "OS interrupt; service behavior requires runtime review",
+    "resolution_task": "Review table/index bounds or trace the pointer producer and validate in step 4/5."
+  },
+  {
+    "address": "1118:0bb9",
+    "instruction": "INT 0x21",
+    "kind": "COMPUTED_CALL",
+    "owners": [
+      "__dos_getdiskfree"
+    ],
+    "targets": [],
+    "status": "OS interrupt; service behavior requires runtime review",
+    "resolution_task": "Review table/index bounds or trace the pointer producer and validate in step 4/5."
+  },
+  {
+    "address": "1118:12c2",
+    "instruction": "JMP BX",
+    "kind": "COMPUTED_JUMP",
+    "owners": [
+      "__aNchkstk"
+    ],
+    "targets": [],
+    "status": "unresolved",
+    "resolution_task": "Review table/index bounds or trace the pointer producer and validate in step 4/5."
+  },
+  {
+    "address": "1118:12ed",
+    "instruction": "JMPF [0x1878]",
+    "kind": "COMPUTED_JUMP",
+    "owners": [
+      "__aFchkstk"
+    ],
+    "targets": [],
+    "status": "unresolved",
+    "resolution_task": "Review table/index bounds or trace the pointer producer and validate in step 4/5."
+  },
+  {
+    "address": "1118:1475",
+    "instruction": "JMPF [0x187c]",
+    "kind": "COMPUTED_JUMP",
+    "owners": [
+      "__setargv"
+    ],
+    "targets": [],
+    "status": "unresolved",
+    "resolution_task": "Review table/index bounds or trace the pointer producer and validate in step 4/5."
+  },
+  {
+    "address": "1118:213f",
+    "instruction": "JMP word ptr [DI]",
+    "kind": "COMPUTED_JUMP",
+    "owners": [
+      "__ctrandisp1"
+    ],
+    "targets": [
+      "1118:2141",
+      "1118:2149",
+      "1118:2162",
+      "1118:216d"
+    ],
+    "status": "static target set recovered",
+    "resolution_task": "Review table/index bounds or trace the pointer producer and validate in step 4/5."
+  },
+  {
+    "address": "1118:23d4",
+    "instruction": "INT 0x21",
+    "kind": "COMPUTED_CALL",
+    "owners": [
+      "__wrt2err"
+    ],
+    "targets": [],
+    "status": "OS interrupt; service behavior requires runtime review",
+    "resolution_task": "Review table/index bounds or trace the pointer producer and validate in step 4/5."
+  },
+  {
+    "address": "1118:2420",
+    "instruction": "JMP word ptr [BX]",
+    "kind": "COMPUTED_JUMP",
+    "owners": [
+      "__trandisp1"
+    ],
+    "targets": [],
+    "status": "unresolved",
+    "resolution_task": "Review table/index bounds or trace the pointer producer and validate in step 4/5."
+  },
+  {
+    "address": "1118:2483",
+    "instruction": "JMP word ptr [BX]",
+    "kind": "COMPUTED_JUMP",
+    "owners": [
+      "__trandisp2"
+    ],
+    "targets": [
+      "1118:1698",
+      "1118:16a0",
+      "1118:16ae",
+      "1118:16ba",
+      "1118:173c",
+      "1118:1746",
+      "1118:175a",
+      "1118:1780",
+      "1118:1785",
+      "1118:1793",
+      "1118:1796",
+      "1118:1799",
+      "1118:17bb",
+      "1118:17d4",
+      "1118:17db",
+      "1118:182c",
+      "1118:183c",
+      "1118:184e",
+      "1118:1863",
+      "1118:1884",
+      "1118:192a",
+      "1118:1931",
+      "1118:1939",
+      "1118:1945",
+      "1118:19ba",
+      "1118:19c3",
+      "1118:19d4",
+      "1118:19da",
+      "1118:19e0",
+      "1118:19e7",
+      "1118:2485",
+      "1118:248e",
+      "1118:248f",
+      "1118:2497",
+      "1118:24a1",
+      "1118:24a8",
+      "1118:24b6",
+      "1118:24b9",
+      "1118:24c7"
+    ],
+    "status": "static target set recovered",
+    "resolution_task": "Review table/index bounds or trace the pointer producer and validate in step 4/5."
+  },
+  {
+    "address": "1118:29c5",
+    "instruction": "CALLF [0x1c86]",
+    "kind": "COMPUTED_CALL",
+    "owners": [
+      "__Init80x87"
+    ],
+    "targets": [],
+    "status": "unresolved",
+    "resolution_task": "Review table/index bounds or trace the pointer producer and validate in step 4/5."
+  },
+  {
+    "address": "1118:308e",
+    "instruction": "CALLF [0x1c76]",
+    "kind": "COMPUTED_CALL",
+    "owners": [
+      "__nmalloc"
+    ],
+    "targets": [],
+    "status": "unresolved",
+    "resolution_task": "Review table/index bounds or trace the pointer producer and validate in step 4/5."
+  },
+  {
+    "address": "1118:38ec",
+    "instruction": "JMP word ptr [BP + -0x6]",
+    "kind": "COMPUTED_JUMP",
+    "owners": [
+      "__LD12MULTTENPOWER"
+    ],
+    "targets": [
+      "1118:3916"
+    ],
+    "status": "static target set recovered",
+    "resolution_task": "Review table/index bounds or trace the pointer producer and validate in step 4/5."
+  }
+]

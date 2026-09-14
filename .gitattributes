@@ -1,0 +1,2 @@
+# Preserve raw decompiler formatting in evidence fixtures, including blank-line spaces.
+analysis/decompiler/acceptance/** -whitespace

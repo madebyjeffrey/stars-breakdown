@@ -1,0 +1,2504 @@
+1020:06d6  55  PUSH BP
+; c:\user\jeffl\2.7j\mdi.c:300 | 
+1020:06d7  8bec  MOV BP,SP
+1020:06d9  81ec6000  SUB SP,0x60
+1020:06dd  56  PUSH SI
+1020:06de  57  PUSH DI
+1020:06df  8b760e  MOV SI,word ptr [BP + 0xe]
+1020:06e2  8b7e0a  MOV DI,word ptr [BP + 0xa]
+1020:06e5  8b460c  MOV AX,word ptr [BP + 0xc]
+; c:\user\jeffl\2.7j\mdi.c:305 | 
+1020:06e8  e98516  JMP 0x1020:1d70
+1020:06eb  56  PUSH SI
+; c:\user\jeffl\2.7j\mdi.c:312 | 
+1020:06ec  9ae801f814  CALLF 0x14f8:01e8
+1020:06f1  8946fc  MOV word ptr [BP + -0x4],AX
+1020:06f4  ff76fc  PUSH word ptr [BP + -0x4]
+; c:\user\jeffl\2.7j\mdi.c:313 | 
+1020:06f7  9ab20a0010  CALLF 0x1000:0ab2
+1020:06fc  83c402  ADD SP,0x2
+1020:06ff  ff76fc  PUSH word ptr [BP + -0x4]
+; c:\user\jeffl\2.7j\mdi.c:314 | 
+1020:0702  8d46d8  LEA AX,[BP + -0x28]
+1020:0705  8cd2  MOV DX,SS
+1020:0707  52  PUSH DX
+1020:0708  50  PUSH AX
+1020:0709  9a3801f814  CALLF 0x14f8:0138
+1020:070e  8b46d8  MOV AX,word ptr [BP + -0x28]
+; c:\user\jeffl\2.7j\mdi.c:315 | 
+1020:0711  a31a59  MOV [0x591a],AX
+1020:0714  a1fa23  MOV AX,[0x23fa]
+; c:\user\jeffl\2.7j\mdi.c:316 | 
+1020:0717  050c00  ADD AX,0xc
+1020:071a  d1e0  SHL AX,0x1
+1020:071c  a3c623  MOV [0x23c6],AX
+1020:071f  56  PUSH SI
+; c:\user\jeffl\2.7j\mdi.c:317 | 
+1020:0720  ff76fc  PUSH word ptr [BP + -0x4]
+1020:0723  9aec01f814  CALLF 0x14f8:01ec
+1020:0728  9aaa0e0010  CALLF 0x1000:0eaa
+; c:\user\jeffl\2.7j\mdi.c:319 | 
+1020:072d  833ede2202  CMP word ptr [0x22de],0x2
+; c:\user\jeffl\2.7j\mdi.c:320 | 
+1020:0732  7403  JZ 0x1020:0737
+1020:0734  e90600  JMP 0x1020:073d
+1020:0737  b80100  MOV AX,0x1
+1020:073a  e90300  JMP 0x1020:0740
+1020:073d  b80000  MOV AX,0x0
+1020:0740  50  PUSH AX
+1020:0741  9a7e584810  CALLF 0x1048:587e
+1020:0746  83c402  ADD SP,0x2
+1020:0749  e9df16  JMP 0x1020:1e2b
+; c:\user\jeffl\2.7j\mdi.c:332 | 
+1020:074c  833e520300  CMP word ptr [0x352],0x0
+; c:\user\jeffl\2.7j\mdi.c:345 | 
+1020:0751  7503  JNZ 0x1020:0756
+1020:0753  e91600  JMP 0x1020:076c
+1020:0756  ff365203  PUSH word ptr [0x352]
+; c:\user\jeffl\2.7j\mdi.c:346 | 
+1020:075a  ff760c  PUSH word ptr [BP + 0xc]
+1020:075d  57  PUSH DI
+1020:075e  ff7608  PUSH word ptr [BP + 0x8]
+1020:0761  ff7606  PUSH word ptr [BP + 0x6]
+1020:0764  9a6002f814  CALLF 0x14f8:0260
+1020:0769  e9c816  JMP 0x1020:1e34
+1020:076c  56  PUSH SI
+; c:\user\jeffl\2.7j\mdi.c:348 | 
+1020:076d  9ae801f814  CALLF 0x14f8:01e8
+1020:0772  8946fc  MOV word ptr [BP + -0x4],AX
+1020:0775  ff76fc  PUSH word ptr [BP + -0x4]
+; c:\user\jeffl\2.7j\mdi.c:349 | 
+1020:0778  ff361453  PUSH word ptr [0x5314]
+1020:077c  b80000  MOV AX,0x0
+1020:077f  50  PUSH AX
+1020:0780  9ad802f814  CALLF 0x14f8:02d8
+1020:0785  8946f8  MOV word ptr [BP + -0x8],AX
+1020:0788  ff76fc  PUSH word ptr [BP + -0x4]
+; c:\user\jeffl\2.7j\mdi.c:351 | 
+1020:078b  9adc02f814  CALLF 0x14f8:02dc
+1020:0790  8946fa  MOV word ptr [BP + -0x6],AX
+1020:0793  ff76fc  PUSH word ptr [BP + -0x4]
+; c:\user\jeffl\2.7j\mdi.c:353 | 
+1020:0796  ff76f8  PUSH word ptr [BP + -0x8]
+1020:0799  b80000  MOV AX,0x0
+1020:079c  50  PUSH AX
+1020:079d  9ad802f814  CALLF 0x14f8:02d8
+1020:07a2  56  PUSH SI
+; c:\user\jeffl\2.7j\mdi.c:354 | 
+1020:07a3  ff76fc  PUSH word ptr [BP + -0x4]
+1020:07a6  9aec01f814  CALLF 0x14f8:01ec
+1020:07ab  837efa00  CMP word ptr [BP + -0x6],0x0
+; c:\user\jeffl\2.7j\mdi.c:356 | 
+1020:07af  7503  JNZ 0x1020:07b4
+1020:07b1  e91e00  JMP 0x1020:07d2
+1020:07b4  56  PUSH SI
+; c:\user\jeffl\2.7j\mdi.c:358 | 
+1020:07b5  b80000  MOV AX,0x0
+1020:07b8  ba0000  MOV DX,0x0
+1020:07bb  52  PUSH DX
+1020:07bc  50  PUSH AX
+1020:07bd  b80100  MOV AX,0x1
+1020:07c0  50  PUSH AX
+1020:07c1  9a7402f814  CALLF 0x14f8:0274
+1020:07c6  b80100  MOV AX,0x1
+; c:\user\jeffl\2.7j\mdi.c:359 | 
+1020:07c9  ba0000  MOV DX,0x0
+1020:07cc  e96516  JMP 0x1020:1e34
+1020:07d2  b80000  MOV AX,0x0
+; c:\user\jeffl\2.7j\mdi.c:362 | 
+1020:07d5  ba0000  MOV DX,0x0
+1020:07d8  e95916  JMP 0x1020:1e34
+1020:07de  3bfe  CMP DI,SI
+; c:\user\jeffl\2.7j\mdi.c:366 | 
+1020:07e0  7503  JNZ 0x1020:07e5
+1020:07e2  e90300  JMP 0x1020:07e8
+1020:07e5  e964ff  JMP 0x1020:074c
+; c:\user\jeffl\2.7j\mdi.c:367 | 
+1020:07e8  e94016  JMP 0x1020:1e2b
+; c:\user\jeffl\2.7j\mdi.c:368 | 
+1020:07eb  57  PUSH DI
+; c:\user\jeffl\2.7j\mdi.c:372 | 
+1020:07ec  9a76532010  CALLF 0x1020:5376
+1020:07f1  83c402  ADD SP,0x2
+1020:07f4  e93416  JMP 0x1020:1e2b
+; c:\user\jeffl\2.7j\mdi.c:373 | 
+1020:07f7  c7068c01ffff  MOV word ptr [0x18c],0xffff
+; c:\user\jeffl\2.7j\mdi.c:381 | 
+1020:07fd  a19a22  MOV AX,[0x229a]
+; c:\user\jeffl\2.7j\mdi.c:383 | 
+1020:0800  d1e8  SHR AX,0x1
+1020:0802  250100  AND AX,0x1
+1020:0805  3d0000  CMP AX,0x0
+1020:0808  7503  JNZ 0x1020:080d
+1020:080a  e9e104  JMP 0x1020:0cee
+1020:080d  a19a22  MOV AX,[0x229a]
+; c:\user\jeffl\2.7j\mdi.c:385 | 
+1020:0810  25fdff  AND AX,0xfffd
+1020:0813  0d0000  OR AX,0x0
+1020:0816  a39a22  MOV [0x229a],AX
+1020:0819  b90e00  MOV CX,0xe
+; c:\user\jeffl\2.7j\mdi.c:387 | 
+1020:081c  a19a22  MOV AX,[0x229a]
+1020:081f  d3e8  SHR AX,CL
+1020:0821  250100  AND AX,0x1
+1020:0824  3d0000  CMP AX,0x0
+1020:0827  7503  JNZ 0x1020:082c
+1020:0829  e99e01  JMP 0x1020:09ca
+1020:082c  c7064c070100  MOV word ptr [0x74c],0x1
+; c:\user\jeffl\2.7j\mdi.c:391 | 
+1020:0832  b80700  MOV AX,0x7
+; c:\user\jeffl\2.7j\mdi.c:392 | 
+1020:0835  50  PUSH AX
+1020:0836  9a6a7f3810  CALLF 0x1038:7f6a
+1020:083b  83c402  ADD SP,0x2
+1020:083e  b88e03  MOV AX,0x38e
+; c:\user\jeffl\2.7j\mdi.c:393 | 
+1020:0841  50  PUSH AX
+1020:0842  b8a256  MOV AX,0x56a2
+1020:0845  50  PUSH AX
+1020:0846  9a10087010  CALLF 0x1070:0810
+1020:084b  83c404  ADD SP,0x4
+1020:084e  3d0000  CMP AX,0x0
+1020:0851  7503  JNZ 0x1020:0856
+1020:0853  e97101  JMP 0x1020:09c7
+1020:0856  9a86662010  CALLF 0x1020:6686
+; c:\user\jeffl\2.7j\mdi.c:395 | 
+1020:085b  9ab0447010  CALLF 0x1070:44b0
+; c:\user\jeffl\2.7j\mdi.c:396 | 
+1020:0860  9abc562010  CALLF 0x1020:56bc
+; c:\user\jeffl\2.7j\mdi.c:397 | 
+1020:0865  a18200  MOV AX,[0x82]
+; c:\user\jeffl\2.7j\mdi.c:401 | 
+1020:0868  056009  ADD AX,0x960
+1020:086b  50  PUSH AX
+1020:086c  b89000  MOV AX,0x90
+1020:086f  8cda  MOV DX,DS
+1020:0871  52  PUSH DX
+1020:0872  50  PUSH AX
+1020:0873  b89203  MOV AX,0x392
+1020:0876  8cda  MOV DX,DS
+1020:0878  52  PUSH DX
+1020:0879  50  PUSH AX
+1020:087a  8d46a0  LEA AX,[BP + -0x60]
+1020:087d  8cd2  MOV DX,SS
+1020:087f  52  PUSH DX
+1020:0880  50  PUSH AX
+1020:0881  9af802f814  CALLF 0x14f8:02f8
+1020:0886  83c40e  ADD SP,0xe
+1020:0889  8d46a0  LEA AX,[BP + -0x60]
+; c:\user\jeffl\2.7j\mdi.c:402 | 
+1020:088c  8cd2  MOV DX,SS
+1020:088e  52  PUSH DX
+1020:088f  50  PUSH AX
+1020:0890  b80700  MOV AX,0x7
+1020:0893  50  PUSH AX
+1020:0894  9ae67f3810  CALLF 0x1038:7fe6
+1020:0899  83c406  ADD SP,0x6
+1020:089c  c746fa0000  MOV word ptr [BP + -0x6],0x0
+; c:\user\jeffl\2.7j\mdi.c:404 | 
+1020:08a1  e90400  JMP 0x1020:08a8
+1020:08a4  8346fa01  ADD word ptr [BP + -0x6],0x1
+1020:08a8  a17800  MOV AX,[0x78]
+1020:08ab  3946fa  CMP word ptr [BP + -0x6],AX
+1020:08ae  7c03  JL 0x1020:08b3
+1020:08b0  e91401  JMP 0x1020:09c7
+1020:08b3  8b5efa  MOV BX,word ptr [BP + -0x6]
+; c:\user\jeffl\2.7j\mdi.c:406 | 
+1020:08b6  d1e3  SHL BX,0x1
+1020:08b8  8b87a465  MOV AX,word ptr [BX + 0x65a4]
+1020:08bc  050100  ADD AX,0x1
+1020:08bf  3d0300  CMP AX,0x3
+1020:08c2  7f03  JG 0x1020:08c7
+1020:08c4  e92300  JMP 0x1020:08ea
+1020:08c7  8b46fa  MOV AX,word ptr [BP + -0x6]
+; c:\user\jeffl\2.7j\mdi.c:407 | 
+1020:08ca  050100  ADD AX,0x1
+1020:08cd  50  PUSH AX
+1020:08ce  b8a003  MOV AX,0x3a0
+1020:08d1  8cda  MOV DX,DS
+1020:08d3  52  PUSH DX
+1020:08d4  50  PUSH AX
+1020:08d5  8d46a0  LEA AX,[BP + -0x60]
+1020:08d8  8cd2  MOV DX,SS
+1020:08da  52  PUSH DX
+1020:08db  50  PUSH AX
+1020:08dc  9af802f814  CALLF 0x14f8:02f8
+1020:08e1  83c40a  ADD SP,0xa
+1020:08e4  8946f6  MOV word ptr [BP + -0xa],AX
+1020:08e7  e92000  JMP 0x1020:090a
+; c:\user\jeffl\2.7j\mdi.c:408 | 
+1020:08ea  8b46fa  MOV AX,word ptr [BP + -0x6]
+; c:\user\jeffl\2.7j\mdi.c:409 | 
+1020:08ed  050100  ADD AX,0x1
+1020:08f0  50  PUSH AX
+1020:08f1  b8ac03  MOV AX,0x3ac
+1020:08f4  8cda  MOV DX,DS
+1020:08f6  52  PUSH DX
+1020:08f7  50  PUSH AX
+1020:08f8  8d46a0  LEA AX,[BP + -0x60]
+1020:08fb  8cd2  MOV DX,SS
+1020:08fd  52  PUSH DX
+1020:08fe  50  PUSH AX
+1020:08ff  9af802f814  CALLF 0x14f8:02f8
+1020:0904  83c40a  ADD SP,0xa
+1020:0907  8946f6  MOV word ptr [BP + -0xa],AX
+1020:090a  b90600  MOV CX,0x6
+; c:\user\jeffl\2.7j\mdi.c:411 | 
+1020:090d  a1d007  MOV AX,[0x7d0]
+1020:0910  d3e8  SHR AX,CL
+1020:0912  250100  AND AX,0x1
+1020:0915  3d0000  CMP AX,0x0
+1020:0918  7403  JZ 0x1020:091d
+1020:091a  e94100  JMP 0x1020:095e
+1020:091d  b80000  MOV AX,0x0
+; c:\user\jeffl\2.7j\mdi.c:414 | 
+1020:0920  50  PUSH AX
+1020:0921  b80000  MOV AX,0x0
+1020:0924  50  PUSH AX
+1020:0925  b80100  MOV AX,0x1
+1020:0928  50  PUSH AX
+1020:0929  b80100  MOV AX,0x1
+1020:092c  50  PUSH AX
+1020:092d  b80100  MOV AX,0x1
+1020:0930  50  PUSH AX
+1020:0931  ff76fa  PUSH word ptr [BP + -0x6]
+1020:0934  9af2113810  CALLF 0x1038:11f2
+1020:0939  83c40c  ADD SP,0xc
+1020:093c  8cda  MOV DX,DS
+1020:093e  52  PUSH DX
+1020:093f  50  PUSH AX
+1020:0940  b8b103  MOV AX,0x3b1
+1020:0943  8cda  MOV DX,DS
+1020:0945  52  PUSH DX
+1020:0946  50  PUSH AX
+1020:0947  8b46f6  MOV AX,word ptr [BP + -0xa]
+1020:094a  8d4ea0  LEA CX,[BP + -0x60]
+1020:094d  03c8  ADD CX,AX
+1020:094f  8cd2  MOV DX,SS
+1020:0951  52  PUSH DX
+1020:0952  51  PUSH CX
+1020:0953  9af802f814  CALLF 0x14f8:02f8
+1020:0958  83c40c  ADD SP,0xc
+1020:095b  0146f6  ADD word ptr [BP + -0xa],AX
+1020:095e  8b5efa  MOV BX,word ptr [BP + -0x6]
+; c:\user\jeffl\2.7j\mdi.c:417 | 
+1020:0961  d1e3  SHL BX,0x1
+1020:0963  8b87a465  MOV AX,word ptr [BX + 0x65a4]
+1020:0967  05cc02  ADD AX,0x2cc
+1020:096a  50  PUSH AX
+1020:096b  9a3a741010  CALLF 0x1010:743a
+1020:0970  83c402  ADD SP,0x2
+1020:0973  50  PUSH AX
+1020:0974  8d46a0  LEA AX,[BP + -0x60]
+1020:0977  50  PUSH AX
+1020:0978  9a52031811  CALLF 0x1118:0352
+1020:097d  83c404  ADD SP,0x4
+1020:0980  b8c000  MOV AX,0xc0
+; c:\user\jeffl\2.7j\mdi.c:419 | 
+1020:0983  f76efa  IMUL word ptr [BP + -0x6]
+1020:0986  bba259  MOV BX,0x59a2
+1020:0989  03d8  ADD BX,AX
+1020:098b  8b4754  MOV AX,word ptr [BX + 0x54]
+1020:098e  d1e8  SHR AX,0x1
+1020:0990  d1e8  SHR AX,0x1
+1020:0992  d1e8  SHR AX,0x1
+1020:0994  d1e8  SHR AX,0x1
+1020:0996  250100  AND AX,0x1
+1020:0999  3d0000  CMP AX,0x0
+1020:099c  7503  JNZ 0x1020:09a1
+1020:099e  e91000  JMP 0x1020:09b1
+1020:09a1  b8b703  MOV AX,0x3b7
+; c:\user\jeffl\2.7j\mdi.c:420 | 
+1020:09a4  50  PUSH AX
+1020:09a5  8d46a0  LEA AX,[BP + -0x60]
+1020:09a8  50  PUSH AX
+1020:09a9  9a52031811  CALLF 0x1118:0352
+1020:09ae  83c404  ADD SP,0x4
+1020:09b1  8d46a0  LEA AX,[BP + -0x60]
+; c:\user\jeffl\2.7j\mdi.c:422 | 
+1020:09b4  8cd2  MOV DX,SS
+1020:09b6  52  PUSH DX
+1020:09b7  50  PUSH AX
+1020:09b8  b80700  MOV AX,0x7
+1020:09bb  50  PUSH AX
+1020:09bc  9ae67f3810  CALLF 0x1038:7fe6
+1020:09c1  83c406  ADD SP,0x6
+1020:09c4  e9ddfe  JMP 0x1020:08a4
+; c:\user\jeffl\2.7j\mdi.c:423 | 
+1020:09c7  e92701  JMP 0x1020:0af1
+; c:\user\jeffl\2.7j\mdi.c:426 | 
+1020:09ca  b90a00  MOV CX,0xa
+; c:\user\jeffl\2.7j\mdi.c:430 | 
+1020:09cd  a19a22  MOV AX,[0x229a]
+1020:09d0  d3e8  SHR AX,CL
+1020:09d2  250100  AND AX,0x1
+1020:09d5  3d0000  CMP AX,0x0
+1020:09d8  7503  JNZ 0x1020:09dd
+1020:09da  e92300  JMP 0x1020:0a00
+1020:09dd  833eac0800  CMP word ptr [0x8ac],0x0
+; c:\user\jeffl\2.7j\mdi.c:432 | 
+1020:09e2  7403  JZ 0x1020:09e7
+1020:09e4  e90a00  JMP 0x1020:09f1
+1020:09e7  833eae0800  CMP word ptr [0x8ae],0x0
+1020:09ec  7503  JNZ 0x1020:09f1
+1020:09ee  e90c00  JMP 0x1020:09fd
+1020:09f1  b8a256  MOV AX,0x56a2
+; c:\user\jeffl\2.7j\mdi.c:433 | 
+1020:09f4  50  PUSH AX
+1020:09f5  9a12487810  CALLF 0x1078:4812
+1020:09fa  83c402  ADD SP,0x2
+1020:09fd  e9f100  JMP 0x1020:0af1
+; c:\user\jeffl\2.7j\mdi.c:434 | 
+1020:0a00  a19a22  MOV AX,[0x229a]
+; c:\user\jeffl\2.7j\mdi.c:438 | 
+1020:0a03  d1e8  SHR AX,0x1
+1020:0a05  d1e8  SHR AX,0x1
+1020:0a07  d1e8  SHR AX,0x1
+1020:0a09  250100  AND AX,0x1
+1020:0a0c  3d0000  CMP AX,0x0
+1020:0a0f  7503  JNZ 0x1020:0a14
+1020:0a11  e95301  JMP 0x1020:0b67
+1020:0a14  a19a22  MOV AX,[0x229a]
+; c:\user\jeffl\2.7j\mdi.c:441 | 
+1020:0a17  d1e8  SHR AX,0x1
+1020:0a19  d1e8  SHR AX,0x1
+1020:0a1b  250100  AND AX,0x1
+1020:0a1e  3d0000  CMP AX,0x0
+1020:0a21  7403  JZ 0x1020:0a26
+1020:0a23  e91600  JMP 0x1020:0a3c
+1020:0a26  a19a22  MOV AX,[0x229a]
+1020:0a29  d1e8  SHR AX,0x1
+1020:0a2b  d1e8  SHR AX,0x1
+1020:0a2d  d1e8  SHR AX,0x1
+1020:0a2f  d1e8  SHR AX,0x1
+1020:0a31  250100  AND AX,0x1
+1020:0a34  3d0000  CMP AX,0x0
+1020:0a37  7503  JNZ 0x1020:0a3c
+1020:0a39  e90d00  JMP 0x1020:0a49
+1020:0a3c  9a96692010  CALLF 0x1020:6996
+1020:0a41  3d0000  CMP AX,0x0
+1020:0a44  7403  JZ 0x1020:0a49
+1020:0a46  e9dc00  JMP 0x1020:0b25
+1020:0a49  9abc562010  CALLF 0x1020:56bc
+; c:\user\jeffl\2.7j\mdi.c:443 | 
+1020:0a4e  9a0000b010  CALLF 0x10b0:0000
+; c:\user\jeffl\2.7j\mdi.c:444 | 
+1020:0a53  b90900  MOV CX,0x9
+; c:\user\jeffl\2.7j\mdi.c:445 | 
+1020:0a56  a19a22  MOV AX,[0x229a]
+1020:0a59  d3e8  SHR AX,CL
+1020:0a5b  250100  AND AX,0x1
+1020:0a5e  3d0000  CMP AX,0x0
+1020:0a61  7503  JNZ 0x1020:0a66
+1020:0a63  e97900  JMP 0x1020:0adf
+1020:0a66  a1b051  MOV AX,[0x51b0]
+1020:0a69  8b16b251  MOV DX,word ptr [0x51b2]
+1020:0a6d  39069e01  CMP word ptr [0x19e],AX
+1020:0a71  7203  JC 0x1020:0a76
+1020:0a73  e96900  JMP 0x1020:0adf
+1020:0a76  9ab0447010  CALLF 0x1070:44b0
+; c:\user\jeffl\2.7j\mdi.c:448 | 
+1020:0a7b  c746f0a256  MOV word ptr [BP + -0x10],0x56a2
+; c:\user\jeffl\2.7j\mdi.c:449 | 
+1020:0a80  c41e9e01  LES BX,[0x19e]
+; c:\user\jeffl\2.7j\mdi.c:450 | 
+1020:0a84  268a07  MOV AL,byte ptr ES:[BX]
+1020:0a87  98  CBW
+1020:0a88  3d0a00  CMP AX,0xa
+1020:0a8b  7503  JNZ 0x1020:0a90
+1020:0a8d  e93100  JMP 0x1020:0ac1
+1020:0a90  a1b051  MOV AX,[0x51b0]
+1020:0a93  8b16b251  MOV DX,word ptr [0x51b2]
+1020:0a97  39069e01  CMP word ptr [0x19e],AX
+1020:0a9b  7403  JZ 0x1020:0aa0
+1020:0a9d  e90900  JMP 0x1020:0aa9
+1020:0aa0  3916a001  CMP word ptr [0x1a0],DX
+1020:0aa4  7503  JNZ 0x1020:0aa9
+1020:0aa6  e91800  JMP 0x1020:0ac1
+1020:0aa9  c41e9e01  LES BX,[0x19e]
+; c:\user\jeffl\2.7j\mdi.c:452 | 
+1020:0aad  268a07  MOV AL,byte ptr ES:[BX]
+1020:0ab0  8b5ef0  MOV BX,word ptr [BP + -0x10]
+1020:0ab3  8807  MOV byte ptr [BX],AL
+1020:0ab5  83069e0101  ADD word ptr [0x19e],0x1
+; c:\user\jeffl\2.7j\mdi.c:453 | 
+1020:0aba  8346f001  ADD word ptr [BP + -0x10],0x1
+; c:\user\jeffl\2.7j\mdi.c:454 | 
+1020:0abe  e9bfff  JMP 0x1020:0a80
+; c:\user\jeffl\2.7j\mdi.c:455 | 
+1020:0ac1  83069e0101  ADD word ptr [0x19e],0x1
+; c:\user\jeffl\2.7j\mdi.c:456 | 
+1020:0ac6  8b5ef0  MOV BX,word ptr [BP + -0x10]
+; c:\user\jeffl\2.7j\mdi.c:457 | 
+1020:0ac9  c647ff00  MOV byte ptr [BX + -0x1],0x0
+1020:0acd  a19a22  MOV AX,[0x229a]
+; c:\user\jeffl\2.7j\mdi.c:458 | 
+1020:0ad0  25feff  AND AX,0xfffe
+1020:0ad3  0d0100  OR AX,0x1
+1020:0ad6  a39a22  MOV [0x229a],AX
+1020:0ad9  e938ff  JMP 0x1020:0a14
+; c:\user\jeffl\2.7j\mdi.c:459 | 
+1020:0adf  833ea62200  CMP word ptr [0x22a6],0x0
+1020:0ae4  7503  JNZ 0x1020:0ae9
+1020:0ae6  e90800  JMP 0x1020:0af1
+1020:0ae9  832ea62201  SUB word ptr [0x22a6],0x1
+; c:\user\jeffl\2.7j\mdi.c:463 | 
+1020:0aee  e923ff  JMP 0x1020:0a14
+; c:\user\jeffl\2.7j\mdi.c:464 | 
+1020:0af1  b90600  MOV CX,0x6
+; c:\user\jeffl\2.7j\mdi.c:467 | 
+1020:0af4  a1cc07  MOV AX,[0x7cc]
+1020:0af7  d3e8  SHR AX,CL
+1020:0af9  250100  AND AX,0x1
+1020:0afc  3d0000  CMP AX,0x0
+1020:0aff  7503  JNZ 0x1020:0b04
+1020:0b01  e91200  JMP 0x1020:0b16
+1020:0b04  a18c03  MOV AX,[0x38c]
+; c:\user\jeffl\2.7j\mdi.c:468 | 
+1020:0b07  99  CWD
+1020:0b08  52  PUSH DX
+1020:0b09  50  PUSH AX
+1020:0b0a  b80000  MOV AX,0x0
+1020:0b0d  50  PUSH AX
+1020:0b0e  9a6401f814  CALLF 0x14f8:0164
+1020:0b13  e90900  JMP 0x1020:0b1f
+; c:\user\jeffl\2.7j\mdi.c:469 | 
+1020:0b16  ff368c03  PUSH word ptr [0x38c]
+; c:\user\jeffl\2.7j\mdi.c:470 | 
+1020:0b1a  9a6001f814  CALLF 0x14f8:0160
+1020:0b1f  e90913  JMP 0x1020:1e2b
+; c:\user\jeffl\2.7j\mdi.c:471 | 
+1020:0b25  a19a22  MOV AX,[0x229a]
+1020:0b28  d1e8  SHR AX,0x1
+1020:0b2a  d1e8  SHR AX,0x1
+1020:0b2c  d1e8  SHR AX,0x1
+1020:0b2e  d1e8  SHR AX,0x1
+1020:0b30  250100  AND AX,0x1
+1020:0b33  3d0000  CMP AX,0x0
+1020:0b36  7503  JNZ 0x1020:0b3b
+1020:0b38  e92c00  JMP 0x1020:0b67
+1020:0b3b  b90900  MOV CX,0x9
+; c:\user\jeffl\2.7j\mdi.c:475 | 
+1020:0b3e  a19a22  MOV AX,[0x229a]
+1020:0b41  d3e8  SHR AX,CL
+1020:0b43  250100  AND AX,0x1
+1020:0b46  3d0000  CMP AX,0x0
+1020:0b49  7503  JNZ 0x1020:0b4e
+1020:0b4b  e91600  JMP 0x1020:0b64
+1020:0b4e  a1b051  MOV AX,[0x51b0]
+1020:0b51  8b16b251  MOV DX,word ptr [0x51b2]
+1020:0b55  39069e01  CMP word ptr [0x19e],AX
+1020:0b59  7203  JC 0x1020:0b5e
+1020:0b5b  e90600  JMP 0x1020:0b64
+1020:0b5e  e915ff  JMP 0x1020:0a76
+; c:\user\jeffl\2.7j\mdi.c:476 | 
+1020:0b64  e98aff  JMP 0x1020:0af1
+; c:\user\jeffl\2.7j\mdi.c:478 | 
+1020:0b67  b8d90e  MOV AX,0xed9
+; c:\user\jeffl\2.7j\mdi.c:482 | 
+1020:0b6a  50  PUSH AX
+1020:0b6b  56  PUSH SI
+1020:0b6c  9a7a2f2010  CALLF 0x1020:2f7a
+1020:0b71  83c404  ADD SP,0x4
+1020:0b74  a19a22  MOV AX,[0x229a]
+; c:\user\jeffl\2.7j\mdi.c:484 | 
+1020:0b77  d1e8  SHR AX,0x1
+1020:0b79  d1e8  SHR AX,0x1
+1020:0b7b  d1e8  SHR AX,0x1
+1020:0b7d  d1e8  SHR AX,0x1
+1020:0b7f  250100  AND AX,0x1
+1020:0b82  3d0000  CMP AX,0x0
+1020:0b85  7503  JNZ 0x1020:0b8a
+1020:0b87  e90600  JMP 0x1020:0b90
+1020:0b8a  e964ff  JMP 0x1020:0af1
+; c:\user\jeffl\2.7j\mdi.c:485 | 
+1020:0b90  a19a22  MOV AX,[0x229a]
+1020:0b93  d1e8  SHR AX,0x1
+1020:0b95  d1e8  SHR AX,0x1
+1020:0b97  d1e8  SHR AX,0x1
+1020:0b99  250100  AND AX,0x1
+1020:0b9c  3d0000  CMP AX,0x0
+1020:0b9f  7503  JNZ 0x1020:0ba4
+1020:0ba1  e90600  JMP 0x1020:0baa
+1020:0ba4  e9c001  JMP 0x1020:0d67
+; c:\user\jeffl\2.7j\mdi.c:487 | 
+1020:0baa  833e700000  CMP word ptr [0x70],0x0
+1020:0baf  7403  JZ 0x1020:0bb4
+1020:0bb1  e91000  JMP 0x1020:0bc4
+1020:0bb4  833e720000  CMP word ptr [0x72],0x0
+1020:0bb9  7403  JZ 0x1020:0bbe
+1020:0bbb  e90600  JMP 0x1020:0bc4
+1020:0bbe  e92d01  JMP 0x1020:0cee
+; c:\user\jeffl\2.7j\mdi.c:489 | 
+1020:0bc4  833e8c01ff  CMP word ptr [0x18c],-0x1
+1020:0bc9  7503  JNZ 0x1020:0bce
+1020:0bcb  e9c000  JMP 0x1020:0c8e
+1020:0bce  b90c00  MOV CX,0xc
+1020:0bd1  a19a22  MOV AX,[0x229a]
+1020:0bd4  d3e8  SHR AX,CL
+1020:0bd6  250100  AND AX,0x1
+1020:0bd9  3d0000  CMP AX,0x0
+1020:0bdc  7403  JZ 0x1020:0be1
+1020:0bde  e92600  JMP 0x1020:0c07
+1020:0be1  b90b00  MOV CX,0xb
+1020:0be4  a19a22  MOV AX,[0x229a]
+1020:0be7  d3e8  SHR AX,CL
+1020:0be9  250100  AND AX,0x1
+1020:0bec  3d0000  CMP AX,0x0
+1020:0bef  7403  JZ 0x1020:0bf4
+1020:0bf1  e91300  JMP 0x1020:0c07
+1020:0bf4  b90d00  MOV CX,0xd
+1020:0bf7  a19a22  MOV AX,[0x229a]
+1020:0bfa  d3e8  SHR AX,CL
+1020:0bfc  250100  AND AX,0x1
+1020:0bff  3d0000  CMP AX,0x0
+1020:0c02  7503  JNZ 0x1020:0c07
+1020:0c04  e98700  JMP 0x1020:0c8e
+1020:0c07  b90d00  MOV CX,0xd
+; c:\user\jeffl\2.7j\mdi.c:492 | 
+1020:0c0a  a19a22  MOV AX,[0x229a]
+1020:0c0d  d3e8  SHR AX,CL
+1020:0c0f  250100  AND AX,0x1
+1020:0c12  3d0000  CMP AX,0x0
+1020:0c15  7503  JNZ 0x1020:0c1a
+1020:0c17  e91900  JMP 0x1020:0c33
+1020:0c1a  ff368c25  PUSH word ptr [0x258c]
+; c:\user\jeffl\2.7j\mdi.c:493 | 
+1020:0c1e  b81101  MOV AX,0x111
+1020:0c21  50  PUSH AX
+1020:0c22  b85500  MOV AX,0x55
+1020:0c25  50  PUSH AX
+1020:0c26  b80000  MOV AX,0x0
+1020:0c29  ba0000  MOV DX,0x0
+1020:0c2c  52  PUSH DX
+1020:0c2d  50  PUSH AX
+1020:0c2e  9a5c02f814  CALLF 0x14f8:025c
+1020:0c33  b90c00  MOV CX,0xc
+; c:\user\jeffl\2.7j\mdi.c:495 | 
+1020:0c36  a19a22  MOV AX,[0x229a]
+1020:0c39  d3e8  SHR AX,CL
+1020:0c3b  250100  AND AX,0x1
+1020:0c3e  3d0000  CMP AX,0x0
+1020:0c41  7503  JNZ 0x1020:0c46
+1020:0c43  e91900  JMP 0x1020:0c5f
+1020:0c46  ff368c25  PUSH word ptr [0x258c]
+; c:\user\jeffl\2.7j\mdi.c:496 | 
+1020:0c4a  b81101  MOV AX,0x111
+1020:0c4d  50  PUSH AX
+1020:0c4e  b85400  MOV AX,0x54
+1020:0c51  50  PUSH AX
+1020:0c52  b80000  MOV AX,0x0
+1020:0c55  ba0000  MOV DX,0x0
+1020:0c58  52  PUSH DX
+1020:0c59  50  PUSH AX
+1020:0c5a  9a5c02f814  CALLF 0x14f8:025c
+1020:0c5f  b90b00  MOV CX,0xb
+; c:\user\jeffl\2.7j\mdi.c:498 | 
+1020:0c62  a19a22  MOV AX,[0x229a]
+1020:0c65  d3e8  SHR AX,CL
+1020:0c67  250100  AND AX,0x1
+1020:0c6a  3d0000  CMP AX,0x0
+1020:0c6d  7503  JNZ 0x1020:0c72
+1020:0c6f  e91900  JMP 0x1020:0c8b
+1020:0c72  ff368c25  PUSH word ptr [0x258c]
+; c:\user\jeffl\2.7j\mdi.c:499 | 
+1020:0c76  b81101  MOV AX,0x111
+1020:0c79  50  PUSH AX
+1020:0c7a  b85300  MOV AX,0x53
+1020:0c7d  50  PUSH AX
+1020:0c7e  b80000  MOV AX,0x0
+1020:0c81  ba0000  MOV DX,0x0
+1020:0c84  52  PUSH DX
+1020:0c85  50  PUSH AX
+1020:0c86  9a5c02f814  CALLF 0x14f8:025c
+1020:0c8b  e963fe  JMP 0x1020:0af1
+; c:\user\jeffl\2.7j\mdi.c:501 | 
+1020:0c8e  ff368c25  PUSH word ptr [0x258c]
+; c:\user\jeffl\2.7j\mdi.c:504 | 
+1020:0c92  b80500  MOV AX,0x5
+1020:0c95  50  PUSH AX
+1020:0c96  9abc01f814  CALLF 0x14f8:01bc
+1020:0c9b  b80000  MOV AX,0x0
+; c:\user\jeffl\2.7j\mdi.c:505 | 
+1020:0c9e  50  PUSH AX
+1020:0c9f  9a76532010  CALLF 0x1020:5376
+1020:0ca4  83c402  ADD SP,0x2
+1020:0ca7  ff368c25  PUSH word ptr [0x258c]
+; c:\user\jeffl\2.7j\mdi.c:506 | 
+1020:0cab  b81101  MOV AX,0x111
+1020:0cae  50  PUSH AX
+1020:0caf  b8a10f  MOV AX,0xfa1
+1020:0cb2  50  PUSH AX
+1020:0cb3  b80000  MOV AX,0x0
+1020:0cb6  ba0000  MOV DX,0x0
+1020:0cb9  52  PUSH DX
+1020:0cba  50  PUSH AX
+1020:0cbb  9a5c02f814  CALLF 0x14f8:025c
+1020:0cc0  a19a22  MOV AX,[0x229a]
+; c:\user\jeffl\2.7j\mdi.c:507 | 
+1020:0cc3  d1e8  SHR AX,0x1
+1020:0cc5  d1e8  SHR AX,0x1
+1020:0cc7  250100  AND AX,0x1
+1020:0cca  3d0000  CMP AX,0x0
+1020:0ccd  7503  JNZ 0x1020:0cd2
+1020:0ccf  e91900  JMP 0x1020:0ceb
+1020:0cd2  a19a22  MOV AX,[0x229a]
+; c:\user\jeffl\2.7j\mdi.c:510 | 
+1020:0cd5  25fbff  AND AX,0xfffb
+1020:0cd8  0d0000  OR AX,0x0
+1020:0cdb  a39a22  MOV [0x229a],AX
+1020:0cde  b86a00  MOV AX,0x6a
+; c:\user\jeffl\2.7j\mdi.c:511 | 
+1020:0ce1  50  PUSH AX
+1020:0ce2  56  PUSH SI
+1020:0ce3  9a7a2f2010  CALLF 0x1020:2f7a
+1020:0ce8  83c404  ADD SP,0x4
+1020:0ceb  e97900  JMP 0x1020:0d67
+; c:\user\jeffl\2.7j\mdi.c:514 | 
+1020:0cee  833e520300  CMP word ptr [0x352],0x0
+; c:\user\jeffl\2.7j\mdi.c:518 | 
+1020:0cf3  7403  JZ 0x1020:0cf8
+1020:0cf5  e95e00  JMP 0x1020:0d56
+1020:0cf8  b80000  MOV AX,0x0
+; c:\user\jeffl\2.7j\mdi.c:520 | 
+1020:0cfb  50  PUSH AX
+1020:0cfc  9ab402f814  CALLF 0x14f8:02b4
+1020:0d01  8946f2  MOV word ptr [BP + -0xe],AX
+1020:0d04  b80100  MOV AX,0x1
+; c:\user\jeffl\2.7j\mdi.c:521 | 
+1020:0d07  50  PUSH AX
+1020:0d08  9ab402f814  CALLF 0x14f8:02b4
+1020:0d0d  8946f4  MOV word ptr [BP + -0xc],AX
+1020:0d10  b82a02  MOV AX,0x22a
+; c:\user\jeffl\2.7j\mdi.c:537 | 
+1020:0d13  8cda  MOV DX,DS
+1020:0d15  52  PUSH DX
+1020:0d16  50  PUSH AX
+1020:0d17  b8c103  MOV AX,0x3c1
+1020:0d1a  8cda  MOV DX,DS
+1020:0d1c  52  PUSH DX
+1020:0d1d  50  PUSH AX
+1020:0d1e  b80000  MOV AX,0x0
+1020:0d21  ba0090  MOV DX,0x9000
+1020:0d24  52  PUSH DX
+1020:0d25  50  PUSH AX
+1020:0d26  b80000  MOV AX,0x0
+1020:0d29  50  PUSH AX
+1020:0d2a  b80000  MOV AX,0x0
+1020:0d2d  50  PUSH AX
+1020:0d2e  ff76f2  PUSH word ptr [BP + -0xe]
+1020:0d31  ff76f4  PUSH word ptr [BP + -0xc]
+1020:0d34  ff368c25  PUSH word ptr [0x258c]
+1020:0d38  b80000  MOV AX,0x0
+1020:0d3b  50  PUSH AX
+1020:0d3c  ff361053  PUSH word ptr [0x5310]
+1020:0d40  b80000  MOV AX,0x0
+1020:0d43  ba0000  MOV DX,0x0
+1020:0d46  52  PUSH DX
+1020:0d47  50  PUSH AX
+1020:0d48  9ab801f814  CALLF 0x14f8:01b8
+1020:0d4d  a35203  MOV [0x352],AX
+1020:0d50  c70654030000  MOV word ptr [0x354],0x0
+; c:\user\jeffl\2.7j\mdi.c:540 | 
+1020:0d56  a19a22  MOV AX,[0x229a]
+; c:\user\jeffl\2.7j\mdi.c:543 | 
+1020:0d59  25feff  AND AX,0xfffe
+1020:0d5c  0d0000  OR AX,0x0
+1020:0d5f  a39a22  MOV [0x229a],AX
+1020:0d62  9ab0447010  CALLF 0x1070:44b0
+; c:\user\jeffl\2.7j\mdi.c:544 | 
+1020:0d67  833eac0800  CMP word ptr [0x8ac],0x0
+; c:\user\jeffl\2.7j\mdi.c:550 | 
+1020:0d6c  7403  JZ 0x1020:0d71
+1020:0d6e  e90a00  JMP 0x1020:0d7b
+1020:0d71  833eae0800  CMP word ptr [0x8ae],0x0
+1020:0d76  7503  JNZ 0x1020:0d7b
+1020:0d78  e91c00  JMP 0x1020:0d97
+1020:0d7b  b80b00  MOV AX,0xb
+1020:0d7e  50  PUSH AX
+1020:0d7f  b86854  MOV AX,0x5468
+1020:0d82  50  PUSH AX
+1020:0d83  b89e51  MOV AX,0x519e
+1020:0d86  50  PUSH AX
+1020:0d87  9a1a071811  CALLF 0x1118:071a
+1020:0d8c  83c406  ADD SP,0x6
+1020:0d8f  3d0000  CMP AX,0x0
+1020:0d92  7503  JNZ 0x1020:0d97
+1020:0d94  e91701  JMP 0x1020:0eae
+1020:0d97  833eac0800  CMP word ptr [0x8ac],0x0
+; c:\user\jeffl\2.7j\mdi.c:557 | 
+1020:0d9c  7403  JZ 0x1020:0da1
+1020:0d9e  e90a00  JMP 0x1020:0dab
+1020:0da1  833eae0800  CMP word ptr [0x8ae],0x0
+1020:0da6  7503  JNZ 0x1020:0dab
+1020:0da8  e90600  JMP 0x1020:0db1
+1020:0dab  b80100  MOV AX,0x1
+1020:0dae  e90300  JMP 0x1020:0db4
+1020:0db1  b80000  MOV AX,0x0
+1020:0db4  a26c58  MOV [0x586c],AL
+1020:0db7  b8688f  MOV AX,0x8f68
+; c:\user\jeffl\2.7j\mdi.c:559 | 
+1020:0dba  ba3010  MOV DX,0x1030
+1020:0dbd  52  PUSH DX
+1020:0dbe  50  PUSH AX
+1020:0dbf  ff361053  PUSH word ptr [0x5310]
+1020:0dc3  9a4800f814  CALLF 0x14f8:0048
+1020:0dc8  8946ec  MOV word ptr [BP + -0x14],AX
+1020:0dcb  8956ee  MOV word ptr [BP + -0x12],DX
+1020:0dce  ff361053  PUSH word ptr [0x5310]
+; c:\user\jeffl\2.7j\mdi.c:561 | 
+1020:0dd2  b85600  MOV AX,0x56
+1020:0dd5  ba0000  MOV DX,0x0
+1020:0dd8  52  PUSH DX
+1020:0dd9  50  PUSH AX
+1020:0dda  833e520300  CMP word ptr [0x352],0x0
+1020:0ddf  7503  JNZ 0x1020:0de4
+1020:0de1  e90600  JMP 0x1020:0dea
+1020:0de4  a15203  MOV AX,[0x352]
+1020:0de7  e90300  JMP 0x1020:0ded
+1020:0dea  a18c25  MOV AX,[0x258c]
+1020:0ded  50  PUSH AX
+1020:0dee  ff76ee  PUSH word ptr [BP + -0x12]
+1020:0df1  ff76ec  PUSH word ptr [BP + -0x14]
+1020:0df4  9a1c02f814  CALLF 0x14f8:021c
+1020:0df9  8946ea  MOV word ptr [BP + -0x16],AX
+1020:0dfc  ff76ee  PUSH word ptr [BP + -0x12]
+; c:\user\jeffl\2.7j\mdi.c:562 | 
+1020:0dff  ff76ec  PUSH word ptr [BP + -0x14]
+1020:0e02  9a4c00f814  CALLF 0x14f8:004c
+1020:0e07  837eea00  CMP word ptr [BP + -0x16],0x0
+; c:\user\jeffl\2.7j\mdi.c:563 | 
+1020:0e0b  7503  JNZ 0x1020:0e10
+1020:0e0d  e97000  JMP 0x1020:0e80
+1020:0e10  8d46e6  LEA AX,[BP + -0x1a]
+; c:\user\jeffl\2.7j\mdi.c:567 | 
+1020:0e13  50  PUSH AX
+1020:0e14  b8a457  MOV AX,0x57a4
+1020:0e17  50  PUSH AX
+1020:0e18  9af8623810  CALLF 0x1038:62f8
+1020:0e1d  83c404  ADD SP,0x4
+1020:0e20  3d0000  CMP AX,0x0
+1020:0e23  7503  JNZ 0x1020:0e28
+1020:0e25  e92400  JMP 0x1020:0e4c
+1020:0e28  8b46e6  MOV AX,word ptr [BP + -0x1a]
+; c:\user\jeffl\2.7j\mdi.c:569 | 
+1020:0e2b  8b56e8  MOV DX,word ptr [BP + -0x18]
+1020:0e2e  a3ac08  MOV [0x8ac],AX
+1020:0e31  8916ae08  MOV word ptr [0x8ae],DX
+1020:0e35  b80b00  MOV AX,0xb
+; c:\user\jeffl\2.7j\mdi.c:570 | 
+1020:0e38  50  PUSH AX
+1020:0e39  b86854  MOV AX,0x5468
+1020:0e3c  50  PUSH AX
+1020:0e3d  b89e51  MOV AX,0x519e
+1020:0e40  50  PUSH AX
+1020:0e41  9a42071811  CALLF 0x1118:0742
+1020:0e46  83c406  ADD SP,0x6
+1020:0e49  e93100  JMP 0x1020:0e7d
+; c:\user\jeffl\2.7j\mdi.c:572 | 
+1020:0e4c  833eac0800  CMP word ptr [0x8ac],0x0
+1020:0e51  7403  JZ 0x1020:0e56
+1020:0e53  e92700  JMP 0x1020:0e7d
+1020:0e56  833eae0800  CMP word ptr [0x8ae],0x0
+1020:0e5b  7403  JZ 0x1020:0e60
+1020:0e5d  e91d00  JMP 0x1020:0e7d
+1020:0e60  b80b00  MOV AX,0xb
+; c:\user\jeffl\2.7j\mdi.c:574 | 
+1020:0e63  50  PUSH AX
+1020:0e64  b86854  MOV AX,0x5468
+1020:0e67  50  PUSH AX
+1020:0e68  b89e51  MOV AX,0x519e
+1020:0e6b  50  PUSH AX
+1020:0e6c  9a42071811  CALLF 0x1118:0742
+1020:0e71  83c406  ADD SP,0x6
+1020:0e74  ff368c03  PUSH word ptr [0x38c]
+; c:\user\jeffl\2.7j\mdi.c:575 | 
+1020:0e78  9a6001f814  CALLF 0x14f8:0160
+1020:0e7d  e92900  JMP 0x1020:0ea9
+; c:\user\jeffl\2.7j\mdi.c:578 | 
+1020:0e80  c706ac080000  MOV word ptr [0x8ac],0x0
+; c:\user\jeffl\2.7j\mdi.c:580 | 
+1020:0e86  c706ae080000  MOV word ptr [0x8ae],0x0
+1020:0e8c  b80b00  MOV AX,0xb
+; c:\user\jeffl\2.7j\mdi.c:581 | 
+1020:0e8f  50  PUSH AX
+1020:0e90  b86854  MOV AX,0x5468
+1020:0e93  50  PUSH AX
+1020:0e94  b89e51  MOV AX,0x519e
+1020:0e97  50  PUSH AX
+1020:0e98  9a42071811  CALLF 0x1118:0742
+1020:0e9d  83c406  ADD SP,0x6
+1020:0ea0  ff368c03  PUSH word ptr [0x38c]
+; c:\user\jeffl\2.7j\mdi.c:582 | 
+1020:0ea4  9a6001f814  CALLF 0x14f8:0160
+1020:0ea9  9a767a2010  CALLF 0x1020:7a76
+; c:\user\jeffl\2.7j\mdi.c:584 | 
+1020:0eae  e97a0f  JMP 0x1020:1e2b
+; c:\user\jeffl\2.7j\mdi.c:592 | 
+1020:0eb1  b90b00  MOV CX,0xb
+; c:\user\jeffl\2.7j\mdi.c:596 | 
+1020:0eb4  a1ca07  MOV AX,[0x7ca]
+1020:0eb7  d3e8  SHR AX,CL
+1020:0eb9  250100  AND AX,0x1
+1020:0ebc  3d0000  CMP AX,0x0
+1020:0ebf  7503  JNZ 0x1020:0ec4
+1020:0ec1  e91700  JMP 0x1020:0edb
+1020:0ec4  a10c52  MOV AX,[0x520c]
+1020:0ec7  d1e8  SHR AX,0x1
+1020:0ec9  d1e8  SHR AX,0x1
+1020:0ecb  250100  AND AX,0x1
+1020:0ece  3d0000  CMP AX,0x0
+1020:0ed1  7503  JNZ 0x1020:0ed6
+1020:0ed3  e90500  JMP 0x1020:0edb
+1020:0ed6  9a300af810  CALLF 0x10f8:0a30
+; c:\user\jeffl\2.7j\mdi.c:597 | 
+1020:0edb  b80000  MOV AX,0x0
+; c:\user\jeffl\2.7j\mdi.c:601 | 
+1020:0ede  ba0000  MOV DX,0x0
+1020:0ee1  e9500f  JMP 0x1020:1e34
+1020:0ee4  9ad2081810  CALLF 0x1018:08d2
+; c:\user\jeffl\2.7j\mdi.c:605 | 
+1020:0ee9  b80000  MOV AX,0x0
+; c:\user\jeffl\2.7j\mdi.c:606 | 
+1020:0eec  ba0000  MOV DX,0x0
+1020:0eef  e9420f  JMP 0x1020:1e34
+1020:0ef2  8b5e06  MOV BX,word ptr [BP + 0x6]
+; c:\user\jeffl\2.7j\mdi.c:609 | 
+1020:0ef5  8b4e08  MOV CX,word ptr [BP + 0x8]
+1020:0ef8  8ec1  MOV CX,ES
+1020:0efa  26c7470c0802  MOV word ptr ES:[BX + 0xc],0x208
+1020:0f00  8b5e06  MOV BX,word ptr [BP + 0x6]
+; c:\user\jeffl\2.7j\mdi.c:610 | 
+1020:0f03  8b4e08  MOV CX,word ptr [BP + 0x8]
+1020:0f06  8ec1  MOV CX,ES
+1020:0f08  26c7470e7c01  MOV word ptr ES:[BX + 0xe],0x17c
+1020:0f0e  b80000  MOV AX,0x0
+; c:\user\jeffl\2.7j\mdi.c:611 | 
+1020:0f11  ba0000  MOV DX,0x0
+1020:0f14  e91d0f  JMP 0x1020:1e34
+1020:0f17  83ff02  CMP DI,0x2
+; c:\user\jeffl\2.7j\mdi.c:614 | 
+1020:0f1a  7503  JNZ 0x1020:0f1f
+1020:0f1c  e90800  JMP 0x1020:0f27
+1020:0f1f  83ff00  CMP DI,0x0
+1020:0f22  7403  JZ 0x1020:0f27
+1020:0f24  e93100  JMP 0x1020:0f58
+1020:0f27  8b4606  MOV AX,word ptr [BP + 0x6]
+; c:\user\jeffl\2.7j\mdi.c:616 | 
+1020:0f2a  8b5608  MOV DX,word ptr [BP + 0x8]
+1020:0f2d  a3ca23  MOV [0x23ca],AX
+1020:0f30  8b4606  MOV AX,word ptr [BP + 0x6]
+; c:\user\jeffl\2.7j\mdi.c:617 | 
+1020:0f33  8b5608  MOV DX,word ptr [BP + 0x8]
+1020:0f36  b91000  MOV CX,0x10
+1020:0f39  9a320e1811  CALLF 0x1118:0e32
+1020:0f3e  25ffff  AND AX,0xffff
+1020:0f41  83e200  AND DX,0x0
+1020:0f44  a3cc23  MOV [0x23cc],AX
+1020:0f47  9a888c2010  CALLF 0x1020:8c88
+; c:\user\jeffl\2.7j\mdi.c:619 | 
+1020:0f4c  b80000  MOV AX,0x0
+; c:\user\jeffl\2.7j\mdi.c:620 | 
+1020:0f4f  ba0000  MOV DX,0x0
+1020:0f52  e9df0e  JMP 0x1020:1e34
+1020:0f58  e9ff0d  JMP 0x1020:1d5a
+; c:\user\jeffl\2.7j\mdi.c:623 | 
+1020:0f5b  57  PUSH DI
+; c:\user\jeffl\2.7j\mdi.c:629 | 
+1020:0f5c  56  PUSH SI
+1020:0f5d  9a7a2f2010  CALLF 0x1020:2f7a
+1020:0f62  83c404  ADD SP,0x4
+1020:0f65  e9c30e  JMP 0x1020:1e2b
+; c:\user\jeffl\2.7j\mdi.c:630 | 
+1020:0f68  56  PUSH SI
+; c:\user\jeffl\2.7j\mdi.c:633 | 
+1020:0f69  9ac801f814  CALLF 0x14f8:01c8
+1020:0f6e  e9ba0e  JMP 0x1020:1e2b
+; c:\user\jeffl\2.7j\mdi.c:634 | 
+1020:0f71  9afc5f2010  CALLF 0x1020:5ffc
+; c:\user\jeffl\2.7j\mdi.c:637 | 
+1020:0f76  b80100  MOV AX,0x1
+; c:\user\jeffl\2.7j\mdi.c:638 | 
+1020:0f79  ba0000  MOV DX,0x0
+1020:0f7c  e9b50e  JMP 0x1020:1e34
+1020:0f7f  b80000  MOV AX,0x0
+; c:\user\jeffl\2.7j\mdi.c:644 | 
+1020:0f82  50  PUSH AX
+1020:0f83  9a7403f810  CALLF 0x10f8:0374
+1020:0f88  83c402  ADD SP,0x2
+1020:0f8b  c7067e000000  MOV word ptr [0x7e],0x0
+; c:\user\jeffl\2.7j\mdi.c:645 | 
+1020:0f91  9ab0447010  CALLF 0x1070:44b0
+; c:\user\jeffl\2.7j\mdi.c:646 | 
+1020:0f96  a14c07  MOV AX,[0x74c]
+; c:\user\jeffl\2.7j\mdi.c:647 | 
+1020:0f99  8946f6  MOV word ptr [BP + -0xa],AX
+1020:0f9c  c7064c070100  MOV word ptr [0x74c],0x1
+; c:\user\jeffl\2.7j\mdi.c:648 | 
+1020:0fa2  a1cc07  MOV AX,[0x7cc]
+; c:\user\jeffl\2.7j\mdi.c:649 | 
+1020:0fa5  25fdff  AND AX,0xfffd
+1020:0fa8  0d0200  OR AX,0x2
+1020:0fab  a3cc07  MOV [0x7cc],AX
+1020:0fae  b8c803  MOV AX,0x3c8
+; c:\user\jeffl\2.7j\mdi.c:650 | 
+1020:0fb1  50  PUSH AX
+1020:0fb2  b8a256  MOV AX,0x56a2
+1020:0fb5  50  PUSH AX
+1020:0fb6  9a10087010  CALLF 0x1070:0810
+1020:0fbb  83c404  ADD SP,0x4
+1020:0fbe  3d0000  CMP AX,0x0
+1020:0fc1  7403  JZ 0x1020:0fc6
+1020:0fc3  e91500  JMP 0x1020:0fdb
+1020:0fc6  8b46f6  MOV AX,word ptr [BP + -0xa]
+; c:\user\jeffl\2.7j\mdi.c:652 | 
+1020:0fc9  a34c07  MOV [0x74c],AX
+1020:0fcc  a1cc07  MOV AX,[0x7cc]
+; c:\user\jeffl\2.7j\mdi.c:653 | 
+1020:0fcf  25fdff  AND AX,0xfffd
+1020:0fd2  0d0000  OR AX,0x0
+1020:0fd5  a3cc07  MOV [0x7cc],AX
+1020:0fd8  e9500e  JMP 0x1020:1e2b
+; c:\user\jeffl\2.7j\mdi.c:654 | 
+1020:0fdb  a1cc07  MOV AX,[0x7cc]
+; c:\user\jeffl\2.7j\mdi.c:656 | 
+1020:0fde  25fdff  AND AX,0xfffd
+1020:0fe1  0d0000  OR AX,0x0
+1020:0fe4  a3cc07  MOV [0x7cc],AX
+1020:0fe7  8b46f6  MOV AX,word ptr [BP + -0xa]
+; c:\user\jeffl\2.7j\mdi.c:657 | 
+1020:0fea  a34c07  MOV [0x74c],AX
+1020:0fed  c7068c010000  MOV word ptr [0x18c],0x0
+; c:\user\jeffl\2.7j\mdi.c:659 | 
+1020:0ff3  81ffca09  CMP DI,0x9ca
+; c:\user\jeffl\2.7j\mdi.c:660 | 
+1020:0ff7  7403  JZ 0x1020:0ffc
+1020:0ff9  e94e00  JMP 0x1020:104a
+1020:0ffc  a1ca07  MOV AX,[0x7ca]
+; c:\user\jeffl\2.7j\mdi.c:662 | 
+1020:0fff  25fdff  AND AX,0xfffd
+1020:1002  0d0200  OR AX,0x2
+1020:1005  a3ca07  MOV [0x7ca],AX
+1020:1008  b8a256  MOV AX,0x56a2
+; c:\user\jeffl\2.7j\mdi.c:663 | 
+1020:100b  8cda  MOV DX,DS
+1020:100d  52  PUSH DX
+1020:100e  50  PUSH AX
+1020:100f  b8cb03  MOV AX,0x3cb
+1020:1012  8cda  MOV DX,DS
+1020:1014  52  PUSH DX
+1020:1015  50  PUSH AX
+1020:1016  b8a457  MOV AX,0x57a4
+1020:1019  8cda  MOV DX,DS
+1020:101b  52  PUSH DX
+1020:101c  50  PUSH AX
+1020:101d  9af802f814  CALLF 0x14f8:02f8
+1020:1022  83c40c  ADD SP,0xc
+1020:1025  b8a457  MOV AX,0x57a4
+; c:\user\jeffl\2.7j\mdi.c:664 | 
+1020:1028  50  PUSH AX
+1020:1029  9aa2c74810  CALLF 0x1048:c7a2
+1020:102e  83c402  ADD SP,0x2
+1020:1031  3d0000  CMP AX,0x0
+1020:1034  7503  JNZ 0x1020:1039
+1020:1036  e90500  JMP 0x1020:103e
+1020:1039  9ad6a24810  CALLF 0x1048:a2d6
+; c:\user\jeffl\2.7j\mdi.c:665 | 
+1020:103e  a1ca07  MOV AX,[0x7ca]
+; c:\user\jeffl\2.7j\mdi.c:666 | 
+1020:1041  25fdff  AND AX,0xfffd
+1020:1044  0d0000  OR AX,0x0
+1020:1047  a3ca07  MOV [0x7ca],AX
+1020:104a  9a8c032010  CALLF 0x1020:038c
+; c:\user\jeffl\2.7j\mdi.c:668 | 
+1020:104f  ff368c25  PUSH word ptr [0x258c]
+; c:\user\jeffl\2.7j\mdi.c:669 | 
+1020:1053  b81101  MOV AX,0x111
+1020:1056  50  PUSH AX
+1020:1057  b8a10f  MOV AX,0xfa1
+1020:105a  50  PUSH AX
+1020:105b  b80000  MOV AX,0x0
+1020:105e  ba0000  MOV DX,0x0
+1020:1061  52  PUSH DX
+1020:1062  50  PUSH AX
+1020:1063  9a6002f814  CALLF 0x14f8:0260
+1020:1068  81ffca09  CMP DI,0x9ca
+; c:\user\jeffl\2.7j\mdi.c:670 | 
+1020:106c  7403  JZ 0x1020:1071
+1020:106e  e91900  JMP 0x1020:108a
+1020:1071  ff369801  PUSH word ptr [0x198]
+; c:\user\jeffl\2.7j\mdi.c:671 | 
+1020:1075  b80001  MOV AX,0x100
+1020:1078  50  PUSH AX
+1020:1079  b82300  MOV AX,0x23
+1020:107c  50  PUSH AX
+1020:107d  b80000  MOV AX,0x0
+1020:1080  ba0000  MOV DX,0x0
+1020:1083  52  PUSH DX
+1020:1084  50  PUSH AX
+1020:1085  9a6002f814  CALLF 0x14f8:0260
+1020:108a  c7060e520000  MOV word ptr [0x520e],0x0
+; c:\user\jeffl\2.7j\mdi.c:672 | 
+1020:1090  a10c52  MOV AX,[0x520c]
+; c:\user\jeffl\2.7j\mdi.c:673 | 
+1020:1093  25f7ff  AND AX,0xfff7
+1020:1096  0d0000  OR AX,0x0
+1020:1099  a30c52  MOV [0x520c],AX
+1020:109c  81ffca09  CMP DI,0x9ca
+; c:\user\jeffl\2.7j\mdi.c:674 | 
+1020:10a0  7403  JZ 0x1020:10a5
+1020:10a2  e90600  JMP 0x1020:10ab
+1020:10a5  b80100  MOV AX,0x1
+1020:10a8  e90300  JMP 0x1020:10ae
+1020:10ab  b80000  MOV AX,0x0
+1020:10ae  8946f4  MOV word ptr [BP + -0xc],AX
+1020:10b1  8b46f4  MOV AX,word ptr [BP + -0xc]
+1020:10b4  250100  AND AX,0x1
+1020:10b7  b90900  MOV CX,0x9
+1020:10ba  d3e0  SHL AX,CL
+1020:10bc  8b0e0c52  MOV CX,word ptr [0x520c]
+1020:10c0  81e1fffd  AND CX,0xfdff
+1020:10c4  0bc8  OR CX,AX
+1020:10c6  890e0c52  MOV word ptr [0x520c],CX
+1020:10ca  8bc1  MOV AX,CX
+1020:10cc  9a300af810  CALLF 0x10f8:0a30
+; c:\user\jeffl\2.7j\mdi.c:675 | 
+1020:10d1  e9570d  JMP 0x1020:1e2b
+; c:\user\jeffl\2.7j\mdi.c:677 | 
+1020:10d4  8bc7  MOV AX,DI
+; c:\user\jeffl\2.7j\mdi.c:680 | 
+1020:10d6  25f0ff  AND AX,0xfff0
+1020:10d9  3d30f0  CMP AX,0xf030
+1020:10dc  7503  JNZ 0x1020:10e1
+1020:10de  e90d00  JMP 0x1020:10ee
+1020:10e1  8bc7  MOV AX,DI
+1020:10e3  25f0ff  AND AX,0xfff0
+1020:10e6  3d20f1  CMP AX,0xf120
+1020:10e9  7403  JZ 0x1020:10ee
+1020:10eb  e9f802  JMP 0x1020:13e6
+1020:10ee  a18c01  MOV AX,[0x18c]
+; c:\user\jeffl\2.7j\mdi.c:682 | 
+1020:10f1  8946f6  MOV word ptr [BP + -0xa],AX
+1020:10f4  a1a201  MOV AX,[0x1a2]
+; c:\user\jeffl\2.7j\mdi.c:685 | 
+1020:10f7  8946f2  MOV word ptr [BP + -0xe],AX
+1020:10fa  833ea20100  CMP word ptr [0x1a2],0x0
+; c:\user\jeffl\2.7j\mdi.c:687 | 
+1020:10ff  7503  JNZ 0x1020:1104
+1020:1101  e91800  JMP 0x1020:111c
+1020:1104  b80000  MOV AX,0x0
+; c:\user\jeffl\2.7j\mdi.c:689 | 
+1020:1107  50  PUSH AX
+1020:1108  ff36a201  PUSH word ptr [0x1a2]
+1020:110c  9a6c01f814  CALLF 0x14f8:016c
+1020:1111  c706a2010000  MOV word ptr [0x1a2],0x0
+; c:\user\jeffl\2.7j\mdi.c:690 | 
+1020:1117  9a8c032010  CALLF 0x1020:038c
+; c:\user\jeffl\2.7j\mdi.c:691 | 
+1020:111c  833e8c01ff  CMP word ptr [0x18c],-0x1
+; c:\user\jeffl\2.7j\mdi.c:693 | 
+1020:1121  7503  JNZ 0x1020:1126
+1020:1123  e94501  JMP 0x1020:126b
+1020:1126  ff368c01  PUSH word ptr [0x18c]
+1020:112a  9a224f7010  CALLF 0x1070:4f22
+1020:112f  83c402  ADD SP,0x2
+1020:1132  3d0000  CMP AX,0x0
+1020:1135  7503  JNZ 0x1020:113a
+1020:1137  e93101  JMP 0x1020:126b
+1020:113a  837ef200  CMP word ptr [BP + -0xe],0x0
+; c:\user\jeffl\2.7j\mdi.c:695 | 
+1020:113e  7503  JNZ 0x1020:1143
+1020:1140  e92900  JMP 0x1020:116c
+1020:1143  b84000  MOV AX,0x40
+; c:\user\jeffl\2.7j\mdi.c:697 | 
+1020:1146  50  PUSH AX
+1020:1147  b80000  MOV AX,0x0
+1020:114a  ba0000  MOV DX,0x0
+1020:114d  52  PUSH DX
+1020:114e  50  PUSH AX
+1020:114f  b8c602  MOV AX,0x2c6
+1020:1152  50  PUSH AX
+1020:1153  9a4c923010  CALLF 0x1030:924c
+1020:1158  83c406  ADD SP,0x6
+1020:115b  50  PUSH AX
+1020:115c  9a60214010  CALLF 0x1040:2160
+1020:1161  83c404  ADD SP,0x4
+1020:1164  c746f40600  MOV word ptr [BP + -0xc],0x6
+; c:\user\jeffl\2.7j\mdi.c:698 | 
+1020:1169  e92400  JMP 0x1020:1190
+; c:\user\jeffl\2.7j\mdi.c:700 | 
+1020:116c  b82320  MOV AX,0x2023
+; c:\user\jeffl\2.7j\mdi.c:701 | 
+1020:116f  50  PUSH AX
+1020:1170  b80000  MOV AX,0x0
+1020:1173  ba0000  MOV DX,0x0
+1020:1176  52  PUSH DX
+1020:1177  50  PUSH AX
+1020:1178  b8c502  MOV AX,0x2c5
+1020:117b  50  PUSH AX
+1020:117c  9a4c923010  CALLF 0x1030:924c
+1020:1181  83c406  ADD SP,0x6
+1020:1184  50  PUSH AX
+1020:1185  9a60214010  CALLF 0x1040:2160
+1020:118a  83c404  ADD SP,0x4
+1020:118d  8946f4  MOV word ptr [BP + -0xc],AX
+1020:1190  837ef406  CMP word ptr [BP + -0xc],0x6
+; c:\user\jeffl\2.7j\mdi.c:703 | 
+1020:1194  7403  JZ 0x1020:1199
+1020:1196  e96600  JMP 0x1020:11ff
+1020:1199  a18c01  MOV AX,[0x18c]
+; c:\user\jeffl\2.7j\mdi.c:705 | 
+1020:119c  050100  ADD AX,0x1
+1020:119f  50  PUSH AX
+1020:11a0  a1c601  MOV AX,[0x1c6]
+1020:11a3  8cda  MOV DX,DS
+1020:11a5  52  PUSH DX
+1020:11a6  50  PUSH AX
+1020:11a7  8d46ee  LEA AX,[BP + -0x12]
+1020:11aa  8cd2  MOV DX,SS
+1020:11ac  52  PUSH DX
+1020:11ad  50  PUSH AX
+1020:11ae  9af802f814  CALLF 0x14f8:02f8
+1020:11b3  83c40a  ADD SP,0xa
+1020:11b6  9ab0447010  CALLF 0x1070:44b0
+; c:\user\jeffl\2.7j\mdi.c:706 | 
+1020:11bb  8d46ee  LEA AX,[BP + -0x12]
+; c:\user\jeffl\2.7j\mdi.c:707 | 
+1020:11be  50  PUSH AX
+1020:11bf  b8a256  MOV AX,0x56a2
+1020:11c2  50  PUSH AX
+1020:11c3  9a10087010  CALLF 0x1070:0810
+1020:11c8  83c404  ADD SP,0x4
+1020:11cb  3d0000  CMP AX,0x0
+1020:11ce  7403  JZ 0x1020:11d3
+1020:11d0  e92400  JMP 0x1020:11f7
+1020:11d3  b81000  MOV AX,0x10
+; c:\user\jeffl\2.7j\mdi.c:708 | 
+1020:11d6  50  PUSH AX
+1020:11d7  b80000  MOV AX,0x0
+1020:11da  ba0000  MOV DX,0x0
+1020:11dd  52  PUSH DX
+1020:11de  50  PUSH AX
+1020:11df  b81b00  MOV AX,0x1b
+1020:11e2  50  PUSH AX
+1020:11e3  9a4c923010  CALLF 0x1030:924c
+1020:11e8  83c406  ADD SP,0x6
+1020:11eb  50  PUSH AX
+1020:11ec  9a60214010  CALLF 0x1040:2160
+1020:11f1  83c404  ADD SP,0x4
+1020:11f4  e90500  JMP 0x1020:11fc
+; c:\user\jeffl\2.7j\mdi.c:709 | 
+1020:11f7  9a8c032010  CALLF 0x1020:038c
+; c:\user\jeffl\2.7j\mdi.c:712 | 
+1020:11fc  e95000  JMP 0x1020:124f
+; c:\user\jeffl\2.7j\mdi.c:715 | 
+1020:11ff  837ef402  CMP word ptr [BP + -0xc],0x2
+1020:1203  7403  JZ 0x1020:1208
+1020:1205  e94700  JMP 0x1020:124f
+1020:1208  837ef200  CMP word ptr [BP + -0xe],0x0
+; c:\user\jeffl\2.7j\mdi.c:717 | 
+1020:120c  7503  JNZ 0x1020:1211
+1020:120e  e91c00  JMP 0x1020:122d
+1020:1211  ff368c25  PUSH word ptr [0x258c]
+; c:\user\jeffl\2.7j\mdi.c:718 | 
+1020:1215  b81101  MOV AX,0x111
+1020:1218  50  PUSH AX
+1020:1219  b86a00  MOV AX,0x6a
+1020:121c  50  PUSH AX
+1020:121d  b80000  MOV AX,0x0
+1020:1220  ba0000  MOV DX,0x0
+1020:1223  52  PUSH DX
+1020:1224  50  PUSH AX
+1020:1225  9a5c02f814  CALLF 0x14f8:025c
+1020:122a  e91900  JMP 0x1020:1246
+; c:\user\jeffl\2.7j\mdi.c:719 | 
+1020:122d  ff368c25  PUSH word ptr [0x258c]
+; c:\user\jeffl\2.7j\mdi.c:720 | 
+1020:1231  b81201  MOV AX,0x112
+1020:1234  50  PUSH AX
+1020:1235  b820f0  MOV AX,0xf020
+1020:1238  50  PUSH AX
+1020:1239  b80000  MOV AX,0x0
+1020:123c  ba0000  MOV DX,0x0
+1020:123f  52  PUSH DX
+1020:1240  50  PUSH AX
+1020:1241  9a5c02f814  CALLF 0x14f8:025c
+1020:1246  b80100  MOV AX,0x1
+; c:\user\jeffl\2.7j\mdi.c:721 | 
+1020:1249  ba0000  MOV DX,0x0
+1020:124c  e9e50b  JMP 0x1020:1e34
+1020:124f  ff368c25  PUSH word ptr [0x258c]
+; c:\user\jeffl\2.7j\mdi.c:723 | 
+1020:1253  b81101  MOV AX,0x111
+1020:1256  50  PUSH AX
+1020:1257  b8a10f  MOV AX,0xfa1
+1020:125a  50  PUSH AX
+1020:125b  b80000  MOV AX,0x0
+1020:125e  ba0000  MOV DX,0x0
+1020:1261  52  PUSH DX
+1020:1262  50  PUSH AX
+1020:1263  9a6002f814  CALLF 0x14f8:0260
+1020:1268  e9ef0a  JMP 0x1020:1d5a
+; c:\user\jeffl\2.7j\mdi.c:724 | 
+1020:126b  837ef200  CMP word ptr [BP + -0xe],0x0
+; c:\user\jeffl\2.7j\mdi.c:727 | 
+1020:126f  7503  JNZ 0x1020:1274
+1020:1271  e97201  JMP 0x1020:13e6
+1020:1274  833ea4010d  CMP word ptr [0x1a4],0xd
+; c:\user\jeffl\2.7j\mdi.c:729 | 
+1020:1279  7403  JZ 0x1020:127e
+1020:127b  e91c00  JMP 0x1020:129a
+1020:127e  56  PUSH SI
+; c:\user\jeffl\2.7j\mdi.c:731 | 
+1020:127f  b86504  MOV AX,0x465
+1020:1282  50  PUSH AX
+1020:1283  b80000  MOV AX,0x0
+1020:1286  50  PUSH AX
+1020:1287  b80000  MOV AX,0x0
+1020:128a  ba0000  MOV DX,0x0
+1020:128d  52  PUSH DX
+1020:128e  50  PUSH AX
+1020:128f  9a5c02f814  CALLF 0x14f8:025c
+1020:1294  e9c30a  JMP 0x1020:1d5a
+; c:\user\jeffl\2.7j\mdi.c:732 | 
+1020:129a  833ea4010e  CMP word ptr [0x1a4],0xe
+1020:129f  7403  JZ 0x1020:12a4
+1020:12a1  e9ff00  JMP 0x1020:13a3
+1020:12a4  b82320  MOV AX,0x2023
+; c:\user\jeffl\2.7j\mdi.c:736 | 
+1020:12a7  50  PUSH AX
+1020:12a8  b80000  MOV AX,0x0
+1020:12ab  ba0000  MOV DX,0x0
+1020:12ae  52  PUSH DX
+1020:12af  50  PUSH AX
+1020:12b0  b88e01  MOV AX,0x18e
+1020:12b3  50  PUSH AX
+1020:12b4  9a4c923010  CALLF 0x1030:924c
+1020:12b9  83c406  ADD SP,0x6
+1020:12bc  50  PUSH AX
+1020:12bd  9a60214010  CALLF 0x1040:2160
+1020:12c2  83c404  ADD SP,0x4
+1020:12c5  8946f4  MOV word ptr [BP + -0xc],AX
+1020:12c8  837ef406  CMP word ptr [BP + -0xc],0x6
+; c:\user\jeffl\2.7j\mdi.c:737 | 
+1020:12cc  7403  JZ 0x1020:12d1
+1020:12ce  e9a700  JMP 0x1020:1378
+1020:12d1  b80000  MOV AX,0x0
+1020:12d4  50  PUSH AX
+1020:12d5  b80200  MOV AX,0x2
+1020:12d8  50  PUSH AX
+1020:12d9  ff368c01  PUSH word ptr [0x18c]
+1020:12dd  b80100  MOV AX,0x1
+1020:12e0  50  PUSH AX
+1020:12e1  9a4a907010  CALLF 0x1070:904a
+1020:12e6  83c408  ADD SP,0x8
+1020:12e9  3d0000  CMP AX,0x0
+1020:12ec  7403  JZ 0x1020:12f1
+1020:12ee  e98700  JMP 0x1020:1378
+1020:12f1  b81000  MOV AX,0x10
+; c:\user\jeffl\2.7j\mdi.c:739 | 
+1020:12f4  50  PUSH AX
+1020:12f5  b80000  MOV AX,0x0
+1020:12f8  ba0000  MOV DX,0x0
+1020:12fb  52  PUSH DX
+1020:12fc  50  PUSH AX
+1020:12fd  b88f01  MOV AX,0x18f
+1020:1300  50  PUSH AX
+1020:1301  9a4c923010  CALLF 0x1030:924c
+1020:1306  83c406  ADD SP,0x6
+1020:1309  50  PUSH AX
+1020:130a  9a60214010  CALLF 0x1040:2160
+1020:130f  83c404  ADD SP,0x4
+1020:1312  a18c01  MOV AX,[0x18c]
+; c:\user\jeffl\2.7j\mdi.c:740 | 
+1020:1315  050100  ADD AX,0x1
+1020:1318  50  PUSH AX
+1020:1319  a1c601  MOV AX,[0x1c6]
+1020:131c  8cda  MOV DX,DS
+1020:131e  52  PUSH DX
+1020:131f  50  PUSH AX
+1020:1320  8d46ee  LEA AX,[BP + -0x12]
+1020:1323  8cd2  MOV DX,SS
+1020:1325  52  PUSH DX
+1020:1326  50  PUSH AX
+1020:1327  9af802f814  CALLF 0x14f8:02f8
+1020:132c  83c40a  ADD SP,0xa
+1020:132f  9ab0447010  CALLF 0x1070:44b0
+; c:\user\jeffl\2.7j\mdi.c:741 | 
+1020:1334  8d46ee  LEA AX,[BP + -0x12]
+; c:\user\jeffl\2.7j\mdi.c:742 | 
+1020:1337  50  PUSH AX
+1020:1338  b8a256  MOV AX,0x56a2
+1020:133b  50  PUSH AX
+1020:133c  9a10087010  CALLF 0x1070:0810
+1020:1341  83c404  ADD SP,0x4
+1020:1344  3d0000  CMP AX,0x0
+1020:1347  7403  JZ 0x1020:134c
+1020:1349  e92400  JMP 0x1020:1370
+1020:134c  b81000  MOV AX,0x10
+; c:\user\jeffl\2.7j\mdi.c:743 | 
+1020:134f  50  PUSH AX
+1020:1350  b80000  MOV AX,0x0
+1020:1353  ba0000  MOV DX,0x0
+1020:1356  52  PUSH DX
+1020:1357  50  PUSH AX
+1020:1358  b81b00  MOV AX,0x1b
+1020:135b  50  PUSH AX
+1020:135c  9a4c923010  CALLF 0x1030:924c
+1020:1361  83c406  ADD SP,0x6
+1020:1364  50  PUSH AX
+1020:1365  9a60214010  CALLF 0x1040:2160
+1020:136a  83c404  ADD SP,0x4
+1020:136d  e90500  JMP 0x1020:1375
+; c:\user\jeffl\2.7j\mdi.c:744 | 
+1020:1370  9a8c032010  CALLF 0x1020:038c
+; c:\user\jeffl\2.7j\mdi.c:747 | 
+1020:1375  e92b00  JMP 0x1020:13a3
+; c:\user\jeffl\2.7j\mdi.c:750 | 
+1020:1378  837ef402  CMP word ptr [BP + -0xc],0x2
+1020:137c  7403  JZ 0x1020:1381
+1020:137e  e92200  JMP 0x1020:13a3
+1020:1381  ff368c25  PUSH word ptr [0x258c]
+; c:\user\jeffl\2.7j\mdi.c:752 | 
+1020:1385  b81101  MOV AX,0x111
+1020:1388  50  PUSH AX
+1020:1389  b86a00  MOV AX,0x6a
+1020:138c  50  PUSH AX
+1020:138d  b80000  MOV AX,0x0
+1020:1390  ba0000  MOV DX,0x0
+1020:1393  52  PUSH DX
+1020:1394  50  PUSH AX
+1020:1395  9a5c02f814  CALLF 0x14f8:025c
+1020:139a  b80100  MOV AX,0x1
+; c:\user\jeffl\2.7j\mdi.c:753 | 
+1020:139d  ba0000  MOV DX,0x0
+1020:13a0  e9910a  JMP 0x1020:1e34
+1020:13a3  ff368c25  PUSH word ptr [0x258c]
+; c:\user\jeffl\2.7j\mdi.c:756 | 
+1020:13a7  b81101  MOV AX,0x111
+1020:13aa  50  PUSH AX
+1020:13ab  b8a10f  MOV AX,0xfa1
+1020:13ae  50  PUSH AX
+1020:13af  b80000  MOV AX,0x0
+1020:13b2  ba0000  MOV DX,0x0
+1020:13b5  52  PUSH DX
+1020:13b6  50  PUSH AX
+1020:13b7  9a6002f814  CALLF 0x14f8:0260
+1020:13bc  813e5649e803  CMP word ptr [0x4956],0x3e8
+; c:\user\jeffl\2.7j\mdi.c:757 | 
+1020:13c2  7f03  JG 0x1020:13c7
+1020:13c4  e91f00  JMP 0x1020:13e6
+1020:13c7  813e5849e803  CMP word ptr [0x4958],0x3e8
+1020:13cd  7f03  JG 0x1020:13d2
+1020:13cf  e91400  JMP 0x1020:13e6
+1020:13d2  b80100  MOV AX,0x1
+; c:\user\jeffl\2.7j\mdi.c:758 | 
+1020:13d5  50  PUSH AX
+1020:13d6  ff365849  PUSH word ptr [0x4958]
+1020:13da  ff365649  PUSH word ptr [0x4956]
+1020:13de  9a78725810  CALLF 0x1058:7278
+1020:13e3  83c406  ADD SP,0x6
+1020:13e6  e97109  JMP 0x1020:1d5a
+; c:\user\jeffl\2.7j\mdi.c:761 | 
+1020:13e9  833e900100  CMP word ptr [0x190],0x0
+; c:\user\jeffl\2.7j\mdi.c:765 | 
+1020:13ee  7503  JNZ 0x1020:13f3
+1020:13f0  e92700  JMP 0x1020:141a
+1020:13f3  83ff2d  CMP DI,0x2d
+1020:13f6  7503  JNZ 0x1020:13fb
+1020:13f8  e90800  JMP 0x1020:1403
+1020:13fb  83ff2b  CMP DI,0x2b
+1020:13fe  7403  JZ 0x1020:1403
+1020:1400  e91700  JMP 0x1020:141a
+1020:1403  ff369001  PUSH word ptr [0x190]
+; c:\user\jeffl\2.7j\mdi.c:766 | 
+1020:1407  b80201  MOV AX,0x102
+1020:140a  50  PUSH AX
+1020:140b  57  PUSH DI
+1020:140c  ff7608  PUSH word ptr [BP + 0x8]
+1020:140f  ff7606  PUSH word ptr [BP + 0x6]
+1020:1412  9a6002f814  CALLF 0x14f8:0260
+1020:1417  e99d01  JMP 0x1020:15b7
+; c:\user\jeffl\2.7j\mdi.c:767 | 
+1020:141a  833e980100  CMP word ptr [0x198],0x0
+; c:\user\jeffl\2.7j\mdi.c:768 | 
+1020:141f  7503  JNZ 0x1020:1424
+1020:1421  e92f00  JMP 0x1020:1453
+1020:1424  83ff2d  CMP DI,0x2d
+1020:1427  7503  JNZ 0x1020:142c
+1020:1429  e91000  JMP 0x1020:143c
+1020:142c  83ff2b  CMP DI,0x2b
+1020:142f  7503  JNZ 0x1020:1434
+1020:1431  e90800  JMP 0x1020:143c
+1020:1434  83ff0d  CMP DI,0xd
+1020:1437  7403  JZ 0x1020:143c
+1020:1439  e91700  JMP 0x1020:1453
+1020:143c  ff369801  PUSH word ptr [0x198]
+; c:\user\jeffl\2.7j\mdi.c:769 | 
+1020:1440  b80201  MOV AX,0x102
+1020:1443  50  PUSH AX
+1020:1444  57  PUSH DI
+1020:1445  ff7608  PUSH word ptr [BP + 0x8]
+1020:1448  ff7606  PUSH word ptr [BP + 0x6]
+1020:144b  9a6002f814  CALLF 0x14f8:0260
+1020:1450  e96401  JMP 0x1020:15b7
+; c:\user\jeffl\2.7j\mdi.c:770 | 
+1020:1453  833e960100  CMP word ptr [0x196],0x0
+; c:\user\jeffl\2.7j\mdi.c:771 | 
+1020:1458  7503  JNZ 0x1020:145d
+1020:145a  e92700  JMP 0x1020:1484
+1020:145d  83ff66  CMP DI,0x66
+1020:1460  7503  JNZ 0x1020:1465
+1020:1462  e90800  JMP 0x1020:146d
+1020:1465  83ff46  CMP DI,0x46
+1020:1468  7403  JZ 0x1020:146d
+1020:146a  e91700  JMP 0x1020:1484
+1020:146d  ff369601  PUSH word ptr [0x196]
+; c:\user\jeffl\2.7j\mdi.c:772 | 
+1020:1471  b80201  MOV AX,0x102
+1020:1474  50  PUSH AX
+1020:1475  57  PUSH DI
+1020:1476  ff7608  PUSH word ptr [BP + 0x8]
+1020:1479  ff7606  PUSH word ptr [BP + 0x6]
+1020:147c  9a6002f814  CALLF 0x14f8:0260
+1020:1481  e93301  JMP 0x1020:15b7
+; c:\user\jeffl\2.7j\mdi.c:773 | 
+1020:1484  833e960100  CMP word ptr [0x196],0x0
+; c:\user\jeffl\2.7j\mdi.c:774 | 
+1020:1489  7503  JNZ 0x1020:148e
+1020:148b  e92900  JMP 0x1020:14b7
+1020:148e  833e5a4901  CMP word ptr [0x495a],0x1
+1020:1493  7403  JZ 0x1020:1498
+1020:1495  e91f00  JMP 0x1020:14b7
+1020:1498  83ff71  CMP DI,0x71
+1020:149b  7503  JNZ 0x1020:14a0
+1020:149d  e90800  JMP 0x1020:14a8
+1020:14a0  83ff51  CMP DI,0x51
+1020:14a3  7403  JZ 0x1020:14a8
+1020:14a5  e90f00  JMP 0x1020:14b7
+1020:14a8  b80000  MOV AX,0x0
+; c:\user\jeffl\2.7j\mdi.c:775 | 
+1020:14ab  50  PUSH AX
+1020:14ac  9a0000d010  CALLF 0x10d0:0000
+1020:14b1  83c402  ADD SP,0x2
+1020:14b4  e90001  JMP 0x1020:15b7
+; c:\user\jeffl\2.7j\mdi.c:776 | 
+1020:14b7  a15a49  MOV AX,[0x495a]
+1020:14ba  250300  AND AX,0x3
+1020:14bd  3d0000  CMP AX,0x0
+1020:14c0  7503  JNZ 0x1020:14c5
+1020:14c2  e9f200  JMP 0x1020:15b7
+1020:14c5  c746f60000  MOV word ptr [BP + -0xa],0x0
+; c:\user\jeffl\2.7j\mdi.c:778 | 
+1020:14ca  c746f40000  MOV word ptr [BP + -0xc],0x0
+; c:\user\jeffl\2.7j\mdi.c:779 | 
+1020:14cf  83ff6e  CMP DI,0x6e
+; c:\user\jeffl\2.7j\mdi.c:781 | 
+1020:14d2  7403  JZ 0x1020:14d7
+1020:14d4  e90800  JMP 0x1020:14df
+1020:14d7  c746f60100  MOV word ptr [BP + -0xa],0x1
+; c:\user\jeffl\2.7j\mdi.c:782 | 
+1020:14dc  e99d00  JMP 0x1020:157c
+; c:\user\jeffl\2.7j\mdi.c:783 | 
+1020:14df  83ff4e  CMP DI,0x4e
+1020:14e2  7503  JNZ 0x1020:14e7
+1020:14e4  e90800  JMP 0x1020:14ef
+1020:14e7  83ff50  CMP DI,0x50
+1020:14ea  7403  JZ 0x1020:14ef
+1020:14ec  e94500  JMP 0x1020:1534
+1020:14ef  833e5a4901  CMP word ptr [0x495a],0x1
+; c:\user\jeffl\2.7j\mdi.c:785 | 
+1020:14f4  7403  JZ 0x1020:14f9
+1020:14f6  e92400  JMP 0x1020:151d
+1020:14f9  83ff4e  CMP DI,0x4e
+; c:\user\jeffl\2.7j\mdi.c:786 | 
+1020:14fc  7403  JZ 0x1020:1501
+1020:14fe  e90600  JMP 0x1020:1507
+1020:1501  b80100  MOV AX,0x1
+1020:1504  e90300  JMP 0x1020:150a
+1020:1507  b80000  MOV AX,0x0
+1020:150a  50  PUSH AX
+1020:150b  ff36ee49  PUSH word ptr [0x49ee]
+1020:150f  9a4e474810  CALLF 0x1048:474e
+1020:1514  83c404  ADD SP,0x4
+1020:1517  8946f4  MOV word ptr [BP + -0xc],AX
+1020:151a  e91400  JMP 0x1020:1531
+; c:\user\jeffl\2.7j\mdi.c:787 | 
+1020:151d  83ff4e  CMP DI,0x4e
+; c:\user\jeffl\2.7j\mdi.c:788 | 
+1020:1520  7403  JZ 0x1020:1525
+1020:1522  e90600  JMP 0x1020:152b
+1020:1525  b80100  MOV AX,0x1
+1020:1528  e90300  JMP 0x1020:152e
+1020:152b  b8ffff  MOV AX,0xffff
+1020:152e  8946f6  MOV word ptr [BP + -0xa],AX
+1020:1531  e94800  JMP 0x1020:157c
+; c:\user\jeffl\2.7j\mdi.c:790 | 
+1020:1534  83ff70  CMP DI,0x70
+1020:1537  7403  JZ 0x1020:153c
+1020:1539  e90800  JMP 0x1020:1544
+1020:153c  c746f6ffff  MOV word ptr [BP + -0xa],0xffff
+; c:\user\jeffl\2.7j\mdi.c:791 | 
+1020:1541  e93800  JMP 0x1020:157c
+; c:\user\jeffl\2.7j\mdi.c:792 | 
+1020:1544  83ff72  CMP DI,0x72
+; c:\user\jeffl\2.7j\mdi.c:793 | 
+1020:1547  7503  JNZ 0x1020:154c
+1020:1549  e90800  JMP 0x1020:1554
+1020:154c  83ff52  CMP DI,0x52
+1020:154f  7403  JZ 0x1020:1554
+1020:1551  e92800  JMP 0x1020:157c
+1020:1554  833e5a4902  CMP word ptr [0x495a],0x2
+1020:1559  7403  JZ 0x1020:155e
+1020:155b  e91e00  JMP 0x1020:157c
+1020:155e  a1a426  MOV AX,[0x26a4]
+; c:\user\jeffl\2.7j\mdi.c:796 | 
+1020:1561  ba0000  MOV DX,0x0
+1020:1564  0d0000  OR AX,0x0
+1020:1567  83ca00  OR DX,0x0
+1020:156a  52  PUSH DX
+1020:156b  50  PUSH AX
+1020:156c  b80000  MOV AX,0x0
+1020:156f  50  PUSH AX
+1020:1570  ff369601  PUSH word ptr [0x196]
+1020:1574  9a40265010  CALLF 0x1050:2640
+1020:1579  83c408  ADD SP,0x8
+1020:157c  837ef600  CMP word ptr [BP + -0xa],0x0
+; c:\user\jeffl\2.7j\mdi.c:799 | 
+1020:1580  7403  JZ 0x1020:1585
+1020:1582  e90900  JMP 0x1020:158e
+1020:1585  837ef400  CMP word ptr [BP + -0xc],0x0
+1020:1589  7503  JNZ 0x1020:158e
+1020:158b  e92900  JMP 0x1020:15b7
+1020:158e  833e5a4902  CMP word ptr [0x495a],0x2
+; c:\user\jeffl\2.7j\mdi.c:801 | 
+1020:1593  7403  JZ 0x1020:1598
+1020:1595  e91100  JMP 0x1020:15a9
+1020:1598  ff76f4  PUSH word ptr [BP + -0xc]
+; c:\user\jeffl\2.7j\mdi.c:802 | 
+1020:159b  ff76f6  PUSH word ptr [BP + -0xa]
+1020:159e  9a323d5010  CALLF 0x1050:3d32
+1020:15a3  83c404  ADD SP,0x4
+1020:15a6  e90e00  JMP 0x1020:15b7
+; c:\user\jeffl\2.7j\mdi.c:803 | 
+1020:15a9  ff76f4  PUSH word ptr [BP + -0xc]
+; c:\user\jeffl\2.7j\mdi.c:804 | 
+1020:15ac  ff76f6  PUSH word ptr [BP + -0xa]
+1020:15af  9ada444810  CALLF 0x1048:44da
+1020:15b4  83c404  ADD SP,0x4
+1020:15b7  e97108  JMP 0x1020:1e2b
+; c:\user\jeffl\2.7j\mdi.c:807 | 
+1020:15ba  833e8c01ff  CMP word ptr [0x18c],-0x1
+; c:\user\jeffl\2.7j\mdi.c:810 | 
+1020:15bf  7403  JZ 0x1020:15c4
+1020:15c1  e90900  JMP 0x1020:15cd
+1020:15c4  a15803  MOV AX,[0x358]
+1020:15c7  ba0000  MOV DX,0x0
+1020:15ca  e91900  JMP 0x1020:15e6
+1020:15cd  833ea20100  CMP word ptr [0x1a2],0x0
+1020:15d2  7403  JZ 0x1020:15d7
+1020:15d4  e90900  JMP 0x1020:15e0
+1020:15d7  a15603  MOV AX,[0x356]
+1020:15da  ba0000  MOV DX,0x0
+1020:15dd  e90600  JMP 0x1020:15e6
+1020:15e0  a15a03  MOV AX,[0x35a]
+1020:15e3  ba0000  MOV DX,0x0
+1020:15e6  e94b08  JMP 0x1020:1e34
+1020:15e9  56  PUSH SI
+; c:\user\jeffl\2.7j\mdi.c:813 | 
+1020:15ea  9a9801f814  CALLF 0x14f8:0198
+1020:15ef  3d0000  CMP AX,0x0
+1020:15f2  7503  JNZ 0x1020:15f7
+1020:15f4  e92400  JMP 0x1020:161b
+1020:15f7  56  PUSH SI
+; c:\user\jeffl\2.7j\mdi.c:816 | 
+1020:15f8  8d46f0  LEA AX,[BP + -0x10]
+1020:15fb  8cd2  MOV DX,SS
+1020:15fd  52  PUSH DX
+1020:15fe  50  PUSH AX
+1020:15ff  9aa001f814  CALLF 0x14f8:01a0
+1020:1604  57  PUSH DI
+; c:\user\jeffl\2.7j\mdi.c:817 | 
+1020:1605  8d46f0  LEA AX,[BP + -0x10]
+1020:1608  8cd2  MOV DX,SS
+1020:160a  52  PUSH DX
+1020:160b  50  PUSH AX
+1020:160c  ff361e00  PUSH word ptr [0x1e]
+1020:1610  9a0c02f814  CALLF 0x14f8:020c
+1020:1615  e91308  JMP 0x1020:1e2b
+; c:\user\jeffl\2.7j\mdi.c:818 | 
+1020:161b  56  PUSH SI
+; c:\user\jeffl\2.7j\mdi.c:823 | 
+1020:161c  8d46f0  LEA AX,[BP + -0x10]
+1020:161f  8cd2  MOV DX,SS
+1020:1621  52  PUSH DX
+1020:1622  50  PUSH AX
+1020:1623  9aa001f814  CALLF 0x14f8:01a0
+1020:1628  833e900100  CMP word ptr [0x190],0x0
+; c:\user\jeffl\2.7j\mdi.c:824 | 
+1020:162d  7503  JNZ 0x1020:1632
+1020:162f  e93700  JMP 0x1020:1669
+1020:1632  ff369001  PUSH word ptr [0x190]
+; c:\user\jeffl\2.7j\mdi.c:828 | 
+1020:1636  8d46e8  LEA AX,[BP + -0x18]
+1020:1639  8cd2  MOV DX,SS
+1020:163b  52  PUSH DX
+1020:163c  50  PUSH AX
+1020:163d  9aa001f814  CALLF 0x14f8:01a0
+1020:1642  ff369001  PUSH word ptr [0x190]
+; c:\user\jeffl\2.7j\mdi.c:829 | 
+1020:1646  56  PUSH SI
+1020:1647  8d46e8  LEA AX,[BP + -0x18]
+1020:164a  8cd2  MOV DX,SS
+1020:164c  52  PUSH DX
+1020:164d  50  PUSH AX
+1020:164e  b80200  MOV AX,0x2
+1020:1651  50  PUSH AX
+1020:1652  9ac802f814  CALLF 0x14f8:02c8
+1020:1657  57  PUSH DI
+; c:\user\jeffl\2.7j\mdi.c:830 | 
+1020:1658  ff76e8  PUSH word ptr [BP + -0x18]
+1020:165b  ff76ea  PUSH word ptr [BP + -0x16]
+1020:165e  ff76ec  PUSH word ptr [BP + -0x14]
+1020:1661  ff76ee  PUSH word ptr [BP + -0x12]
+1020:1664  9ad000f814  CALLF 0x14f8:00d0
+1020:1669  57  PUSH DI
+; c:\user\jeffl\2.7j\mdi.c:832 | 
+1020:166a  8d46f0  LEA AX,[BP + -0x10]
+1020:166d  8cd2  MOV DX,SS
+1020:166f  52  PUSH DX
+1020:1670  50  PUSH AX
+1020:1671  ff361000  PUSH word ptr [0x10]
+1020:1675  9a0c02f814  CALLF 0x14f8:020c
+1020:167a  b80100  MOV AX,0x1
+; c:\user\jeffl\2.7j\mdi.c:833 | 
+1020:167d  ba0000  MOV DX,0x0
+1020:1680  e9b107  JMP 0x1020:1e34
+1020:1683  56  PUSH SI
+; c:\user\jeffl\2.7j\mdi.c:837 | 
+1020:1684  9a9801f814  CALLF 0x14f8:0198
+1020:1689  3d0000  CMP AX,0x0
+1020:168c  7503  JNZ 0x1020:1691
+1020:168e  e96b00  JMP 0x1020:16fc
+1020:1691  56  PUSH SI
+; c:\user\jeffl\2.7j\mdi.c:840 | 
+1020:1692  8d46d8  LEA AX,[BP + -0x28]
+1020:1695  8cd2  MOV DX,SS
+1020:1697  52  PUSH DX
+1020:1698  50  PUSH AX
+1020:1699  9ab001f814  CALLF 0x14f8:01b0
+1020:169e  8946fc  MOV word ptr [BP + -0x4],AX
+1020:16a1  ff76fc  PUSH word ptr [BP + -0x4]
+; c:\user\jeffl\2.7j\mdi.c:841 | 
+1020:16a4  b80200  MOV AX,0x2
+1020:16a7  50  PUSH AX
+1020:16a8  b80200  MOV AX,0x2
+1020:16ab  50  PUSH AX
+1020:16ac  833e8c01ff  CMP word ptr [0x18c],-0x1
+1020:16b1  7403  JZ 0x1020:16b6
+1020:16b3  e91a00  JMP 0x1020:16d0
+1020:16b6  833e700000  CMP word ptr [0x70],0x0
+1020:16bb  7403  JZ 0x1020:16c0
+1020:16bd  e90a00  JMP 0x1020:16ca
+1020:16c0  833e720000  CMP word ptr [0x72],0x0
+1020:16c5  7503  JNZ 0x1020:16ca
+1020:16c7  e90600  JMP 0x1020:16d0
+1020:16ca  a15803  MOV AX,[0x358]
+1020:16cd  e91300  JMP 0x1020:16e3
+1020:16d0  833ea20100  CMP word ptr [0x1a2],0x0
+1020:16d5  7403  JZ 0x1020:16da
+1020:16d7  e90600  JMP 0x1020:16e0
+1020:16da  a15603  MOV AX,[0x356]
+1020:16dd  e90300  JMP 0x1020:16e3
+1020:16e0  a15a03  MOV AX,[0x35a]
+1020:16e3  50  PUSH AX
+1020:16e4  9a1402f814  CALLF 0x14f8:0214
+1020:16e9  56  PUSH SI
+; c:\user\jeffl\2.7j\mdi.c:842 | 
+1020:16ea  8d46d8  LEA AX,[BP + -0x28]
+1020:16ed  8cd2  MOV DX,SS
+1020:16ef  52  PUSH DX
+1020:16f0  50  PUSH AX
+1020:16f1  9ab401f814  CALLF 0x14f8:01b4
+1020:16f6  e93207  JMP 0x1020:1e2b
+; c:\user\jeffl\2.7j\mdi.c:843 | 
+1020:16fc  56  PUSH SI
+; c:\user\jeffl\2.7j\mdi.c:851 | 
+1020:16fd  8d46d8  LEA AX,[BP + -0x28]
+1020:1700  8cd2  MOV DX,SS
+1020:1702  52  PUSH DX
+1020:1703  50  PUSH AX
+1020:1704  9ab001f814  CALLF 0x14f8:01b0
+1020:1709  8946fc  MOV word ptr [BP + -0x4],AX
+1020:170c  ff76fc  PUSH word ptr [BP + -0x4]
+; c:\user\jeffl\2.7j\mdi.c:853 | 
+1020:170f  ff361600  PUSH word ptr [0x16]
+1020:1713  9af800f814  CALLF 0x14f8:00f8
+1020:1718  8946d4  MOV word ptr [BP + -0x2c],AX
+1020:171b  a1de22  MOV AX,[0x22de]
+; c:\user\jeffl\2.7j\mdi.c:854 | 
+1020:171e  e9c802  JMP 0x1020:19e9
+1020:1721  ff76fc  PUSH word ptr [BP + -0x4]
+; c:\user\jeffl\2.7j\mdi.c:859 | 
+1020:1724  a1ce23  MOV AX,[0x23ce]
+1020:1727  050500  ADD AX,0x5
+1020:172a  50  PUSH AX
+1020:172b  b80000  MOV AX,0x0
+1020:172e  50  PUSH AX
+1020:172f  b80200  MOV AX,0x2
+1020:1732  50  PUSH AX
+1020:1733  ff36cc23  PUSH word ptr [0x23cc]
+1020:1737  b82100  MOV AX,0x21
+1020:173a  baf000  MOV DX,0xf0
+1020:173d  52  PUSH DX
+1020:173e  50  PUSH AX
+1020:173f  9ae000f814  CALLF 0x14f8:00e0
+1020:1744  ff76fc  PUSH word ptr [BP + -0x4]
+; c:\user\jeffl\2.7j\mdi.c:860 | 
+1020:1747  b80000  MOV AX,0x0
+1020:174a  50  PUSH AX
+1020:174b  a1d023  MOV AX,[0x23d0]
+1020:174e  050500  ADD AX,0x5
+1020:1751  50  PUSH AX
+1020:1752  a1ce23  MOV AX,[0x23ce]
+1020:1755  050200  ADD AX,0x2
+1020:1758  50  PUSH AX
+1020:1759  b80200  MOV AX,0x2
+1020:175c  50  PUSH AX
+1020:175d  b82100  MOV AX,0x21
+1020:1760  baf000  MOV DX,0xf0
+1020:1763  52  PUSH DX
+1020:1764  50  PUSH AX
+1020:1765  9ae000f814  CALLF 0x14f8:00e0
+1020:176a  ff76fc  PUSH word ptr [BP + -0x4]
+; c:\user\jeffl\2.7j\mdi.c:861 | 
+1020:176d  b80000  MOV AX,0x0
+1020:1770  50  PUSH AX
+1020:1771  a1d223  MOV AX,[0x23d2]
+1020:1774  050500  ADD AX,0x5
+1020:1777  50  PUSH AX
+1020:1778  a1ce23  MOV AX,[0x23ce]
+1020:177b  050200  ADD AX,0x2
+1020:177e  50  PUSH AX
+1020:177f  b80200  MOV AX,0x2
+1020:1782  50  PUSH AX
+1020:1783  b82100  MOV AX,0x21
+1020:1786  baf000  MOV DX,0xf0
+1020:1789  52  PUSH DX
+1020:178a  50  PUSH AX
+1020:178b  9ae000f814  CALLF 0x14f8:00e0
+1020:1790  ff76fc  PUSH word ptr [BP + -0x4]
+; c:\user\jeffl\2.7j\mdi.c:863 | 
+1020:1793  ff361400  PUSH word ptr [0x14]
+1020:1797  9af800f814  CALLF 0x14f8:00f8
+1020:179c  ff76fc  PUSH word ptr [BP + -0x4]
+; c:\user\jeffl\2.7j\mdi.c:864 | 
+1020:179f  a1ce23  MOV AX,[0x23ce]
+1020:17a2  050100  ADD AX,0x1
+1020:17a5  50  PUSH AX
+1020:17a6  b80000  MOV AX,0x0
+1020:17a9  50  PUSH AX
+1020:17aa  b80100  MOV AX,0x1
+1020:17ad  50  PUSH AX
+1020:17ae  a1d023  MOV AX,[0x23d0]
+1020:17b1  050200  ADD AX,0x2
+1020:17b4  50  PUSH AX
+1020:17b5  b82100  MOV AX,0x21
+1020:17b8  baf000  MOV DX,0xf0
+1020:17bb  52  PUSH DX
+1020:17bc  50  PUSH AX
+1020:17bd  9ae000f814  CALLF 0x14f8:00e0
+1020:17c2  ff76fc  PUSH word ptr [BP + -0x4]
+; c:\user\jeffl\2.7j\mdi.c:865 | 
+1020:17c5  b80000  MOV AX,0x0
+1020:17c8  50  PUSH AX
+1020:17c9  a1d023  MOV AX,[0x23d0]
+1020:17cc  050100  ADD AX,0x1
+1020:17cf  50  PUSH AX
+1020:17d0  a1ce23  MOV AX,[0x23ce]
+1020:17d3  050100  ADD AX,0x1
+1020:17d6  50  PUSH AX
+1020:17d7  b80100  MOV AX,0x1
+1020:17da  50  PUSH AX
+1020:17db  b82100  MOV AX,0x21
+1020:17de  baf000  MOV DX,0xf0
+1020:17e1  52  PUSH DX
+1020:17e2  50  PUSH AX
+1020:17e3  9ae000f814  CALLF 0x14f8:00e0
+1020:17e8  ff76fc  PUSH word ptr [BP + -0x4]
+; c:\user\jeffl\2.7j\mdi.c:867 | 
+1020:17eb  a1ce23  MOV AX,[0x23ce]
+1020:17ee  050100  ADD AX,0x1
+1020:17f1  50  PUSH AX
+1020:17f2  a1d023  MOV AX,[0x23d0]
+1020:17f5  050600  ADD AX,0x6
+1020:17f8  50  PUSH AX
+1020:17f9  b80100  MOV AX,0x1
+1020:17fc  50  PUSH AX
+1020:17fd  a1d223  MOV AX,[0x23d2]
+1020:1800  2b06d023  SUB AX,word ptr [0x23d0]
+1020:1804  05fcff  ADD AX,0xfffc
+1020:1807  50  PUSH AX
+1020:1808  b82100  MOV AX,0x21
+1020:180b  baf000  MOV DX,0xf0
+1020:180e  52  PUSH DX
+1020:180f  50  PUSH AX
+1020:1810  9ae000f814  CALLF 0x14f8:00e0
+1020:1815  ff76fc  PUSH word ptr [BP + -0x4]
+; c:\user\jeffl\2.7j\mdi.c:868 | 
+1020:1818  b80000  MOV AX,0x0
+1020:181b  50  PUSH AX
+1020:181c  a1d223  MOV AX,[0x23d2]
+1020:181f  050100  ADD AX,0x1
+1020:1822  50  PUSH AX
+1020:1823  a1ce23  MOV AX,[0x23ce]
+1020:1826  050100  ADD AX,0x1
+1020:1829  50  PUSH AX
+1020:182a  b80100  MOV AX,0x1
+1020:182d  50  PUSH AX
+1020:182e  b82100  MOV AX,0x21
+1020:1831  baf000  MOV DX,0xf0
+1020:1834  52  PUSH DX
+1020:1835  50  PUSH AX
+1020:1836  9ae000f814  CALLF 0x14f8:00e0
+1020:183b  ff76fc  PUSH word ptr [BP + -0x4]
+; c:\user\jeffl\2.7j\mdi.c:870 | 
+1020:183e  a1ce23  MOV AX,[0x23ce]
+1020:1841  050100  ADD AX,0x1
+1020:1844  50  PUSH AX
+1020:1845  a1d223  MOV AX,[0x23d2]
+1020:1848  050600  ADD AX,0x6
+1020:184b  50  PUSH AX
+1020:184c  b80100  MOV AX,0x1
+1020:184f  50  PUSH AX
+1020:1850  a1cc23  MOV AX,[0x23cc]
+1020:1853  2b06d223  SUB AX,word ptr [0x23d2]
+1020:1857  05faff  ADD AX,0xfffa
+1020:185a  50  PUSH AX
+1020:185b  b82100  MOV AX,0x21
+1020:185e  baf000  MOV DX,0xf0
+1020:1861  52  PUSH DX
+1020:1862  50  PUSH AX
+1020:1863  9ae000f814  CALLF 0x14f8:00e0
+1020:1868  e99901  JMP 0x1020:1a04
+; c:\user\jeffl\2.7j\mdi.c:871 | 
+1020:186b  b90f00  MOV CX,0xf
+; c:\user\jeffl\2.7j\mdi.c:875 | 
+1020:186e  a1cc07  MOV AX,[0x7cc]
+1020:1871  d3e8  SHR AX,CL
+1020:1873  250100  AND AX,0x1
+1020:1876  3d0000  CMP AX,0x0
+1020:1879  7503  JNZ 0x1020:187e
+1020:187b  e90600  JMP 0x1020:1884
+1020:187e  b82400  MOV AX,0x24
+1020:1881  e90300  JMP 0x1020:1887
+1020:1884  b80000  MOV AX,0x0
+1020:1887  8946d6  MOV word ptr [BP + -0x2a],AX
+1020:188a  ff76fc  PUSH word ptr [BP + -0x4]
+; c:\user\jeffl\2.7j\mdi.c:877 | 
+1020:188d  a1ce23  MOV AX,[0x23ce]
+1020:1890  050500  ADD AX,0x5
+1020:1893  50  PUSH AX
+1020:1894  ff76d6  PUSH word ptr [BP + -0x2a]
+1020:1897  b80200  MOV AX,0x2
+1020:189a  50  PUSH AX
+1020:189b  a1d223  MOV AX,[0x23d2]
+1020:189e  050200  ADD AX,0x2
+1020:18a1  2b46d6  SUB AX,word ptr [BP + -0x2a]
+1020:18a4  50  PUSH AX
+1020:18a5  b82100  MOV AX,0x21
+1020:18a8  baf000  MOV DX,0xf0
+1020:18ab  52  PUSH DX
+1020:18ac  50  PUSH AX
+1020:18ad  9ae000f814  CALLF 0x14f8:00e0
+1020:18b2  ff76fc  PUSH word ptr [BP + -0x4]
+; c:\user\jeffl\2.7j\mdi.c:878 | 
+1020:18b5  b80000  MOV AX,0x0
+1020:18b8  50  PUSH AX
+1020:18b9  a1d023  MOV AX,[0x23d0]
+1020:18bc  050500  ADD AX,0x5
+1020:18bf  50  PUSH AX
+1020:18c0  a1ce23  MOV AX,[0x23ce]
+1020:18c3  050200  ADD AX,0x2
+1020:18c6  50  PUSH AX
+1020:18c7  b80200  MOV AX,0x2
+1020:18ca  50  PUSH AX
+1020:18cb  b82100  MOV AX,0x21
+1020:18ce  baf000  MOV DX,0xf0
+1020:18d1  52  PUSH DX
+1020:18d2  50  PUSH AX
+1020:18d3  9ae000f814  CALLF 0x14f8:00e0
+1020:18d8  ff76fc  PUSH word ptr [BP + -0x4]
+; c:\user\jeffl\2.7j\mdi.c:880 | 
+1020:18db  a1ce23  MOV AX,[0x23ce]
+1020:18de  050500  ADD AX,0x5
+1020:18e1  50  PUSH AX
+1020:18e2  a1d223  MOV AX,[0x23d2]
+1020:18e5  050500  ADD AX,0x5
+1020:18e8  50  PUSH AX
+1020:18e9  a1ca23  MOV AX,[0x23ca]
+1020:18ec  2b06ce23  SUB AX,word ptr [0x23ce]
+1020:18f0  05fbff  ADD AX,0xfffb
+1020:18f3  50  PUSH AX
+1020:18f4  b80200  MOV AX,0x2
+1020:18f7  50  PUSH AX
+1020:18f8  b82100  MOV AX,0x21
+1020:18fb  baf000  MOV DX,0xf0
+1020:18fe  52  PUSH DX
+1020:18ff  50  PUSH AX
+1020:1900  9ae000f814  CALLF 0x14f8:00e0
+1020:1905  ff76fc  PUSH word ptr [BP + -0x4]
+; c:\user\jeffl\2.7j\mdi.c:882 | 
+1020:1908  a1ce23  MOV AX,[0x23ce]
+1020:190b  050500  ADD AX,0x5
+1020:190e  50  PUSH AX
+1020:190f  a1d223  MOV AX,[0x23d2]
+1020:1912  050600  ADD AX,0x6
+1020:1915  50  PUSH AX
+1020:1916  b80200  MOV AX,0x2
+1020:1919  50  PUSH AX
+1020:191a  a1cc23  MOV AX,[0x23cc]
+1020:191d  2b06d223  SUB AX,word ptr [0x23d2]
+1020:1921  05fbff  ADD AX,0xfffb
+1020:1924  50  PUSH AX
+1020:1925  b82100  MOV AX,0x21
+1020:1928  baf000  MOV DX,0xf0
+1020:192b  52  PUSH DX
+1020:192c  50  PUSH AX
+1020:192d  9ae000f814  CALLF 0x14f8:00e0
+1020:1932  ff76fc  PUSH word ptr [BP + -0x4]
+; c:\user\jeffl\2.7j\mdi.c:884 | 
+1020:1935  ff361400  PUSH word ptr [0x14]
+1020:1939  9af800f814  CALLF 0x14f8:00f8
+1020:193e  ff76fc  PUSH word ptr [BP + -0x4]
+; c:\user\jeffl\2.7j\mdi.c:885 | 
+1020:1941  a1ce23  MOV AX,[0x23ce]
+1020:1944  050100  ADD AX,0x1
+1020:1947  50  PUSH AX
+1020:1948  ff76d6  PUSH word ptr [BP + -0x2a]
+1020:194b  b80100  MOV AX,0x1
+1020:194e  50  PUSH AX
+1020:194f  a1d023  MOV AX,[0x23d0]
+1020:1952  050200  ADD AX,0x2
+1020:1955  2b46d6  SUB AX,word ptr [BP + -0x2a]
+1020:1958  50  PUSH AX
+1020:1959  b82100  MOV AX,0x21
+1020:195c  baf000  MOV DX,0xf0
+1020:195f  52  PUSH DX
+1020:1960  50  PUSH AX
+1020:1961  9ae000f814  CALLF 0x14f8:00e0
+1020:1966  ff76fc  PUSH word ptr [BP + -0x4]
+; c:\user\jeffl\2.7j\mdi.c:886 | 
+1020:1969  b80000  MOV AX,0x0
+1020:196c  50  PUSH AX
+1020:196d  a1d023  MOV AX,[0x23d0]
+1020:1970  050100  ADD AX,0x1
+1020:1973  50  PUSH AX
+1020:1974  a1ce23  MOV AX,[0x23ce]
+1020:1977  050100  ADD AX,0x1
+1020:197a  50  PUSH AX
+1020:197b  b80100  MOV AX,0x1
+1020:197e  50  PUSH AX
+1020:197f  b82100  MOV AX,0x21
+1020:1982  baf000  MOV DX,0xf0
+1020:1985  52  PUSH DX
+1020:1986  50  PUSH AX
+1020:1987  9ae000f814  CALLF 0x14f8:00e0
+1020:198c  ff76fc  PUSH word ptr [BP + -0x4]
+; c:\user\jeffl\2.7j\mdi.c:888 | 
+1020:198f  a1ce23  MOV AX,[0x23ce]
+1020:1992  050100  ADD AX,0x1
+1020:1995  50  PUSH AX
+1020:1996  a1d023  MOV AX,[0x23d0]
+1020:1999  050600  ADD AX,0x6
+1020:199c  50  PUSH AX
+1020:199d  b80100  MOV AX,0x1
+1020:19a0  50  PUSH AX
+1020:19a1  a1cc23  MOV AX,[0x23cc]
+1020:19a4  2b06d023  SUB AX,word ptr [0x23d0]
+1020:19a8  05faff  ADD AX,0xfffa
+1020:19ab  50  PUSH AX
+1020:19ac  b82100  MOV AX,0x21
+1020:19af  baf000  MOV DX,0xf0
+1020:19b2  52  PUSH DX
+1020:19b3  50  PUSH AX
+1020:19b4  9ae000f814  CALLF 0x14f8:00e0
+1020:19b9  ff76fc  PUSH word ptr [BP + -0x4]
+; c:\user\jeffl\2.7j\mdi.c:890 | 
+1020:19bc  a1ce23  MOV AX,[0x23ce]
+1020:19bf  050600  ADD AX,0x6
+1020:19c2  50  PUSH AX
+1020:19c3  a1d223  MOV AX,[0x23d2]
+1020:19c6  050100  ADD AX,0x1
+1020:19c9  50  PUSH AX
+1020:19ca  a1ca23  MOV AX,[0x23ca]
+1020:19cd  2b06ce23  SUB AX,word ptr [0x23ce]
+1020:19d1  05faff  ADD AX,0xfffa
+1020:19d4  50  PUSH AX
+1020:19d5  b80100  MOV AX,0x1
+1020:19d8  50  PUSH AX
+1020:19d9  b82100  MOV AX,0x21
+1020:19dc  baf000  MOV DX,0xf0
+1020:19df  52  PUSH DX
+1020:19e0  50  PUSH AX
+1020:19e1  9ae000f814  CALLF 0x14f8:00e0
+1020:19e6  e91b00  JMP 0x1020:1a04
+; c:\user\jeffl\2.7j\mdi.c:891 | 
+1020:19e9  3d0000  CMP AX,0x0
+1020:19ec  7503  JNZ 0x1020:19f1
+1020:19ee  e930fd  JMP 0x1020:1721
+1020:19f1  3d0100  CMP AX,0x1
+1020:19f4  7503  JNZ 0x1020:19f9
+1020:19f6  e972fe  JMP 0x1020:186b
+1020:19f9  3d0200  CMP AX,0x2
+1020:19fc  7503  JNZ 0x1020:1a01
+1020:19fe  e96afe  JMP 0x1020:186b
+1020:1a01  e91dfd  JMP 0x1020:1721
+1020:1a04  ff76fc  PUSH word ptr [BP + -0x4]
+; c:\user\jeffl\2.7j\mdi.c:892 | 
+1020:1a07  ff76d4  PUSH word ptr [BP + -0x2c]
+1020:1a0a  9af800f814  CALLF 0x14f8:00f8
+1020:1a0f  56  PUSH SI
+; c:\user\jeffl\2.7j\mdi.c:894 | 
+1020:1a10  8d46d8  LEA AX,[BP + -0x28]
+1020:1a13  8cd2  MOV DX,SS
+1020:1a15  52  PUSH DX
+1020:1a16  50  PUSH AX
+1020:1a17  9ab401f814  CALLF 0x14f8:01b4
+1020:1a1c  e90c04  JMP 0x1020:1e2b
+; c:\user\jeffl\2.7j\mdi.c:895 | 
+1020:1a1f  c746f60000  MOV word ptr [BP + -0xa],0x0
+; c:\user\jeffl\2.7j\mdi.c:903 | 
+1020:1a24  56  PUSH SI
+; c:\user\jeffl\2.7j\mdi.c:905 | 
+1020:1a25  9a9801f814  CALLF 0x14f8:0198
+1020:1a2a  3d0000  CMP AX,0x0
+1020:1a2d  7503  JNZ 0x1020:1a32
+1020:1a2f  e90300  JMP 0x1020:1a35
+1020:1a32  e92503  JMP 0x1020:1d5a
+; c:\user\jeffl\2.7j\mdi.c:906 | 
+1020:1a35  8d46f2  LEA AX,[BP + -0xe]
+; c:\user\jeffl\2.7j\mdi.c:908 | 
+1020:1a38  8cd2  MOV DX,SS
+1020:1a3a  52  PUSH DX
+1020:1a3b  50  PUSH AX
+1020:1a3c  9a7801f814  CALLF 0x14f8:0178
+1020:1a41  ff368c25  PUSH word ptr [0x258c]
+; c:\user\jeffl\2.7j\mdi.c:909 | 
+1020:1a45  8d46f2  LEA AX,[BP + -0xe]
+1020:1a48  8cd2  MOV DX,SS
+1020:1a4a  52  PUSH DX
+1020:1a4b  50  PUSH AX
+1020:1a4c  9a9001f814  CALLF 0x14f8:0190
+1020:1a51  56  PUSH SI
+; c:\user\jeffl\2.7j\mdi.c:910 | 
+1020:1a52  8d46ea  LEA AX,[BP + -0x16]
+1020:1a55  8cd2  MOV DX,SS
+1020:1a57  52  PUSH DX
+1020:1a58  50  PUSH AX
+1020:1a59  9aa001f814  CALLF 0x14f8:01a0
+1020:1a5e  8d46ea  LEA AX,[BP + -0x16]
+; c:\user\jeffl\2.7j\mdi.c:911 | 
+1020:1a61  8cd2  MOV DX,SS
+1020:1a63  52  PUSH DX
+1020:1a64  50  PUSH AX
+1020:1a65  ff76f4  PUSH word ptr [BP + -0xc]
+1020:1a68  ff76f2  PUSH word ptr [BP + -0xe]
+1020:1a6b  9afc01f814  CALLF 0x14f8:01fc
+1020:1a70  3d0000  CMP AX,0x0
+1020:1a73  7503  JNZ 0x1020:1a78
+1020:1a75  e92f00  JMP 0x1020:1aa7
+1020:1a78  b80000  MOV AX,0x0
+; c:\user\jeffl\2.7j\mdi.c:913 | 
+1020:1a7b  50  PUSH AX
+1020:1a7c  ff76f4  PUSH word ptr [BP + -0xc]
+1020:1a7f  ff76f2  PUSH word ptr [BP + -0xe]
+1020:1a82  9ab0242010  CALLF 0x1020:24b0
+1020:1a87  83c406  ADD SP,0x6
+1020:1a8a  8946f6  MOV word ptr [BP + -0xa],AX
+1020:1a8d  837ef600  CMP word ptr [BP + -0xa],0x0
+; c:\user\jeffl\2.7j\mdi.c:915 | 
+1020:1a91  7503  JNZ 0x1020:1a96
+1020:1a93  e91100  JMP 0x1020:1aa7
+1020:1a96  ff76f6  PUSH word ptr [BP + -0xa]
+; c:\user\jeffl\2.7j\mdi.c:917 | 
+1020:1a99  9af001f814  CALLF 0x14f8:01f0
+1020:1a9e  b80100  MOV AX,0x1
+; c:\user\jeffl\2.7j\mdi.c:918 | 
+1020:1aa1  ba0000  MOV DX,0x0
+1020:1aa4  e98d03  JMP 0x1020:1e34
+1020:1aa7  e9b002  JMP 0x1020:1d5a
+; c:\user\jeffl\2.7j\mdi.c:921 | 
+1020:1aaa  8b4606  MOV AX,word ptr [BP + 0x6]
+; c:\user\jeffl\2.7j\mdi.c:935 | 
+1020:1aad  8b5608  MOV DX,word ptr [BP + 0x8]
+1020:1ab0  8946ee  MOV word ptr [BP + -0x12],AX
+1020:1ab3  8b4606  MOV AX,word ptr [BP + 0x6]
+; c:\user\jeffl\2.7j\mdi.c:936 | 
+1020:1ab6  8b5608  MOV DX,word ptr [BP + 0x8]
+1020:1ab9  b91000  MOV CX,0x10
+1020:1abc  9a320e1811  CALLF 0x1118:0e32
+1020:1ac1  25ffff  AND AX,0xffff
+1020:1ac4  83e200  AND DX,0x0
+1020:1ac7  8946f0  MOV word ptr [BP + -0x10],AX
+1020:1aca  8d46f2  LEA AX,[BP + -0xe]
+; c:\user\jeffl\2.7j\mdi.c:938 | 
+1020:1acd  50  PUSH AX
+1020:1ace  ff76f0  PUSH word ptr [BP + -0x10]
+1020:1ad1  ff76ee  PUSH word ptr [BP + -0x12]
+1020:1ad4  9ab0242010  CALLF 0x1020:24b0
+1020:1ad9  83c406  ADD SP,0x6
+1020:1adc  3d0000  CMP AX,0x0
+1020:1adf  7403  JZ 0x1020:1ae4
+1020:1ae1  e90300  JMP 0x1020:1ae7
+1020:1ae4  e94403  JMP 0x1020:1e2b
+; c:\user\jeffl\2.7j\mdi.c:939 | 
+1020:1ae7  56  PUSH SI
+; c:\user\jeffl\2.7j\mdi.c:941 | 
+1020:1ae8  9ae801f814  CALLF 0x14f8:01e8
+1020:1aed  8946fc  MOV word ptr [BP + -0x4],AX
+1020:1af0  ff76fc  PUSH word ptr [BP + -0x4]
+; c:\user\jeffl\2.7j\mdi.c:942 | 
+1020:1af3  ff36784b  PUSH word ptr [0x4b78]
+1020:1af7  9af800f814  CALLF 0x14f8:00f8
+1020:1afc  8946e4  MOV word ptr [BP + -0x1c],AX
+1020:1aff  c746e80000  MOV word ptr [BP + -0x18],0x0
+; c:\user\jeffl\2.7j\mdi.c:944 | 
+1020:1b04  b80000  MOV AX,0x0
+1020:1b07  8946e6  MOV word ptr [BP + -0x1a],AX
+1020:1b0a  b80000  MOV AX,0x0
+; c:\user\jeffl\2.7j\mdi.c:945 | 
+1020:1b0d  50  PUSH AX
+1020:1b0e  ff76e8  PUSH word ptr [BP + -0x18]
+1020:1b11  ff76e6  PUSH word ptr [BP + -0x1a]
+1020:1b14  ff76f2  PUSH word ptr [BP + -0xe]
+1020:1b17  ff76fc  PUSH word ptr [BP + -0x4]
+1020:1b1a  9a3c1e2010  CALLF 0x1020:1e3c
+1020:1b1f  83c40a  ADD SP,0xa
+1020:1b22  8b46ee  MOV AX,word ptr [BP + -0x12]
+; c:\user\jeffl\2.7j\mdi.c:946 | 
+1020:1b25  8b56f0  MOV DX,word ptr [BP + -0x10]
+1020:1b28  8946e0  MOV word ptr [BP + -0x20],AX
+1020:1b2b  8956e2  MOV word ptr [BP + -0x1e],DX
+1020:1b2e  56  PUSH SI
+; c:\user\jeffl\2.7j\mdi.c:948 | 
+1020:1b2f  9a7c01f814  CALLF 0x14f8:017c
+1020:1b34  8b46ee  MOV AX,word ptr [BP + -0x12]
+; c:\user\jeffl\2.7j\mdi.c:949 | 
+1020:1b37  8b56f0  MOV DX,word ptr [BP + -0x10]
+1020:1b3a  8946f4  MOV word ptr [BP + -0xc],AX
+1020:1b3d  8956f6  MOV word ptr [BP + -0xa],DX
+1020:1b40  c746ec0000  MOV word ptr [BP + -0x14],0x0
+; c:\user\jeffl\2.7j\mdi.c:950 | 
+1020:1b45  b80000  MOV AX,0x0
+1020:1b48  8946ea  MOV word ptr [BP + -0x16],AX
+1020:1b4b  8d46ee  LEA AX,[BP + -0x12]
+; c:\user\jeffl\2.7j\mdi.c:951 | 
+1020:1b4e  50  PUSH AX
+1020:1b4f  9a46414010  CALLF 0x1040:4146
+1020:1b54  83c402  ADD SP,0x2
+1020:1b57  3d0000  CMP AX,0x0
+1020:1b5a  7503  JNZ 0x1020:1b5f
+1020:1b5c  e96700  JMP 0x1020:1bc6
+1020:1b5f  8b46f4  MOV AX,word ptr [BP + -0xc]
+; c:\user\jeffl\2.7j\mdi.c:953 | 
+1020:1b62  3946ee  CMP word ptr [BP + -0x12],AX
+1020:1b65  7403  JZ 0x1020:1b6a
+1020:1b67  e90b00  JMP 0x1020:1b75
+1020:1b6a  8b46f6  MOV AX,word ptr [BP + -0xa]
+1020:1b6d  3946f0  CMP word ptr [BP + -0x10],AX
+1020:1b70  7503  JNZ 0x1020:1b75
+1020:1b72  e94e00  JMP 0x1020:1bc3
+1020:1b75  8b46ee  MOV AX,word ptr [BP + -0x12]
+; c:\user\jeffl\2.7j\mdi.c:955 | 
+1020:1b78  2b46e0  SUB AX,word ptr [BP + -0x20]
+1020:1b7b  8946e6  MOV word ptr [BP + -0x1a],AX
+1020:1b7e  8b46f0  MOV AX,word ptr [BP + -0x10]
+; c:\user\jeffl\2.7j\mdi.c:956 | 
+1020:1b81  2b46e2  SUB AX,word ptr [BP + -0x1e]
+1020:1b84  8946e8  MOV word ptr [BP + -0x18],AX
+1020:1b87  8b46ee  MOV AX,word ptr [BP + -0x12]
+; c:\user\jeffl\2.7j\mdi.c:958 | 
+1020:1b8a  2b46f4  SUB AX,word ptr [BP + -0xc]
+1020:1b8d  8946dc  MOV word ptr [BP + -0x24],AX
+1020:1b90  8b46f0  MOV AX,word ptr [BP + -0x10]
+; c:\user\jeffl\2.7j\mdi.c:959 | 
+1020:1b93  2b46f6  SUB AX,word ptr [BP + -0xa]
+1020:1b96  8946de  MOV word ptr [BP + -0x22],AX
+1020:1b99  8d46dc  LEA AX,[BP + -0x24]
+; c:\user\jeffl\2.7j\mdi.c:961 | 
+1020:1b9c  50  PUSH AX
+1020:1b9d  ff76e8  PUSH word ptr [BP + -0x18]
+1020:1ba0  ff76e6  PUSH word ptr [BP + -0x1a]
+1020:1ba3  ff76f2  PUSH word ptr [BP + -0xe]
+1020:1ba6  ff76fc  PUSH word ptr [BP + -0x4]
+1020:1ba9  9a3c1e2010  CALLF 0x1020:1e3c
+1020:1bae  83c40a  ADD SP,0xa
+1020:1bb1  8946ea  MOV word ptr [BP + -0x16],AX
+1020:1bb4  8956ec  MOV word ptr [BP + -0x14],DX
+1020:1bb7  8b46ee  MOV AX,word ptr [BP + -0x12]
+; c:\user\jeffl\2.7j\mdi.c:962 | 
+1020:1bba  8b56f0  MOV DX,word ptr [BP + -0x10]
+1020:1bbd  8946f4  MOV word ptr [BP + -0xc],AX
+1020:1bc0  8956f6  MOV word ptr [BP + -0xa],DX
+1020:1bc3  e985ff  JMP 0x1020:1b4b
+; c:\user\jeffl\2.7j\mdi.c:964 | 
+1020:1bc6  b80000  MOV AX,0x0
+; c:\user\jeffl\2.7j\mdi.c:965 | 
+1020:1bc9  50  PUSH AX
+1020:1bca  ff76e8  PUSH word ptr [BP + -0x18]
+1020:1bcd  ff76e6  PUSH word ptr [BP + -0x1a]
+1020:1bd0  ff76f2  PUSH word ptr [BP + -0xe]
+1020:1bd3  ff76fc  PUSH word ptr [BP + -0x4]
+1020:1bd6  9a3c1e2010  CALLF 0x1020:1e3c
+1020:1bdb  83c40a  ADD SP,0xa
+1020:1bde  9a8001f814  CALLF 0x14f8:0180
+; c:\user\jeffl\2.7j\mdi.c:966 | 
+1020:1be3  ff76fc  PUSH word ptr [BP + -0x4]
+; c:\user\jeffl\2.7j\mdi.c:968 | 
+1020:1be6  ff76e4  PUSH word ptr [BP + -0x1c]
+1020:1be9  9af800f814  CALLF 0x14f8:00f8
+1020:1bee  56  PUSH SI
+; c:\user\jeffl\2.7j\mdi.c:969 | 
+1020:1bef  ff76fc  PUSH word ptr [BP + -0x4]
+1020:1bf2  9aec01f814  CALLF 0x14f8:01ec
+1020:1bf7  837eea00  CMP word ptr [BP + -0x16],0x0
+; c:\user\jeffl\2.7j\mdi.c:971 | 
+1020:1bfb  7403  JZ 0x1020:1c00
+1020:1bfd  e90900  JMP 0x1020:1c09
+1020:1c00  837eec00  CMP word ptr [BP + -0x14],0x0
+1020:1c04  7503  JNZ 0x1020:1c09
+1020:1c06  e9ca00  JMP 0x1020:1cd3
+1020:1c09  8b46f2  MOV AX,word ptr [BP + -0xe]
+; c:\user\jeffl\2.7j\mdi.c:973 | 
+1020:1c0c  250100  AND AX,0x1
+1020:1c0f  3d0000  CMP AX,0x0
+1020:1c12  7503  JNZ 0x1020:1c17
+1020:1c14  e91f00  JMP 0x1020:1c36
+1020:1c17  833ede2200  CMP word ptr [0x22de],0x0
+; c:\user\jeffl\2.7j\mdi.c:975 | 
+1020:1c1c  7403  JZ 0x1020:1c21
+1020:1c1e  e90c00  JMP 0x1020:1c2d
+1020:1c21  a1ce23  MOV AX,[0x23ce]
+; c:\user\jeffl\2.7j\mdi.c:976 | 
+1020:1c24  0346ea  ADD AX,word ptr [BP + -0x16]
+1020:1c27  a3d423  MOV [0x23d4],AX
+1020:1c2a  e90900  JMP 0x1020:1c36
+; c:\user\jeffl\2.7j\mdi.c:977 | 
+1020:1c2d  a1ce23  MOV AX,[0x23ce]
+; c:\user\jeffl\2.7j\mdi.c:978 | 
+1020:1c30  0346ea  ADD AX,word ptr [BP + -0x16]
+1020:1c33  a3da23  MOV [0x23da],AX
+1020:1c36  8b46f2  MOV AX,word ptr [BP + -0xe]
+; c:\user\jeffl\2.7j\mdi.c:980 | 
+1020:1c39  250200  AND AX,0x2
+1020:1c3c  3d0000  CMP AX,0x0
+1020:1c3f  7503  JNZ 0x1020:1c44
+1020:1c41  e92d00  JMP 0x1020:1c71
+1020:1c44  833ede2200  CMP word ptr [0x22de],0x0
+; c:\user\jeffl\2.7j\mdi.c:982 | 
+1020:1c49  7403  JZ 0x1020:1c4e
+1020:1c4b  e91300  JMP 0x1020:1c61
+1020:1c4e  a1d223  MOV AX,[0x23d2]
+; c:\user\jeffl\2.7j\mdi.c:983 | 
+1020:1c51  2b06d023  SUB AX,word ptr [0x23d0]
+1020:1c55  05f8ff  ADD AX,0xfff8
+1020:1c58  2b46ec  SUB AX,word ptr [BP + -0x14]
+1020:1c5b  a3d623  MOV [0x23d6],AX
+1020:1c5e  e91000  JMP 0x1020:1c71
+; c:\user\jeffl\2.7j\mdi.c:984 | 
+1020:1c61  a1cc23  MOV AX,[0x23cc]
+; c:\user\jeffl\2.7j\mdi.c:985 | 
+1020:1c64  2b06d023  SUB AX,word ptr [0x23d0]
+1020:1c68  05f8ff  ADD AX,0xfff8
+1020:1c6b  2b46ec  SUB AX,word ptr [BP + -0x14]
+1020:1c6e  a3dc23  MOV [0x23dc],AX
+1020:1c71  8b46f2  MOV AX,word ptr [BP + -0xe]
+; c:\user\jeffl\2.7j\mdi.c:987 | 
+1020:1c74  250400  AND AX,0x4
+1020:1c77  3d0000  CMP AX,0x0
+1020:1c7a  7503  JNZ 0x1020:1c7f
+1020:1c7c  e93d00  JMP 0x1020:1cbc
+1020:1c7f  833ede2200  CMP word ptr [0x22de],0x0
+; c:\user\jeffl\2.7j\mdi.c:989 | 
+1020:1c84  7403  JZ 0x1020:1c89
+1020:1c86  e92300  JMP 0x1020:1cac
+1020:1c89  a1d223  MOV AX,[0x23d2]
+; c:\user\jeffl\2.7j\mdi.c:991 | 
+1020:1c8c  2b06d023  SUB AX,word ptr [0x23d0]
+1020:1c90  05f8ff  ADD AX,0xfff8
+1020:1c93  0346ec  ADD AX,word ptr [BP + -0x14]
+1020:1c96  a3d623  MOV [0x23d6],AX
+1020:1c99  a1cc23  MOV AX,[0x23cc]
+; c:\user\jeffl\2.7j\mdi.c:992 | 
+1020:1c9c  2b06d223  SUB AX,word ptr [0x23d2]
+1020:1ca0  05f8ff  ADD AX,0xfff8
+1020:1ca3  2b46ec  SUB AX,word ptr [BP + -0x14]
+1020:1ca6  a3d823  MOV [0x23d8],AX
+1020:1ca9  e91000  JMP 0x1020:1cbc
+; c:\user\jeffl\2.7j\mdi.c:994 | 
+1020:1cac  a1cc23  MOV AX,[0x23cc]
+; c:\user\jeffl\2.7j\mdi.c:995 | 
+1020:1caf  2b06d223  SUB AX,word ptr [0x23d2]
+1020:1cb3  05f8ff  ADD AX,0xfff8
+1020:1cb6  2b46ec  SUB AX,word ptr [BP + -0x14]
+1020:1cb9  a3de23  MOV [0x23de],AX
+1020:1cbc  56  PUSH SI
+; c:\user\jeffl\2.7j\mdi.c:997 | 
+1020:1cbd  b80000  MOV AX,0x0
+1020:1cc0  ba0000  MOV DX,0x0
+1020:1cc3  52  PUSH DX
+1020:1cc4  50  PUSH AX
+1020:1cc5  b80100  MOV AX,0x1
+1020:1cc8  50  PUSH AX
+1020:1cc9  9a7402f814  CALLF 0x14f8:0274
+1020:1cce  9a888c2010  CALLF 0x1020:8c88
+; c:\user\jeffl\2.7j\mdi.c:998 | 
+1020:1cd3  e95501  JMP 0x1020:1e2b
+; c:\user\jeffl\2.7j\mdi.c:1001 | 
+1020:1cd6  833ea20100  CMP word ptr [0x1a2],0x0
+; c:\user\jeffl\2.7j\mdi.c:1004 | 
+1020:1cdb  7503  JNZ 0x1020:1ce0
+1020:1cdd  e90d00  JMP 0x1020:1ced
+1020:1ce0  b80000  MOV AX,0x0
+; c:\user\jeffl\2.7j\mdi.c:1005 | 
+1020:1ce3  50  PUSH AX
+1020:1ce4  ff36a201  PUSH word ptr [0x1a2]
+1020:1ce8  9a6c01f814  CALLF 0x14f8:016c
+1020:1ced  9a767a2010  CALLF 0x1020:7a76
+; c:\user\jeffl\2.7j\mdi.c:1006 | 
+1020:1cf2  c706a2010000  MOV word ptr [0x1a2],0x0
+; c:\user\jeffl\2.7j\mdi.c:1007 | 
+1020:1cf8  a1ca07  MOV AX,[0x7ca]
+; c:\user\jeffl\2.7j\mdi.c:1013 | 
+1020:1cfb  d1e8  SHR AX,0x1
+1020:1cfd  d1e8  SHR AX,0x1
+1020:1cff  d1e8  SHR AX,0x1
+1020:1d01  250100  AND AX,0x1
+1020:1d04  3d0000  CMP AX,0x0
+1020:1d07  7503  JNZ 0x1020:1d0c
+1020:1d09  e91800  JMP 0x1020:1d24
+1020:1d0c  b80000  MOV AX,0x0
+; c:\user\jeffl\2.7j\mdi.c:1015 | 
+1020:1d0f  50  PUSH AX
+1020:1d10  b80100  MOV AX,0x1
+1020:1d13  50  PUSH AX
+1020:1d14  b8ffff  MOV AX,0xffff
+1020:1d17  50  PUSH AX
+1020:1d18  b80200  MOV AX,0x2
+1020:1d1b  50  PUSH AX
+1020:1d1c  9a4a907010  CALLF 0x1070:904a
+1020:1d21  83c408  ADD SP,0x8
+1020:1d24  9ab0447010  CALLF 0x1070:44b0
+; c:\user\jeffl\2.7j\mdi.c:1017 | 
+1020:1d29  b90600  MOV CX,0x6
+; c:\user\jeffl\2.7j\mdi.c:1018 | 
+1020:1d2c  a1cc07  MOV AX,[0x7cc]
+1020:1d2f  d3e8  SHR AX,CL
+1020:1d31  250100  AND AX,0x1
+1020:1d34  3d0000  CMP AX,0x0
+1020:1d37  7503  JNZ 0x1020:1d3c
+1020:1d39  e91200  JMP 0x1020:1d4e
+1020:1d3c  a18c03  MOV AX,[0x38c]
+; c:\user\jeffl\2.7j\mdi.c:1019 | 
+1020:1d3f  99  CWD
+1020:1d40  52  PUSH DX
+1020:1d41  50  PUSH AX
+1020:1d42  b80000  MOV AX,0x0
+1020:1d45  50  PUSH AX
+1020:1d46  9a6401f814  CALLF 0x14f8:0164
+1020:1d4b  e90900  JMP 0x1020:1d57
+; c:\user\jeffl\2.7j\mdi.c:1020 | 
+1020:1d4e  ff368c03  PUSH word ptr [0x38c]
+; c:\user\jeffl\2.7j\mdi.c:1021 | 
+1020:1d52  9a6001f814  CALLF 0x14f8:0160
+1020:1d57  e9d100  JMP 0x1020:1e2b
+; c:\user\jeffl\2.7j\mdi.c:1022 | 
+1020:1d5a  56  PUSH SI
+; c:\user\jeffl\2.7j\mdi.c:1026 | 
+1020:1d5b  ff760c  PUSH word ptr [BP + 0xc]
+1020:1d5e  57  PUSH DI
+1020:1d5f  ff7608  PUSH word ptr [BP + 0x8]
+1020:1d62  ff7606  PUSH word ptr [BP + 0x6]
+1020:1d65  9a5002f814  CALLF 0x14f8:0250
+1020:1d6a  e9c700  JMP 0x1020:1e34
+1020:1d70  3d0100  CMP AX,0x1
+1020:1d73  7503  JNZ 0x1020:1d78
+1020:1d75  e973e9  JMP 0x1020:06eb
+1020:1d78  3d0200  CMP AX,0x2
+1020:1d7b  7503  JNZ 0x1020:1d80
+1020:1d7d  e956ff  JMP 0x1020:1cd6
+1020:1d80  3d0500  CMP AX,0x5
+1020:1d83  7503  JNZ 0x1020:1d88
+1020:1d85  e98ff1  JMP 0x1020:0f17
+1020:1d88  3d0600  CMP AX,0x6
+1020:1d8b  7503  JNZ 0x1020:1d90
+1020:1d8d  e9b9e9  JMP 0x1020:0749
+1020:1d90  3d0f00  CMP AX,0xf
+1020:1d93  7503  JNZ 0x1020:1d98
+1020:1d95  e9ebf8  JMP 0x1020:1683
+1020:1d98  3d1000  CMP AX,0x10
+1020:1d9b  7503  JNZ 0x1020:1da0
+1020:1d9d  e9c8f1  JMP 0x1020:0f68
+1020:1da0  3d1400  CMP AX,0x14
+1020:1da3  7503  JNZ 0x1020:1da8
+1020:1da5  e941f8  JMP 0x1020:15e9
+1020:1da8  3d1500  CMP AX,0x15
+1020:1dab  7503  JNZ 0x1020:1db0
+1020:1dad  e934f1  JMP 0x1020:0ee4
+1020:1db0  3d1a00  CMP AX,0x1a
+1020:1db3  7503  JNZ 0x1020:1db8
+1020:1db5  e92cf1  JMP 0x1020:0ee4
+1020:1db8  3d2000  CMP AX,0x20
+1020:1dbb  7503  JNZ 0x1020:1dc0
+1020:1dbd  e95ffc  JMP 0x1020:1a1f
+1020:1dc0  3d2400  CMP AX,0x24
+1020:1dc3  7503  JNZ 0x1020:1dc8
+1020:1dc5  e92af1  JMP 0x1020:0ef2
+1020:1dc8  3d3700  CMP AX,0x37
+1020:1dcb  7503  JNZ 0x1020:1dd0
+1020:1dcd  e9eaf7  JMP 0x1020:15ba
+1020:1dd0  3d0201  CMP AX,0x102
+1020:1dd3  7503  JNZ 0x1020:1dd8
+1020:1dd5  e911f6  JMP 0x1020:13e9
+1020:1dd8  3d1101  CMP AX,0x111
+1020:1ddb  7503  JNZ 0x1020:1de0
+1020:1ddd  e97bf1  JMP 0x1020:0f5b
+1020:1de0  3d1201  CMP AX,0x112
+1020:1de3  7503  JNZ 0x1020:1de8
+1020:1de5  e9ecf2  JMP 0x1020:10d4
+1020:1de8  3d1601  CMP AX,0x116
+1020:1deb  7503  JNZ 0x1020:1df0
+1020:1ded  e9fbe9  JMP 0x1020:07eb
+1020:1df0  3d2101  CMP AX,0x121
+1020:1df3  7503  JNZ 0x1020:1df8
+1020:1df5  e9b9f0  JMP 0x1020:0eb1
+1020:1df8  3d0102  CMP AX,0x201
+1020:1dfb  7503  JNZ 0x1020:1e00
+1020:1dfd  e9aafc  JMP 0x1020:1aaa
+1020:1e00  3d0f03  CMP AX,0x30f
+1020:1e03  7503  JNZ 0x1020:1e08
+1020:1e05  e944e9  JMP 0x1020:074c
+1020:1e08  3d1103  CMP AX,0x311
+1020:1e0b  7503  JNZ 0x1020:1e10
+1020:1e0d  e9cee9  JMP 0x1020:07de
+1020:1e10  3d6404  CMP AX,0x464
+1020:1e13  7503  JNZ 0x1020:1e18
+1020:1e15  e9dfe9  JMP 0x1020:07f7
+1020:1e18  3d6504  CMP AX,0x465
+1020:1e1b  7503  JNZ 0x1020:1e20
+1020:1e1d  e951f1  JMP 0x1020:0f71
+1020:1e20  3d6604  CMP AX,0x466
+1020:1e23  7503  JNZ 0x1020:1e28
+1020:1e25  e957f1  JMP 0x1020:0f7f
+1020:1e28  e92fff  JMP 0x1020:1d5a
+1020:1e2b  b80000  MOV AX,0x0
+; c:\user\jeffl\2.7j\mdi.c:1028 | 
+1020:1e2e  ba0000  MOV DX,0x0
+1020:1e31  e90000  JMP 0x1020:1e34
+1020:1e34  5f  POP DI
+; c:\user\jeffl\2.7j\mdi.c:1029 | 
+1020:1e35  5e  POP SI
+1020:1e36  8be5  MOV SP,BP
+1020:1e38  5d  POP BP
+1020:1e39  ca0a00  RETF 0xa

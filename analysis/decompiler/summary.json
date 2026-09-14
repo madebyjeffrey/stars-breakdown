@@ -1,0 +1,38 @@
+{
+  "input_sha256": "ccab6682b55dae14dbf104e491cfbd3b32a6280022020032ae0615500949ba59",
+  "ghidra": "12.1.3 (2026-08-17)",
+  "language": "x86:LE:16:Protected Mode",
+  "functions": 1043,
+  "debug_procedures": 846,
+  "additional_functions": 197,
+  "decompiled": 1043,
+  "invalid_direct_flows": 0,
+  "loader": {
+    "segments": 37,
+    "bytes": 1042584,
+    "relocation_sites": 15327,
+    "absolute_export_sites": 13,
+    "unmatched_bytes": 0,
+    "hardware_x87_fixups": 1313,
+    "exported_prologue": "Ghidra preserves original prologue; step-1 optional runtime prologue rewrite is not applied."
+  },
+  "classified_bytes": {
+    "code_data": 111989,
+    "code_instruction": 901135,
+    "code_undefined": 3406,
+    "data_undefined": 4446,
+    "data_data": 21608
+  },
+  "public_entry_addresses": 1131,
+  "public_labels_requiring_entry_review": [],
+  "calls": 6499,
+  "data_reference_addresses": 1209,
+  "address_taken_candidates": 65,
+  "indirect_instructions": 100,
+  "unresolved_indirect_instructions": 20,
+  "os_interrupt_instructions": 22,
+  "switch_tables": 60,
+  "reconstructed_source_status": "Unchanged: these are raw tool outputs, not reviewed/compiled reconstruction.",
+  "dos_stub_functions": 2,
+  "dos_stub_instruction_bytes": 15
+}

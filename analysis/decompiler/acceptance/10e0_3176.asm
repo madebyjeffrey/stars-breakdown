@@ -1,0 +1,30 @@
+10e0:3176  55  PUSH BP
+; c:\user\jeffl\2.7j\race.c:1529 | 
+10e0:3177  8bec  MOV BP,SP
+10e0:3179  81ec0200  SUB SP,0x2
+10e0:317d  56  PUSH SI
+10e0:317e  57  PUSH DI
+10e0:317f  b80100  MOV AX,0x1
+; c:\user\jeffl\2.7j\race.c:1532 | 
+10e0:3182  ba0000  MOV DX,0x0
+10e0:3185  8b4e08  MOV CX,word ptr [BP + 0x8]
+10e0:3188  9a500d1811  CALLF 0x1118:0d50
+10e0:318d  8b5e06  MOV BX,word ptr [BP + 0x6]
+10e0:3190  23474e  AND AX,word ptr [BX + 0x4e]
+10e0:3193  235750  AND DX,word ptr [BX + 0x50]
+10e0:3196  3d0000  CMP AX,0x0
+10e0:3199  7403  JZ 0x10e0:319e
+10e0:319b  e90800  JMP 0x10e0:31a6
+10e0:319e  83fa00  CMP DX,0x0
+10e0:31a1  7503  JNZ 0x10e0:31a6
+10e0:31a3  e90600  JMP 0x10e0:31ac
+10e0:31a6  b80100  MOV AX,0x1
+10e0:31a9  e90300  JMP 0x10e0:31af
+10e0:31ac  b80000  MOV AX,0x0
+10e0:31af  e90000  JMP 0x10e0:31b2
+10e0:31b2  5f  POP DI
+; c:\user\jeffl\2.7j\race.c:1533 | 
+10e0:31b3  5e  POP SI
+10e0:31b4  8be5  MOV SP,BP
+10e0:31b6  5d  POP BP
+10e0:31b7  cb  RETF

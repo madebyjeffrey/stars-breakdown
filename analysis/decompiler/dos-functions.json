@@ -1,0 +1,44 @@
+[
+  {
+    "address": "1000:0000",
+    "name": "dos_entry",
+    "signature": "void dos_entry(void)",
+    "convention": "__cdecl16near",
+    "purge": 0,
+    "body_bytes": 3,
+    "thunk": false,
+    "return_bytes": 0,
+    "return_storage": "<VOID>",
+    "parameters": [],
+    "ranges": [
+      {
+        "start": "1000:0000",
+        "end": "1000:0002"
+      }
+    ],
+    "decompiled": true,
+    "message": "",
+    "instructions": 1
+  },
+  {
+    "address": "1000:0056",
+    "name": "dos_print_and_exit",
+    "signature": "void dos_print_and_exit(void)",
+    "convention": "__cdecl16near",
+    "purge": 0,
+    "body_bytes": 12,
+    "thunk": false,
+    "return_bytes": 0,
+    "return_storage": "<VOID>",
+    "parameters": [],
+    "ranges": [
+      {
+        "start": "1000:0056",
+        "end": "1000:0061"
+      }
+    ],
+    "decompiled": true,
+    "message": "",
+    "instructions": 7
+  }
+]

@@ -55,16 +55,18 @@ This does not promise the author's exact source text, comments, macros, or code 
 
 ## 3. Establish a trustworthy disassembly/decompilation workflow
 
-- [ ] Evaluate a decompiler's actual Windows NE and 16-bit x86 handling on this binary; select and record a tested version and configuration.
-- [ ] Import the relocation-aware program and automate symbol, function-boundary, type, global, and source-location import.
-- [ ] Verify near/far calls and pointers, DS/SS/ES assumptions, argument order, caller/callee cleanup, multi-register returns, and signedness.
-- [ ] Identify compiler/runtime idioms, including long arithmetic, floating-point support, switch tables, indirect calls, and thunks where present.
+- [x] Evaluate a decompiler's actual Windows NE and 16-bit x86 handling on this binary; select and record a tested version and configuration.
+- [x] Import the relocation-aware program and automate symbol, function-boundary, type, global, and source-location import.
+- [x] Verify near/far calls and pointers, DS/SS/ES assumptions, argument order, caller/callee cleanup, multi-register returns, and signedness.
+- [x] Identify compiler/runtime idioms, including long arithmetic, floating-point support, switch tables, indirect calls, and thunks where present.
 - [x] Manually reconstruct `GetRaceStat` and anchor its metadata to exact machine bytes.
-- [ ] Use that reconstruction plus representative cross-segment, arithmetic, callback, and switch functions as acceptance checks for the selected tools.
-- [ ] Discover functions beyond the procedure records using entry points, relocation targets, callbacks, pointer tables, and control-flow analysis.
-- [ ] Separate inline data and jump tables from instructions; resolve overlapping or incorrect function boundaries.
-- [ ] Build call graphs, data-reference maps, and callback/dispatch tables. Enumerate every unresolved indirect target.
-- [ ] Export a reproducible disassembly and an initial decompilation for every identified function, keeping raw tool output separate from reviewed source.
+- [x] Use that reconstruction plus representative cross-segment, arithmetic, callback, and switch functions as acceptance checks for the selected tools.
+- [x] Discover functions beyond the procedure records using entry points, relocation targets, callbacks, pointer tables, and control-flow analysis.
+- [x] Separate inline data and jump tables from instructions; resolve overlapping or incorrect function boundaries.
+- [x] Build call graphs, data-reference maps, and callback/dispatch tables. Enumerate every unresolved indirect target.
+- [x] Export a reproducible disassembly and an initial decompilation for every identified function, keeping raw tool output separate from reviewed source.
+
+**Evidence:** [tested workflow and acceptance checks](analysis/decompiler/README.md), [function exports/index](analysis/decompiler/functions.json), [automatic byte coverage](analysis/decompiler/coverage.json), and [unresolved indirect transfers](analysis/decompiler/indirect-targets.json). Ghidra 12.1.3 exports 1,043 identified functions; static acceptance passes. Raw output remains separate from reviewed source, and runtime/tool limitations remain explicit.
 
 **Exit:** the analysis can be recreated, known examples decompile correctly, and the coverage ledger accounts for all candidate code ranges.
 

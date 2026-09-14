@@ -1,0 +1,23 @@
+1118:0c7e  55  PUSH BP
+1118:0c7f  8bec  MOV BP,SP
+1118:0c81  8b4608  MOV AX,word ptr [BP + 0x8]
+1118:0c84  8b4e0c  MOV CX,word ptr [BP + 0xc]
+1118:0c87  0bc8  OR CX,AX
+1118:0c89  8b4e0a  MOV CX,word ptr [BP + 0xa]
+1118:0c8c  7509  JNZ 0x1118:0c97
+1118:0c8e  8b4606  MOV AX,word ptr [BP + 0x6]
+1118:0c91  f7e1  MUL CX
+1118:0c93  5d  POP BP
+1118:0c94  ca0800  RETF 0x8
+1118:0c97  53  PUSH BX
+1118:0c98  f7e1  MUL CX
+1118:0c9a  8bd8  MOV BX,AX
+1118:0c9c  8b4606  MOV AX,word ptr [BP + 0x6]
+1118:0c9f  f7660c  MUL word ptr [BP + 0xc]
+1118:0ca2  03d8  ADD BX,AX
+1118:0ca4  8b4606  MOV AX,word ptr [BP + 0x6]
+1118:0ca7  f7e1  MUL CX
+1118:0ca9  03d3  ADD DX,BX
+1118:0cab  5b  POP BX
+1118:0cac  5d  POP BP
+1118:0cad  ca0800  RETF 0x8

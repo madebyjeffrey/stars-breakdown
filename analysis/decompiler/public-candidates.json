@@ -1,0 +1,8975 @@
+[
+  {
+    "address": "1000:0000",
+    "names": [
+      "rgPalGray",
+      "_rgPalGray"
+    ],
+    "classification": "defined data"
+  },
+  {
+    "address": "1000:0014",
+    "names": [
+      "FCreateStuff",
+      "_FCreateStuff"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1000:0ab2",
+    "names": [
+      "FCreateFonts",
+      "_FCreateFonts"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1000:0d70",
+    "names": [
+      "InitInstance",
+      "_InitInstance"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1000:0eaa",
+    "names": [
+      "InitTiles",
+      "_InitTiles"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1000:1020",
+    "names": [
+      "GetIniWinRc",
+      "_GetIniWinRc"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1000:124c",
+    "names": [
+      "ReadIniSettings",
+      "_ReadIniSettings"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1000:2b8a",
+    "names": [
+      "ReadIniTileSettings",
+      "_ReadIniTileSettings"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1008:0000",
+    "names": [
+      "rgengine",
+      "_rgengine"
+    ],
+    "classification": "defined data"
+  },
+  {
+    "address": "1008:04e0",
+    "names": [
+      "rgarmor",
+      "_rgarmor"
+    ],
+    "classification": "defined data"
+  },
+  {
+    "address": "1008:0768",
+    "names": [
+      "rgscanner",
+      "_rgscanner"
+    ],
+    "classification": "defined data"
+  },
+  {
+    "address": "1008:0ae8",
+    "names": [
+      "rgshield",
+      "_rgshield"
+    ],
+    "classification": "defined data"
+  },
+  {
+    "address": "1008:0d04",
+    "names": [
+      "rgspecialE",
+      "_rgspecialE"
+    ],
+    "classification": "defined data"
+  },
+  {
+    "address": "1008:109a",
+    "names": [
+      "rgspecialM",
+      "_rgspecialM"
+    ],
+    "classification": "defined data"
+  },
+  {
+    "address": "1008:12ec",
+    "names": [
+      "rgmines",
+      "_rgmines"
+    ],
+    "classification": "defined data"
+  },
+  {
+    "address": "1008:1508",
+    "names": [
+      "rgmining",
+      "_rgmining"
+    ],
+    "classification": "defined data"
+  },
+  {
+    "address": "1008:16b8",
+    "names": [
+      "rgplanetary",
+      "_rgplanetary"
+    ],
+    "classification": "defined data"
+  },
+  {
+    "address": "1008:19e2",
+    "names": [
+      "rgterra",
+      "_rgterra"
+    ],
+    "classification": "defined data"
+  },
+  {
+    "address": "1008:1e1a",
+    "names": [
+      "rgbomb",
+      "_rgbomb"
+    ],
+    "classification": "defined data"
+  },
+  {
+    "address": "1008:2180",
+    "names": [
+      "rgtorp",
+      "_rgtorp"
+    ],
+    "classification": "defined data"
+  },
+  {
+    "address": "1008:2450",
+    "names": [
+      "rgbeam",
+      "_rgbeam"
+    ],
+    "classification": "defined data"
+  },
+  {
+    "address": "1008:29f0",
+    "names": [
+      "rghuldef",
+      "_rghuldef"
+    ],
+    "classification": "defined data"
+  },
+  {
+    "address": "1008:3bd0",
+    "names": [
+      "rgshdefT",
+      "_rgshdefT"
+    ],
+    "classification": "defined data"
+  },
+  {
+    "address": "1008:4872",
+    "names": [
+      "rghuldefSB",
+      "_rghuldefSB"
+    ],
+    "classification": "defined data"
+  },
+  {
+    "address": "1008:4b3e",
+    "names": [
+      "rgshdefSBT",
+      "_rgshdefSBT"
+    ],
+    "classification": "defined data"
+  },
+  {
+    "address": "1008:4d8a",
+    "names": [
+      "rgspecialSB",
+      "_rgspecialSB"
+    ],
+    "classification": "defined data"
+  },
+  {
+    "address": "1008:510a",
+    "names": [
+      "LphuldefSBFromId",
+      "_LphuldefSBFromId"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1008:512c",
+    "names": [
+      "LphuldefFromId",
+      "_LphuldefFromId"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1008:5168",
+    "names": [
+      "LpengineFromId",
+      "_LpengineFromId"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1008:518a",
+    "names": [
+      "LpscannerFromId",
+      "_LpscannerFromId"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1008:51ac",
+    "names": [
+      "LpshdefT",
+      "_LpshdefT"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1008:51c4",
+    "names": [
+      "LpshdefSBT",
+      "_LpshdefSBT"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1008:51dc",
+    "names": [
+      "LpplanetaryFromId",
+      "_LpplanetaryFromId"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1008:51fe",
+    "names": [
+      "FLookupPartX",
+      "_FLookupPartX"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1008:524e",
+    "names": [
+      "FLookupPart",
+      "_FLookupPart"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1008:60be",
+    "names": [
+      "LookupBestPlanetaryScanner",
+      "_LookupBestPlanetaryScanner"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1008:6148",
+    "names": [
+      "TechStatus",
+      "_TechStatus"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1010:0000",
+    "names": [
+      "aSTRCmpr",
+      "_aSTRCmpr"
+    ],
+    "classification": "defined data"
+  },
+  {
+    "address": "1010:6e32",
+    "names": [
+      "acSTR",
+      "_acSTR"
+    ],
+    "classification": "defined data"
+  },
+  {
+    "address": "1010:73b8",
+    "names": [
+      "aiSTRChunkOffset",
+      "_aiSTRChunkOffset"
+    ],
+    "classification": "defined data"
+  },
+  {
+    "address": "1010:73e6",
+    "names": [
+      "rgSTRLookupTable",
+      "_rgSTRLookupTable"
+    ],
+    "classification": "defined data"
+  },
+  {
+    "address": "1010:743a",
+    "names": [
+      "PszGetCompressedString",
+      "_PszGetCompressedString"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1018:0000",
+    "names": [
+      "WinMain",
+      "WINMAIN"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1018:06a4",
+    "names": [
+      "FSetUpBatchProcessing",
+      "_FSetUpBatchProcessing"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1018:07aa",
+    "names": [
+      "IPlrAlsoCheater",
+      "_IPlrAlsoCheater"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1018:08d2",
+    "names": [
+      "FGetSystemColors",
+      "_FGetSystemColors"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1018:0bae",
+    "names": [
+      "FreeStuff",
+      "_FreeStuff"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1018:1212",
+    "names": [
+      "SzVersion",
+      "_SzVersion"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1018:1252",
+    "names": [
+      "ABOUT",
+      "Ordinal_50",
+      "About"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1018:151e",
+    "names": [
+      "ORDERINFODLG",
+      "Ordinal_53",
+      "OrderInfoDlg"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1018:15de",
+    "names": [
+      "FHandleChar",
+      "_FHandleChar"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1018:165a",
+    "names": [
+      "FHandleKey",
+      "_FHandleKey"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1020:0000",
+    "names": [
+      "InitMDIApp",
+      "_InitMDIApp"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1020:038c",
+    "names": [
+      "CreateChildWindows",
+      "_CreateChildWindows"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1020:06d6",
+    "names": [
+      "FRAMEWNDPROC",
+      "Ordinal_40",
+      "FrameWndProc"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1020:1e3c",
+    "names": [
+      "InvertPaneBorder",
+      "_InvertPaneBorder"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1020:24b0",
+    "names": [
+      "HcrsFromFrameWindowPt",
+      "_HcrsFromFrameWindowPt"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1020:2614",
+    "names": [
+      "RestoreSelection",
+      "_RestoreSelection"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1020:2870",
+    "names": [
+      "vrgbShuffleSerial",
+      "_vrgbShuffleSerial"
+    ],
+    "classification": "defined data"
+  },
+  {
+    "address": "1020:2886",
+    "names": [
+      "FormatSerialAndEnv",
+      "_FormatSerialAndEnv"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1020:2aec",
+    "names": [
+      "FSerialAndEnvFromSz",
+      "_FSerialAndEnvFromSz"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1020:2e1c",
+    "names": [
+      "FFindSomethingAndSelectIt",
+      "_FFindSomethingAndSelectIt"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1020:2f7a",
+    "names": [
+      "CommandHandler",
+      "_CommandHandler"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1020:5376",
+    "names": [
+      "InitializeMenu",
+      "_InitializeMenu"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1020:56bc",
+    "names": [
+      "EnsureAis",
+      "_EnsureAis"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1020:589a",
+    "names": [
+      "GetASubMenu",
+      "_GetASubMenu"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1020:58f4",
+    "names": [
+      "FOpenGame",
+      "_FOpenGame"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1020:5da8",
+    "names": [
+      "FWasRaceFile",
+      "_FWasRaceFile"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1020:5ffc",
+    "names": [
+      "BringUpHostDlg",
+      "_BringUpHostDlg"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1020:6240",
+    "names": [
+      "DrawHostDialog2",
+      "_DrawHostDialog2"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1020:6686",
+    "names": [
+      "VerifyTurns",
+      "_VerifyTurns"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1020:6996",
+    "names": [
+      "CTurnsOutSafe",
+      "_CTurnsOutSafe"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1020:6a26",
+    "names": [
+      "CFindTurnsOutstanding",
+      "_CFindTurnsOutstanding"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1020:6c16",
+    "names": [
+      "HOSTMODEDIALOG",
+      "Ordinal_12",
+      "HostModeDialog"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1020:75ce",
+    "names": [
+      "HOSTOPTIONSDIALOG",
+      "Ordinal_24",
+      "HostOptionsDialog"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1020:7702",
+    "names": [
+      "rgTOWidth",
+      "_rgTOWidth"
+    ],
+    "classification": "defined data"
+  },
+  {
+    "address": "1020:7706",
+    "names": [
+      "DrawHostOptions",
+      "_DrawHostOptions"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1020:7716",
+    "names": [
+      "HostTimerProc",
+      "HOSTTIMERPROC"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1020:79ac",
+    "names": [
+      "GetWindowRc",
+      "_GetWindowRc"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1020:79f6",
+    "names": [
+      "SetWindowIniString",
+      "_SetWindowIniString"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1020:7a76",
+    "names": [
+      "WriteIniSettings",
+      "_WriteIniSettings"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1020:8c88",
+    "names": [
+      "RefitFrameChildren",
+      "_RefitFrameChildren"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1020:9126",
+    "names": [
+      "TITLEWNDPROC",
+      "Ordinal_35",
+      "TitleWndProc"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1028:0000",
+    "names": [
+      "MINEWNDPROC",
+      "Ordinal_13",
+      "MineWndProc"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1028:040a",
+    "names": [
+      "InvalidateMineralBars",
+      "_InvalidateMineralBars"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1028:05ac",
+    "names": [
+      "GetMineFieldCounts",
+      "_GetMineFieldCounts"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1028:065a",
+    "names": [
+      "DrawMineSurvey",
+      "_DrawMineSurvey"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1028:37ac",
+    "names": [
+      "HtMineWindow",
+      "_HtMineWindow"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1028:3b4e",
+    "names": [
+      "MineClick",
+      "_MineClick"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1028:47dc",
+    "names": [
+      "SetMineralTitleBar",
+      "_SetMineralTitleBar"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1028:4a68",
+    "names": [
+      "DrawSelectionArrow",
+      "_DrawSelectionArrow"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1028:4b60",
+    "names": [
+      "DrawDiamond",
+      "_DrawDiamond"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1028:4d6e",
+    "names": [
+      "FOtherStuffAtScanSel",
+      "_FOtherStuffAtScanSel"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1028:4ecc",
+    "names": [
+      "PopupMineralScanChoices",
+      "_PopupMineralScanChoices"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1028:5362",
+    "names": [
+      "EstMineralsMined",
+      "_EstMineralsMined"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1030:0000",
+    "names": [
+      "aMSGCmpr",
+      "_aMSGCmpr"
+    ],
+    "classification": "defined data"
+  },
+  {
+    "address": "1030:5934",
+    "names": [
+      "acMSG",
+      "_acMSG"
+    ],
+    "classification": "defined data"
+  },
+  {
+    "address": "1030:5ab8",
+    "names": [
+      "aiMSGChunkOffset",
+      "_aiMSGChunkOffset"
+    ],
+    "classification": "defined data"
+  },
+  {
+    "address": "1030:5ac6",
+    "names": [
+      "rgMSGLookupTable",
+      "_rgMSGLookupTable"
+    ],
+    "classification": "defined data"
+  },
+  {
+    "address": "1030:5b0e",
+    "names": [
+      "rgcMsgArgs",
+      "_rgcMsgArgs"
+    ],
+    "classification": "defined data"
+  },
+  {
+    "address": "1030:5c92",
+    "names": [
+      "MESSAGEWNDPROC",
+      "Ordinal_18",
+      "MessageWndProc"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1030:7218",
+    "names": [
+      "SetMsgTitle",
+      "_SetMsgTitle"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1030:7808",
+    "names": [
+      "IMsgNext",
+      "_IMsgNext"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1030:78d8",
+    "names": [
+      "IMsgPrev",
+      "_IMsgPrev"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1030:799c",
+    "names": [
+      "DecorateMsgTitleBar",
+      "_DecorateMsgTitleBar"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1030:7d8c",
+    "names": [
+      "HtMsgBox",
+      "_HtMsgBox"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1030:7eaa",
+    "names": [
+      "FSendPlrMsg2",
+      "_FSendPlrMsg2"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1030:7ee8",
+    "names": [
+      "FSendPlrMsg",
+      "_FSendPlrMsg"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1030:7f80",
+    "names": [
+      "FSendPrependedPlrMsg",
+      "_FSendPrependedPlrMsg"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1030:802a",
+    "names": [
+      "PackageUpMsg",
+      "_PackageUpMsg"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1030:823a",
+    "names": [
+      "FSendPlrMsg2XGen",
+      "_FSendPlrMsg2XGen"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1030:8412",
+    "names": [
+      "IdmGetMessageN",
+      "_IdmGetMessageN"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1030:8444",
+    "names": [
+      "FGetNMsgbig",
+      "_FGetNMsgbig"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1030:8580",
+    "names": [
+      "PszGetMessageN",
+      "_PszGetMessageN"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1030:85cc",
+    "names": [
+      "PszFormatString",
+      "_PszFormatString"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1030:8f68",
+    "names": [
+      "MSGDLG",
+      "Ordinal_45",
+      "MsgDlg"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1030:9220",
+    "names": [
+      "PszFormatMessage",
+      "_PszFormatMessage"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1030:924c",
+    "names": [
+      "PszFormatIds",
+      "_PszFormatIds"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1030:9278",
+    "names": [
+      "FRemovePlayerMessage",
+      "_FRemovePlayerMessage"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1030:932a",
+    "names": [
+      "FFindPlayerMessage",
+      "_FFindPlayerMessage"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1030:93c6",
+    "names": [
+      "MarkPlanetsPlayerLost",
+      "_MarkPlanetsPlayerLost"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1030:9604",
+    "names": [
+      "MarkPlayersThatSentMsgs",
+      "_MarkPlayersThatSentMsgs"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1030:9702",
+    "names": [
+      "WritePlayerMessages",
+      "_WritePlayerMessages"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1030:98d6",
+    "names": [
+      "ResetMessages",
+      "_ResetMessages"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1030:994a",
+    "names": [
+      "ReadPlayerMessages",
+      "_ReadPlayerMessages"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1030:9bd6",
+    "names": [
+      "FFinishPlrMsgEntry",
+      "_FFinishPlrMsgEntry"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1030:9eb8",
+    "names": [
+      "PszGetCompressedMessage",
+      "_PszGetCompressedMessage"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1030:a018",
+    "names": [
+      "SetFilteringGroups",
+      "_SetFilteringGroups"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1038:0000",
+    "names": [
+      "FLookupSelPlanet",
+      "_FLookupSelPlanet"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1038:0032",
+    "names": [
+      "FDupPlanet",
+      "_FDupPlanet"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1038:01b2",
+    "names": [
+      "LpthFromId",
+      "_LpthFromId"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1038:021e",
+    "names": [
+      "LpplFromId",
+      "_LpplFromId"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1038:02f6",
+    "names": [
+      "CalcPctSurvive",
+      "_CalcPctSurvive"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1038:04a6",
+    "names": [
+      "FLookupPlanet",
+      "_FLookupPlanet"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1038:0746",
+    "names": [
+      "DpOfLpflIshdef",
+      "_DpOfLpflIshdef"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1038:07fe",
+    "names": [
+      "FLookupThing",
+      "_FLookupThing"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1038:08f2",
+    "names": [
+      "SelectOursAtObject",
+      "_SelectOursAtObject"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1038:0b32",
+    "names": [
+      "LComputePower",
+      "_LComputePower"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1038:0e4e",
+    "names": [
+      "ComputeShdefPowers",
+      "_ComputeShdefPowers"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1038:0f24",
+    "names": [
+      "DpShieldOfShdef",
+      "_DpShieldOfShdef"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1038:10fa",
+    "names": [
+      "IStargateFromLppl",
+      "_IStargateFromLppl"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1038:11f2",
+    "names": [
+      "PszPlayerName",
+      "_PszPlayerName"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1038:145c",
+    "names": [
+      "FCalcFleetBombDamage",
+      "_FCalcFleetBombDamage"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1038:1bb4",
+    "names": [
+      "LinkFleets",
+      "_LinkFleets"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1038:1f0c",
+    "names": [
+      "ICompFleetPoint",
+      "_ICompFleetPoint"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1038:1fa2",
+    "names": [
+      "ICompFleetPoint2",
+      "_ICompFleetPoint2"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1038:2032",
+    "names": [
+      "FLookupSelShip",
+      "_FLookupSelShip"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1038:2078",
+    "names": [
+      "LpflFromId",
+      "_LpflFromId"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1038:2160",
+    "names": [
+      "FLookupFleet",
+      "_FLookupFleet"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1038:2332",
+    "names": [
+      "FDupFleet",
+      "_FDupFleet"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1038:24a0",
+    "names": [
+      "FLookupObject",
+      "_FLookupObject"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1038:24fa",
+    "names": [
+      "FLookupOrbitingXfer",
+      "_FLookupOrbitingXfer"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1038:26de",
+    "names": [
+      "PszGetThingName",
+      "_PszGetThingName"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1038:292c",
+    "names": [
+      "PszGetFleetName",
+      "_PszGetFleetName"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1038:2b10",
+    "names": [
+      "WFromLpfl",
+      "_WFromLpfl"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1038:2b5e",
+    "names": [
+      "PszFleetNameFromWord",
+      "_PszFleetNameFromWord"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1038:2c6a",
+    "names": [
+      "PszGetPlanetName",
+      "_PszGetPlanetName"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1038:2ce8",
+    "names": [
+      "IflFromLpfl",
+      "_IflFromLpfl"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1038:2d44",
+    "names": [
+      "FDeleteFleet",
+      "_FDeleteFleet"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1038:300c",
+    "names": [
+      "LpflNew",
+      "_LpflNew"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1038:3372",
+    "names": [
+      "LpflNewSplit",
+      "_LpflNewSplit"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1038:34d8",
+    "names": [
+      "FFleetMergeAll",
+      "_FFleetMergeAll"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1038:3a00",
+    "names": [
+      "FFleetSplitAll",
+      "_FFleetSplitAll"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1038:3b08",
+    "names": [
+      "PszGetLocName",
+      "_PszGetLocName"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1038:3bc8",
+    "names": [
+      "CchGetETA",
+      "_CchGetETA"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1038:3e1c",
+    "names": [
+      "IshdefPrimaryFromLpfl",
+      "_IshdefPrimaryFromLpfl"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1038:3f00",
+    "names": [
+      "PszGetDistance",
+      "_PszGetDistance"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1038:3fe4",
+    "names": [
+      "DGetDistance",
+      "_DGetDistance"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1038:4070",
+    "names": [
+      "FFindNearestObject",
+      "_FFindNearestObject"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1038:47b0",
+    "names": [
+      "UpdateShdefCost",
+      "_UpdateShdefCost"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1038:4ba2",
+    "names": [
+      "WPackLong",
+      "_WPackLong"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1038:4c02",
+    "names": [
+      "GetPlanetScannerRange",
+      "_GetPlanetScannerRange"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1038:4e02",
+    "names": [
+      "GetCachedFleetScannerRange",
+      "_GetCachedFleetScannerRange"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1038:4fb8",
+    "names": [
+      "GetFleetScannerRange",
+      "_GetFleetScannerRange"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1038:50be",
+    "names": [
+      "vrgbTachyon",
+      "_vrgbTachyon"
+    ],
+    "classification": "defined data"
+  },
+  {
+    "address": "1038:50d0",
+    "names": [
+      "GetShdefScannerRange",
+      "_GetShdefScannerRange"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1038:56b8",
+    "names": [
+      "LCalcFuelGainFromRamScoops",
+      "_LCalcFuelGainFromRamScoops"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1038:58a6",
+    "names": [
+      "CalcPlayerScore",
+      "_CalcPlayerScore"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1038:5dba",
+    "names": [
+      "GetTrueHullCost",
+      "_GetTrueHullCost"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1038:5e0e",
+    "names": [
+      "DecorateHullName",
+      "_DecorateHullName"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1038:5f7e",
+    "names": [
+      "rgDSDivCnt",
+      "_rgDSDivCnt"
+    ],
+    "classification": "defined data"
+  },
+  {
+    "address": "1038:5f92",
+    "names": [
+      "rgcrDrawStars",
+      "_rgcrDrawStars"
+    ],
+    "classification": "defined data"
+  },
+  {
+    "address": "1038:5fa6",
+    "names": [
+      "rgDSDivCnt2",
+      "_rgDSDivCnt2"
+    ],
+    "classification": "defined data"
+  },
+  {
+    "address": "1038:5fba",
+    "names": [
+      "rgcrDrawStars2a",
+      "_rgcrDrawStars2a"
+    ],
+    "classification": "defined data"
+  },
+  {
+    "address": "1038:5fce",
+    "names": [
+      "rgcrDrawStars2b",
+      "_rgcrDrawStars2b"
+    ],
+    "classification": "defined data"
+  },
+  {
+    "address": "1038:5fe2",
+    "names": [
+      "DrawABunchOfStars",
+      "_DrawABunchOfStars"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1038:6280",
+    "names": [
+      "LongFromSerialCh",
+      "_LongFromSerialCh"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1038:62f8",
+    "names": [
+      "FValidSerialNo",
+      "_FValidSerialNo"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1038:6612",
+    "names": [
+      "FMatchTarget",
+      "_FMatchTarget"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1038:68c6",
+    "names": [
+      "ValidateWaypoints",
+      "_ValidateWaypoints"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1038:7082",
+    "names": [
+      "ChgPopFromPlanet",
+      "_ChgPopFromPlanet"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1038:75e2",
+    "names": [
+      "FCanFleetUseStargates",
+      "_FCanFleetUseStargates"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1038:7960",
+    "names": [
+      "FFleetCanJumpgate",
+      "_FFleetCanJumpgate"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1038:7a68",
+    "names": [
+      "WtFromLpfl",
+      "_WtFromLpfl"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1038:7b40",
+    "names": [
+      "FCanBuildShdef",
+      "_FCanBuildShdef"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1038:7c5e",
+    "names": [
+      "IshFindSimilarDesign",
+      "_IshFindSimilarDesign"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1038:7e44",
+    "names": [
+      "DrawPlanetPrintDot",
+      "_DrawPlanetPrintDot"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1038:7f6a",
+    "names": [
+      "ClearFile",
+      "_ClearFile"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1038:7fe6",
+    "names": [
+      "OutputSz",
+      "_OutputSz"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1038:80c2",
+    "names": [
+      "TurnLog",
+      "_TurnLog"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1040:0000",
+    "names": [
+      "aPNCmpr",
+      "_aPNCmpr"
+    ],
+    "classification": "defined data"
+  },
+  {
+    "address": "1040:1004",
+    "names": [
+      "acPN",
+      "_acPN"
+    ],
+    "classification": "defined data"
+  },
+  {
+    "address": "1040:13ec",
+    "names": [
+      "aiPNChunkOffset",
+      "_aiPNChunkOffset"
+    ],
+    "classification": "defined data"
+  },
+  {
+    "address": "1040:140c",
+    "names": [
+      "rgPNLookupTable",
+      "_rgPNLookupTable"
+    ],
+    "classification": "defined data"
+  },
+  {
+    "address": "1040:1440",
+    "names": [
+      "PushRandom",
+      "_PushRandom"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1040:14a2",
+    "names": [
+      "PopRandom",
+      "_PopRandom"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1040:14ea",
+    "names": [
+      "rgPrimes",
+      "_rgPrimes"
+    ],
+    "classification": "defined data"
+  },
+  {
+    "address": "1040:15ea",
+    "names": [
+      "Randomize",
+      "_Randomize"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1040:165a",
+    "names": [
+      "Randomize2",
+      "_Randomize2"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1040:16d2",
+    "names": [
+      "Random",
+      "_Random"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1040:188a",
+    "names": [
+      "RANDOMSEEDDLG",
+      "Ordinal_27",
+      "RandomSeedDlg"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1040:1a4e",
+    "names": [
+      "GetFileSeeds",
+      "_GetFileSeeds"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1040:1a7c",
+    "names": [
+      "SetFileSeeds",
+      "_SetFileSeeds"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1040:1aa6",
+    "names": [
+      "SetFileXorStream",
+      "_SetFileXorStream"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1040:1b54",
+    "names": [
+      "LGetNextFileXor",
+      "_LGetNextFileXor"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1040:1cc4",
+    "names": [
+      "XorFileBuf",
+      "_XorFileBuf"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1040:1d74",
+    "names": [
+      "ICompLong",
+      "_ICompLong"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1040:1d96",
+    "names": [
+      "PszGetCompressedPlanet",
+      "_PszGetCompressedPlanet"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1040:1f64",
+    "names": [
+      "OutputFileString",
+      "_OutputFileString"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1040:1ffa",
+    "names": [
+      "CopyFile",
+      "_CopyFile"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1040:2160",
+    "names": [
+      "AlertSz",
+      "_AlertSz"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1040:221e",
+    "names": [
+      "CchGetString",
+      "_CchGetString"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1040:2274",
+    "names": [
+      "PszFromInt",
+      "_PszFromInt"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1040:22b6",
+    "names": [
+      "PszFromLong",
+      "_PszFromLong"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1040:22fe",
+    "names": [
+      "PszFromLongK",
+      "_PszFromLongK"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1040:2440",
+    "names": [
+      "CommaFormatLong",
+      "_CommaFormatLong"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1040:2534",
+    "names": [
+      "CtrTextOut",
+      "_CtrTextOut"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1040:2590",
+    "names": [
+      "DxStreamTextOut",
+      "_DxStreamTextOut"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1040:25fe",
+    "names": [
+      "WrapTextOut",
+      "_WrapTextOut"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1040:280c",
+    "names": [
+      "AddBackTrailingSpaces",
+      "_AddBackTrailingSpaces"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1040:2842",
+    "names": [
+      "ChopLastWord",
+      "_ChopLastWord"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1040:28c6",
+    "names": [
+      "ChopTrailingSpaces",
+      "_ChopTrailingSpaces"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1040:28fc",
+    "names": [
+      "RcCtrTextOut",
+      "_RcCtrTextOut"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1040:29d6",
+    "names": [
+      "RightTextOut",
+      "_RightTextOut"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1040:2afa",
+    "names": [
+      "DiaganolTextOut",
+      "_DiaganolTextOut"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1040:2f0c",
+    "names": [
+      "ExpandRc",
+      "_ExpandRc"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1040:2f3e",
+    "names": [
+      "OffsetRc",
+      "_OffsetRc"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1040:2f70",
+    "names": [
+      "BoundPoints",
+      "_BoundPoints"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1040:3094",
+    "names": [
+      "StickyDlgPos",
+      "_StickyDlgPos"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1040:31a2",
+    "names": [
+      "LDrawGauge",
+      "_LDrawGauge"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1040:336a",
+    "names": [
+      "_Draw3dFrame",
+      "__Draw3dFrame"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1040:354c",
+    "names": [
+      "InitBtnTrack",
+      "_InitBtnTrack"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1040:364a",
+    "names": [
+      "FTrackBtn",
+      "_FTrackBtn"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1040:38b8",
+    "names": [
+      "DrawBtn",
+      "_DrawBtn"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1040:4146",
+    "names": [
+      "FGetMouseMove",
+      "_FGetMouseMove"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1040:41e0",
+    "names": [
+      "FGetRMouseMove",
+      "_FGetRMouseMove"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1040:427a",
+    "names": [
+      "DrawFuzzyBorder",
+      "_DrawFuzzyBorder"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1040:43aa",
+    "names": [
+      "FStringFitsScreen",
+      "_FStringFitsScreen"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1040:4448",
+    "names": [
+      "HbrGet",
+      "_HbrGet"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1040:4532",
+    "names": [
+      "FreeHbr",
+      "_FreeHbr"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1040:45a0",
+    "names": [
+      "FCompressUserString",
+      "_FCompressUserString"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1040:46e8",
+    "names": [
+      "FDecompressUserString",
+      "_FDecompressUserString"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1040:4880",
+    "names": [
+      "NybbleFromCh",
+      "_NybbleFromCh"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1040:49ea",
+    "names": [
+      "ChFromNybble",
+      "_ChFromNybble"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1040:4a9a",
+    "names": [
+      "DibNumColors",
+      "_DibNumColors"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1040:4b50",
+    "names": [
+      "HpalFromDib",
+      "_HpalFromDib"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1040:4c9c",
+    "names": [
+      "HpalBlackReserved",
+      "_HpalBlackReserved"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1040:4d60",
+    "names": [
+      "PaletteSize",
+      "_PaletteSize"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1040:4db8",
+    "names": [
+      "DibBlt",
+      "_DibBlt"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1040:4e90",
+    "names": [
+      "DibFromBitmap",
+      "_DibFromBitmap"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1040:5220",
+    "names": [
+      "HdibLoadBigResource",
+      "_HdibLoadBigResource"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1040:5310",
+    "names": [
+      "ReadBigBlock",
+      "_ReadBigBlock"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1040:53b4",
+    "names": [
+      "FIntersectCircleLine",
+      "_FIntersectCircleLine"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1040:5830",
+    "names": [
+      "IntToRoman",
+      "_IntToRoman"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1040:58d8",
+    "names": [
+      "FCheckPassword",
+      "_FCheckPassword"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1040:59ce",
+    "names": [
+      "LSaltFromSz",
+      "_LSaltFromSz"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1040:5a72",
+    "names": [
+      "PASSWORDDLG",
+      "Ordinal_33",
+      "PasswordDlg"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1040:5cba",
+    "names": [
+      "NEWPASSWORDDLG",
+      "Ordinal_52",
+      "NewPasswordDlg"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1040:5fc0",
+    "names": [
+      "GetDiskSerialNumber",
+      "_GetDiskSerialNumber"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1040:636c",
+    "names": [
+      "ShowProgressGauge",
+      "_ShowProgressGauge"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1040:63b2",
+    "names": [
+      "HideProgressGauge",
+      "_HideProgressGauge"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1040:63da",
+    "names": [
+      "UpdateProgressGauge",
+      "_UpdateProgressGauge"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1040:647e",
+    "names": [
+      "PROGRESSGAUGEDLG",
+      "Ordinal_19",
+      "ProgressGaugeDlg"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1040:65f6",
+    "names": [
+      "DrawProgressGauge",
+      "_DrawProgressGauge"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1040:685c",
+    "names": [
+      "LDistance2",
+      "_LDistance2"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1040:68ba",
+    "names": [
+      "PszGetLine",
+      "_PszGetLine"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1040:6986",
+    "names": [
+      "CParseNumbers",
+      "_CParseNumbers"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1040:6aa6",
+    "names": [
+      "HfontPrinterCreate",
+      "_HfontPrinterCreate"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1048:0000",
+    "names": [
+      "PLANETWNDPROC",
+      "Ordinal_49",
+      "PlanetWndProc"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1048:0d16",
+    "names": [
+      "DrawPlanShip",
+      "_DrawPlanShip"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1048:1086",
+    "names": [
+      "FDrawTileNC",
+      "_FDrawTileNC"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1048:12b2",
+    "names": [
+      "DrawPlanetMinSum",
+      "_DrawPlanetMinSum"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1048:1716",
+    "names": [
+      "DrawPlanetStats",
+      "_DrawPlanetStats"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1048:21f6",
+    "names": [
+      "FGetBestDefensePart",
+      "_FGetBestDefensePart"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1048:22cc",
+    "names": [
+      "DrawPlanetStarbase",
+      "_DrawPlanetStarbase"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1048:2afa",
+    "names": [
+      "DrawMassWarpGauge",
+      "_DrawMassWarpGauge"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1048:2c38",
+    "names": [
+      "DrawPlanetProduction",
+      "_DrawPlanetProduction"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1048:310c",
+    "names": [
+      "PszProductionETA",
+      "_PszProductionETA"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1048:3336",
+    "names": [
+      "DrawPlanShipBitmap",
+      "_DrawPlanShipBitmap"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1048:377e",
+    "names": [
+      "DrawPlanetShipList",
+      "_DrawPlanetShipList"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1048:3dec",
+    "names": [
+      "SetPlanetTitleBar",
+      "_SetPlanetTitleBar"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1048:3e7a",
+    "names": [
+      "ChangeMainObjSel",
+      "_ChangeMainObjSel"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1048:42a0",
+    "names": [
+      "FillShipDD",
+      "_FillShipDD"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1048:44da",
+    "names": [
+      "SelectAdjPlanet",
+      "_SelectAdjPlanet"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1048:474e",
+    "names": [
+      "IdFindAdjStarbase",
+      "_IdFindAdjStarbase"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1048:489e",
+    "names": [
+      "PlanetClick",
+      "_PlanetClick"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1048:515c",
+    "names": [
+      "ClickInPlanetOrders",
+      "_ClickInPlanetOrders"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1048:587e",
+    "names": [
+      "EnsureTileSize",
+      "_EnsureTileSize"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1048:5b80",
+    "names": [
+      "ReflowColumn",
+      "_ReflowColumn"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1048:5dd2",
+    "names": [
+      "IBestTerraform",
+      "_IBestTerraform"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1048:5fcc",
+    "names": [
+      "PszCalcEnvVar",
+      "_PszCalcEnvVar"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1048:6058",
+    "names": [
+      "PszCalcGravity",
+      "_PszCalcGravity"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1048:60e6",
+    "names": [
+      "HandleFocusState",
+      "_HandleFocusState"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1048:6128",
+    "names": [
+      "DrawCBEntireItem",
+      "_DrawCBEntireItem"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1048:6208",
+    "names": [
+      "DrawProductionItem",
+      "_DrawProductionItem"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1048:6692",
+    "names": [
+      "FillPlanetProdLB",
+      "_FillPlanetProdLB"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1048:6aca",
+    "names": [
+      "PctPlanetCapacity",
+      "_PctPlanetCapacity"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1048:6b88",
+    "names": [
+      "PctPlanetOptValue",
+      "_PctPlanetOptValue"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1048:6e1e",
+    "names": [
+      "PctPlanetDesirability",
+      "_PctPlanetDesirability"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1048:7096",
+    "names": [
+      "CalcPlanetMaxPop",
+      "_CalcPlanetMaxPop"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1048:7248",
+    "names": [
+      "CMaxMines",
+      "_CMaxMines"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1048:7304",
+    "names": [
+      "CMaxOperableMines",
+      "_CMaxOperableMines"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1048:73fc",
+    "names": [
+      "CMinesOperating",
+      "_CMinesOperating"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1048:74be",
+    "names": [
+      "CFactoriesOperating",
+      "_CFactoriesOperating"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1048:755c",
+    "names": [
+      "CMaxFactories",
+      "_CMaxFactories"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1048:7618",
+    "names": [
+      "CMaxOperableFactories",
+      "_CMaxOperableFactories"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1048:7710",
+    "names": [
+      "CMaxDefenses",
+      "_CMaxDefenses"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1048:77ae",
+    "names": [
+      "CMaxOperableDefenses",
+      "_CMaxOperableDefenses"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1048:788e",
+    "names": [
+      "CResourcesAtPlanet",
+      "_CResourcesAtPlanet"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1048:7b10",
+    "names": [
+      "IWarpMAFromLppl",
+      "_IWarpMAFromLppl"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1048:7cfa",
+    "names": [
+      "StargateRangeFromLppl",
+      "_StargateRangeFromLppl"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1048:7e9a",
+    "names": [
+      "FProdIsTerra",
+      "_FProdIsTerra"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1048:7f56",
+    "names": [
+      "IpctCanTerraformLppl",
+      "_IpctCanTerraformLppl"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1048:8022",
+    "names": [
+      "FCanTerraformLppl",
+      "_FCanTerraformLppl"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1048:8732",
+    "names": [
+      "UninhabitPlanet",
+      "_UninhabitPlanet"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1048:88c0",
+    "names": [
+      "PctCloakFromHuldef",
+      "_PctCloakFromHuldef"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1048:8b0e",
+    "names": [
+      "LogSplitFleet",
+      "_LogSplitFleet"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1048:8b6c",
+    "names": [
+      "LogMergeFleet",
+      "_LogMergeFleet"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1048:8c28",
+    "names": [
+      "LogChangeShDef",
+      "_LogChangeShDef"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1048:8d5a",
+    "names": [
+      "LogChangeName",
+      "_LogChangeName"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1048:8ebe",
+    "names": [
+      "LogChangeFleet",
+      "_LogChangeFleet"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1048:9340",
+    "names": [
+      "LogChangeRelations",
+      "_LogChangeRelations"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1048:93d0",
+    "names": [
+      "LogChangeBtlplan",
+      "_LogChangeBtlplan"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1048:9420",
+    "names": [
+      "LogChangePlanet",
+      "_LogChangePlanet"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1048:9908",
+    "names": [
+      "LogChangeThing",
+      "_LogChangeThing"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1048:99f6",
+    "names": [
+      "LogMakeValidXfer",
+      "_LogMakeValidXfer"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1048:9fa6",
+    "names": [
+      "LogMakeValidXferf",
+      "_LogMakeValidXferf"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1048:a108",
+    "names": [
+      "CancelMemRt",
+      "_CancelMemRt"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1048:a130",
+    "names": [
+      "WriteMemRt",
+      "_WriteMemRt"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1048:a228",
+    "names": [
+      "DirtyGame",
+      "_DirtyGame"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1048:a25e",
+    "names": [
+      "FGetPrevLogRt",
+      "_FGetPrevLogRt"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1048:a2d6",
+    "names": [
+      "FRunLogFile",
+      "_FRunLogFile"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1048:a38c",
+    "names": [
+      "FRunLogRecord",
+      "_FRunLogRecord"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1048:c7a2",
+    "names": [
+      "FLoadLogFile",
+      "_FLoadLogFile"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1048:cccc",
+    "names": [
+      "FCheckLogFile",
+      "_FCheckLogFile"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1048:cdf6",
+    "names": [
+      "FWriteLogFile",
+      "_FWriteLogFile"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1048:d058",
+    "names": [
+      "FWriteTutorialMFile",
+      "_FWriteTutorialMFile"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1048:d29e",
+    "names": [
+      "FWriteHistFile",
+      "_FWriteHistFile"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1048:d6e0",
+    "names": [
+      "EnumLogRts",
+      "_EnumLogRts"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1050:0000",
+    "names": [
+      "DrawShipOrders",
+      "_DrawShipOrders"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1050:0912",
+    "names": [
+      "DrawShipWayPtOrders",
+      "_DrawShipWayPtOrders"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1050:17b6",
+    "names": [
+      "DrawShipPlanet",
+      "_DrawShipPlanet"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1050:1a54",
+    "names": [
+      "DrawShipCargo",
+      "_DrawShipCargo"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1050:1e72",
+    "names": [
+      "DrawFleetComp",
+      "_DrawFleetComp"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1050:245c",
+    "names": [
+      "FCanSplit",
+      "_FCanSplit"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1050:24ae",
+    "names": [
+      "FCanSplitAll",
+      "_FCanSplitAll"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1050:2522",
+    "names": [
+      "FCanMerge",
+      "_FCanMerge"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1050:2640",
+    "names": [
+      "ShipCommandProc",
+      "_ShipCommandProc"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1050:3d32",
+    "names": [
+      "SelectAdjFleet",
+      "_SelectAdjFleet"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1050:400e",
+    "names": [
+      "SetFleetDropDownSel",
+      "_SetFleetDropDownSel"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1050:40f2",
+    "names": [
+      "LGetFleetStat",
+      "_LGetFleetStat"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1050:41b2",
+    "names": [
+      "WtMaxShdefStat",
+      "_WtMaxShdefStat"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1050:44b6",
+    "names": [
+      "DrawFleetGauge",
+      "_DrawFleetGauge"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1050:490e",
+    "names": [
+      "DrawFleetBitmap",
+      "_DrawFleetBitmap"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1050:4df4",
+    "names": [
+      "FEnumCalcJettison",
+      "_FEnumCalcJettison"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1050:4faa",
+    "names": [
+      "TransferStuff",
+      "_TransferStuff"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1050:5686",
+    "names": [
+      "TRANSFERDLG",
+      "Ordinal_31",
+      "TransferDlg"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1050:5a16",
+    "names": [
+      "FTrackXfer",
+      "_FTrackXfer"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1050:5f98",
+    "names": [
+      "GetCargoFree",
+      "_GetCargoFree"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1050:6004",
+    "names": [
+      "GetFuelFree",
+      "_GetFuelFree"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1050:6034",
+    "names": [
+      "ChgCargo",
+      "_ChgCargo"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1050:64cc",
+    "names": [
+      "XferSupply",
+      "_XferSupply"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1050:66a8",
+    "names": [
+      "UpdateXferBtns",
+      "_UpdateXferBtns"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1050:6908",
+    "names": [
+      "DrawXferDlg",
+      "_DrawXferDlg"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1050:6b46",
+    "names": [
+      "GetXferLeftRightRcs",
+      "_GetXferLeftRightRcs"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1050:6bea",
+    "names": [
+      "FSetupXferBtns",
+      "_FSetupXferBtns"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1050:7088",
+    "names": [
+      "DrawThingXferSide",
+      "_DrawThingXferSide"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1050:72de",
+    "names": [
+      "DrawFleetCargoXferSide",
+      "_DrawFleetCargoXferSide"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1050:7726",
+    "names": [
+      "DrawFleetShipsXferSide",
+      "_DrawFleetShipsXferSide"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1050:79ca",
+    "names": [
+      "DrawPlanetXferSide",
+      "_DrawPlanetXferSide"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1050:7cda",
+    "names": [
+      "ClickInShipOrders",
+      "_ClickInShipOrders"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1050:9166",
+    "names": [
+      "FillFleetCompLB",
+      "_FillFleetCompLB"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1050:928c",
+    "names": [
+      "FillOrdersLB",
+      "_FillOrdersLB"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1050:9354",
+    "names": [
+      "SetOrdersLbSel",
+      "_SetOrdersLbSel"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1050:93ee",
+    "names": [
+      "UpdateOrdersDDs",
+      "_UpdateOrdersDDs"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1050:9a36",
+    "names": [
+      "FillBattleDD",
+      "_FillBattleDD"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1050:9b08",
+    "names": [
+      "DeleteCurWayPoint",
+      "_DeleteCurWayPoint"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1050:9e28",
+    "names": [
+      "DeleteWpFar",
+      "_DeleteWpFar"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1050:9fe4",
+    "names": [
+      "EstFuelUse",
+      "_EstFuelUse"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1050:a700",
+    "names": [
+      "FAKEEDITPROC",
+      "Ordinal_28",
+      "FakeEditProc"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1050:a76e",
+    "names": [
+      "IFindIdealWarp",
+      "_IFindIdealWarp"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1050:a9f4",
+    "names": [
+      "LFuelUseToWaypoint",
+      "_LFuelUseToWaypoint"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1050:ae74",
+    "names": [
+      "FleetTransferCargoBalance",
+      "_FleetTransferCargoBalance"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1050:c280",
+    "names": [
+      "DestroyAllIshdefSB",
+      "_DestroyAllIshdefSB"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1050:c336",
+    "names": [
+      "DestroyAllIshdef",
+      "_DestroyAllIshdef"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1050:c5e6",
+    "names": [
+      "RemoveIshdefFromAllQueues",
+      "_RemoveIshdefFromAllQueues"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1050:c82c",
+    "names": [
+      "CshQueued",
+      "_CshQueued"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1050:c9f6",
+    "names": [
+      "Merge2Fleets",
+      "_Merge2Fleets"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1050:cafe",
+    "names": [
+      "FleetOrdersChangeTarget",
+      "_FleetOrdersChangeTarget"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1050:cd00",
+    "names": [
+      "GetTruePartCost",
+      "_GetTruePartCost"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1058:0000",
+    "names": [
+      "vrgPopRad",
+      "_vrgPopRad"
+    ],
+    "classification": "defined data"
+  },
+  {
+    "address": "1058:0026",
+    "names": [
+      "rgcrScanMine",
+      "_rgcrScanMine"
+    ],
+    "classification": "defined data"
+  },
+  {
+    "address": "1058:0032",
+    "names": [
+      "SCANNERWNDPROC",
+      "Ordinal_22",
+      "ScannerWndProc"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1058:0efc",
+    "names": [
+      "PtToScan",
+      "_PtToScan"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1058:0fc2",
+    "names": [
+      "ScanToPt",
+      "_ScanToPt"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1058:108a",
+    "names": [
+      "DrawScanner",
+      "_DrawScanner"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1058:47d2",
+    "names": [
+      "DrawScanFleetCount",
+      "_DrawScanFleetCount"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1058:4bf4",
+    "names": [
+      "CShipsScanVis",
+      "_CShipsScanVis"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1058:4e7c",
+    "names": [
+      "DrawRadarCircle",
+      "_DrawRadarCircle"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1058:540c",
+    "names": [
+      "DrawShipScanPath",
+      "_DrawShipScanPath"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1058:62d8",
+    "names": [
+      "DrawScannerSBar",
+      "_DrawScannerSBar"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1058:6b00",
+    "names": [
+      "DrawLockLight",
+      "_DrawLockLight"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1058:6c14",
+    "names": [
+      "SetScanScrollBars",
+      "_SetScanScrollBars"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1058:6d30",
+    "names": [
+      "ScrollScanner",
+      "_ScrollScanner"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1058:6f30",
+    "names": [
+      "RedrawScanSel",
+      "_RedrawScanSel"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1058:715c",
+    "names": [
+      "FEnsurePointOnScreen",
+      "_FEnsurePointOnScreen"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1058:7278",
+    "names": [
+      "CtrPointScan",
+      "_CtrPointScan"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1058:744e",
+    "names": [
+      "LogicalToScan",
+      "_LogicalToScan"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1058:7490",
+    "names": [
+      "ScanToLogical",
+      "_ScanToLogical"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1058:7504",
+    "names": [
+      "FAddWayPoint",
+      "_FAddWayPoint"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1058:7a18",
+    "names": [
+      "IWarpBestForWaypoint",
+      "_IWarpBestForWaypoint"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1058:8074",
+    "names": [
+      "FNearAWayPoint",
+      "_FNearAWayPoint"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1058:8176",
+    "names": [
+      "FHandleWayPointDrag",
+      "_FHandleWayPointDrag"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1058:8af6",
+    "names": [
+      "DrawScanXorLines",
+      "_DrawScanXorLines"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1058:8c5a",
+    "names": [
+      "SetScanWp",
+      "_SetScanWp"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1058:8cc4",
+    "names": [
+      "ChangeScanSel",
+      "_ChangeScanSel"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1058:909c",
+    "names": [
+      "FGetNextObjHere",
+      "_FGetNextObjHere"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1058:9286",
+    "names": [
+      "FINDDLG",
+      "Ordinal_37",
+      "FindDlg"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1058:945a",
+    "names": [
+      "FSelectSz",
+      "_FSelectSz"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1058:978c",
+    "names": [
+      "GetScanFleetOrientation",
+      "_GetScanFleetOrientation"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1058:987c",
+    "names": [
+      "GetDxDyOrientation",
+      "_GetDxDyOrientation"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1058:9974",
+    "names": [
+      "FHandleMeasuringTape",
+      "_FHandleMeasuringTape"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1060:0000",
+    "names": [
+      "LphbAlloc",
+      "_LphbAlloc"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1060:0108",
+    "names": [
+      "LphbReAlloc",
+      "_LphbReAlloc"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1060:02d8",
+    "names": [
+      "FreeHb",
+      "_FreeHb"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1060:0348",
+    "names": [
+      "ResetHb",
+      "_ResetHb"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1060:03b2",
+    "names": [
+      "LpAlloc",
+      "_LpAlloc"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1060:058c",
+    "names": [
+      "LphbFromLpHt",
+      "_LphbFromLpHt"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1060:0660",
+    "names": [
+      "LpReAlloc",
+      "_LpReAlloc"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1060:07a8",
+    "names": [
+      "FreeLp",
+      "_FreeLp"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1060:0836",
+    "names": [
+      "LpplReAlloc",
+      "_LpplReAlloc"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1060:088c",
+    "names": [
+      "LpplAlloc",
+      "_LpplAlloc"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1060:0918",
+    "names": [
+      "FreePl",
+      "_FreePl"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1068:0000",
+    "names": [
+      "vrgTBBtn",
+      "_vrgTBBtn"
+    ],
+    "classification": "defined data"
+  },
+  {
+    "address": "1068:001e",
+    "names": [
+      "TBWNDPROC",
+      "Ordinal_36",
+      "TbWndProc"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1068:06f0",
+    "names": [
+      "DrawToolbar",
+      "_DrawToolbar"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1068:078c",
+    "names": [
+      "DrawBitmapButton",
+      "_DrawBitmapButton"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1068:0b12",
+    "names": [
+      "ItbFromPpt",
+      "_ItbFromPpt"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1068:0bb2",
+    "names": [
+      "DxOfBtn",
+      "_DxOfBtn"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1068:0c3a",
+    "names": [
+      "FIsButtonDown",
+      "_FIsButtonDown"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1068:0da4",
+    "names": [
+      "vrgpctZoom",
+      "_vrgpctZoom"
+    ],
+    "classification": "defined data"
+  },
+  {
+    "address": "1068:0db6",
+    "names": [
+      "ExecuteButton",
+      "_ExecuteButton"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1068:1680",
+    "names": [
+      "TerminateToolbarFocus",
+      "_TerminateToolbarFocus"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1068:17ea",
+    "names": [
+      "ShowTooltip",
+      "_ShowTooltip"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1068:19e4",
+    "names": [
+      "TOOLTIPWNDPROC",
+      "Ordinal_26",
+      "TooltipWndProc"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1068:1d72",
+    "names": [
+      "FAKECOMBOPROC",
+      "Ordinal_47",
+      "FakeComboProc"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1068:1df0",
+    "names": [
+      "FAKECEPROC",
+      "Ordinal_11",
+      "FakeCEProc"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1070:0000",
+    "names": [
+      "mpishdefishTutor",
+      "_mpishdefishTutor"
+    ],
+    "classification": "defined data"
+  },
+  {
+    "address": "1070:0006",
+    "names": [
+      "FReadShDef",
+      "_FReadShDef"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1070:05e2",
+    "names": [
+      "ReadRtPlr",
+      "_ReadRtPlr"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1070:0810",
+    "names": [
+      "FLoadGame",
+      "_FLoadGame"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1070:3206",
+    "names": [
+      "FReadPlanet",
+      "_FReadPlanet"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1070:3a4c",
+    "names": [
+      "FReadFleet",
+      "_FReadFleet"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1070:40ce",
+    "names": [
+      "UnpackBattlePlan",
+      "_UnpackBattlePlan"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1070:41ac",
+    "names": [
+      "UpdateBattleRecords",
+      "_UpdateBattleRecords"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1070:432a",
+    "names": [
+      "AskSaveDialog",
+      "ASKSAVEDIALOG"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1070:43ee",
+    "names": [
+      "PromptSaveGame",
+      "_PromptSaveGame"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1070:44b0",
+    "names": [
+      "DestroyCurGame",
+      "_DestroyCurGame"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1070:48c4",
+    "names": [
+      "FValidSerialLong",
+      "_FValidSerialLong"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1070:4a10",
+    "names": [
+      "FileError",
+      "_FileError"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1070:4a60",
+    "names": [
+      "GetFileStatus",
+      "_GetFileStatus"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1070:4ac2",
+    "names": [
+      "FOpenFile",
+      "_FOpenFile"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1070:4f22",
+    "names": [
+      "FNewTurnAvail",
+      "_FNewTurnAvail"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1070:4fb2",
+    "names": [
+      "FCheckFile",
+      "_FCheckFile"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1070:5168",
+    "names": [
+      "ReadRt",
+      "_ReadRt"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1070:524e",
+    "names": [
+      "FBadFileError",
+      "_FBadFileError"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1070:52ae",
+    "names": [
+      "StreamOpen",
+      "_StreamOpen"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1070:53cc",
+    "names": [
+      "StreamClose",
+      "_StreamClose"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1070:53f4",
+    "names": [
+      "RgFromStream",
+      "_RgFromStream"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1070:547e",
+    "names": [
+      "WriteOrders",
+      "_WriteOrders"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1070:551c",
+    "names": [
+      "WriteRtPlr",
+      "_WriteRtPlr"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1070:574e",
+    "names": [
+      "WriteRtShDef",
+      "_WriteRtShDef"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1070:5964",
+    "names": [
+      "FWriteDataFile",
+      "_FWriteDataFile"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1070:704e",
+    "names": [
+      "FAppendFile",
+      "_FAppendFile"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1070:709c",
+    "names": [
+      "WriteBattles",
+      "_WriteBattles"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1070:7a6a",
+    "names": [
+      "WritePlanet",
+      "_WritePlanet"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1070:81c6",
+    "names": [
+      "WriteFleet",
+      "_WriteFleet"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1070:87b4",
+    "names": [
+      "WriteRtString",
+      "_WriteRtString"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1070:885e",
+    "names": [
+      "MarkFleet",
+      "_MarkFleet"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1070:89b8",
+    "names": [
+      "WriteBattlePlan",
+      "_WriteBattlePlan"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1070:8adc",
+    "names": [
+      "MarkPlanet",
+      "_MarkPlanet"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1070:8cfe",
+    "names": [
+      "SetSzWorkFromDt",
+      "_SetSzWorkFromDt"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1070:8e16",
+    "names": [
+      "FCreateFile",
+      "_FCreateFile"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1070:8ea4",
+    "names": [
+      "WriteBOF",
+      "_WriteBOF"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1070:904a",
+    "names": [
+      "FMarkFile",
+      "_FMarkFile"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1070:947c",
+    "names": [
+      "WriteRt",
+      "_WriteRt"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1070:9554",
+    "names": [
+      "RgToStream",
+      "_RgToStream"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1070:95bc",
+    "names": [
+      "SetVisiblePlanFleet",
+      "_SetVisiblePlanFleet"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1070:9654",
+    "names": [
+      "SetVisPFInit",
+      "_SetVisPFInit"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1070:a100",
+    "names": [
+      "SetVisPFFleets",
+      "_SetVisPFFleets"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1070:abde",
+    "names": [
+      "SetVisPFPlanets",
+      "_SetVisPFPlanets"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1070:b9ee",
+    "names": [
+      "SetVisPFThings",
+      "_SetVisPFThings"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1070:c41c",
+    "names": [
+      "SetVisPFFinish",
+      "_SetVisPFFinish"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1078:0000",
+    "names": [
+      "vrgWormholeMin",
+      "_vrgWormholeMin"
+    ],
+    "classification": "defined data"
+  },
+  {
+    "address": "1078:0006",
+    "names": [
+      "vrgWormholeVar",
+      "_vrgWormholeVar"
+    ],
+    "classification": "defined data"
+  },
+  {
+    "address": "1078:000c",
+    "names": [
+      "rgbtlplanT",
+      "_rgbtlplanT"
+    ],
+    "classification": "defined data"
+  },
+  {
+    "address": "1078:00c0",
+    "names": [
+      "InitBattlePlan",
+      "_InitBattlePlan"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1078:0136",
+    "names": [
+      "GenerateWorld",
+      "_GenerateWorld"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1078:4690",
+    "names": [
+      "CreateStartupShip",
+      "_CreateStartupShip"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1078:4812",
+    "names": [
+      "GenNewGameFromFile",
+      "_GenNewGameFromFile"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1078:5e5e",
+    "names": [
+      "CreateTutorWorld",
+      "_CreateTutorWorld"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1078:6022",
+    "names": [
+      "NewGameWizard",
+      "_NewGameWizard"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1078:6e44",
+    "names": [
+      "InitNewGamePlr",
+      "_InitNewGamePlr"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1078:74f8",
+    "names": [
+      "InitNewGame3",
+      "_InitNewGame3"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1078:7508",
+    "names": [
+      "FGetNewGameName",
+      "_FGetNewGameName"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1078:76aa",
+    "names": [
+      "SIMPLENEWGAMEDLG",
+      "Ordinal_2",
+      "SimpleNewGameDlg"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1078:7e92",
+    "names": [
+      "NEWGAMEDLG",
+      "Ordinal_20",
+      "NewGameDlg"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1078:87d2",
+    "names": [
+      "NEWGAMEDLG2",
+      "Ordinal_42",
+      "NewGameDlg2"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1078:9556",
+    "names": [
+      "DrawNewGame2",
+      "_DrawNewGame2"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1078:99f4",
+    "names": [
+      "NEWGAMEDLG3",
+      "Ordinal_41",
+      "NewGameDlg3"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1078:9d4c",
+    "names": [
+      "rgNG3Width",
+      "_rgNG3Width"
+    ],
+    "classification": "defined data"
+  },
+  {
+    "address": "1078:9d5e",
+    "names": [
+      "DrawNewGame3",
+      "_DrawNewGame3"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1078:a210",
+    "names": [
+      "FTrackNewGameDlg3",
+      "_FTrackNewGameDlg3"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1078:a320",
+    "names": [
+      "SetNGWTitle",
+      "_SetNGWTitle"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1078:a370",
+    "names": [
+      "vrgplrComp",
+      "_vrgplrComp"
+    ],
+    "classification": "defined data"
+  },
+  {
+    "address": "1078:b570",
+    "names": [
+      "LpplrComp",
+      "_LpplrComp"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1078:b5a8",
+    "names": [
+      "vrgvcMax",
+      "_vrgvcMax"
+    ],
+    "classification": "defined data"
+  },
+  {
+    "address": "1078:b5bc",
+    "names": [
+      "SetVCCheck",
+      "_SetVCCheck"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1078:b60c",
+    "names": [
+      "GetVCCheck",
+      "_GetVCCheck"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1078:b644",
+    "names": [
+      "SetVCVal",
+      "_SetVCVal"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1078:b710",
+    "names": [
+      "GetVCVal",
+      "_GetVCVal"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1080:0000",
+    "names": [
+      "ZIPORDERDLG",
+      "Ordinal_23",
+      "ZipOrderDlg"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1080:0832",
+    "names": [
+      "EnableZipBtns",
+      "_EnableZipBtns"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1080:0880",
+    "names": [
+      "RENAMEZIPDLG",
+      "Ordinal_30",
+      "RenameZipDlg"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1080:0a68",
+    "names": [
+      "RENAMEDLG",
+      "Ordinal_29",
+      "RenameDlg"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1080:0cfe",
+    "names": [
+      "FStargateJump",
+      "_FStargateJump"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1080:152e",
+    "names": [
+      "MdCalcStargateDamage",
+      "_MdCalcStargateDamage"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1080:189a",
+    "names": [
+      "KillUsedWaypoints",
+      "_KillUsedWaypoints"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1080:1d32",
+    "names": [
+      "NoAutoTrackFleet",
+      "_NoAutoTrackFleet"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1080:1e52",
+    "names": [
+      "AutoRouteFleet",
+      "_AutoRouteFleet"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1080:227c",
+    "names": [
+      "FColonizer",
+      "_FColonizer"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1080:2322",
+    "names": [
+      "FScout",
+      "_FScout"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1080:23c8",
+    "names": [
+      "AutoFleetOrder",
+      "_AutoFleetOrder"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1080:25d2",
+    "names": [
+      "CMineFromLpfl",
+      "_CMineFromLpfl"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1080:275c",
+    "names": [
+      "PctTerraFromLpfl",
+      "_PctTerraFromLpfl"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1080:2886",
+    "names": [
+      "CLayMinesFromLpfl",
+      "_CLayMinesFromLpfl"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1080:2b26",
+    "names": [
+      "CMineSweepFromLpfl",
+      "_CMineSweepFromLpfl"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1080:2bfa",
+    "names": [
+      "CMineSweepFromLphul",
+      "_CMineSweepFromLphul"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1080:2d5e",
+    "names": [
+      "PctCloakFromLpfl",
+      "_PctCloakFromLpfl"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1080:3170",
+    "names": [
+      "CPtsCloakFromLphs",
+      "_CPtsCloakFromLphs"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1080:3376",
+    "names": [
+      "MERGEFLEETSDLG",
+      "Ordinal_3",
+      "MergeFleetsDlg"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1080:36b6",
+    "names": [
+      "MarkTechsSeen",
+      "_MarkTechsSeen"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1088:0000",
+    "names": [
+      "DoAiTurn",
+      "_DoAiTurn"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1088:02ee",
+    "names": [
+      "vrgAiRobotoidResOrder",
+      "_vrgAiRobotoidResOrder"
+    ],
+    "classification": "defined data"
+  },
+  {
+    "address": "1088:0312",
+    "names": [
+      "DoRobotoidAiTurn",
+      "_DoRobotoidAiTurn"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1088:1f34",
+    "names": [
+      "vrgRobIshAip",
+      "_vrgRobIshAip"
+    ],
+    "classification": "defined data"
+  },
+  {
+    "address": "1088:1f80",
+    "names": [
+      "vrgRobAip",
+      "_vrgRobAip"
+    ],
+    "classification": "defined data"
+  },
+  {
+    "address": "1088:20ae",
+    "names": [
+      "EnsureRobotoidShdefs",
+      "_EnsureRobotoidShdefs"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1088:288e",
+    "names": [
+      "IdTargetArmada",
+      "_IdTargetArmada"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1088:31bc",
+    "names": [
+      "FPotentRobWarFleet",
+      "_FPotentRobWarFleet"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1088:325c",
+    "names": [
+      "FEnumCalcEnemyFleets",
+      "_FEnumCalcEnemyFleets"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1088:3286",
+    "names": [
+      "FEnumCalcArmadaDest",
+      "_FEnumCalcArmadaDest"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1088:3406",
+    "names": [
+      "FEnumCalcArmadaHumanDest",
+      "_FEnumCalcArmadaHumanDest"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1088:35ae",
+    "names": [
+      "vrgTDIshAip",
+      "_vrgTDIshAip"
+    ],
+    "classification": "defined data"
+  },
+  {
+    "address": "1088:35c2",
+    "names": [
+      "vrgTDAip",
+      "_vrgTDAip"
+    ],
+    "classification": "defined data"
+  },
+  {
+    "address": "1088:3650",
+    "names": [
+      "vrgAiTurinDroneResOrder",
+      "_vrgAiTurinDroneResOrder"
+    ],
+    "classification": "defined data"
+  },
+  {
+    "address": "1088:3670",
+    "names": [
+      "DoTurinDroneAiTurn",
+      "_DoTurinDroneAiTurn"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1088:58ba",
+    "names": [
+      "EnsureTurinDroneShdefs",
+      "_EnsureTurinDroneShdefs"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1088:5f32",
+    "names": [
+      "FEnumCalcMinerDest",
+      "_FEnumCalcMinerDest"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1088:5fc8",
+    "names": [
+      "FEnumCalcColonistDrop",
+      "_FEnumCalcColonistDrop"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1090:0000",
+    "names": [
+      "vrgAiParts",
+      "_vrgAiParts"
+    ],
+    "classification": "defined data"
+  },
+  {
+    "address": "1090:012c",
+    "names": [
+      "FCreateAiShdef",
+      "_FCreateAiShdef"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1090:043e",
+    "names": [
+      "FGetAIPart",
+      "_FGetAIPart"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1090:055a",
+    "names": [
+      "PickANameAndBmp",
+      "_PickANameAndBmp"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1090:08a2",
+    "names": [
+      "FChangeAiShdef",
+      "_FChangeAiShdef"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1090:0ad0",
+    "names": [
+      "XferAiSupply",
+      "_XferAiSupply"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1090:0bc2",
+    "names": [
+      "XferAiTroopers",
+      "_XferAiTroopers"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1090:0c78",
+    "names": [
+      "FColonizeAiFleet",
+      "_FColonizeAiFleet"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1090:0d5c",
+    "names": [
+      "FGotoWormholeAiFleet",
+      "_FGotoWormholeAiFleet"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1090:0e3e",
+    "names": [
+      "IdNearestColonizablePlanet",
+      "_IdNearestColonizablePlanet"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1090:12e6",
+    "names": [
+      "LpthWormFind",
+      "_LpthWormFind"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1090:14de",
+    "names": [
+      "UlFleetPower",
+      "_UlFleetPower"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1090:15a4",
+    "names": [
+      "IdNearestUnknownPlanet",
+      "_IdNearestUnknownPlanet"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1090:1792",
+    "names": [
+      "AddMinesToBlockedQueues",
+      "_AddMinesToBlockedQueues"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1090:1cf6",
+    "names": [
+      "FFleetInField",
+      "_FFleetInField"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1090:1d9e",
+    "names": [
+      "SetAiFleetIdealSpeed",
+      "_SetAiFleetIdealSpeed"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1090:1ffe",
+    "names": [
+      "IdTargetAttack",
+      "_IdTargetAttack"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1090:286c",
+    "names": [
+      "IdTargetFreighter",
+      "_IdTargetFreighter"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1090:395a",
+    "names": [
+      "FSalvageTargetFreighter2",
+      "_FSalvageTargetFreighter2"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1090:3d0a",
+    "names": [
+      "FMoveAiFleet",
+      "_FMoveAiFleet"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1090:3e50",
+    "names": [
+      "AddItemToQueue",
+      "_AddItemToQueue"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1090:425a",
+    "names": [
+      "IroEnsureAi",
+      "_IroEnsureAi"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1090:45ca",
+    "names": [
+      "KeepFleetsMoving",
+      "_KeepFleetsMoving"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1090:476a",
+    "names": [
+      "FShouldWeBuildColonizers",
+      "_FShouldWeBuildColonizers"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1090:4a72",
+    "names": [
+      "FIsAiAttack",
+      "_FIsAiAttack"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1090:4b9a",
+    "names": [
+      "FIsTurinDroneAiAttack",
+      "_FIsTurinDroneAiAttack"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1090:4c08",
+    "names": [
+      "FIsAiTransport",
+      "_FIsAiTransport"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1090:4cf0",
+    "names": [
+      "ValidateStarbaseHistory",
+      "_ValidateStarbaseHistory"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1090:56d0",
+    "names": [
+      "GetResourcesAvailable",
+      "_GetResourcesAvailable"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1090:57c0",
+    "names": [
+      "GetProdQCost",
+      "_GetProdQCost"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1090:58be",
+    "names": [
+      "MergeAllShdefs",
+      "_MergeAllShdefs"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1090:5bae",
+    "names": [
+      "LpflFindClosestEnum",
+      "_LpflFindClosestEnum"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1090:5cd4",
+    "names": [
+      "LpplFindClosestEnum",
+      "_LpplFindClosestEnum"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1090:5e06",
+    "names": [
+      "LpplFindBestEnum",
+      "_LpplFindBestEnum"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1090:5f54",
+    "names": [
+      "IdRandomPlanetNearby",
+      "_IdRandomPlanetNearby"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1090:60c0",
+    "names": [
+      "ClearAiCurrentTask",
+      "_ClearAiCurrentTask"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1090:6110",
+    "names": [
+      "FEnumOurStarbase",
+      "_FEnumOurStarbase"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1090:6152",
+    "names": [
+      "FFleetMightHaveTeeth",
+      "_FFleetMightHaveTeeth"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1090:61de",
+    "names": [
+      "IdTargetScout",
+      "_IdTargetScout"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1090:6896",
+    "names": [
+      "MarkPlanetsUnderAttack",
+      "_MarkPlanetsUnderAttack"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1090:69e6",
+    "names": [
+      "FixPlanetsUnderAttack",
+      "_FixPlanetsUnderAttack"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1090:6a7e",
+    "names": [
+      "QuickBuildDefenses",
+      "_QuickBuildDefenses"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1090:6e04",
+    "names": [
+      "IdplFindClosestStarbase",
+      "_IdplFindClosestStarbase"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1090:6f7e",
+    "names": [
+      "FMoveToNearestStarbase",
+      "_FMoveToNearestStarbase"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1090:7014",
+    "names": [
+      "MoveToNearestPlanetOrEnemy",
+      "_MoveToNearestPlanetOrEnemy"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1090:7222",
+    "names": [
+      "EnsureAiStarbaseDesigns",
+      "_EnsureAiStarbaseDesigns"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1090:7688",
+    "names": [
+      "vrgSBAip",
+      "_vrgSBAip"
+    ],
+    "classification": "defined data"
+  },
+  {
+    "address": "1090:76de",
+    "names": [
+      "vrgSBMacAisb",
+      "_vrgSBMacAisb"
+    ],
+    "classification": "defined data"
+  },
+  {
+    "address": "1090:76e4",
+    "names": [
+      "EnsureMacintiStarbaseDesigns",
+      "_EnsureMacintiStarbaseDesigns"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1090:7bca",
+    "names": [
+      "FCreateAiStarbase",
+      "_FCreateAiStarbase"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1090:7dce",
+    "names": [
+      "vrgAiPacketDist",
+      "_vrgAiPacketDist"
+    ],
+    "classification": "defined data"
+  },
+  {
+    "address": "1090:7dd6",
+    "names": [
+      "FAIFling",
+      "_FAIFling"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1090:8458",
+    "names": [
+      "IshdefAiSBLatestOF",
+      "_IshdefAiSBLatestOF"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1090:84be",
+    "names": [
+      "IshdefAiSBLatest",
+      "_IshdefAiSBLatest"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1090:8524",
+    "names": [
+      "QueueAiStarbases",
+      "_QueueAiStarbases"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1090:882a",
+    "names": [
+      "FUpgradeAiStarbase",
+      "_FUpgradeAiStarbase"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1090:8d28",
+    "names": [
+      "FQueueAiTerraforming",
+      "_FQueueAiTerraforming"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1090:90d6",
+    "names": [
+      "FQueueAiScanner",
+      "_FQueueAiScanner"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1090:939a",
+    "names": [
+      "FQueueAiDefenses",
+      "_FQueueAiDefenses"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1090:95a4",
+    "names": [
+      "HandleBasicAiTasks",
+      "_HandleBasicAiTasks"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1090:98d8",
+    "names": [
+      "SplitOutShdefs",
+      "_SplitOutShdefs"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1090:9b10",
+    "names": [
+      "CheckAiShdefStatus",
+      "_CheckAiShdefStatus"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1090:9c66",
+    "names": [
+      "IncreaseAIMinefieldSizes",
+      "_IncreaseAIMinefieldSizes"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1090:9d18",
+    "names": [
+      "FFindBuddyAndJoinUp",
+      "_FFindBuddyAndJoinUp"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1090:9f30",
+    "names": [
+      "FShouldPlanetBuildColonizer",
+      "_FShouldPlanetBuildColonizer"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1090:a082",
+    "names": [
+      "InitRandomPlanetList",
+      "_InitRandomPlanetList"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1098:0000",
+    "names": [
+      "DoMaidAiTurn",
+      "_DoMaidAiTurn"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1098:0064",
+    "names": [
+      "vrgISIshAip",
+      "_vrgISIshAip"
+    ],
+    "classification": "defined data"
+  },
+  {
+    "address": "1098:0078",
+    "names": [
+      "vrgISAip",
+      "_vrgISAip"
+    ],
+    "classification": "defined data"
+  },
+  {
+    "address": "1098:012e",
+    "names": [
+      "FPotentISWarFleet",
+      "_FPotentISWarFleet"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1098:01ce",
+    "names": [
+      "vrgAiISResOrder",
+      "_vrgAiISResOrder"
+    ],
+    "classification": "defined data"
+  },
+  {
+    "address": "1098:01e0",
+    "names": [
+      "DoAutomitronAiTurn",
+      "_DoAutomitronAiTurn"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1098:1938",
+    "names": [
+      "EnsureISShdefs",
+      "_EnsureISShdefs"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1098:1e22",
+    "names": [
+      "DoRototillAiTurn",
+      "_DoRototillAiTurn"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1098:3020",
+    "names": [
+      "EnsureCAShdefs",
+      "_EnsureCAShdefs"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10a0:0000",
+    "names": [
+      "vrgAiMacintiResOrder",
+      "_vrgAiMacintiResOrder"
+    ],
+    "classification": "defined data"
+  },
+  {
+    "address": "10a0:0008",
+    "names": [
+      "DoMacintiAiTurn",
+      "_DoMacintiAiTurn"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10a0:2a06",
+    "names": [
+      "vrgMacIshAip",
+      "_vrgMacIshAip"
+    ],
+    "classification": "defined data"
+  },
+  {
+    "address": "10a0:2a44",
+    "names": [
+      "vrgMacAip",
+      "_vrgMacAip"
+    ],
+    "classification": "defined data"
+  },
+  {
+    "address": "10a0:2b3c",
+    "names": [
+      "EnsureMacintiShdefs",
+      "_EnsureMacintiShdefs"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10a0:336c",
+    "names": [
+      "FRetargetMiner",
+      "_FRetargetMiner"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10a0:3524",
+    "names": [
+      "IdTargetMacFreighter",
+      "_IdTargetMacFreighter"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10a0:3e3a",
+    "names": [
+      "TargetMacArmada",
+      "_TargetMacArmada"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10a0:42ec",
+    "names": [
+      "FPotentMacWarFleet",
+      "_FPotentMacWarFleet"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10a8:0000",
+    "names": [
+      "vrgAiCybertronResOrder",
+      "_vrgAiCybertronResOrder"
+    ],
+    "classification": "defined data"
+  },
+  {
+    "address": "10a8:002a",
+    "names": [
+      "DoCyberAiTurn",
+      "_DoCyberAiTurn"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10a8:1a78",
+    "names": [
+      "DoCyberPackets",
+      "_DoCyberPackets"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10a8:282a",
+    "names": [
+      "IdGetBestScannerDest",
+      "_IdGetBestScannerDest"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10a8:2bc0",
+    "names": [
+      "FAddPacketToQueue",
+      "_FAddPacketToQueue"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10a8:2ce2",
+    "names": [
+      "FillProductionQueue",
+      "_FillProductionQueue"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10a8:2d72",
+    "names": [
+      "FFillProdMinesAndFactories",
+      "_FFillProdMinesAndFactories"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10a8:37b0",
+    "names": [
+      "DoCyberFreighter",
+      "_DoCyberFreighter"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10a8:3d00",
+    "names": [
+      "FEnumDropOffStage1",
+      "_FEnumDropOffStage1"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10a8:3dfe",
+    "names": [
+      "FEnumDropOffStage2",
+      "_FEnumDropOffStage2"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10a8:3f00",
+    "names": [
+      "FEnumPickUp",
+      "_FEnumPickUp"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10a8:3f5e",
+    "names": [
+      "FEnumNeedMinerals",
+      "_FEnumNeedMinerals"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10a8:4204",
+    "names": [
+      "FEnumPktAttack",
+      "_FEnumPktAttack"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10a8:45a6",
+    "names": [
+      "FEnumCalcEnemyPlanets",
+      "_FEnumCalcEnemyPlanets"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10a8:45de",
+    "names": [
+      "iBuildCyberStarbase",
+      "_iBuildCyberStarbase"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10a8:46b0",
+    "names": [
+      "vrgCyberIshAip",
+      "_vrgCyberIshAip"
+    ],
+    "classification": "defined data"
+  },
+  {
+    "address": "10a8:46f8",
+    "names": [
+      "vrgCyberAip",
+      "_vrgCyberAip"
+    ],
+    "classification": "defined data"
+  },
+  {
+    "address": "10a8:4826",
+    "names": [
+      "EnsureCyberAiShdefs",
+      "_EnsureCyberAiShdefs"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10a8:4eba",
+    "names": [
+      "iAddAttackFleet",
+      "_iAddAttackFleet"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10a8:51a4",
+    "names": [
+      "TargetCyberArmada",
+      "_TargetCyberArmada"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10b0:0000",
+    "names": [
+      "FGenerateTurn",
+      "_FGenerateTurn"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10b0:179a",
+    "names": [
+      "DoOrders",
+      "_DoOrders"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10b0:18f4",
+    "names": [
+      "MoveThings",
+      "_MoveThings"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10b0:2efa",
+    "names": [
+      "FuelFleets",
+      "_FuelFleets"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10b0:32ce",
+    "names": [
+      "MoveFleets",
+      "_MoveFleets"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10b0:4f3c",
+    "names": [
+      "rgrgdmgMine",
+      "_rgrgdmgMine"
+    ],
+    "classification": "defined data"
+  },
+  {
+    "address": "10b0:4f48",
+    "names": [
+      "rgrgdmgMinMine",
+      "_rgrgdmgMinMine"
+    ],
+    "classification": "defined data"
+  },
+  {
+    "address": "10b0:4f54",
+    "names": [
+      "rgpctMineHit",
+      "_rgpctMineHit"
+    ],
+    "classification": "defined data"
+  },
+  {
+    "address": "10b0:4f5a",
+    "names": [
+      "rgiWarpSafe",
+      "_rgiWarpSafe"
+    ],
+    "classification": "defined data"
+  },
+  {
+    "address": "10b0:4f60",
+    "names": [
+      "FTravelThroughMineFields",
+      "_FTravelThroughMineFields"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10b0:6798",
+    "names": [
+      "SatisfyOrders",
+      "_SatisfyOrders"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10b8:0000",
+    "names": [
+      "Produce",
+      "_Produce"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10b8:0c92",
+    "names": [
+      "CBuildProdItem",
+      "_CBuildProdItem"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10b8:19b2",
+    "names": [
+      "FBuildObject",
+      "_FBuildObject"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10b8:2fd6",
+    "names": [
+      "CreateShip",
+      "_CreateShip"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10b8:3064",
+    "names": [
+      "RandomEvents",
+      "_RandomEvents"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10b8:3088",
+    "names": [
+      "TransferToOthers",
+      "_TransferToOthers"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10b8:34e2",
+    "names": [
+      "DropColonists",
+      "_DropColonists"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10b8:444c",
+    "names": [
+      "HealShips",
+      "_HealShips"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10b8:48f6",
+    "names": [
+      "AutoTerraform",
+      "_AutoTerraform"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10b8:4c56",
+    "names": [
+      "RemoteTerraforming",
+      "_RemoteTerraforming"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10b8:4faa",
+    "names": [
+      "FQueueColonistDrop",
+      "_FQueueColonistDrop"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10b8:50a0",
+    "names": [
+      "UpdatePopulations",
+      "_UpdatePopulations"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10b8:532c",
+    "names": [
+      "UpdateGuesses",
+      "_UpdateGuesses"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10b8:55a4",
+    "names": [
+      "MineMinerals",
+      "_MineMinerals"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10b8:560e",
+    "names": [
+      "MeteorStrike",
+      "_MeteorStrike"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10b8:5aec",
+    "names": [
+      "TossNonAutoBuildItems",
+      "_TossNonAutoBuildItems"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10b8:5c54",
+    "names": [
+      "PlanetaryClimateChange",
+      "_PlanetaryClimateChange"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10b8:5e0c",
+    "names": [
+      "DiscoverNewMinerals",
+      "_DiscoverNewMinerals"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10b8:5efa",
+    "names": [
+      "MysteryTrader",
+      "_MysteryTrader"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10b8:6258",
+    "names": [
+      "UpdatePlayerScores",
+      "_UpdatePlayerScores"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10b8:6dca",
+    "names": [
+      "CreateBackupDir",
+      "_CreateBackupDir"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10b8:6e9c",
+    "names": [
+      "FPacketDecay",
+      "_FPacketDecay"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10b8:70c6",
+    "names": [
+      "ThingDecay",
+      "_ThingDecay"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10b8:7638",
+    "names": [
+      "UnmarkMineFields",
+      "_UnmarkMineFields"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10b8:76a4",
+    "names": [
+      "SweepForMines",
+      "_SweepForMines"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10b8:7e4e",
+    "names": [
+      "BreedColonistsInTransit",
+      "_BreedColonistsInTransit"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10b8:80fe",
+    "names": [
+      "UpdateResearchStatus",
+      "_UpdateResearchStatus"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10b8:8b70",
+    "names": [
+      "IBestRemoteTerra",
+      "_IBestRemoteTerra"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10c0:0000",
+    "names": [
+      "POPUPWNDPROC",
+      "Ordinal_34",
+      "PopupWndProc"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10c0:0138",
+    "names": [
+      "mpimdgrbitBU",
+      "_mpimdgrbitBU"
+    ],
+    "classification": "defined data"
+  },
+  {
+    "address": "10c0:0148",
+    "names": [
+      "FIsPopupHullType",
+      "_FIsPopupHullType"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10c0:01c0",
+    "names": [
+      "DrawPopup",
+      "_DrawPopup"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10c0:0c7c",
+    "names": [
+      "Popup",
+      "_Popup"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10c0:136c",
+    "names": [
+      "PopupMenu",
+      "_PopupMenu"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10c0:1938",
+    "names": [
+      "PtDisplayPlanetStateInfo",
+      "_PtDisplayPlanetStateInfo"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10c0:228e",
+    "names": [
+      "PtDisplayPlanetPopInfo",
+      "_PtDisplayPlanetPopInfo"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10c0:2d66",
+    "names": [
+      "PtDisplayZipOrdInfo",
+      "_PtDisplayZipOrdInfo"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10c0:3110",
+    "names": [
+      "PtDisplayFactoryMineInfo",
+      "_PtDisplayFactoryMineInfo"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10c0:3378",
+    "names": [
+      "PtDisplayResourceInfo",
+      "_PtDisplayResourceInfo"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10c0:355c",
+    "names": [
+      "PtDisplayString",
+      "_PtDisplayString"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10c8:0000",
+    "names": [
+      "rghstCat",
+      "_rghstCat"
+    ],
+    "classification": "defined data"
+  },
+  {
+    "address": "10c8:001c",
+    "names": [
+      "rgidsCat",
+      "_rgidsCat"
+    ],
+    "classification": "defined data"
+  },
+  {
+    "address": "10c8:0038",
+    "names": [
+      "rggrbitParts",
+      "_rggrbitParts"
+    ],
+    "classification": "defined data"
+  },
+  {
+    "address": "10c8:0052",
+    "names": [
+      "rgidsParts",
+      "_rgidsParts"
+    ],
+    "classification": "defined data"
+  },
+  {
+    "address": "10c8:006c",
+    "names": [
+      "rggrbitPartsSB",
+      "_rggrbitPartsSB"
+    ],
+    "classification": "defined data"
+  },
+  {
+    "address": "10c8:007c",
+    "names": [
+      "rgidsPartsSB",
+      "_rgidsPartsSB"
+    ],
+    "classification": "defined data"
+  },
+  {
+    "address": "10c8:008c",
+    "names": [
+      "ShipBuilder",
+      "_ShipBuilder"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10c8:0160",
+    "names": [
+      "ShowMainControls",
+      "_ShowMainControls"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10c8:027c",
+    "names": [
+      "FCheckQueuedShip",
+      "_FCheckQueuedShip"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10c8:0550",
+    "names": [
+      "SLOTDLG",
+      "Ordinal_39",
+      "SlotDlg"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10c8:2650",
+    "names": [
+      "DrawSlotDlg",
+      "_DrawSlotDlg"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10c8:306a",
+    "names": [
+      "FTrackSlot",
+      "_FTrackSlot"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10c8:3ab2",
+    "names": [
+      "DrawBuildSelComp",
+      "_DrawBuildSelComp"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10c8:42e6",
+    "names": [
+      "PctJammerFromHul",
+      "_PctJammerFromHul"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10c8:451e",
+    "names": [
+      "DrawBuildSelHull",
+      "_DrawBuildSelHull"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10c8:53da",
+    "names": [
+      "SetBuildSelection",
+      "_SetBuildSelection"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10c8:5476",
+    "names": [
+      "IDropPart",
+      "_IDropPart"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10c8:59f0",
+    "names": [
+      "DrawDlgLBEntireItem",
+      "_DrawDlgLBEntireItem"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10c8:5c06",
+    "names": [
+      "NthValidShdef",
+      "_NthValidShdef"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10c8:5cf4",
+    "names": [
+      "NthValidEnemyShdef",
+      "_NthValidEnemyShdef"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10c8:5e80",
+    "names": [
+      "FillBuildDD",
+      "_FillBuildDD"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10c8:63e8",
+    "names": [
+      "FillBuildPartsLB",
+      "_FillBuildPartsLB"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10c8:6528",
+    "names": [
+      "UpdateSlotGlobals",
+      "_UpdateSlotGlobals"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10c8:6716",
+    "names": [
+      "IEmptyBmpFromGrhst",
+      "_IEmptyBmpFromGrhst"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10c8:6758",
+    "names": [
+      "FAKELISTPROC",
+      "Ordinal_17",
+      "FakeListProc"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10c8:694c",
+    "names": [
+      "MakeNewName",
+      "_MakeNewName"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10c8:6a52",
+    "names": [
+      "KillQueuedMassPackets",
+      "_KillQueuedMassPackets"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10c8:6c2a",
+    "names": [
+      "KillQueuedShips",
+      "_KillQueuedShips"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10d0:0000",
+    "names": [
+      "ChangeProduction",
+      "_ChangeProduction"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10d0:015e",
+    "names": [
+      "InitProduction",
+      "_InitProduction"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10d0:1090",
+    "names": [
+      "FinishProduction",
+      "_FinishProduction"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10d0:1204",
+    "names": [
+      "ProductionDlg",
+      "PRODUCTIONDLG"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10d0:1994",
+    "names": [
+      "ProdCommandHandler",
+      "_ProdCommandHandler"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10d0:3430",
+    "names": [
+      "InitializeProductionDlg",
+      "_InitializeProductionDlg"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10d0:35dc",
+    "names": [
+      "DrawProductionDlg",
+      "_DrawProductionDlg"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10d0:3b00",
+    "names": [
+      "FillProdSrcLB",
+      "_FillProdSrcLB"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10d0:3c92",
+    "names": [
+      "PszNameProdItem",
+      "_PszNameProdItem"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10d0:3f20",
+    "names": [
+      "GetProductionCosts",
+      "_GetProductionCosts"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10d0:4f40",
+    "names": [
+      "EstimateItemProdSched",
+      "_EstimateItemProdSched"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10d0:5490",
+    "names": [
+      "ZIPPRODDLG",
+      "Ordinal_48",
+      "ZipProdDlg"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10d0:5df0",
+    "names": [
+      "EnableZipProdBtns",
+      "_EnableZipProdBtns"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10d0:5e58",
+    "names": [
+      "FillZipProdLB",
+      "_FillZipProdLB"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10d8:0000",
+    "names": [
+      "RESEARCHDLG",
+      "Ordinal_4",
+      "ResearchDlg"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10d8:090a",
+    "names": [
+      "DrawResearchDlg",
+      "_DrawResearchDlg"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10d8:1a8c",
+    "names": [
+      "FTrackResearchDlg",
+      "_FTrackResearchDlg"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10d8:1d4e",
+    "names": [
+      "rglTechCost",
+      "_rglTechCost"
+    ],
+    "classification": "defined data"
+  },
+  {
+    "address": "10d8:1dba",
+    "names": [
+      "GetTechLevelCost",
+      "_GetTechLevelCost"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10d8:1eb6",
+    "names": [
+      "rggrbitBrParts",
+      "_rggrbitBrParts"
+    ],
+    "classification": "defined data"
+  },
+  {
+    "address": "10d8:1ed8",
+    "names": [
+      "BROWSERDLG",
+      "Ordinal_25",
+      "BrowserDlg"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10d8:2876",
+    "names": [
+      "BROWSERWNDPROC",
+      "Ordinal_15",
+      "BrowserWndProc"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10d8:2ac6",
+    "names": [
+      "DisplayComponentInfo",
+      "_DisplayComponentInfo"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10d8:65ae",
+    "names": [
+      "ProjectedResearchSpending",
+      "_ProjectedResearchSpending"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10d8:66e0",
+    "names": [
+      "CostOfDevelopingItem",
+      "_CostOfDevelopingItem"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10d8:68c4",
+    "names": [
+      "FShouldPartBeHidden",
+      "_FShouldPartBeHidden"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10e0:0000",
+    "names": [
+      "RaceCreationWizard",
+      "_RaceCreationWizard"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10e0:03ac",
+    "names": [
+      "RACEWIZARDDLG1",
+      "Ordinal_5",
+      "RaceWizardDlg1"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10e0:1060",
+    "names": [
+      "RACEWIZARDDLG2",
+      "Ordinal_7",
+      "RaceWizardDlg2"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10e0:179a",
+    "names": [
+      "DrawRace2",
+      "_DrawRace2"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10e0:2164",
+    "names": [
+      "IrcRaceDlgHitTest",
+      "_IrcRaceDlgHitTest"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10e0:2204",
+    "names": [
+      "FTrackRaceDlg2",
+      "_FTrackRaceDlg2"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10e0:2792",
+    "names": [
+      "RACEWIZARDDLG3",
+      "Ordinal_6",
+      "RaceWizardDlg3"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10e0:2a8c",
+    "names": [
+      "rgRW3Spacing",
+      "_rgRW3Spacing"
+    ],
+    "classification": "defined data"
+  },
+  {
+    "address": "10e0:2a94",
+    "names": [
+      "rgRW3Width",
+      "_rgRW3Width"
+    ],
+    "classification": "defined data"
+  },
+  {
+    "address": "10e0:2a9c",
+    "names": [
+      "rgRW3IStat",
+      "_rgRW3IStat"
+    ],
+    "classification": "defined data"
+  },
+  {
+    "address": "10e0:2aa4",
+    "names": [
+      "DrawRace3",
+      "_DrawRace3"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10e0:2fb8",
+    "names": [
+      "FTrackRaceDlg3",
+      "_FTrackRaceDlg3"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10e0:30d2",
+    "names": [
+      "GetRaceStat",
+      "_GetRaceStat"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10e0:30f4",
+    "names": [
+      "rgRaceStatMin",
+      "_rgRaceStatMin"
+    ],
+    "classification": "defined data"
+  },
+  {
+    "address": "10e0:3104",
+    "names": [
+      "rgRaceStatMax",
+      "_rgRaceStatMax"
+    ],
+    "classification": "defined data"
+  },
+  {
+    "address": "10e0:3114",
+    "names": [
+      "SetRaceStat",
+      "_SetRaceStat"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10e0:3176",
+    "names": [
+      "GetRaceGrbit",
+      "_GetRaceGrbit"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10e0:31b8",
+    "names": [
+      "SetRaceGrbit",
+      "_SetRaceGrbit"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10e0:320a",
+    "names": [
+      "RACEWIZARDDLG4",
+      "Ordinal_9",
+      "RaceWizardDlg4"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10e0:378e",
+    "names": [
+      "RACEWIZARDDLG5",
+      "Ordinal_8",
+      "RaceWizardDlg5"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10e0:3bae",
+    "names": [
+      "RACEWIZARDDLG6",
+      "Ordinal_10",
+      "RaceWizardDlg6"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10e0:40ae",
+    "names": [
+      "BoundsCheckPlayer",
+      "_BoundsCheckPlayer"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10e0:4410",
+    "names": [
+      "rgRacePrimaryTrait",
+      "_rgRacePrimaryTrait"
+    ],
+    "classification": "defined data"
+  },
+  {
+    "address": "10e0:4424",
+    "names": [
+      "rgRaceAdvDisPts",
+      "_rgRaceAdvDisPts"
+    ],
+    "classification": "defined data"
+  },
+  {
+    "address": "10e0:4440",
+    "names": [
+      "rgRaceDisEnvPts",
+      "_rgRaceDisEnvPts"
+    ],
+    "classification": "defined data"
+  },
+  {
+    "address": "10e0:444c",
+    "names": [
+      "CAdvantagePoints",
+      "_CAdvantagePoints"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10e0:4c6e",
+    "names": [
+      "LInnateRaceHabitability",
+      "_LInnateRaceHabitability"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10e0:54d4",
+    "names": [
+      "InvalidateAdvPtsRect",
+      "_InvalidateAdvPtsRect"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10e0:55c6",
+    "names": [
+      "DrawRaceAdvantagePoints",
+      "_DrawRaceAdvantagePoints"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10e0:5888",
+    "names": [
+      "IRaceChecksum",
+      "_IRaceChecksum"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10e0:58d4",
+    "names": [
+      "FSaveRace",
+      "_FSaveRace"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10e0:5ab8",
+    "names": [
+      "SetRCWTitle",
+      "_SetRCWTitle"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10e0:5b08",
+    "names": [
+      "CreateRandomRace",
+      "_CreateRandomRace"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10e0:65d4",
+    "names": [
+      "PctTrueMaxGrowth",
+      "_PctTrueMaxGrowth"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10e8:0000",
+    "names": [
+      "BattleVCR",
+      "_BattleVCR"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10e8:028c",
+    "names": [
+      "CBattles",
+      "_CBattles"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10e8:0362",
+    "names": [
+      "BtlDataGet",
+      "_BtlDataGet"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10e8:0450",
+    "names": [
+      "CBattleUnits",
+      "_CBattleUnits"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10e8:062e",
+    "names": [
+      "CBattleKills",
+      "_CBattleKills"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10e8:07a8",
+    "names": [
+      "LdpFromItokDv",
+      "_LdpFromItokDv"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10e8:08d8",
+    "names": [
+      "SetVCRBoard",
+      "_SetVCRBoard"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10e8:0e90",
+    "names": [
+      "VCRDLG",
+      "Ordinal_38",
+      "VCRDlg"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10e8:193e",
+    "names": [
+      "GetVCRStats",
+      "_GetVCRStats"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10e8:1c62",
+    "names": [
+      "DrawVCR",
+      "_DrawVCR"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10e8:3a3e",
+    "names": [
+      "Delay",
+      "_Delay"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10e8:3ac2",
+    "names": [
+      "AnimateAttack",
+      "_AnimateAttack"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10e8:4518",
+    "names": [
+      "PopupVCRMenu",
+      "_PopupVCRMenu"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10e8:48f6",
+    "names": [
+      "EnableVCRButtons",
+      "_EnableVCRButtons"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10f0:0000",
+    "names": [
+      "rgbrcStart",
+      "_rgbrcStart"
+    ],
+    "classification": "defined data"
+  },
+  {
+    "address": "10f0:0088",
+    "names": [
+      "RELATIONSDLG",
+      "Ordinal_44",
+      "RelationsDlg"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10f0:04ce",
+    "names": [
+      "NEWPLANNAMEDLG",
+      "Ordinal_51",
+      "NewPlanNameDlg"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10f0:0652",
+    "names": [
+      "BATTLEPLANSDLG",
+      "Ordinal_1",
+      "BattlePlansDlg"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10f0:1706",
+    "names": [
+      "FDeleteBattlePlan",
+      "_FDeleteBattlePlan"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10f0:192a",
+    "names": [
+      "SpankTheCheaters",
+      "_SpankTheCheaters"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10f0:1e16",
+    "names": [
+      "FFleetHasBombs",
+      "_FFleetHasBombs"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10f0:1ec2",
+    "names": [
+      "FHullHasBombs",
+      "_FHullHasBombs"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10f0:1fbe",
+    "names": [
+      "FFleetHasTeeth",
+      "_FFleetHasTeeth"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10f0:2072",
+    "names": [
+      "FHullHasTeeth",
+      "_FHullHasTeeth"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10f0:20f6",
+    "names": [
+      "FFuelTanker",
+      "_FFuelTanker"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10f0:212a",
+    "names": [
+      "CheckTarget",
+      "_CheckTarget"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10f0:234a",
+    "names": [
+      "FDumpCargo",
+      "_FDumpCargo"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10f0:24dc",
+    "names": [
+      "DropSalvage",
+      "_DropSalvage"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10f0:2952",
+    "names": [
+      "CplrBattle",
+      "_CplrBattle"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10f0:339c",
+    "names": [
+      "SpdOfShip",
+      "_SpdOfShip"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10f0:388e",
+    "names": [
+      "LpshdefFromTok",
+      "_LpshdefFromTok"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10f0:391e",
+    "names": [
+      "FCanKillTok",
+      "_FCanKillTok"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10f0:3a26",
+    "names": [
+      "DoBattles",
+      "_DoBattles"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10f0:3c16",
+    "names": [
+      "RegenShield",
+      "_RegenShield"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10f0:3cba",
+    "names": [
+      "InitFromHuldef",
+      "_InitFromHuldef"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10f0:3e68",
+    "names": [
+      "CheckInitiative",
+      "_CheckInitiative"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10f0:3ec2",
+    "names": [
+      "CheckWeapons",
+      "_CheckWeapons"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10f0:44d4",
+    "names": [
+      "RandomizeTokOrder",
+      "_RandomizeTokOrder"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10f0:45b4",
+    "names": [
+      "InitializeBoard",
+      "_InitializeBoard"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10f0:4ca8",
+    "names": [
+      "DzFromBrcBrc",
+      "_DzFromBrcBrc"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10f0:4d2e",
+    "names": [
+      "DpFromPtokBrcToBrc",
+      "_DpFromPtokBrcToBrc"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10f0:5312",
+    "names": [
+      "DzMoveRangeToConsider",
+      "_DzMoveRangeToConsider"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10f0:56d8",
+    "names": [
+      "FDoesPrimaryTargetTypeExist",
+      "_FDoesPrimaryTargetTypeExist"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10f0:587a",
+    "names": [
+      "FIsTargetOfMdTarget",
+      "_FIsTargetOfMdTarget"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10f0:598c",
+    "names": [
+      "ScoreGuessBattleDamage",
+      "_ScoreGuessBattleDamage"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10f0:5e34",
+    "names": [
+      "ScoreFromGiveAndTakeAndTactic",
+      "_ScoreFromGiveAndTakeAndTactic"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10f0:5f18",
+    "names": [
+      "DxyMoveTokTo",
+      "_DxyMoveTokTo"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10f0:6790",
+    "names": [
+      "CTorpHit",
+      "_CTorpHit"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10f0:69ac",
+    "names": [
+      "FAttack",
+      "_FAttack"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10f0:7cde",
+    "names": [
+      "KillShips",
+      "_KillShips"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10f0:7ee8",
+    "names": [
+      "CreateSalvage",
+      "_CreateSalvage"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10f0:81d4",
+    "names": [
+      "FDamageTok",
+      "_FDamageTok"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10f0:8b28",
+    "names": [
+      "DxyFromSpdRound",
+      "_DxyFromSpdRound"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10f0:8bcc",
+    "names": [
+      "FDoCoolBattle",
+      "_FDoCoolBattle"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10f0:9918",
+    "names": [
+      "ITechLearnATech",
+      "_ITechLearnATech"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10f0:9c0e",
+    "names": [
+      "SendBattleMessages",
+      "_SendBattleMessages"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10f0:ae06",
+    "names": [
+      "FAttackPlayer",
+      "_FAttackPlayer"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10f0:aefa",
+    "names": [
+      "DoBombing",
+      "_DoBombing"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10f8:0000",
+    "names": [
+      "TUTORDLG",
+      "Ordinal_43",
+      "TutorDlg"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10f8:026a",
+    "names": [
+      "PANICDLG",
+      "Ordinal_14",
+      "PanicDlg"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10f8:0374",
+    "names": [
+      "ShowTutor",
+      "_ShowTutor"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10f8:03c0",
+    "names": [
+      "DrawTutorText",
+      "_DrawTutorText"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10f8:06b4",
+    "names": [
+      "StartTutor",
+      "_StartTutor"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10f8:0a30",
+    "names": [
+      "AdvanceTutor",
+      "_AdvanceTutor"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10f8:0c02",
+    "names": [
+      "EndTutor",
+      "_EndTutor"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10f8:0c90",
+    "names": [
+      "SaveGameState",
+      "_SaveGameState"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10f8:0e1c",
+    "names": [
+      "RestoreGameState",
+      "_RestoreGameState"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10f8:0f36",
+    "names": [
+      "FAskKillTutor",
+      "_FAskKillTutor"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10f8:0f94",
+    "names": [
+      "rgiaQuikDrop",
+      "_rgiaQuikDrop"
+    ],
+    "classification": "defined data"
+  },
+  {
+    "address": "10f8:0f9e",
+    "names": [
+      "rgiaQuikLoad",
+      "_rgiaQuikLoad"
+    ],
+    "classification": "defined data"
+  },
+  {
+    "address": "10f8:0fa8",
+    "names": [
+      "rgiaUnloadAllCol",
+      "_rgiaUnloadAllCol"
+    ],
+    "classification": "defined data"
+  },
+  {
+    "address": "10f8:0fb2",
+    "names": [
+      "rgiaLoadAllCol",
+      "_rgiaLoadAllCol"
+    ],
+    "classification": "defined data"
+  },
+  {
+    "address": "10f8:0fbc",
+    "names": [
+      "FTutorTaskDone",
+      "_FTutorTaskDone"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10f8:6460",
+    "names": [
+      "FCheckZip",
+      "_FCheckZip"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10f8:663a",
+    "names": [
+      "rgzpqTut",
+      "_rgzpqTut"
+    ],
+    "classification": "defined data"
+  },
+  {
+    "address": "10f8:666e",
+    "names": [
+      "FCheckTemplate",
+      "_FCheckTemplate"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10f8:67ae",
+    "names": [
+      "TutorError",
+      "_TutorError"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10f8:685c",
+    "names": [
+      "FCheckScanner",
+      "_FCheckScanner"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10f8:690a",
+    "names": [
+      "FCheckFleetName",
+      "_FCheckFleetName"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10f8:69e2",
+    "names": [
+      "FCheckSummary",
+      "_FCheckSummary"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10f8:6af4",
+    "names": [
+      "FCheckSelection",
+      "_FCheckSelection"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10f8:6c48",
+    "names": [
+      "FCheckMessages",
+      "_FCheckMessages"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10f8:6da4",
+    "names": [
+      "FCheckResearch",
+      "_FCheckResearch"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10f8:6df4",
+    "names": [
+      "FCheckFleetWP",
+      "_FCheckFleetWP"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10f8:6f86",
+    "names": [
+      "FCheckPlanetRoute",
+      "_FCheckPlanetRoute"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10f8:6ff4",
+    "names": [
+      "FCheckLayingWP",
+      "_FCheckLayingWP"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10f8:70c0",
+    "names": [
+      "FCheckColonizeWP",
+      "_FCheckColonizeWP"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10f8:71ac",
+    "names": [
+      "FCheckPatrolWP",
+      "_FCheckPatrolWP"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10f8:7280",
+    "names": [
+      "FCheckXferWP",
+      "_FCheckXferWP"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10f8:7442",
+    "names": [
+      "FCheckQueue",
+      "_FCheckQueue"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10f8:760a",
+    "names": [
+      "FCheckBtlPlan",
+      "_FCheckBtlPlan"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10f8:7664",
+    "names": [
+      "FCheckCargo",
+      "_FCheckCargo"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10f8:77d8",
+    "names": [
+      "FCheckBuilderPart",
+      "_FCheckBuilderPart"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10f8:7964",
+    "names": [
+      "FCheckShipBuilder",
+      "_FCheckShipBuilder"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10f8:79f6",
+    "names": [
+      "FTutorialEnabledShipBuilder",
+      "_FTutorialEnabledShipBuilder"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "10f8:81da",
+    "names": [
+      "FOKMergeDialog",
+      "_FOKMergeDialog"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1100:0000",
+    "names": [
+      "aTUTCmpr",
+      "_aTUTCmpr"
+    ],
+    "classification": "defined data"
+  },
+  {
+    "address": "1100:5734",
+    "names": [
+      "acTUT",
+      "_acTUT"
+    ],
+    "classification": "defined data"
+  },
+  {
+    "address": "1100:59b4",
+    "names": [
+      "aiTUTChunkOffset",
+      "_aiTUTChunkOffset"
+    ],
+    "classification": "defined data"
+  },
+  {
+    "address": "1100:59c8",
+    "names": [
+      "rgTUTLookupTable",
+      "_rgTUTLookupTable"
+    ],
+    "classification": "defined data"
+  },
+  {
+    "address": "1100:5a14",
+    "names": [
+      "CchTutorString",
+      "_CchTutorString"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1108:0000",
+    "names": [
+      "mpicolgrbitBU",
+      "_mpicolgrbitBU"
+    ],
+    "classification": "defined data"
+  },
+  {
+    "address": "1108:0018",
+    "names": [
+      "REPORTDLG",
+      "Ordinal_21",
+      "ReportDlg"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1108:09e8",
+    "names": [
+      "SetHScrollBar",
+      "_SetHScrollBar"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1108:0bae",
+    "names": [
+      "DrawReport",
+      "_DrawReport"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1108:0f66",
+    "names": [
+      "SCOREXDLG",
+      "Ordinal_16",
+      "ScoreXDlg"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1108:13b6",
+    "names": [
+      "InitScoreDlg",
+      "_InitScoreDlg"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1108:168e",
+    "names": [
+      "DrawVCReport",
+      "_DrawVCReport"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1108:1e0c",
+    "names": [
+      "DrawScoreReport",
+      "_DrawScoreReport"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1108:2494",
+    "names": [
+      "DrawHistoryReport",
+      "_DrawHistoryReport"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1108:2f94",
+    "names": [
+      "LFetchScoreXVal",
+      "_LFetchScoreXVal"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1108:305e",
+    "names": [
+      "DxReportColHdr",
+      "_DxReportColHdr"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1108:3398",
+    "names": [
+      "DrawReportItem",
+      "_DrawReportItem"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1108:4ebe",
+    "names": [
+      "DrawMineralItem",
+      "_DrawMineralItem"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1108:4f60",
+    "names": [
+      "PszGetDestName",
+      "_PszGetDestName"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1108:50b4",
+    "names": [
+      "FDestIsWP0",
+      "_FDestIsWP0"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1108:51a8",
+    "names": [
+      "PszGetETA",
+      "_PszGetETA"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1108:53b8",
+    "names": [
+      "PszGetTaskName",
+      "_PszGetTaskName"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1108:589c",
+    "names": [
+      "SortReportCache",
+      "_SortReportCache"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1108:5bb8",
+    "names": [
+      "ICompReport",
+      "_ICompReport"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1108:74d4",
+    "names": [
+      "ReportColumnPopup",
+      "_ReportColumnPopup"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1108:7af6",
+    "names": [
+      "InvalidateReport",
+      "_InvalidateReport"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1108:7cd6",
+    "names": [
+      "ExecuteReportClick",
+      "_ExecuteReportClick"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1108:851e",
+    "names": [
+      "DumpUniverse",
+      "_DumpUniverse"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1108:86e4",
+    "names": [
+      "DumpPlanets",
+      "_DumpPlanets"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1108:9530",
+    "names": [
+      "DumpFleets",
+      "_DumpFleets"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1108:a1c2",
+    "names": [
+      "PRINTMAPDLG",
+      "Ordinal_46",
+      "PrintMapDlg"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1110:0000",
+    "names": [
+      "LpthNew",
+      "_LpthNew"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1110:0224",
+    "names": [
+      "FreeLpth",
+      "_FreeLpth"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1110:02a0",
+    "names": [
+      "CPlanetsInCircle",
+      "_CPlanetsInCircle"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1110:044e",
+    "names": [
+      "DrawThingGauge",
+      "_DrawThingGauge"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1110:064c",
+    "names": [
+      "IValidateWormholePos",
+      "_IValidateWormholePos"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1110:0adc",
+    "names": [
+      "PctWormholeMoves",
+      "_PctWormholeMoves"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1110:0b3a",
+    "names": [
+      "DoThingInteractions",
+      "_DoThingInteractions"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1110:1a96",
+    "names": [
+      "IdmGiveTraderPart",
+      "_IdmGiveTraderPart"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:0010",
+    "names": [
+      "__wflags"
+    ],
+    "classification": "defined data"
+  },
+  {
+    "address": "1118:001a",
+    "names": [
+      "entry",
+      "__astart"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:00bd",
+    "names": [
+      "__nomain"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:00c4",
+    "names": [
+      "__cinit"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:01a3",
+    "names": [
+      "_exit"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:01b1",
+    "names": [
+      "__exit"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:01c0",
+    "names": [
+      "__cexit"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:01d1",
+    "names": [
+      "__c_exit"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:0241",
+    "names": [
+      "__ctermsub"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:027e",
+    "names": [
+      "__lseek"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:0352",
+    "names": [
+      "_strcat"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:0392",
+    "names": [
+      "_strcpy"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:03c4",
+    "names": [
+      "_strcmp"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:03f0",
+    "names": [
+      "_strlen"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:040c",
+    "names": [
+      "_strncpy"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:0434",
+    "names": [
+      "_atoi"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:0438",
+    "names": [
+      "__itoa"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:0454",
+    "names": [
+      "__tell"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:0470",
+    "names": [
+      "__filelength"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:050a",
+    "names": [
+      "__strdate"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:056e",
+    "names": [
+      "__strtime"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:05c8",
+    "names": [
+      "_strchr"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:05f2",
+    "names": [
+      "__strcmpi",
+      "__stricmp"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:0634",
+    "names": [
+      "__strnicmp"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:068c",
+    "names": [
+      "_strrchr"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:06b4",
+    "names": [
+      "__strlwr"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:06d2",
+    "names": [
+      "_memmove"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:071a",
+    "names": [
+      "_memcmp"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:0742",
+    "names": [
+      "_memcpy"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:076e",
+    "names": [
+      "_memset"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:079c",
+    "names": [
+      "_abs"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:07b0",
+    "names": [
+      "_bsearch"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:0848",
+    "names": [
+      "_labs"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:0866",
+    "names": [
+      "_qsort"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:09c8",
+    "names": [
+      "__setjmp"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:09ed",
+    "names": [
+      "_longjmp"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:0a16",
+    "names": [
+      "__access"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:0a4c",
+    "names": [
+      "__mkdir"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:0a5a",
+    "names": [
+      "__chdir"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:0a7e",
+    "names": [
+      "__rmdir"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:0abe",
+    "names": [
+      "_rename"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:0aea",
+    "names": [
+      "__unlink",
+      "_remove"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:0b0e",
+    "names": [
+      "__dos_findnext"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:0b20",
+    "names": [
+      "__dos_findfirst"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:0b9a",
+    "names": [
+      "__dos_getdiskfree"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:0be4",
+    "names": [
+      "__aFldiv"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:0c7e",
+    "names": [
+      "__aFlmul",
+      "__aFulmul"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:0cb0",
+    "names": [
+      "__aFlrem"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:0d50",
+    "names": [
+      "__aFlshl"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:0d5c",
+    "names": [
+      "__aFlshr"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:0d68",
+    "names": [
+      "__aFuldiv"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:0dc8",
+    "names": [
+      "__aFulrem"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:0e32",
+    "names": [
+      "__aFulshr"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:0e3e",
+    "names": [
+      "__fmemcmp"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:0e9a",
+    "names": [
+      "__fmemcpy"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:0ef8",
+    "names": [
+      "__fstricmp"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:0f3e",
+    "names": [
+      "__fstrlen"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:0f58",
+    "names": [
+      "__fstrcmp"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:0f82",
+    "names": [
+      "__fstrcpy"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:0fbe",
+    "names": [
+      "__fstrcat"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:1012",
+    "names": [
+      "__fmemset"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:105a",
+    "names": [
+      "__fmemmove"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:1124",
+    "names": [
+      "_sqrt"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:112a",
+    "names": [
+      "__aFCIsqrt"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:1130",
+    "names": [
+      "_pow"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:1136",
+    "names": [
+      "_log"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:113c",
+    "names": [
+      "_log10"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:1141",
+    "names": [
+      "_exp"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:1146",
+    "names": [
+      "__aFCIpow"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:114c",
+    "names": [
+      "__aFCIlog"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:1152",
+    "names": [
+      "__aFCIlog10"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:1157",
+    "names": [
+      "__aFCIexp"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:115c",
+    "names": [
+      "_sin"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:1162",
+    "names": [
+      "_cos"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:1167",
+    "names": [
+      "_tan"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:116c",
+    "names": [
+      "__aFCIsin"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:1172",
+    "names": [
+      "__aFCIcos"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:1177",
+    "names": [
+      "__aFCItan"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:117c",
+    "names": [
+      "_asin"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:1182",
+    "names": [
+      "_acos"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:1187",
+    "names": [
+      "_atan"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:118c",
+    "names": [
+      "_atan2"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:1192",
+    "names": [
+      "__aFCIasin"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:1198",
+    "names": [
+      "__aFCIacos"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:119d",
+    "names": [
+      "__aFCIatan"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:11a2",
+    "names": [
+      "__aFCIatan2"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:11a8",
+    "names": [
+      "__aFfcmp",
+      "__fcmp"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:11d7",
+    "names": [
+      "__aFfcompp",
+      "__fcompp"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:11fc",
+    "names": [
+      "__aFftol",
+      "__ftol"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:124e",
+    "names": [
+      "__stubmain"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:127a",
+    "names": [
+      "__FF_MSGBANNER"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:129e",
+    "names": [
+      "__fptrap"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:12a4",
+    "names": [
+      "__aNchkstk"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:12c4",
+    "names": [
+      "__aFchkstk",
+      "__chkstk"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:12f8",
+    "names": [
+      "__setargv"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:147a",
+    "names": [
+      "__setenvp"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:150a",
+    "names": [
+      "__cintDIV"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:150f",
+    "names": [
+      "__amsg_exit"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:1552",
+    "names": [
+      "__dosret0"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:155f",
+    "names": [
+      "__dosreturn"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:1571",
+    "names": [
+      "__dosretax"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:1583",
+    "names": [
+      "__maperror"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:15b0",
+    "names": [
+      "__stackavail"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:15c4",
+    "names": [
+      "__catox"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:1618",
+    "names": [
+      "__aFahdiff"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:1638",
+    "names": [
+      "__cltoasub"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:1644",
+    "names": [
+      "__cxtoa"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:16ae",
+    "names": [
+      "_fFYTOX",
+      "__trandisp2::override::jmp_1118:2483::case_2"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:16ba",
+    "names": [
+      "__fFEXP",
+      "__trandisp2::override::jmp_1118:2483::case_3"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:1757",
+    "names": [
+      "__rtinfpopse"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:175a",
+    "names": [
+      "__rtinfnpopse",
+      "__trandisp2::override::jmp_1118:2483::case_6"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:1767",
+    "names": [
+      "__fFLN"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:17c4",
+    "names": [
+      "__rtinfpop"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:17c7",
+    "names": [
+      "__rtinfnpop"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:17e2",
+    "names": [
+      "__ffexpm1"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:182c",
+    "names": [
+      "__fFCOS",
+      "__trandisp2::override::jmp_1118:2483::case_15"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:183c",
+    "names": [
+      "__fFSIN",
+      "__trandisp2::override::jmp_1118:2483::case_16"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:1945",
+    "names": [
+      "__fFATN2",
+      "__trandisp2::override::jmp_1118:2483::case_23"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:19ba",
+    "names": [
+      "__rtpiby2",
+      "__trandisp2::override::jmp_1118:2483::case_24"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:19f0",
+    "names": [
+      "__forcdecpt"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:1a66",
+    "names": [
+      "__cropzeros"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:1aea",
+    "names": [
+      "__positive"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:1b20",
+    "names": [
+      "__fassign"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:1b6a",
+    "names": [
+      "__cftoe"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:1d20",
+    "names": [
+      "__cftof"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:1ea2",
+    "names": [
+      "__cftog"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:1f78",
+    "names": [
+      "__cfltcvt"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:201a",
+    "names": [
+      "__cintrindisp2"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:204a",
+    "names": [
+      "__cintrindisp1"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:2076",
+    "names": [
+      "__ctrandisp2"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:2090",
+    "names": [
+      "__ctrandisp1"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:21ca",
+    "names": [
+      "__fpsignal"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:21ee",
+    "names": [
+      "__wcexit",
+      "__wcinit"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:21f3",
+    "names": [
+      "__wclose",
+      "__wmenuclick",
+      "__QWINTerm",
+      "__wabout",
+      "__QWINInit",
+      "__QWINClose",
+      "__QWINSetAboutString",
+      "__wgetfocus",
+      "__QWINIsQWINin",
+      "__QWINMenuClick",
+      "__wsetfocus",
+      "__wsetscreenbuf",
+      "__QWINOpen",
+      "__QWINYield",
+      "__QWINWrite",
+      "__QWINSetSize",
+      "__QWINGetSize",
+      "__QWINSetBuffSize",
+      "__QWINGetBuffSize",
+      "__QWINExit",
+      "__QWINGetFocus",
+      "__wgetscreenbuf",
+      "__QWINSetFocus",
+      "__wopen",
+      "__wread",
+      "__wterm",
+      "__QWINRead",
+      "__wgetsize",
+      "__wsetsize",
+      "__wwrite"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:21fa",
+    "names": [
+      "__NMSG_TEXT"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:2231",
+    "names": [
+      "__NMSG_WRITE"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:226e",
+    "names": [
+      "__myalloc"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:229c",
+    "names": [
+      "__GetDGROUP"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:22ac",
+    "names": [
+      "_atof"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:22f8",
+    "names": [
+      "__fptostr"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:2392",
+    "names": [
+      "__wrt2err"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:23e0",
+    "names": [
+      "__trandisp1"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:2422",
+    "names": [
+      "__trandisp2"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:2485",
+    "names": [
+      "__rttospopde",
+      "__trandisp2::override::jmp_1118:2483::case_30"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:2488",
+    "names": [
+      "__rttospop"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:248b",
+    "names": [
+      "__rtnospop"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:248e",
+    "names": [
+      "__rttosnpop",
+      "__trandisp2::override::jmp_1118:2483::case_31"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:248f",
+    "names": [
+      "__rtnospopde",
+      "__trandisp2::override::jmp_1118:2483::case_32"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:2494",
+    "names": [
+      "__rtzeropop"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:2497",
+    "names": [
+      "__rtzeronpop",
+      "__trandisp2::override::jmp_1118:2483::case_33"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:249e",
+    "names": [
+      "__rtonepop"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:24a1",
+    "names": [
+      "__rtonenpop",
+      "__trandisp2::override::jmp_1118:2483::case_34"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:24a8",
+    "names": [
+      "__rtbignan",
+      "__trandisp2::override::jmp_1118:2483::case_35"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:24af",
+    "names": [
+      "__rtifprojpop"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:24b6",
+    "names": [
+      "__rtindfpop",
+      "__trandisp2::override::jmp_1118:2483::case_36"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:24b9",
+    "names": [
+      "__rtindfnpop",
+      "__trandisp2::override::jmp_1118:2483::case_37"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:24c7",
+    "names": [
+      "__rttosnpopde",
+      "__trandisp2::override::jmp_1118:2483::case_38"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:24ce",
+    "names": [
+      "__rtifprojnpop"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:24d7",
+    "names": [
+      "__rtchsifneg"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:24e0",
+    "names": [
+      "_Soft_fFCOS"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:24f7",
+    "names": [
+      "_Soft_fFSIN"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:25f9",
+    "names": [
+      "_Soft_fFTAN"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:29ae",
+    "names": [
+      "__Init80x87"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:2a34",
+    "names": [
+      "__fltout"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:2a84",
+    "names": [
+      "__matherr"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:2a9e",
+    "names": [
+      "___EXPORTEDSTUB",
+      "Ordinal_32",
+      "___ExportedStub"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:2ab2",
+    "names": [
+      "__growseg"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:2b3e",
+    "names": [
+      "__incseg"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:2ba4",
+    "names": [
+      "__findlast"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:2c12",
+    "names": [
+      "$i8_output"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:2d5e",
+    "names": [
+      "__FASTLDADD"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:2ee5",
+    "names": [
+      "__FASTLDMULT"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:2fe8",
+    "names": [
+      "__fltin"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:3048",
+    "names": [
+      "__nmalloc"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:30a4",
+    "names": [
+      "__nfree"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:30be",
+    "names": [
+      "__nrealloc"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:312c",
+    "names": [
+      "__nmsize"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:32bc",
+    "names": [
+      "$i8_tpwr10"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:32fa",
+    "names": [
+      "__STRINGTOD"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:3362",
+    "names": [
+      "__STRINGTOLD"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:3882",
+    "names": [
+      "__LD12MULTTENPOWER"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:3957",
+    "names": [
+      "__LD12MULT"
+    ],
+    "classification": "function"
+  },
+  {
+    "address": "1118:3adc",
+    "names": [
+      "__MANTOLD12"
+    ],
+    "classification": "function"
+  }
+]

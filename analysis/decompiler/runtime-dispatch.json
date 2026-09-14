@@ -1,0 +1,348 @@
+{
+  "rows": [
+    {
+      "name": "__sqrtjmptab",
+      "data_offset": 6328,
+      "argument_count": 1,
+      "error_selector_bytes": [
+        0,
+        2,
+        0,
+        4,
+        0,
+        0,
+        0
+      ],
+      "targets": [
+        5784,
+        9367,
+        9415,
+        5792
+      ]
+    },
+    {
+      "name": "__ytoxjmptab",
+      "data_offset": 6402,
+      "argument_count": 2,
+      "error_selector_bytes": [
+        0,
+        2,
+        0,
+        4,
+        0,
+        0,
+        0
+      ],
+      "targets": [
+        5806,
+        6035,
+        9349,
+        6075,
+        6041,
+        5948,
+        9349,
+        6038,
+        9359,
+        9359,
+        9384,
+        9359,
+        6075,
+        9398,
+        9349,
+        6075
+      ]
+    },
+    {
+      "name": "__logjmptab",
+      "data_offset": 6450,
+      "argument_count": 1,
+      "error_selector_bytes": [
+        0,
+        6,
+        6,
+        4,
+        0,
+        0,
+        0
+      ],
+      "targets": [
+        6016,
+        5958,
+        9415,
+        6107
+      ]
+    },
+    {
+      "name": "__lnjmptab",
+      "data_offset": 6474,
+      "argument_count": 1,
+      "error_selector_bytes": [
+        0,
+        6,
+        6,
+        4,
+        0,
+        0,
+        0
+      ],
+      "targets": [
+        6021,
+        5958,
+        9415,
+        6107
+      ]
+    },
+    {
+      "name": "__expjmptab",
+      "data_offset": 6498,
+      "argument_count": 1,
+      "error_selector_bytes": [
+        0,
+        0,
+        0,
+        4,
+        0,
+        0,
+        0
+      ],
+      "targets": [
+        5818,
+        9377,
+        9415,
+        6100
+      ]
+    },
+    {
+      "name": "__sinjmptab",
+      "data_offset": 6540,
+      "argument_count": 1,
+      "error_selector_bytes": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0
+      ],
+      "targets": [
+        6204,
+        9358,
+        9415,
+        6276
+      ]
+    },
+    {
+      "name": "__cosjmptab",
+      "data_offset": 6564,
+      "argument_count": 1,
+      "error_selector_bytes": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0
+      ],
+      "targets": [
+        6188,
+        9377,
+        9415,
+        6276
+      ]
+    },
+    {
+      "name": "__tanjmptab",
+      "data_offset": 6588,
+      "argument_count": 1,
+      "error_selector_bytes": [
+        0,
+        0,
+        0,
+        4,
+        0,
+        2,
+        0
+      ],
+      "targets": [
+        6222,
+        9358,
+        9415,
+        6276
+      ]
+    },
+    {
+      "name": "__cotanjmptab",
+      "data_offset": 6612,
+      "argument_count": 1,
+      "error_selector_bytes": [
+        0,
+        0,
+        0,
+        4,
+        0,
+        2,
+        0
+      ],
+      "targets": [
+        6243,
+        5978,
+        9415,
+        6276
+      ]
+    },
+    {
+      "name": "__asnjmptab",
+      "data_offset": 6636,
+      "argument_count": 1,
+      "error_selector_bytes": [
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "targets": [
+        6442,
+        9358,
+        9415,
+        9401
+      ]
+    },
+    {
+      "name": "__acsjmptab",
+      "data_offset": 6660,
+      "argument_count": 1,
+      "error_selector_bytes": [
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "targets": [
+        6449,
+        6586,
+        9415,
+        9401
+      ]
+    },
+    {
+      "name": "__atnjmptab",
+      "data_offset": 6684,
+      "argument_count": 1,
+      "error_selector_bytes": [
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "targets": [
+        6457,
+        9358,
+        9415,
+        6631
+      ]
+    },
+    {
+      "name": "__atn2jmptab",
+      "data_offset": 6708,
+      "argument_count": 2,
+      "error_selector_bytes": [
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "targets": [
+        6469,
+        6624,
+        9349,
+        6595,
+        6595,
+        6618,
+        9349,
+        6595,
+        9359,
+        9359,
+        9384,
+        9359,
+        6612,
+        6612,
+        9349,
+        9398
+      ]
+    }
+  ],
+  "error_dispatch": {
+    "instruction": "1118:213f",
+    "table": "1120:1a8c",
+    "selectors": [
+      0,
+      2,
+      4,
+      6
+    ],
+    "targets": [
+      "1118:216d",
+      "1118:2141",
+      "1118:2149",
+      "1118:2162"
+    ]
+  },
+  "math_dispatch": {
+    "instruction": "1118:2483",
+    "targets": [
+      "1118:1698",
+      "1118:16a0",
+      "1118:16ae",
+      "1118:16ba",
+      "1118:173c",
+      "1118:1746",
+      "1118:175a",
+      "1118:1780",
+      "1118:1785",
+      "1118:1793",
+      "1118:1796",
+      "1118:1799",
+      "1118:17bb",
+      "1118:17d4",
+      "1118:17db",
+      "1118:182c",
+      "1118:183c",
+      "1118:184e",
+      "1118:1863",
+      "1118:1884",
+      "1118:192a",
+      "1118:1931",
+      "1118:1939",
+      "1118:1945",
+      "1118:19ba",
+      "1118:19c3",
+      "1118:19d4",
+      "1118:19da",
+      "1118:19e0",
+      "1118:19e7",
+      "1118:2485",
+      "1118:248e",
+      "1118:248f",
+      "1118:2497",
+      "1118:24a1",
+      "1118:24a8",
+      "1118:24b6",
+      "1118:24b9",
+      "1118:24c7"
+    ]
+  }
+}

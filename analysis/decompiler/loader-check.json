@@ -1,0 +1,9 @@
+{
+  "segments": 37,
+  "bytes": 1042584,
+  "relocation_sites": 15327,
+  "absolute_export_sites": 13,
+  "unmatched_bytes": 0,
+  "hardware_x87_fixups": 1313,
+  "exported_prologue": "Ghidra preserves original prologue; step-1 optional runtime prologue rewrite is not applied."
+}

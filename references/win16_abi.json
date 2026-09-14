@@ -1,0 +1,3340 @@
+[
+  {
+    "module": "WIN87EM",
+    "ordinal": 1,
+    "name": "__fpMath",
+    "address": "14f8:0000",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/win87em.dll16/win87em.dll16.spec",
+    "source_sha256": "568e9c159d718eb082f5fc441ea9f5d65950c7ac289902efdeac810afc0b6a91",
+    "convention": "pascal",
+    "flags": [
+      "-register"
+    ],
+    "arguments": [],
+    "return_bytes": 4
+  },
+  {
+    "module": "KERNEL",
+    "ordinal": 1,
+    "name": "FatalExit",
+    "address": "14f8:0004",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/krnl386.exe16/krnl386.exe16.spec",
+    "source_sha256": "8d799b701d1cf16d4e882b5e354dc6e357056d4adcd83e629571dc4b33b02075",
+    "unresolved_spec": "stub FatalExit"
+  },
+  {
+    "module": "KERNEL",
+    "ordinal": 3,
+    "name": "GetVersion",
+    "address": "14f8:0008",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/krnl386.exe16/krnl386.exe16.spec",
+    "source_sha256": "8d799b701d1cf16d4e882b5e354dc6e357056d4adcd83e629571dc4b33b02075",
+    "convention": "pascal",
+    "flags": [],
+    "arguments": [],
+    "return_bytes": 4
+  },
+  {
+    "module": "KERNEL",
+    "ordinal": 5,
+    "name": "LocalAlloc",
+    "address": "14f8:000c",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/krnl386.exe16/krnl386.exe16.spec",
+    "source_sha256": "8d799b701d1cf16d4e882b5e354dc6e357056d4adcd83e629571dc4b33b02075",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word",
+      "word"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "KERNEL",
+    "ordinal": 6,
+    "name": "LocalReAlloc",
+    "address": "14f8:0010",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/krnl386.exe16/krnl386.exe16.spec",
+    "source_sha256": "8d799b701d1cf16d4e882b5e354dc6e357056d4adcd83e629571dc4b33b02075",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word",
+      "word",
+      "word"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "KERNEL",
+    "ordinal": 7,
+    "name": "LocalFree",
+    "address": "14f8:0014",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/krnl386.exe16/krnl386.exe16.spec",
+    "source_sha256": "8d799b701d1cf16d4e882b5e354dc6e357056d4adcd83e629571dc4b33b02075",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "KERNEL",
+    "ordinal": 10,
+    "name": "LocalSize",
+    "address": "14f8:0018",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/krnl386.exe16/krnl386.exe16.spec",
+    "source_sha256": "8d799b701d1cf16d4e882b5e354dc6e357056d4adcd83e629571dc4b33b02075",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "KERNEL",
+    "ordinal": 15,
+    "name": "GlobalAlloc",
+    "address": "14f8:001c",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/krnl386.exe16/krnl386.exe16.spec",
+    "source_sha256": "8d799b701d1cf16d4e882b5e354dc6e357056d4adcd83e629571dc4b33b02075",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word",
+      "long"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "KERNEL",
+    "ordinal": 16,
+    "name": "GlobalReAlloc",
+    "address": "14f8:0020",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/krnl386.exe16/krnl386.exe16.spec",
+    "source_sha256": "8d799b701d1cf16d4e882b5e354dc6e357056d4adcd83e629571dc4b33b02075",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word",
+      "long",
+      "word"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "KERNEL",
+    "ordinal": 17,
+    "name": "GlobalFree",
+    "address": "14f8:0024",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/krnl386.exe16/krnl386.exe16.spec",
+    "source_sha256": "8d799b701d1cf16d4e882b5e354dc6e357056d4adcd83e629571dc4b33b02075",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "KERNEL",
+    "ordinal": 18,
+    "name": "GlobalLock",
+    "address": "14f8:0028",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/krnl386.exe16/krnl386.exe16.spec",
+    "source_sha256": "8d799b701d1cf16d4e882b5e354dc6e357056d4adcd83e629571dc4b33b02075",
+    "convention": "pascal",
+    "flags": [],
+    "arguments": [
+      "word"
+    ],
+    "return_bytes": 4
+  },
+  {
+    "module": "KERNEL",
+    "ordinal": 19,
+    "name": "GlobalUnlock",
+    "address": "14f8:002c",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/krnl386.exe16/krnl386.exe16.spec",
+    "source_sha256": "8d799b701d1cf16d4e882b5e354dc6e357056d4adcd83e629571dc4b33b02075",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "KERNEL",
+    "ordinal": 20,
+    "name": "GlobalSize",
+    "address": "14f8:0030",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/krnl386.exe16/krnl386.exe16.spec",
+    "source_sha256": "8d799b701d1cf16d4e882b5e354dc6e357056d4adcd83e629571dc4b33b02075",
+    "convention": "pascal",
+    "flags": [],
+    "arguments": [
+      "word"
+    ],
+    "return_bytes": 4
+  },
+  {
+    "module": "KERNEL",
+    "ordinal": 23,
+    "name": "LockSegment",
+    "address": "14f8:0034",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/krnl386.exe16/krnl386.exe16.spec",
+    "source_sha256": "8d799b701d1cf16d4e882b5e354dc6e357056d4adcd83e629571dc4b33b02075",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "KERNEL",
+    "ordinal": 24,
+    "name": "UnlockSegment",
+    "address": "14f8:0038",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/krnl386.exe16/krnl386.exe16.spec",
+    "source_sha256": "8d799b701d1cf16d4e882b5e354dc6e357056d4adcd83e629571dc4b33b02075",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "KERNEL",
+    "ordinal": 29,
+    "name": "Yield",
+    "address": "14f8:003c",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/krnl386.exe16/krnl386.exe16.spec",
+    "source_sha256": "8d799b701d1cf16d4e882b5e354dc6e357056d4adcd83e629571dc4b33b02075",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [],
+    "return_bytes": 2
+  },
+  {
+    "module": "KERNEL",
+    "ordinal": 30,
+    "name": "WaitEvent",
+    "address": "14f8:0040",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/krnl386.exe16/krnl386.exe16.spec",
+    "source_sha256": "8d799b701d1cf16d4e882b5e354dc6e357056d4adcd83e629571dc4b33b02075",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "KERNEL",
+    "ordinal": 49,
+    "name": "GetModuleFileName",
+    "address": "14f8:0044",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/krnl386.exe16/krnl386.exe16.spec",
+    "source_sha256": "8d799b701d1cf16d4e882b5e354dc6e357056d4adcd83e629571dc4b33b02075",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word",
+      "ptr",
+      "s_word"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "KERNEL",
+    "ordinal": 51,
+    "name": "MakeProcInstance",
+    "address": "14f8:0048",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/krnl386.exe16/krnl386.exe16.spec",
+    "source_sha256": "8d799b701d1cf16d4e882b5e354dc6e357056d4adcd83e629571dc4b33b02075",
+    "convention": "pascal",
+    "flags": [],
+    "arguments": [
+      "segptr",
+      "word"
+    ],
+    "return_bytes": 4
+  },
+  {
+    "module": "KERNEL",
+    "ordinal": 52,
+    "name": "FreeProcInstance",
+    "address": "14f8:004c",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/krnl386.exe16/krnl386.exe16.spec",
+    "source_sha256": "8d799b701d1cf16d4e882b5e354dc6e357056d4adcd83e629571dc4b33b02075",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "segptr"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "KERNEL",
+    "ordinal": 60,
+    "name": "FindResource",
+    "address": "14f8:0050",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/krnl386.exe16/krnl386.exe16.spec",
+    "source_sha256": "8d799b701d1cf16d4e882b5e354dc6e357056d4adcd83e629571dc4b33b02075",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word",
+      "str",
+      "str"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "KERNEL",
+    "ordinal": 61,
+    "name": "LoadResource",
+    "address": "14f8:0054",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/krnl386.exe16/krnl386.exe16.spec",
+    "source_sha256": "8d799b701d1cf16d4e882b5e354dc6e357056d4adcd83e629571dc4b33b02075",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word",
+      "word"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "KERNEL",
+    "ordinal": 62,
+    "name": "LockResource",
+    "address": "14f8:0058",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/krnl386.exe16/krnl386.exe16.spec",
+    "source_sha256": "8d799b701d1cf16d4e882b5e354dc6e357056d4adcd83e629571dc4b33b02075",
+    "convention": "pascal",
+    "flags": [],
+    "arguments": [
+      "word"
+    ],
+    "return_bytes": 4
+  },
+  {
+    "module": "KERNEL",
+    "ordinal": 63,
+    "name": "FreeResource",
+    "address": "14f8:005c",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/krnl386.exe16/krnl386.exe16.spec",
+    "source_sha256": "8d799b701d1cf16d4e882b5e354dc6e357056d4adcd83e629571dc4b33b02075",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "KERNEL",
+    "ordinal": 64,
+    "name": "AccessResource",
+    "address": "14f8:0060",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/krnl386.exe16/krnl386.exe16.spec",
+    "source_sha256": "8d799b701d1cf16d4e882b5e354dc6e357056d4adcd83e629571dc4b33b02075",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word",
+      "word"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "KERNEL",
+    "ordinal": 65,
+    "name": "SizeofResource",
+    "address": "14f8:0064",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/krnl386.exe16/krnl386.exe16.spec",
+    "source_sha256": "8d799b701d1cf16d4e882b5e354dc6e357056d4adcd83e629571dc4b33b02075",
+    "convention": "pascal",
+    "flags": [],
+    "arguments": [
+      "word",
+      "word"
+    ],
+    "return_bytes": 4
+  },
+  {
+    "module": "KERNEL",
+    "ordinal": 66,
+    "name": "AllocResource",
+    "address": "14f8:0068",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/krnl386.exe16/krnl386.exe16.spec",
+    "source_sha256": "8d799b701d1cf16d4e882b5e354dc6e357056d4adcd83e629571dc4b33b02075",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word",
+      "word",
+      "long"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "KERNEL",
+    "ordinal": 74,
+    "name": "OpenFile",
+    "address": "14f8:006c",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/krnl386.exe16/krnl386.exe16.spec",
+    "source_sha256": "8d799b701d1cf16d4e882b5e354dc6e357056d4adcd83e629571dc4b33b02075",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "str",
+      "ptr",
+      "word"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "KERNEL",
+    "ordinal": 81,
+    "name": "_lclose",
+    "address": "14f8:0070",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/krnl386.exe16/krnl386.exe16.spec",
+    "source_sha256": "8d799b701d1cf16d4e882b5e354dc6e357056d4adcd83e629571dc4b33b02075",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "KERNEL",
+    "ordinal": 82,
+    "name": "_lread",
+    "address": "14f8:0074",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/krnl386.exe16/krnl386.exe16.spec",
+    "source_sha256": "8d799b701d1cf16d4e882b5e354dc6e357056d4adcd83e629571dc4b33b02075",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word",
+      "segptr",
+      "word"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "KERNEL",
+    "ordinal": 86,
+    "name": "_lwrite",
+    "address": "14f8:0078",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/krnl386.exe16/krnl386.exe16.spec",
+    "source_sha256": "8d799b701d1cf16d4e882b5e354dc6e357056d4adcd83e629571dc4b33b02075",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word",
+      "ptr",
+      "word"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "KERNEL",
+    "ordinal": 88,
+    "name": "lstrcpy",
+    "address": "14f8:007c",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/krnl386.exe16/krnl386.exe16.spec",
+    "source_sha256": "8d799b701d1cf16d4e882b5e354dc6e357056d4adcd83e629571dc4b33b02075",
+    "convention": "pascal",
+    "flags": [],
+    "arguments": [
+      "segptr",
+      "str"
+    ],
+    "return_bytes": 4
+  },
+  {
+    "module": "KERNEL",
+    "ordinal": 89,
+    "name": "lstrcat",
+    "address": "14f8:0080",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/krnl386.exe16/krnl386.exe16.spec",
+    "source_sha256": "8d799b701d1cf16d4e882b5e354dc6e357056d4adcd83e629571dc4b33b02075",
+    "convention": "pascal",
+    "flags": [],
+    "arguments": [
+      "segstr",
+      "str"
+    ],
+    "return_bytes": 4
+  },
+  {
+    "module": "KERNEL",
+    "ordinal": 90,
+    "name": "lstrlen",
+    "address": "14f8:0084",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/krnl386.exe16/krnl386.exe16.spec",
+    "source_sha256": "8d799b701d1cf16d4e882b5e354dc6e357056d4adcd83e629571dc4b33b02075",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "str"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "KERNEL",
+    "ordinal": 91,
+    "name": "InitTask",
+    "address": "14f8:0088",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/krnl386.exe16/krnl386.exe16.spec",
+    "source_sha256": "8d799b701d1cf16d4e882b5e354dc6e357056d4adcd83e629571dc4b33b02075",
+    "convention": "pascal",
+    "flags": [
+      "-register"
+    ],
+    "arguments": [],
+    "return_bytes": 4
+  },
+  {
+    "module": "KERNEL",
+    "ordinal": 102,
+    "name": "DOS3Call",
+    "address": "14f8:008c",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/krnl386.exe16/krnl386.exe16.spec",
+    "source_sha256": "8d799b701d1cf16d4e882b5e354dc6e357056d4adcd83e629571dc4b33b02075",
+    "convention": "pascal",
+    "flags": [
+      "-register"
+    ],
+    "arguments": [],
+    "return_bytes": 4
+  },
+  {
+    "module": "KERNEL",
+    "ordinal": 113,
+    "name": "__AHSHIFT",
+    "address": "14f8:0090",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/krnl386.exe16/krnl386.exe16.spec",
+    "source_sha256": "8d799b701d1cf16d4e882b5e354dc6e357056d4adcd83e629571dc4b33b02075",
+    "unresolved_spec": "equate __AHSHIFT 3"
+  },
+  {
+    "module": "KERNEL",
+    "ordinal": 114,
+    "name": "__AHINCR",
+    "address": "14f8:0094",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/krnl386.exe16/krnl386.exe16.spec",
+    "source_sha256": "8d799b701d1cf16d4e882b5e354dc6e357056d4adcd83e629571dc4b33b02075",
+    "unresolved_spec": "equate __AHINCR 8"
+  },
+  {
+    "module": "KERNEL",
+    "ordinal": 127,
+    "name": "GetPrivateProfileInt",
+    "address": "14f8:0098",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/krnl386.exe16/krnl386.exe16.spec",
+    "source_sha256": "8d799b701d1cf16d4e882b5e354dc6e357056d4adcd83e629571dc4b33b02075",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "str",
+      "str",
+      "s_word",
+      "str"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "KERNEL",
+    "ordinal": 128,
+    "name": "GetPrivateProfileString",
+    "address": "14f8:009c",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/krnl386.exe16/krnl386.exe16.spec",
+    "source_sha256": "8d799b701d1cf16d4e882b5e354dc6e357056d4adcd83e629571dc4b33b02075",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "str",
+      "str",
+      "str",
+      "ptr",
+      "word",
+      "str"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "KERNEL",
+    "ordinal": 129,
+    "name": "WritePrivateProfileString",
+    "address": "14f8:00a0",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/krnl386.exe16/krnl386.exe16.spec",
+    "source_sha256": "8d799b701d1cf16d4e882b5e354dc6e357056d4adcd83e629571dc4b33b02075",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "str",
+      "str",
+      "str",
+      "str"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "KERNEL",
+    "ordinal": 131,
+    "name": "GetDOSEnvironment",
+    "address": "14f8:00a4",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/krnl386.exe16/krnl386.exe16.spec",
+    "source_sha256": "8d799b701d1cf16d4e882b5e354dc6e357056d4adcd83e629571dc4b33b02075",
+    "convention": "pascal",
+    "flags": [],
+    "arguments": [],
+    "return_bytes": 4
+  },
+  {
+    "module": "KERNEL",
+    "ordinal": 136,
+    "name": "GetDriveType",
+    "address": "14f8:00a8",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/krnl386.exe16/krnl386.exe16.spec",
+    "source_sha256": "8d799b701d1cf16d4e882b5e354dc6e357056d4adcd83e629571dc4b33b02075",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "KERNEL",
+    "ordinal": 137,
+    "name": "FatalAppExit",
+    "address": "14f8:00ac",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/krnl386.exe16/krnl386.exe16.spec",
+    "source_sha256": "8d799b701d1cf16d4e882b5e354dc6e357056d4adcd83e629571dc4b33b02075",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word",
+      "str"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "KERNEL",
+    "ordinal": 178,
+    "name": "__WINFLAGS",
+    "address": "14f8:00b0",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/krnl386.exe16/krnl386.exe16.spec",
+    "source_sha256": "8d799b701d1cf16d4e882b5e354dc6e357056d4adcd83e629571dc4b33b02075",
+    "unresolved_spec": "equate __WINFLAGS 0x413"
+  },
+  {
+    "module": "GDI",
+    "ordinal": 1,
+    "name": "SetBkColor",
+    "address": "14f8:00b4",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/gdi.exe16/gdi.exe16.spec",
+    "source_sha256": "3bd84b26a9d4b7aa91a9114d0a46dc13e4d6fcd71290120afdd9b7cfaffe76ab",
+    "convention": "pascal",
+    "flags": [],
+    "arguments": [
+      "word",
+      "long"
+    ],
+    "return_bytes": 4
+  },
+  {
+    "module": "GDI",
+    "ordinal": 2,
+    "name": "SetBkMode",
+    "address": "14f8:00b8",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/gdi.exe16/gdi.exe16.spec",
+    "source_sha256": "3bd84b26a9d4b7aa91a9114d0a46dc13e4d6fcd71290120afdd9b7cfaffe76ab",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word",
+      "word"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "GDI",
+    "ordinal": 4,
+    "name": "SetROP2",
+    "address": "14f8:00bc",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/gdi.exe16/gdi.exe16.spec",
+    "source_sha256": "3bd84b26a9d4b7aa91a9114d0a46dc13e4d6fcd71290120afdd9b7cfaffe76ab",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word",
+      "word"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "GDI",
+    "ordinal": 9,
+    "name": "SetTextColor",
+    "address": "14f8:00c0",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/gdi.exe16/gdi.exe16.spec",
+    "source_sha256": "3bd84b26a9d4b7aa91a9114d0a46dc13e4d6fcd71290120afdd9b7cfaffe76ab",
+    "convention": "pascal",
+    "flags": [],
+    "arguments": [
+      "word",
+      "long"
+    ],
+    "return_bytes": 4
+  },
+  {
+    "module": "GDI",
+    "ordinal": 11,
+    "name": "SetWindowOrg",
+    "address": "14f8:00c4",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/gdi.exe16/gdi.exe16.spec",
+    "source_sha256": "3bd84b26a9d4b7aa91a9114d0a46dc13e4d6fcd71290120afdd9b7cfaffe76ab",
+    "convention": "pascal",
+    "flags": [],
+    "arguments": [
+      "word",
+      "s_word",
+      "s_word"
+    ],
+    "return_bytes": 4
+  },
+  {
+    "module": "GDI",
+    "ordinal": 19,
+    "name": "LineTo",
+    "address": "14f8:00c8",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/gdi.exe16/gdi.exe16.spec",
+    "source_sha256": "3bd84b26a9d4b7aa91a9114d0a46dc13e4d6fcd71290120afdd9b7cfaffe76ab",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word",
+      "s_word",
+      "s_word"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "GDI",
+    "ordinal": 20,
+    "name": "MoveTo",
+    "address": "14f8:00cc",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/gdi.exe16/gdi.exe16.spec",
+    "source_sha256": "3bd84b26a9d4b7aa91a9114d0a46dc13e4d6fcd71290120afdd9b7cfaffe76ab",
+    "convention": "pascal",
+    "flags": [],
+    "arguments": [
+      "word",
+      "s_word",
+      "s_word"
+    ],
+    "return_bytes": 4
+  },
+  {
+    "module": "GDI",
+    "ordinal": 21,
+    "name": "ExcludeClipRect",
+    "address": "14f8:00d0",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/gdi.exe16/gdi.exe16.spec",
+    "source_sha256": "3bd84b26a9d4b7aa91a9114d0a46dc13e4d6fcd71290120afdd9b7cfaffe76ab",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word",
+      "s_word",
+      "s_word",
+      "s_word",
+      "s_word"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "GDI",
+    "ordinal": 22,
+    "name": "IntersectClipRect",
+    "address": "14f8:00d4",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/gdi.exe16/gdi.exe16.spec",
+    "source_sha256": "3bd84b26a9d4b7aa91a9114d0a46dc13e4d6fcd71290120afdd9b7cfaffe76ab",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word",
+      "s_word",
+      "s_word",
+      "s_word",
+      "s_word"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "GDI",
+    "ordinal": 24,
+    "name": "Ellipse",
+    "address": "14f8:00d8",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/gdi.exe16/gdi.exe16.spec",
+    "source_sha256": "3bd84b26a9d4b7aa91a9114d0a46dc13e4d6fcd71290120afdd9b7cfaffe76ab",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word",
+      "s_word",
+      "s_word",
+      "s_word",
+      "s_word"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "GDI",
+    "ordinal": 27,
+    "name": "Rectangle",
+    "address": "14f8:00dc",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/gdi.exe16/gdi.exe16.spec",
+    "source_sha256": "3bd84b26a9d4b7aa91a9114d0a46dc13e4d6fcd71290120afdd9b7cfaffe76ab",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word",
+      "s_word",
+      "s_word",
+      "s_word",
+      "s_word"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "GDI",
+    "ordinal": 29,
+    "name": "PatBlt",
+    "address": "14f8:00e0",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/gdi.exe16/gdi.exe16.spec",
+    "source_sha256": "3bd84b26a9d4b7aa91a9114d0a46dc13e4d6fcd71290120afdd9b7cfaffe76ab",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word",
+      "s_word",
+      "s_word",
+      "s_word",
+      "s_word",
+      "long"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "GDI",
+    "ordinal": 31,
+    "name": "SetPixel",
+    "address": "14f8:00e4",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/gdi.exe16/gdi.exe16.spec",
+    "source_sha256": "3bd84b26a9d4b7aa91a9114d0a46dc13e4d6fcd71290120afdd9b7cfaffe76ab",
+    "convention": "pascal",
+    "flags": [],
+    "arguments": [
+      "word",
+      "s_word",
+      "s_word",
+      "long"
+    ],
+    "return_bytes": 4
+  },
+  {
+    "module": "GDI",
+    "ordinal": 33,
+    "name": "TextOut",
+    "address": "14f8:00e8",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/gdi.exe16/gdi.exe16.spec",
+    "source_sha256": "3bd84b26a9d4b7aa91a9114d0a46dc13e4d6fcd71290120afdd9b7cfaffe76ab",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word",
+      "s_word",
+      "s_word",
+      "str",
+      "word"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "GDI",
+    "ordinal": 34,
+    "name": "BitBlt",
+    "address": "14f8:00ec",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/gdi.exe16/gdi.exe16.spec",
+    "source_sha256": "3bd84b26a9d4b7aa91a9114d0a46dc13e4d6fcd71290120afdd9b7cfaffe76ab",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word",
+      "s_word",
+      "s_word",
+      "s_word",
+      "s_word",
+      "word",
+      "s_word",
+      "s_word",
+      "long"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "GDI",
+    "ordinal": 38,
+    "name": "Escape",
+    "address": "14f8:00f0",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/gdi.exe16/gdi.exe16.spec",
+    "source_sha256": "3bd84b26a9d4b7aa91a9114d0a46dc13e4d6fcd71290120afdd9b7cfaffe76ab",
+    "convention": "pascal",
+    "flags": [],
+    "arguments": [
+      "word",
+      "word",
+      "word",
+      "segptr",
+      "ptr"
+    ],
+    "return_bytes": 4
+  },
+  {
+    "module": "GDI",
+    "ordinal": 44,
+    "name": "SelectClipRgn",
+    "address": "14f8:00f4",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/gdi.exe16/gdi.exe16.spec",
+    "source_sha256": "3bd84b26a9d4b7aa91a9114d0a46dc13e4d6fcd71290120afdd9b7cfaffe76ab",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word",
+      "word"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "GDI",
+    "ordinal": 45,
+    "name": "SelectObject",
+    "address": "14f8:00f8",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/gdi.exe16/gdi.exe16.spec",
+    "source_sha256": "3bd84b26a9d4b7aa91a9114d0a46dc13e4d6fcd71290120afdd9b7cfaffe76ab",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word",
+      "word"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "GDI",
+    "ordinal": 51,
+    "name": "CreateCompatibleBitmap",
+    "address": "14f8:00fc",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/gdi.exe16/gdi.exe16.spec",
+    "source_sha256": "3bd84b26a9d4b7aa91a9114d0a46dc13e4d6fcd71290120afdd9b7cfaffe76ab",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word",
+      "word",
+      "word"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "GDI",
+    "ordinal": 52,
+    "name": "CreateCompatibleDC",
+    "address": "14f8:0100",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/gdi.exe16/gdi.exe16.spec",
+    "source_sha256": "3bd84b26a9d4b7aa91a9114d0a46dc13e4d6fcd71290120afdd9b7cfaffe76ab",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "GDI",
+    "ordinal": 57,
+    "name": "CreateFontIndirect",
+    "address": "14f8:0104",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/gdi.exe16/gdi.exe16.spec",
+    "source_sha256": "3bd84b26a9d4b7aa91a9114d0a46dc13e4d6fcd71290120afdd9b7cfaffe76ab",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "ptr"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "GDI",
+    "ordinal": 60,
+    "name": "CreatePatternBrush",
+    "address": "14f8:0108",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/gdi.exe16/gdi.exe16.spec",
+    "source_sha256": "3bd84b26a9d4b7aa91a9114d0a46dc13e4d6fcd71290120afdd9b7cfaffe76ab",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "GDI",
+    "ordinal": 61,
+    "name": "CreatePen",
+    "address": "14f8:010c",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/gdi.exe16/gdi.exe16.spec",
+    "source_sha256": "3bd84b26a9d4b7aa91a9114d0a46dc13e4d6fcd71290120afdd9b7cfaffe76ab",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "s_word",
+      "s_word",
+      "long"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "GDI",
+    "ordinal": 64,
+    "name": "CreateRectRgn",
+    "address": "14f8:0110",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/gdi.exe16/gdi.exe16.spec",
+    "source_sha256": "3bd84b26a9d4b7aa91a9114d0a46dc13e4d6fcd71290120afdd9b7cfaffe76ab",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "s_word",
+      "s_word",
+      "s_word",
+      "s_word"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "GDI",
+    "ordinal": 66,
+    "name": "CreateSolidBrush",
+    "address": "14f8:0114",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/gdi.exe16/gdi.exe16.spec",
+    "source_sha256": "3bd84b26a9d4b7aa91a9114d0a46dc13e4d6fcd71290120afdd9b7cfaffe76ab",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "long"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "GDI",
+    "ordinal": 68,
+    "name": "DeleteDC",
+    "address": "14f8:0118",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/gdi.exe16/gdi.exe16.spec",
+    "source_sha256": "3bd84b26a9d4b7aa91a9114d0a46dc13e4d6fcd71290120afdd9b7cfaffe76ab",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "GDI",
+    "ordinal": 69,
+    "name": "DeleteObject",
+    "address": "14f8:011c",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/gdi.exe16/gdi.exe16.spec",
+    "source_sha256": "3bd84b26a9d4b7aa91a9114d0a46dc13e4d6fcd71290120afdd9b7cfaffe76ab",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "GDI",
+    "ordinal": 75,
+    "name": "GetBkColor",
+    "address": "14f8:0120",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/gdi.exe16/gdi.exe16.spec",
+    "source_sha256": "3bd84b26a9d4b7aa91a9114d0a46dc13e4d6fcd71290120afdd9b7cfaffe76ab",
+    "convention": "pascal",
+    "flags": [],
+    "arguments": [
+      "word"
+    ],
+    "return_bytes": 4
+  },
+  {
+    "module": "GDI",
+    "ordinal": 80,
+    "name": "GetDeviceCaps",
+    "address": "14f8:0124",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/gdi.exe16/gdi.exe16.spec",
+    "source_sha256": "3bd84b26a9d4b7aa91a9114d0a46dc13e4d6fcd71290120afdd9b7cfaffe76ab",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word",
+      "s_word"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "GDI",
+    "ordinal": 82,
+    "name": "GetObject",
+    "address": "14f8:0128",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/gdi.exe16/gdi.exe16.spec",
+    "source_sha256": "3bd84b26a9d4b7aa91a9114d0a46dc13e4d6fcd71290120afdd9b7cfaffe76ab",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word",
+      "s_word",
+      "ptr"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "GDI",
+    "ordinal": 85,
+    "name": "GetROP2",
+    "address": "14f8:012c",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/gdi.exe16/gdi.exe16.spec",
+    "source_sha256": "3bd84b26a9d4b7aa91a9114d0a46dc13e4d6fcd71290120afdd9b7cfaffe76ab",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "GDI",
+    "ordinal": 87,
+    "name": "GetStockObject",
+    "address": "14f8:0130",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/gdi.exe16/gdi.exe16.spec",
+    "source_sha256": "3bd84b26a9d4b7aa91a9114d0a46dc13e4d6fcd71290120afdd9b7cfaffe76ab",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "GDI",
+    "ordinal": 91,
+    "name": "GetTextExtent",
+    "address": "14f8:0134",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/gdi.exe16/gdi.exe16.spec",
+    "source_sha256": "3bd84b26a9d4b7aa91a9114d0a46dc13e4d6fcd71290120afdd9b7cfaffe76ab",
+    "convention": "pascal",
+    "flags": [],
+    "arguments": [
+      "word",
+      "ptr",
+      "s_word"
+    ],
+    "return_bytes": 4
+  },
+  {
+    "module": "GDI",
+    "ordinal": 93,
+    "name": "GetTextMetrics",
+    "address": "14f8:0138",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/gdi.exe16/gdi.exe16.spec",
+    "source_sha256": "3bd84b26a9d4b7aa91a9114d0a46dc13e4d6fcd71290120afdd9b7cfaffe76ab",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word",
+      "ptr"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "GDI",
+    "ordinal": 128,
+    "name": "MulDiv",
+    "address": "14f8:013c",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/gdi.exe16/gdi.exe16.spec",
+    "source_sha256": "3bd84b26a9d4b7aa91a9114d0a46dc13e4d6fcd71290120afdd9b7cfaffe76ab",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "s_word",
+      "s_word",
+      "s_word"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "GDI",
+    "ordinal": 148,
+    "name": "SetBrushOrg",
+    "address": "14f8:0140",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/gdi.exe16/gdi.exe16.spec",
+    "source_sha256": "3bd84b26a9d4b7aa91a9114d0a46dc13e4d6fcd71290120afdd9b7cfaffe76ab",
+    "convention": "pascal",
+    "flags": [],
+    "arguments": [
+      "word",
+      "s_word",
+      "s_word"
+    ],
+    "return_bytes": 4
+  },
+  {
+    "module": "GDI",
+    "ordinal": 150,
+    "name": "UnrealizeObject",
+    "address": "14f8:0144",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/gdi.exe16/gdi.exe16.spec",
+    "source_sha256": "3bd84b26a9d4b7aa91a9114d0a46dc13e4d6fcd71290120afdd9b7cfaffe76ab",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "GDI",
+    "ordinal": 351,
+    "name": "ExtTextOut",
+    "address": "14f8:0148",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/gdi.exe16/gdi.exe16.spec",
+    "source_sha256": "3bd84b26a9d4b7aa91a9114d0a46dc13e4d6fcd71290120afdd9b7cfaffe76ab",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word",
+      "s_word",
+      "s_word",
+      "word",
+      "ptr",
+      "str",
+      "word",
+      "ptr"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "GDI",
+    "ordinal": 360,
+    "name": "CreatePalette",
+    "address": "14f8:014c",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/gdi.exe16/gdi.exe16.spec",
+    "source_sha256": "3bd84b26a9d4b7aa91a9114d0a46dc13e4d6fcd71290120afdd9b7cfaffe76ab",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "ptr"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "GDI",
+    "ordinal": 439,
+    "name": "StretchDIBits",
+    "address": "14f8:0150",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/gdi.exe16/gdi.exe16.spec",
+    "source_sha256": "3bd84b26a9d4b7aa91a9114d0a46dc13e4d6fcd71290120afdd9b7cfaffe76ab",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word",
+      "s_word",
+      "s_word",
+      "s_word",
+      "s_word",
+      "s_word",
+      "s_word",
+      "s_word",
+      "s_word",
+      "ptr",
+      "ptr",
+      "word",
+      "long"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "GDI",
+    "ordinal": 441,
+    "name": "GetDIBits",
+    "address": "14f8:0154",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/gdi.exe16/gdi.exe16.spec",
+    "source_sha256": "3bd84b26a9d4b7aa91a9114d0a46dc13e4d6fcd71290120afdd9b7cfaffe76ab",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word",
+      "word",
+      "word",
+      "word",
+      "ptr",
+      "ptr",
+      "word"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "USER",
+    "ordinal": 1,
+    "name": "MessageBox",
+    "address": "14f8:0158",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/user.exe16/user.exe16.spec",
+    "source_sha256": "d873fa88079c4f922cbba2fb3a75f40e2ff23b4d56434b0f4326169397539e32",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word",
+      "str",
+      "str",
+      "word"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "USER",
+    "ordinal": 5,
+    "name": "InitApp",
+    "address": "14f8:015c",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/user.exe16/user.exe16.spec",
+    "source_sha256": "d873fa88079c4f922cbba2fb3a75f40e2ff23b4d56434b0f4326169397539e32",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "USER",
+    "ordinal": 6,
+    "name": "PostQuitMessage",
+    "address": "14f8:0160",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/user.exe16/user.exe16.spec",
+    "source_sha256": "d873fa88079c4f922cbba2fb3a75f40e2ff23b4d56434b0f4326169397539e32",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "USER",
+    "ordinal": 7,
+    "name": "ExitWindows",
+    "address": "14f8:0164",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/user.exe16/user.exe16.spec",
+    "source_sha256": "d873fa88079c4f922cbba2fb3a75f40e2ff23b4d56434b0f4326169397539e32",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "long",
+      "word"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "USER",
+    "ordinal": 10,
+    "name": "SetTimer",
+    "address": "14f8:0168",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/user.exe16/user.exe16.spec",
+    "source_sha256": "d873fa88079c4f922cbba2fb3a75f40e2ff23b4d56434b0f4326169397539e32",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word",
+      "word",
+      "word",
+      "segptr"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "USER",
+    "ordinal": 12,
+    "name": "KillTimer",
+    "address": "14f8:016c",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/user.exe16/user.exe16.spec",
+    "source_sha256": "d873fa88079c4f922cbba2fb3a75f40e2ff23b4d56434b0f4326169397539e32",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word",
+      "word"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "USER",
+    "ordinal": 13,
+    "name": "GetTickCount",
+    "address": "14f8:0170",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/user.exe16/user.exe16.spec",
+    "source_sha256": "d873fa88079c4f922cbba2fb3a75f40e2ff23b4d56434b0f4326169397539e32",
+    "convention": "pascal",
+    "flags": [],
+    "arguments": [],
+    "return_bytes": 4
+  },
+  {
+    "module": "USER",
+    "ordinal": 15,
+    "name": "GetCurrentTime",
+    "address": "14f8:0174",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/user.exe16/user.exe16.spec",
+    "source_sha256": "d873fa88079c4f922cbba2fb3a75f40e2ff23b4d56434b0f4326169397539e32",
+    "convention": "pascal",
+    "flags": [],
+    "arguments": [],
+    "return_bytes": 4
+  },
+  {
+    "module": "USER",
+    "ordinal": 17,
+    "name": "GetCursorPos",
+    "address": "14f8:0178",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/user.exe16/user.exe16.spec",
+    "source_sha256": "d873fa88079c4f922cbba2fb3a75f40e2ff23b4d56434b0f4326169397539e32",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "ptr"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "USER",
+    "ordinal": 18,
+    "name": "SetCapture",
+    "address": "14f8:017c",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/user.exe16/user.exe16.spec",
+    "source_sha256": "d873fa88079c4f922cbba2fb3a75f40e2ff23b4d56434b0f4326169397539e32",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "USER",
+    "ordinal": 19,
+    "name": "ReleaseCapture",
+    "address": "14f8:0180",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/user.exe16/user.exe16.spec",
+    "source_sha256": "d873fa88079c4f922cbba2fb3a75f40e2ff23b4d56434b0f4326169397539e32",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [],
+    "return_bytes": 2
+  },
+  {
+    "module": "USER",
+    "ordinal": 22,
+    "name": "SetFocus",
+    "address": "14f8:0184",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/user.exe16/user.exe16.spec",
+    "source_sha256": "d873fa88079c4f922cbba2fb3a75f40e2ff23b4d56434b0f4326169397539e32",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "USER",
+    "ordinal": 23,
+    "name": "GetFocus",
+    "address": "14f8:0188",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/user.exe16/user.exe16.spec",
+    "source_sha256": "d873fa88079c4f922cbba2fb3a75f40e2ff23b4d56434b0f4326169397539e32",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [],
+    "return_bytes": 2
+  },
+  {
+    "module": "USER",
+    "ordinal": 28,
+    "name": "ClientToScreen",
+    "address": "14f8:018c",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/user.exe16/user.exe16.spec",
+    "source_sha256": "d873fa88079c4f922cbba2fb3a75f40e2ff23b4d56434b0f4326169397539e32",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word",
+      "ptr"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "USER",
+    "ordinal": 29,
+    "name": "ScreenToClient",
+    "address": "14f8:0190",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/user.exe16/user.exe16.spec",
+    "source_sha256": "d873fa88079c4f922cbba2fb3a75f40e2ff23b4d56434b0f4326169397539e32",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word",
+      "ptr"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "USER",
+    "ordinal": 30,
+    "name": "WindowFromPoint",
+    "address": "14f8:0194",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/user.exe16/user.exe16.spec",
+    "source_sha256": "d873fa88079c4f922cbba2fb3a75f40e2ff23b4d56434b0f4326169397539e32",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "long"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "USER",
+    "ordinal": 31,
+    "name": "IsIconic",
+    "address": "14f8:0198",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/user.exe16/user.exe16.spec",
+    "source_sha256": "d873fa88079c4f922cbba2fb3a75f40e2ff23b4d56434b0f4326169397539e32",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "USER",
+    "ordinal": 32,
+    "name": "GetWindowRect",
+    "address": "14f8:019c",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/user.exe16/user.exe16.spec",
+    "source_sha256": "d873fa88079c4f922cbba2fb3a75f40e2ff23b4d56434b0f4326169397539e32",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word",
+      "ptr"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "USER",
+    "ordinal": 33,
+    "name": "GetClientRect",
+    "address": "14f8:01a0",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/user.exe16/user.exe16.spec",
+    "source_sha256": "d873fa88079c4f922cbba2fb3a75f40e2ff23b4d56434b0f4326169397539e32",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word",
+      "ptr"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "USER",
+    "ordinal": 34,
+    "name": "EnableWindow",
+    "address": "14f8:01a4",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/user.exe16/user.exe16.spec",
+    "source_sha256": "d873fa88079c4f922cbba2fb3a75f40e2ff23b4d56434b0f4326169397539e32",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word",
+      "word"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "USER",
+    "ordinal": 36,
+    "name": "GetWindowText",
+    "address": "14f8:01a8",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/user.exe16/user.exe16.spec",
+    "source_sha256": "d873fa88079c4f922cbba2fb3a75f40e2ff23b4d56434b0f4326169397539e32",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word",
+      "segptr",
+      "word"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "USER",
+    "ordinal": 37,
+    "name": "SetWindowText",
+    "address": "14f8:01ac",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/user.exe16/user.exe16.spec",
+    "source_sha256": "d873fa88079c4f922cbba2fb3a75f40e2ff23b4d56434b0f4326169397539e32",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word",
+      "segstr"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "USER",
+    "ordinal": 39,
+    "name": "BeginPaint",
+    "address": "14f8:01b0",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/user.exe16/user.exe16.spec",
+    "source_sha256": "d873fa88079c4f922cbba2fb3a75f40e2ff23b4d56434b0f4326169397539e32",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word",
+      "ptr"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "USER",
+    "ordinal": 40,
+    "name": "EndPaint",
+    "address": "14f8:01b4",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/user.exe16/user.exe16.spec",
+    "source_sha256": "d873fa88079c4f922cbba2fb3a75f40e2ff23b4d56434b0f4326169397539e32",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word",
+      "ptr"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "USER",
+    "ordinal": 41,
+    "name": "CreateWindow",
+    "address": "14f8:01b8",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/user.exe16/user.exe16.spec",
+    "source_sha256": "d873fa88079c4f922cbba2fb3a75f40e2ff23b4d56434b0f4326169397539e32",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "str",
+      "str",
+      "long",
+      "s_word",
+      "s_word",
+      "s_word",
+      "s_word",
+      "word",
+      "word",
+      "word",
+      "segptr"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "USER",
+    "ordinal": 42,
+    "name": "ShowWindow",
+    "address": "14f8:01bc",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/user.exe16/user.exe16.spec",
+    "source_sha256": "d873fa88079c4f922cbba2fb3a75f40e2ff23b4d56434b0f4326169397539e32",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word",
+      "word"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "USER",
+    "ordinal": 46,
+    "name": "GetParent",
+    "address": "14f8:01c0",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/user.exe16/user.exe16.spec",
+    "source_sha256": "d873fa88079c4f922cbba2fb3a75f40e2ff23b4d56434b0f4326169397539e32",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "USER",
+    "ordinal": 49,
+    "name": "IsWindowVisible",
+    "address": "14f8:01c4",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/user.exe16/user.exe16.spec",
+    "source_sha256": "d873fa88079c4f922cbba2fb3a75f40e2ff23b4d56434b0f4326169397539e32",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "USER",
+    "ordinal": 53,
+    "name": "DestroyWindow",
+    "address": "14f8:01c8",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/user.exe16/user.exe16.spec",
+    "source_sha256": "d873fa88079c4f922cbba2fb3a75f40e2ff23b4d56434b0f4326169397539e32",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "USER",
+    "ordinal": 56,
+    "name": "MoveWindow",
+    "address": "14f8:01cc",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/user.exe16/user.exe16.spec",
+    "source_sha256": "d873fa88079c4f922cbba2fb3a75f40e2ff23b4d56434b0f4326169397539e32",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word",
+      "word",
+      "word",
+      "word",
+      "word",
+      "word"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "USER",
+    "ordinal": 57,
+    "name": "RegisterClass",
+    "address": "14f8:01d0",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/user.exe16/user.exe16.spec",
+    "source_sha256": "d873fa88079c4f922cbba2fb3a75f40e2ff23b4d56434b0f4326169397539e32",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "ptr"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "USER",
+    "ordinal": 60,
+    "name": "GetActiveWindow",
+    "address": "14f8:01d4",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/user.exe16/user.exe16.spec",
+    "source_sha256": "d873fa88079c4f922cbba2fb3a75f40e2ff23b4d56434b0f4326169397539e32",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [],
+    "return_bytes": 2
+  },
+  {
+    "module": "USER",
+    "ordinal": 61,
+    "name": "ScrollWindow",
+    "address": "14f8:01d8",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/user.exe16/user.exe16.spec",
+    "source_sha256": "d873fa88079c4f922cbba2fb3a75f40e2ff23b4d56434b0f4326169397539e32",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word",
+      "s_word",
+      "s_word",
+      "ptr",
+      "ptr"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "USER",
+    "ordinal": 62,
+    "name": "SetScrollPos",
+    "address": "14f8:01dc",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/user.exe16/user.exe16.spec",
+    "source_sha256": "d873fa88079c4f922cbba2fb3a75f40e2ff23b4d56434b0f4326169397539e32",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word",
+      "word",
+      "s_word",
+      "word"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "USER",
+    "ordinal": 63,
+    "name": "GetScrollPos",
+    "address": "14f8:01e0",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/user.exe16/user.exe16.spec",
+    "source_sha256": "d873fa88079c4f922cbba2fb3a75f40e2ff23b4d56434b0f4326169397539e32",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word",
+      "word"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "USER",
+    "ordinal": 64,
+    "name": "SetScrollRange",
+    "address": "14f8:01e4",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/user.exe16/user.exe16.spec",
+    "source_sha256": "d873fa88079c4f922cbba2fb3a75f40e2ff23b4d56434b0f4326169397539e32",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word",
+      "word",
+      "s_word",
+      "s_word",
+      "word"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "USER",
+    "ordinal": 66,
+    "name": "GetDC",
+    "address": "14f8:01e8",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/user.exe16/user.exe16.spec",
+    "source_sha256": "d873fa88079c4f922cbba2fb3a75f40e2ff23b4d56434b0f4326169397539e32",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "USER",
+    "ordinal": 68,
+    "name": "ReleaseDC",
+    "address": "14f8:01ec",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/user.exe16/user.exe16.spec",
+    "source_sha256": "d873fa88079c4f922cbba2fb3a75f40e2ff23b4d56434b0f4326169397539e32",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word",
+      "word"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "USER",
+    "ordinal": 69,
+    "name": "SetCursor",
+    "address": "14f8:01f0",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/user.exe16/user.exe16.spec",
+    "source_sha256": "d873fa88079c4f922cbba2fb3a75f40e2ff23b4d56434b0f4326169397539e32",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "USER",
+    "ordinal": 72,
+    "name": "SetRect",
+    "address": "14f8:01f4",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/user.exe16/user.exe16.spec",
+    "source_sha256": "d873fa88079c4f922cbba2fb3a75f40e2ff23b4d56434b0f4326169397539e32",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "ptr",
+      "s_word",
+      "s_word",
+      "s_word",
+      "s_word"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "USER",
+    "ordinal": 74,
+    "name": "CopyRect",
+    "address": "14f8:01f8",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/user.exe16/user.exe16.spec",
+    "source_sha256": "d873fa88079c4f922cbba2fb3a75f40e2ff23b4d56434b0f4326169397539e32",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "ptr",
+      "ptr"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "USER",
+    "ordinal": 76,
+    "name": "PtInRect",
+    "address": "14f8:01fc",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/user.exe16/user.exe16.spec",
+    "source_sha256": "d873fa88079c4f922cbba2fb3a75f40e2ff23b4d56434b0f4326169397539e32",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "ptr",
+      "long"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "USER",
+    "ordinal": 77,
+    "name": "OffsetRect",
+    "address": "14f8:0200",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/user.exe16/user.exe16.spec",
+    "source_sha256": "d873fa88079c4f922cbba2fb3a75f40e2ff23b4d56434b0f4326169397539e32",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "ptr",
+      "s_word",
+      "s_word"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "USER",
+    "ordinal": 78,
+    "name": "InflateRect",
+    "address": "14f8:0204",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/user.exe16/user.exe16.spec",
+    "source_sha256": "d873fa88079c4f922cbba2fb3a75f40e2ff23b4d56434b0f4326169397539e32",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "ptr",
+      "s_word",
+      "s_word"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "USER",
+    "ordinal": 79,
+    "name": "IntersectRect",
+    "address": "14f8:0208",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/user.exe16/user.exe16.spec",
+    "source_sha256": "d873fa88079c4f922cbba2fb3a75f40e2ff23b4d56434b0f4326169397539e32",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "ptr",
+      "ptr",
+      "ptr"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "USER",
+    "ordinal": 81,
+    "name": "FillRect",
+    "address": "14f8:020c",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/user.exe16/user.exe16.spec",
+    "source_sha256": "d873fa88079c4f922cbba2fb3a75f40e2ff23b4d56434b0f4326169397539e32",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word",
+      "ptr",
+      "word"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "USER",
+    "ordinal": 83,
+    "name": "FrameRect",
+    "address": "14f8:0210",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/user.exe16/user.exe16.spec",
+    "source_sha256": "d873fa88079c4f922cbba2fb3a75f40e2ff23b4d56434b0f4326169397539e32",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word",
+      "ptr",
+      "word"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "USER",
+    "ordinal": 84,
+    "name": "DrawIcon",
+    "address": "14f8:0214",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/user.exe16/user.exe16.spec",
+    "source_sha256": "d873fa88079c4f922cbba2fb3a75f40e2ff23b4d56434b0f4326169397539e32",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word",
+      "s_word",
+      "s_word",
+      "word"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "USER",
+    "ordinal": 85,
+    "name": "DrawText",
+    "address": "14f8:0218",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/user.exe16/user.exe16.spec",
+    "source_sha256": "d873fa88079c4f922cbba2fb3a75f40e2ff23b4d56434b0f4326169397539e32",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word",
+      "str",
+      "s_word",
+      "ptr",
+      "word"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "USER",
+    "ordinal": 87,
+    "name": "DialogBox",
+    "address": "14f8:021c",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/user.exe16/user.exe16.spec",
+    "source_sha256": "d873fa88079c4f922cbba2fb3a75f40e2ff23b4d56434b0f4326169397539e32",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word",
+      "str",
+      "word",
+      "segptr"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "USER",
+    "ordinal": 88,
+    "name": "EndDialog",
+    "address": "14f8:0220",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/user.exe16/user.exe16.spec",
+    "source_sha256": "d873fa88079c4f922cbba2fb3a75f40e2ff23b4d56434b0f4326169397539e32",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word",
+      "s_word"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "USER",
+    "ordinal": 89,
+    "name": "CreateDialog",
+    "address": "14f8:0224",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/user.exe16/user.exe16.spec",
+    "source_sha256": "d873fa88079c4f922cbba2fb3a75f40e2ff23b4d56434b0f4326169397539e32",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word",
+      "str",
+      "word",
+      "segptr"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "USER",
+    "ordinal": 91,
+    "name": "GetDlgItem",
+    "address": "14f8:0228",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/user.exe16/user.exe16.spec",
+    "source_sha256": "d873fa88079c4f922cbba2fb3a75f40e2ff23b4d56434b0f4326169397539e32",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word",
+      "word"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "USER",
+    "ordinal": 92,
+    "name": "SetDlgItemText",
+    "address": "14f8:022c",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/user.exe16/user.exe16.spec",
+    "source_sha256": "d873fa88079c4f922cbba2fb3a75f40e2ff23b4d56434b0f4326169397539e32",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word",
+      "word",
+      "segstr"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "USER",
+    "ordinal": 93,
+    "name": "GetDlgItemText",
+    "address": "14f8:0230",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/user.exe16/user.exe16.spec",
+    "source_sha256": "d873fa88079c4f922cbba2fb3a75f40e2ff23b4d56434b0f4326169397539e32",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word",
+      "word",
+      "segptr",
+      "word"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "USER",
+    "ordinal": 96,
+    "name": "CheckRadioButton",
+    "address": "14f8:0234",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/user.exe16/user.exe16.spec",
+    "source_sha256": "d873fa88079c4f922cbba2fb3a75f40e2ff23b4d56434b0f4326169397539e32",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word",
+      "word",
+      "word",
+      "word"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "USER",
+    "ordinal": 97,
+    "name": "CheckDlgButton",
+    "address": "14f8:0238",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/user.exe16/user.exe16.spec",
+    "source_sha256": "d873fa88079c4f922cbba2fb3a75f40e2ff23b4d56434b0f4326169397539e32",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word",
+      "word",
+      "word"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "USER",
+    "ordinal": 98,
+    "name": "IsDlgButtonChecked",
+    "address": "14f8:023c",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/user.exe16/user.exe16.spec",
+    "source_sha256": "d873fa88079c4f922cbba2fb3a75f40e2ff23b4d56434b0f4326169397539e32",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word",
+      "word"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "USER",
+    "ordinal": 101,
+    "name": "SendDlgItemMessage",
+    "address": "14f8:0240",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/user.exe16/user.exe16.spec",
+    "source_sha256": "d873fa88079c4f922cbba2fb3a75f40e2ff23b4d56434b0f4326169397539e32",
+    "convention": "pascal",
+    "flags": [],
+    "arguments": [
+      "word",
+      "word",
+      "word",
+      "word",
+      "long"
+    ],
+    "return_bytes": 4
+  },
+  {
+    "module": "USER",
+    "ordinal": 104,
+    "name": "MessageBeep",
+    "address": "14f8:0244",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/user.exe16/user.exe16.spec",
+    "source_sha256": "d873fa88079c4f922cbba2fb3a75f40e2ff23b4d56434b0f4326169397539e32",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "USER",
+    "ordinal": 105,
+    "name": "FlashWindow",
+    "address": "14f8:0248",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/user.exe16/user.exe16.spec",
+    "source_sha256": "d873fa88079c4f922cbba2fb3a75f40e2ff23b4d56434b0f4326169397539e32",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word",
+      "word"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "USER",
+    "ordinal": 106,
+    "name": "GetKeyState",
+    "address": "14f8:024c",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/user.exe16/user.exe16.spec",
+    "source_sha256": "d873fa88079c4f922cbba2fb3a75f40e2ff23b4d56434b0f4326169397539e32",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "USER",
+    "ordinal": 107,
+    "name": "DefWindowProc",
+    "address": "14f8:0250",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/user.exe16/user.exe16.spec",
+    "source_sha256": "d873fa88079c4f922cbba2fb3a75f40e2ff23b4d56434b0f4326169397539e32",
+    "convention": "pascal",
+    "flags": [],
+    "arguments": [
+      "word",
+      "word",
+      "word",
+      "long"
+    ],
+    "return_bytes": 4
+  },
+  {
+    "module": "USER",
+    "ordinal": 108,
+    "name": "GetMessage",
+    "address": "14f8:0254",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/user.exe16/user.exe16.spec",
+    "source_sha256": "d873fa88079c4f922cbba2fb3a75f40e2ff23b4d56434b0f4326169397539e32",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "ptr",
+      "word",
+      "word",
+      "word"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "USER",
+    "ordinal": 109,
+    "name": "PeekMessage",
+    "address": "14f8:0258",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/user.exe16/user.exe16.spec",
+    "source_sha256": "d873fa88079c4f922cbba2fb3a75f40e2ff23b4d56434b0f4326169397539e32",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "ptr",
+      "word",
+      "word",
+      "word",
+      "word"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "USER",
+    "ordinal": 110,
+    "name": "PostMessage",
+    "address": "14f8:025c",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/user.exe16/user.exe16.spec",
+    "source_sha256": "d873fa88079c4f922cbba2fb3a75f40e2ff23b4d56434b0f4326169397539e32",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word",
+      "word",
+      "word",
+      "long"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "USER",
+    "ordinal": 111,
+    "name": "SendMessage",
+    "address": "14f8:0260",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/user.exe16/user.exe16.spec",
+    "source_sha256": "d873fa88079c4f922cbba2fb3a75f40e2ff23b4d56434b0f4326169397539e32",
+    "convention": "pascal",
+    "flags": [],
+    "arguments": [
+      "word",
+      "word",
+      "word",
+      "long"
+    ],
+    "return_bytes": 4
+  },
+  {
+    "module": "USER",
+    "ordinal": 113,
+    "name": "TranslateMessage",
+    "address": "14f8:0264",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/user.exe16/user.exe16.spec",
+    "source_sha256": "d873fa88079c4f922cbba2fb3a75f40e2ff23b4d56434b0f4326169397539e32",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "ptr"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "USER",
+    "ordinal": 114,
+    "name": "DispatchMessage",
+    "address": "14f8:0268",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/user.exe16/user.exe16.spec",
+    "source_sha256": "d873fa88079c4f922cbba2fb3a75f40e2ff23b4d56434b0f4326169397539e32",
+    "convention": "pascal",
+    "flags": [],
+    "arguments": [
+      "ptr"
+    ],
+    "return_bytes": 4
+  },
+  {
+    "module": "USER",
+    "ordinal": 122,
+    "name": "CallWindowProc",
+    "address": "14f8:026c",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/user.exe16/user.exe16.spec",
+    "source_sha256": "d873fa88079c4f922cbba2fb3a75f40e2ff23b4d56434b0f4326169397539e32",
+    "convention": "pascal",
+    "flags": [],
+    "arguments": [
+      "segptr",
+      "word",
+      "word",
+      "word",
+      "long"
+    ],
+    "return_bytes": 4
+  },
+  {
+    "module": "USER",
+    "ordinal": 124,
+    "name": "UpdateWindow",
+    "address": "14f8:0270",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/user.exe16/user.exe16.spec",
+    "source_sha256": "d873fa88079c4f922cbba2fb3a75f40e2ff23b4d56434b0f4326169397539e32",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "USER",
+    "ordinal": 125,
+    "name": "InvalidateRect",
+    "address": "14f8:0274",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/user.exe16/user.exe16.spec",
+    "source_sha256": "d873fa88079c4f922cbba2fb3a75f40e2ff23b4d56434b0f4326169397539e32",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word",
+      "ptr",
+      "word"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "USER",
+    "ordinal": 127,
+    "name": "ValidateRect",
+    "address": "14f8:0278",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/user.exe16/user.exe16.spec",
+    "source_sha256": "d873fa88079c4f922cbba2fb3a75f40e2ff23b4d56434b0f4326169397539e32",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word",
+      "ptr"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "USER",
+    "ordinal": 135,
+    "name": "GetWindowLong",
+    "address": "14f8:027c",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/user.exe16/user.exe16.spec",
+    "source_sha256": "d873fa88079c4f922cbba2fb3a75f40e2ff23b4d56434b0f4326169397539e32",
+    "convention": "pascal",
+    "flags": [],
+    "arguments": [
+      "word",
+      "s_word"
+    ],
+    "return_bytes": 4
+  },
+  {
+    "module": "USER",
+    "ordinal": 136,
+    "name": "SetWindowLong",
+    "address": "14f8:0280",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/user.exe16/user.exe16.spec",
+    "source_sha256": "d873fa88079c4f922cbba2fb3a75f40e2ff23b4d56434b0f4326169397539e32",
+    "convention": "pascal",
+    "flags": [],
+    "arguments": [
+      "word",
+      "s_word",
+      "long"
+    ],
+    "return_bytes": 4
+  },
+  {
+    "module": "USER",
+    "ordinal": 152,
+    "name": "DestroyMenu",
+    "address": "14f8:0284",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/user.exe16/user.exe16.spec",
+    "source_sha256": "d873fa88079c4f922cbba2fb3a75f40e2ff23b4d56434b0f4326169397539e32",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "USER",
+    "ordinal": 154,
+    "name": "CheckMenuItem",
+    "address": "14f8:0288",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/user.exe16/user.exe16.spec",
+    "source_sha256": "d873fa88079c4f922cbba2fb3a75f40e2ff23b4d56434b0f4326169397539e32",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word",
+      "word",
+      "word"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "USER",
+    "ordinal": 155,
+    "name": "EnableMenuItem",
+    "address": "14f8:028c",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/user.exe16/user.exe16.spec",
+    "source_sha256": "d873fa88079c4f922cbba2fb3a75f40e2ff23b4d56434b0f4326169397539e32",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word",
+      "word",
+      "word"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "USER",
+    "ordinal": 157,
+    "name": "GetMenu",
+    "address": "14f8:0290",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/user.exe16/user.exe16.spec",
+    "source_sha256": "d873fa88079c4f922cbba2fb3a75f40e2ff23b4d56434b0f4326169397539e32",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "USER",
+    "ordinal": 159,
+    "name": "GetSubMenu",
+    "address": "14f8:0294",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/user.exe16/user.exe16.spec",
+    "source_sha256": "d873fa88079c4f922cbba2fb3a75f40e2ff23b4d56434b0f4326169397539e32",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word",
+      "word"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "USER",
+    "ordinal": 160,
+    "name": "DrawMenuBar",
+    "address": "14f8:0298",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/user.exe16/user.exe16.spec",
+    "source_sha256": "d873fa88079c4f922cbba2fb3a75f40e2ff23b4d56434b0f4326169397539e32",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "USER",
+    "ordinal": 171,
+    "name": "WinHelp",
+    "address": "14f8:029c",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/user.exe16/user.exe16.spec",
+    "source_sha256": "d873fa88079c4f922cbba2fb3a75f40e2ff23b4d56434b0f4326169397539e32",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word",
+      "str",
+      "word",
+      "long"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "USER",
+    "ordinal": 173,
+    "name": "LoadCursor",
+    "address": "14f8:02a0",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/user.exe16/user.exe16.spec",
+    "source_sha256": "d873fa88079c4f922cbba2fb3a75f40e2ff23b4d56434b0f4326169397539e32",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word",
+      "str"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "USER",
+    "ordinal": 174,
+    "name": "LoadIcon",
+    "address": "14f8:02a4",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/user.exe16/user.exe16.spec",
+    "source_sha256": "d873fa88079c4f922cbba2fb3a75f40e2ff23b4d56434b0f4326169397539e32",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word",
+      "str"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "USER",
+    "ordinal": 175,
+    "name": "LoadBitmap",
+    "address": "14f8:02a8",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/user.exe16/user.exe16.spec",
+    "source_sha256": "d873fa88079c4f922cbba2fb3a75f40e2ff23b4d56434b0f4326169397539e32",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word",
+      "str"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "USER",
+    "ordinal": 177,
+    "name": "LoadAccelerators",
+    "address": "14f8:02ac",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/user.exe16/user.exe16.spec",
+    "source_sha256": "d873fa88079c4f922cbba2fb3a75f40e2ff23b4d56434b0f4326169397539e32",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word",
+      "str"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "USER",
+    "ordinal": 178,
+    "name": "TranslateAccelerator",
+    "address": "14f8:02b0",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/user.exe16/user.exe16.spec",
+    "source_sha256": "d873fa88079c4f922cbba2fb3a75f40e2ff23b4d56434b0f4326169397539e32",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word",
+      "word",
+      "ptr"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "USER",
+    "ordinal": 179,
+    "name": "GetSystemMetrics",
+    "address": "14f8:02b4",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/user.exe16/user.exe16.spec",
+    "source_sha256": "d873fa88079c4f922cbba2fb3a75f40e2ff23b4d56434b0f4326169397539e32",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "s_word"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "USER",
+    "ordinal": 180,
+    "name": "GetSysColor",
+    "address": "14f8:02b8",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/user.exe16/user.exe16.spec",
+    "source_sha256": "d873fa88079c4f922cbba2fb3a75f40e2ff23b4d56434b0f4326169397539e32",
+    "convention": "pascal",
+    "flags": [],
+    "arguments": [
+      "word"
+    ],
+    "return_bytes": 4
+  },
+  {
+    "module": "USER",
+    "ordinal": 232,
+    "name": "SetWindowPos",
+    "address": "14f8:02bc",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/user.exe16/user.exe16.spec",
+    "source_sha256": "d873fa88079c4f922cbba2fb3a75f40e2ff23b4d56434b0f4326169397539e32",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word",
+      "word",
+      "word",
+      "word",
+      "word",
+      "word",
+      "word"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "USER",
+    "ordinal": 244,
+    "name": "EqualRect",
+    "address": "14f8:02c0",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/user.exe16/user.exe16.spec",
+    "source_sha256": "d873fa88079c4f922cbba2fb3a75f40e2ff23b4d56434b0f4326169397539e32",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "ptr",
+      "ptr"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "USER",
+    "ordinal": 249,
+    "name": "GetAsyncKeyState",
+    "address": "14f8:02c4",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/user.exe16/user.exe16.spec",
+    "source_sha256": "d873fa88079c4f922cbba2fb3a75f40e2ff23b4d56434b0f4326169397539e32",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "USER",
+    "ordinal": 258,
+    "name": "MapWindowPoints",
+    "address": "14f8:02c8",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/user.exe16/user.exe16.spec",
+    "source_sha256": "d873fa88079c4f922cbba2fb3a75f40e2ff23b4d56434b0f4326169397539e32",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word",
+      "word",
+      "ptr",
+      "word"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "USER",
+    "ordinal": 262,
+    "name": "GetWindow",
+    "address": "14f8:02cc",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/user.exe16/user.exe16.spec",
+    "source_sha256": "d873fa88079c4f922cbba2fb3a75f40e2ff23b4d56434b0f4326169397539e32",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word",
+      "word"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "USER",
+    "ordinal": 263,
+    "name": "GetMenuItemCount",
+    "address": "14f8:02d0",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/user.exe16/user.exe16.spec",
+    "source_sha256": "d873fa88079c4f922cbba2fb3a75f40e2ff23b4d56434b0f4326169397539e32",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "USER",
+    "ordinal": 272,
+    "name": "IsZoomed",
+    "address": "14f8:02d4",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/user.exe16/user.exe16.spec",
+    "source_sha256": "d873fa88079c4f922cbba2fb3a75f40e2ff23b4d56434b0f4326169397539e32",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "USER",
+    "ordinal": 282,
+    "name": "SelectPalette",
+    "address": "14f8:02d8",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/user.exe16/user.exe16.spec",
+    "source_sha256": "d873fa88079c4f922cbba2fb3a75f40e2ff23b4d56434b0f4326169397539e32",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word",
+      "word",
+      "word"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "USER",
+    "ordinal": 283,
+    "name": "RealizePalette",
+    "address": "14f8:02dc",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/user.exe16/user.exe16.spec",
+    "source_sha256": "d873fa88079c4f922cbba2fb3a75f40e2ff23b4d56434b0f4326169397539e32",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "USER",
+    "ordinal": 370,
+    "name": "GetWindowPlacement",
+    "address": "14f8:02e0",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/user.exe16/user.exe16.spec",
+    "source_sha256": "d873fa88079c4f922cbba2fb3a75f40e2ff23b4d56434b0f4326169397539e32",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word",
+      "ptr"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "USER",
+    "ordinal": 410,
+    "name": "InsertMenu",
+    "address": "14f8:02e4",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/user.exe16/user.exe16.spec",
+    "source_sha256": "d873fa88079c4f922cbba2fb3a75f40e2ff23b4d56434b0f4326169397539e32",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word",
+      "word",
+      "word",
+      "word",
+      "segptr"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "USER",
+    "ordinal": 411,
+    "name": "AppendMenu",
+    "address": "14f8:02e8",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/user.exe16/user.exe16.spec",
+    "source_sha256": "d873fa88079c4f922cbba2fb3a75f40e2ff23b4d56434b0f4326169397539e32",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word",
+      "word",
+      "word",
+      "segptr"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "USER",
+    "ordinal": 413,
+    "name": "DeleteMenu",
+    "address": "14f8:02ec",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/user.exe16/user.exe16.spec",
+    "source_sha256": "d873fa88079c4f922cbba2fb3a75f40e2ff23b4d56434b0f4326169397539e32",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word",
+      "word",
+      "word"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "USER",
+    "ordinal": 415,
+    "name": "CreatePopupMenu",
+    "address": "14f8:02f0",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/user.exe16/user.exe16.spec",
+    "source_sha256": "d873fa88079c4f922cbba2fb3a75f40e2ff23b4d56434b0f4326169397539e32",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [],
+    "return_bytes": 2
+  },
+  {
+    "module": "USER",
+    "ordinal": 416,
+    "name": "TrackPopupMenu",
+    "address": "14f8:02f4",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/user.exe16/user.exe16.spec",
+    "source_sha256": "d873fa88079c4f922cbba2fb3a75f40e2ff23b4d56434b0f4326169397539e32",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word",
+      "word",
+      "s_word",
+      "s_word",
+      "s_word",
+      "word",
+      "ptr"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "USER",
+    "ordinal": 420,
+    "name": "_wsprintf",
+    "address": "14f8:02f8",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/user.exe16/user.exe16.spec",
+    "source_sha256": "d873fa88079c4f922cbba2fb3a75f40e2ff23b4d56434b0f4326169397539e32",
+    "convention": "varargs",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "ptr",
+      "str"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "USER",
+    "ordinal": 457,
+    "name": "DestroyIcon",
+    "address": "14f8:02fc",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/user.exe16/user.exe16.spec",
+    "source_sha256": "d873fa88079c4f922cbba2fb3a75f40e2ff23b4d56434b0f4326169397539e32",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "USER",
+    "ordinal": 458,
+    "name": "DestroyCursor",
+    "address": "14f8:0300",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/user.exe16/user.exe16.spec",
+    "source_sha256": "d873fa88079c4f922cbba2fb3a75f40e2ff23b4d56434b0f4326169397539e32",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "word"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "COMMDLG",
+    "ordinal": 1,
+    "name": "GetOpenFileName",
+    "address": "14f8:0304",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/commdlg.dll16/commdlg.dll16.spec",
+    "source_sha256": "a10df709dc917f83f8ccea6d4ba7719bf0fb442613db149dd89de581872a2395",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "segptr"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "COMMDLG",
+    "ordinal": 2,
+    "name": "GetSaveFileName",
+    "address": "14f8:0308",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/commdlg.dll16/commdlg.dll16.spec",
+    "source_sha256": "a10df709dc917f83f8ccea6d4ba7719bf0fb442613db149dd89de581872a2395",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "segptr"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "COMMDLG",
+    "ordinal": 20,
+    "name": "PrintDlg",
+    "address": "14f8:030c",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/commdlg.dll16/commdlg.dll16.spec",
+    "source_sha256": "a10df709dc917f83f8ccea6d4ba7719bf0fb442613db149dd89de581872a2395",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "ptr"
+    ],
+    "return_bytes": 2
+  },
+  {
+    "module": "TOOLHELP",
+    "ordinal": 80,
+    "name": "TimerCount",
+    "address": "14f8:0310",
+    "source": "https://raw.githubusercontent.com/wine-mirror/wine/master/dlls/toolhelp.dll16/toolhelp.dll16.spec",
+    "source_sha256": "155de04942d5e53200c33698a366ddab5a3d51303e4cd9802e4ed8d4c23f195e",
+    "convention": "pascal",
+    "flags": [
+      "-ret16"
+    ],
+    "arguments": [
+      "ptr"
+    ],
+    "return_bytes": 2
+  }
+]

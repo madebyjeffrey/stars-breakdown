@@ -1,0 +1,587 @@
+[
+  {
+    "site": "1000:0941",
+    "target": "1020:0000",
+    "name": "InitMDIApp",
+    "relocation_record_file_offset": 16152,
+    "source_classification": "instruction",
+    "evidence": "MOV DX,0x1020",
+    "status": "Address-taken candidate; consumer requires review"
+  },
+  {
+    "site": "1000:0911",
+    "target": "1050:0000",
+    "name": "DrawShipOrders",
+    "relocation_record_file_offset": 16200,
+    "source_classification": "instruction",
+    "evidence": "MOV DX,0x1050",
+    "status": "Address-taken candidate; consumer requires review"
+  },
+  {
+    "site": "1000:0959",
+    "target": "10d8:0000",
+    "name": "ResearchDlg",
+    "relocation_record_file_offset": 16352,
+    "source_classification": "instruction",
+    "evidence": "MOV DX,0x10d8",
+    "status": "Address-taken candidate; consumer requires review"
+  },
+  {
+    "site": "1018:14a7",
+    "target": "1018:0000",
+    "name": "WinMain",
+    "relocation_record_file_offset": 79166,
+    "source_classification": "instruction",
+    "evidence": "MOV DX,0x1018",
+    "status": "Address-taken candidate; consumer requires review"
+  },
+  {
+    "site": "1020:2fad",
+    "target": "1018:0000",
+    "name": "WinMain",
+    "relocation_record_file_offset": 118697,
+    "source_classification": "instruction",
+    "evidence": "MOV DX,0x1018",
+    "status": "Address-taken candidate; consumer requires review"
+  },
+  {
+    "site": "1020:7475",
+    "target": "1020:0000",
+    "name": "InitMDIApp",
+    "relocation_record_file_offset": 118721,
+    "source_classification": "instruction",
+    "evidence": "MOV DX,0x1020",
+    "status": "Address-taken candidate; consumer requires review"
+  },
+  {
+    "site": "1020:6087",
+    "target": "1020:0000",
+    "name": "InitMDIApp",
+    "relocation_record_file_offset": 118721,
+    "source_classification": "instruction",
+    "evidence": "MOV DX,0x1020",
+    "status": "Address-taken candidate; consumer requires review"
+  },
+  {
+    "site": "1020:02a6",
+    "target": "1020:0000",
+    "name": "InitMDIApp",
+    "relocation_record_file_offset": 118721,
+    "source_classification": "instruction",
+    "evidence": "MOV word ptr [BP + -0x18],0x1020",
+    "status": "Address-taken candidate; consumer requires review"
+  },
+  {
+    "site": "1020:0016",
+    "target": "1020:0000",
+    "name": "InitMDIApp",
+    "relocation_record_file_offset": 118721,
+    "source_classification": "instruction",
+    "evidence": "MOV word ptr [BP + -0x18],0x1020",
+    "status": "Address-taken candidate; consumer requires review"
+  },
+  {
+    "site": "1020:0112",
+    "target": "1028:0000",
+    "name": "MineWndProc",
+    "relocation_record_file_offset": 118745,
+    "source_classification": "instruction",
+    "evidence": "MOV word ptr [BP + -0x18],0x1028",
+    "status": "Address-taken candidate; consumer requires review"
+  },
+  {
+    "site": "1020:0192",
+    "target": "1048:0000",
+    "name": "PlanetWndProc",
+    "relocation_record_file_offset": 118897,
+    "source_classification": "instruction",
+    "evidence": "MOV word ptr [BP + -0x18],0x1048",
+    "status": "Address-taken candidate; consumer requires review"
+  },
+  {
+    "site": "1020:01d7",
+    "target": "10c0:0000",
+    "name": "PopupWndProc",
+    "relocation_record_file_offset": 119409,
+    "source_classification": "instruction",
+    "evidence": "MOV word ptr [BP + -0x18],0x10c0",
+    "status": "Address-taken candidate; consumer requires review"
+  },
+  {
+    "site": "1020:4c08",
+    "target": "10d8:0000",
+    "name": "ResearchDlg",
+    "relocation_record_file_offset": 119489,
+    "source_classification": "instruction",
+    "evidence": "MOV DX,0x10d8",
+    "status": "Address-taken candidate; consumer requires review"
+  },
+  {
+    "site": "1020:0261",
+    "target": "10d8:0000",
+    "name": "ResearchDlg",
+    "relocation_record_file_offset": 119489,
+    "source_classification": "instruction",
+    "evidence": "MOV word ptr [BP + -0x18],0x10d8",
+    "status": "Address-taken candidate; consumer requires review"
+  },
+  {
+    "site": "1038:1e6c",
+    "target": "1038:0000",
+    "name": "FLookupSelPlanet",
+    "relocation_record_file_offset": 219968,
+    "source_classification": "instruction",
+    "evidence": "MOV DX,0x1038",
+    "status": "Address-taken candidate; consumer requires review"
+  },
+  {
+    "site": "1050:5202",
+    "target": "1050:0000",
+    "name": "DrawShipOrders",
+    "relocation_record_file_offset": 361275,
+    "source_classification": "instruction",
+    "evidence": "MOV DX,0x1050",
+    "status": "Address-taken candidate; consumer requires review"
+  },
+  {
+    "site": "1050:514a",
+    "target": "1050:0000",
+    "name": "DrawShipOrders",
+    "relocation_record_file_offset": 361275,
+    "source_classification": "instruction",
+    "evidence": "MOV DX,0x1050",
+    "status": "Address-taken candidate; consumer requires review"
+  },
+  {
+    "site": "1050:7e69",
+    "target": "1080:0000",
+    "name": "ZipOrderDlg",
+    "relocation_record_file_offset": 361451,
+    "source_classification": "instruction",
+    "evidence": "MOV DX,0x1080",
+    "status": "Address-taken candidate; consumer requires review"
+  },
+  {
+    "site": "1050:2fd4",
+    "target": "1080:0000",
+    "name": "ZipOrderDlg",
+    "relocation_record_file_offset": 361451,
+    "source_classification": "instruction",
+    "evidence": "MOV DX,0x1080",
+    "status": "Address-taken candidate; consumer requires review"
+  },
+  {
+    "site": "1050:274a",
+    "target": "1080:0000",
+    "name": "ZipOrderDlg",
+    "relocation_record_file_offset": 361451,
+    "source_classification": "instruction",
+    "evidence": "MOV DX,0x1080",
+    "status": "Address-taken candidate; consumer requires review"
+  },
+  {
+    "site": "1080:05c1",
+    "target": "1080:0000",
+    "name": "ZipOrderDlg",
+    "relocation_record_file_offset": 529073,
+    "source_classification": "instruction",
+    "evidence": "MOV DX,0x1080",
+    "status": "Address-taken candidate; consumer requires review"
+  },
+  {
+    "site": "1088:56af",
+    "target": "1088:0000",
+    "name": "DoAiTurn",
+    "relocation_record_file_offset": 554038,
+    "source_classification": "instruction",
+    "evidence": "MOV DX,0x1088",
+    "status": "Address-taken candidate; consumer requires review"
+  },
+  {
+    "site": "1088:5674",
+    "target": "1088:0000",
+    "name": "DoAiTurn",
+    "relocation_record_file_offset": 554038,
+    "source_classification": "instruction",
+    "evidence": "MOV DX,0x1088",
+    "status": "Address-taken candidate; consumer requires review"
+  },
+  {
+    "site": "1088:5266",
+    "target": "1088:0000",
+    "name": "DoAiTurn",
+    "relocation_record_file_offset": 554038,
+    "source_classification": "instruction",
+    "evidence": "MOV DX,0x1088",
+    "status": "Address-taken candidate; consumer requires review"
+  },
+  {
+    "site": "1088:4f7d",
+    "target": "1088:0000",
+    "name": "DoAiTurn",
+    "relocation_record_file_offset": 554038,
+    "source_classification": "instruction",
+    "evidence": "MOV DX,0x1088",
+    "status": "Address-taken candidate; consumer requires review"
+  },
+  {
+    "site": "1088:2cda",
+    "target": "1088:0000",
+    "name": "DoAiTurn",
+    "relocation_record_file_offset": 554038,
+    "source_classification": "instruction",
+    "evidence": "MOV DX,0x1088",
+    "status": "Address-taken candidate; consumer requires review"
+  },
+  {
+    "site": "1088:2c13",
+    "target": "1088:0000",
+    "name": "DoAiTurn",
+    "relocation_record_file_offset": 554038,
+    "source_classification": "instruction",
+    "evidence": "MOV DX,0x1088",
+    "status": "Address-taken candidate; consumer requires review"
+  },
+  {
+    "site": "1088:2bd8",
+    "target": "1088:0000",
+    "name": "DoAiTurn",
+    "relocation_record_file_offset": 554038,
+    "source_classification": "instruction",
+    "evidence": "MOV DX,0x1088",
+    "status": "Address-taken candidate; consumer requires review"
+  },
+  {
+    "site": "1090:672b",
+    "target": "1088:0000",
+    "name": "DoAiTurn",
+    "relocation_record_file_offset": 595877,
+    "source_classification": "instruction",
+    "evidence": "MOV DX,0x1088",
+    "status": "Address-taken candidate; consumer requires review"
+  },
+  {
+    "site": "1098:2ea8",
+    "target": "1088:0000",
+    "name": "DoAiTurn",
+    "relocation_record_file_offset": 608337,
+    "source_classification": "instruction",
+    "evidence": "MOV DX,0x1088",
+    "status": "Address-taken candidate; consumer requires review"
+  },
+  {
+    "site": "1098:2e6d",
+    "target": "1088:0000",
+    "name": "DoAiTurn",
+    "relocation_record_file_offset": 608337,
+    "source_classification": "instruction",
+    "evidence": "MOV DX,0x1088",
+    "status": "Address-taken candidate; consumer requires review"
+  },
+  {
+    "site": "1098:285b",
+    "target": "1088:0000",
+    "name": "DoAiTurn",
+    "relocation_record_file_offset": 608337,
+    "source_classification": "instruction",
+    "evidence": "MOV DX,0x1088",
+    "status": "Address-taken candidate; consumer requires review"
+  },
+  {
+    "site": "1098:17ca",
+    "target": "1088:0000",
+    "name": "DoAiTurn",
+    "relocation_record_file_offset": 608337,
+    "source_classification": "instruction",
+    "evidence": "MOV DX,0x1088",
+    "status": "Address-taken candidate; consumer requires review"
+  },
+  {
+    "site": "1098:178f",
+    "target": "1088:0000",
+    "name": "DoAiTurn",
+    "relocation_record_file_offset": 608337,
+    "source_classification": "instruction",
+    "evidence": "MOV DX,0x1088",
+    "status": "Address-taken candidate; consumer requires review"
+  },
+  {
+    "site": "10a0:410d",
+    "target": "1088:0000",
+    "name": "DoAiTurn",
+    "relocation_record_file_offset": 625940,
+    "source_classification": "instruction",
+    "evidence": "MOV DX,0x1088",
+    "status": "Address-taken candidate; consumer requires review"
+  },
+  {
+    "site": "10a0:4049",
+    "target": "1088:0000",
+    "name": "DoAiTurn",
+    "relocation_record_file_offset": 625940,
+    "source_classification": "instruction",
+    "evidence": "MOV DX,0x1088",
+    "status": "Address-taken candidate; consumer requires review"
+  },
+  {
+    "site": "10a0:400e",
+    "target": "1088:0000",
+    "name": "DoAiTurn",
+    "relocation_record_file_offset": 625940,
+    "source_classification": "instruction",
+    "evidence": "MOV DX,0x1088",
+    "status": "Address-taken candidate; consumer requires review"
+  },
+  {
+    "site": "10a8:54a3",
+    "target": "1088:0000",
+    "name": "DoAiTurn",
+    "relocation_record_file_offset": 649235,
+    "source_classification": "instruction",
+    "evidence": "MOV DX,0x1088",
+    "status": "Address-taken candidate; consumer requires review"
+  },
+  {
+    "site": "10a8:53e5",
+    "target": "1088:0000",
+    "name": "DoAiTurn",
+    "relocation_record_file_offset": 649235,
+    "source_classification": "instruction",
+    "evidence": "MOV DX,0x1088",
+    "status": "Address-taken candidate; consumer requires review"
+  },
+  {
+    "site": "10a8:53aa",
+    "target": "1088:0000",
+    "name": "DoAiTurn",
+    "relocation_record_file_offset": 649235,
+    "source_classification": "instruction",
+    "evidence": "MOV DX,0x1088",
+    "status": "Address-taken candidate; consumer requires review"
+  },
+  {
+    "site": "10d0:59c4",
+    "target": "1080:0000",
+    "name": "ZipOrderDlg",
+    "relocation_record_file_offset": 795118,
+    "source_classification": "instruction",
+    "evidence": "MOV DX,0x1080",
+    "status": "Address-taken candidate; consumer requires review"
+  },
+  {
+    "site": "10d0:17bc",
+    "target": "10d0:0000",
+    "name": "ChangeProduction",
+    "relocation_record_file_offset": 795214,
+    "source_classification": "instruction",
+    "evidence": "MOV DX,0x10d0",
+    "status": "Address-taken candidate; consumer requires review"
+  },
+  {
+    "site": "10d0:00d2",
+    "target": "10d0:0000",
+    "name": "ChangeProduction",
+    "relocation_record_file_offset": 795214,
+    "source_classification": "instruction",
+    "evidence": "MOV DX,0x10d0",
+    "status": "Address-taken candidate; consumer requires review"
+  },
+  {
+    "site": "10e0:023b",
+    "target": "10e0:0000",
+    "name": "RaceCreationWizard",
+    "relocation_record_file_offset": 850046,
+    "source_classification": "instruction",
+    "evidence": "MOV DX,0x10e0",
+    "status": "Address-taken candidate; consumer requires review"
+  },
+  {
+    "site": "10e0:01ce",
+    "target": "10e0:0000",
+    "name": "RaceCreationWizard",
+    "relocation_record_file_offset": 850046,
+    "source_classification": "instruction",
+    "evidence": "MOV DX,0x10e0",
+    "status": "Address-taken candidate; consumer requires review"
+  },
+  {
+    "site": "10e0:0161",
+    "target": "10e0:0000",
+    "name": "RaceCreationWizard",
+    "relocation_record_file_offset": 850046,
+    "source_classification": "instruction",
+    "evidence": "MOV DX,0x10e0",
+    "status": "Address-taken candidate; consumer requires review"
+  },
+  {
+    "site": "10e0:00f4",
+    "target": "10e0:0000",
+    "name": "RaceCreationWizard",
+    "relocation_record_file_offset": 850046,
+    "source_classification": "instruction",
+    "evidence": "MOV DX,0x10e0",
+    "status": "Address-taken candidate; consumer requires review"
+  },
+  {
+    "site": "10e0:0087",
+    "target": "10e0:0000",
+    "name": "RaceCreationWizard",
+    "relocation_record_file_offset": 850046,
+    "source_classification": "instruction",
+    "evidence": "MOV DX,0x10e0",
+    "status": "Address-taken candidate; consumer requires review"
+  },
+  {
+    "site": "10e0:0026",
+    "target": "10e0:0000",
+    "name": "RaceCreationWizard",
+    "relocation_record_file_offset": 850046,
+    "source_classification": "instruction",
+    "evidence": "MOV DX,0x10e0",
+    "status": "Address-taken candidate; consumer requires review"
+  },
+  {
+    "site": "10e8:01d3",
+    "target": "10e8:0000",
+    "name": "BattleVCR",
+    "relocation_record_file_offset": 869400,
+    "source_classification": "instruction",
+    "evidence": "MOV DX,0x10e8",
+    "status": "Address-taken candidate; consumer requires review"
+  },
+  {
+    "site": "10f8:06fc",
+    "target": "10f8:0000",
+    "name": "TutorDlg",
+    "relocation_record_file_offset": 952553,
+    "source_classification": "instruction",
+    "evidence": "MOV DX,0x10f8",
+    "status": "Address-taken candidate; consumer requires review"
+  },
+  {
+    "site": "10f8:00b1",
+    "target": "10f8:0000",
+    "name": "TutorDlg",
+    "relocation_record_file_offset": 952553,
+    "source_classification": "instruction",
+    "evidence": "MOV DX,0x10f8",
+    "status": "Address-taken candidate; consumer requires review"
+  },
+  {
+    "site": "1120:0976",
+    "target": "1048:0000",
+    "name": "PlanetWndProc",
+    "relocation_record_file_offset": 1053188,
+    "source_classification": "undefined",
+    "evidence": null,
+    "status": "Address-taken candidate; consumer requires review"
+  },
+  {
+    "site": "1120:0916",
+    "target": "1048:0000",
+    "name": "PlanetWndProc",
+    "relocation_record_file_offset": 1053188,
+    "source_classification": "undefined",
+    "evidence": null,
+    "status": "Address-taken candidate; consumer requires review"
+  },
+  {
+    "site": "1120:0854",
+    "target": "1048:0000",
+    "name": "PlanetWndProc",
+    "relocation_record_file_offset": 1053188,
+    "source_classification": "undefined",
+    "evidence": null,
+    "status": "Address-taken candidate; consumer requires review"
+  },
+  {
+    "site": "1120:0844",
+    "target": "1048:0000",
+    "name": "PlanetWndProc",
+    "relocation_record_file_offset": 1053188,
+    "source_classification": "undefined",
+    "evidence": null,
+    "status": "Address-taken candidate; consumer requires review"
+  },
+  {
+    "site": "1120:0834",
+    "target": "1048:0000",
+    "name": "PlanetWndProc",
+    "relocation_record_file_offset": 1053188,
+    "source_classification": "undefined",
+    "evidence": null,
+    "status": "Address-taken candidate; consumer requires review"
+  },
+  {
+    "site": "1120:0824",
+    "target": "1048:0000",
+    "name": "PlanetWndProc",
+    "relocation_record_file_offset": 1053188,
+    "source_classification": "undefined",
+    "evidence": null,
+    "status": "Address-taken candidate; consumer requires review"
+  },
+  {
+    "site": "1120:0814",
+    "target": "1048:0000",
+    "name": "PlanetWndProc",
+    "relocation_record_file_offset": 1053188,
+    "source_classification": "undefined",
+    "evidence": null,
+    "status": "Address-taken candidate; consumer requires review"
+  },
+  {
+    "site": "1120:0804",
+    "target": "1048:0000",
+    "name": "PlanetWndProc",
+    "relocation_record_file_offset": 1053188,
+    "source_classification": "undefined",
+    "evidence": null,
+    "status": "Address-taken candidate; consumer requires review"
+  },
+  {
+    "site": "1120:0966",
+    "target": "1050:0000",
+    "name": "DrawShipOrders",
+    "relocation_record_file_offset": 1053196,
+    "source_classification": "undefined",
+    "evidence": null,
+    "status": "Address-taken candidate; consumer requires review"
+  },
+  {
+    "site": "1120:0956",
+    "target": "1050:0000",
+    "name": "DrawShipOrders",
+    "relocation_record_file_offset": 1053196,
+    "source_classification": "undefined",
+    "evidence": null,
+    "status": "Address-taken candidate; consumer requires review"
+  },
+  {
+    "site": "1120:0946",
+    "target": "1050:0000",
+    "name": "DrawShipOrders",
+    "relocation_record_file_offset": 1053196,
+    "source_classification": "undefined",
+    "evidence": null,
+    "status": "Address-taken candidate; consumer requires review"
+  },
+  {
+    "site": "1120:0936",
+    "target": "1050:0000",
+    "name": "DrawShipOrders",
+    "relocation_record_file_offset": 1053196,
+    "source_classification": "undefined",
+    "evidence": null,
+    "status": "Address-taken candidate; consumer requires review"
+  },
+  {
+    "site": "1120:0926",
+    "target": "1050:0000",
+    "name": "DrawShipOrders",
+    "relocation_record_file_offset": 1053196,
+    "source_classification": "undefined",
+    "evidence": null,
+    "status": "Address-taken candidate; consumer requires review"
+  }
+]

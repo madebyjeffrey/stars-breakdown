@@ -48,3 +48,5 @@ python3 -m unittest discover -s tests
 `--check` compares both retained artifacts without rewriting them and detects changed input files. For an intentional, reviewed inventory or progress change, run `python3 tools/baseline.py`, inspect the diff, and then run the checks. Regeneration must not silently bless an unexpected changed original.
 
 Step 2 adds `analysis/debug/coverage.json`, preserving the baseline ranges and annotating public-symbol anchors. It does not inflate completed-code coverage. Signature corrections live in `tracking/debug_signature_overrides.json`; generated headers and their check source are tracked under `reconstructed/include/`.
+
+Step 3 adds [the automatic disassembly coverage ledger](../analysis/decompiler/coverage.json) and [the tested decompiler workflow](../analysis/decompiler/README.md). Its instruction/data classifications, 1,043 function exports and graphs are separate from manual/compiled reconstruction progress. The original baseline and `reviews.json` are unchanged. Full raw exports and local tools/projects are ignored; metadata indexes, the complete export hash manifest and selected acceptance outputs are tracked.
