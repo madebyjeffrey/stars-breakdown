@@ -1,0 +1,500 @@
+{
+  "original_sha256": "ccab6682b55dae14dbf104e491cfbd3b32a6280022020032ae0615500949ba59",
+  "object_sha256": "8c450ae44dfa689acc3429821b9920dce83c4b1f8320edf5eb514173f151256a",
+  "backpatch_records": 16,
+  "comparison": "No masked bytes: resolve OMF fixups by named identities into original address layout; retain all other bytes exactly.",
+  "functions": [
+    {
+      "name": "GetRaceStat",
+      "ne_segment": 29,
+      "original_offset": 12498,
+      "original_bytes": 34,
+      "generated_bytes": 34,
+      "exact_before_address_resolution": true,
+      "exact_after_address_resolution": true,
+      "nonaddress_byte_differences": [],
+      "length_difference": 0,
+      "fixups": [],
+      "original_relocated_sha256": "3a42afecacec62fb088d8f08a5fa935e7c184e8dfe24cd36b1d9aadf116307c0",
+      "generated_resolved_sha256": "3a42afecacec62fb088d8f08a5fa935e7c184e8dfe24cd36b1d9aadf116307c0"
+    },
+    {
+      "name": "SetRaceStat",
+      "ne_segment": 29,
+      "original_offset": 12564,
+      "original_bytes": 97,
+      "generated_bytes": 97,
+      "exact_before_address_resolution": false,
+      "exact_after_address_resolution": true,
+      "nonaddress_byte_differences": [],
+      "length_difference": 0,
+      "fixups": [
+        {
+          "offset": 15,
+          "width": 2,
+          "target": "race code/table segment",
+          "resolved_value": "0x30f4"
+        },
+        {
+          "offset": 32,
+          "width": 2,
+          "target": "race code/table segment",
+          "resolved_value": "0x30f4"
+        },
+        {
+          "offset": 44,
+          "width": 2,
+          "target": "race code/table segment",
+          "resolved_value": "0x3104"
+        },
+        {
+          "offset": 61,
+          "width": 2,
+          "target": "race code/table segment",
+          "resolved_value": "0x3104"
+        }
+      ],
+      "original_relocated_sha256": "da94697d26309e8b099897d9a72edf173797d7350fa662660cdc5fa06574e392",
+      "generated_resolved_sha256": "da94697d26309e8b099897d9a72edf173797d7350fa662660cdc5fa06574e392"
+    },
+    {
+      "name": "Random",
+      "ne_segment": 9,
+      "original_offset": 5842,
+      "original_bytes": 439,
+      "generated_bytes": 439,
+      "exact_before_address_resolution": false,
+      "exact_after_address_resolution": true,
+      "nonaddress_byte_differences": [],
+      "length_difference": 0,
+      "fixups": [
+        {
+          "offset": 10,
+          "width": 2,
+          "target": "_lSeed1",
+          "resolved_value": "0x1370"
+        },
+        {
+          "offset": 14,
+          "width": 2,
+          "target": "_lSeed1",
+          "resolved_value": "0x1372"
+        },
+        {
+          "offset": 23,
+          "width": 2,
+          "target": "_lSeed2",
+          "resolved_value": "0x1374"
+        },
+        {
+          "offset": 27,
+          "width": 2,
+          "target": "_lSeed2",
+          "resolved_value": "0x1376"
+        },
+        {
+          "offset": 50,
+          "width": 4,
+          "target": "__aFldiv",
+          "resolved_value": "0x11180be4"
+        },
+        {
+          "offset": 75,
+          "width": 4,
+          "target": "__aFlmul",
+          "resolved_value": "0x11180c7e"
+        },
+        {
+          "offset": 108,
+          "width": 4,
+          "target": "__aFlmul",
+          "resolved_value": "0x11180c7e"
+        },
+        {
+          "offset": 125,
+          "width": 4,
+          "target": "__aFlmul",
+          "resolved_value": "0x11180c7e"
+        },
+        {
+          "offset": 192,
+          "width": 4,
+          "target": "__aFldiv",
+          "resolved_value": "0x11180be4"
+        },
+        {
+          "offset": 217,
+          "width": 4,
+          "target": "__aFlmul",
+          "resolved_value": "0x11180c7e"
+        },
+        {
+          "offset": 250,
+          "width": 4,
+          "target": "__aFlmul",
+          "resolved_value": "0x11180c7e"
+        },
+        {
+          "offset": 267,
+          "width": 4,
+          "target": "__aFlmul",
+          "resolved_value": "0x11180c7e"
+        },
+        {
+          "offset": 377,
+          "width": 2,
+          "target": "_lSeed1",
+          "resolved_value": "0x1370"
+        },
+        {
+          "offset": 381,
+          "width": 2,
+          "target": "_lSeed1",
+          "resolved_value": "0x1372"
+        },
+        {
+          "offset": 390,
+          "width": 2,
+          "target": "_lSeed2",
+          "resolved_value": "0x1374"
+        },
+        {
+          "offset": 394,
+          "width": 2,
+          "target": "_lSeed2",
+          "resolved_value": "0x1376"
+        },
+        {
+          "offset": 426,
+          "width": 4,
+          "target": "__aFulrem",
+          "resolved_value": "0x11180dc8"
+        }
+      ],
+      "original_relocated_sha256": "79ae681483d0bd76fd9b08fd3a706c53e1b8176207d9bc607735918dcd2da9a7",
+      "generated_resolved_sha256": "79ae681483d0bd76fd9b08fd3a706c53e1b8176207d9bc607735918dcd2da9a7"
+    }
+  ],
+  "stat_table_bytes": 32,
+  "stat_tables_match": true,
+  "all_functions_match": true,
+  "source_sha256": "37162d74198db09a188561b84315b7623a1a9a2db369e68032132ccd0f9bb1a7",
+  "build_log": "FLAGS=/c /AM /GA /GEs /Zp1 /Od /Gs /W3 /Fc\nprobe.c\nprobe.c(45) : warning C4135: conversion between different integral types\n",
+  "build_status": "COMPILE=PASS\n",
+  "date": "2026-09-14",
+  "scope": "Compiler-generated function code comparison, not a linked whole-executable byte match",
+  "compiler_flags": "/c /AM /GA /GEs /Zp1 /Od /Gs /W3 /Fc",
+  "compiler_directory": "runs/step4/guest/MSVC",
+  "compiler_files": {
+    "CL.EXE": "e228f976c4d0c1d668e4259195ad4feca73ab87b99f26fb168f7e3fbd5992627",
+    "C13216.EXE": "f81c6d5daff5e46acb35ba529f48f792336a116f7099ee943c5fee0dd6c4e951",
+    "C23216.EXE": "2350c5189a2adcf542f3428aa2a7c0c51d8f85e5e20a186b84b6a59fc63882cf",
+    "C33216.EXE": "988e9f9e8b08895597b7a7abbbfe86ba379ebb5e71ade2a73e09e19b044adf94"
+  },
+  "local_results": "runs/byte-match/final2",
+  "independent_repeat": "P21.C compiled in initial matrix and then freshly as PROBE.C in final2; all three resolved function bodies match in both.",
+  "warning": "C4135 at return (unsigned long)z % c: narrowing the 32-bit remainder to the 16-bit int return; retained and consistent with original AX return.",
+  "declaration_order": [
+    "s2",
+    "s1",
+    "k",
+    "z"
+  ],
+  "original_local_offsets": {
+    "z": -6,
+    "s1": -10,
+    "k": -14,
+    "s2": -18
+  },
+  "global_aliases": {
+    "lSeed1": "original lRandSeed1 at DGROUP:1370",
+    "lSeed2": "original lRandSeed2 at DGROUP:1374"
+  },
+  "variants": [
+    {
+      "candidate": "P00",
+      "declarations": [
+        "z",
+        "s1",
+        "k",
+        "s2"
+      ],
+      "random_match": false,
+      "random_differing_bytes": 24
+    },
+    {
+      "candidate": "P01",
+      "declarations": [
+        "z",
+        "s1",
+        "s2",
+        "k"
+      ],
+      "random_match": false,
+      "random_differing_bytes": 36
+    },
+    {
+      "candidate": "P02",
+      "declarations": [
+        "z",
+        "k",
+        "s1",
+        "s2"
+      ],
+      "random_match": false,
+      "random_differing_bytes": 52
+    },
+    {
+      "candidate": "P03",
+      "declarations": [
+        "z",
+        "k",
+        "s2",
+        "s1"
+      ],
+      "random_match": false,
+      "random_differing_bytes": 52
+    },
+    {
+      "candidate": "P04",
+      "declarations": [
+        "z",
+        "s2",
+        "s1",
+        "k"
+      ],
+      "random_match": false,
+      "random_differing_bytes": 52
+    },
+    {
+      "candidate": "P05",
+      "declarations": [
+        "z",
+        "s2",
+        "k",
+        "s1"
+      ],
+      "random_match": false,
+      "random_differing_bytes": 40
+    },
+    {
+      "candidate": "P06",
+      "declarations": [
+        "s1",
+        "z",
+        "k",
+        "s2"
+      ],
+      "random_match": false,
+      "random_differing_bytes": 40
+    },
+    {
+      "candidate": "P07",
+      "declarations": [
+        "s1",
+        "z",
+        "s2",
+        "k"
+      ],
+      "random_match": false,
+      "random_differing_bytes": 52
+    },
+    {
+      "candidate": "P08",
+      "declarations": [
+        "s1",
+        "k",
+        "z",
+        "s2"
+      ],
+      "random_match": false,
+      "random_differing_bytes": 52
+    },
+    {
+      "candidate": "P09",
+      "declarations": [
+        "s1",
+        "k",
+        "s2",
+        "z"
+      ],
+      "random_match": false,
+      "random_differing_bytes": 44
+    },
+    {
+      "candidate": "P10",
+      "declarations": [
+        "s1",
+        "s2",
+        "z",
+        "k"
+      ],
+      "random_match": false,
+      "random_differing_bytes": 52
+    },
+    {
+      "candidate": "P11",
+      "declarations": [
+        "s1",
+        "s2",
+        "k",
+        "z"
+      ],
+      "random_match": false,
+      "random_differing_bytes": 32
+    },
+    {
+      "candidate": "P12",
+      "declarations": [
+        "k",
+        "z",
+        "s1",
+        "s2"
+      ],
+      "random_match": false,
+      "random_differing_bytes": 52
+    },
+    {
+      "candidate": "P13",
+      "declarations": [
+        "k",
+        "z",
+        "s2",
+        "s1"
+      ],
+      "random_match": false,
+      "random_differing_bytes": 52
+    },
+    {
+      "candidate": "P14",
+      "declarations": [
+        "k",
+        "s1",
+        "z",
+        "s2"
+      ],
+      "random_match": false,
+      "random_differing_bytes": 36
+    },
+    {
+      "candidate": "P15",
+      "declarations": [
+        "k",
+        "s1",
+        "s2",
+        "z"
+      ],
+      "random_match": false,
+      "random_differing_bytes": 28
+    },
+    {
+      "candidate": "P16",
+      "declarations": [
+        "k",
+        "s2",
+        "z",
+        "s1"
+      ],
+      "random_match": false,
+      "random_differing_bytes": 52
+    },
+    {
+      "candidate": "P17",
+      "declarations": [
+        "k",
+        "s2",
+        "s1",
+        "z"
+      ],
+      "random_match": false,
+      "random_differing_bytes": 44
+    },
+    {
+      "candidate": "P18",
+      "declarations": [
+        "s2",
+        "z",
+        "s1",
+        "k"
+      ],
+      "random_match": false,
+      "random_differing_bytes": 36
+    },
+    {
+      "candidate": "P19",
+      "declarations": [
+        "s2",
+        "z",
+        "k",
+        "s1"
+      ],
+      "random_match": false,
+      "random_differing_bytes": 24
+    },
+    {
+      "candidate": "P20",
+      "declarations": [
+        "s2",
+        "s1",
+        "z",
+        "k"
+      ],
+      "random_match": false,
+      "random_differing_bytes": 20
+    },
+    {
+      "candidate": "P21",
+      "declarations": [
+        "s2",
+        "s1",
+        "k",
+        "z"
+      ],
+      "random_match": true,
+      "random_differing_bytes": 0
+    },
+    {
+      "candidate": "P22",
+      "declarations": [
+        "s2",
+        "k",
+        "z",
+        "s1"
+      ],
+      "random_match": false,
+      "random_differing_bytes": 36
+    },
+    {
+      "candidate": "P23",
+      "declarations": [
+        "s2",
+        "k",
+        "s1",
+        "z"
+      ],
+      "random_match": false,
+      "random_differing_bytes": 28
+    }
+  ],
+  "global_rename_control": {
+    "source": "runs/byte-match/final/PROBE.C",
+    "observation": "Renaming lSeed1/lSeed2 to the original lRandSeed1/lRandSeed2 changes Random stack offsets with other source/flags unchanged; no arithmetic/instruction-length change. Source spelling/context sensitivity observed; compiler internal mechanism not isolated."
+  },
+  "validation": {
+    "tests": 13,
+    "result": "PASS",
+    "negative_controls": [
+      "Changed getter opcode is detected",
+      "Changed seed relocation target is detected rather than masked",
+      "Corrupted/truncated OMF rejected"
+    ],
+    "existing_runtime_library_audit": "Existing library audit tests pass after correcting target-thread method decoding."
+  },
+  "limitations": [
+    "No final NE link layout or executable byte-match claim",
+    "No claim of original source spelling, complete PLAYER struct or original debug record bytes",
+    "Global aliases deliberately retained because spelling affects local allocation in this experiment",
+    "Only /AM /Od /Gs profile demonstrated; /Gs is a successful setting, not proof it was the original flag versus equivalent pragma",
+    "No handwritten instruction replacement or stack-offset normalization; only compiler BAKPAT and named address fixups applied"
+  ]
+}

@@ -49,6 +49,13 @@ class OmfTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, 'Invalid OMF'):
             library(item[:-1])
 
+    def test_target_thread_high_method_bit_is_ignored(self):
+        # T4 thread byte 0x10 still consumes a SEGDEF index; P is in FIXUP.
+        threads = record(0x9c, b'\x10\x01')
+        fix = record(0x9c, b'\xc4\x00\x5c')
+        module = library(member([threads, data(bytes(2)), fix]))[0]
+        self.assertEqual(module.segments[1].fixups[0]['target'], (0, 1))
+
     def test_threads_and_iterated_fixup_expansion(self):
         # Define frame/target threads before LEDATA, then reference both.
         threads = record(0x9c, b'\x54\x08\x01')

@@ -96,7 +96,9 @@ def fixups(module, c, current):
         first = c.byte()
         if not first & 128:
             frame = bool(first & 64)
-            method = (first >> 2) & 7
+            # TIS OMF: target-thread method uses only the low two bits.
+            # Its high bit comes from the referring FIXUP P bit.
+            method = (first >> 2) & (7 if frame else 3)
             datum = c.index() if method < 3 else None
             module.threads[frame, first & 3] = (method, datum)
             continue

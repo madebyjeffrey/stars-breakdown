@@ -376,6 +376,11 @@ below remain open, including New/Open/Continue game behavior.
 
 ## Optional: byte-identical rebuild
 
+- [x] **Initial code-generation pilot:** GetRaceStat (34 bytes), SetRaceStat
+  (97 bytes), and Random (439 bytes) match VC++ 1.52c output after explicit
+  address placement where needed. Getter matches directly. This does not
+  complete the whole-executable items below; see [experiment evidence](analysis/compat/byte-match.md).
+
 This is not required for the behaviorally complete decompilation above.
 
 - [ ] Identify the exact original compiler, linker, libraries, flags, resource tools, and link ordering from evidence.

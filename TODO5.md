@@ -14,6 +14,8 @@ Every currently identified function has its own entry. Game routines are grouped
 
 The source/evidence fields come from [coverage.json](analysis/coverage.json), maintained through [tracking/reviews.json](tracking/reviews.json). Some ledger validation strings still say native integration pending: recent package-level acceptance does not establish every function/caller combination. [START2A Windows 95 acceptance](analysis/compat/startup2a-win95.json) verifies the integrated title, wizard, colors and race roundtrip. It does not complete WinMain, world generation, game loading or turn processing.
 
+A separate [byte-matching pilot](analysis/compat/byte-match.md) reproduces GetRaceStat, SetRaceStat and Random instruction bytes, with named address placement where required. The other reviewed functions have not been byte-matched; the checkboxes here continue to mean reviewed semantic source.
+
 ## Counts and navigation
 
 - **846 named game procedures:** 130 reviewed, 16 documented partial entries, 700 open.
