@@ -86,6 +86,10 @@ This does not promise the author's exact source text, comments, macros, or code 
 
 ## 5. Reconstruct the program, subsystem by subsystem
 
+**Detailed function checklist:** [TODO5.md](TODO5.md) enumerates every identified
+game procedure, runtime/helper entry and DOS-stub entry, grouped by subsystem,
+with signatures, dependencies, reviewed/partial/open status and evidence links.
+
 **In progress:** 130 named routines (55,942 original procedure bytes) now have
 reviewed C89 source and original-x86 differential tests. See
 [the core reconstruction report](analysis/reconstruction/core.md).
@@ -321,7 +325,7 @@ compiler installation alone does not complete those checks.
 
 This is a template for each routine, not a global progress checklist. Completed
 routine reviews are recorded in [the coverage ledger](analysis/coverage.json);
-127 named game routines currently meet the reviewed-source standard.
+130 named game routines currently meet the reviewed-source standard.
 
 - [ ] Record address range(s), names, source mappings, signature, calling convention, and evidence links.
 - [ ] Resolve control flow, call targets, global references, structure accesses, and local-variable roles.
