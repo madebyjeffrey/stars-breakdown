@@ -18,9 +18,11 @@ class StreamMachine(RecordMachine):
     SEGMENTS = dict(RecordMachine.SEGMENTS)
     SEGMENTS.update({5: 0xc000, 7: 0xd000})
 
-    def __init__(self, helper_boundaries=False):
-        super().__init__({'KERNEL!#74': (0xe000,0x400), 'KERNEL!#81': (0xe000,0x500),
-                          'USER!#13': (0xe000,0x600), 'COMMDLG!#2': (0xe000,0x700)})
+    def __init__(self, helper_boundaries=False, imports=None):
+        slots = {'KERNEL!#74': (0xe000,0x400), 'KERNEL!#81': (0xe000,0x500),
+                 'USER!#13': (0xe000,0x600), 'COMMDLG!#2': (0xe000,0x700)}
+        slots.update(imports or {})
+        super().__init__(slots)
         self.helper_boundaries = helper_boundaries
         self.events = []
         self.opens = [(7,0)]

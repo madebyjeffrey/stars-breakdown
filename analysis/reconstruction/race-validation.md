@@ -29,8 +29,10 @@ every nonzero enabled argument as true and preserves other bits.
 IRaceChecksum XORs all 96 little-endian words in the complete 192-byte player
 record. It is not a sum, CRC, or cryptographic integrity check. In FWasRaceFile,
 the loaded player record's checksum is compared with the following record's
-stored word before the player is accepted. Stream decoding and password-related
-control flow remain unreconstructed dependencies; no changes were made to them.
+stored word before the player is accepted. Record decoding and stream control
+flow now have reviewed adapters. FWasRaceFile and its password-related control
+flow still require reconstruction; the original caller has been exercised with
+synthetic inputs as described in [file streams](file-streams.md).
 
 BoundsCheckPlayer mutates the player record in this order:
 

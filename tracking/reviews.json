@@ -717,5 +717,75 @@
       "tests/test_stream_machine.py",
       "tests/stream_abort_bridge.c"
     ]
+  },
+  "000f:8cfe-8e15": {
+    "reconstruction_path": "reconstructed/src/file.c",
+    "review_status": "manually_reviewed",
+    "compilation_status": "host_c89_compiled",
+    "validation_status": "original_x86_differential_checked_with_fixed_format_bounded_names; host_semantic_adapter; Win16_full_UI_integration_pending",
+    "evidence": [
+      "analysis/functions.json",
+      "analysis/debug/procedures.json",
+      "analysis/decompiler/export-manifest.json",
+      "analysis/reconstruction/file-creation.md",
+      "tools/file_machine.py",
+      "tests/test_file_machine.py"
+    ]
+  },
+  "000f:8e16-8ea4": {
+    "reconstruction_path": "reconstructed/src/file.c",
+    "review_status": "manually_reviewed",
+    "compilation_status": "host_c89_compiled",
+    "validation_status": "original_x86_differential_checked_with_native_recovery_scope_explicit_OS_and_error_boundaries; host_semantic_adapter; Win16_full_UI_integration_pending",
+    "evidence": [
+      "analysis/functions.json",
+      "analysis/debug/procedures.json",
+      "analysis/decompiler/export-manifest.json",
+      "analysis/reconstruction/file-creation.md",
+      "tools/file_machine.py",
+      "tests/test_file_machine.py"
+    ]
+  },
+  "0009:2160-221d": {
+    "reconstruction_path": "reconstructed/src/alerts.c",
+    "review_status": "manually_reviewed",
+    "compilation_status": "host_c89_compiled",
+    "validation_status": "original_x86_differential_checked_with_explicit_OS_and_OutputSz_boundary; host_semantic_adapter; Win16_full_UI_integration_pending",
+    "evidence": [
+      "analysis/functions.json",
+      "analysis/debug/procedures.json",
+      "analysis/decompiler/export-manifest.json",
+      "analysis/reconstruction/file-creation.md",
+      "tools/file_machine.py",
+      "tests/test_file_machine.py"
+    ]
+  },
+  "000f:4a10-4a5f": {
+    "reconstruction_path": "reconstructed/src/alerts.c",
+    "review_status": "manually_reviewed",
+    "compilation_status": "host_c89_compiled",
+    "validation_status": "original_x86_differential_checked_with_explicit_PszFormatIds_and_OutputSz_OS_boundaries; host_semantic_adapter; Win16_full_UI_integration_pending",
+    "evidence": [
+      "analysis/functions.json",
+      "analysis/debug/procedures.json",
+      "analysis/decompiler/export-manifest.json",
+      "analysis/reconstruction/file-creation.md",
+      "tools/file_machine.py",
+      "tests/test_file_machine.py"
+    ]
+  },
+  "000f:524e-52ad": {
+    "reconstruction_path": "reconstructed/src/alerts.c",
+    "review_status": "manually_reviewed",
+    "compilation_status": "host_c89_compiled",
+    "validation_status": "original_x86_differential_checked_with_full_signed_word_domain; host_semantic_adapter; Win16_full_UI_integration_pending",
+    "evidence": [
+      "analysis/functions.json",
+      "analysis/debug/procedures.json",
+      "analysis/decompiler/export-manifest.json",
+      "analysis/reconstruction/file-creation.md",
+      "tools/file_machine.py",
+      "tests/test_file_machine.py"
+    ]
   }
 }

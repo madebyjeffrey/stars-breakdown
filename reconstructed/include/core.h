@@ -126,4 +126,24 @@ void stars_stream_read(StarsU8 *data, StarsU8 *output, StarsU16 count,
     const StarsStreamApi *api, void *context);
 void stars_stream_write(StarsU8 *data, const StarsU8 *input, StarsU16 count,
     const StarsStreamApi *api, void *context);
+/* Filename tables must match the verified original; bounded, contiguous
+ * NUL-terminated base and output buffers, without overlap. */
+void stars_set_file_name(StarsU8 *data, StarsU16 type, StarsI16 player);
+/* environment is a near-offset token for the new native recovery scope.
+ * It must be distinct from any active scope and disjoint from application data.
+ * The old data[006E] token is restored on normal and recovered-error returns. */
+StarsI16 stars_create_file(StarsU8 *data, StarsU16 type, StarsI16 player,
+    StarsU16 forced_name, StarsU16 environment, const StarsStreamApi *api, void *context);
+typedef struct StarsAlertApi {
+    StarsU16 (*focus)(void *context);
+    StarsI16 (*message)(void *context, StarsU16 owner, const StarsU8 *text,
+        const StarsU8 *caption, StarsI16 type);
+    void (*output)(void *context, StarsI16 channel, const StarsU8 *text);
+    StarsU16 (*format_id)(void *context, StarsI16 id);
+} StarsAlertApi;
+/* OutputSz and PszFormatIds remain explicit game-helper boundaries. */
+StarsI16 stars_alert_string(StarsU8 *data, StarsU16 text, StarsI16 type,
+    const StarsAlertApi *api, void *context);
+void stars_file_error(StarsU8 *data, StarsI16 id, const StarsAlertApi *api, void *context);
+StarsI16 stars_bad_file_error(StarsI16 id);
 #endif

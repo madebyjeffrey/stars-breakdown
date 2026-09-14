@@ -14,9 +14,10 @@ offsets. All five are far C functions with caller cleanup and void returns.
 | RgToStream | 9554–95BC | stars_stream_write / stream.c |
 
 These extend [player-record serialization](player-records.md). They are not
-a linked Win16 application. FileError, PszFormatIds, AlertSz, FCreateFile,
-FSaveRace and FWasRaceFile are **not counted as reconstructed** here. Error
-presentation and nonlocal exit have explicit callback boundaries.
+a linked Win16 application. This checkpoint left FileError, PszFormatIds,
+AlertSz, FCreateFile, FSaveRace and FWasRaceFile unreconstructed. Subsequent
+[file-creation work](file-creation.md) supplies FileError, AlertSz and FCreateFile
+at explicit boundaries; the other three still require reconstruction.
 
 ## Beginning-of-file record
 
@@ -96,7 +97,8 @@ exact-transfer callbacks used by the higher record layer. The open callback
 must supply the OpenFile error word whenever it returns FFFFh; names must be
 NUL-terminated within an accessible span.
 
-The `file_error` callback represents the complete FileError call. The
+The `file_error` callback represents the complete FileError call (now supplied
+by [the alert adapter](file-creation.md)). The
 `write_error` callback represents formatting message 22 and AlertSz with type
 16. Their UI/text/global-scratch effects must be supplied by later integration;
 they are not silently treated as no-ops in production. The `abort` callback

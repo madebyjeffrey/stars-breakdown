@@ -86,15 +86,16 @@ This does not promise the author's exact source text, comments, macros, or code 
 
 ## 5. Reconstruct the program, subsystem by subsystem
 
-**In progress:** 54 named routines (17,404 original procedure bytes) now have
+**In progress:** 59 named routines (18,188 original procedure bytes) now have
 reviewed C89 source and original-x86 differential tests. See
 [the core reconstruction report](analysis/reconstruction/core.md).
 This is a host semantic library; the subsystem checkboxes below remain open.
 The race scoring/random-generation chain now runs independently of Windows;
 `python3 tools/race_demo.py --seed 0 --record-roundtrip` also exercises player
 serialization, header generation and record encryption. Stream retry/transfer
-control flow has explicit OS/error boundaries. File dialogs, password/error
-presentation, wizard UI, and remaining creation routines are still pending.
+control flow has explicit OS/error boundaries. Filename generation, file-creation
+recovery and alert selection are reconstructed. File dialogs, message expansion,
+log writing, password handling, wizard UI, and other creation routines remain.
 
 For each group below, follow the per-function checklist. The order is provisional: use the recovered dependency graph to adjust it. Module names identify initial study areas, not verified architectural boundaries.
 
