@@ -12,6 +12,13 @@ instructions. Give the actions, expected results and files to return through
 the existing FTP share when needed. DOSBox remains authorized for checks the
 agent can perform directly (user preference recorded 2026-09-14).
 
+The user confirmed the DOSBox VC++ installation at `C:\MSVC` on 2026-09-14.
+Its host directory is `runs/step4/guest/MSVC`. CL.EXE, LINK.EXE, LIB.EXE,
+the Windows/C headers and MLIBCEW.LIB/LIBW.LIB are present. The two library
+hashes still match the [verified runtime audit](../reconstruction/runtime-library.json).
+Use this installation for upcoming agent-operated native builds; installation
+confirmation is separate from successfully compiling/running each new component.
+
 The subsequent [race acceptance package](../../compat/race/README.md) records
 88 generated scenarios and a first live T000 baseline with matching plaintext
 and successful cross-loading in both directions. For title-screen race creation,
