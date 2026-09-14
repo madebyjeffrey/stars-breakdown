@@ -123,7 +123,7 @@ Only the subset needed by the starting screen is wired to native USER/GDI;
 unrecognized operations terminate with a diagnostic rather than returning
 invented success.
 
-## Validation and remaining acceptance
+## Validation and native acceptance
 
 The focused run passed **19 tests** across test_title_machine,
 test_startup_package and test_startup_machine. They cover large reads and short
@@ -145,21 +145,54 @@ exit through Alt+X.
 That session also showed Program Manager drawing corruption before launch and
 reported a PROGMAN page fault in USER.EXE at 0001:4F7F during subsequent keyboard
 testing. Its cause is **unresolved**, not attributed to the environment or the
-new code without evidence. A clean repeat run is required (U023).
+new code without evidence (U023).
 
-Automatic approval review rejected the next launch of the locally built EXE
-as unrecognized software requiring user confirmation. No alternate execution
-route was used. Once confirmed, run these remaining checks:
+After the user confirmed the repeat launch, a fresh DOSBox/Windows session
+passed all four checks below using the unchanged START1 executable. The
+[acceptance record](../compat/startup1-acceptance.json) retains its hash,
+environment, complete logs and validation limits. The original first-run record
+is retained as historical evidence, including the approval block that preceded
+the user's confirmation.
 
-1. Start a fresh Windows session; run `START.EXE /SMOKE`. Require FIRST_PAINT,
-   REPAINT, TITLE_RELEASE, CLEANUP and EXIT to pass in APP.LOG without guest faults.
-2. Preserve that log, then run `START.EXE /FALLBACK /SMOKE`. Check the original
-   starfield/text rendering path and cleanup.
-3. Run interactively; check Alt+N and Alt+O show the milestone notice, dismissal
-   repaints correctly, and Exit/Alt+X/Alt+F4 close cleanly.
-4. Repeat font/default settings and another display resolution as needed to
-   isolate any discrepancy. Keep native UI integration distinct from the
-   deterministic original-instruction event comparisons.
+| Native check | Result |
+|---|---|
+| `START.EXE /SMOKE` | Bitmap appeared; two paints, 17 reads / 481,088 bytes, automatic exit and cleanup passed. |
+| `START.EXE /FALLBACK /SMOKE` | Starfield/text appeared; two paints, automatic exit and cleanup passed. |
+| New/Open notices | Alt+N and Alt+O each opened the notice; Enter restored the artwork; Alt+X closed with cleanup passed. |
+| Standard Windows close | A separate launch closed with Alt+F4 and cleanup passed. |
+
+No guest fault appeared during these checks. The original executable was also
+opened in the same session: its title artwork and version text looked the same,
+and Alt+X returned to Program Manager. Its Continue button was enabled whereas
+the reconstruction's was disabled, as expected with separate startup settings.
+This was visual inspection, not an image pixel comparison. Forced fallback ran
+on the 256-color driver; a real 16-color driver, other resolutions, custom font
+settings and mouse automation remain outside this acceptance scope.
+
+## Display investigation
+
+The retained restart configuration and the clean launch both use emulated
+ET4000 graphics. Windows uses `svga256.drv`, 800x600 / 256 colors / small fonts,
+with `vddsvga.386` and the DOSBox pointer integration driver `dboxmpi.drv`.
+The former session had 114657 cycles/ms; the fresh launcher restored the
+tracked fixed 20000 setting. The restart changed session state and speed
+together, so these checks do not isolate either as the cause.
+
+Windows for Workgroups 3.11 adds networking and 32-bit file-access components
+to the Windows 3.x family and requires 386 enhanced mode. Its edition alone
+does not explain a drawing discrepancy. DOSBox-X documents that Windows'
+generic Super VGA driver requires ET4000 emulation, which this setup already
+uses. It recommends S3 Trio64 with a matching driver and describes seamless
+mouse integration as experimental. See the
+[official Windows 3.1x guide](https://dosbox-x.com/wiki/Guide:Installing-Windows-3.1x).
+
+The user also confirmed that the artifacts were absent in this run.
+The earlier fault remains unexplained despite successful fresh acceptance.
+If the artifacts recur, first identify the exact screen/action and compare
+original and reconstructed behavior in that session. A controlled alternate
+display-driver test is then more informative than replacing the whole Windows
+installation. Driver, emulator, mouse integration and application faults remain
+hypotheses; none has been demonstrated as the cause.
 
 Next implementation work is the full application initialization/configuration
 chain and then connecting useful creation/opening flows to this native shell.

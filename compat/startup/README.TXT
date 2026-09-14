@@ -40,8 +40,15 @@ medium-model segment/link layout. Byte-identical executable matching remains
 a separate, later objective. MANIFEST.TXT records source and resource hashes.
 
 RECORDED TEST STATUS
-The native build has opened and painted in WfW 3.11, read all 481088 title
-bitmap bytes, repainted, exited through Alt+X, and logged cleanup success.
-That existing Windows session also reported a PROGMAN page fault during
-keyboard testing. Its cause is unresolved. A fresh /SMOKE run, /FALLBACK run
-and New/Open action checks remain pending. This is a development milestone.
+The unchanged START1 executable passed a fresh WfW 3.11 session:
+  /SMOKE: bitmap load, repaint, automatic exit and cleanup passed.
+  /FALLBACK /SMOKE: starfield drawing, repaint, exit and cleanup passed.
+  Alt+N and Alt+O: notices appeared and dismissal restored the artwork.
+  Alt+X and a separate Alt+F4 run: exit and cleanup passed.
+The original title also drew and closed cleanly in the same session.
+No guest fault appeared; the user confirmed the artifacts were absent.
+The earlier session's PROGMAN fault remains unexplained. These checks used
+800x600/256 colors and keyboard controls. Other display drivers/resolutions
+and mouse automation remain unverified. This is a development milestone.
+The delivered START1 folder and ZIP are preserved as originally packaged;
+their README contains the earlier first-run status. No rebuild is needed.

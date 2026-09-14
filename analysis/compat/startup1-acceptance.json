@@ -1,0 +1,59 @@
+{
+  "date": "2026-09-14",
+  "scope": "Fresh-session acceptance of the unchanged START1 executable",
+  "executable_sha256": "81e4ad0b84444adfb39cc40e71b388e44fca3a2d66e65b5891f1d392d89ea093",
+  "previous_record": "startup1-native.json",
+  "user_confirmation": "User approved the repeat launch before these tests.",
+  "environment": {
+    "os": "Windows for Workgroups 3.11, 386 enhanced mode",
+    "emulator": "DOSBox-X 2026.08.31, macOS ARM SDL2",
+    "launch": "python3 tools/runtime/launch.py",
+    "configuration_sha256": "f9d3d0a44a5c3a21498f80ce938354398b63d791e50847bc343faea34e422792",
+    "machine": "svga_et4000",
+    "display_driver": "svga256.drv",
+    "display": "800x600, 256 colors, small fonts",
+    "mouse_driver": "dboxmpi.drv",
+    "cpu": "pentium, normal core, fixed 20000 cycles/ms",
+    "comparison_session": "Prior restart snapshot retained svga_et4000 but had cycles=114657. Restart reset to tracked configuration; cycle speed and session state were not isolated independently."
+  },
+  "runs": [
+    {
+      "command": "START.EXE /SMOKE",
+      "log_sha256": "6ca1d903ae329f9f3cc9642320dbf3a2cb1e297bcf10a7692d4b189cb12216fb",
+      "app_log": "STARTUP_MILESTONE=1\nSTATIC_DATA=PASS\nCONFIGURATION=PASS\nDRAWING=BITMAP\nMEMORY_ALLOC_FREE=PASS\nTITLE_CREATE=PASS\nFIRST_PAINT=PASS\nREPAINT=PASS\nTITLE_RELEASE=PASS\nCLEANUP=PASS\nRESOURCE_READS=17\nRESOURCE_BYTES=481088\nPAINTS=2\nEXIT=PASS\n"
+    },
+    {
+      "command": "START.EXE /FALLBACK /SMOKE",
+      "log_sha256": "f4a86d0bfd8257d90a59403adb968792651425526c4b2746dab307bb9854510a",
+      "app_log": "STARTUP_MILESTONE=1\nSTATIC_DATA=PASS\nCONFIGURATION=PASS\nDRAWING=STARFIELD\nMEMORY_ALLOC_FREE=PASS\nTITLE_CREATE=PASS\nFIRST_PAINT=PASS\nREPAINT=PASS\nTITLE_RELEASE=PASS\nCLEANUP=PASS\nRESOURCE_READS=0\nRESOURCE_BYTES=0\nPAINTS=2\nEXIT=PASS\n"
+    },
+    {
+      "command": "START.EXE; Alt+N, Enter, Alt+O, Enter, Alt+X",
+      "log_sha256": "aa29eef54c351208616925393d4ee195ffc4ca4fa6eb252ebf325ccea8390c00",
+      "app_log": "STARTUP_MILESTONE=1\nSTATIC_DATA=PASS\nCONFIGURATION=PASS\nDRAWING=BITMAP\nMEMORY_ALLOC_FREE=PASS\nTITLE_CREATE=PASS\nFIRST_PAINT=PASS\nTITLE_RELEASE=PASS\nCLEANUP=PASS\nRESOURCE_READS=17\nRESOURCE_BYTES=481088\nPAINTS=1\nEXIT=PASS\n"
+    },
+    {
+      "command": "START.EXE; Alt+F4",
+      "log_sha256": "aa29eef54c351208616925393d4ee195ffc4ca4fa6eb252ebf325ccea8390c00",
+      "app_log": "STARTUP_MILESTONE=1\nSTATIC_DATA=PASS\nCONFIGURATION=PASS\nDRAWING=BITMAP\nMEMORY_ALLOC_FREE=PASS\nTITLE_CREATE=PASS\nFIRST_PAINT=PASS\nTITLE_RELEASE=PASS\nCLEANUP=PASS\nRESOURCE_READS=17\nRESOURCE_BYTES=481088\nPAINTS=1\nEXIT=PASS\n"
+    }
+  ],
+  "observations": [
+    "Bitmap smoke displayed the title, repainted, automatically closed and returned to Program Manager without a guest fault.",
+    "Forced starfield smoke displayed the Stars! lettering, sparse stars and four buttons, then repainted and closed without a guest fault.",
+    "Alt+N and Alt+O each displayed the expected milestone notice; Enter dismissed each notice and restored the artwork. Alt+X closed cleanly.",
+    "A separate launch closed cleanly with Alt+F4.",
+    "The original executable displayed the same title artwork and version text under the same running display setup, and closed with Alt+X.",
+    "The original Continue button was enabled; the isolated reconstruction Continue button was disabled. This is expected because their startup settings are separate.",
+    "No obvious title-screen corruption or PROGMAN fault was observed during these checks.",
+    "The user independently confirmed that the graphical artifacts were not happening in this run."
+  ],
+  "limits": [
+    "Earlier PROGMAN/USER.EXE fault remains unexplained (U023); non-reproduction does not identify or eliminate its cause.",
+    "This was a visual comparison, not a captured-image pixel comparison.",
+    "Forced fallback uses the 256-color guest to exercise the alternate drawing branch; it is not acceptance on a real 16-color display driver.",
+    "Tests used keyboard controls; mouse automation and other resolutions/font settings were not validated.",
+    "The original fallback caller context remains open (U022).",
+    "Full application startup/configuration, creation/loading and main game UI remain incomplete."
+  ]
+}

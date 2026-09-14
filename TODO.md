@@ -240,10 +240,15 @@ provisional; module names identify study areas rather than architectural boundar
     repainted and exited with successful cleanup logged. The source and prebuilt
     executable are packaged as START1. This does not complete WinMain or the
     full application initialization/command paths.
-  - [ ] **Repeat native startup acceptance:** run a fresh Windows session,
-    /SMOKE and /FALLBACK, and test New/Open notices. Investigate the PROGMAN
-    fault seen in the first session (U023). Automatic approval review requires
-    user confirmation before the next launch of the new executable.
+  - [x] **Repeat native startup acceptance:** fresh WfW 3.11 session passed
+    /SMOKE, /FALLBACK /SMOKE, New/Open notices and dismissal repaints, Alt+X
+    and Alt+F4. All four runs logged complete cleanup/exit; no guest fault
+    appeared. The unchanged START1 executable was tested after user confirmation;
+    see the [acceptance record](analysis/compat/startup1-acceptance.json).
+  - [ ] **Intermittent guest graphics/fault investigation:** the first session's
+    PROGMAN/USER.EXE fault did not recur during fresh acceptance or an original
+    title-screen comparison. Cause remains open (U023); neither the Windows
+    edition nor a specific driver has been established as responsible.
   - [ ] **Remaining runtime data:** audit the seven records without code,
     remaining CRT data fixups and placement dependencies. The code-byte match
     does not complete these data mappings or prove the full linker layout.

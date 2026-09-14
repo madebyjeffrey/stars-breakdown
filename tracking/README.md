@@ -21,7 +21,10 @@ as host C89 semantic adapters and compared with original x86 execution. See
 [the reconstruction report](../analysis/reconstruction/core.md). A partial
 Win16 application now opens the starting screen, with original resources and
 recovered drawing code; see the [milestone](../analysis/reconstruction/starting-screen.md).
-Full application behavior and repeat native acceptance remain open.
+Fresh native acceptance passed bitmap/fallback repaint, New/Open notices and
+cleanup through automatic exit, Alt+X and Alt+F4; see the
+[acceptance record](../analysis/compat/startup1-acceptance.json). Full application
+behavior and the earlier intermittent guest fault (U023) remain open.
 The historical GetRaceStat note has been superseded
 by reviewed source and the recorded static/runtime/differential evidence.
 The [race-component audit](../analysis/reconstruction/race-dependencies.json)
@@ -38,7 +41,8 @@ race-wizard UI acceptance remains separate.
 The [foundation work](../analysis/reconstruction/foundations.md) completes all
 11 memory-manager routines, the startup resource lifecycle and six additional
 numeric/bounds helpers. Their 23 routines / 7,264 bytes have original-instruction
-comparisons and host C89 builds; native integration remains pending. Separate
+comparisons and host C89 builds; the starting screen now exercises native
+font/color/cleanup and heap/resource integration. Separate
 from named-game coverage, the DOS entry assembles to the exact 98 bytes and
 the [runtime library audit](../analysis/reconstruction/runtime-library.json)
 maps all 101 code-bearing CRT records (15,192 bytes / 856 fixups). Seven records
