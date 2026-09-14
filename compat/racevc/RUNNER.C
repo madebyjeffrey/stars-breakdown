@@ -207,7 +207,7 @@ static int run_tests(void)
     if (existing) { fclose(existing); return 2; }
     report = fopen("RESULTS.TXT", "w");
     if (!report) return 3;
-    fprintf(report, "STARS RACE COMPILER/OUTPUT ACCEPTANCE 1\n");
+    fprintf(report, "STARS RACE COMPILER/OUTPUT ACCEPTANCE 2\n");
 #ifdef HOST_TEST
     fprintf(report, "MODE=HOST_C89; native VC152 execution remains pending\n");
 #else
@@ -256,7 +256,8 @@ int PASCAL WinMain(HINSTANCE instance, HINSTANCE previous, LPSTR command, int sh
     if (slash) {
         *slash = 0;
         if (message[1] == ':') _chdrive((int)(message[0] & 31));
-        if (chdir(message)) return 3;
+        /* Use the CRT entry directly; /NOD does not link old-name aliases. */
+        if (_chdir(message)) return 3;
     }
     result = run_tests();
     if (result == 2) strcpy(message, "RESULTS.TXT already exists. Preserve this folder and run a fresh copy.");

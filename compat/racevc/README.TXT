@@ -1,12 +1,14 @@
-STARS RACE COMPONENT - VC++ 1.52c COMPILE AND OUTPUT TEST
+STARS RACE COMPONENT - VC++ 1.52c COMPILE AND OUTPUT TEST, REVISION 2
 
 This package contains C source to compile, an automatic test program, and
-frozen original-executable expectations. It is ready for its FIRST native
-build. A host build is checked separately; native success remains pending.
+frozen original-executable expectations. RETURN3 compiled every source file;
+linking failed on the launcher's chdir alias. This revision uses _chdir and
+makes two formatter comparisons explicitly signed, as in the original x86.
+The corrected native link and execution remain pending.
 
-1. Copy the complete RACEVC1 folder, including EXPECT and ACTUAL, to a fresh
-   folder in the Windows 98 VM, for example C:\RACEVC1. Keep names as supplied.
-2. Open a DOS prompt INSIDE Windows. Change into C:\RACEVC1.
+1. Copy the complete RACEVC2 folder, including EXPECT and ACTUAL, to a fresh
+   folder in the Windows 98 VM, for example C:\RACEVC2. Preserve RETURN3.
+2. Open a DOS prompt INSIDE Windows. Change into C:\RACEVC2.
 3. Run BUILD C:\MSVC (replace C:\MSVC with your compiler installation root).
 4. If both compile and link say PASS, run RACEVC.EXE while Windows is running.
    It runs 88 scenarios / 89 wizard sessions automatically. It shows a summary

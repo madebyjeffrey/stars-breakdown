@@ -87,6 +87,16 @@ class RaceFormatTests(unittest.TestCase):
         for word in [0,1,511,512,0x2000,0x2200]:self.case(b'\\F',[word])
         self.m.put(0xa07b,words_bytes([512]));self.case(b'\\F',[0])
         for word in [0,1,15,16,31,32,33,47,48,63]:self.case(b'\\z',[word])
+    def test_fleet_lookup_signed_comparison_boundary(self):
+        # The original search uses JL/JG on the stored word. Keep all pointers
+        # valid while exercising the signed boundary that RETURN3 warned about.
+        self.m.put(0x5356, words_bytes([2]))
+        self.m.put(0xd180, words_bytes([0]))
+        self.m.put(0xd1f8, struct.pack('<I', 0x3000da00))
+        self.m.put(0xda00, b'Signed search success\0')
+        for key in [0x8000, 0xffff]:
+            self.m.put(0xd100, words_bytes([key]))
+            self.assertEqual(self.case(b'\\s', [0]), b'Signed search success')
     def test_every_valid_component_name(self):
         limits=[16,16,10,12,24,12,15,8,10,16,5,17,11,20,32,15]
         for slot,limit in enumerate(limits):

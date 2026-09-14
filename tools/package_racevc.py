@@ -173,7 +173,8 @@ def payload():
     # Five LINK fields; continuations keep each physical line short.
     files['RACEVC.LNK'] = dos_text('+\n'.join(Path(n).stem+'.OBJ' for n in c_sources)+
         '\nRACEVC.EXE\nRACEVC.MAP\nLLIBCEW.LIB LIBW.LIB /NOD /ALIGN:16 /CO /MAP\nRACEVC.DEF\n')
-    manifest = dict(schema=1, kind='VC152 compiler/output acceptance; UI services modeled',
+    manifest = dict(schema=1, package_revision=2,
+                    kind='VC152 compiler/output acceptance; UI services modeled',
                     original_sha256=document['original_sha256'], vectors_sha256=sha(vector_bytes),
                     cases=88, sessions=89, expected_files=len(expectations), native_status='pending user build/run',
                     source_hashes=inputs, files={n: sha(b) for n, b in sorted(files.items())})
@@ -202,7 +203,7 @@ def export(output):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--output', type=Path, default=ROOT / 'ftp-share/RACEVC1')
+    parser.add_argument('--output', type=Path, default=ROOT / 'ftp-share/RACEVC2')
     args = parser.parse_args()
     print(export(args.output.resolve()))
 

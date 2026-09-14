@@ -4,11 +4,15 @@ This is the buildable successor to the RACEACC1 fixture/recipe package. It
 compiles all 20 recovered component source files plus a small automatic runner.
 The runner drives the actual recovered wizard procedures, saves new race files
 through recovered game code and real CRT file I/O, and compares their outputs
-with frozen original-x86 observations. **The first native VC++ build/run remains
-pending.** The [guest instructions](README.TXT) describe that next action.
+with frozen original-x86 observations. **RETURN3 compiled all 23 C files, but
+linking failed on the launcher's `chdir` alias.** Revision 2 uses the CRT entry
+`_chdir` directly and makes the formatter's fleet-search comparisons explicitly
+signed, matching the original JL/JG instructions. The corrected native link and
+execution remain pending. See the [returned-build review](../../analysis/compat/racevc-return3.md)
+and [guest instructions](README.TXT).
 
-The exported package is `ftp-share/RACEVC1/`, also available as
-`ftp-share/RACEVC1.ZIP`. Build a fresh copy inside the user's Windows 98 SE VM
+The current exported package is `ftp-share/RACEVC2/`, also available as
+`ftp-share/RACEVC2.ZIP`. Build a fresh copy inside the user's Windows 98 SE VM
 with `BUILD C:\MSVC`, then run `RACEVC.EXE` and return the entire folder. Preserve
 on-screen diagnostics in `OUTPUT.TXT` as well as the generated logs. No manual
 wizard replay or mouse automation is required for this experiment.
@@ -51,7 +55,7 @@ No whole-game startup or other menu command is counted as reconstructed here.
 ## Reproduction and evidence
 
 ```sh
-python3 tools/package_racevc.py --output ftp-share/RACEVC1
+python3 tools/package_racevc.py --output ftp-share/RACEVC2
 python3 -m unittest tests.test_racevc_package -v
 ```
 
@@ -75,5 +79,7 @@ all 88 scenarios; frozen provenance, package integrity and DOS filename/text
 checks; a deliberately wrong expected file that fails comparison while the
 generated file stays unchanged; and truncated input that fails clearly. The
 full run also verifies every `.STA` snapshot and `.R1` output independently and
-confirms that rerunning preserves existing results. Native compiler diagnostics,
-native assertions and a returned artifact review are still required.
+confirms that rerunning preserves existing results. Revision 2 adds a declaration
+check of the Windows-only launcher branch that rejects the former `chdir` call;
+it is not a substitute for the real VC headers/linker. Native linking, native
+assertions and a returned artifact review are still required.

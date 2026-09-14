@@ -171,9 +171,14 @@ The immediate work is:
   passes 812 host checks, generates 61 matching race files and 89 state snapshots,
   and detects deliberately incorrect expectations. It models Windows services;
   it does not complete real Windows UI acceptance.
-- [ ] **Native race compiler/output run:** build RACEVC1 in VC++ 1.52c, execute
+- [ ] **Native race compiler/output run:** build RACEVC2 in VC++ 1.52c, execute
   RACEVC.EXE, return all logs and artifacts, and investigate every compiler,
   linker or output mismatch. Expected native result: 816 checks, zero failures.
+  **RETURN3, 2026-09-14:** all 23 source files compiled. Linking failed on the
+  launcher's `chdir` alias; revision 2 uses `_chdir`. Its two formatter warnings
+  also prompted explicit signed comparisons, verified against the original
+  instructions. Corrected native linking and execution remain pending. See
+  [the review](analysis/compat/racevc-return3.md).
 - [ ] **Native race-component acceptance:** create a VC++ 1.52c adapter and one
   coherent build package after this dependency work. Map the documented Windows
   services/resources, compile the new source, exercise both file directions and

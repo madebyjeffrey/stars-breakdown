@@ -122,8 +122,10 @@ static const StarsU8 *fleet_from_id(StarsRuntime *r, StarsU16 id)
         if (low + high < 0 && ((low + high) & 1)) --middle;
         entry = far_address(r, far_add(table, (StarsU16)(middle * 4)));
         fleet = far_address(r, stars_dword(entry, 0)); key = stars_signed_word(stars_word(fleet, 0));
-        if (key < id) low = middle;
-        else if (key > id) high = middle;
+        /* NE 8:2123/2137 use signed JL/JG. id is already masked to 13 bits;
+         * the cast prevents unsigned promotion with a 16-bit C int. */
+        if (key < (int)id) low = middle;
+        else if (key > (int)id) high = middle;
         else return fleet;
     }
     return 0;

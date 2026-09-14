@@ -42,6 +42,15 @@ suffix, special hull tie handling, thing type/owner fields, and ship versus
 starbase design tables. These paths are validated through original formatter
 execution, not credited as twelve extra complete procedures.
 
+RETURN3's VC++ build exposed two signed/unsigned warnings in the fleet lookup.
+NE 8:2123 and 8:2137 use signed JL/JG after comparing the stored fleet word with
+the ID masked to 13 bits. Explicitly converting that masked ID to `int` prevents
+16-bit unsigned promotion while preserving the host behavior. A boundary test
+compares original and recovered searches with stored keys 8000/FFFF, valid
+record pointers and a subsequent matching fleet. This fixes a compiler-width
+portability defect, although the affected lookup is not reached by the 88
+race-only acceptance scenarios.
+
 FLookupPart's return status is unused by the component-name escape. Its
 availability queries do not mutate game globals. The recovered formatter
 therefore selects the same component pointer directly from the original NE 2

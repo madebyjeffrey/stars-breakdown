@@ -15,7 +15,7 @@ set INCLUDE=%1\INCLUDE
 set LIB=%1\LIB
 set CL=
 set LINK=
->BLDSTAT.TXT echo STARS_RACEVC_BUILD=1
+>BLDSTAT.TXT echo STARS_RACEVC_BUILD=2
 >>BLDSTAT.TXT echo ROOT=%1
 echo Compiling the race component and automatic test program.
 echo Keep any on-screen diagnostics in OUTPUT.TXT as well as these logs.
@@ -52,7 +52,7 @@ echo Supply the compiler root containing BIN, INCLUDE, and LIB.
 echo Example: BUILD C:\MSVC
 goto end
 :wrongdir
-echo Change into the copied RACEVC1 folder first.
+echo Change into the copied RACEVC2 folder first.
 goto end
 :used
 echo Preserve the results here. Use a fresh package copy for another attempt.

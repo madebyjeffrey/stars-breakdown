@@ -5,8 +5,10 @@ The component can open, edit, create, password-check and save a race through
 recovered C code. All six wizard procedures execute; the platform supplies
 Windows services and messages. The [compiler/output package](../../compat/racevc/README.md)
 now contains the recovered source, an automatic runner and a VC++ 1.52c build
-recipe. Its host build passes all 88 scenarios; the first native build/run is
-pending. It models UI services and uses real CRT file I/O. The earlier
+recipe. Its host build passes all 88 scenarios. RETURN3 compiled all source;
+revision 2 addresses its launcher linker failure and two signed-comparison
+warnings. Native linking and execution remain pending. It models UI services
+and uses real CRT file I/O. The earlier
 [scenario package](../../compat/race/README.md) supplies live replay recipes;
 a real Windows UI adapter and completion of that pilot remain separate work.
 
@@ -183,8 +185,8 @@ under the larger outer menu-handler frame are not portable host state.
 
 This establishes component behavior under the stated service/input contracts.
 It does not establish native Windows rendering, protected-mode selector faults,
-arbitrary malformed pointer graphs, allocation-exhaustion behavior, a native
-build of these new files, or a byte-identical executable. The earlier native
+arbitrary malformed pointer graphs, allocation-exhaustion behavior, successful
+native linking/execution of these files, or a byte-identical executable. The earlier native
 VC++ compatibility results remain valid for their tested source subset.
 
 ```sh

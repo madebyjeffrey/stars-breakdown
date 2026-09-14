@@ -129,8 +129,9 @@ The complete catalog is also compared during package generation.
 
 Remaining acceptance work is the rest of the live pilot, inspection of returned observations,
 and the native VC++ adapter/build of these new source files. The subsequent
-[RACEVC1 compiler/output package](../racevc/README.md) now includes all recovered
-source and an automatic C runner for the same 88 scenarios. Its first native
-build/run is pending; its modeled UI does not finish the live pilot. Later components can
+[compiler/output package](../racevc/README.md) now includes all recovered source
+and an automatic C runner for the same 88 scenarios. RETURN3 compiled all source;
+RACEVC2 addresses its linker failure. Native execution is pending, and the
+modeled UI does not finish the live pilot. Later components can
 use the same structure: named actions, original expected outcomes, candidate
 artifacts, a small live sample and explicit unresolved differences.

@@ -109,6 +109,44 @@ class RaceVcPackageTests(unittest.TestCase):
         self.assertEqual(run.returncode, 1)
         self.assertIn('FATAL: Truncated test input', (folder / 'RESULTS.TXT').read_text())
 
+    def test_windows_launcher_uses_declared_crt_entry(self):
+        # Compile the normally excluded Windows branch against the documented
+        # declaration subset. This catches the RETURN3 alias mistake; it is
+        # not a native Win16 compiler, ABI, SDK-header or library-link test.
+        headers = self.root / 'declarations'
+        headers.mkdir()
+        (headers / 'windows.h').write_text('''
+typedef unsigned short HGLOBAL;
+typedef unsigned short HINSTANCE;
+typedef void *HWND;
+typedef char *LPSTR;
+#define PASCAL
+#define GMEM_FIXED 0
+#define GMEM_ZEROINIT 0x40
+#define MB_OK 0
+#define MB_ICONEXCLAMATION 0x30
+#define MB_ICONINFORMATION 0x40
+HGLOBAL GlobalAlloc(unsigned, unsigned long);
+void *GlobalLock(HGLOBAL);
+int GlobalUnlock(HGLOBAL);
+HGLOBAL GlobalFree(HGLOBAL);
+unsigned GetModuleFileName(HINSTANCE, LPSTR, unsigned);
+int MessageBox(HWND, const char *, const char *, unsigned);
+''')
+        (headers / 'dos.h').write_text('#define FP_OFF(p) ((unsigned long)(p) & 65535UL)\n')
+        (headers / 'direct.h').write_text('int _chdir(const char *);\nint _chdrive(int);\n')
+        flags = ['cc', '-x', 'c', '-std=c89', '-pedantic', '-Wall', '-Wextra', '-Werror',
+                 '-fsyntax-only', '-D_MSC_VER=800', '-I', str(headers), '-I', str(self.source)]
+        subprocess.run(flags+[str(self.source / 'RUNNER.C')], check=True, capture_output=True)
+        wrong = headers / 'MUTANT.C'
+        source = (self.source / 'RUNNER.C').read_text()
+        changed = source.replace('if (_chdir(message))', 'if (chdir(message))')
+        self.assertNotEqual(source, changed)
+        wrong.write_text(changed)
+        result = subprocess.run(flags+[str(wrong)], capture_output=True, text=True)
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn('chdir', result.stderr)
+
 
 if __name__ == '__main__':
     unittest.main()

@@ -24,7 +24,8 @@ by reviewed source and the recorded static/runtime/differential evidence.
 The [race-component audit](../analysis/reconstruction/race-dependencies.json)
 also records caller-specific helper paths separately, without crediting their
 full procedure ranges. The [race compiler/output package](../compat/racevc/README.md)
-is ready for its first native build/run. Real Windows UI acceptance remains pending.
+compiled all source in RETURN3; revision 2 addresses its linker failure. Native
+execution and real Windows UI acceptance remain pending.
 
 Manual progress belongs in [reviews.json](reviews.json), keyed by the ledger range ID. Generation merges those annotations into the ledger without overwriting the editable source. If segmentation changes, generation rejects obsolete keys so a human must reconcile their evidence. Schema 2 counts `host_c89_compiled` rows separately and states their scope explicitly; this is original-byte mapping coverage, not generated object size or whole-program equivalence.
 

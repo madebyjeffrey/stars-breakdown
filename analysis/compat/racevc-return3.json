@@ -1,0 +1,693 @@
+{
+  "schema": 1,
+  "date": "2026-09-14",
+  "returned": "ftp-share/RETURN3/Racevc1",
+  "package": "ftp-share/RACEVC1",
+  "original_sha256": "ccab6682b55dae14dbf104e491cfbd3b32a6280022020032ae0615500949ba59",
+  "artifacts": {
+    "BLDSTAT.TXT": {
+      "bytes": 61,
+      "sha256": "fc286d70dedeee4e4e1cd19e5ee9e78e5421b9cebc11c131f7600ecba1ba083f"
+    },
+    "BUILD.LOG": {
+      "bytes": 379,
+      "sha256": "079a357f951a77c63d912ec1fe42bf08705ec118a02b1fd4013afa5cf018d682"
+    },
+    "LINK.LOG": {
+      "bytes": 1266,
+      "sha256": "a9ea4f22ac764d82819d11ded4a2c2a396e2e7599b18ca2f68666b82a0087d9f"
+    },
+    "ALERTS.OBJ": {
+      "bytes": 1892,
+      "sha256": "80419e61f40a80a7f34b213c2a5fb49dfc52d25a8907c7c0ce63de44875b9cf3"
+    },
+    "CODEC.OBJ": {
+      "bytes": 3971,
+      "sha256": "0ffc6b1aab1ce45d885e53f831660345052dd0fb7446d5d7816574ae8d4cd030"
+    },
+    "CREATE.OBJ": {
+      "bytes": 4257,
+      "sha256": "bf0d219540a36eef521b18a71bff44c2b1c54245c0a2d059d163817a4af433ef"
+    },
+    "FILE.OBJ": {
+      "bytes": 4304,
+      "sha256": "82878545224bc1d5859b0258c5c54d7652688fa45e34a4c07e73276a1d5eecbe"
+    },
+    "FILES.OBJ": {
+      "bytes": 6225,
+      "sha256": "dfe35c4cf469d2d1ee206eb026c9c823f055c51c7eb3d0fb08ce04d2e388727d"
+    },
+    "FORMAT.OBJ": {
+      "bytes": 16009,
+      "sha256": "8c9df4b10254b2e95da610c44e2987ff4ff312912be9d9b12986d0d002b0d843"
+    },
+    "NEARSTAT.OBJ": {
+      "bytes": 3558,
+      "sha256": "bddce18fe7fc0766cf865ea0465e4d79cd4b1f7240ef0764781c576a839fcd2b"
+    },
+    "OUTPUT.OBJ": {
+      "bytes": 2412,
+      "sha256": "8d99cf29e4daf2d7e561f4092800542609e45246f6b7c201d3e771c3a46c575d"
+    },
+    "PASSWORD.OBJ": {
+      "bytes": 4567,
+      "sha256": "a815bd498536047783f9c069acbf9972c5f35cdef6aaa52fdc09325061626c70"
+    },
+    "PLANET.OBJ": {
+      "bytes": 12653,
+      "sha256": "7388d2f83ea6c236994cb8f93c47ac3ac0447ecd892163d865fac572bd543af9"
+    },
+    "RACE.OBJ": {
+      "bytes": 15231,
+      "sha256": "a2cfa9ce9cdd67b22916db0663f647c3aa1cac2f73e56f27da699048a3bbba52"
+    },
+    "RACEDRAW.OBJ": {
+      "bytes": 14530,
+      "sha256": "b8244664894276476de2f10fc02b81852870859546976d7d089d2c57400adbdd"
+    },
+    "RACEUI.OBJ": {
+      "bytes": 6388,
+      "sha256": "1550c537a74703136972943e89bb9567feee010442606f4384261ce453aafdab"
+    },
+    "RACEWIZ.OBJ": {
+      "bytes": 28285,
+      "sha256": "5cbad064c0bd429ca4d45fc2e673da8e46b7f24103e596c0acd516c3d8180ec5"
+    },
+    "RECORDS.OBJ": {
+      "bytes": 6584,
+      "sha256": "d58c3f8429084864aa201fb787e3ca0c2cce4d471d1d9f8b1d05fb60390205f1"
+    },
+    "RUNNER.OBJ": {
+      "bytes": 15508,
+      "sha256": "41fab04cc25f5be54f7e0ddc7f5ff4350e4dad1af0548fa6f3a9f8f69692fc13"
+    },
+    "RUNTIME.OBJ": {
+      "bytes": 12178,
+      "sha256": "20115bd74d76bd127e1b11608f823f61651e7ad1bba0b6c3749a4b8d3a710568"
+    },
+    "STREAM.OBJ": {
+      "bytes": 3567,
+      "sha256": "502e9848e57e044561885fbfe15f5d2ecea19c980e269aa7ad6eb784eb1bbec4"
+    },
+    "STRINGS.OBJ": {
+      "bytes": 3598,
+      "sha256": "a139f697275a5638400bc317ad77086d8ea13e4934945e02c02c8d5897de0045"
+    },
+    "TEXT.OBJ": {
+      "bytes": 4307,
+      "sha256": "17f6ad2968b7d7b8419724c0ad6870f3c9d78b9456f27488c8bd597653c34ed8"
+    },
+    "UI.OBJ": {
+      "bytes": 17715,
+      "sha256": "e87933cf265e4cdc9c053c94165098d78cc5e452c2a118338370da39511c8e19"
+    },
+    "UTILGEN.OBJ": {
+      "bytes": 5748,
+      "sha256": "e3356e7b0f39c8d3c395d155a0e93ac6647a843f218808262b3962180e0af1dd"
+    },
+    "WORLD.OBJ": {
+      "bytes": 14518,
+      "sha256": "67eec8bcfa4c7d5c8abde42db0d55cba58db5dad5a4e19934cd3308632a9e79d"
+    },
+    "RACEVC.MAP": {
+      "bytes": 29353,
+      "sha256": "72355608deb4c58e1c11794b670354cd99d6b22179ccd9a429b148c2a421d4eb"
+    },
+    "RACEVC.EXE": {
+      "bytes": 112209,
+      "sha256": "e182cfd96341c27826cef84c4f7ca2e6cd4ceaecd890d9fcabc53d4dd0562723"
+    },
+    "MANIFEST.JSN": {
+      "bytes": 13290,
+      "sha256": "0d12ebcecf2fd4871168e43723914f07dc39adfffc450d3a25ff10f6aeef1381"
+    }
+  },
+  "logs": {
+    "BLDSTAT.TXT": "STARS_RACEVC_BUILD=1\nROOT=c:\\msvc\nCOMPILE=PASS\nLINK=FAIL\n",
+    "BUILD.LOG": "COMMAND: CL @RACEVC.RSP\nrunner.c\nworld.c\nfiles.c\nutilgen.c\nrace.c\nnearstat.c\ncodec.c\ntext.c\ncreate.c\nplanet.c\nstrings.c\nrecords.c\nstream.c\nfile.c\nalerts.c\nruntime.c\npassword.c\noutput.c\nformat.c\nformat.c(125) : warning C4018: '<' : signed/unsigned mismatch\nformat.c(126) : warning C4018: '>' : signed/unsigned mismatch\nui.c\nraceui.c\nracedraw.c\nracewiz.c\n",
+    "LINK.LOG": "COMMAND: LINK @RACEVC.LNK\n\nMicrosoft (R) Segmented Executable Linker  Version 5.60.339 Dec  5 1994\nCopyright (C) Microsoft Corp 1984-1993.  All rights reserved.\n\nObject Modules [.obj]: RUNNER.OBJ+\nObject Modules [.obj]: WORLD.OBJ+\nObject Modules [.obj]: FILES.OBJ+\nObject Modules [.obj]: UTILGEN.OBJ+\nObject Modules [.obj]: RACE.OBJ+\nObject Modules [.obj]: NEARSTAT.OBJ+\nObject Modules [.obj]: CODEC.OBJ+\nObject Modules [.obj]: TEXT.OBJ+\nObject Modules [.obj]: CREATE.OBJ+\nObject Modules [.obj]: PLANET.OBJ+\nObject Modules [.obj]: STRINGS.OBJ+\nObject Modules [.obj]: RECORDS.OBJ+\nObject Modules [.obj]: STREAM.OBJ+\nObject Modules [.obj]: FILE.OBJ+\nObject Modules [.obj]: ALERTS.OBJ+\nObject Modules [.obj]: RUNTIME.OBJ+\nObject Modules [.obj]: PASSWORD.OBJ+\nObject Modules [.obj]: OUTPUT.OBJ+\nObject Modules [.obj]: FORMAT.OBJ+\nObject Modules [.obj]: UI.OBJ+\nObject Modules [.obj]: RACEUI.OBJ+\nObject Modules [.obj]: RACEDRAW.OBJ+\nObject Modules [.obj]: RACEWIZ.OBJ\nRun File [RUNNER.exe]: RACEVC.EXE\nList File [nul.map]: RACEVC.MAP\nLibraries [.lib]: LLIBCEW.LIB LIBW.LIB /NOD /ALIGN:16 /CO /MAP\nDefinitions File [nul.def]: RACEVC.DEF\n\nRUNNER.OBJ(runner.c) : error L2029: '_chdir' : unresolved external\n\n\nThere was 1 error detected\n"
+  },
+  "package_inputs": [
+    {
+      "name": "ACTUAL/README.TXT",
+      "sha256": "c842db2baef0e2e31bc9b6c6933a0788bc639049b89a7e7b5f0eeaeea361e47d",
+      "unchanged": true
+    },
+    {
+      "name": "ALERTS.C",
+      "sha256": "8164fe4840c9e006d2115b173667856d75a51e9656c3bcc72077ba3f62602141",
+      "unchanged": true
+    },
+    {
+      "name": "BPLANS.INC",
+      "sha256": "36a7bdc022096f46bc67248ca193d3a3099bf1a929fc27181272eaf2436485c3",
+      "unchanged": true
+    },
+    {
+      "name": "BUILD.BAT",
+      "sha256": "92a22630f4091a8942b699e5902e83d6ec1beedfe24725fb0cd85729339e4e11",
+      "unchanged": true
+    },
+    {
+      "name": "CASES.DAT",
+      "sha256": "2ff0854440903084b271fe652026a0f2ccdf003b6ed0cc10d2ae814ac6c8f073",
+      "unchanged": true
+    },
+    {
+      "name": "CODEC.C",
+      "sha256": "4a279578a451b7dce531cedb95ea048295711b0839a9eaee48fee207cf659362",
+      "unchanged": true
+    },
+    {
+      "name": "CORE.H",
+      "sha256": "1aa44a48a518a1d59cde43d80df56e71e22b663506d8c070b2e02eeee1ff679d",
+      "unchanged": true
+    },
+    {
+      "name": "CREATE.C",
+      "sha256": "516582347c6a0bbefb530cc2800506e43550e7aae2d666f805ee872f00c4d3a0",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/A000.R1",
+      "sha256": "3b8702975d023016b4256465326662a6ebfd9a07280c8b892ec552b7600517d1",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/A001.R1",
+      "sha256": "b28ed649b25131fa18281863e6691ef3bed9d4eea9dcd325625b7f904fe126a3",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/A002.R1",
+      "sha256": "dc54d91dd91ab773101e42e080c1fc5eb033db764db03114a2ec97802fc8e916",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/A003.R1",
+      "sha256": "821ae06d5ad5ae92bee06be6bd7638e6b63de28620be009b5b79bc3593e237e8",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/A004.R1",
+      "sha256": "bc4de127bc291970cf55c38075e9ac57fbf86d8c4e2bb8a12a5b4f2855b75741",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/B000.R1",
+      "sha256": "fd08aecb11e983a6882823ccb755319a77d682aa123c15ac5c24a35ade617202",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/E000.R1",
+      "sha256": "b9c0932e6bb31b31258f5fe84bb72b44e49511b9c75a681f3c920c5d58a5f15c",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/E001.R1",
+      "sha256": "4d14b39df2704df0134e0f7eaad54fc0c52b52dd413342c46588a94793e86604",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/E002.R1",
+      "sha256": "62981036f088d112f8ab12d8e718d86110f01c168195322a4e3c6abf33f3d3c5",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/E003.R1",
+      "sha256": "63d5e9abb20652580825e2420107dd51c5c701eb2519c9b1e132d8327dfde8bb",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/E004.R1",
+      "sha256": "0c84fe2dbdb2e644a0564fbaa9bf287ab4f73ee1a63b9c7ef791d8f8b9aacd50",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/E005.R1",
+      "sha256": "48700cb86251a001400c53eeced4ef33b177fb35296d77e75bcc52d95111ac15",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/E006.R1",
+      "sha256": "03b86471d1113039b55bbc8ef51e2304a6f6abb63d08726d0e8bfe96e26674e0",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/F000.R1",
+      "sha256": "c329d5cf4028fb6d53b924a6b6dc29db3e396fbf35ee831ef19bcb7afba9a186",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/F003.R1",
+      "sha256": "9aeb47ea589391dea0a883060a8ad4176ff4ef38f383163bd22491329c9302cd",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/F004.R1",
+      "sha256": "b5ad15f1990ff405bf7b1b9a8154b0ec20ccd5d3a65f7d56210bd6f90eb3ccf2",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/F005.R1",
+      "sha256": "dc22f4120d9c0a33f576a23a4152b7e35e8849871918940f690f1d116c8c3c61",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/F006.R1",
+      "sha256": "2be302d4c3d2baa0994038d7bb5a388884f863cced21c86993947df6a06d947b",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/F007.R1",
+      "sha256": "3c642dcf1b360f146105ff3f8f94d65f73bf7a38a070b7cb6f566655768a5095",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/F009.R1",
+      "sha256": "8a16f91fb848add9492c6c9408623ed0939e555e601df6b64856f15b547b6bcc",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/F010.R1",
+      "sha256": "45787b84b26e531b02c6feff142fdcc470684793499287e60be5c973dc602dcf",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/F011.R1",
+      "sha256": "c8b015bf2788f67f50fa173cd63d1d894b2d6fba67689d0d38ea96ac63edb0c9",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/F012.R1",
+      "sha256": "da4cbf288ef774cde1ef2de67bc119280a0986c2194b949de841cbd85e9f67db",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/F013.R1",
+      "sha256": "af69a3536aedd9f284045644ae3143eab767172639ebeac184a2d0e823281fc5",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/G000.R1",
+      "sha256": "402f3486522892b3d888ec0857d025eeba8b2214e2eeb73366de296ff6542f13",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/I003.R1",
+      "sha256": "857b5a0f8b1d14751630fc5c209d287813876ed9f878cb5b4d85701801e9e06e",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/I004.R1",
+      "sha256": "ddabc1b8aa7cd570cf8e06b7efd46bef130856009f0786e12906ddc1601cb6c7",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/I005.R1",
+      "sha256": "19449ab2332035cb74dac3e3adbfa6b613754102d181ce8a59ea11fed0a888d4",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/L004.R1",
+      "sha256": "cbbbc6e93d866a524428cc015c44a82141903dabbfa1e7d83b52b8bc97606f67",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/L007.R1",
+      "sha256": "5bbb68da511e17b61f67c60e7b550402724b54d64881826d5632b0ac418ca61d",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/L008.R1",
+      "sha256": "f55cb2d221c40e4eafc593685a0b0173a6121e75fdfa88602c815882399ff556",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/L009.R1",
+      "sha256": "20d5044cc16901aef61e490570a333655436cb98e2f7e0c009c3f1cbac05530f",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/L010.R1",
+      "sha256": "f30336898e98653523a35e3869ec5e46f33f270dbc7bb5be37747b3a6a0b8798",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/L011.R1",
+      "sha256": "c4be58e4483bfcf7d9c6a22fe04adc1bc1306b04bfa1cb449403ece280d4e3c1",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/L012.R1",
+      "sha256": "f3f02db67c5c883a753a2bb8b19612d03d8bf8e94c8a9bbf59cf46f3e6955b56",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/L013.R1",
+      "sha256": "5c614cf29c07deddaa30b299f9b06eadf23b9f1a99948be06b2249f298299dc0",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/N000.R1",
+      "sha256": "1b1ad048ec216806ae1cf2117c7f0960fa6c0bfd37eb4921aeada9609f47bd5d",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/P003.R1",
+      "sha256": "02c6da0881c3ea584e60b09a684bcf86f02d25f6020d35daabd08887fa2a49bb",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/P004.R1",
+      "sha256": "fbf39d9fe85e6df1eebb698dc6ce3ccd3c0218a4590eefe0056f4502b74388b3",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/P005.R1",
+      "sha256": "9dcd841e206093e846f43a16d92e1d809557277e7fed21071dce6ecf4c8a912a",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/P009.R1",
+      "sha256": "4968b95248cdc456865519deda15f2a706e2890e2437d2f7e1f6797ebb4ae866",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/R000.R1",
+      "sha256": "abdd7c775343182001a9a5581c41642995356dae0171d474ca71fe35f090d7df",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/R002.R1",
+      "sha256": "85ee7bac15912146e0652b2342daf4e38a5c13a0d041829cf492860fb74fb19e",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/R004.R1",
+      "sha256": "59d2546d97ea919693caf7c9f6e7999e9199a16f595b28a1fb52edb34e9b9d46",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/R006.R1",
+      "sha256": "9310230637a77eac4f7010635b5c25fe26d8386c1e8b4b3213e22110a3e8905f",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/R008.R1",
+      "sha256": "1aacc2bc862f65fd18c8eb0274d8865172e929502a9f58c379136589a48634f1",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/R010.R1",
+      "sha256": "7c88788bb5ad5cb89026f1e03f0242585d58b873b4ff5882d965b42119b9d803",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/R012.R1",
+      "sha256": "b93a1fa8b8032793a0700233ccf3920afa52d7e1df625cbf981d4ba3c015a815",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/T000.R1",
+      "sha256": "d0be3b597fae8ad34156a463c0be6e807f1028a9a97bca314b295921386de8d1",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/T001.R1",
+      "sha256": "417fa7aed840b6f03e6e7d33f77a96ad435db41758edb1bafcafe8f54dacff66",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/T002.R1",
+      "sha256": "7b9f50d2bc031532b4a7a192bc4c259f76077272b84ee195e19f867b6f64f9b4",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/T003.R1",
+      "sha256": "49c1b38594894c58960fc26094ce91876f9710dfa0e2d5a7924ea7eb90e8b000",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/T004.R1",
+      "sha256": "fee5298d60b0649792210281d7da13a0b276d1ca5ad61d91dcd144c6b9325e80",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/T005.R1",
+      "sha256": "cf84a64cf3e6da4643ffeba0ea6d8bb9a53bef3a75aacc07f6dc8add07d11306",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/T006.R1",
+      "sha256": "b139b89a9d940bc31a28abde1a0ac1c5d7b14fbe3288a613c3a7e7f0e4a1a4cb",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/T007.R1",
+      "sha256": "fac680b3a20eb67531385096ac1e4e80518f9c4a0363debdbbcbebd73187c3aa",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/U020A.R1",
+      "sha256": "713136f702fd1b40c62cca016d14343cc68d6f4c93d94d09e1a6189842c97fad",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/U020B.R1",
+      "sha256": "3af5ca378977d8e2a9ab8ca70771693054c056b1b72e457ede5cc5bb63eedd06",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/V000.R1",
+      "sha256": "18f9169cba4a5d704a85f2427631dd51caf662e30e9a7e1cff4e4b28736a1cef",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/V001.R1",
+      "sha256": "a1d24cd37f2a9e6095dbb6565b4096f83b4485b33e48b733b1c2e3c82d93b4c4",
+      "unchanged": true
+    },
+    {
+      "name": "EXPECT/W000.R1",
+      "sha256": "826b594b0314b4a75fe98cee3f8bc40f369e385131f7aafdc5d662f23f6569aa",
+      "unchanged": true
+    },
+    {
+      "name": "FILE.C",
+      "sha256": "2cbe9e7eb4c2ef852ef066c52403aa1ebf9e920d5030e2f93611c2fae229b7a4",
+      "unchanged": true
+    },
+    {
+      "name": "FILES.C",
+      "sha256": "7a2161d2046e2a1fcbd5f3f0d1f4c9065937fbcbc15e79342d7290b9b360f6f7",
+      "unchanged": true
+    },
+    {
+      "name": "FORMAT.C",
+      "sha256": "5b3dad0a8e21eb1d4398684510cecca0e5817c9199f382754a635fb4aba877d8",
+      "unchanged": true
+    },
+    {
+      "name": "INDATA.BIN",
+      "sha256": "0642e821f9a803821d8858cbd16e1c6e8bf43ca66952d7efbfb2dcc0fd8c4ccd",
+      "unchanged": true
+    },
+    {
+      "name": "INNATE.H",
+      "sha256": "dadc256f425d84cb10389c559cc5e1863dbb5f1c09b6630dbc15443f1de3bd1c",
+      "unchanged": true
+    },
+    {
+      "name": "NEARSTAT.C",
+      "sha256": "c5a242bc4f69563f0b22d6a194f695da36e25856ed80fd70118168eafc669070",
+      "unchanged": true
+    },
+    {
+      "name": "OUTPUT.C",
+      "sha256": "86aef5321fb1375b87e12fa483397780093a299f85f5740ec7cd34634b3024ac",
+      "unchanged": true
+    },
+    {
+      "name": "PASSWORD.C",
+      "sha256": "0c21314a9638f2a5b50ba1a24d82063532be9d945299ec6b333d823cae051792",
+      "unchanged": true
+    },
+    {
+      "name": "PLANET.C",
+      "sha256": "b72e176c1f40b31be879c64910c39d63474784c2ca3b97f27665120ec29d7975",
+      "unchanged": true
+    },
+    {
+      "name": "PLANETS.BIN",
+      "sha256": "123cc31c7d0c54faf21a38d163469108b3be7664673d3695eb10ed5ff2380560",
+      "unchanged": true
+    },
+    {
+      "name": "RACE.C",
+      "sha256": "3a8da9b5dd5bd7675c28313733f95198f990da503c751891bc02583b8d3872fe",
+      "unchanged": true
+    },
+    {
+      "name": "RACEDRAW.C",
+      "sha256": "c70a39500040423a55f5a28a8bc5886b507831ce5de44141877bf584e10764e8",
+      "unchanged": true
+    },
+    {
+      "name": "RACEUI.C",
+      "sha256": "09b0d78650c3f2990bf75faab8d63eb225fb95114fc8b88a687490c4254047d0",
+      "unchanged": true
+    },
+    {
+      "name": "RACEUI.H",
+      "sha256": "da4d180deb8c5c6652750185d541ba124a2efeb4fe4bc38a89204a92a533682c",
+      "unchanged": true
+    },
+    {
+      "name": "RACEVC.DEF",
+      "sha256": "ac679b25618c5ca46f64a7e637f4e0836183c3140671816ed1ea12f0b812e7f4",
+      "unchanged": true
+    },
+    {
+      "name": "RACEVC.LNK",
+      "sha256": "2e53c21fef289f45f31e5a6f956c61d697afb028ceb1ae6377f94793d41647c7",
+      "unchanged": true
+    },
+    {
+      "name": "RACEVC.RSP",
+      "sha256": "13a6ecee9a6bb1fef0628c5ad86b5f888157cf4c2e772f3803faa8b5ba402858",
+      "unchanged": true
+    },
+    {
+      "name": "RACEWIZ.C",
+      "sha256": "3d8b271e303ca6e3624f59c794ba23bdc3fa81acd6f82805277a5b0eb764816d",
+      "unchanged": true
+    },
+    {
+      "name": "README.TXT",
+      "sha256": "27d8e872a69bd3f8810fb35b0f23139f7b1942e0394cc9c28b6518160f8f5799",
+      "unchanged": true
+    },
+    {
+      "name": "RECORDS.C",
+      "sha256": "af9f67bef1b30154180bb3628148c8712abb45d07e924d176a656d1a3afbbe7a",
+      "unchanged": true
+    },
+    {
+      "name": "RSDATA.DAT",
+      "sha256": "5c945a99a8915527f34deb851aaf19908dc1847c0577674e7de31133901f59c1",
+      "unchanged": true
+    },
+    {
+      "name": "RTINT.H",
+      "sha256": "abb92fc9afd3a30d111b28c6c6c196885a1c98fc901eaf7af18f6d5c029995ae",
+      "unchanged": true
+    },
+    {
+      "name": "RUNNER.C",
+      "sha256": "8a72985bf557efe2f35d296faa7b253958afebb9ebf9f6ab3fb5020c1c05d42b",
+      "unchanged": true
+    },
+    {
+      "name": "RUNTIME.C",
+      "sha256": "7b722dba4185cd672eb51ba58268247fff056995aeb6f795fe479c4aa704bcab",
+      "unchanged": true
+    },
+    {
+      "name": "RUNTIME.H",
+      "sha256": "43024554ee7dd6bdd0f2423a986f9fb01cb20db892bc8f9d626d22e8b8d3c322",
+      "unchanged": true
+    },
+    {
+      "name": "SEEDTAB.INC",
+      "sha256": "e41d3c2cb444a569e176f814d34d96d700e8cefb0ce740349a00b7bd55563f5d",
+      "unchanged": true
+    },
+    {
+      "name": "STREAM.C",
+      "sha256": "97cad1737ec96737b5aeffabb70763e66ecac404b9417c77f2d4c3bfcc5afd2c",
+      "unchanged": true
+    },
+    {
+      "name": "STRINGS.BIN",
+      "sha256": "f2827b392fdbeefc3cfee79933ec0157f6a27e92c3ca5e133018689cede3186c",
+      "unchanged": true
+    },
+    {
+      "name": "STRINGS.C",
+      "sha256": "418fd9448e5a1d0061ed2b814d606db39941a7c9975a55ceff2db167f5703ddf",
+      "unchanged": true
+    },
+    {
+      "name": "TEST.H",
+      "sha256": "62be2deabf166c0a2f435682d57ca6fe67a6d14f288a1ca6a5b81a59c3d2f18f",
+      "unchanged": true
+    },
+    {
+      "name": "TEXT.C",
+      "sha256": "08f64fb523c8c704b8ac4dc4fc65b7875451635b6ffe3190aa991deee7491517",
+      "unchanged": true
+    },
+    {
+      "name": "UI.C",
+      "sha256": "3870f0120709d64f3b0cb59105703e1fff19e3cbe4519c373f5d136d0c8b6994",
+      "unchanged": true
+    },
+    {
+      "name": "UIINT.H",
+      "sha256": "7108c325c38ff55276e3e81d484920853e106b2100e377c96810185c010424ce",
+      "unchanged": true
+    },
+    {
+      "name": "UTILGEN.C",
+      "sha256": "0a63f4b3c4c6067711e2907cce94e1e648bf7bd86a4065eada5bfbbc77b8f4ef",
+      "unchanged": true
+    },
+    {
+      "name": "WORLD.C",
+      "sha256": "dcbd3d8231ae99ee8dbf646936d078e0db2da94049b956f4cbb1adb5ac45672f",
+      "unchanged": true
+    }
+  ],
+  "assessment": {
+    "package_inputs_unchanged": true,
+    "package_input_count": 104,
+    "returned_manifest_unchanged": true,
+    "expected_object_count": 23,
+    "present_nonempty_object_count": 23,
+    "compile": "PASS",
+    "link": "FAIL",
+    "native_execution": "not established; no RESULTS.TXT",
+    "additional_output_capture_present": false,
+    "linker": "Microsoft Segmented Executable Linker 5.60.339, Dec 5 1994",
+    "reported_linker_errors": [
+      "RUNNER.OBJ(runner.c) : error L2029: '_chdir' : unresolved external"
+    ],
+    "reported_compile_warnings": [
+      "format.c(125) : warning C4018: '<' : signed/unsigned mismatch",
+      "format.c(126) : warning C4018: '>' : signed/unsigned mismatch"
+    ]
+  },
+  "replacement": {
+    "package": "ftp-share/RACEVC2.ZIP",
+    "sha256": "a9c83271040c8ecba2e7b5e5718b670f1b12c6701be1f0a272891281a24fce0d",
+    "changed_package_inputs": [
+      "BUILD.BAT",
+      "FORMAT.C",
+      "README.TXT",
+      "RUNNER.C"
+    ],
+    "manifest_changed": true,
+    "scenario_and_expected_binary_inputs_unchanged": true,
+    "local_validation": {
+      "focused_tests_passed": 11,
+      "race_scenarios": 88,
+      "race_checks": 812,
+      "race_failures": 0,
+      "race_file_matches": 61,
+      "native_launcher_declaration_smoke_check": "pass; former chdir call rejected",
+      "formatter_original_instruction_checks": "pass, including signed key boundaries 8000/FFFF"
+    },
+    "native_status": "corrected link and run pending"
+  }
+}
