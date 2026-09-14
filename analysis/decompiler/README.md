@@ -96,3 +96,11 @@ Automatic classification currently identifies **901,135 instruction bytes**, **1
 There are 100 distinct indirect-transfer instructions: 58 with static target sets, **20 unresolved transfers**, and 22 OS interrupts whose service behavior needs runtime review. The unresolved list includes game enumeration/drawing callbacks, bsearch/qsort comparators, CRT initialization/termination/allocation hooks, stack-check continuations and a remaining math dispatch. Address-taken relocation candidates are leads, not proof of a particular callback consumer. Dynamic/constructed pointers may reveal more candidates during execution.
 
 Raw C still contains segmented-pointer casts, split-word operations, imperfect inferred runtime signatures, and decompiler-specific expressions. Creating C output is not evidence that every expression is correct or compilable. Further discovery can also change the function count. Step 4 supplies the execution reference; step 5 reviews and reconstructs each function. VC1.5 setup can proceed independently.
+# Segment-register instruction display correction
+
+Step 5 found a display-only operand-order defect in pinned Ghidra's register-form
+MOV-to-segment instructions. P-code assignment direction is correct. Consult
+`analysis/reconstruction/segment-moves.json` for byte-derived corrections before
+using those raw instruction labels. Reproduce with
+`python3 -m tools.audit_segment_moves`; the original exports and hashes are retained.
+See `analysis/reconstruction/race-validation.md` for the audit evidence.

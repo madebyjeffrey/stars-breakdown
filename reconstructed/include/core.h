@@ -64,4 +64,10 @@ StarsI16 stars_set_victory_value(StarsU8 *data, StarsU16 game, StarsI16 index, S
 void stars_init_battle_plan(StarsU8 *data, StarsU16 output, StarsI16 template_index, StarsI16 plan_id);
 StarsU32 stars_computer_player_pointer(StarsU16 code_selector, StarsI16 race, StarsI16 level);
 void stars_init_new_game3(void);
+/* Stat setter index must be 0..15. All memory images are complete 64 KiB. */
+StarsI16 stars_set_race_stat(StarsU8 *data, StarsU16 player, StarsI16 index, StarsI16 value);
+StarsI16 stars_get_race_trait(const StarsU8 *data, StarsU16 player, StarsI16 index);
+void stars_set_race_trait(StarsU8 *data, StarsU16 player, StarsI16 index, StarsI16 enabled);
+StarsU16 stars_race_checksum(const StarsU8 *data, StarsU16 player);
+void stars_bounds_check_player(StarsU8 *data, StarsU16 player);
 #endif

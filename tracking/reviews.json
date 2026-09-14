@@ -414,5 +414,70 @@
       "analysis/reconstruction/create.md",
       "tests/test_create_machine.py"
     ]
+  },
+  "001d:3114-3175": {
+    "reconstruction_path": "reconstructed/src/race.c",
+    "review_status": "manually_reviewed",
+    "compilation_status": "host_c89_compiled",
+    "validation_status": "original_x86_differential_checked_with_documented_memory_limits; host_semantic_adapter; Win16_integration_pending",
+    "evidence": [
+      "analysis/functions.json",
+      "analysis/debug/procedures.json",
+      "analysis/decompiler/export-manifest.json",
+      "analysis/reconstruction/race-validation.md",
+      "tests/test_race_machine.py"
+    ]
+  },
+  "001d:3176-31b8": {
+    "reconstruction_path": "reconstructed/src/race.c",
+    "review_status": "manually_reviewed",
+    "compilation_status": "host_c89_compiled",
+    "validation_status": "original_x86_differential_checked_with_documented_memory_limits; host_semantic_adapter; Win16_integration_pending",
+    "evidence": [
+      "analysis/functions.json",
+      "analysis/debug/procedures.json",
+      "analysis/decompiler/export-manifest.json",
+      "analysis/reconstruction/race-validation.md",
+      "tests/test_race_machine.py"
+    ]
+  },
+  "001d:31b8-3209": {
+    "reconstruction_path": "reconstructed/src/race.c",
+    "review_status": "manually_reviewed",
+    "compilation_status": "host_c89_compiled",
+    "validation_status": "original_x86_differential_checked_with_documented_memory_limits; host_semantic_adapter; Win16_integration_pending",
+    "evidence": [
+      "analysis/functions.json",
+      "analysis/debug/procedures.json",
+      "analysis/decompiler/export-manifest.json",
+      "analysis/reconstruction/race-validation.md",
+      "tests/test_race_machine.py"
+    ]
+  },
+  "001d:40ae-440f": {
+    "reconstruction_path": "reconstructed/src/race.c",
+    "review_status": "manually_reviewed",
+    "compilation_status": "host_c89_compiled",
+    "validation_status": "original_x86_differential_checked_with_documented_memory_limits; host_semantic_adapter; Win16_integration_pending",
+    "evidence": [
+      "analysis/functions.json",
+      "analysis/debug/procedures.json",
+      "analysis/decompiler/export-manifest.json",
+      "analysis/reconstruction/race-validation.md",
+      "tests/test_race_machine.py"
+    ]
+  },
+  "001d:5888-58d3": {
+    "reconstruction_path": "reconstructed/src/race.c",
+    "review_status": "manually_reviewed",
+    "compilation_status": "host_c89_compiled",
+    "validation_status": "original_x86_differential_checked_with_documented_memory_limits; host_semantic_adapter; Win16_integration_pending",
+    "evidence": [
+      "analysis/functions.json",
+      "analysis/debug/procedures.json",
+      "analysis/decompiler/export-manifest.json",
+      "analysis/reconstruction/race-validation.md",
+      "tests/test_race_machine.py"
+    ]
   }
 }
