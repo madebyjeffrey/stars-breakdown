@@ -123,12 +123,13 @@ The immediate work is:
   representative recovered layouts and calling conventions, plus a small group
   of reconstructed routines. Record what the comparison establishes under U002.
   This is a step-5 integration check, not completion of the step-6 application.
-  **Package prepared 2026-09-14:** [VC1.52 fixture](compat/vc152/README.md),
-  exported to `ftp-share/VC152/` and `ftp-share/VC152.ZIP`. Eleven utility
-  routines have 113 retained original-x86 cases; the host probe passes 552
-  checks. The native probe expects 563 checks and separately compiles all
-  recovered headers. User VM build/run and returned-artifact comparison remain
-  pending; this checkbox stays open until that evidence is reviewed.
+  **RETURN1 reviewed 2026-09-14:** all 563 native utility checks passed;
+  compiler records match the original and five CRT modules match exactly.
+  The [review](analysis/compat/vc152-return1.md) also explains the C2057 header
+  failure. Revised [VC1.52 fixture](compat/vc152/README.md) package 2 is in
+  `ftp-share/VC152B/` and `ftp-share/VC152B.ZIP`, retaining every size assertion
+  and moving all 1,469 offset checks to a separate runtime test. Its native
+  layout run (1,491 checks) remains pending, so this checkbox stays open.
 - [ ] **Race-file save/load milestone:** reconstruct and integrate FSaveRace and
   FWasRaceFile with the existing creation, record, checksum and stream code.
   Close their message-formatting, logging and password dependencies, including

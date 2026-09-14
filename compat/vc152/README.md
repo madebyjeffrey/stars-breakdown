@@ -2,8 +2,10 @@
 
 This is the early step-5 compiler integration fixture for the user's Visual
 C++ 1.52c environment in an 86Box Windows 98 SE VM. The guest instructions are
-in [README.TXT](README.TXT). Native compilation and execution are **pending**;
-local C89 checks cannot establish a successful Win16 build.
+in [README.TXT](README.TXT). **RETURN1 passed all 563 native utility checks**;
+the header check stopped at C2057 field-offset assertions. Package 2 moves
+those offsets to a separate runtime test. Its native results remain pending.
+See the [returned-build review](../../analysis/compat/vc152-return1.md).
 
 Generate a fresh transfer folder and ZIP with:
 
@@ -11,7 +13,7 @@ Generate a fresh transfer folder and ZIP with:
 python3 tools/package_vc152.py
 ```
 
-The default outputs are `ftp-share/VC152/` and `ftp-share/VC152.ZIP`. The exporter
+The current outputs are `ftp-share/VC152B/` and `ftp-share/VC152B.ZIP`. The exporter
 uses a fixed allowlist and refuses to overwrite either output. Use `--output`
 with a new directory for another package. The share is ignored by Git; canonical
 fixture source, original-machine expectations, and the exporter are tracked.
@@ -26,11 +28,16 @@ eleven reconstructed functions require only small state structures, avoiding
 the other host adapters' 64-KiB synthetic DGROUP allocation requirement.
 
 `LAYOUT.C` separately compiles all four generated headers with
-`STARS_NATIVE16`. A failure here does not prevent building/running the utility
-probe. The layout object is not linked: generated extern declarations are
-metadata checks, not implemented game routines. The checks cover recovered
-storage views and pointer representations, not the original source spelling
-or compiler bit-field allocation.
+`STARS_NATIVE16` and links with `PROBE.C` compiled as `LAYMAIN.OBJ` using
+`LAYOUT_PROBE`. This produces `LAYOUT.EXE` and `LAYRES.TXT`; failure here does
+not prevent building/running the utility probe. Generated extern declarations
+remain unreferenced metadata. `STARS_RUNTIME_OFFSETS` retains all 772 type-size
+assertions and primitive checks, and defers the 1,469 field-offset assertions
+to the shared generated `soffsets.inc` checklist. Every offset is evaluated
+through the compiler's `offsetof` macro in function context. Ordinary header
+consumers retain the complete compile-time checks by default. The checks cover
+recovered storage views and pointer representations, not the original source
+spelling or compiler bit-field allocation.
 
 The build uses `/AM /GA /GEs /Zp1 /Od /Zi /W3`, and explicitly links `MLIBCEW`
 and `LIBW` with `/NOD /ALIGN:16 /CO /MAP`. `/AM` is a hypothesis consistent with
@@ -53,7 +60,11 @@ value/state assertions. The exported host C89 probe passed all 552 checks;
 the native probe expects 563. Both packaging tests pass, including the full
 generated-header host compile, deterministic ZIP/integrity checks, preservation
 of prior return artifacts, and deliberate vector mismatch detection. These
-results do not change the pending native-build status.
+results preceded RETURN1's native utility success. Package 2 additionally
+passes 1,480 host layout checks; the native layout executable expects 1,491.
+Ten focused package/debug-recovery tests pass, including a deliberately moved
+field that causes the new runtime layout check to fail. Package 2's native
+build/run remains pending; no failed assertion has been deleted.
 
 Capture/recheck expectations by executing the pinned original x86 instructions:
 
@@ -72,11 +83,12 @@ Run packaging, host C89 execution and generated-header checks with:
 python3 -m unittest tests.test_vc152_package -v
 ```
 
-The host executable writes `MODE=HOST_ONLY`; it omits native pointer sizes and
+The host executables write `MODE=HOST_ONLY`; they omit native pointer sizes and
 Win16 calling-convention validation. `MANIFEST.TXT` states the expected native
-and host check counts. A mutation check proves an incorrect expected vector
-causes a failing report. Guest build results remain independent: COMPILE, LINK,
-LAYOUT, then the runtime report. A partial build must not be reported as a pass.
+and host check counts. Mutation checks prove an incorrect expected vector and
+an incorrectly padded field cause failing reports. Guest statuses remain
+independent: COMPILE/LINK and LAYOUT/LAYLINK, then the two runtime reports.
+A partial build must not be reported as a pass.
 
 The sources and batch script use DOS 8.3 names and ASCII; export produces CRLF
 and renames local quoted include filenames without changing reconstructed
@@ -84,6 +96,13 @@ logic. Exact pre/post hashes are retained in the transfer manifest. ZIP content
 is deterministic and contains neither host paths nor Mac metadata.
 
 On return, preserve the raw guest files and hashes before interpreting them.
+The read-only reviewer can record an allowlisted return without ingesting FTP
+client/server configuration:
+
+```sh
+python3 -m tools.review_vc152 ftp-share/RETURN1/Vc152 --package ftp-share/VC152 --out analysis/compat/vc152-return1.json
+```
+
 Check `MODE=WIN16_MEDIUM`, the expected check count, zero failures, successful
 layout compilation, an NE executable and retained debug information. Compare
-the actual emitted evidence with the original before updating U002 or U011.
+the actual emitted evidence with the original before updating uncertainties.

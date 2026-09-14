@@ -1,0 +1,413 @@
+{
+  "schema": 1,
+  "returned": "ftp-share/RETURN1/Vc152",
+  "artifacts": {
+    "output.txt": {
+      "bytes": 131,
+      "sha256": "7af87b7e56d8ef8c63e2160cde3151b1a5ceebc51f853651ed6bae0f54270525"
+    },
+    "BLDSTAT.TXT": {
+      "bytes": 72,
+      "sha256": "8aa74a52d45daa0dd478b67138f89e6b24c71cb4666549d46fd4de060a798ecd"
+    },
+    "BUILD.LOG": {
+      "bytes": 74,
+      "sha256": "9aafd2835a8f22c8291e9b0320eaa84399008c87eb78c848a39edb18e0aec38e"
+    },
+    "LINK.LOG": {
+      "bytes": 413,
+      "sha256": "dcd17d5f3ffb57f23d79d09802921a29f96bd4048b68ef7ab9030bf614b451bd"
+    },
+    "LAYOUT.LOG": {
+      "bytes": 6190,
+      "sha256": "2cbc2358b8861aa1b16f1aff2dc057d02660e438dbfa4fd808bc39e70efe7c8a"
+    },
+    "RESULTS.TXT": {
+      "bytes": 242,
+      "sha256": "c25c619b172def78d511322cbbefd0fd9a4346958795a03ebb0b1ac0d0389ef7"
+    },
+    "PROBE.EXE": {
+      "bytes": 55304,
+      "sha256": "3b20ff1e7e5beea74e9f1554b1865c0072c684f732ab4d7c11c878d67372354d"
+    },
+    "PROBE.MAP": {
+      "bytes": 15889,
+      "sha256": "1bcb3975293188ee86c9bb2ab20b3c07fa9410b6aedda95b305648226b3b25ca"
+    },
+    "PROBE.OBJ": {
+      "bytes": 5375,
+      "sha256": "9b1184f6f96ce00cd8618ff18f0307d7decbfcca9daa45de0b3760d06189bcc2"
+    },
+    "ABI.OBJ": {
+      "bytes": 1439,
+      "sha256": "505fef6565d35a50f2987bf8e9b5e4d48a11240889e51b54d09e1998f8a9fa48"
+    },
+    "UTILGEN.OBJ": {
+      "bytes": 5686,
+      "sha256": "57415d889cd112585d587c386dc71729d8b01f6f8ecc047aa04cb41acdb62c9b"
+    },
+    "VECTEST.OBJ": {
+      "bytes": 25260,
+      "sha256": "776ec2b185992aebb7e693c1a333b0f635f4093f77d8de27dc6775849fe9ace7"
+    },
+    "msvc.pdb": {
+      "bytes": 1136,
+      "sha256": "f352ae9838a61cd355c69737442981b5f1853ca62663287145812fd7ed171246"
+    }
+  },
+  "logs": {
+    "output.txt": "This folder already contains build results. Preserve it for return.\nBuild again from a fresh package copy in a different folder.\n",
+    "BLDSTAT.TXT": "STARS_VC152_BUILD=\nROOT=C:\\MSVC\nCOMPILE=PASS\nLINK=PASS\nLAYOUT=FAIL\n",
+    "BUILD.LOG": "COMMAND: C:\\MSVC\\BIN\\CL @PROBE.RSP\nprobe.c\nabi.c\nvectest.c\nutilgen.c\n",
+    "LINK.LOG": "COMMAND: C:\\MSVC\\BIN\\LINK @PROBE.LNK\n\nMicrosoft (R) Segmented Executable Linker  Version 5.60.339 Dec  5 1994\nCopyright (C) Microsoft Corp 1984-1993.  All rights reserved.\n\nObject Modules [.obj]: PROBE.OBJ ABI.OBJ VECTEST.OBJ UTILGEN.OBJ \nRun File [PROBE.exe]: PROBE.EXE\nList File [nul.map]: PROBE.MAP\nLibraries [.lib]: MLIBCEW.LIB LIBW.LIB /NOD /ALIGN:16 /CO /MAP\nDefinitions File [nul.def]: PROBE.DEF\n",
+    "LAYOUT.LOG": "COMMAND: C:\\MSVC\\BIN\\CL @LAYOUT.RSP\nlayout.c\nSTYPES.H(7321) : error C2057: expected constant expression\nSTYPES.H(7322) : error C2057: expected constant expression\nSTYPES.H(7323) : error C2057: expected constant expression\nSTYPES.H(7324) : error C2057: expected constant expression\nSTYPES.H(7325) : error C2057: expected constant expression\nSTYPES.H(7326) : error C2057: expected constant expression\nSTYPES.H(7327) : error C2057: expected constant expression\nSTYPES.H(7328) : error C2057: expected constant expression\nSTYPES.H(7329) : error C2057: expected constant expression\nSTYPES.H(7330) : error C2057: expected constant expression\nSTYPES.H(7331) : error C2057: expected constant expression\nSTYPES.H(7332) : error C2057: expected constant expression\nSTYPES.H(7333) : error C2057: expected constant expression\nSTYPES.H(7334) : error C2057: expected constant expression\nSTYPES.H(7335) : error C2057: expected constant expression\nSTYPES.H(7336) : error C2057: expected constant expression\nSTYPES.H(7337) : error C2057: expected constant expression\nSTYPES.H(7338) : error C2057: expected constant expression\nSTYPES.H(7339) : error C2057: expected constant expression\nSTYPES.H(7340) : error C2057: expected constant expression\nSTYPES.H(7341) : error C2057: expected constant expression\nSTYPES.H(7342) : error C2057: expected constant expression\nSTYPES.H(7343) : error C2057: expected constant expression\nSTYPES.H(7344) : error C2057: expected constant expression\nSTYPES.H(7345) : error C2057: expected constant expression\nSTYPES.H(7346) : error C2057: expected constant expression\nSTYPES.H(7347) : error C2057: expected constant expression\nSTYPES.H(7348) : error C2057: expected constant expression\nSTYPES.H(7349) : error C2057: expected constant expression\nSTYPES.H(7350) : error C2057: expected constant expression\nSTYPES.H(7351) : error C2057: expected constant expression\nSTYPES.H(7352) : error C2057: expected constant expression\nSTYPES.H(7353) : error C2057: expected constant expression\nSTYPES.H(7354) : error C2057: expected constant expression\nSTYPES.H(7355) : error C2057: expected constant expression\nSTYPES.H(7356) : error C2057: expected constant expression\nSTYPES.H(7357) : error C2057: expected constant expression\nSTYPES.H(7358) : error C2057: expected constant expression\nSTYPES.H(7359) : error C2057: expected constant expression\nSTYPES.H(7360) : error C2057: expected constant expression\nSTYPES.H(7365) : error C2057: expected constant expression\nSTYPES.H(7366) : error C2057: expected constant expression\nSTYPES.H(7371) : error C2057: expected constant expression\nSTYPES.H(7372) : error C2057: expected constant expression\nSTYPES.H(7373) : error C2057: expected constant expression\nSTYPES.H(7384) : error C2057: expected constant expression\nSTYPES.H(7385) : error C2057: expected constant expression\nSTYPES.H(7386) : error C2057: expected constant expression\nSTYPES.H(7387) : error C2057: expected constant expression\nSTYPES.H(7388) : error C2057: expected constant expression\nSTYPES.H(7389) : error C2057: expected constant expression\nSTYPES.H(7390) : error C2057: expected constant expression\nSTYPES.H(7391) : error C2057: expected constant expression\nSTYPES.H(7392) : error C2057: expected constant expression\nSTYPES.H(7393) : error C2057: expected constant expression\nSTYPES.H(7394) : error C2057: expected constant expression\nSTYPES.H(7395) : error C2057: expected constant expression\nSTYPES.H(7396) : error C2057: expected constant expression\nSTYPES.H(7397) : error C2057: expected constant expression\nSTYPES.H(7398) : error C2057: expected constant expression\nSTYPES.H(7399) : error C2057: expected constant expression\nSTYPES.H(7400) : error C2057: expected constant expression\nSTYPES.H(7401) : error C2057: expected constant expression\nSTYPES.H(7402) : error C2057: expected constant expression\nSTYPES.H(7403) : error C2057: expected constant expression\nSTYPES.H(7404) : error C2057: expected constant expression\nSTYPES.H(7405) : error C2057: expected constant expression\nSTYPES.H(7406) : error C2057: expected constant expression\nSTYPES.H(7407) : error C2057: expected constant expression\nSTYPES.H(7408) : error C2057: expected constant expression\nSTYPES.H(7409) : error C2057: expected constant expression\nSTYPES.H(7410) : error C2057: expected constant expression\nSTYPES.H(7411) : error C2057: expected constant expression\nSTYPES.H(7412) : error C2057: expected constant expression\nSTYPES.H(7413) : error C2057: expected constant expression\nSTYPES.H(7414) : error C2057: expected constant expression\nSTYPES.H(7415) : error C2057: expected constant expression\nSTYPES.H(7416) : error C2057: expected constant expression\nSTYPES.H(7417) : error C2057: expected constant expression\nSTYPES.H(7418) : error C2057: expected constant expression\nSTYPES.H(7419) : error C2057: expected constant expression\nSTYPES.H(7420) : error C2057: expected constant expression\nSTYPES.H(7421) : error C2057: expected constant expression\nSTYPES.H(7422) : error C2057: expected constant expression\nSTYPES.H(7426) : error C2057: expected constant expression\nSTYPES.H(7427) : error C2057: expected constant expression\nSTYPES.H(7430) : error C2057: expected constant expression\nSTYPES.H(7432) : error C2057: expected constant expression\nSTYPES.H(7433) : error C2057: expected constant expression\nSTYPES.H(7435) : error C2057: expected constant expression\nSTYPES.H(7436) : error C2057: expected constant expression\nSTYPES.H(7438) : error C2057: expected constant expression\nSTYPES.H(7440) : error C2057: expected constant expression\nSTYPES.H(7441) : error C2057: expected constant expression\nSTYPES.H(7442) : error C2057: expected constant expression\nSTYPES.H(7443) : error C2057: expected constant expression\nSTYPES.H(7444) : error C2057: expected constant expression\nSTYPES.H(7445) : error C2057: expected constant expression\nSTYPES.H(7446) : error C2057: expected constant expression\nSTYPES.H(7447) : error C2057: expected constant expression\nSTYPES.H(7448) : error C2057: expected constant expression\nSTYPES.H(7448) : fatal error C1003: error count exceeds 100; stopping compilation\n",
+    "RESULTS.TXT": "STARS_VC152_PROBE=1\nBUILD=Sep 14 2026 00:48:33\nMODE=WIN16_MEDIUM\n_MSC_VER=800\n_M_I86=1\n_M_I86MM=1\nsizeof(int)=2 sizeof(long)=4 sizeof(void*)=2\nnear_data=2 far_data=4 huge_data=4 default_function=4\nCHECKS=563\nFAILURES=0\nRESULT=PASS\n"
+  },
+  "package_inputs": [
+    {
+      "name": "ABI.C",
+      "sha256": "607ddb147e427f1b4f747aeebec57029395a3a51f57b6e37a6d8cb54ba9098d4",
+      "unchanged": true
+    },
+    {
+      "name": "BUILD.BAT",
+      "sha256": "1df90ca0b46b0386f8243b2432ca1afd201282ad59d9bfc08a68cc85cde477d9",
+      "unchanged": true
+    },
+    {
+      "name": "CORE.H",
+      "sha256": "1aa44a48a518a1d59cde43d80df56e71e22b663506d8c070b2e02eeee1ff679d",
+      "unchanged": true
+    },
+    {
+      "name": "LAYOUT.C",
+      "sha256": "856a12545cee18c07ff87e03906bccae3932e8ca335f25d1c80aa11e6104c398",
+      "unchanged": true
+    },
+    {
+      "name": "LAYOUT.RSP",
+      "sha256": "51f01020c0514f62492ccf8db99b9dd2ea3f96f812db03fe0ba70c1faba816c9",
+      "unchanged": true
+    },
+    {
+      "name": "MANIFEST.TXT",
+      "sha256": "ba7c5e86e62fc4026a67a7c676b124e7fd62ddfe99a29ac8b6dabd8364758e45",
+      "unchanged": true
+    },
+    {
+      "name": "PROBE.C",
+      "sha256": "8cc21c41a3e71153f7c77fdd7a4f652bcc4d243e64e30d46fa099d3ea48724d0",
+      "unchanged": true
+    },
+    {
+      "name": "PROBE.DEF",
+      "sha256": "7dbce061dbfc45cf2f2de1f552987d32698638ad82bc132da1a559aa8bb1548b",
+      "unchanged": true
+    },
+    {
+      "name": "PROBE.H",
+      "sha256": "54e8b48a6eab59857a7d9cb4ce54cc060403d6249149667bd0d681623ebeb55f",
+      "unchanged": true
+    },
+    {
+      "name": "PROBE.LNK",
+      "sha256": "ae5722943b51a6357a6b10cc205d856cf4ace3174c3f6fa75f7a43b7d752abef",
+      "unchanged": true
+    },
+    {
+      "name": "PROBE.RSP",
+      "sha256": "56ba0d48e5d6c5b7d16265c0cb3b2cdb6066c1603b136c13cf238bf8945a1470",
+      "unchanged": true
+    },
+    {
+      "name": "README.TXT",
+      "sha256": "6ec01b0912d16b9a651e1cbc9b16a28d1669b5c0655f3a6706f39de50e10eb84",
+      "unchanged": true
+    },
+    {
+      "name": "SCONST.H",
+      "sha256": "7df8ceba73129ef0bc634a1e1d048f4120237d4628241766ace9a4415fef2b5e",
+      "unchanged": true
+    },
+    {
+      "name": "SEEDTAB.INC",
+      "sha256": "e41d3c2cb444a569e176f814d34d96d700e8cefb0ce740349a00b7bd55563f5d",
+      "unchanged": true
+    },
+    {
+      "name": "SFUNCS.H",
+      "sha256": "56a9a62a6dc8bfce605e2685cb55334ef9f8c5eb344adeb2c74a37e970280b1f",
+      "unchanged": true
+    },
+    {
+      "name": "SGLOBALS.H",
+      "sha256": "46cc1c26cdbc316829382667b999fe842061fb2804572a255830668e09f51318",
+      "unchanged": true
+    },
+    {
+      "name": "STYPES.H",
+      "sha256": "97b5dd01a6740193214e2c1462e28f055f37088025054fb92ee344ef35b00ffa",
+      "unchanged": true
+    },
+    {
+      "name": "UTILGEN.C",
+      "sha256": "0a63f4b3c4c6067711e2907cce94e1e648bf7bd86a4065eada5bfbbc77b8f4ef",
+      "unchanged": true
+    },
+    {
+      "name": "VECTEST.C",
+      "sha256": "3d4daa7d1d82e99c07c66e621cc2755f88b66ca70b0bacf97ff4c324fbf98b6a",
+      "unchanged": true
+    }
+  ],
+  "original_sha256": "ccab6682b55dae14dbf104e491cfbd3b32a6280022020032ae0615500949ba59",
+  "probe_debug_summary": {
+    "input": "ftp-share/RETURN1/Vc152/PROBE.EXE",
+    "bytes": 55304,
+    "sha256": "3b20ff1e7e5beea74e9f1554b1865c0072c684f732ab4d7c11c878d67372354d",
+    "debug_offset": 30536,
+    "debug_bytes": 24768,
+    "ne_segments": 2,
+    "modules": 57,
+    "functions": 34,
+    "symbol_records": 479,
+    "types": 59,
+    "source_files": [
+      "abi.c",
+      "probe.c",
+      "utilgen.c",
+      "vectest.c"
+    ],
+    "source_line_records": 670,
+    "symbol_record_kinds": {
+      "0005": 4,
+      "0009": 4,
+      "0104": 17,
+      "0100": 85,
+      "0006": 34,
+      "0105": 17,
+      "0101": 5,
+      "0001": 4,
+      "0103": 196,
+      "0402": 3,
+      "0004": 71,
+      "0400": 34,
+      "0401": 5
+    },
+    "compilers": [
+      "8.00c    "
+    ]
+  },
+  "compiler_records": [
+    {
+      "module": 54,
+      "record_offset": 1632,
+      "kind": "0001",
+      "raw": "120001000000080109382e303063202020200000",
+      "compiler": "8.00c    ",
+      "machine": 0,
+      "compiler_flags": "000801"
+    },
+    {
+      "module": 55,
+      "record_offset": 768,
+      "kind": "0001",
+      "raw": "120001000000080109382e303063202020200000",
+      "compiler": "8.00c    ",
+      "machine": 0,
+      "compiler_flags": "000801"
+    },
+    {
+      "module": 56,
+      "record_offset": 416,
+      "kind": "0001",
+      "raw": "120001000000080109382e303063202020200000",
+      "compiler": "8.00c    ",
+      "machine": 0,
+      "compiler_flags": "000801"
+    },
+    {
+      "module": 57,
+      "record_offset": 536,
+      "kind": "0001",
+      "raw": "120001000000080109382e303063202020200000",
+      "compiler": "8.00c    ",
+      "machine": 0,
+      "compiler_flags": "000801"
+    }
+  ],
+  "compiler_record_bytes_match_all_original_game_objects": true,
+  "original_game_compiler_records": 40,
+  "direct_object_modules": {
+    "54": {
+      "name": "UTILGEN.OBJ",
+      "spans": [
+        {
+          "segment": 4,
+          "padding": 0,
+          "offset": 0,
+          "size": 1735
+        }
+      ],
+      "library": 256
+    },
+    "55": {
+      "name": "VECTEST.OBJ",
+      "spans": [
+        {
+          "segment": 3,
+          "padding": 0,
+          "offset": 0,
+          "size": 12453
+        }
+      ],
+      "library": 256
+    },
+    "56": {
+      "name": "ABI.OBJ",
+      "spans": [
+        {
+          "segment": 2,
+          "padding": 0,
+          "offset": 0,
+          "size": 256
+        }
+      ],
+      "library": 256
+    },
+    "57": {
+      "name": "PROBE.OBJ",
+      "spans": [
+        {
+          "segment": 1,
+          "padding": 0,
+          "offset": 0,
+          "size": 1376
+        }
+      ],
+      "library": 256
+    }
+  },
+  "library_module_counts": {
+    "1": 53,
+    "256": 4
+  },
+  "libraries": [
+    "",
+    "MLIBCEW.LIB",
+    "LIBW.LIB"
+  ],
+  "ne_linker_version": "5.60",
+  "abi_procedures": [
+    {
+      "name": "probe_cdecl",
+      "ne_segment": 1,
+      "ne_offset": 1376,
+      "file_offset": 1648,
+      "size": 69,
+      "raw": "558becb806009ac240fe0456578a460c25ff00998b4e06bb00008946fa8956fc8bc18bd3b910009a7058690533460833560a8b4efa8b5efc03c113d3e900005f5e8be55dcb",
+      "type_record": {
+        "index": 4138,
+        "leaf": "0008",
+        "raw": "08002200010003002910",
+        "return_type": 34,
+        "calling_convention": 1,
+        "parameter_count": 3,
+        "argument_list": 4137
+      }
+    },
+    {
+      "name": "probe_pascal",
+      "ne_segment": 1,
+      "ne_offset": 1446,
+      "file_offset": 1718,
+      "size": 71,
+      "raw": "558becb806009ac2408a0556578a460625ff00998b4e0cbb00008946fa8956fc8bc18bd3b910009a7058af0533460833560a8b4efa8b5efc2bc11bd3e900005f5e8be55dca0800",
+      "type_record": {
+        "index": 4139,
+        "leaf": "0008",
+        "raw": "08002200030003002910",
+        "return_type": 34,
+        "calling_convention": 3,
+        "parameter_count": 3,
+        "argument_list": 4137
+      }
+    },
+    {
+      "name": "probe_near",
+      "ne_segment": 1,
+      "ne_offset": 1518,
+      "file_offset": 1790,
+      "size": 69,
+      "raw": "558becb806009ac240d00556578a460a25ff00998b4e04bb00008946fa8956fc8bc18bd3b910009a7058f7053346063356088b4efa8b5efc33c133d3e900005f5e8be55dc3",
+      "type_record": {
+        "index": 4140,
+        "leaf": "0008",
+        "raw": "08002200000003002910",
+        "return_type": 34,
+        "calling_convention": 0,
+        "parameter_count": 3,
+        "argument_list": 4137
+      }
+    },
+    {
+      "name": "probe_near_wrapper",
+      "ne_segment": 1,
+      "ne_offset": 1588,
+      "file_offset": 1860,
+      "size": 44,
+      "raw": "558becb802009ac240180656578a460c25ff0050ff760aff7608ff7606e89aff83c408e900005f5e8be55dcb",
+      "type_record": {
+        "index": 4138,
+        "leaf": "0008",
+        "raw": "08002200010003002910",
+        "return_type": 34,
+        "calling_convention": 1,
+        "parameter_count": 3,
+        "argument_list": 4137
+      }
+    }
+  ],
+  "arithmetic_runtime_fingerprints": [
+    {
+      "module": "lmul.asm",
+      "original_bytes": 50,
+      "probe_bytes": 50,
+      "original_sha256": "8c62adb4c675947443e01a6ed0c071c6226326bcf97f2e8dc07a2e3461f161d4",
+      "probe_sha256": "8c62adb4c675947443e01a6ed0c071c6226326bcf97f2e8dc07a2e3461f161d4",
+      "exact_unmodified_byte_match": true
+    },
+    {
+      "module": "lshl.asm",
+      "original_bytes": 11,
+      "probe_bytes": 11,
+      "original_sha256": "dda4a262ac108716fcc6bff13976eb59132e8232fed1db53d7ae8cd97bf66338",
+      "probe_sha256": "dda4a262ac108716fcc6bff13976eb59132e8232fed1db53d7ae8cd97bf66338",
+      "exact_unmodified_byte_match": true
+    },
+    {
+      "module": "uldiv.asm",
+      "original_bytes": 95,
+      "probe_bytes": 95,
+      "original_sha256": "7a5aec7334e3d937127ffc7c0250792e5b586c0d4182d528f8580ea91011f7d4",
+      "probe_sha256": "7a5aec7334e3d937127ffc7c0250792e5b586c0d4182d528f8580ea91011f7d4",
+      "exact_unmodified_byte_match": true
+    },
+    {
+      "module": "ulrem.asm",
+      "original_bytes": 106,
+      "probe_bytes": 106,
+      "original_sha256": "8b67ce939046f85985596229fc8cd44eb18b6ad797c5fa5fec197c4552a979a8",
+      "probe_sha256": "8b67ce939046f85985596229fc8cd44eb18b6ad797c5fa5fec197c4552a979a8",
+      "exact_unmodified_byte_match": true
+    },
+    {
+      "module": "ulshr.asm",
+      "original_bytes": 11,
+      "probe_bytes": 11,
+      "original_sha256": "632c324dfc508785f14589cb43fac0185cd7c895859e655d8046322da332eb45",
+      "probe_sha256": "632c324dfc508785f14589cb43fac0185cd7c895859e655d8046322da332eb45",
+      "exact_unmodified_byte_match": true
+    }
+  ]
+}

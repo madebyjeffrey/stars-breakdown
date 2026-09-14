@@ -30,4 +30,5 @@ StarsU32 PROBE_FAR PROBE_CDECL probe_near_wrapper(
     StarsU16 word, StarsU32 value, StarsU8 tail);
 void check_u32(const char *name, unsigned index, StarsU32 actual, StarsU32 expected);
 void run_vectors(void);
+void run_layouts(void);
 #endif

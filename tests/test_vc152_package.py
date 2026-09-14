@@ -70,7 +70,7 @@ class VC152PackageTests(unittest.TestCase):
             # C89's (), not a guessed (void); retain that metadata unchanged.
             subprocess.run(['cc', '-std=c89', '-pedantic', '-Wall', '-Wextra', '-Werror',
                             '-Wno-strict-prototypes',
-                            '-x', 'c', '-c', str(directory / 'LAYOUT.C'),
+                            '-DHOST_TEST', '-x', 'c', '-c', str(directory / 'LAYOUT.C'),
                             '-o', str(directory / 'layout-host.o')],
                            check=True, capture_output=True, text=True)
             bad = copy.deepcopy(document)
@@ -83,6 +83,35 @@ class VC152PackageTests(unittest.TestCase):
             report = (directory / 'RESULTS.TXT').read_text()
             self.assertIn('FAIL randomize.first[0]', report)
             self.assertIn('CHECKS=552\nFAILURES=1\nRESULT=FAIL', report)
+
+    def test_layout_runner_checks_every_offset_and_detects_wrong_padding(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            directory = Path(tmp) / 'PACKAGE'
+            export(directory)
+            command = ['cc', '-std=c89', '-pedantic', '-Wall', '-Wextra', '-Werror',
+                       '-Wno-strict-prototypes', '-DHOST_TEST', '-DLAYOUT_PROBE',
+                       '-x', 'c', str(directory / 'PROBE.C'), str(directory / 'LAYOUT.C'),
+                       '-o', str(directory / 'layout-host')]
+            subprocess.run(command, check=True, capture_output=True, text=True)
+            result = subprocess.run([str(directory / 'layout-host')], cwd=directory)
+            self.assertEqual(result.returncode, 0)
+            report = (directory / 'LAYRES.TXT').read_text()
+            self.assertIn('KIND=LAYOUT', report)
+            self.assertIn('CHECKS=1480\nFAILURES=0\nRESULT=PASS', report)
+            # Perturb one view, preserving its backing record size; runtime
+            # field checks must catch a real layout error even after deferral.
+            path = directory / 'STYPES.H'
+            source = path.read_text()
+            old = 'struct { unsigned char _pad[2]; STARS_CV_0011 value; } iPlayer;'
+            self.assertIn(old, source)
+            source = source.replace(old, old.replace('_pad[2]', '_pad[3]'), 1)
+            path.write_text(source)
+            subprocess.run(command, check=True, capture_output=True, text=True)
+            result = subprocess.run([str(directory / 'layout-host')], cwd=directory)
+            self.assertEqual(result.returncode, 1)
+            report = (directory / 'LAYRES.TXT').read_text()
+            self.assertIn('FAIL layout.offset[1] actual=00000003 expected=00000002', report)
+            self.assertIn('CHECKS=1480\nFAILURES=1\nRESULT=FAIL', report)
 
 
 if __name__ == '__main__':

@@ -1,94 +1,116 @@
-STARS VC++ 1.52c COMPATIBILITY PROBE - PACKAGE 1
+STARS VC++ 1.52c COMPATIBILITY PROBE - PACKAGE 2
 ==============================================
+
+RETURN1 PASSED THE UTILITY TEST; THIS PACKAGE FIXES THE LAYOUT TEST
+
+The first Win16 executable passed all 563 runtime checks. The compiler
+rejected field-offset expressions in file-scope array bounds (C2057).
+Package 2 retains all size assertions and runs all 1,469 offset checks
+in a separate LAYOUT.EXE. No field-offset checks have been discarded.
 
 BUILD AND RUN IN YOUR WINDOWS 98 SE / 86BOX VM
 
-1. Copy every file from this package into C:\STPROBE in the VM.
-   Use binary FTP transfer mode for all files, including the ZIP if used.
-   The ZIP contains the same files, with no enclosing directory.
-   Keep the source files together and use a short path without spaces.
+1. Copy every file into a FRESH directory, for example C:\STPROB2.
+   Use binary FTP mode. The ZIP contains the same files, without an enclosing
+   directory. Keep filenames together in a short DOS path without spaces.
+   Preserve the previous build/return folder.
 
-2. Open an MS-DOS Prompt while Windows 98 is running. Do not reboot to DOS.
-   Enter:
+2. Open an MS-DOS Prompt while Windows 98 is running. Enter:
 
        C:
-       CD \STPROBE
-       BUILD C:\MSVC15
+       CD \STPROB2
+       BUILD C:\MSVC
 
-   Replace C:\MSVC15 with your actual VC++ 1.52c installation directory.
-   It must contain BIN\CL.EXE, BIN\LINK.EXE, INCLUDE\WINDOWS.H,
-   LIB\MLIBCEW.LIB, and LIB\LIBW.LIB. Use the short DOS path if necessary.
-   No IDE project setup is needed. BUILD sets PATH, INCLUDE and LIB in this
-   prompt and clears CL/LINK option overrides. Close the prompt afterwards
-   to discard those environment changes.
+   C:\MSVC is the installation root recorded by RETURN1. If you moved the
+   compiler, substitute the directory containing BIN, INCLUDE and LIB.
+   BUILD sets PATH, INCLUDE and LIB in this prompt and clears CL/LINK option
+   overrides. Close the prompt afterwards to discard environment changes.
 
-3. BUILD prints a final status for COMPILE, LINK and LAYOUT. If LINK=PASS,
-   enter the following in the same prompt, even if LAYOUT=FAIL:
+3. When LINK=PASS, run:
 
        PROBE.EXE
 
-   Wait for its message box, then click OK. It writes RESULTS.TXT to the
-   current folder before showing the message. A successful native run ends
-   with RESULT=PASS and FAILURES=0. MANIFEST.TXT gives the expected count.
+   Wait for the message box and click OK. RESULTS.TXT should report:
+       KIND=UTILITY
+       MODE=WIN16_MEDIUM
+       CHECKS=563
+       FAILURES=0
+       RESULT=PASS
 
-4. Copy the whole C:\STPROBE folder back into a separate folder such as
-   ftp-share/RETURN1 on the host, using binary FTP transfer mode. Tell Codex
-   the returned folder is ready. Preserve the original outgoing package.
+4. When LAYLINK=PASS, also run:
 
-   The useful generated files are:
-       BLDSTAT.TXT   independent compile/link/header status
-       BUILD.LOG     runtime probe compiler output and command
-       LINK.LOG      linker output and command
-       LAYOUT.LOG    full recovered-header compiler output and command
-       RESULTS.TXT   runtime platform, ABI and original-game vector checks
-       *.OBJ         compiler-generated object code and debug information
-       PROBE.EXE     Win16 executable with CodeView information
-       PROBE.MAP     linked symbol and segment map
+       LAYOUT.EXE
 
-   Compiler/linker banners are enabled. COMMAND.COM cannot redirect stderr
-   with the newer 2>&1 syntax; some diagnostics/banners may only be visible
-   on screen. If absent from the logs, copy the compiler/linker version lines
-   and the FIRST error into a BANNERS.TXT file or your reply. Return failed
-   builds too. Do not strip debug information or change flags to force a pass.
+   Wait for its separate message box and click OK. LAYRES.TXT should report:
+       KIND=LAYOUT
+       MODE=WIN16_MEDIUM
+       CHECKS=1491
+       FAILURES=0
+       RESULT=PASS
 
-   Use a fresh package copy in another directory for each new attempt.
-   BUILD refuses to overwrite a folder containing BLDSTAT.TXT.
+   LAYOUT=PASS in the build status means compilation passed. The offsets
+   are not validated until LAYOUT.EXE runs and LAYRES.TXT reports success.
+   Each program writes its report in the current folder before its message.
 
-WHAT THIS EXPERIMENT CHECKS
+5. Copy the whole C:\STPROB2 directory back to ftp-share/RETURN2 on the host
+   using binary FTP mode. Tell Codex the returned folder is ready.
+   Keep failed builds too; partial success is useful evidence.
 
-- An actual Win16 executable, using /AM (medium: far code and near data),
-  /GA /GEs /Zp1 /Od /Zi /W3, MLIBCEW and LIBW. It records _MSC_VER,
-  _M_I86 and _M_I86MM, scalar sizes and data/function pointer sizes.
-- Explicit near/cdecl, far/cdecl and far/pascal calls, a pascal function
-  pointer, mixed-width arguments, repeated stack cleanup and 32-bit returns.
-- Eleven reconstructed utility functions: Randomize, Randomize2, Random,
-  GetFileSeeds, SetFileSeeds, SetFileXorStream, the file XOR generator,
-  DistanceSquared, CompareLong, ExpandRc and OffsetRc. Expected values were
-  captured by executing the original game's x86 instructions on synthetic
-  inputs, including arithmetic wrap, sign, seed and output-aliasing cases.
-- A separate compile of all four generated headers, using real near/far
-  pointer types and the recovered size/offset assertions. Additional named
-  checkpoints cover the 56-byte planet, 124-byte fleet and 192-byte player.
-  LAYOUT.OBJ is deliberately not linked into PROBE.EXE.
+FILES TO RETURN
 
-This is an integration experiment, not the complete game or a byte-identical
-rebuild. The utility routines still use explicit state adapters. A pass does
-not establish the original IDE, exact maintenance release, all compiler flags,
-Windows 3.1 execution, all floating-point behavior or full-game compatibility.
-The /Zp1 choice tests packed layouts; it is not a recovered original flag.
-Native build/run results are pending until you perform this experiment.
+   BLDSTAT.TXT          independent utility/layout compile and link statuses
+   BUILD.LOG, LINK.LOG utility compiler/linker commands and output
+   LAYOUT.LOG          layout compiler commands and output
+   LAYLINK.LOG         layout linker commands and output
+   RESULTS.TXT         utility runtime report
+   LAYRES.TXT          recovered-layout runtime report
+   *.OBJ, *.EXE, *.MAP  code, debug records, and linker maps
+   MSVC.PDB            compiler debug database, if generated
 
-PROVENANCE AND FILE FORMAT
+Compiler/linker banners are enabled. Some output may only appear on screen
+because COMMAND.COM lacks the newer 2>&1 stderr-redirection syntax. If an
+error or version line is missing from logs, copy it into your reply or a
+BANNERS.TXT file. The FIRST error is particularly useful.
 
-MANIFEST.TXT records input/output hashes and the original executable identity.
-No original executable, OS, compiler or runtime libraries are included.
-UTILGEN.C retains the reviewed logic. Packaging changes only local include
-filenames (including SEEDTAB.INC), filename case, and text line endings.
-All outgoing names are DOS 8.3; text is ASCII with CRLF line endings.
-VECTEST.C is generated from retained original-machine observations.
+BUILD refuses to overwrite a folder containing BLDSTAT.TXT. The "already
+contains build results" message in RETURN1/OUTPUT.TXT was this safeguard,
+not a compiler failure. To collect a new console transcript, start from a
+fresh package copy; rerunning BUILD in a used folder only records the guard.
 
-Build recipe reference: Microsoft KB Q88113, archived Microsoft instructions
-for medium-model Windows builds. This probe is plain C and omits MFC.
+WHAT IS TESTED
+
+PROBE.EXE uses eleven reconstructed utility functions with 113 retained
+original-x86 cases, plus native integer/pointer widths, near/cdecl and
+far/cdecl calls, far/pascal calls and callbacks, and 32-bit returns.
+
+LAYOUT.EXE compiles all recovered type/function/global/constant headers.
+The generated types retain 772 type-size assertions plus primitive checks.
+The complete SOFFSETS.INC checklist supplies all 1,469 field-offset checks
+at runtime, alongside platform and representative record-size checks.
+A failed layout.offset[index] maps to the zero-based checklist entry.
+
+All offset expressions use the compiler's actual offsetof implementation;
+expected offsets remain the values recovered from the game's debug types.
+STARS_RUNTIME_OFFSETS defers offset checks only. It does not change storage
+views, sizes, pointer kinds or member locations.
+
+This is a compiler integration experiment, not a full game rebuild. The
+utility functions still use explicit state adapters. Matching 8.00c debug
+records and runtime helpers support this toolchain's compatibility but do
+not prove the exact original IDE, maintenance release, or all compiler flags.
+
+BUILD AND PROVENANCE
+
+The build uses /AM /GA /GEs /Zp1 /Od /Zi /W3, MLIBCEW and LIBW. The layout
+runner also uses /DLAYOUT_PROBE. /AM selects far code and near data; /Zp1
+is an experimental packing choice, not a proven original compiler flag.
+
+MANIFEST.TXT records hashes, original executable identity and check counts.
+All outgoing names are DOS 8.3, with ASCII/CRLF text. Only quoted include
+filenames and line endings change in the copied reconstructed utility code.
+No original executable, compiler, OS or runtime libraries are distributed.
+
+References: archived Microsoft KB Q88113 (medium Windows build recipe) and
+Q40429 (five-field linker response files).
 https://jeffpar.github.io/kbarchive/kb/088/Q88113/
-Link response-file syntax: Microsoft KB Q40429.
 https://jeffpar.github.io/kbarchive/kb/040/Q40429/

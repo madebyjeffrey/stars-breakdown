@@ -42,7 +42,7 @@ def generate(out):
             lines+=['#ifdef STARS_NATIVE16',f'typedef {cv(i&255)} {qual} *{cv(i)};','#else',f'typedef {"unsigned short" if sz==2 else "STARS_ULONG32"} {cv(i)};','#endif',f'STARS_CHECK(p{i:04x},sizeof({cv(i)})=={sz});']
     for t in T:
         if t['leaf']=='0005':lines.append(f"typedef union {cv(t['index'])} {cv(t['index'])}; /* {t['name']} */")
-    emitted=set();visiting=set();checks=[]
+    emitted=set();visiting=set();checks=[];offset_checks=[]
     def emit(i):
         if i<4096 or i in emitted:return
         t=ts[i];leaf=t['leaf'];name=cv(i)
@@ -58,7 +58,7 @@ def generate(out):
                 prefix=f'unsigned char _pad[{off}]; ' if off else ''
                 if sz:
                     lines.append(f'    struct {{ {prefix}{cv(m["type_index"])} value; }} {mn};')
-                    checks.append(f'STARS_CHECK(t{i:04x}_m{j},offsetof({name},{mn}.value)=={off});')
+                    offset_checks.append(f'STARS_OFFSET(t{i:04x}_m{j},{name},{mn}.value,{off})')
                 else:lines.append(f'    /* {mn}: variable tail at offset {off}; no fixed storage. */')
             lines.append('};')
             for j,m in enumerate(t['members']):
@@ -92,8 +92,18 @@ def generate(out):
     for t in T:emit(t['index'])
     for a in aliases:
         lines.append(f'typedef {cv(a["type_index"])} STARS_ALIAS_{ident(a["name"])};')
-    lines+=checks+['#pragma pack()','#endif','']
+    lines+=checks+['#pragma pack()',
+        '/* VC8 rejects these offsetof expressions in file-scope array bounds.',
+        ' * STARS_RUNTIME_OFFSETS requires a runner to include soffsets.inc.',
+        ' * Size/primitive checks above remain compile-time assertions. */',
+        '#ifndef STARS_RUNTIME_OFFSETS',
+        '#define STARS_OFFSET(name,type,member,expected) STARS_CHECK(name,offsetof(type,member)==expected);',
+        '#include "soffsets.inc"','#undef STARS_OFFSET','#endif','#endif','']
     out.mkdir(parents=True,exist_ok=True);(out/'stypes.h').write_text('\n'.join(lines))
+    (out/'soffsets.inc').write_text('\n'.join([
+        '/* Generated complete offset checklist; deliberately no include guard. */',
+        '#ifndef STARS_OFFSET','#error Define STARS_OFFSET before including this checklist','#endif',
+        *offset_checks,'']))
     proto=['/* Effective signatures; prefixed names avoid SDK collisions. Not implementations. */','#ifndef STARS_RECOVERED_FUNCTIONS_H','#define STARS_RECOVERED_FUNCTIONS_H','#include "stypes.h"']
     for f in funcs:
         t=ts[f['type_index']];module=ident(mods[str(f['module'])]['name'].split('.')[0]);params=[]
@@ -116,6 +126,6 @@ def generate(out):
             constants.append(f'#define STARS_ABS_{ident(r["name"])} 0x{r["absolute_value"]:x}UL')
     constants+=['#endif',''];(out/'sconst.h').write_text('\n'.join(constants))
     (out/'checklay.c').write_text('#include "stypes.h"\n#include "sfuncs.h"\n#include "sglobals.h"\n#include "sconst.h"\nint main(void) { return 0; }\n')
-    print('Generated headers:',len(checks),'layout assertions,',len(funcs),'function declarations')
+    print('Generated headers:',len(checks)+len(offset_checks),'layout assertions,',len(funcs),'function declarations')
 
 if __name__=='__main__':generate(ROOT/'reconstructed/include')

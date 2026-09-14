@@ -8,7 +8,17 @@
 
 static FILE *report;
 static unsigned checks, failures;
+#ifndef LAYOUT_PROBE
 static ProbeCallback callback = probe_pascal;
+#endif
+
+#ifdef LAYOUT_PROBE
+#define REPORT_NAME "LAYRES.TXT"
+#define REPORT_KIND "LAYOUT"
+#else
+#define REPORT_NAME "RESULTS.TXT"
+#define REPORT_KIND "UTILITY"
+#endif
 
 #pragma pack(1)
 struct PackedProbe { StarsU8 byte; StarsU16 word; StarsU32 dword; };
@@ -59,6 +69,7 @@ static void check_platform(void)
 #endif
 }
 
+#ifndef LAYOUT_PROBE
 static void check_calls(void)
 {
     unsigned i;
@@ -74,17 +85,22 @@ static void check_calls(void)
             0xb9f95689UL);
     }
 }
+#endif
 
 static int run_probe(void)
 {
     int write_failed;
-    report = fopen("RESULTS.TXT", "w");
+    report = fopen(REPORT_NAME, "w");
     if (!report)
         return 2;
-    fprintf(report, "STARS_VC152_PROBE=1\nBUILD=%s %s\n", __DATE__, __TIME__);
+    fprintf(report, "STARS_VC152_PROBE=2\nKIND=" REPORT_KIND "\nBUILD=%s %s\n", __DATE__, __TIME__);
     check_platform();
+#ifdef LAYOUT_PROBE
+    run_layouts();
+#else
     check_calls();
     run_vectors();
+#endif
     fprintf(report, "CHECKS=%u\nFAILURES=%u\nRESULT=%s\n", checks, failures,
         failures ? "FAIL" : "PASS");
     write_failed = ferror(report);
@@ -107,10 +123,10 @@ int PASCAL WinMain(HINSTANCE instance, HINSTANCE previous, LPSTR command, int sh
     (void)command;
     (void)show;
     result = run_probe();
-    MessageBox(NULL, result == 2 ? "Could not write RESULTS.TXT in the current folder."
-        : result ? "Some tests failed. Return RESULTS.TXT and the build outputs."
-        : "All runtime tests passed. Return RESULTS.TXT and the build outputs.",
-        "Stars VC++ compatibility probe", MB_OK | (result ? MB_ICONEXCLAMATION : MB_ICONINFORMATION));
+    MessageBox(NULL, result == 2 ? "Could not write " REPORT_NAME " in the current folder."
+        : result ? "Some tests failed. Return " REPORT_NAME " and the build outputs."
+        : "All runtime tests passed. Return " REPORT_NAME " and the build outputs.",
+        "Stars compatibility: " REPORT_KIND, MB_OK | (result ? MB_ICONEXCLAMATION : MB_ICONINFORMATION));
     return result;
 }
 #endif
