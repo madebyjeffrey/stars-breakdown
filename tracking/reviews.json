@@ -479,5 +479,18 @@
       "analysis/reconstruction/race-validation.md",
       "tests/test_race_machine.py"
     ]
+  },
+  "000a:6e1e-7095": {
+    "reconstruction_path": "reconstructed/src/planet.c",
+    "review_status": "manually_reviewed",
+    "compilation_status": "host_c89_compiled",
+    "validation_status": "original_x86_x87_differential_checked_with_documented_valid_environment_limits; host_semantic_adapter; Win16_integration_pending",
+    "evidence": [
+      "analysis/functions.json",
+      "analysis/debug/procedures.json",
+      "analysis/decompiler/export-manifest.json",
+      "analysis/reconstruction/habitability.md",
+      "tests/test_habitability_machine.py"
+    ]
   }
 }

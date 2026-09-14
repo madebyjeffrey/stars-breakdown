@@ -70,4 +70,7 @@ StarsI16 stars_get_race_trait(const StarsU8 *data, StarsU16 player, StarsI16 ind
 void stars_set_race_trait(StarsU8 *data, StarsU16 player, StarsI16 index, StarsI16 enabled);
 StarsU16 stars_race_checksum(const StarsU8 *data, StarsU16 player);
 void stars_bounds_check_player(StarsU8 *data, StarsU16 player);
+/* Valid environmental ranges and nonzero selected half-width required.
+ * Planet and global player array refer to the same supplied data image. */
+StarsI16 stars_planet_desirability(const StarsU8 *data, StarsU16 planet, StarsI16 player_index);
 #endif
