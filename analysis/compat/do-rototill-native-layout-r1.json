@@ -1,0 +1,108 @@
+{
+  "complete_input_host_bytes": 57312,
+  "fixture_input_count": 2,
+  "fixture_input_host_bytes": 114624,
+  "largest_fields": [
+    {
+      "name": "complete_input",
+      "offset": 0,
+      "span_to_next": 57312
+    },
+    {
+      "name": "guess_race_data_storage",
+      "offset": 117032,
+      "span_to_next": 23332
+    },
+    {
+      "name": "rng_file_data",
+      "offset": 94644,
+      "span_to_next": 20480
+    },
+    {
+      "name": "active_files",
+      "offset": 151718,
+      "span_to_next": 12288
+    },
+    {
+      "name": "backup_files",
+      "offset": 164006,
+      "span_to_next": 12288
+    },
+    {
+      "name": "ai_data",
+      "offset": 79566,
+      "span_to_next": 8192
+    },
+    {
+      "name": "turn_message_buffer",
+      "offset": 57834,
+      "span_to_next": 4096
+    },
+    {
+      "name": "generated_log_file",
+      "offset": 143436,
+      "span_to_next": 4096
+    },
+    {
+      "name": "generated_history_file",
+      "offset": 147620,
+      "span_to_next": 4096
+    },
+    {
+      "name": "backup_log",
+      "offset": 176294,
+      "span_to_next": 4096
+    },
+    {
+      "name": "turn_planet_records",
+      "offset": 182788,
+      "span_to_next": 4096
+    },
+    {
+      "name": "turn_client_visibility_planets",
+      "offset": 65100,
+      "span_to_next": 3584
+    }
+  ],
+  "partition_limit_host_bytes": 48000,
+  "schema": "rototill-native-layout-audit-v1",
+  "scope": "host ABI sizing only; VC1.52c sizes require guest validation",
+  "source_sha256": {
+    "TURINFX.H": "be4931fe50d39968cc053d587e3f403d0bcb566ac5a189ce22aa56ec399b8380",
+    "satisfy_orders_rototill_coordinator_e4_probe.c": "29572a26e772c6fa3ef556fa9a5d043920d7cfc1c136443299ffab7fda081448",
+    "satisfy_orders_turin_binding_e3_probe.c": "b33c66b484f68898f13148557ec39f34a7815251ab3586d6ec8b8aea6d905f39"
+  },
+  "suggested_contiguous_partitions": [
+    {
+      "field_count": 1,
+      "first": "complete_input",
+      "host_span": 57312,
+      "last": "complete_input"
+    },
+    {
+      "field_count": 173,
+      "first": "turn_messages",
+      "host_span": 37332,
+      "last": "startup_written_percent"
+    },
+    {
+      "field_count": 29,
+      "first": "rng_file_data",
+      "host_span": 46196,
+      "last": "append_input_header"
+    },
+    {
+      "field_count": 101,
+      "first": "saved_mutation_stream",
+      "host_span": 47668,
+      "last": "basic_speed_fuel_calls"
+    },
+    {
+      "field_count": 184,
+      "first": "first_queue_catalog",
+      "host_span": 6980,
+      "last": "failures"
+    }
+  ],
+  "trace_host_bytes": 195488
+}

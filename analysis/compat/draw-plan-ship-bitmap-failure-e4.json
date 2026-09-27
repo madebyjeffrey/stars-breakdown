@@ -1,0 +1,23 @@
+{
+  "procedure": "DrawPlanShipBitmap",
+  "milestone": "draw-plan-ship-bitmap-failure-e4",
+  "scope": "host-only",
+  "checks": 6,
+  "failures": 0,
+  "result": "PASS",
+  "report": "DRAW_PLAN_SHIP_BITMAP_FAILURE_CHECKS=6 FAILURES=0 RESULT=PASS",
+  "step5_units_closed": 0,
+  "coverage": {
+    "tile_failure_hides_all_buttons": true,
+    "tile_failure_skips_render_and_positioning": true,
+    "hide_flag_clears_raw_bit": true,
+    "no_buttons_suppresses_positioning": true,
+    "fleet_render_survives_no_buttons": true,
+    "fleet_identity_reaches_tile_and_name": true
+  },
+  "evidence": [
+    "reconstructed/src/draw_plan_ship_bitmap.c",
+    "tests/draw_plan_ship_bitmap_failure_probe.c",
+    "analysis/decompiler/export/raw/1048_3336_DrawPlanShipBitmap.c"
+  ]
+}

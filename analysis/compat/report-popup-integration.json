@@ -1,0 +1,32 @@
+{
+  "procedures": ["ReportDlg", "PopupMenu"],
+  "phase2_step": "5/6",
+  "guest": "StarDev / Win98 / C:\\STARS!\\STARS.EXE",
+  "run": "runs/vmctl-vc152current/",
+  "original_executable_observation": {
+    "game_window": "Stars! -- A Barefoot JayWalk -- Humanoids -- game.m1 [starsframe]",
+    "reports_menu_items": ["Planets...", "Fleets...", "Others' Fleets...", "Battles...", "Score...", "Dump to Text File"],
+    "report_window": "Planet Summary Report -- 1 Planet [starsreport]",
+    "column_popup_items": ["Sort by Planet Name", "Reverse Sort by Planet Name"],
+    "program_error": false,
+    "screenshots": [
+      "runs/vmctl-vc152current/current-continue.bmp",
+      "runs/vmctl-vc152current/report-menu2.bmp",
+      "runs/vmctl-vc152current/report-planets5.bmp",
+      "runs/vmctl-vc152current/report-column-menu.bmp"
+    ]
+  },
+  "original_instruction_boundary": {
+    "report_dialog": "analysis/decompiler/export/raw/1108_0018_ReportDlg.c",
+    "popup_menu": "analysis/decompiler/export/raw/10c0_136c_PopupMenu.c",
+    "observed_sequence": [
+      "the Reports menu builds the report choices",
+      "Planets opens the report window and one-row planet table",
+      "clicking Planet Name opens the sort/reverse-sort popup"
+    ]
+  },
+  "reconstructed_acceptance": {
+    "native_probes": ["runs/vmctl-vc152report/REPR.TXT", "runs/vmctl-vc152pmenu/PMENUR.TXT"],
+    "comparison": "The original Win98 menu/report window and header-popup sequence agrees with the typed ReportDlg and PopupMenu boundaries. This is an original UI integration checkpoint, not proof that packed report unions, every USER/GDI handle, localized lookup tables, or all report callers are complete."
+  }
+}

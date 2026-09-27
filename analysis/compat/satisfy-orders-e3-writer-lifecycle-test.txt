@@ -1,0 +1,11 @@
+test_retained_selector_one_scout_order_and_movement (tests.test_satisfy_orders_turin_binding.SatisfyOrdersTurinBindingTests.test_retained_selector_one_scout_order_and_movement) ... ok
+test_original_x2_load_and_write (tests.test_satisfy_orders_log_files.OriginalLogFileTests.test_original_x2_load_and_write) ... ok
+test_original_section_order (tests.test_write_data_file_source.WriteDataFileSourceTests.test_original_section_order) ... ok
+test_player_shuffle_draws_and_log_order (tests.test_generate_turn_source.GenerateTurnSourceTests.test_player_shuffle_draws_and_log_order) ... ok
+test_player_file_selection_and_raw_record_bytes (tests.test_write_score_records_source.WriteScoreRecordsSourceTests.test_player_file_selection_and_raw_record_bytes) ... ok
+test_routing_mineral_and_optional_tail_records (tests.test_write_planet_source.WritePlanetSourceTests.test_routing_mineral_and_optional_tail_records) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 16.964s
+
+OK

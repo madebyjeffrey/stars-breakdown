@@ -16,9 +16,12 @@ The user identified this executable on 2026-09-13 as **2.70j RC3**, the third re
 
 Initial coverage: 37 segments, 1,305 ranges, 1,042,584 memory bytes. Debug procedure ranges cover 890,384 bytes; 126,146 code-segment bytes remain unclassified and 26,054 bytes belong to the data segment. These are inventory measurements, not a decompilation percentage. Procedure extents may themselves contain inline data.
 
-Step 5 has 130 reviewed routines covering 55,942 original procedure bytes, compiled
-as host C89 semantic adapters and compared with original x86 execution. See
-[the reconstruction report](../analysis/reconstruction/core.md). A partial
+The current Step 5 source ledger records 838 reviewed named procedures,
+8 partial procedures, and 838,028 credited procedure bytes out of 890,384.
+See [TODO5](../TODO5.md). The separate Phase 2 ledger has 124/152 evidence
+units closed and 9 procedure promotions still open; see [TODO7](../TODO7.md).
+The 130-routine / 55,942-byte count in the early core report is a historical
+milestone. A partial
 Win16 application now opens the starting screen, with original resources and
 recovered drawing code; see the [milestone](../analysis/reconstruction/starting-screen.md).
 Fresh native acceptance passed bitmap/fallback repaint, New/Open notices and

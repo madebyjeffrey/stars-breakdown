@@ -1,0 +1,26 @@
+{
+  "procedures": ["ExecuteReportClick"],
+  "phase2_step": "5/6",
+  "guest": "StarDev / Win98 / C:\\STARS!\\STARS.EXE",
+  "run": "runs/vmctl-vc152current/",
+  "original_executable_observation": {
+    "report_window": "Planet Summary Report -- 1 Planet [starsreport]",
+    "report_content": "One-row planet table for Oop Be Gone",
+    "interaction": "Planet report row-selection path was exercised",
+    "result": "Selected planet/frame context remained visible behind the report",
+    "program_error": false,
+    "screenshots": ["runs/vmctl-vc152current/report-row-click.bmp"]
+  },
+  "original_instruction_boundary": {
+    "source": "analysis/decompiler/export/raw/1108_7cd6_ExecuteReportClick.c",
+    "sequence": [
+      "the Planet Summary Report displays a planet row",
+      "the row-selection path dispatches the selected planet",
+      "the report remains usable with the selected frame context visible"
+    ]
+  },
+  "reconstructed_acceptance": {
+    "native_probe": "runs/vmctl-vc152execute/EXR.TXT",
+    "comparison": "The original planet-report row boundary agrees with the typed ExecuteReportClick selection dispatch. Packed report rows, the GlobalPD union, fleet/battle variants, exact USER/GDI behavior, and complete caller/layout integration remain open."
+  }
+}

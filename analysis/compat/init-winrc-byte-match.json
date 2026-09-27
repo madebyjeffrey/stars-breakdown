@@ -1,0 +1,42 @@
+{
+  "original_sha256": "ccab6682b55dae14dbf104e491cfbd3b32a6280022020032ae0615500949ba59",
+  "compiler": "Microsoft C/C++ Compiler Version 8.00c (VC++ 1.52c)",
+  "flags": "/c /AM /GA /GEs /Zp1 /Od /Gs /W3 /Fc",
+  "comparison": "No masked bytes; named OMF relocations resolved into the original address layout.",
+  "functions": [
+    {
+      "name": "GetIniWinRc",
+      "ne_segment": 1,
+      "original_offset": 4128,
+      "original_bytes": 556,
+      "generated_bytes": 556,
+      "length_difference": 0,
+      "exact_after_address_resolution": true,
+      "differing_bytes": 0,
+      "differences": [],
+      "fixups": [
+        {
+          "offset": 17,
+          "width": 4,
+          "target": "_CchGetString",
+          "resolved_value": "0x1040221e"
+        },
+        {
+          "offset": 64,
+          "width": 4,
+          "target": "GETPRIVATEPROFILESTRING",
+          "resolved_value": "0x14f8009c"
+        }
+      ],
+      "backpatch_records": 32,
+      "original_relocated_sha256": "f5b1c4958280330371d1b41a6f99c5953829419d67bddc4b7061c0ea709ad6f9",
+      "generated_resolved_sha256": "f5b1c4958280330371d1b41a6f99c5953829419d67bddc4b7061c0ea709ad6f9",
+      "source": "compat/init-winrc-match/INIT.C"
+    }
+  ],
+  "all_functions_match": true,
+  "object_sha256": "bfbda670361e9ad074a7a7e10ee777899f437a4ab51924b4df77d7b8984a5f8d",
+  "source_sha256": "dd4df7ad881689ca1c5751e55777a8549a0ea3c537c99fafdf12f192fcb97dee",
+  "build_log": "init.c\ninit.c(242) : warning C4101: 'scratch' : unreferenced local variable\n",
+  "build_status": "PASS\n"
+}

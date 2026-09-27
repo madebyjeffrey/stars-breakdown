@@ -1,0 +1,85 @@
+{
+  "procedures": ["KillUsedWaypoints"],
+  "phase2_step": "5/6",
+  "guest": "StarDev / Win98 / C:\\KUWINT2",
+  "native_run": "runs/vmctl-vc152kuwint2/",
+  "native_report": "KILL_USED_WAYPOINTS_INTEGRATION_CHECKS=9 FAILURES=0 RESULT=PASS; KILL_USED_WAYPOINTS_PACKED_CHECKS=6 FAILURES=0 RESULT=PASS",
+  "localized_resources": {
+    "host_probe": "tests/kill_used_waypoints_resource_probe.c",
+    "native_run": "runs/vmctl-vc152kuwres/",
+    "native_report": "runs/vmctl-vc152kuwres/KWRES.TXT",
+    "checks": 2,
+    "failures": 0,
+    "strings": {
+      "0x0137": "Ultimate Recycling",
+      "0x004e": "Annual resources from all planets:  "
+    },
+    "program_error": false
+  },
+  "expanded_cases": [
+    "deleted-fleet message envelope and status word",
+    "live target retarget and order compaction",
+    "missing target invalidation",
+    "no-move target preservation",
+    "planet-order recycle selection",
+    "reuse-flag recycle selection",
+    "location compaction and planet retargeting",
+    "empty-waypoint message",
+    "two-fleet enumeration and raw order-count write-back",
+    "live rglpfl-style four-byte table enumeration to first null",
+    "lpplord offset-100 reference loading and raw mutation write-back",
+    "malformed packed fleet/order reference rejection"
+  ],
+  "packed_boundaries": {
+    "fleet_id": 0,
+    "fleet_player": 2,
+    "fleet_status_flags": 4,
+    "fleet_planet": 6,
+    "fleet_point": 8,
+    "fleet_order_count": 98,
+    "plord_header_size": 4,
+    "plord_order_size": 18,
+    "plord_point": 0,
+    "plord_target": 4,
+    "plord_task_target_flags": 6
+  },
+  "original_executable": {
+    "surface": "Fleet Waypoints behind Cargo Transfer",
+    "fleet_waypoints_visible": true,
+    "program_error": false,
+    "screenshot": "runs/vmctl-vc152current/fleet-transfer.bmp"
+  },
+  "remaining_scope": [
+    "complete turn integration differential"
+  ],
+  "packed_table_e1": {
+    "host_probe": "tests/kill_used_waypoints_packed_probe.c",
+    "native_run": "runs/vmctl-vc152kuwpack/",
+    "native_report": "runs/vmctl-vc152kuwpack/KWIR.TXT",
+    "checks": 6,
+    "failures": 0,
+    "program_error": false,
+    "fleet_table_entry_size": 4,
+    "fleet_record_size": 124,
+    "fleet_lpplord_offset": 100,
+    "first_null_terminates": true
+  },
+  "turn_integration_e3": {
+    "host_probe": "tests/kill_used_waypoints_turn_probe.c",
+    "native_package": "compat/vc152/kill-used-waypoints-integration/",
+    "native_run": "runs/vmctl-vc152kuwturn/",
+    "native_report": "KILL_USED_WAYPOINTS_TURN_CHECKS=6 FAILURES=0 RESULT=PASS",
+    "checks": 6,
+    "failures": 0,
+    "turn_coordinator_reaches_move_fleets": true,
+    "move_fleets_calls_cleanup_after_movement": true,
+    "moved_coordinates_write_back_to_packed_fleet": true,
+    "stale_target_retarget_before_deletion": true,
+    "plord_compaction_write_back": true,
+    "native_compile": "PASS",
+    "native_link": "PASS",
+    "process_exit": 0,
+    "program_error_dialog": false,
+    "original_call_site": "analysis/decompiler/export/raw/10b0_32ce_MoveFleets.c:747"
+  }
+}

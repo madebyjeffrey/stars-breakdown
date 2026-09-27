@@ -1,0 +1,32 @@
+{
+  "procedures": ["PtDisplayPlanetStateInfo"],
+  "phase2_step": "5/6",
+  "evidence_unit": "E2 localized and fixed-point segment boundary",
+  "host_report": "PT_DISPLAY_PLANET_STATE_INFO_FORMAT_CHECKS=35 FAILURES=0 RESULT=PASS",
+  "host_compile": "strict_c89_pass",
+  "native_packet": "compat/vc152/pt-display-planet-state-info-format-e2/",
+  "guest_path": "C:\\STFE2",
+  "native_status": "PASS",
+  "native_guest_directory": "C:\\STFE2",
+  "native_run": "runs/vmctl-vc152stfe2/",
+  "native_build_status": "COMPILE=PASS; LINK=PASS",
+  "native_report": "PT_DISPLAY_PLANET_STATE_INFO_FORMAT_CHECKS=35 FAILURES=0 RESULT=PASS",
+  "native_process_exit": 0,
+  "native_program_error_dialog": false,
+  "step5_units_closed": 1,
+  "checks": 35,
+  "coverage": {
+    "every_known_limit_segment_prepared": true,
+    "environment_fixed_point_segment": true,
+    "unknown_limit_branch": true,
+    "signed_difference_branch": true,
+    "legacy_stream_wrap_compatibility": true
+  },
+  "remaining_scope": [
+    "native formatting run: closed",
+    "complete packed player/planet lookup",
+    "detailed stream/wrap GDI behavior",
+    "original differential",
+    "final promotion"
+  ]
+}

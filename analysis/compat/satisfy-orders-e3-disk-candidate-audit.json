@@ -1,0 +1,77 @@
+{
+  "scope": "Read-only FAT identity extraction. Images are candidates; D-drive availability and pinned-run attachment are not established.",
+  "candidates": [
+    {
+      "path": "runs/step4/win98.img",
+      "image_bytes": 8414461440,
+      "identity_sectors_sha256": "a4f60a9aa7879f507a1a57bebd6b429117c7d1773f101fba1d02e0f009563003",
+      "volume_label_entry_present": false,
+      "dos_date": 0,
+      "dos_time": 0,
+      "total_clusters": 2050287,
+      "bytes_per_sector": 512,
+      "sectors_per_cluster": 8,
+      "capacity_nibble": 15,
+      "c_identity_matches_control_action": [
+        true,
+        true
+      ],
+      "c_capacity_matches_control_action": [
+        true,
+        true
+      ],
+      "full_environment_matches_if_d_unavailable": [
+        true,
+        true
+      ]
+    },
+    {
+      "path": "runs/step4/win95.img",
+      "image_bytes": 2111864832,
+      "identity_sectors_sha256": "913f13d2a781163799bb720cbb967accaf4ce14eda2e1fd8b92ef0df36ca1d1d",
+      "volume_label_entry_present": false,
+      "dos_date": 0,
+      "dos_time": 0,
+      "total_clusters": 514573,
+      "bytes_per_sector": 512,
+      "sectors_per_cluster": 8,
+      "capacity_nibble": 15,
+      "c_identity_matches_control_action": [
+        true,
+        true
+      ],
+      "c_capacity_matches_control_action": [
+        true,
+        true
+      ],
+      "full_environment_matches_if_d_unavailable": [
+        true,
+        true
+      ]
+    },
+    {
+      "path": "runs/step4/transfer.img",
+      "image_bytes": 67092480,
+      "identity_sectors_sha256": "e631fd116441aedf4bc2b4e471df0f2b9f0225d7ecc738b79d5f424c67bf2f8e",
+      "volume_label_entry_present": false,
+      "dos_date": 0,
+      "dos_time": 0,
+      "total_clusters": 65216,
+      "bytes_per_sector": 512,
+      "sectors_per_cluster": 2,
+      "capacity_nibble": 0,
+      "c_identity_matches_control_action": [
+        true,
+        true
+      ],
+      "c_capacity_matches_control_action": [
+        false,
+        false
+      ],
+      "full_environment_matches_if_d_unavailable": [
+        false,
+        false
+      ]
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "procedures": ["DrawPopup"],
+  "phase2_step": "5/6",
+  "host_report": "DRAW_POPUP_PACKED_CHECKS=37 FAILURES=0 RESULT=PASS",
+  "native_replay": "pending_fresh_packet_guest_agent_reconnect",
+  "production_bridge": "StarsDrawPopupInput.packed_popupdata",
+  "record": {
+    "popupdata_size": 22,
+    "selector_offset": 0,
+    "selector_encoding": "little_endian_u16",
+    "short_record_fallback": true
+  },
+  "integration": {
+    "raw_selector_precedence_checked": true,
+    "all_dispatcher_kinds_checked": true,
+    "kind_14_slot_hull_alias_checked": true,
+    "short_record_typed_fallback_checked": true,
+    "gdi_state_restoration_retained": true
+  },
+  "authoritative_units_closed": 0,
+  "remaining_scope": [
+    "fresh native replay through the production bridge",
+    "complete GlobalPD union payload coverage",
+    "localized strings",
+    "hull filtering and formatting",
+    "detailed GDI rendering",
+    "original caller differential",
+    "final ledger promotion"
+  ]
+}

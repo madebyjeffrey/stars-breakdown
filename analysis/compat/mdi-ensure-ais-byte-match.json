@@ -1,0 +1,84 @@
+{
+  "original_sha256": "ccab6682b55dae14dbf104e491cfbd3b32a6280022020032ae0615500949ba59",
+  "compiler": "Microsoft C/C++ Compiler Version 8.00c (VC++ 1.52c)",
+  "flags": "/c /AM /GA /GEs /Zp1 /Od /Gs /W3 /Fc",
+  "comparison": "No masked bytes; named OMF relocations resolved into the original address layout.",
+  "functions": [
+    {
+      "name": "EnsureAis",
+      "ne_segment": 5,
+      "original_offset": 22204,
+      "original_bytes": 477,
+      "generated_bytes": 477,
+      "length_difference": 0,
+      "exact_after_address_resolution": true,
+      "differing_bytes": 0,
+      "differences": [],
+      "fixups": [
+        {
+          "offset": 89,
+          "width": 4,
+          "target": "_DestroyCurGame",
+          "resolved_value": "0x107044b0"
+        },
+        {
+          "offset": 102,
+          "width": 4,
+          "target": "_FLoadGame",
+          "resolved_value": "0x10700810"
+        },
+        {
+          "offset": 224,
+          "width": 4,
+          "target": "_MULDIV",
+          "resolved_value": "0x14f8013c"
+        },
+        {
+          "offset": 230,
+          "width": 4,
+          "target": "_UpdateProgressGauge",
+          "resolved_value": "0x104063da"
+        },
+        {
+          "offset": 306,
+          "width": 4,
+          "target": "_FOpenFile",
+          "resolved_value": "0x10704ac2"
+        },
+        {
+          "offset": 363,
+          "width": 4,
+          "target": "_StreamClose",
+          "resolved_value": "0x107053cc"
+        },
+        {
+          "offset": 386,
+          "width": 4,
+          "target": "_DoAiTurn",
+          "resolved_value": "0x10880000"
+        },
+        {
+          "offset": 433,
+          "width": 4,
+          "target": "_DestroyCurGame",
+          "resolved_value": "0x107044b0"
+        },
+        {
+          "offset": 446,
+          "width": 4,
+          "target": "_FLoadGame",
+          "resolved_value": "0x10700810"
+        }
+      ],
+      "backpatch_records": 19,
+      "original_relocated_sha256": "c1100889389f5e95c9f44419c971eac3587973621b0db343db08d388d6361cfe",
+      "generated_resolved_sha256": "c1100889389f5e95c9f44419c971eac3587973621b0db343db08d388d6361cfe",
+      "source": "compat/mdi-ensure-ais-match/MDI.C"
+    }
+  ],
+  "all_functions_match": true,
+  "object_sha256": "c0c0307c377d504f42fff19e0fad56c546f4f7ef6bfcfa5ea542ea74888c11c3",
+  "source_sha256": "93bfd3931447d02313177c585020c34e5217e50cb4b77c29cffd302dcdb2c4bb",
+  "build_log": "mdi.c\nmdi.c(201) : warning C4101: 'scratch' : unreferenced local variable\n",
+  "build_status": "PASS\n"
+}

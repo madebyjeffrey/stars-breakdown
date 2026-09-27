@@ -1,0 +1,5 @@
+# DoAutomitronAiTurn E3 owned-fleet flag sweep
+
+The original `analysis/decompiler/export/raw/1098_01e0_DoAutomitronAiTurn.c`, lines 379–399, makes an owned-fleet sweep before the later fleet routing/order sweep. It clears bit 15 of the `_fleet.overlap_4` word for every owned fleet. Production `reconstructed/src/do_automitron_ai_turn.c` now performs a separate packed-record sweep before any per-fleet visit callback, so later fleet visits observe **all** owned flags cleared, as in the original loop. Foreign fleets are untouched. A bound fleet record shorter than the recovered 124-byte layout is rejected before any record is changed.
+
+The strict-C89 host probe `tests/do_automitron_fleet_flags_e3_probe.c` passes 8 checks: exact low/high flag bytes for two owned and one foreign fleet, global sweep-before-visit order, and the short-record no-partial-write guard. This is original-instruction plus host evidence for one direct packed mutation, not AU-E3 closure. Full route predicates, multi-order writes, live native table binding, original AI-turn comparison, and final promotion remain open.

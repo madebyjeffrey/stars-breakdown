@@ -1,0 +1,49 @@
+{
+  "procedure": "DoTurinDroneAiTurn",
+  "checkpoint": "E4 exact order-repair gate host support",
+  "scope": "host-only",
+  "checks": 6,
+  "failures": 0,
+  "result": "PASS",
+  "report": "TURIN_DRONE_AI_REPAIR_BOUNDARY_CHECKS=6 FAILURES=0 RESULT=PASS",
+  "related_probes": {
+    "source": "TURIN_DRONE_AI_TURN_CHECKS=35 FAILURES=0 RESULT=PASS",
+    "packed_integration": "TURIN_DRONE_AI_TURN_INTEGRATION_CHECKS=20 FAILURES=0 RESULT=PASS",
+    "route_plan": "TURIN_DRONE_AI_ROUTE_PLAN_BOUNDARY_CHECKS=14 FAILURES=0 RESULT=PASS",
+    "edge": "TURIN_DRONE_AI_TURN_EDGE_CHECKS=7 FAILURES=0 RESULT=PASS"
+  },
+  "repository_regression": "Ran 519 tests; OK (skipped=153)",
+  "generated_headers": {
+    "layout_assertions": 2241,
+    "function_declarations": 846
+  },
+  "baseline_check": "PASS",
+  "git_diff_check": "PASS",
+  "step5_units_closed": 0,
+  "raw_gate": {
+    "zero_slots": [0, 1, 2, 3, 8, 9, 10, 11, 13, 14],
+    "nonzero_slot": 12,
+    "cord": 1,
+    "first_order_kind": 0
+  },
+  "boundary_matrix": {
+    "fleet_cases": 15,
+    "slot_exclusions_tested_individually": [0, 1, 2, 3, 8, 9, 10, 11, 13, 14],
+    "missing_slot_12_tested": true,
+    "wrong_cord_tested": true,
+    "nonempty_first_order_tested": true,
+    "foreign_owner_tested": true
+  },
+  "remaining": [
+    "native replay",
+    "complete packed route/order mutation",
+    "broader AI-table integration",
+    "original-turn differential",
+    "Step-6 promotion"
+  ],
+  "evidence": [
+    "reconstructed/src/do_turin_drone_ai_turn.c",
+    "tests/do_turin_drone_ai_turn_repair_boundary_probe.c",
+    "analysis/decompiler/export/raw/1088_3670_DoTurinDroneAiTurn.c"
+  ]
+}

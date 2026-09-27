@@ -1,0 +1,61 @@
+{
+  "input_hashes": {
+    "control": {
+      "SMOKE.HST": "e75d7f59c69481db33b60a10dd1547aed06e432b24dacef70c44be88062c5da6",
+      "SMOKE.M2": "28635edb45e88ea97a7699310275ce2b55d35040680764fd1c5d158a75ef28c2"
+    },
+    "action": {
+      "SMOKE.HST": "41ea4a398a9830c7498b744237dde08408c9d7cc54c73e63c9ef97f6751c0aaf",
+      "SMOKE.M2": "ba303b9363e531ecea8bcfc1001b999167ebfdf38a2bc6cd9990e55171f636a4"
+    }
+  },
+  "output_hashes": {
+    "control": {
+      "SMOKE.HST": "a5dfc1b48d4e20fdbc1769577a449893ce18062523ab317f7cbc94c42f65589f",
+      "SMOKE.M2": "afb0e271d2b691efa23964ec24913d64f783bdc4d0613e1df3fee7f0f2ffb6ec"
+    },
+    "action": {
+      "SMOKE.HST": "933a15766727a2fa7805a000e3f0edd406bd54aceb6b7ba0ad6c4ddbfc904dd7",
+      "SMOKE.M2": "1bcf4be303a3d49dcb3003daa8a2f41fc63139e644545b4002093aa3d61e500f"
+    }
+  },
+  "owner_det_word": 9535,
+  "control_message": {
+    "message_id": 78,
+    "goto": -32256,
+    "word_flags": 1,
+    "first": 512,
+    "second": 47,
+    "first_entry_hex": "4e02008200022f",
+    "block_hex": "4e02008200022f00028229205901feff0006"
+  },
+  "action_message": {
+    "message_id": 91,
+    "goto": -6,
+    "word_flags": 1,
+    "first": 8704,
+    "second": 0,
+    "first_entry_hex": "5b02faff002200",
+    "block_hex": "5b02faff0022002f00028229205901feff0006"
+  },
+  "control_fleet_present": true,
+  "action_fleet_present": false,
+  "action_salvage": {
+    "id_full": 8704,
+    "id": 0,
+    "owner": 1,
+    "point": [
+      1276,
+      1380
+    ],
+    "packed": 33791,
+    "minerals": [
+      5,
+      0,
+      2
+    ],
+    "value": 2,
+    "turn": 0,
+    "raw_hex": "0022fc046405ff8305000000020002000000"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "procedures": ["DrawPlanetStats"],
+  "phase2_step": "5/6",
+  "evidence_unit": "E2 formatting and zero-rate boundary",
+  "host_report": "DRAW_PLANET_STATS_FORMAT_CHECKS=16 FAILURES=0 RESULT=PASS",
+  "host_compile": "strict_c89_pass",
+  "native_packet": "compat/vc152/draw-planet-stats-format-e2/",
+  "guest_path": "C:\\DPSFE2",
+  "native_status": "VC++ 1.52c compile/link/run passed; 16 checks passed; no Program Error dialog",
+  "native_run": "runs/vmctl-vc152dpsfe2/",
+  "checks": 16,
+  "coverage": {
+    "seven_value_rows": true,
+    "fixed_point_mineral_rate_boundary": true,
+    "zero_mineral_rate_boundary": true,
+    "unavailable_scanner_and_defense_text": true,
+    "legacy_draw_value_compatibility": true,
+    "right_edge_and_hidden_tile_paths": true
+  },
+  "remaining_scope": [
+    "complete packed planet/race lookup",
+    "exact localized resource comparison",
+    "scanner and defense service behavior",
+    "detailed GDI/original differential",
+    "final promotion"
+  ],
+  "closed": true
+}

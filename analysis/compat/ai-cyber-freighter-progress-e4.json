@@ -1,0 +1,25 @@
+{
+  "procedures": [
+    "DoCyberFreighter",
+    "DoCyberAiTurn"
+  ],
+  "milestone": "ai-cyber-freighter-progress-e4",
+  "scope": "host-only",
+  "checks": 9,
+  "failures": 0,
+  "result": "PASS",
+  "report": "DO_CYBER_FREIGHTER_PROGRESS_CHECKS=9 FAILURES=0 RESULT=PASS",
+  "step5_units_closed": 0,
+  "coverage": {
+    "pickup_without_dropoff_progress": true,
+    "successful_dropoff_progress": true,
+    "rollback_planet_progress": true,
+    "rollback_transfer_pair": true
+  },
+  "evidence": [
+    "reconstructed/src/do_cyber_freighter.c",
+    "tests/do_cyber_freighter_progress_probe.c",
+    "tests/do_cyber_freighter_source_probe.c",
+    "analysis/decompiler/export/raw/10a8_37b0_DoCyberFreighter.c"
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "original_sha256": "ccab6682b55dae14dbf104e491cfbd3b32a6280022020032ae0615500949ba59",
+  "compiler": "Microsoft C/C++ Compiler Version 8.00c (VC++ 1.52c)",
+  "flags": "/c /AM /GA /GEs /Zp1 /Od /Gs /W3 /Fc",
+  "comparison": "No masked bytes; named OMF relocations resolved into the original address layout.",
+  "functions": [
+    {
+      "name": "OrderInfoDlg",
+      "ne_segment": 4,
+      "original_offset": 5406,
+      "original_bytes": 191,
+      "generated_bytes": 191,
+      "length_difference": 0,
+      "exact_after_address_resolution": true,
+      "differing_bytes": 0,
+      "differences": [],
+      "fixups": [
+        {
+          "offset": 26,
+          "width": 4,
+          "target": "GETCLIENTRECT",
+          "resolved_value": "0x14f801a0"
+        },
+        {
+          "offset": 42,
+          "width": 2,
+          "target": "_hbrButtonFace",
+          "resolved_value": "0x10"
+        },
+        {
+          "offset": 45,
+          "width": 4,
+          "target": "FILLRECT",
+          "resolved_value": "0x14f8020c"
+        },
+        {
+          "offset": 65,
+          "width": 4,
+          "target": "___aFulshr",
+          "resolved_value": "0x11180e32"
+        },
+        {
+          "offset": 88,
+          "width": 2,
+          "target": "_crButtonFace",
+          "resolved_value": "0x22bc"
+        },
+        {
+          "offset": 92,
+          "width": 2,
+          "target": "_crButtonFace",
+          "resolved_value": "0x22ba"
+        },
+        {
+          "offset": 95,
+          "width": 4,
+          "target": "SETBKCOLOR",
+          "resolved_value": "0x14f800b4"
+        },
+        {
+          "offset": 100,
+          "width": 2,
+          "target": "_hbrButtonFace",
+          "resolved_value": "0x10"
+        },
+        {
+          "offset": 134,
+          "width": 4,
+          "target": "ENDDIALOG",
+          "resolved_value": "0x14f80220"
+        }
+      ],
+      "backpatch_records": 17,
+      "original_relocated_sha256": "cab04b6bf039809973de1cb92fd31766802d658d02ef97a649e372e7d00a4d9e",
+      "generated_resolved_sha256": "cab04b6bf039809973de1cb92fd31766802d658d02ef97a649e372e7d00a4d9e",
+      "source": "compat/stars-order-match/STARS.C"
+    }
+  ],
+  "all_functions_match": true,
+  "object_sha256": "316052c90d0eac7f32d90dbdcf4b6f3490cc01434c63807d932b04fd6e542437",
+  "source_sha256": "084861109e0501b9b00bfcd75ece116049cc16c8b603852238fa3c45582d4d78",
+  "build_log": "stars.c\nstars.c(88) : warning C4035: 'OrderInfoDlg' : no return value\nstars.c(88) : warning C4101: 'scratch' : unreferenced local variable\n",
+  "build_status": "PASS\n"
+}

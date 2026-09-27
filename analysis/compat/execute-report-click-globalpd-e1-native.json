@@ -1,0 +1,40 @@
+{
+  "procedures": ["ExecuteReportClick"],
+  "step5_unit": "E1 exact GlobalPD owner/part pointer unions",
+  "status": "supporting_native_boundary",
+  "host": {
+    "checks": 20,
+    "failures": 0,
+    "result": "PASS"
+  },
+  "native": {
+    "guest": "StarDev / Win98 / C:\\GPDE2",
+    "compile": "PASS",
+    "link": "PASS",
+    "checks": 20,
+    "failures": 0,
+    "result": "PASS",
+    "process_exit": 0,
+    "program_error_dialog": false,
+    "evidence": [
+      "runs/vmctl-vc152gpde2/GPDE2.TXT",
+      "runs/vmctl-vc152gpde2/GPDE2STA.TXT",
+      "runs/vmctl-vc152gpde2/GPDE2CL.LOG",
+      "runs/vmctl-vc152gpde2/GPDE2LINK.LOG",
+      "runs/vmctl-vc152gpde2/GPDE2.MAP"
+    ]
+  },
+  "covered": [
+    "fleet popup far-pointer words",
+    "starbase popup far-pointer words",
+    "defense popup eight-byte part union",
+    "resource popup part word",
+    "five overlapping rgi long views"
+  ],
+  "remaining": [
+    "exact original pointer/part values",
+    "live USER/GDI report caller behavior",
+    "complete report-layout caller cases",
+    "original differential and promotion"
+  ]
+}

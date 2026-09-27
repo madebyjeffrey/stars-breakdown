@@ -1,0 +1,270 @@
+{
+  "original_sha256": "ccab6682b55dae14dbf104e491cfbd3b32a6280022020032ae0615500949ba59",
+  "compiler": "Microsoft C/C++ Compiler Version 8.00c (VC++ 1.52c)",
+  "flags": "/c /AM /GA /GEs /Zp1 /Od /Gs /W3 /Fc",
+  "comparison": "No masked bytes; named OMF relocations resolved into the original address layout.",
+  "functions": [
+    {
+      "name": "DrawHostDialog2",
+      "ne_segment": 5,
+      "original_offset": 25152,
+      "original_bytes": 1094,
+      "generated_bytes": 1094,
+      "length_difference": 0,
+      "exact_after_address_resolution": true,
+      "differing_bytes": 0,
+      "differences": [],
+      "fixups": [
+        {
+          "offset": 31,
+          "width": 4,
+          "target": "GETDC",
+          "resolved_value": "0x14f801e8"
+        },
+        {
+          "offset": 46,
+          "width": 4,
+          "target": "SETBKMODE",
+          "resolved_value": "0x14f800b8"
+        },
+        {
+          "offset": 65,
+          "width": 4,
+          "target": "SETBKCOLOR",
+          "resolved_value": "0x14f800b4"
+        },
+        {
+          "offset": 83,
+          "width": 4,
+          "target": "SELECTOBJECT",
+          "resolved_value": "0x14f800f8"
+        },
+        {
+          "offset": 95,
+          "width": 4,
+          "target": "_PszGetCompressedString",
+          "resolved_value": "0x1010743a"
+        },
+        {
+          "offset": 111,
+          "width": 4,
+          "target": "GETTEXTEXTENT",
+          "resolved_value": "0x14f80134"
+        },
+        {
+          "offset": 165,
+          "width": 4,
+          "target": "SETRECT",
+          "resolved_value": "0x14f801f4"
+        },
+        {
+          "offset": 204,
+          "width": 4,
+          "target": "_DrawDiamond",
+          "resolved_value": "0x10284b60"
+        },
+        {
+          "offset": 223,
+          "width": 4,
+          "target": "_PszGetCompressedString",
+          "resolved_value": "0x1010743a"
+        },
+        {
+          "offset": 242,
+          "width": 4,
+          "target": "__WSPRINTF",
+          "resolved_value": "0x14f802f8"
+        },
+        {
+          "offset": 273,
+          "width": 4,
+          "target": "_RightTextOut",
+          "resolved_value": "0x104029d6"
+        },
+        {
+          "offset": 316,
+          "width": 4,
+          "target": "SETTEXTCOLOR",
+          "resolved_value": "0x14f800c0"
+        },
+        {
+          "offset": 338,
+          "width": 4,
+          "target": "_CchGetString",
+          "resolved_value": "0x1040221e"
+        },
+        {
+          "offset": 386,
+          "width": 4,
+          "target": "__WSPRINTF",
+          "resolved_value": "0x14f802f8"
+        },
+        {
+          "offset": 430,
+          "width": 4,
+          "target": "_PszPlayerName",
+          "resolved_value": "0x103811f2"
+        },
+        {
+          "offset": 446,
+          "width": 4,
+          "target": "_PszGetCompressedString",
+          "resolved_value": "0x1010743a"
+        },
+        {
+          "offset": 465,
+          "width": 4,
+          "target": "__WSPRINTF",
+          "resolved_value": "0x14f802f8"
+        },
+        {
+          "offset": 517,
+          "width": 4,
+          "target": "__strcat",
+          "resolved_value": "0x11180352"
+        },
+        {
+          "offset": 552,
+          "width": 4,
+          "target": "TEXTOUT",
+          "resolved_value": "0x14f800e8"
+        },
+        {
+          "offset": 568,
+          "width": 4,
+          "target": "SETTEXTCOLOR",
+          "resolved_value": "0x14f800c0"
+        },
+        {
+          "offset": 591,
+          "width": 4,
+          "target": "OFFSETRECT",
+          "resolved_value": "0x14f80200"
+        },
+        {
+          "offset": 629,
+          "width": 4,
+          "target": "__WSPRINTF",
+          "resolved_value": "0x14f802f8"
+        },
+        {
+          "offset": 647,
+          "width": 4,
+          "target": "GETDLGITEM",
+          "resolved_value": "0x14f80228"
+        },
+        {
+          "offset": 660,
+          "width": 4,
+          "target": "SETWINDOWTEXT",
+          "resolved_value": "0x14f801ac"
+        },
+        {
+          "offset": 673,
+          "width": 4,
+          "target": "GETTICKCOUNT",
+          "resolved_value": "0x14f80170"
+        },
+        {
+          "offset": 688,
+          "width": 4,
+          "target": "___aFuldiv",
+          "resolved_value": "0x11180d68"
+        },
+        {
+          "offset": 733,
+          "width": 4,
+          "target": "_PszGetCompressedString",
+          "resolved_value": "0x1010743a"
+        },
+        {
+          "offset": 752,
+          "width": 4,
+          "target": "__WSPRINTF",
+          "resolved_value": "0x14f802f8"
+        },
+        {
+          "offset": 780,
+          "width": 4,
+          "target": "___aFuldiv",
+          "resolved_value": "0x11180d68"
+        },
+        {
+          "offset": 827,
+          "width": 4,
+          "target": "_PszGetCompressedString",
+          "resolved_value": "0x1010743a"
+        },
+        {
+          "offset": 846,
+          "width": 4,
+          "target": "__WSPRINTF",
+          "resolved_value": "0x14f802f8"
+        },
+        {
+          "offset": 910,
+          "width": 4,
+          "target": "_PszGetCompressedString",
+          "resolved_value": "0x1010743a"
+        },
+        {
+          "offset": 929,
+          "width": 4,
+          "target": "__WSPRINTF",
+          "resolved_value": "0x14f802f8"
+        },
+        {
+          "offset": 989,
+          "width": 4,
+          "target": "_PszGetCompressedString",
+          "resolved_value": "0x1010743a"
+        },
+        {
+          "offset": 1008,
+          "width": 4,
+          "target": "__WSPRINTF",
+          "resolved_value": "0x14f802f8"
+        },
+        {
+          "offset": 1026,
+          "width": 4,
+          "target": "GETDLGITEM",
+          "resolved_value": "0x14f80228"
+        },
+        {
+          "offset": 1039,
+          "width": 4,
+          "target": "SETWINDOWTEXT",
+          "resolved_value": "0x14f801ac"
+        },
+        {
+          "offset": 1050,
+          "width": 4,
+          "target": "SETBKMODE",
+          "resolved_value": "0x14f800b8"
+        },
+        {
+          "offset": 1064,
+          "width": 4,
+          "target": "SETBKCOLOR",
+          "resolved_value": "0x14f800b4"
+        },
+        {
+          "offset": 1084,
+          "width": 4,
+          "target": "RELEASEDC",
+          "resolved_value": "0x14f801ec"
+        }
+      ],
+      "backpatch_records": 30,
+      "original_relocated_sha256": "2f89a82dbf4ae25fcafc54ab6d851039663578426e16e90edc5ee13528db4c1f",
+      "generated_resolved_sha256": "2f89a82dbf4ae25fcafc54ab6d851039663578426e16e90edc5ee13528db4c1f",
+      "source": "compat/mdi-draw-host-dialog-match/MDI.C"
+    }
+  ],
+  "all_functions_match": true,
+  "object_sha256": "a889caf8105ebc61f29426031d169cf8220fc14072f3987d3ea6d60aa944d85a",
+  "source_sha256": "ff33780a806222a3a24d46f45724987a6b01e58e6691b9f4584168969f4dcc09",
+  "build_log": "mdi.c\nmdi.c(452) : warning C4101: 'scratch' : unreferenced local variable\n",
+  "build_status": "PASS\n"
+}

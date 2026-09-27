@@ -1,0 +1,54 @@
+{
+  "procedures": ["DoCyberAiTurn"],
+  "phase2_step": "5/6",
+  "guest": "StarDev / Win98 / C:\\CYBINT",
+  "native_run": "runs/vmctl-vc152cybint/",
+  "host_report": "CYBER_AI_TURN_INTEGRATION_CHECKS=25 FAILURES=0 RESULT=PASS",
+  "native_report": "CYBER_AI_TURN_INTEGRATION_CHECKS=25 FAILURES=0 RESULT=PASS",
+  "native_build": {
+    "compile": "PASS",
+    "link": "PASS",
+    "process_exit": 0,
+    "program_error_dialog": false,
+    "screen_capture": "runs/vmctl-vc152cybint/native-screen.bmp"
+  },
+  "packed_boundaries": {
+    "planet_raw_size": 56,
+    "planet_id": 0,
+    "planet_player": 2,
+    "planet_flags": 4,
+    "planet_packet_strength": 18,
+    "fleet_raw_size": 124,
+    "fleet_id": 0,
+    "fleet_player": 2,
+    "fleet_planet": 6,
+    "fleet_ship_counts": 12,
+    "fleet_ship_count_element_size": 2,
+    "fleet_cord": 98
+  },
+  "integration": {
+    "raw_record_conversion_checked": true,
+    "merge_mask_sequence_checked": true,
+    "design_status_and_split_sequence_checked": true,
+    "research_and_shdef_handoff_checked": true,
+    "planet_mineral_and_hostile_threat_checked": true,
+    "production_affordability_and_dispatch_checked": true,
+    "friendly_fleet_filter_and_role_aggregates_checked": true,
+    "final_callback_order_checked": true,
+    "service_result_offsets_invented": false
+  },
+  "original_instruction_evidence": {
+    "raw_listing": "analysis/decompiler/export/raw/10a8_002a.asm",
+    "raw_source": "analysis/decompiler/export/raw/10a8_002a_DoCyberAiTurn.c",
+    "codeview_types": "analysis/debug/types.json",
+    "service_values_are_explicit": true,
+    "full_original_turn_differential": false
+  },
+  "remaining_scope": [
+    "packet routing and freighter behavior",
+    "detailed fleet-order repair",
+    "direct packed PLORD mutation",
+    "complete AI-table integration",
+    "full original-behavior evidence"
+  ]
+}

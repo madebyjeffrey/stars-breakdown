@@ -1,0 +1,68 @@
+{
+  "procedure": "FAttack",
+  "checkpoint": "E37",
+  "finding": "Original group-0x20 torpedo init and dRangeMax fields now drive the packed FAttack initiative and inclusive coordinate-range gate.",
+  "original_table": {
+    "symbol": "rgtorp",
+    "ne_segment": 2,
+    "offset": "0x2180",
+    "record_size": 60,
+    "dRangeMax_offset": 52,
+    "dp_offset": 54,
+    "init_offset": 56,
+    "dRangeMax_values": [4, 4, 4, 5, 5, 5, 5, 6, 5, 5, 6, 6],
+    "dp_values": [5, 12, 26, 48, 90, 169, 316, 60, 85, 150, 280, 525],
+    "init_values": [0, 1, 1, 2, 2, 3, 4, 0, 0, 1, 2, 3]
+  },
+  "raw_behavior": {
+    "source": "analysis/decompiler/export/raw/10f0_69ac_FAttack.c",
+    "fields": "The group-0x20 record contributes dp, init, and dRangeMax.",
+    "range_expression": "DzFromBrcBrc(attacker.brc, target.brc) <= ((attacker.grobj == 1) + part.dRangeMax)",
+    "initiative_expression": "attacker.initBase + part.init is compared to the current initiative"
+  },
+  "source_change": "Added original torpedo init/range lookup APIs and bound their values into the successful packed group-0x20 FAttack path, replacing resolver-provided fields.",
+  "host_validation": {
+    "torpedo_dispatch": "F_ATTACK_RAW_TORPEDO_DISPATCH_CHECKS=17 FAILURES=0 RESULT=PASS",
+    "beam_scale": "F_ATTACK_BEAM_SCALE_CHECKS=86 FAILURES=0 RESULT=PASS",
+    "packed_part": "F_ATTACK_PACKED_PART_CHECKS=13 FAILURES=0 RESULT=PASS",
+    "boundary_cases": [
+      "item 9 dRangeMax=5 with attacker kind 1 admits coordinate distance 6",
+      "the same item rejects coordinate distance 7 before damage dispatch",
+      "item 9 init=1 combined with initBase=3 supplies initiative 4",
+      "all twelve original torpedo init/range/dp entries and invalid item 12 are checked"
+    ]
+  },
+  "native_validation": {
+    "packet": "compat/vc152/f-attack-complex-native-e37/",
+    "guest_directory": "C:\\FAPNE37",
+    "build_status": "COMPILE=PASS; LINK=PASS",
+    "reports": [
+      "F_ATTACK_BEAM_SCALE_CHECKS=86 FAILURES=0 RESULT=PASS",
+      "F_ATTACK_PACKED_PART_CHECKS=13 FAILURES=0 RESULT=PASS",
+      "F_ATTACK_RAW_DAMAGE_CHECKS=9 FAILURES=0 RESULT=PASS",
+      "F_ATTACK_TORPEDO_TARGET_CHECKS=5 FAILURES=0 RESULT=PASS",
+      "F_ATTACK_RAW_TORPEDO_DISPATCH_CHECKS=17 FAILURES=0 RESULT=PASS"
+    ],
+    "tested_processes_exit": 0,
+    "program_error_dialog": false,
+    "evidence_directory": "runs/vmctl-vc152fapne37/"
+  },
+  "full_host_suite": {
+    "tests": 522,
+    "expected_skips": 153,
+    "layout_assertions": 2241,
+    "declarations": 846,
+    "baseline_check": "PASS",
+    "diff_check": "PASS",
+    "runner_note": "Verbose full-suite run passed; previous quiet-mode signal-10 anomaly remains documented."
+  },
+  "step5_units_closed": 0,
+  "step5_units_total": 3,
+  "remaining": [
+    "Trace packed attacker object kind and battle token through the complete battle/orchestrator replay",
+    "Complete raw beam/torpedo service acceptance, including hull/resource/shield/jam/capacity behavior",
+    "E2 broader original damage differentials",
+    "E3 full native battle replay and differential",
+    "Step-6 promotion"
+  ]
+}

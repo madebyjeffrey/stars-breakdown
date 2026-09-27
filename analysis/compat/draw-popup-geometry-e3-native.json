@@ -1,0 +1,27 @@
+{
+  "procedures": ["DrawPopup"],
+  "phase2_step": "5/6",
+  "evidence_unit": "E3 detailed text geometry and style supporting native replay",
+  "host_report": "DRAW_POPUP_GEOMETRY_E3_CHECKS=25 FAILURES=0 RESULT=PASS",
+  "native_packet": "compat/vc152/draw-popup-geometry-e3-r2/",
+  "native_guest_directory": "C:\\DPE9",
+  "native_run": "runs/vmctl-vc152drawpopupgeometrye3r2/",
+  "native_build_status": "COMPILE=PASS; LINK=PASS",
+  "native_report": "DRAW_POPUP_GEOMETRY_E3_CHECKS=25 FAILURES=0 RESULT=PASS",
+  "native_process_exit": 0,
+  "native_program_error_dialog": false,
+  "authoritative_units_closed": 0,
+  "supporting_only": true,
+  "covered": [
+    "centered title and fleet text",
+    "measured title and label offsets",
+    "row-height geometry",
+    "left, right, and center text anchors",
+    "bold and normal font selection",
+    "opaque background mode",
+    "hull-row and short-client geometry",
+    "separator offset and PatBlt geometry",
+    "text-color reset after damaged hull rows"
+  ],
+  "superseded_attempt": "initial DPE8 wrapper replay produced no reports because the wrapper files had mixed CRLF/LF endings; DPE8 23-check run was superseded by final DPE9 25-check replay"
+}

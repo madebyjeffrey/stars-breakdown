@@ -1,0 +1,55 @@
+{
+  "original_sha256": "ccab6682b55dae14dbf104e491cfbd3b32a6280022020032ae0615500949ba59",
+  "compiler": "Microsoft C/C++ Compiler Version 8.00c (VC++ 1.52c)",
+  "flags": "/c /AM /GA /GEs /Zp1 /Od /Gs /W3 /Fc",
+  "comparison": "No masked bytes; named OMF relocations and compiler backpatches resolved into the original address layout.",
+  "functions": [
+    {
+      "name": "InitTiles",
+      "ne_segment": 1,
+      "original_offset": 3754,
+      "original_bytes": 373,
+      "generated_bytes": 373,
+      "exact_before_address_resolution": false,
+      "exact_after_address_resolution": true,
+      "length_difference": 0,
+      "differing_bytes": 0,
+      "differences": [],
+      "fixups": [
+        {
+          "offset": 17,
+          "width": 2,
+          "target": "_rgtilePlanet",
+          "resolved_value": "0x7fc"
+        },
+        {
+          "offset": 137,
+          "width": 2,
+          "target": "_dyArial8",
+          "resolved_value": "0x23fa"
+        },
+        {
+          "offset": 331,
+          "width": 2,
+          "target": "_dyArial8",
+          "resolved_value": "0x23fa"
+        },
+        {
+          "offset": 357,
+          "width": 2,
+          "target": "_rgtileShip",
+          "resolved_value": "0x90e"
+        }
+      ],
+      "backpatch_records": 7,
+      "original_relocated_sha256": "142ee352b85479fbd021b22e5cb303a02cf863e32b61ac1c7d9e5cd91dce6246",
+      "generated_resolved_sha256": "142ee352b85479fbd021b22e5cb303a02cf863e32b61ac1c7d9e5cd91dce6246",
+      "source": "compat/tiles-match/TILES.C"
+    }
+  ],
+  "all_functions_match": true,
+  "object_sha256": "18d30a20d73db902c96d1e689062b4338784b7da0732d331f16da9cfdbef3121",
+  "source_sha256": "22a4c2a1241aa9db9a074b827d555945ac0080c9607638cb798aa4bcbc6a58f3",
+  "build_log": "tiles.c\n",
+  "build_status": "PASS\n"
+}

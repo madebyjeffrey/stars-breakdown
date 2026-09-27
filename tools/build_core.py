@@ -12,7 +12,8 @@ SOURCES = ['utilgen.c', 'race.c', 'near_state.c', 'codec.c', 'text.c', 'create.c
            'racedraw.c', 'racewizard.c']
 # Keep the frozen race-export source set stable; foundation modules join the
 # host library without silently changing the already accepted native package.
-FOUNDATION_SOURCES = ['memory.c', 'common.c', 'startup.c', 'resources.c', 'title.c', 'config.c']
+FOUNDATION_SOURCES = ['memory.c', 'common.c', 'change_population.c', 'startup.c', 'resources.c', 'title.c', 'config.c', 'lookup_part.c', 'true_part_cost.c', 'reprice_shdef.c', 'read_player_messages.c']
+MDI_SOURCES = ['mdi.c', 'child_windows.c', 'refit.c', 'ensure_ais.c', 'menu.c', 'invert.c', 'verify_turns.c', 'bringup_host.c', 'draw_host.c', 'host_timer.c', 'host_mode.c', 'open_game.c', 'frame.c', 'winmain.c', 'title_wnd.c', 'create_stuff.c', 'read_ini.c', 'write_ini.c', 'mine_simple.c', 'mine_selection.c', 'mine_bars.c', 'mine_title.c', 'messages.c', 'ai.c', 'ai_plord.c', 'tb.c', 'produce.c', 'scan.c', 'turn2.c', 'ship.c', 'popup.c', 'battle.c']
 
 
 def main():
@@ -23,7 +24,7 @@ def main():
     output.parent.mkdir(exist_ok=True)
     subprocess.run([args.cc, '-std=c89', '-pedantic', '-Wall', '-Wextra', '-Werror',
                     '-O2', '-shared', '-fPIC', '-I', str(ROOT / 'reconstructed/include'),
-                    *[str(ROOT / 'reconstructed/src' / name) for name in SOURCES + FOUNDATION_SOURCES], '-o', str(output)], check=True)
+                    *[str(ROOT / 'reconstructed/src' / name) for name in SOURCES + FOUNDATION_SOURCES + MDI_SOURCES], '-o', str(output)], check=True)
     print(output)
 
 

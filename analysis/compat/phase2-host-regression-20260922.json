@@ -1,0 +1,30 @@
+{
+  "date": "2026-09-22",
+  "status": "host regression pass; native replay pending",
+  "focused_reports": [
+    "F_ATTACK_CHECKS=34 FAILURES=0 RESULT=PASS",
+    "SATISFY_ORDERS_FULL_TURN_E3_CHECKS=18 FAILURES=0 RESULT=PASS"
+  ],
+  "full_suite": {
+    "tests": 519,
+    "skipped": 153,
+    "result": "PASS",
+    "elapsed_seconds": 38.438
+  },
+  "generated_headers": {
+    "layout_assertions": 2241,
+    "function_declarations": 846
+  },
+  "baseline": "PASS",
+  "diff_check": "PASS",
+  "native_guest": "not connected",
+  "named_step5_closures": 0,
+  "promotion_units_closed": 0,
+  "evidence": [
+    "tests/f_attack_source_probe.c",
+    "tests/satisfy_orders_full_turn_e3_probe.c",
+    "reconstructed/src/f_attack.c",
+    "reconstructed/src/satisfy_orders.c",
+    "reconstructed/src/do_orders.c"
+  ]
+}

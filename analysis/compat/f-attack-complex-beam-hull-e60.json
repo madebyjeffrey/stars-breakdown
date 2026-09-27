@@ -1,0 +1,50 @@
+{
+  "procedures": ["FAttack"],
+  "checkpoint": "complex-beam live hull-damage E60",
+  "status": "host and native supporting evidence; named Step-5 closure pending",
+  "case": {
+    "beam_initial_pool": 408,
+    "target_ships_before": 2,
+    "target_shield_points_per_ship": 3,
+    "target_hull_dp_per_ship": 10,
+    "shield_damage": 6,
+    "ships_killed": 2,
+    "target_ships_after": 0,
+    "residual_beam_after_damage": 0,
+    "hit_recorded": true,
+    "first_hit_target": 0
+  },
+  "host_tests": {
+    "raw_damage": "F_ATTACK_RAW_DAMAGE_CHECKS=15 FAILURES=0 RESULT=PASS",
+    "beam_scaling": "F_ATTACK_BEAM_SCALE_CHECKS=86 FAILURES=0 RESULT=PASS",
+    "packed_part": "F_ATTACK_PACKED_PART_CHECKS=24 FAILURES=0 RESULT=PASS",
+    "raw_torpedo_dispatch": "F_ATTACK_RAW_TORPEDO_DISPATCH_CHECKS=17 FAILURES=0 RESULT=PASS",
+    "full_suite": "525 tests; 153 skipped; 2241 layout assertions; 846 function declarations"
+  },
+  "native": {
+    "package": "compat/vc152/f-attack-raw-residual-e60/",
+    "guest_directory": "C:\\FAE60",
+    "compiler": "Microsoft Visual C++ 1.52c",
+    "build_status": "COMPILE=PASS; LINK=PASS",
+    "process_exit_codes": [0, 0, 0],
+    "reports": [
+      "F_ATTACK_PACKED_PART_CHECKS=24 FAILURES=0 RESULT=PASS",
+      "F_ATTACK_RAW_TORPEDO_DISPATCH_CHECKS=17 FAILURES=0 RESULT=PASS",
+      "F_ATTACK_RAW_DAMAGE_CHECKS=15 FAILURES=0 RESULT=PASS"
+    ],
+    "segment_matches_package": true,
+    "program_error_dialog": false,
+    "test_only_warnings": ["C4135 at raw shield/hull value assignments"],
+    "return_directory": "runs/vmctl-fapraw-e60/"
+  },
+  "todo6": {
+    "fattack_named_step5_closed": 0,
+    "fattack_named_step5_total": 3,
+    "fattack_phase2_step": "5/6",
+    "step5_closed": 120,
+    "step5_total": 152,
+    "step5_open": 32,
+    "promotion_open": 10,
+    "practical_open": 42
+  }
+}

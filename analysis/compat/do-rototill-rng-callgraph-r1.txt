@@ -1,0 +1,31 @@
+# FGenerateTurn-reachable original direct Random callers (static call graph)
+# Each row shows one shortest path; other call paths may reach the same site.
+# The 28 rows include conditional branches that the retained turn may skip.
+FGenerateTurn | FGenerateTurn | 10b0:028b,10b0:15e8
+AutoTerraform | FGenerateTurn -> AutoTerraform | 10b8:4a03,10b8:4a77,10b8:4aa8
+BreedColonistsInTransit | FGenerateTurn -> BreedColonistsInTransit | 10b8:7fa6
+MoveFleets | FGenerateTurn -> MoveFleets | 10b0:3462,10b0:34fb,10b0:40db
+MoveThings | FGenerateTurn -> MoveThings | 10b0:1966,10b0:1a16,10b0:1a2b,10b0:1a44,10b0:1a5d,10b0:1b30,10b0:1b49,10b0:1b60,10b0:1b90,10b0:1ba2,10b0:1e3f,10b0:2275,10b0:228d,10b0:2b24
+SpankTheCheaters | FGenerateTurn -> SpankTheCheaters | 10f0:1a0e,10f0:1a9e,10f0:1bef,10f0:1c03,10f0:1cf5,10f0:1d09,10f0:1d18
+UpdateGuesses | FGenerateTurn -> UpdateGuesses | 10b8:53c8
+ValidateWaypoints | FGenerateTurn -> ValidateWaypoints | 1038:6e4a,1038:6f64,1038:6f93,1038:6fc7
+DoThingInteractions | FGenerateTurn -> DoOrders -> DoThingInteractions | 1110:0e17,1110:0fce,1110:0fe2,1110:119c,1110:11cf,1110:1242,1110:125a,1110:135d,1110:13a6,1110:13d3,1110:1864
+DropColonists | FGenerateTurn -> DoOrders -> DropColonists | 10b8:4358,10b8:4368
+FBuildObject | FGenerateTurn -> Produce -> FBuildObject | 10b8:2d17,10b8:2d26,10b8:2d64,10b8:2d73
+FStargateJump | FGenerateTurn -> MoveFleets -> FStargateJump | 1080:10f7,1080:1128
+FTravelThroughMineFields | FGenerateTurn -> MoveFleets -> FTravelThroughMineFields | 10b0:57b2
+DiscoverNewMinerals | FGenerateTurn -> Produce -> RandomEvents -> DiscoverNewMinerals | 10b8:5e1d,10b8:5e34,10b8:5e62,10b8:5ed4
+DoBombing | FGenerateTurn -> DoOrders -> DoBattles -> DoBombing | 10f0:b299,10f0:b387,10f0:b590
+DropSalvage | FGenerateTurn -> DoOrders -> SatisfyOrders -> DropSalvage | 10f0:257d
+EstMineralsMined | FGenerateTurn -> FLoadGame -> EstimateItemProdSched -> EstMineralsMined | 1028:55b0
+FDoCoolBattle | FGenerateTurn -> DoOrders -> DoBattles -> FDoCoolBattle | 10f0:9501
+ITechLearnATech | FGenerateTurn -> DoOrders -> SatisfyOrders -> ITechLearnATech | 10f0:9959,10f0:997b,10f0:99c0,10f0:9a84
+MeteorStrike | FGenerateTurn -> Produce -> RandomEvents -> MeteorStrike | 10b8:561b,10b8:5632,10b8:5696,10b8:56d1,10b8:573a,10b8:5773,10b8:58d1,10b8:591f,10b8:593a,10b8:59ea,10b8:5a05,10b8:5a17
+MysteryTrader | FGenerateTurn -> Produce -> RandomEvents -> MysteryTrader | 10b8:5f76,10b8:5fb8,10b8:5ff2,10b8:601a,10b8:6055,10b8:612a,10b8:613e,10b8:616a,10b8:61a7,10b8:61fb
+PlanetaryClimateChange | FGenerateTurn -> Produce -> RandomEvents -> PlanetaryClimateChange | 10b8:5c61,10b8:5c78,10b8:5ccf,10b8:5d0d,10b8:5d28,10b8:5d3a
+SetVisPFThings | FGenerateTurn -> FWriteDataFile -> SetVisiblePlanFleet -> SetVisPFThings | 1070:c3df
+WriteBOF | FGenerateTurn -> FWriteDataFile -> FAppendFile -> WriteBOF | 1070:8f54
+DxyMoveTokTo | FGenerateTurn -> DoOrders -> DoBattles -> FDoCoolBattle -> DxyMoveTokTo | 10f0:622d,10f0:63fe,10f0:653a,10f0:66c1
+SpdOfShip | FGenerateTurn -> UpdatePlayerScores -> CalcPlayerScore -> LComputePower -> SpdOfShip | 10f0:37dd
+CTorpHit | FGenerateTurn -> DoOrders -> DoBattles -> FDoCoolBattle -> FAttack -> CTorpHit | 10f0:695c
+RandomizeTokOrder | FGenerateTurn -> DoOrders -> DoBattles -> FDoCoolBattle -> InitializeBoard -> RandomizeTokOrder | 10f0:44f1

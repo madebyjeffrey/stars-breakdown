@@ -1,0 +1,40 @@
+{
+  "procedures": ["DrawNewGame2", "DrawNewGame3"],
+  "phase2_step": "5/6",
+  "guest": "StarDev / Win98 / C:\\STARS!\\STARS.EXE",
+  "run": "runs/vmctl-vc152current/",
+  "original_executable_observation": {
+    "wizard": "Advanced New Game Wizard",
+    "page2": {
+      "title": "Advanced New Game Wizard - Step 2 of 3",
+      "renderer_boundary": "DrawNewGame2",
+      "observed": "Sixteen player rows with row numbers, race diamonds, player labels, and navigation controls"
+    },
+    "page3": {
+      "title": "Advanced New Game Wizard - Step 3 of 3",
+      "renderer_boundary": "DrawNewGame3",
+      "observed": "Nine victory criteria rows with paired controls, winner-count control, and minimum-years control"
+    },
+    "program_error": false,
+    "screenshots": [
+      "runs/vmctl-vc152current/original-advanced-page2.bmp",
+      "runs/vmctl-vc152current/original-advanced-page3.bmp"
+    ]
+  },
+  "original_instruction_boundary": {
+    "draw_new_game2": "analysis/decompiler/export/raw/1078_9556_DrawNewGame2.c",
+    "draw_new_game3": "analysis/decompiler/export/raw/1078_9d5e_DrawNewGame3.c",
+    "sequence": [
+      "the wizard reaches Step 2 and renders the player rows and race diamonds",
+      "the wizard advances to Step 3 and renders the victory criteria rows and controls",
+      "the wizard pages remain usable without a program-error dialog"
+    ]
+  },
+  "reconstructed_acceptance": {
+    "native_probes": [
+      "runs/vmctl-vc152dng2/DNG2R.TXT",
+      "runs/vmctl-vc152dng3/DNG3R.TXT"
+    ],
+    "comparison": "The original wizard pages expose the player-row/diamond and criteria-row/control boundaries represented by the two typed renderers. Packed tables, complete localized resources, exact rectangles, and full GDI integration remain open."
+  }
+}

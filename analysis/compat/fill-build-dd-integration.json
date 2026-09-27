@@ -1,0 +1,42 @@
+{
+  "procedures": ["FillBuildDD"],
+  "phase2_step": "5/6",
+  "guest": "StarDev / Win98 / C:\\STARS!\\STARS.EXE",
+  "run": "runs/vmctl-vc152current/",
+  "original_executable_observation": {
+    "dialog": "Ship & Starbase Designer",
+    "existing_designs": {
+      "selector": "Armed Probe",
+      "content": [
+        "selected hull bitmap",
+        "component tiles with counts",
+        "design cost, resources, mass, fuel, armor, shields, rating, initiative, and scanner values"
+      ]
+    },
+    "available_hull_types": {
+      "selector": "Small Freighter",
+      "content": [
+        "hull capacity tiles",
+        "hull cost and resource values",
+        "fuel, armor, and mass values"
+      ]
+    },
+    "program_error": false,
+    "screenshots": [
+      "runs/vmctl-vc152current/ship-design.bmp",
+      "runs/vmctl-vc152current/ship-design-hulls.bmp"
+    ]
+  },
+  "original_instruction_boundary": {
+    "source": "analysis/decompiler/export/raw/10c8_5e80_FillBuildDD.c",
+    "sequence": [
+      "the design dropdown is reset and populated for the selected mode",
+      "the selected design or hull list is displayed",
+      "the dropdown height and related command enablement are updated"
+    ]
+  },
+  "reconstructed_acceptance": {
+    "native_probe": "runs/vmctl-vc152fbde2/FBDE3.TXT",
+    "comparison": "The original Ship & Starbase Designer list and selector surfaces agree with the typed FillBuildDD population, mode, and resize boundary. E1 packed lookup, E2 localized storage, E3 queue/population/control integration, and Step-6 ledger promotion are synchronized."
+  }
+}

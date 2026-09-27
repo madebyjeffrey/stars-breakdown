@@ -1,0 +1,47 @@
+{
+  "procedures": ["SatisfyOrders"],
+  "phase2_step": "5/6",
+  "guest": "StarDev / Win98 / C:\\SYINT",
+  "native_run": "runs/vmctl-vc152syint/",
+  "native_report": "SATISFY_ORDERS_INTEGRATION_CHECKS=3 FAILURES=0 RESULT=PASS",
+  "production_bridge": "stars_satisfy_orders_packed",
+  "native_bridge_replay": "pending_fresh_packet_guest_agent_reconnect",
+  "bridge_record_sizes": {
+    "fleet": 124,
+    "order": 18
+  },
+  "packed_boundaries": {
+    "fleet_raw_size": 124,
+    "fleet_id": 0,
+    "fleet_owner": 2,
+    "fleet_flags": 4,
+    "fleet_turn_flags": 118,
+    "order_raw_size": 18,
+    "order_point": 0,
+    "order_target_id": 4,
+    "order_task_object_word": 6,
+    "order_valid_bit": 12
+  },
+  "integration": {
+    "raw_identity_and_target_decode_checked": true,
+    "mineral_transfer_checked": true,
+    "raw_validity_writeback_checked": true,
+    "pass_one_turn_flag_writeback_checked": true,
+    "inactive_fleet_gate_checked": true
+  },
+  "original_executable": {
+    "surface": "Fleet Orders",
+    "consumer_boundary_visible": true,
+    "program_error": false,
+    "complete_turn_replay": false,
+    "screenshot": "runs/vmctl-vc152current/orders-before.bmp"
+  },
+  "remaining_scope": [
+    "battle-plan resource accounting",
+    "technology discovery",
+    "fleet splitting and ship-design copying",
+    "salvage creation",
+    "complete message layouts",
+    "full turn integration"
+  ]
+}

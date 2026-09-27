@@ -1,0 +1,53 @@
+{
+  "procedures": ["FAttack", "FDoCoolBattle"],
+  "checkpoint": "E40",
+  "adapter": "stars_attack_bind_cool_battle_hull",
+  "source_change": "Composes per-token battle context binding and raw four-byte _hs decoding in the FAttack callback boundary.",
+  "raw_hull_slot": {
+    "bytes": 4,
+    "group_word_offset": 0,
+    "group_word_endian": "little",
+    "item_byte_offset": 2,
+    "count_byte_offset": 3
+  },
+  "integration_case": {
+    "raw_group": "0x0010",
+    "raw_item": 7,
+    "raw_count": 2,
+    "contradictory_typed_group": "0x0020",
+    "contradictory_typed_item": 4,
+    "contradictory_typed_count": 1,
+    "resolver_observed_raw_values": true,
+    "target_mutation_and_battle_lifecycle_checked": true
+  },
+  "host_validation": {
+    "integration_report": "F_DO_COOL_BATTLE_ATTACK_INTEGRATION_CHECKS=33 FAILURES=0 RESULT=PASS",
+    "full_suite_tests": 523,
+    "expected_skips": 153,
+    "layout_assertions": 2241,
+    "declarations": 846,
+    "baseline_check": "PASS",
+    "diff_check": "PASS"
+  },
+  "native_validation": {
+    "packet": "compat/vc152/f-do-cool-battle-attack-hull-e40/",
+    "guest_directory": "C:\\FCBATE40",
+    "build_status": "COMPILE=PASS; LINK=PASS",
+    "report": "F_DO_COOL_BATTLE_ATTACK_INTEGRATION_CHECKS=33 FAILURES=0 RESULT=PASS",
+    "process_exit": 0,
+    "program_error_dialog": false,
+    "evidence_directory": "runs/vmctl-fcbate40/"
+  },
+  "step5_units_closed": 0,
+  "step5_units_total": {
+    "FAttack": 3,
+    "FDoCoolBattle": 6
+  },
+  "remaining": [
+    "Callback-owned original design-to-hull selection and native _tok/vrgtok global binding",
+    "Complete native FLookupPart table, service, race, and visibility behavior",
+    "Complete beam/torpedo damage-service acceptance",
+    "Broader original damage differential and full battle replay",
+    "Step-6 promotion"
+  ]
+}

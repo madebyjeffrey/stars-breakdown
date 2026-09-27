@@ -1,0 +1,31 @@
+{
+  "procedures": ["DrawPlanetShipList"],
+  "phase2_step": "5/6",
+  "host_report": "DRAW_PLANET_SHIP_LIST_PACKED_CHECKS=18 FAILURES=0 RESULT=PASS",
+  "native_replay": "pending_fresh_packet_guest_agent_reconnect",
+  "production_bridge": "StarsPlanetShipListInput.packed_selection_record_and_packed_transfer_record",
+  "records": {
+    "selection_size": 226,
+    "selection_object_offset": 152,
+    "transfer_size": 128,
+    "transfer_id_offset": 0,
+    "transfer_kind_offset": 2,
+    "transfer_owner_offset": 6
+  },
+  "integration": {
+    "raw_selection_precedence_checked": true,
+    "raw_transfer_precedence_checked": true,
+    "fleet_and_thing_kind_paths_checked": true,
+    "ownership_enablement_checked": true,
+    "visibility_and_layout_retained": true
+  },
+  "authoritative_units_closed": 0,
+  "remaining_scope": [
+    "fresh native replay through the production bridge",
+    "exact USER/GDI controls",
+    "localized text and gauges",
+    "complete transfer/detail rendering",
+    "original differential coverage",
+    "final ledger promotion"
+  ]
+}

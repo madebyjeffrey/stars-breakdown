@@ -1,0 +1,80 @@
+{
+  "procedure": "GenerateWorld",
+  "phase2_step": "6/6",
+  "e1_packed_state": {
+    "host_report": "GENERATE_WORLD_E1_CHECKS=16 FAILURES=0 RESULT=PASS",
+    "native_report": "runs/vmctl-vc152gwint/GWE1.TXT",
+    "native_run": "runs/vmctl-vc152gwint/",
+    "native_checks": 16,
+    "compile": "PASS",
+    "link": "PASS",
+    "process_exit": 0,
+    "program_error_dialog": false,
+    "screen_capture": "runs/vmctl-vc152gwint/native-screen-e1.bmp",
+    "game_record_bytes": 64,
+    "checked_offsets": {
+      "lid": 0,
+      "mdSize": 4,
+      "mdDensity": 6,
+      "cPlayer": 8,
+      "cPlanMax": 10,
+      "mdStartDist": 12,
+      "fDirty": 14,
+      "wGen": 16,
+      "turn": 18
+    },
+    "seed_and_rng": "StarsSeeds copied from the packed-state boundary, Randomize2 initialization, positive and nonpositive Random calls, and layout consumption agree in host and native runs"
+  },
+  "e2_state_backed_pipeline": {
+    "host_report": "GENERATE_WORLD_E2_CHECKS=13 FAILURES=0 RESULT=PASS",
+    "native_report": "runs/vmctl-vc152gwint2/GWE2.TXT",
+    "native_run": "runs/vmctl-vc152gwint2/",
+    "native_checks": 13,
+    "compile": "PASS",
+    "link": "PASS",
+    "process_exit": 0,
+    "program_error_dialog": false,
+    "screen_capture": "runs/vmctl-vc152gwint2/native-screen-e2.bmp",
+    "pipeline": ["layout", "planet initialization", "start selection", "player and homeworld initialization", "startup ships", "battle plans", "wormholes", "player status", "file records", "local finalization"],
+    "checked_results": "state-backed RNG changed, 128 generated points, owned homeworld, four startup ships, five battle plans, Game.xy open/close, two data files, point-plus-header records, player-count record, selected player, single-player mode, and game id/turn preservation"
+  },
+  "guest": "StarDev / Win98 / C:\\STARS!\\STARS.EXE",
+  "run": "runs/vmctl-vc152current/",
+  "original_executable_observation": {
+    "title_window": "Stars! [starstitle]",
+    "creation_dialog": "New Game",
+    "generated_window": "Stars! -- A Barefoot JayWalk -- Humanoids -- game.m1 [starsframe]",
+    "program_error": false,
+    "screenshots": [
+      "runs/vmctl-vc152current/original-title.bmp",
+      "runs/vmctl-vc152current/original-new-game.bmp",
+      "runs/vmctl-vc152current/original-name.bmp",
+      "runs/vmctl-vc152current/original-generated-game.bmp"
+    ]
+  },
+  "original_generated_files": {
+    "GAME.HST": {"bytes": 3659, "sha256": "4aedd47627954de1fe2b0c9e7e36d753155fbe61d36b70557432512c6fb6c937"},
+    "Game.xy": {"bytes": 600, "sha256": "4f3748f35909638384652865bd5c9b279b04b392c0d88048436b18ec3b797484"},
+    "GAME.M1": {"bytes": 831, "sha256": "b00fd4d3b07ceab6020c4a00d3c016a1c32741b30ea3be7061994203de3b8ae9"},
+    "GAME.M2": {"bytes": 578, "sha256": "4f3b7f37c4c58a8c41b569225f51f9e19c27362ea13bfe0b3773a21918f8d48d"},
+    "GAME.M3": {"bytes": 581, "sha256": "d87c15b0369aa945d1746d7d37deaa9273146818dda0714d40edebf8ef7f95e9"}
+  },
+  "original_instruction_boundary": {
+    "raw_source": "analysis/decompiler/export/raw/1078_0136_GenerateWorld.c",
+    "create_file": "NE 16:1366-1377: FCreateFile(0,-1,0), then WriteRt(7,0x40,&game)",
+    "point_stream": "NE 16:1379-1392: RgToStream emits each packed point and advances the prior-x value",
+    "player_count": "NE 16:1397: WriteRt(0,2,&game.cPlayer)",
+    "data_files": "NE 16:1400-1402: FWriteDataFile(base,-1,0) through FWriteDataFile(base,game.cPlayer-1,0)",
+    "ui_finalize": "NE 16:1404-1440: create child windows for local games or destroy/reload/send 0xfa1 for hosted games"
+  },
+  "reconstructed_acceptance": {
+    "host_pipeline_probe": "tests/generate_world_pipeline_source_probe.c",
+    "host_packed_state_probe": "tests/generate_world_packed_probe.c",
+    "native_probe": "runs/vmctl-vc152gwt/GWR.TXT",
+    "native_packed_state_probe": "runs/vmctl-vc152gwint/GWE1.TXT",
+    "expected_file_sequence": ["open Game.xy", "record type 7 size 0x40", "packed point records", "record type 0 size 2", "close Game.xy", "data file -1", "data files 0..N-1"],
+    "comparison": "The recovered typed pipeline preserves the original instruction order and the live Win98 run creates the same .xy/.M1/.M2/.M3/.HST artifact family and reaches the generated game frame without a Program Error dialog."
+  },
+  "remaining_scope": [],
+  "promoted": true
+}

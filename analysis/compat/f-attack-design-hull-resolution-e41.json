@@ -1,0 +1,54 @@
+{
+  "procedures": ["FAttack", "FDoCoolBattle"],
+  "checkpoint": "E41",
+  "adapter": "stars_attack_bind_cool_battle_design_hull",
+  "source_change": "Builds the original token player/design bytes, calls stars_lpshdef_from_tok, reads the selected 123-byte hull's inline _hs array, and composes the E40 FAttack binder.",
+  "original_layout": {
+    "token_player_offset": 2,
+    "token_design_offset": 4,
+    "hull_record_size": 123,
+    "hull_rghs_offset": 58,
+    "hull_rghs_slots": 16,
+    "hull_hs_stride": 4,
+    "hull_chs_offset": 122
+  },
+  "integration_case": {
+    "player": 1,
+    "design_byte": "0x12",
+    "expected_hull_table": "alternate",
+    "expected_hull_index": 2,
+    "expected_selector": "0x2468",
+    "raw_part": {"group": "0x0010", "item": 7, "count": 2},
+    "contradictory_typed_part": {"group": "0x0020", "item": 4, "count": 1},
+    "lookup_observed_selected_hull_part": true,
+    "damage_and_battle_lifecycle_checked": true
+  },
+  "host_validation": {
+    "integration_report": "F_DO_COOL_BATTLE_ATTACK_INTEGRATION_CHECKS=38 FAILURES=0 RESULT=PASS",
+    "focused_attack_tests": "PASS",
+    "lpshdef_normal_and_alternate_source_tests": "PASS",
+    "full_suite_tests": 523,
+    "expected_skips": 153,
+    "layout_assertions": 2241,
+    "declarations": 846,
+    "baseline_check": "PASS",
+    "diff_check": "PASS"
+  },
+  "native_validation": {
+    "packet": "compat/vc152/f-do-cool-battle-design-hull-e41/",
+    "guest_directory": "C:\\FCBATE41",
+    "build_status": "COMPILE=PASS; LINK=PASS",
+    "report": "F_DO_COOL_BATTLE_ATTACK_INTEGRATION_CHECKS=38 FAILURES=0 RESULT=PASS",
+    "process_exit": 0,
+    "program_error_dialog": false,
+    "evidence_directory": "runs/vmctl-fcbate41/"
+  },
+  "step5_units_closed": 0,
+  "remaining": [
+    "Bind callback lookup to exact native per-player hull-table far pointers and _tok/vrgtok globals",
+    "Complete native FLookupPart table, service, race, and visibility behavior",
+    "Complete beam/torpedo damage-service acceptance",
+    "Original damage differential and complete battle replay",
+    "Step-6 promotion"
+  ]
+}

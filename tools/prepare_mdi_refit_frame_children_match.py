@@ -1,0 +1,11 @@
+#!/usr/bin/env python3
+import argparse,shutil
+from pathlib import Path
+ROOT=Path(__file__).resolve().parents[1]
+def prepare(work,compiler_drive):
+ work=work.resolve();compiler_drive=compiler_drive.resolve();work.mkdir(parents=True,exist_ok=True);src=ROOT/'compat/mdi-refit-frame-children-match'
+ for n in ['MDI.C','BUILD.BAT']:shutil.copyfile(src/n,work/n)
+ c=work.parent/'compile.conf';c.write_text('[sdl]\noutput=surface\n[dosbox]\nmemsize=64\n[cpu]\ncore=normal\ncycles=max\n[autoexec]\nmount c "'+str(compiler_drive)+'"\nmount d "'+str(work)+'"\nd:\ncall build.bat\nexit\n');return c
+if __name__=='__main__':
+ p=argparse.ArgumentParser();p.add_argument('--work',type=Path,required=True);p.add_argument('--compiler-drive',type=Path,default=ROOT/'runs/step4/guest');a=p.parse_args();print(prepare(a.work,a.compiler_drive))
+

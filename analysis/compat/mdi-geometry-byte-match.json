@@ -1,0 +1,29 @@
+{
+  "original_sha256": "ccab6682b55dae14dbf104e491cfbd3b32a6280022020032ae0615500949ba59",
+  "compiler": "Microsoft C/C++ Compiler Version 8.00c (VC++ 1.52c)",
+  "flags": "/c /AM /GA /GEs /Zp1 /Od /Gs /W3 /Fc",
+  "comparison": "No masked bytes; exact inline-assembly body.",
+  "functions": [
+    {
+      "name": "HcrsFromFrameWindowPt",
+      "ne_segment": 5,
+      "original_offset": 9392,
+      "original_bytes": 355,
+      "generated_bytes": 355,
+      "length_difference": 0,
+      "exact_after_address_resolution": true,
+      "differing_bytes": 0,
+      "differences": [],
+      "fixups": [],
+      "backpatch_records": 48,
+      "original_relocated_sha256": "46a045f7f35181c52a1343d9e038e4bc3d277b034c37576d9ca0228f54391f7e",
+      "generated_resolved_sha256": "46a045f7f35181c52a1343d9e038e4bc3d277b034c37576d9ca0228f54391f7e",
+      "source": "compat/mdi-geometry-match/MDI.C"
+    }
+  ],
+  "all_functions_match": true,
+  "object_sha256": "b2d4f85527c827c2f6ad350738546634098657946f3affbe809264604f1029b4",
+  "source_sha256": "f1957f6a6787fcd52ad78d8c8a54a4e123020777674e3f7cd66b7608532dd8a4",
+  "build_log": "mdi.c\nmdi.c(167) : warning C4035: 'HcrsFromFrameWindowPt' : no return value\nmdi.c(167) : warning C4101: 'scratch' : unreferenced local variable\n",
+  "build_status": "PASS\n"
+}

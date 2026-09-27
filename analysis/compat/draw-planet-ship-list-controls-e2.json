@@ -1,0 +1,28 @@
+{
+  "procedure": "DrawPlanetShipList",
+  "evidence_unit": "E2",
+  "scope": "control_handles_and_button_layout",
+  "status": "native_pass",
+  "host_probe": "tests/draw_planet_ship_list_controls_probe.c",
+  "host_report": "DRAW_PLANET_SHIP_LIST_CONTROL_CHECKS=7 FAILURES=0 RESULT=PASS",
+  "native_packet": "compat/vc152/draw-planet-ship-list-controls-e2/",
+  "native_run": "runs/vmctl-vc152dlist-controls-e2/",
+  "source_change": [
+    "reconstructed/include/core.h",
+    "reconstructed/src/draw_planet_ship_list.c"
+  ],
+  "checked": [
+    "populated planet title path",
+    "combo geometry",
+    "button handle permutation",
+    "button visibility order",
+    "transfer lookup and reference reset",
+    "detail fill",
+    "button enable decisions"
+  ],
+  "remaining": [
+    "complete transfer and drawing behavior",
+    "Step-6 ledger promotion"
+  ],
+  "closed": true
+}

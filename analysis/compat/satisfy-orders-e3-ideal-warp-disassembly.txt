@@ -1,0 +1,229 @@
+; Original IFindIdealWarp, NE segment 11
+; EXE SHA256 ccab6682b55dae14dbf104e491cfbd3b32a6280022020032ae0615500949ba59
+a76e: 55                   push bp
+a76f: 8bec                 mov bp, sp
+a771: 81ec0c00             sub sp, 0xc
+a775: 56                   push si
+a776: 57                   push di
+a777: c746f80a00           mov word ptr [bp - 8], 0xa
+a77c: 837e0600             cmp word ptr [bp + 6], 0
+a780: 7403                 je 0xa785
+a782: e91400               jmp 0xa799
+a785: 837e0800             cmp word ptr [bp + 8], 0
+a789: 7403                 je 0xa78e
+a78b: e90b00               jmp 0xa799
+a78e: b87249               mov ax, 0x4972
+a791: 8cda                 mov dx, ds
+a793: 894606               mov word ptr [bp + 6], ax
+a796: 895608               mov word ptr [bp + 8], dx
+a799: c746fc0000           mov word ptr [bp - 4], 0
+a79e: e93d02               jmp 0xa9de
+a7a1: b80c00               mov ax, 0xc
+a7a4: 8b5e06               mov bx, word ptr [bp + 6]
+a7a7: 8b4e08               mov cx, word ptr [bp + 8]
+a7aa: 03d8                 add bx, ax
+a7ac: 8b46fc               mov ax, word ptr [bp - 4]
+a7af: d1e0                 shl ax, 1
+a7b1: 03d8                 add bx, ax
+a7b3: 8ec1                 mov es, cx
+a7b5: 26833f00             cmp word ptr es:[bx], 0
+a7b9: 7f03                 jg 0xa7be
+a7bb: e91c02               jmp 0xa9da
+a7be: c746fa0000           mov word ptr [bp - 6], 0
+a7c3: e90400               jmp 0xa7ca
+a7c6: 8346fa01             add word ptr [bp - 6], 1
+a7ca: b89300               mov ax, 0x93
+a7cd: f76efc               imul word ptr [bp - 4]
+a7d0: c45e06               les bx, ptr [bp + 6]
+a7d3: 268b5f02             mov bx, word ptr es:[bx + 2]
+a7d7: d1e3                 shl bx, 1
+a7d9: d1e3                 shl bx, 1
+a7db: 8b8f0001             mov cx, word ptr [bx + 0x100]
+a7df: 8b9ffe00             mov bx, word ptr [bx + 0xfe]
+a7e3: 03d8                 add bx, ax
+a7e5: 8ec1                 mov es, cx
+a7e7: 268a477a             mov al, byte ptr es:[bx + 0x7a]
+a7eb: 25ff00               and ax, 0xff
+a7ee: 3946fa               cmp word ptr [bp - 6], ax
+a7f1: 7c03                 jl 0xa7f6
+a7f3: e93a00               jmp 0xa830
+a7f6: b89300               mov ax, 0x93
+a7f9: f76efc               imul word ptr [bp - 4]
+a7fc: c45e06               les bx, ptr [bp + 6]
+a7ff: 268b5f02             mov bx, word ptr es:[bx + 2]
+a803: d1e3                 shl bx, 1
+a805: d1e3                 shl bx, 1
+a807: 8b8f0001             mov cx, word ptr [bx + 0x100]
+a80b: 8b9ffe00             mov bx, word ptr [bx + 0xfe]
+a80f: 03d8                 add bx, ax
+a811: b83a00               mov ax, 0x3a
+a814: 03d8                 add bx, ax
+a816: 8b46fa               mov ax, word ptr [bp - 6]
+a819: d1e0                 shl ax, 1
+a81b: d1e0                 shl ax, 1
+a81d: 03d8                 add bx, ax
+a81f: 8ec1                 mov es, cx
+a821: 26833f01             cmp word ptr es:[bx], 1
+a825: 7403                 je 0xa82a
+a827: e90300               jmp 0xa82d
+a82a: e90300               jmp 0xa830
+a82d: e996ff               jmp 0xa7c6
+a830: b89300               mov ax, 0x93
+a833: f76efc               imul word ptr [bp - 4]
+a836: c45e06               les bx, ptr [bp + 6]
+a839: 268b5f02             mov bx, word ptr es:[bx + 2]
+a83d: d1e3                 shl bx, 1
+a83f: d1e3                 shl bx, 1
+a841: 8b8f0001             mov cx, word ptr [bx + 0x100]
+a845: 8b9ffe00             mov bx, word ptr [bx + 0xfe]
+a849: 03d8                 add bx, ax
+a84b: 8ec1                 mov es, cx
+a84d: 268a477a             mov al, byte ptr es:[bx + 0x7a]
+a851: 25ff00               and ax, 0xff
+a854: 3946fa               cmp word ptr [bp - 6], ax
+a857: 7403                 je 0xa85c
+a859: e90800               jmp 0xa864
+a85c: c746f80000           mov word ptr [bp - 8], 0
+a861: e98301               jmp 0xa9e7
+a864: b89300               mov ax, 0x93
+a867: f76efc               imul word ptr [bp - 4]
+a86a: c45e06               les bx, ptr [bp + 6]
+a86d: 268b5f02             mov bx, word ptr es:[bx + 2]
+a871: d1e3                 shl bx, 1
+a873: d1e3                 shl bx, 1
+a875: 8b8f0001             mov cx, word ptr [bx + 0x100]
+a879: 8b9ffe00             mov bx, word ptr [bx + 0xfe]
+a87d: 03d8                 add bx, ax
+a87f: b83a00               mov ax, 0x3a
+a882: 03d8                 add bx, ax
+a884: 8b46fa               mov ax, word ptr [bp - 6]
+a887: d1e0                 shl ax, 1
+a889: d1e0                 shl ax, 1
+a88b: 03d8                 add bx, ax
+a88d: 8ec1                 mov es, cx
+a88f: 268b4702             mov ax, word ptr es:[bx + 2]
+a893: 25ff00               and ax, 0xff
+a896: 8946fa               mov word ptr [bp - 6], ax
+a899: ff76fa               push word ptr [bp - 6]
+a89c: 9a6851a2a1           lcall 0xa1a2, 0x5168
+a8a1: 83c402               add sp, 2
+a8a4: 8946f4               mov word ptr [bp - 0xc], ax
+a8a7: 8956f6               mov word ptr [bp - 0xa], dx
+a8aa: e92401               jmp 0xa9d1
+a8ad: b83600               mov ax, 0x36
+a8b0: 8b5ef4               mov bx, word ptr [bp - 0xc]
+a8b3: 8b4ef6               mov cx, word ptr [bp - 0xa]
+a8b6: 03d8                 add bx, ax
+a8b8: 8b46f8               mov ax, word ptr [bp - 8]
+a8bb: d1e0                 shl ax, 1
+a8bd: 03d8                 add bx, ax
+a8bf: 8ec1                 mov es, cx
+a8c1: 26833f78             cmp word ptr es:[bx], 0x78
+a8c5: 7e03                 jle 0xa8ca
+a8c7: e90301               jmp 0xa9cd
+a8ca: b83600               mov ax, 0x36
+a8cd: 8b5ef4               mov bx, word ptr [bp - 0xc]
+a8d0: 8b4ef6               mov cx, word ptr [bp - 0xa]
+a8d3: 03d8                 add bx, ax
+a8d5: 8b46f8               mov ax, word ptr [bp - 8]
+a8d8: d1e0                 shl ax, 1
+a8da: 03d8                 add bx, ax
+a8dc: 8ec1                 mov es, cx
+a8de: 26833f00             cmp word ptr es:[bx], 0
+a8e2: 7f03                 jg 0xa8e7
+a8e4: e9a800               jmp 0xa98f
+a8e7: 837e0a00             cmp word ptr [bp + 0xa], 0
+a8eb: 7403                 je 0xa8f0
+a8ed: e99f00               jmp 0xa98f
+a8f0: 837efa0e             cmp word ptr [bp - 6], 0xe
+a8f4: 7503                 jne 0xa8f9
+a8f6: e99600               jmp 0xa98f
+a8f9: 837efa0f             cmp word ptr [bp - 6], 0xf
+a8fd: 7503                 jne 0xa902
+a8ff: e98d00               jmp 0xa98f
+a902: 837ef805             cmp word ptr [bp - 8], 5
+a906: 7d03                 jge 0xa90b
+a908: e92700               jmp 0xa932
+a90b: b83600               mov ax, 0x36
+a90e: 8b5ef4               mov bx, word ptr [bp - 0xc]
+a911: 8b4ef6               mov cx, word ptr [bp - 0xa]
+a914: 03d8                 add bx, ax
+a916: 8b46f8               mov ax, word ptr [bp - 8]
+a919: 05ffff               add ax, 0xffff
+a91c: d1e0                 shl ax, 1
+a91e: 03d8                 add bx, ax
+a920: 8ec1                 mov es, cx
+a922: 26833f00             cmp word ptr es:[bx], 0
+a926: 7403                 je 0xa92b
+a928: e90700               jmp 0xa932
+a92b: 836ef801             sub word ptr [bp - 8], 1
+a92f: e95d00               jmp 0xa98f
+a932: 837ef806             cmp word ptr [bp - 8], 6
+a936: 7d03                 jge 0xa93b
+a938: e92700               jmp 0xa962
+a93b: b83600               mov ax, 0x36
+a93e: 8b5ef4               mov bx, word ptr [bp - 0xc]
+a941: 8b4ef6               mov cx, word ptr [bp - 0xa]
+a944: 03d8                 add bx, ax
+a946: 8b46f8               mov ax, word ptr [bp - 8]
+a949: 05feff               add ax, 0xfffe
+a94c: d1e0                 shl ax, 1
+a94e: 03d8                 add bx, ax
+a950: 8ec1                 mov es, cx
+a952: 26833f00             cmp word ptr es:[bx], 0
+a956: 7403                 je 0xa95b
+a958: e90700               jmp 0xa962
+a95b: 836ef802             sub word ptr [bp - 8], 2
+a95f: e92d00               jmp 0xa98f
+a962: 837ef807             cmp word ptr [bp - 8], 7
+a966: 7d03                 jge 0xa96b
+a968: e92400               jmp 0xa98f
+a96b: b83600               mov ax, 0x36
+a96e: 8b5ef4               mov bx, word ptr [bp - 0xc]
+a971: 8b4ef6               mov cx, word ptr [bp - 0xa]
+a974: 03d8                 add bx, ax
+a976: 8b46f8               mov ax, word ptr [bp - 8]
+a979: 05fdff               add ax, 0xfffd
+a97c: d1e0                 shl ax, 1
+a97e: 03d8                 add bx, ax
+a980: 8ec1                 mov es, cx
+a982: 26833f00             cmp word ptr es:[bx], 0
+a986: 7403                 je 0xa98b
+a988: e90400               jmp 0xa98f
+a98b: 836ef803             sub word ptr [bp - 8], 3
+a98f: 837ef80a             cmp word ptr [bp - 8], 0xa
+a993: 7403                 je 0xa998
+a995: e93200               jmp 0xa9ca
+a998: 837efa07             cmp word ptr [bp - 6], 7
+a99c: 7503                 jne 0xa9a1
+a99e: e92900               jmp 0xa9ca
+a9a1: 837efa08             cmp word ptr [bp - 6], 8
+a9a5: 7503                 jne 0xa9aa
+a9a7: e92000               jmp 0xa9ca
+a9aa: 837efa09             cmp word ptr [bp - 6], 9
+a9ae: 7503                 jne 0xa9b3
+a9b0: e91700               jmp 0xa9ca
+a9b3: 837efa0e             cmp word ptr [bp - 6], 0xe
+a9b7: 7503                 jne 0xa9bc
+a9b9: e90e00               jmp 0xa9ca
+a9bc: 837efa0f             cmp word ptr [bp - 6], 0xf
+a9c0: 7503                 jne 0xa9c5
+a9c2: e90500               jmp 0xa9ca
+a9c5: c746f80900           mov word ptr [bp - 8], 9
+a9ca: e90d00               jmp 0xa9da
+a9cd: 836ef801             sub word ptr [bp - 8], 1
+a9d1: 837ef800             cmp word ptr [bp - 8], 0
+a9d5: 7e03                 jle 0xa9da
+a9d7: e9d3fe               jmp 0xa8ad
+a9da: 8346fc01             add word ptr [bp - 4], 1
+a9de: 837efc10             cmp word ptr [bp - 4], 0x10
+a9e2: 7d03                 jge 0xa9e7
+a9e4: e9bafd               jmp 0xa7a1
+a9e7: 8b46f8               mov ax, word ptr [bp - 8]
+a9ea: e90000               jmp 0xa9ed
+a9ed: 5f                   pop di
+a9ee: 5e                   pop si
+a9ef: 8be5                 mov sp, bp
+a9f1: 5d                   pop bp
+a9f2: cb                   retf 
+a9f3: 90                   nop 

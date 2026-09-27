@@ -1,0 +1,120 @@
+{
+  "original_sha256": "ccab6682b55dae14dbf104e491cfbd3b32a6280022020032ae0615500949ba59",
+  "compiler": "Microsoft C/C++ Compiler Version 8.00c (VC++ 1.52c)",
+  "flags": "/c /AM /GA /GEs /Zp1 /Od /Gs /W3 /Fc",
+  "comparison": "No masked bytes; named OMF relocations resolved into the original address layout.",
+  "functions": [
+    {
+      "name": "FWasRaceFile",
+      "ne_segment": 5,
+      "original_offset": 23976,
+      "original_bytes": 596,
+      "generated_bytes": 596,
+      "length_difference": 0,
+      "exact_after_address_resolution": true,
+      "differing_bytes": 0,
+      "differences": [],
+      "fixups": [
+        {
+          "offset": 53,
+          "width": 4,
+          "target": "___setjmp",
+          "resolved_value": "0x111809c8"
+        },
+        {
+          "offset": 69,
+          "width": 4,
+          "target": "_StreamClose",
+          "resolved_value": "0x107053cc"
+        },
+        {
+          "offset": 114,
+          "width": 4,
+          "target": "__strcpy",
+          "resolved_value": "0x11180392"
+        },
+        {
+          "offset": 137,
+          "width": 4,
+          "target": "_PszFormatIds",
+          "resolved_value": "0x1030924c"
+        },
+        {
+          "offset": 146,
+          "width": 4,
+          "target": "_AlertSz",
+          "resolved_value": "0x10402160"
+        },
+        {
+          "offset": 168,
+          "width": 4,
+          "target": "_StreamOpen",
+          "resolved_value": "0x107052ae"
+        },
+        {
+          "offset": 176,
+          "width": 4,
+          "target": "_ReadRt",
+          "resolved_value": "0x10705168"
+        },
+        {
+          "offset": 304,
+          "width": 4,
+          "target": "_ReadRt",
+          "resolved_value": "0x10705168"
+        },
+        {
+          "offset": 345,
+          "width": 4,
+          "target": "_ReadRtPlr",
+          "resolved_value": "0x107005e2"
+        },
+        {
+          "offset": 353,
+          "width": 4,
+          "target": "_ReadRt",
+          "resolved_value": "0x10705168"
+        },
+        {
+          "offset": 385,
+          "width": 4,
+          "target": "_IRaceChecksum",
+          "resolved_value": "0x10e05888"
+        },
+        {
+          "offset": 442,
+          "width": 4,
+          "target": "_FCheckPassword",
+          "resolved_value": "0x104058d8"
+        },
+        {
+          "offset": 518,
+          "width": 4,
+          "target": "__strcpy",
+          "resolved_value": "0x11180392"
+        },
+        {
+          "offset": 558,
+          "width": 4,
+          "target": "__strcpy",
+          "resolved_value": "0x11180392"
+        },
+        {
+          "offset": 566,
+          "width": 4,
+          "target": "_StreamClose",
+          "resolved_value": "0x107053cc"
+        }
+      ],
+      "backpatch_records": 33,
+      "original_relocated_sha256": "be4891030f3d80c818b5ff4645232203931bd596cdb4b7954075e0c683df88dd",
+      "generated_resolved_sha256": "be4891030f3d80c818b5ff4645232203931bd596cdb4b7954075e0c683df88dd",
+      "source": "compat/mdi-racefile-match/MDI.C"
+    }
+  ],
+  "all_functions_match": true,
+  "object_sha256": "489585563204eb83a8e69598f5a6f786bc7324a046708309627ee88f6a513e59",
+  "source_sha256": "99e6ac0d140ae9668ae4f20be40317edcc2ed72367c1aca4aab7c02653bbbdee",
+  "build_log": "mdi.c\nmdi.c(239) : warning C4035: 'FWasRaceFile' : no return value\nmdi.c(239) : warning C4101: 'scratch' : unreferenced local variable\n",
+  "build_status": "PASS\n"
+}

@@ -1,0 +1,37 @@
+{
+  "procedures": ["EstimateItemProdSched"],
+  "phase2_step": "5/6",
+  "guest": "StarDev / Win98 / C:\\EIPINT",
+  "native_run": "runs/vmctl-vc152eipint/",
+  "native_report": "ESTIMATE_ITEM_PROD_SCHED_INTEGRATION_CHECKS=2 FAILURES=0 RESULT=PASS",
+  "packed_boundaries": {
+    "plprod_header_size": 4,
+    "plprod_cAlloc_bits": "word 0 bits 12-15",
+    "plprod_iprodMax": 2,
+    "plprod_iprodMac": 3,
+    "prod_record_size": 4,
+    "prod_cItem_bits": "word 0 bits 0-9",
+    "prod_iItem_bits": "word 0 bits 10-16",
+    "prod_grobj_bits": "word 0 bits 17-19"
+  },
+  "integration": {
+    "c_build_prod_item": true,
+    "resource_consumption_checked": true,
+    "object_callback_checked": true,
+    "queue_quantity_round_trip_checked": true,
+    "caller_planet_preserved": true
+  },
+  "original_executable": {
+    "surface": "Production Queue for Oop Be Gone",
+    "available_items_visible": true,
+    "empty_selected_queue_visible": true,
+    "required_minerals_visible": true,
+    "program_error": false,
+    "populated_schedule_differential": false,
+    "screenshot": "runs/vmctl-vc152current/production-queue-popup.bmp"
+  },
+  "remaining_scope": [
+    "broader original turn-by-turn schedule differential",
+    "complete production-record and resource mutation comparison"
+  ]
+}

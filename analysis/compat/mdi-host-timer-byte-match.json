@@ -1,0 +1,234 @@
+{
+  "original_sha256": "ccab6682b55dae14dbf104e491cfbd3b32a6280022020032ae0615500949ba59",
+  "compiler": "Microsoft C/C++ Compiler Version 8.00c (VC++ 1.52c)",
+  "flags": "/c /AM /GA /GEs /Zp1 /Od /Gs /W3 /Fc",
+  "comparison": "No masked bytes; named OMF relocations resolved into the original address layout.",
+  "functions": [
+    {
+      "name": "HostTimerProc",
+      "ne_segment": 5,
+      "original_offset": 30486,
+      "original_bytes": 661,
+      "generated_bytes": 661,
+      "length_difference": 0,
+      "exact_after_address_resolution": true,
+      "differing_bytes": 0,
+      "differences": [],
+      "fixups": [
+        {
+          "offset": 49,
+          "width": 4,
+          "target": "_FNewTurnAvail",
+          "resolved_value": "0x10704f22"
+        },
+        {
+          "offset": 78,
+          "width": 4,
+          "target": "KILLTIMER",
+          "resolved_value": "0x14f8016c"
+        },
+        {
+          "offset": 104,
+          "width": 4,
+          "target": "__WSPRINTF",
+          "resolved_value": "0x14f802f8"
+        },
+        {
+          "offset": 112,
+          "width": 4,
+          "target": "_DestroyCurGame",
+          "resolved_value": "0x107044b0"
+        },
+        {
+          "offset": 125,
+          "width": 4,
+          "target": "_FLoadGame",
+          "resolved_value": "0x10700810"
+        },
+        {
+          "offset": 157,
+          "width": 4,
+          "target": "_PszFormatIds",
+          "resolved_value": "0x1030924c"
+        },
+        {
+          "offset": 166,
+          "width": 4,
+          "target": "_AlertSz",
+          "resolved_value": "0x10402160"
+        },
+        {
+          "offset": 183,
+          "width": 4,
+          "target": "_CreateChildWindows",
+          "resolved_value": "0x1020038c"
+        },
+        {
+          "offset": 208,
+          "width": 4,
+          "target": "SETTIMER",
+          "resolved_value": "0x14f80168"
+        },
+        {
+          "offset": 230,
+          "width": 4,
+          "target": "FLASHWINDOW",
+          "resolved_value": "0x14f80248"
+        },
+        {
+          "offset": 243,
+          "width": 4,
+          "target": "_PszGetCompressedString",
+          "resolved_value": "0x1010743a"
+        },
+        {
+          "offset": 255,
+          "width": 4,
+          "target": "SETWINDOWTEXT",
+          "resolved_value": "0x14f801ac"
+        },
+        {
+          "offset": 264,
+          "width": 4,
+          "target": "MESSAGEBEEP",
+          "resolved_value": "0x14f80244"
+        },
+        {
+          "offset": 301,
+          "width": 4,
+          "target": "FLASHWINDOW",
+          "resolved_value": "0x14f80248"
+        },
+        {
+          "offset": 309,
+          "width": 4,
+          "target": "_CFindTurnsOutstanding",
+          "resolved_value": "0x10206a26"
+        },
+        {
+          "offset": 355,
+          "width": 4,
+          "target": "_PszFormatIds",
+          "resolved_value": "0x1030924c"
+        },
+        {
+          "offset": 364,
+          "width": 4,
+          "target": "_AlertSz",
+          "resolved_value": "0x10402160"
+        },
+        {
+          "offset": 379,
+          "width": 4,
+          "target": "GETDLGITEM",
+          "resolved_value": "0x14f80228"
+        },
+        {
+          "offset": 389,
+          "width": 4,
+          "target": "ENABLEWINDOW",
+          "resolved_value": "0x14f801a4"
+        },
+        {
+          "offset": 404,
+          "width": 4,
+          "target": "_PszGetCompressedString",
+          "resolved_value": "0x1010743a"
+        },
+        {
+          "offset": 423,
+          "width": 4,
+          "target": "__WSPRINTF",
+          "resolved_value": "0x14f802f8"
+        },
+        {
+          "offset": 448,
+          "width": 4,
+          "target": "__strcat",
+          "resolved_value": "0x11180352"
+        },
+        {
+          "offset": 460,
+          "width": 4,
+          "target": "_PszGetCompressedString",
+          "resolved_value": "0x1010743a"
+        },
+        {
+          "offset": 473,
+          "width": 4,
+          "target": "__strcat",
+          "resolved_value": "0x11180352"
+        },
+        {
+          "offset": 492,
+          "width": 4,
+          "target": "SETWINDOWTEXT",
+          "resolved_value": "0x14f801ac"
+        },
+        {
+          "offset": 505,
+          "width": 4,
+          "target": "GETWINDOW",
+          "resolved_value": "0x14f802cc"
+        },
+        {
+          "offset": 520,
+          "width": 4,
+          "target": "GETWINDOW",
+          "resolved_value": "0x14f802cc"
+        },
+        {
+          "offset": 549,
+          "width": 4,
+          "target": "INVALIDATERECT",
+          "resolved_value": "0x14f80274"
+        },
+        {
+          "offset": 582,
+          "width": 4,
+          "target": "_ShowProgressGauge",
+          "resolved_value": "0x1040636c"
+        },
+        {
+          "offset": 587,
+          "width": 4,
+          "target": "_EnsureAis",
+          "resolved_value": "0x102056bc"
+        },
+        {
+          "offset": 592,
+          "width": 4,
+          "target": "_FGenerateTurn",
+          "resolved_value": "0x10b00000"
+        },
+        {
+          "offset": 597,
+          "width": 4,
+          "target": "_HideProgressGauge",
+          "resolved_value": "0x104063b2"
+        },
+        {
+          "offset": 626,
+          "width": 4,
+          "target": "POSTQUITMESSAGE",
+          "resolved_value": "0x14f80160"
+        },
+        {
+          "offset": 634,
+          "width": 4,
+          "target": "_EnsureAis",
+          "resolved_value": "0x102056bc"
+        }
+      ],
+      "backpatch_records": 31,
+      "original_relocated_sha256": "f8a1e83b79baaa09ca6cd275349fdb897e59d5d92f459ce0b802c2dd06ed4906",
+      "generated_resolved_sha256": "f8a1e83b79baaa09ca6cd275349fdb897e59d5d92f459ce0b802c2dd06ed4906",
+      "source": "compat/mdi-host-timer-match/MDI.C"
+    }
+  ],
+  "all_functions_match": true,
+  "object_sha256": "994337c316ca90329b313c1a091c548ba578e8b17c7c2e9ff9ea72491606ae33",
+  "source_sha256": "a55755248588b7dced17b59f50e991ff152e37db070dceb10d7b45ae06fbcdcc",
+  "build_log": "mdi.c\nmdi.c(270) : warning C4102: 'timer_restore' : unreferenced label\nmdi.c(270) : warning C4101: 'scratch' : unreferenced local variable\n",
+  "build_status": "PASS\n"
+}

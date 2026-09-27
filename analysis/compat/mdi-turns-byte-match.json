@@ -1,0 +1,42 @@
+{
+  "original_sha256": "ccab6682b55dae14dbf104e491cfbd3b32a6280022020032ae0615500949ba59",
+  "compiler": "Microsoft C/C++ Compiler Version 8.00c (VC++ 1.52c)",
+  "flags": "/c /AM /GA /GEs /Zp1 /Od /Gs /W3 /Fc",
+  "comparison": "No masked bytes; named OMF relocations resolved into the original address layout.",
+  "functions": [
+    {
+      "name": "CFindTurnsOutstanding",
+      "ne_segment": 5,
+      "original_offset": 27174,
+      "original_bytes": 495,
+      "generated_bytes": 495,
+      "length_difference": 0,
+      "exact_after_address_resolution": true,
+      "differing_bytes": 0,
+      "differences": [],
+      "fixups": [
+        {
+          "offset": 121,
+          "width": 4,
+          "target": "_FCheckLogFile",
+          "resolved_value": "0x1048cccc"
+        },
+        {
+          "offset": 399,
+          "width": 4,
+          "target": "GETTICKCOUNT",
+          "resolved_value": "0x14f80170"
+        }
+      ],
+      "backpatch_records": 36,
+      "original_relocated_sha256": "eb98843f1f945e422502fed8b2bd523a07b85643403215357fe9bbcb7c1560f3",
+      "generated_resolved_sha256": "eb98843f1f945e422502fed8b2bd523a07b85643403215357fe9bbcb7c1560f3",
+      "source": "compat/mdi-turns-match/MDI.C"
+    }
+  ],
+  "all_functions_match": true,
+  "object_sha256": "6305f4b8a9177740f9ec6b8fbb6f14198d195130276ace5129dbe94c5144088b",
+  "source_sha256": "418b20e8879d80dbb1bb0e7c801af71e97c627052b018389ace4c114a194be14",
+  "build_log": "mdi.c\nmdi.c(203) : warning C4035: 'CFindTurnsOutstanding' : no return value\nmdi.c(203) : warning C4101: 'scratch' : unreferenced local variable\n",
+  "build_status": "PASS\n"
+}

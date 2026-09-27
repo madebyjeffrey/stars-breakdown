@@ -66,9 +66,14 @@ class TutorialByteMatchTests(unittest.TestCase):
     def test_todo_byte_credit_is_separate_and_hash_checked(self):
         from tools.render_todo5 import byte_matches
         actual=byte_matches()
+        superseded={
+            (r['ne_segment'],r['original_offset'])
+            for r in json.loads((ROOT/'analysis/compat/all-byte-match.json').read_text())['functions']
+        }
         for row in self.report['functions']:
             identity=(row['ne_segment'],row['original_offset'])
-            self.assertEqual(identity in actual,row['exact_after_address_resolution'])
+            expected=row['exact_after_address_resolution'] or identity in superseded
+            self.assertEqual(identity in actual,expected)
 
     def test_stale_source_evidence_cannot_receive_todo_credit(self):
         from tools import render_todo5

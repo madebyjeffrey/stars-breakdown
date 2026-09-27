@@ -1,0 +1,42 @@
+{
+  "procedure": "ResearchDlg",
+  "phase2_step": "5/6",
+  "guest": "StarDev / Win98 / C:\\STARS!\\STARS.EXE",
+  "run": "runs/vmctl-vc152current/",
+  "original_executable_observation": {
+    "window": "Research [#32770]",
+    "sections": ["Technology Status", "Currently Researching", "Expected Research Benefits", "Resource Allocation"],
+    "values": ["Energy level 3", "Energy Tech Level 4", "Resources needed to complete: 390", "Resources budgeted for research: 15%", "Next year's projected research budget: 35"],
+    "interaction": "selecting Weapons changed the current-field selection without a Program Error",
+    "program_error": false,
+    "screenshots": ["runs/vmctl-vc152current/research-dialog.bmp", "runs/vmctl-vc152current/research-weapons.bmp"]
+  },
+  "original_instruction_boundary": {
+    "raw_source": "analysis/decompiler/export/raw/10d8_0000_ResearchDlg.c",
+    "menu_path": "Commands > Research..."
+  },
+  "reconstructed_acceptance": {
+    "native_probe": "runs/vmctl-vc152rsd/RSDR.TXT",
+    "expanded_native_probe": "runs/vmctl-vc152rsd2/RSDR.TXT",
+    "resource_control_native_probe": "runs/vmctl-vc152rsd3/RSDR.TXT",
+    "user_message_loop_native_probe": "runs/vmctl-vc152rsdmsg/RSDMSG-FINAL.TXT",
+    "user_message_loop_build": "runs/vmctl-vc152rsdmsg/RSDMSGST-FINAL.TXT",
+    "resource_control_native_checks": [
+      "six technology labels Energy through Biotechnology and Research title resource",
+      "future-field compressed-string resource sequence 0x53 through 0x5a",
+      "radio 0x431 through 0x436, combo 0x43b, Done 2, and Help 0x76 control lookups"
+    ],
+    "expanded_native_checks": [
+      "research settings write at player-record offset 0x22 with length 2",
+      "ordinary packed technology value is 0x12",
+      "zero-percent technology-5/future-technology-6 value is 0x65"
+    ],
+    "user_message_loop_checks": [
+      "real Win16 parent and radio/combo/Done/Help child controls",
+      "GetMessage/TranslateMessage/DispatchMessage pump",
+      "initialization, radio command, and Done command routed through ResearchDlg",
+      "commit and exact two-byte write at player-record offset 0x22"
+    ],
+    "comparison": "The original Win98 research dialog presents the technology radio fields, projected research, allocation, and future-field controls represented by ResearchDlg; the radio interaction redraws the selected field. The packed player write location and nibble boundaries now have fresh native evidence. The resource/control adapter checks the six technology labels, title, future-field resource sequence, and exact radio/combo/Done/Help IDs. The isolated USER harness supplies live Win16 control/message-loop evidence, and the final review-ledger promotion is recorded in tracking/reviews.json."
+  }
+}

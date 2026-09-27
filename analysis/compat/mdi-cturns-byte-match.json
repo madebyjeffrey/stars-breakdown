@@ -1,0 +1,114 @@
+{
+  "original_sha256": "ccab6682b55dae14dbf104e491cfbd3b32a6280022020032ae0615500949ba59",
+  "compiler": "Microsoft C/C++ Compiler Version 8.00c (VC++ 1.52c)",
+  "flags": "/c /AM /GA /GEs /Zp1 /Od /Gs /W3 /Fc",
+  "comparison": "No masked bytes; named OMF relocations resolved into the original address layout.",
+  "functions": [
+    {
+      "name": "CTurnsOutSafe",
+      "ne_segment": 5,
+      "original_offset": 27030,
+      "original_bytes": 143,
+      "generated_bytes": 143,
+      "length_difference": 0,
+      "exact_after_address_resolution": true,
+      "differing_bytes": 0,
+      "differences": [],
+      "fixups": [
+        {
+          "offset": 10,
+          "width": 2,
+          "target": "_gd",
+          "resolved_value": "0x7ca"
+        },
+        {
+          "offset": 25,
+          "width": 2,
+          "target": "_gd",
+          "resolved_value": "0x7ca"
+        },
+        {
+          "offset": 36,
+          "width": 2,
+          "target": "_idPlayer",
+          "resolved_value": "0x18c"
+        },
+        {
+          "offset": 43,
+          "width": 2,
+          "target": "_idPlayer",
+          "resolved_value": "0x18c"
+        },
+        {
+          "offset": 48,
+          "width": 2,
+          "target": "_gd",
+          "resolved_value": "0x7ca"
+        },
+        {
+          "offset": 57,
+          "width": 2,
+          "target": "_gd",
+          "resolved_value": "0x7ca"
+        },
+        {
+          "offset": 60,
+          "width": 2,
+          "target": "_gd",
+          "resolved_value": "0x7ca"
+        },
+        {
+          "offset": 69,
+          "width": 2,
+          "target": "_gd",
+          "resolved_value": "0x7ca"
+        },
+        {
+          "offset": 72,
+          "width": 4,
+          "target": "CFINDTURNSOUTSTANDING",
+          "resolved_value": "0x10206a26"
+        },
+        {
+          "offset": 89,
+          "width": 2,
+          "target": "_gd",
+          "resolved_value": "0x7ca"
+        },
+        {
+          "offset": 98,
+          "width": 2,
+          "target": "_gd",
+          "resolved_value": "0x7ca"
+        },
+        {
+          "offset": 114,
+          "width": 2,
+          "target": "_gd",
+          "resolved_value": "0x7ca"
+        },
+        {
+          "offset": 123,
+          "width": 2,
+          "target": "_gd",
+          "resolved_value": "0x7ca"
+        },
+        {
+          "offset": 129,
+          "width": 2,
+          "target": "_idPlayer",
+          "resolved_value": "0x18c"
+        }
+      ],
+      "backpatch_records": 1,
+      "original_relocated_sha256": "fa05a73120271c6a57ba0b85bd450aeb0594e8b9e9bfa15b560da6f3258b57ee",
+      "generated_resolved_sha256": "fa05a73120271c6a57ba0b85bd450aeb0594e8b9e9bfa15b560da6f3258b57ee",
+      "source": "compat/mdi-cturns-match/MDI.C"
+    }
+  ],
+  "all_functions_match": true,
+  "object_sha256": "3ad2e78d47f7ed9a24ac632f228f5fd2f27d02035b34caff55a2a916e9ca9fa4",
+  "source_sha256": "0633d12067daee52ea1ad3d84620e22518013bd48ddc3ef4b15cd285cfe4d977",
+  "build_log": "mdi.c\nmdi.c(58) : warning C4035: 'CTurnsOutSafe' : no return value\nmdi.c(58) : warning C4101: 'scratch' : unreferenced local variable\n",
+  "build_status": "PASS\n"
+}

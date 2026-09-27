@@ -1,0 +1,114 @@
+{
+  "original_sha256": "ccab6682b55dae14dbf104e491cfbd3b32a6280022020032ae0615500949ba59",
+  "compiler": "Microsoft C/C++ Compiler Version 8.00c (VC++ 1.52c)",
+  "flags": "/c /AM /GA /GEs /Zp1 /Od /Gs /W3 /Fc",
+  "comparison": "No masked bytes; named OMF relocations resolved into the original address layout.",
+  "functions": [
+    {
+      "name": "VerifyTurns",
+      "ne_segment": 5,
+      "original_offset": 26246,
+      "original_bytes": 784,
+      "generated_bytes": 784,
+      "length_difference": 0,
+      "exact_after_address_resolution": true,
+      "differing_bytes": 0,
+      "differences": [],
+      "fixups": [
+        {
+          "offset": 34,
+          "width": 4,
+          "target": "_LpAlloc",
+          "resolved_value": "0x106003b2"
+        },
+        {
+          "offset": 57,
+          "width": 4,
+          "target": "_LpAlloc",
+          "resolved_value": "0x106003b2"
+        },
+        {
+          "offset": 82,
+          "width": 4,
+          "target": "_LpAlloc",
+          "resolved_value": "0x106003b2"
+        },
+        {
+          "offset": 115,
+          "width": 4,
+          "target": "___fmemset",
+          "resolved_value": "0x11181012"
+        },
+        {
+          "offset": 139,
+          "width": 4,
+          "target": "_LpAlloc",
+          "resolved_value": "0x106003b2"
+        },
+        {
+          "offset": 249,
+          "width": 4,
+          "target": "_FCheckLogFile",
+          "resolved_value": "0x1048cccc"
+        },
+        {
+          "offset": 341,
+          "width": 4,
+          "target": "__WSPRINTF",
+          "resolved_value": "0x14f802f8"
+        },
+        {
+          "offset": 359,
+          "width": 4,
+          "target": "_FLoadLogFile",
+          "resolved_value": "0x1048c7a2"
+        },
+        {
+          "offset": 375,
+          "width": 4,
+          "target": "_FRunLogFile",
+          "resolved_value": "0x1048a2d6"
+        },
+        {
+          "offset": 630,
+          "width": 4,
+          "target": "GETTICKCOUNT",
+          "resolved_value": "0x14f80170"
+        },
+        {
+          "offset": 657,
+          "width": 4,
+          "target": "_FreeLp",
+          "resolved_value": "0x106007a8"
+        },
+        {
+          "offset": 689,
+          "width": 4,
+          "target": "_FreeLp",
+          "resolved_value": "0x106007a8"
+        },
+        {
+          "offset": 721,
+          "width": 4,
+          "target": "_FreeLp",
+          "resolved_value": "0x106007a8"
+        },
+        {
+          "offset": 753,
+          "width": 4,
+          "target": "_FreeLp",
+          "resolved_value": "0x106007a8"
+        }
+      ],
+      "backpatch_records": 39,
+      "original_relocated_sha256": "4d62b56d251121249583c531971667907247f67cb5d63b87cad6a7ecd34fd0d8",
+      "generated_resolved_sha256": "4d62b56d251121249583c531971667907247f67cb5d63b87cad6a7ecd34fd0d8",
+      "source": "compat/mdi-verify-turns-match/MDI.C"
+    }
+  ],
+  "all_functions_match": true,
+  "object_sha256": "57668947e100a364c4c6dcb5af0dc9005a36dca8a0d43e0debeeebe3f8537925",
+  "source_sha256": "7f7f1b3de8ef428c06bc22638a0651e60780129b002284b4e6d2acaa88f5d7a0",
+  "build_log": "mdi.c\nmdi.c(291) : warning C4101: 'scratch' : unreferenced local variable\n",
+  "build_status": "PASS\n"
+}

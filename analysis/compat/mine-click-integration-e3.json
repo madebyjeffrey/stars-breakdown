@@ -1,0 +1,32 @@
+{
+  "procedures": ["MineClick"],
+  "phase2_step": "5/6",
+  "step5_unit": "E3 complete minefield caller integration",
+  "guest": "StarDev / Win98 / C:\\MCLIE3",
+  "native_run": "runs/vmctl-vc152mclint3/",
+  "host_report": "MINE_CLICK_INTEGRATION_CHECKS=12 FAILURES=0 RESULT=PASS",
+  "native_report": "MINE_CLICK_INTEGRATION_CHECKS=12 FAILURES=0 RESULT=PASS",
+  "native_build": {
+    "compile": "PASS",
+    "link": "PASS",
+    "process_exit": 0,
+    "program_error_dialog": false
+  },
+  "integration": {
+    "popup_mineral_scan_selector": true,
+    "planet_fleet_thing_markers": true,
+    "friendly_fleet_redraw_and_main_selection": true,
+    "fleet_cargo_dispatch": true,
+    "double_click_suppression": true,
+    "remaining_popup_hit_families": true,
+    "original_win98_selection_arrow": "runs/vmctl-vc152current/mine-summary-arrow.bmp"
+  },
+  "evidence": [
+    "tests/mine_click_integration_probe.c",
+    "reconstructed/src/mine_click.c",
+    "reconstructed/src/popup_mineral_scan_choices.c",
+    "compat/vc152/mine-click-integration-e3/PROBE.C",
+    "runs/vmctl-vc152mclint3/MCLIREP.TXT"
+  ],
+  "promotion": "ready"
+}

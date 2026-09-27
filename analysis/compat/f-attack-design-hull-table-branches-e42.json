@@ -1,0 +1,58 @@
+{
+  "procedures": ["FAttack", "FDoCoolBattle"],
+  "checkpoint": "E42",
+  "extends": "E41",
+  "table_cases": [
+    {
+      "player": 1,
+      "design_byte": "0x12",
+      "table": "alternate",
+      "index": 2,
+      "selector": "0x2468",
+      "raw_hull_slot": {"group": "0x0010", "item": 7, "count": 2},
+      "callback_integration": true
+    },
+    {
+      "player": 3,
+      "design_byte": "0x05",
+      "table": "normal",
+      "index": 5,
+      "selector": "0x1357",
+      "active_hull_slots": 0,
+      "callback_integration": false
+    }
+  ],
+  "layout": {
+    "token_player_offset": 2,
+    "token_design_offset": 4,
+    "hull_size": 123,
+    "hull_hs_array_offset": 58,
+    "hull_hs_slot_count": 16,
+    "hull_hs_stride": 4,
+    "hull_active_count_offset": 122
+  },
+  "validation": {
+    "host_report": "F_DO_COOL_BATTLE_ATTACK_INTEGRATION_CHECKS=44 FAILURES=0 RESULT=PASS",
+    "native_packet": "compat/vc152/f-do-cool-battle-design-hull-e42/",
+    "guest_directory": "C:\\FCBATE42",
+    "native_report": "F_DO_COOL_BATTLE_ATTACK_INTEGRATION_CHECKS=44 FAILURES=0 RESULT=PASS",
+    "build_status": "COMPILE=PASS; LINK=PASS",
+    "process_exit": 0,
+    "program_error_dialog": false,
+    "full_suite_tests": 523,
+    "expected_skips": 153,
+    "layout_assertions": 2241,
+    "declarations": 846,
+    "baseline_check": "PASS",
+    "diff_check": "PASS",
+    "evidence_directory": "runs/vmctl-fcbate42/"
+  },
+  "step5_units_closed": 0,
+  "remaining": [
+    "Exact native per-player hull-table globals and far pointers",
+    "Complete FLookupPart table/service/race/visibility behavior",
+    "Full beam and torpedo damage acceptance",
+    "Original damage differential and complete battle replay",
+    "Step-6 promotion"
+  ]
+}

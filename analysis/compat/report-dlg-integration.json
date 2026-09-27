@@ -1,0 +1,58 @@
+{
+  "procedures": ["ReportDlg"],
+  "phase2_step": "5/6",
+  "guest": "StarDev / Win98 / C:\\RPTINT2",
+  "native_run": "runs/vmctl-vc152rptint2/",
+  "host_report": "REPORT_DLG_INTEGRATION_CHECKS=24 FAILURES=0 RESULT=PASS",
+  "native_report": "REPORT_DLG_INTEGRATION_CHECKS=24 FAILURES=0 RESULT=PASS",
+  "native_evidence": "runs/vmctl-vc152rptint2/RPTINT5.TXT",
+  "native_build": {
+    "compile": "PASS",
+    "link": "PASS",
+    "process_exit": 0,
+    "program_error_dialog": false
+  },
+  "packed_rpt": {
+    "size": 54,
+    "offsets": {
+      "grbitVisible": 0,
+      "irpt": 4,
+      "cFields": 6,
+      "cFieldFirst": 8,
+      "icolSort": 10,
+      "fAscending": 12,
+      "irowFirst": 14,
+      "ptDlg": 16,
+      "ptSize": 20,
+      "rgbdx": 26,
+      "cRows": 42,
+      "cRowsVis": 44,
+      "iSubsort": 46,
+      "hwndVScroll": 48,
+      "hwndHScroll": 50,
+      "cColScroll": 52
+    }
+  },
+  "integration": {
+    "raw_to_typed_round_trip_checked": true,
+    "create_layout_mutations_checked": true,
+    "horizontal_scroll_field_first_checked": true,
+    "vertical_scroll_row_first_checked": true,
+    "callback_invalidation_update_order_checked": true,
+    "scrollbar_class_style_parent_checked": true,
+    "popup_state_synchronization_checked": true,
+    "minimum_window_geometry_checked": true,
+    "report_menu_selection_checked": true,
+    "vc152_style_constants_checked": true
+  },
+  "original_instruction_evidence": {
+    "raw_source": "analysis/decompiler/export/raw/1108_0018_ReportDlg.c",
+    "codeview_types": "analysis/debug/types.json",
+    "original_caller_boundary": "analysis/compat/report-popup-integration.md"
+  },
+  "remaining_scope": [
+    "packed report unions and populated row contents",
+    "exact live USER/GDI handles and menu resource payloads",
+    "full caller integration and final promotion"
+  ]
+}

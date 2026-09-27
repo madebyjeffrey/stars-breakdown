@@ -1,0 +1,29 @@
+{
+  "procedures": ["ProductionDlg", "DrawProductionDlg"],
+  "phase2_step": "5/6",
+  "guest": "StarDev / Win98 / C:\\STARS!\\STARS.EXE",
+  "run": "runs/vmctl-vc152current/",
+  "original_executable_observation": {
+    "window": "Ship & Starbase Designer [#32770]",
+    "design_modes": ["Ships", "Starbases"],
+    "view_modes": ["Existing Designs", "Available Hull Types", "Enemy Hulls", "Components"],
+    "observed_controls": ["design/component list", "hull/component image", "copy", "delete", "edit", "cost and statistics", "Done", "Help"],
+    "program_error": false,
+    "screenshots": [
+      "runs/vmctl-vc152current/ship-design.bmp",
+      "runs/vmctl-vc152current/ship-design-hulls.bmp",
+      "runs/vmctl-vc152current/ship-design-components.bmp",
+      "runs/vmctl-vc152current/ship-design-starbase.bmp"
+    ]
+  },
+  "original_instruction_boundary": {
+    "production_dialog": "analysis/decompiler/export/raw/10d0_1204_ProductionDlg.c",
+    "draw_dialog": "analysis/decompiler/export/raw/10d0_35dc_DrawProductionDlg.c",
+    "menu_path": "Commands > Ship Design..."
+  },
+  "reconstructed_acceptance": {
+    "native_probes": ["runs/vmctl-vc152pdg/PDGR.TXT", "runs/vmctl-vc152dpd/DPDR.TXT", "runs/vmctl-vc152dpd3/DPDR.TXT"],
+    "expanded_rendering_cases": ["decimal mineral costs 1/20/300/4000", "both source and one-based planet selections", "mineral label color callbacks", "normal-text color restoration", "native redirected output empty"],
+    "comparison": "The original Ship & Starbase Designer displays the typed dialog's design mode, view mode, list, image, cost/stat, and command-control boundaries. This is an original dialog/rendering integration checkpoint, not proof that packed production globals, exact resource tables, queue records, or every Win16 control message are complete."
+  }
+}

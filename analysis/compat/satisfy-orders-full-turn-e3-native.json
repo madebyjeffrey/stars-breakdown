@@ -1,0 +1,47 @@
+{
+  "procedure": "SatisfyOrders",
+  "phase2_step": "5/6",
+  "unit": "E3 complete four-pass state/message integration subcheck",
+  "status": "supporting milestone; original full-turn differential remains open",
+  "checks": 18,
+  "host_report": "SATISFY_ORDERS_FULL_TURN_E3_CHECKS=18 FAILURES=0 RESULT=PASS",
+  "guest": "StarDev / Win98 / C:\\SYFTE4",
+  "native_report": "SATISFY_ORDERS_FULL_TURN_E3_CHECKS=18 FAILURES=0 RESULT=PASS",
+  "native_build": {
+    "compile": "PASS",
+    "link": "PASS",
+    "process_exit": 0,
+    "program_error_dialog": false
+  },
+  "covered": [
+    "pre-movement DoOrders sequence and SatisfyOrders passes 1 and 2",
+    "post-movement DoOrders sequence and SatisfyOrders passes 3 and 4",
+    "battle-id creation and battle/thing callback ordering",
+    "battle-plan, mine, mine-laying, auto-route, and player-transfer dispatch",
+    "generic and player message ordering and recipients",
+    "order completion, cargo mutation, planet ownership flags, and turn clearing",
+    "suppression of transfer-to-others after post-movement turns"
+  ],
+  "original_oracle": [
+    "analysis/decompiler/export/raw/10b0_179a_DoOrders.c",
+    "analysis/decompiler/export/raw/10b0_6798_SatisfyOrders.c",
+    "analysis/compat/satisfy-orders-full-turn-e3-original-oracle.{md,json}"
+  ],
+  "evidence": [
+    "tests/satisfy_orders_full_turn_e3_probe.c",
+    "compat/vc152/satisfy-orders-full-turn-e3-r2/",
+    "runs/vmctl-vc152syfte4/SYFTE3.TXT",
+    "runs/vmctl-vc152syfte4/SYTSTA.TXT",
+    "runs/vmctl-vc152syfte4/SYTCL.LOG",
+    "runs/vmctl-vc152syfte4/SYTLINK.LOG",
+    "runs/vmctl-vc152syfte4/SYTURN.MAP",
+    "reconstructed/src/do_orders.c",
+    "reconstructed/src/satisfy_orders.c",
+    "analysis/compat/satisfy-orders-full-turn-e3-original-oracle.md",
+    "analysis/compat/satisfy-orders-full-turn-e3-original-oracle.json"
+  ],
+  "remaining": [
+    "original executable full-turn state/message differential",
+    "Step-6 ledger synchronization and promotion"
+  ]
+}

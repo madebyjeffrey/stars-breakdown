@@ -1,0 +1,59 @@
+{
+  "procedures": ["TransferStuff"],
+  "phase2_step": "5/6",
+  "guest": "StarDev / Win98 / C:\\TRINT",
+  "native_run": "runs/vmctl-vc152trint/",
+  "host_report": "TRANSFER_STUFF_PACKED_CHECKS=14 FAILURES=0 RESULT=PASS",
+  "native_report": "TRANSFER_STUFF_PACKED_CHECKS=14 FAILURES=0 RESULT=PASS",
+  "native_build": {
+    "compile": "PASS",
+    "link": "PASS",
+    "process_exit": 0,
+    "program_error_dialog": false
+  },
+  "packed_transfer": {
+    "size": 128,
+    "offsets": {
+      "id": 0,
+      "grobj": 2,
+      "fleet_planet_thing_view": 4,
+      "fleet_owner": 6,
+      "fleet_ship_counts": 16
+    },
+    "overlapping_views": {
+      "fleet_size": 124,
+      "planet_size": 56,
+      "thing_size": 18
+    }
+  },
+  "integration": {
+    "raw_object_identity_checked": true,
+    "raw_object_kind_checked": true,
+    "raw_fleet_cargo_presence_checked": true,
+    "raw_fleet_owner_checked": true,
+    "split_and_dialog_cancel_checked": true,
+    "mode_zero_jettison_checked": true,
+    "valid_hull_enumeration_checked": true,
+    "balance_refresh_and_scanner_invalidation_checked": true,
+    "transfer_mode_reset_checked": true
+  },
+  "service_boundary": {
+    "packed_object_lookup": "callback-owned prepared objects",
+    "transfer_dialog": "callback-owned",
+    "cargo_balance": "closed separately by analysis/compat/transfer-stuff-cargo-e2.json",
+    "win16_lookup_and_refresh": "callback-owned"
+  },
+  "original_instruction_evidence": {
+    "raw_source": "analysis/decompiler/export/raw/1050_4faa_TransferStuff.c",
+    "codeview_types": "analysis/debug/types.json",
+    "original_consumer_boundary": "analysis/compat/transfer-stuff-integration.md"
+  },
+  "remaining_scope": [
+    "complete packed fleet, planet, and thing mutation",
+    "exact transfer dialog behavior",
+    "original cargo-balance differential beyond the E2 service matrix",
+    "Win16 lookup and refresh behavior",
+    "original differential coverage",
+    "final review and promotion"
+  ]
+}

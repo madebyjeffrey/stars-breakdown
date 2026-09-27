@@ -1,0 +1,36 @@
+{
+  "procedure": "DoAutomitronAiTurn",
+  "checkpoint": "E5 named action dispatch matrix",
+  "scope": "host-only",
+  "checks": 20,
+  "failures": 0,
+  "result": "PASS",
+  "report": "AUTOMITRON_AI_ACTION_MATRIX_CHECKS=20 FAILURES=0 RESULT=PASS",
+  "step5_units_closed": 0,
+  "covered": [
+    "clear-task action dispatch",
+    "movement action dispatch",
+    "colonization action dispatch",
+    "wormhole action dispatch",
+    "starbase action dispatch",
+    "attack action dispatch",
+    "armada-target action dispatch",
+    "transport action dispatch",
+    "freighter-target action dispatch",
+    "complete plan payload preservation",
+    "owned-fleet filter and post-action visitor"
+  ],
+  "remaining": [
+    "native replay",
+    "raw target predicates",
+    "packed order writes",
+    "original-turn differential",
+    "Step-6 promotion"
+  ],
+  "evidence": [
+    "reconstructed/src/do_automitron_ai_turn.c",
+    "reconstructed/include/core.h",
+    "tests/do_automitron_ai_turn_action_matrix_probe.c",
+    "analysis/decompiler/export/raw/1098_01e0_DoAutomitronAiTurn.c"
+  ]
+}

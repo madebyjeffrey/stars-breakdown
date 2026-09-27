@@ -1,0 +1,61 @@
+{
+  "procedures": ["DrawPlanetShipList"],
+  "phase2_step": "5/6",
+  "guest": "StarDev / Win98 / C:\\DLIST",
+  "native_run": "runs/vmctl-vc152dlistint/",
+  "host_report": "DRAW_PLANET_SHIP_LIST_PACKED_CHECKS=18 FAILURES=0 RESULT=PASS",
+  "native_report": "DRAW_PLANET_SHIP_LIST_PACKED_CHECKS=18 FAILURES=0 RESULT=PASS",
+  "native_build": {
+    "compile": "PASS",
+    "link": "PASS",
+    "process_exit": 0,
+    "program_error_dialog": false
+  },
+  "packed_selection": {
+    "size": 226,
+    "planet_offset": 152,
+    "planet_size": 56
+  },
+  "packed_transfer": {
+    "size": 128,
+    "offsets": {
+      "id": 0,
+      "grobj": 2,
+      "fleet_thing_view": 4,
+      "fleet_owner": 6
+    },
+    "thing_bits": {
+      "owner": "fleet_thing_view bits 9-12",
+      "thing_kind": "fleet_thing_view bits 13-15"
+    }
+  },
+  "integration": {
+    "raw_planet_identity_checked": true,
+    "raw_transfer_identity_checked": true,
+    "raw_transfer_kind_checked": true,
+    "raw_fleet_owner_checked": true,
+    "raw_thing_owner_and_kind_checked": true,
+    "transfer_lookup_gating_checked": true,
+    "fleet_and_thing_enablement_checked": true,
+    "no_object_visibility_checked": true
+  },
+  "service_boundary": {
+    "transfer_lookup": "callback-owned prepared transfer",
+    "fleet_and_thing_detail_drawing": "callback-owned",
+    "win16_controls_and_gauges": "callback-owned",
+    "localized_text": "callback-owned"
+  },
+  "original_instruction_evidence": {
+    "raw_source": "analysis/decompiler/export/raw/1048_377e_DrawPlanetShipList.c",
+    "codeview_types": "analysis/debug/types.json",
+    "original_consumer_boundary": "analysis/compat/planet-frame-integration.md"
+  },
+  "remaining_scope": [
+    "complete packed fleet and thing transfer behavior",
+    "exact Win16 control handles and geometry",
+    "localized text and gauges",
+    "detailed drawing",
+    "original differential coverage",
+    "final review and promotion"
+  ]
+}

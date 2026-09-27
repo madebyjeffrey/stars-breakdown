@@ -1,0 +1,47 @@
+{
+  "procedures": ["SatisfyOrders"],
+  "phase2_step": "5/6",
+  "unit": "E2 raw merge FSendPlrMsg2 payload boundary",
+  "status": "supporting milestone; named E2 remains open",
+  "guest": "StarDev / Win98 / C:\\SYOE15",
+  "native_run": "runs/vmctl-vc152syoe15/",
+  "host_report": "SATISFY_ORDERS_RAW_MERGE_CHECKS=12 FAILURES=0 RESULT=PASS",
+  "native_report": "SATISFY_ORDERS_RAW_MERGE_CHECKS=12 FAILURES=0 RESULT=PASS EXIT=0",
+  "native_build": {
+    "compile": "PASS",
+    "link": "PASS",
+    "process_exit": 0,
+    "program_error_dialog": false,
+    "compiler_options": "/AM /GA /GEs /Zp1 /O /W3",
+    "response_file_definitions": "SYOMERGE.DEF included; Win16 stack/heap/stub directives applied"
+  },
+  "covered": [
+    "production raw_message2 service boundary",
+    "same-owner merge message 0x00f7",
+    "enemy destination message 0x00f6",
+    "absent or inactive destination message 0x00f5",
+    "source-owner recipient and 0x8000 fleet identity payload",
+    "successful destination identity and WFromLpfl payload",
+    "order completion after each merge outcome"
+  ],
+  "remaining": [
+    "ordinary resource-transfer FSendPlrMsg layouts",
+    "raw message layouts for shortage, colonist, and technology branches",
+    "original transfer differential against the full game message stream",
+    "E3 full-turn/original differential",
+    "named SatisfyOrders E2 Step-5 closure and Step-6 promotion"
+  ],
+  "evidence": [
+    "tests/satisfy_orders_raw_merge_probe.c",
+    "compat/vc152/satisfy-orders-raw-merge-e2-native/",
+    "runs/vmctl-vc152syoe15/SYOMERGE.TXT",
+    "runs/vmctl-vc152syoe15/SYOMERGESTA.TXT",
+    "runs/vmctl-vc152syoe15/SYOMERGECL.LOG",
+    "runs/vmctl-vc152syoe15/SYOMERGELINK.LOG",
+    "runs/vmctl-vc152syoe15/SYOMERGE.MAP",
+    "reconstructed/src/satisfy_orders.c",
+    "reconstructed/include/core.h",
+    "analysis/decompiler/export/raw/10b0_6798_SatisfyOrders.c",
+    "/Users/jdrake/Projects/stars-decompile/turn3.c"
+  ]
+}

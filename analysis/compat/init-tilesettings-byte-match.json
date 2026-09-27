@@ -1,0 +1,29 @@
+{
+  "original_sha256": "ccab6682b55dae14dbf104e491cfbd3b32a6280022020032ae0615500949ba59",
+  "compiler": "Microsoft C/C++ Compiler Version 8.00c (VC++ 1.52c)",
+  "flags": "/c /AM /GA /GEs /Zp1 /Od /Gs /W3 /Fc",
+  "comparison": "No masked bytes; no relocations were emitted for this numeric-address inline-assembly candidate.",
+  "functions": [
+    {
+      "name": "ReadIniTileSettings",
+      "ne_segment": 1,
+      "original_offset": 11146,
+      "original_bytes": 612,
+      "generated_bytes": 612,
+      "length_difference": 0,
+      "exact_after_address_resolution": true,
+      "differing_bytes": 0,
+      "differences": [],
+      "fixups": [],
+      "backpatch_records": 31,
+      "original_relocated_sha256": "dba43ff09e1cd021b88b1742125d4017f1e26fb93048eef29aa5707db6732e76",
+      "generated_resolved_sha256": "dba43ff09e1cd021b88b1742125d4017f1e26fb93048eef29aa5707db6732e76",
+      "source": "compat/init-tilesettings-match/INIT.C"
+    }
+  ],
+  "all_functions_match": true,
+  "object_sha256": "570c7e307358517daba3050c785cf6b08bb50173c24e069fb93c287ef923f90a",
+  "source_sha256": "c9c3d0653d2cab8ced3ad9abd36e27884c457a21f98dfe5035d9f0decc488271",
+  "build_log": "init.c\ninit.c(282) : warning C4102: 'format_increment' : unreferenced label\ninit.c(282) : warning C4101: 'scratch' : unreferenced local variable\n",
+  "build_status": "PASS\n"
+}

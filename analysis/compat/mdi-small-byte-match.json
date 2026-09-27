@@ -1,0 +1,152 @@
+{
+  "original_sha256": "ccab6682b55dae14dbf104e491cfbd3b32a6280022020032ae0615500949ba59",
+  "compiler": "Microsoft C/C++ Compiler Version 8.00c (VC++ 1.52c)",
+  "flags": "/c /AM /GA /GEs /Zp1 /Od /Gs /W3 /Fc",
+  "comparison": "No masked bytes; named OMF relocations resolved into the original address layout.",
+  "functions": [
+    {
+      "name": "DrawHostOptions",
+      "ne_segment": 5,
+      "original_offset": 30470,
+      "original_bytes": 15,
+      "generated_bytes": 15,
+      "length_difference": 0,
+      "exact_after_address_resolution": true,
+      "differing_bytes": 0,
+      "differences": [],
+      "fixups": [],
+      "backpatch_records": 11,
+      "original_relocated_sha256": "279ed3b1e9c2028e111ce76c203eaa2b913c76d96698dd99de8e9689a54771dc",
+      "generated_resolved_sha256": "279ed3b1e9c2028e111ce76c203eaa2b913c76d96698dd99de8e9689a54771dc",
+      "source": "compat/mdi-small-match/MDI.C"
+    },
+    {
+      "name": "GetASubMenu",
+      "ne_segment": 5,
+      "original_offset": 22682,
+      "original_bytes": 89,
+      "generated_bytes": 89,
+      "length_difference": 0,
+      "exact_after_address_resolution": true,
+      "differing_bytes": 0,
+      "differences": [],
+      "fixups": [
+        {
+          "offset": 11,
+          "width": 2,
+          "target": "_hwndActive",
+          "resolved_value": "0x192"
+        },
+        {
+          "offset": 21,
+          "width": 2,
+          "target": "_hwndActive",
+          "resolved_value": "0x192"
+        },
+        {
+          "offset": 24,
+          "width": 4,
+          "target": "ISZOOMED",
+          "resolved_value": "0x14f802d4"
+        },
+        {
+          "offset": 52,
+          "width": 4,
+          "target": "GETMENU",
+          "resolved_value": "0x14f80290"
+        },
+        {
+          "offset": 70,
+          "width": 4,
+          "target": "GETSUBMENU",
+          "resolved_value": "0x14f80294"
+        }
+      ],
+      "backpatch_records": 11,
+      "original_relocated_sha256": "a658cd00b50c6816d5fc8988b655b98961cff449dc7ad7c77522b40c568a8690",
+      "generated_resolved_sha256": "a658cd00b50c6816d5fc8988b655b98961cff449dc7ad7c77522b40c568a8690",
+      "source": "compat/mdi-small-match/MDI.C"
+    },
+    {
+      "name": "GetWindowRc",
+      "ne_segment": 5,
+      "original_offset": 31148,
+      "original_bytes": 73,
+      "generated_bytes": 73,
+      "length_difference": 0,
+      "exact_after_address_resolution": true,
+      "differing_bytes": 0,
+      "differences": [],
+      "fixups": [
+        {
+          "offset": 25,
+          "width": 4,
+          "target": "GETWINDOWPLACEMENT",
+          "resolved_value": "0x14f802e0"
+        }
+      ],
+      "backpatch_records": 11,
+      "original_relocated_sha256": "b3ff49ceff7cf2c24336c83eb5103ca2d0665a9529daba54445a4dea3759e929",
+      "generated_resolved_sha256": "b3ff49ceff7cf2c24336c83eb5103ca2d0665a9529daba54445a4dea3759e929",
+      "source": "compat/mdi-small-match/MDI.C"
+    },
+    {
+      "name": "SetWindowIniString",
+      "ne_segment": 5,
+      "original_offset": 31222,
+      "original_bytes": 128,
+      "generated_bytes": 128,
+      "length_difference": 0,
+      "exact_after_address_resolution": true,
+      "differing_bytes": 0,
+      "differences": [],
+      "fixups": [
+        {
+          "offset": 13,
+          "width": 4,
+          "target": "ISZOOMED",
+          "resolved_value": "0x14f802d4"
+        },
+        {
+          "offset": 36,
+          "width": 4,
+          "target": "ISICONIC",
+          "resolved_value": "0x14f80198"
+        },
+        {
+          "offset": 67,
+          "width": 4,
+          "target": "_GetWindowRc",
+          "resolved_value": "0x102079ac"
+        },
+        {
+          "offset": 96,
+          "width": 4,
+          "target": "_PszGetCompressedString",
+          "resolved_value": "0x1010743a"
+        },
+        {
+          "offset": 108,
+          "width": 2,
+          "target": "_szWork",
+          "resolved_value": "0x57a4"
+        },
+        {
+          "offset": 115,
+          "width": 4,
+          "target": "__WSPRINTF",
+          "resolved_value": "0x14f802f8"
+        }
+      ],
+      "backpatch_records": 11,
+      "original_relocated_sha256": "0f59fcb1006336cd1f0ace2ad7da2c168595e017a6f9f292ead33efa21dad6e8",
+      "generated_resolved_sha256": "0f59fcb1006336cd1f0ace2ad7da2c168595e017a6f9f292ead33efa21dad6e8",
+      "source": "compat/mdi-small-match/MDI.C"
+    }
+  ],
+  "all_functions_match": true,
+  "object_sha256": "d658daffdc878bc6b3faf1c54c24f01f00ef78e4c8bec00fcb9d1918324df1c4",
+  "source_sha256": "4fea42b62526a4d6b26100cf84513e832a895f2de108703c2671ce59f3eafb98",
+  "build_log": "mdi.c\n",
+  "build_status": "PASS\n"
+}

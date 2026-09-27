@@ -1,0 +1,38 @@
+{
+  "procedure": "ProductionDlg",
+  "phase2_step": "5/6",
+  "evidence_unit": "E3_saved_queue_accepted_and_canceled_mutation_sub_boundary",
+  "guest": "StarDev / Win98 / C:\\PDGQ4",
+  "host_probe": {
+    "source": "tests/production_dlg_queue_probe.c",
+    "checks": 9,
+    "failures": 0,
+    "result": "PASS"
+  },
+  "native_probe": {
+    "package": "compat/vc152/production-dlg-queue-e4/",
+    "status": "COMPILE=PASS LINK=PASS",
+    "report": "runs/vmctl-vc152pdgq4/PDGQRES.TXT",
+    "checks": 9,
+    "failures": 0,
+    "result": "PASS",
+    "process_exit": 0,
+    "program_error_dialog": false,
+    "console_output_bytes": 0
+  },
+  "queue_boundary": {
+    "sparse_slot_selection_preserves_original_index": true,
+    "editor_resource_id": "0x04c0",
+    "accepted_mutation_persists": true,
+    "canceled_mutation_restores_queue_table": true,
+    "raw_source": "analysis/decompiler/export/raw/10d0_1204_ProductionDlg.c"
+  },
+  "scope_note": "This closes the accepted/canceled queue-editor mutation sub-boundary. Live USER/message-loop behavior, original queue differential evidence, production globals, complete resources, and promotion remain open.",
+  "evidence": [
+    "tests/production_dlg_queue_probe.c",
+    "reconstructed/src/production_dlg.c",
+    "reconstructed/include/core.h",
+    "compat/vc152/production-dlg-queue-e4/",
+    "runs/vmctl-vc152pdgq4/"
+  ]
+}

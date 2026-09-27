@@ -1,0 +1,55 @@
+{
+  "procedure": "ProductionDlg",
+  "phase2_step": "5/6",
+  "evidence_unit": "E2_localized_resource_contract_complete",
+  "guest": "StarDev / Win98 / C:\\PDGRS4",
+  "host_probe": {
+    "source": "tests/production_dlg_resource_probe.c",
+    "checks": 8,
+    "failures": 0,
+    "result": "PASS"
+  },
+  "native_probe": {
+    "package": "compat/vc152/production-dlg-resource-e2/",
+    "status": "COMPILE=PASS LINK=PASS",
+    "report": "runs/vmctl-vc152pdgrs4/PDGERES.TXT",
+    "checks": 8,
+    "failures": 0,
+    "result": "PASS",
+    "process_exit": 0,
+    "program_error_dialog": false,
+    "console_output_bytes": 0
+  },
+  "direct_resource_contract": [
+    {
+      "id": "0x00d3",
+      "lookup": "CchGetString",
+      "value": "callback payload not asserted; live left-click boundary reached",
+      "order": "copy_popup_string_before_popup"
+    },
+    {
+      "id": "0x04c0",
+      "lookup": "PszGetCompressedString",
+      "value": "<Customize> (observed in original right-click menu)",
+      "order": "resolve_menu_label_before_popup_menu"
+    }
+  ],
+  "raw_call_set": {
+    "exhaustive_for_production_dlg": true,
+    "source": "analysis/decompiler/export/raw/10d0_1204_ProductionDlg.c",
+    "outside_diamond_suppresses_lookups": true
+  },
+  "scope_note": "This closes E2 for the direct ProductionDlg resource-ID/callback-order contract. The 0x00d3 localized spelling is not asserted; the 0x04c0 editor label was observed as <Customize> in the original Win98 menu. InitializeProductionDlg resource 0x033e is a separate reviewed procedure. Original queue differential and Step-6 promotion remain open.",
+  "evidence": [
+    "analysis/compat/production-dlg-resource-e2-complete.md",
+    "analysis/decompiler/export/raw/10d0_1204_ProductionDlg.c",
+    "tests/production_dlg_resource_probe.c",
+    "reconstructed/src/production_dlg.c",
+    "compat/vc152/production-dlg-resource-e2/",
+    "runs/vmctl-vc152pdgrs3/",
+    "runs/vmctl-vc152pdgrs3/original-production-right-real.png",
+    "runs/vmctl-vc152pdgrs3/original-production-left-real.png",
+    "runs/vmctl-vc152pdgrs3/RINFO-left.txt",
+    "runs/vmctl-vc152pdgrs4/"
+  ]
+}

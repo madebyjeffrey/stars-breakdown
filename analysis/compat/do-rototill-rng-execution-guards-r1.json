@@ -1,0 +1,57 @@
+{
+  "cut_edges": [
+    {
+      "caller": "EndTutor",
+      "target": "Randomize2"
+    },
+    {
+      "caller": "EndTutor",
+      "target": "RestoreGameState"
+    },
+    {
+      "caller": "FRunLogRecord",
+      "target": "DestroyAllIshdef"
+    },
+    {
+      "caller": "FRunLogRecord",
+      "target": "FDeleteFleet"
+    },
+    {
+      "caller": "FRunLogRecord",
+      "target": "FFleetMergeAll"
+    },
+    {
+      "caller": "InvalidateReport",
+      "target": "SortReportCache"
+    },
+    {
+      "caller": "SatisfyOrders",
+      "target": "Merge2Fleets"
+    }
+  ],
+  "draw_plan_ship_reachable_after_guards": false,
+  "four_design_low_nibbles": [
+    1,
+    1,
+    1,
+    1
+  ],
+  "original_run_command": "C:\\RTORIG1\\STARS.EXE -g C:\\RTORIG1\\CLEAN.HST",
+  "original_x2_sha256": "591c69c1c395c1021a9b8f8714ef5c9076515d989e40a225f60bce7a2a95d0b7",
+  "randomize2_reachable_after_guards": false,
+  "reachable_after_guard_count": 783,
+  "retained_fleet_order_count": 10,
+  "schema": "rototill-rng-execution-guards-r1",
+  "scope_note": "The cut edges follow retained X2 design/addition and fleet-order guards and original raw branches. This is a retained-turn call-context proof, not a general claim about other UI or game states.",
+  "sort_report_cache_reachable_after_guards": false,
+  "start_tutor_directly_reachable": false,
+  "x2_record_kinds": {
+    "0": 1,
+    "1": 1,
+    "4": 1,
+    "8": 1,
+    "9": 1,
+    "27": 4,
+    "29": 1
+  }
+}

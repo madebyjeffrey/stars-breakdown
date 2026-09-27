@@ -1,0 +1,27 @@
+{
+  "procedure": "FAttack",
+  "range": "001f:69ac-7cdd",
+  "checkpoint": "E15",
+  "scope": "host_packed_part_to_raw_complex_scaling_and_stateful_damage",
+  "named_step5_units_closed": 0,
+  "host": {
+    "probe": "tests/f_attack_raw_damage_probe.c",
+    "checks": 7,
+    "failures": 0,
+    "result": "PASS"
+  },
+  "native": {
+    "status": "pending_win98_agent_reconnection",
+    "packet": "compat/vc152/f-attack-complex-native-e15/",
+    "guest_directory": "C:\\FAPNE15",
+    "packet_text_line_endings": "ASCII_CRLF",
+    "packet_file_count": 41
+  },
+  "remaining": [
+    "fresh native replay",
+    "complete raw complex-beam scaling acceptance",
+    "broader original damage differentials",
+    "full battle replay",
+    "Step-6 ledger promotion"
+  ]
+}

@@ -1,0 +1,7 @@
+# DoAutomitronAiTurn E3 direct packed route-apply branch
+
+The original Automitron caller invokes `FMoveAiFleet` for a resolved movement order (`analysis/decompiler/export/raw/1098_01e0_DoAutomitronAiTurn.c`, line 584); its colonization helper invokes the same service (`analysis/decompiler/export/raw/1090_0c78_FColonizeAiFleet.c`, line 22). The readable caller previously passed a plan to an opaque action callback. It now accepts a caller-resolved exact 18-byte `_order` in `StarsAutomitronFleetPlan` and, when no specialized/generic action applier exists, applies MOVE or COLONIZE via production `stars_ai_move_order_to_plord`. The fleet supplies a bounded `PLORD` allocation, and a refresh callback is required after mutation. Existing action callbacks retain precedence.
+
+The strict-C89 host probe `tests/do_automitron_packed_route_e3_probe.c` passes 10 checks: 18-byte order size, direct move write, preserved earlier order, colonize append, exact refresh view, insufficient-capacity no-write failure, and specialized callback precedence. This is a concrete packed order mutation beyond first-order repair. Target search, caller-provided order construction, other route action families, and original AI-turn state/callback comparison remain open. It is supporting AU-E3 evidence, not unit closure.
+
+The r3 Win16 packet targeted `C:\AUE1N3` but was superseded by the subsequent scout-gate source change. Current validation input is r4 targeting `C:\AUE1N4`. No guest compilation or execution has occurred.

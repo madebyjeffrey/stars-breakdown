@@ -1,0 +1,36 @@
+{
+  "procedures": ["DumpFleets"],
+  "phase2_step": "5/6",
+  "evidence_unit": "E1 fleet visibility and coordinator boundary",
+  "host_report": "DUMP_FLEETS_BOUNDARY_CHECKS=20 FAILURES=0 RESULT=PASS",
+  "host_compile": "strict_c89_pass",
+  "native_packet": "compat/vc152/dump-fleets-boundary-production-e3/",
+  "guest_path": "C:\\DFBP",
+  "native_status": "pass",
+  "native_compile": "COMPILE=PASS",
+  "native_link": "LINK=PASS",
+  "native_report": "runs/vmctl-vc152dfbp/DFBR.TXT",
+  "native_build_status": "runs/vmctl-vc152dfbp/DFBSTA.TXT",
+  "native_compile_log": "runs/vmctl-vc152dfbp/DFBCL.LOG",
+  "native_link_log": "runs/vmctl-vc152dfbp/DFBLINK.LOG",
+  "native_process_exit": 0,
+  "native_program_error_dialog": false,
+  "step5_units_closed": 0,
+  "checks": 20,
+  "coverage": {
+    "active_game_and_viewer_gates": true,
+    "open_header_and_row_failure_cleanup": true,
+    "normal_and_detailed_header_counts": true,
+    "all_ship_class_and_other_totals": true,
+    "all_cargo_slots": true,
+    "detail_suppression": true,
+    "destination_requires_detail": true,
+    "detailed_scanner_task_mine_and_terraform_fields": true
+  },
+  "remaining_scope": [
+    "localized scanner/task/minefield/battle-plan serialization",
+    "complete packed service integration",
+    "original output differential",
+    "final promotion"
+  ]
+}

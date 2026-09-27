@@ -1,0 +1,53 @@
+{
+  "procedures": [
+    "DrawPlanetStats",
+    "DrawPlanetProduction",
+    "DrawPlanetStarbase",
+    "DrawPlanShipBitmap",
+    "DrawPlanetShipList"
+  ],
+  "phase2_step": "5/6",
+  "guest": "StarDev / Win98 / C:\\STARS!\\STARS.EXE",
+  "run": "runs/vmctl-vc152current/",
+  "original_executable_observation": {
+    "window": "Stars! -- A Barefoot JayWalk -- Humanoids -- game.m1 [starsframe]",
+    "planet": "Oop Be Gone",
+    "planet_panels": [
+      "planet summary value/population",
+      "gravity/temperature/radiation gauges",
+      "mineral bars",
+      "Production queue",
+      "Starbase dock capacity/armor/shields"
+    ],
+    "fleet_panels": [
+      "Stalwart Defender #5 bitmap",
+      "Fuel & Cargo",
+      "Fleet Composition",
+      "Fleet Waypoints"
+    ],
+    "selection_change": "clicking the map changed the selected fleet and refreshed its bitmap, fuel/cargo, and composition panels",
+    "program_error": false,
+    "screenshots": [
+      "runs/vmctl-vc152current/planet-frame-current.bmp",
+      "runs/vmctl-vc152current/planet-click.bmp",
+      "runs/vmctl-vc152current/current-continue.bmp"
+    ]
+  },
+  "original_instruction_boundary": {
+    "stats": "analysis/decompiler/export/raw/1048_1716_DrawPlanetStats.c",
+    "production": "analysis/decompiler/export/raw/1048_2c38_DrawPlanetProduction.c",
+    "starbase": "analysis/decompiler/export/raw/1048_22cc_DrawPlanetStarbase.c",
+    "ship_bitmap": "analysis/decompiler/export/raw/1048_3336_DrawPlanShipBitmap.c",
+    "ship_list": "analysis/decompiler/export/raw/1048_377e_DrawPlanetShipList.c"
+  },
+  "reconstructed_acceptance": {
+    "native_probes": [
+      "runs/vmctl-vc152dps/DPSR.TXT",
+      "runs/vmctl-vc152dpro/DPR.TXT",
+      "runs/vmctl-vc152dpsn/DPSBR.TXT",
+      "runs/vmctl-vc152dpsm/DPSMR.TXT",
+      "runs/vmctl-vc152dpsl/DPSLR.TXT"
+    ],
+    "comparison": "The original game frame visibly exercises the typed planet and fleet rendering boundaries and updates the selected-fleet controls after a map click. This is an original UI integration checkpoint, not proof that packed records, localized resources, exact GDI handles, or all child-control messages are complete."
+  }
+}

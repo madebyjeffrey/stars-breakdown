@@ -1,0 +1,769 @@
+{
+  "schema": "rototill-turn-r1-serialized-oracle-v1",
+  "source_sha256": {
+    "input/CLEAN.HST": "3a28217e52ebc9619237d9af54c40e614480d42e2d1e5b37c2f2d9e0f961e207",
+    "input/CLEAN.M2": "62b53d7d47a64525256f847c51fece2aabf2c76920eb92bae87eabd79fca0856",
+    "input/CLEAN.XY": "580e4c3be92eee570c95c97faa2557e3b4fe92856387970cf548700e1bb3fd88",
+    "output/CLEAN.HST": "18a2735c067c040788dddbd36fc11772191c1931cb9ca38245a221ea6052c76d",
+    "output/CLEAN.M2": "6df100298e84976e31c55b0c8c426e15e3640b00c9a4285f9d2e9cdc1db36d66",
+    "output/CLEAN.XY": "580e4c3be92eee570c95c97faa2557e3b4fe92856387970cf548700e1bb3fd88"
+  },
+  "scope": "owner-1 compact fleets/orders, planet 24, type-28 queue",
+  "player_id": 1,
+  "selector": 3,
+  "input_turn": 0,
+  "output_turn": 1,
+  "planet_points": [
+    [
+      1013,
+      1105
+    ],
+    [
+      1045,
+      1132
+    ],
+    [
+      1046,
+      1083
+    ],
+    [
+      1048,
+      1061
+    ],
+    [
+      1055,
+      1142
+    ],
+    [
+      1086,
+      1269
+    ],
+    [
+      1087,
+      1171
+    ],
+    [
+      1098,
+      1300
+    ],
+    [
+      1104,
+      1149
+    ],
+    [
+      1105,
+      1118
+    ],
+    [
+      1128,
+      1300
+    ],
+    [
+      1130,
+      1166
+    ],
+    [
+      1143,
+      1282
+    ],
+    [
+      1145,
+      1246
+    ],
+    [
+      1145,
+      1332
+    ],
+    [
+      1158,
+      1219
+    ],
+    [
+      1173,
+      1174
+    ],
+    [
+      1177,
+      1311
+    ],
+    [
+      1218,
+      1101
+    ],
+    [
+      1220,
+      1194
+    ],
+    [
+      1232,
+      1339
+    ],
+    [
+      1248,
+      1382
+    ],
+    [
+      1255,
+      1315
+    ],
+    [
+      1264,
+      1374
+    ],
+    [
+      1290,
+      1258
+    ],
+    [
+      1299,
+      1034
+    ],
+    [
+      1313,
+      1262
+    ],
+    [
+      1321,
+      1275
+    ],
+    [
+      1324,
+      1090
+    ],
+    [
+      1329,
+      1229
+    ],
+    [
+      1347,
+      1131
+    ],
+    [
+      1380,
+      1148
+    ]
+  ],
+  "output_production_items": [
+    {
+      "quantity": 1,
+      "type": 7,
+      "object_kind": 1,
+      "progress": 89,
+      "reserved_high": 0
+    }
+  ],
+  "before": {
+    "fleets": [
+      {
+        "fleet": {
+          "id": 0,
+          "owner": 1,
+          "planet": 24,
+          "point": [
+            1290,
+            1258
+          ],
+          "ship_counts": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "cargo": [
+            0,
+            0,
+            0,
+            0,
+            300
+          ],
+          "saved_flags": 2311,
+          "order_count": 1
+        },
+        "order": {
+          "point": [
+            1290,
+            1258
+          ],
+          "target_id": 24,
+          "flags": 4352,
+          "task": 0,
+          "warp": 0,
+          "object_kind": 1,
+          "valid_task": 1
+        }
+      },
+      {
+        "fleet": {
+          "id": 1,
+          "owner": 1,
+          "planet": 24,
+          "point": [
+            1290,
+            1258
+          ],
+          "ship_counts": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "cargo": [
+            0,
+            0,
+            0,
+            0,
+            200
+          ],
+          "saved_flags": 2311,
+          "order_count": 1
+        },
+        "order": {
+          "point": [
+            1290,
+            1258
+          ],
+          "target_id": 24,
+          "flags": 4352,
+          "task": 0,
+          "warp": 0,
+          "object_kind": 1,
+          "valid_task": 1
+        }
+      },
+      {
+        "fleet": {
+          "id": 2,
+          "owner": 1,
+          "planet": 24,
+          "point": [
+            1290,
+            1258
+          ],
+          "ship_counts": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "cargo": [
+            0,
+            0,
+            0,
+            0,
+            210
+          ],
+          "saved_flags": 2311,
+          "order_count": 1
+        },
+        "order": {
+          "point": [
+            1290,
+            1258
+          ],
+          "target_id": 24,
+          "flags": 4352,
+          "task": 0,
+          "warp": 0,
+          "object_kind": 1,
+          "valid_task": 1
+        }
+      },
+      {
+        "fleet": {
+          "id": 3,
+          "owner": 1,
+          "planet": 24,
+          "point": [
+            1290,
+            1258
+          ],
+          "ship_counts": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "cargo": [
+            0,
+            0,
+            0,
+            0,
+            210
+          ],
+          "saved_flags": 2311,
+          "order_count": 1
+        },
+        "order": {
+          "point": [
+            1290,
+            1258
+          ],
+          "target_id": 24,
+          "flags": 4352,
+          "task": 0,
+          "warp": 0,
+          "object_kind": 1,
+          "valid_task": 1
+        }
+      }
+    ],
+    "planet_24": {
+      "owner": 1,
+      "flags": 11143,
+      "levels": [
+        0,
+        0,
+        0
+      ],
+      "concentrations": [
+        68,
+        87,
+        68
+      ],
+      "environment": [
+        62,
+        33,
+        61
+      ],
+      "auxiliary_word": 62,
+      "minerals": [
+        532,
+        956,
+        500,
+        250
+      ],
+      "improvements": {
+        "population_delta": 0,
+        "mines": 10,
+        "factories": 10,
+        "defenses": 10
+      },
+      "mineral_selector": 106,
+      "body_hex": "1808872b004457443e213d3e006a1402bc03f401fa000aa0000a00000000000000"
+    },
+    "production_type_28": []
+  },
+  "after": {
+    "fleets": [
+      {
+        "fleet": {
+          "id": 0,
+          "owner": 1,
+          "planet": 26,
+          "point": [
+            1313,
+            1262
+          ],
+          "ship_counts": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "cargo": [
+            0,
+            0,
+            0,
+            0,
+            298
+          ],
+          "saved_flags": 2311,
+          "order_count": 1
+        },
+        "order": {
+          "point": [
+            1313,
+            1262
+          ],
+          "target_id": 26,
+          "flags": 4432,
+          "task": 0,
+          "warp": 5,
+          "object_kind": 1,
+          "valid_task": 1
+        }
+      },
+      {
+        "fleet": {
+          "id": 1,
+          "owner": 1,
+          "planet": 24,
+          "point": [
+            1290,
+            1258
+          ],
+          "ship_counts": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "cargo": [
+            0,
+            0,
+            0,
+            25,
+            200
+          ],
+          "saved_flags": 10503,
+          "order_count": 1
+        },
+        "order": {
+          "point": [
+            1290,
+            1258
+          ],
+          "target_id": 24,
+          "flags": 4352,
+          "task": 0,
+          "warp": 0,
+          "object_kind": 1,
+          "valid_task": 1
+        }
+      },
+      {
+        "fleet": {
+          "id": 2,
+          "owner": 1,
+          "planet": 24,
+          "point": [
+            1290,
+            1258
+          ],
+          "ship_counts": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "cargo": [
+            0,
+            0,
+            0,
+            0,
+            210
+          ],
+          "saved_flags": 10503,
+          "order_count": 1
+        },
+        "order": {
+          "point": [
+            1290,
+            1258
+          ],
+          "target_id": 24,
+          "flags": 4352,
+          "task": 0,
+          "warp": 0,
+          "object_kind": 1,
+          "valid_task": 1
+        }
+      },
+      {
+        "fleet": {
+          "id": 3,
+          "owner": 1,
+          "planet": 24,
+          "point": [
+            1290,
+            1258
+          ],
+          "ship_counts": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "cargo": [
+            0,
+            0,
+            0,
+            0,
+            210
+          ],
+          "saved_flags": 10503,
+          "order_count": 1
+        },
+        "order": {
+          "point": [
+            1290,
+            1258
+          ],
+          "target_id": 24,
+          "flags": 4352,
+          "task": 0,
+          "warp": 0,
+          "object_kind": 1,
+          "valid_task": 1
+        }
+      }
+    ],
+    "planet_24": {
+      "owner": 1,
+      "flags": 11143,
+      "levels": [
+        247,
+        241,
+        247
+      ],
+      "concentrations": [
+        68,
+        87,
+        68
+      ],
+      "environment": [
+        62,
+        33,
+        61
+      ],
+      "auxiliary_word": 8263,
+      "minerals": [
+        539,
+        965,
+        498,
+        256
+      ],
+      "improvements": {
+        "population_delta": 50,
+        "mines": 10,
+        "factories": 12,
+        "defenses": 10
+      },
+      "mineral_selector": 170,
+      "body_hex": "1808872b15f7f1f74457443e213d4720aa1b02c503f2010001320ac0000a00000000000000"
+    },
+    "production_type_28": [
+      "011c9205"
+    ]
+  },
+  "changes": [
+    {
+      "field": "fleets[0].fleet.planet",
+      "before": 24,
+      "after": 26
+    },
+    {
+      "field": "fleets[0].fleet.point[0]",
+      "before": 1290,
+      "after": 1313
+    },
+    {
+      "field": "fleets[0].fleet.point[1]",
+      "before": 1258,
+      "after": 1262
+    },
+    {
+      "field": "fleets[0].fleet.cargo[4]",
+      "before": 300,
+      "after": 298
+    },
+    {
+      "field": "fleets[0].order.point[0]",
+      "before": 1290,
+      "after": 1313
+    },
+    {
+      "field": "fleets[0].order.point[1]",
+      "before": 1258,
+      "after": 1262
+    },
+    {
+      "field": "fleets[0].order.target_id",
+      "before": 24,
+      "after": 26
+    },
+    {
+      "field": "fleets[0].order.flags",
+      "before": 4352,
+      "after": 4432
+    },
+    {
+      "field": "fleets[0].order.warp",
+      "before": 0,
+      "after": 5
+    },
+    {
+      "field": "fleets[1].fleet.cargo[3]",
+      "before": 0,
+      "after": 25
+    },
+    {
+      "field": "fleets[1].fleet.saved_flags",
+      "before": 2311,
+      "after": 10503
+    },
+    {
+      "field": "fleets[2].fleet.saved_flags",
+      "before": 2311,
+      "after": 10503
+    },
+    {
+      "field": "fleets[3].fleet.saved_flags",
+      "before": 2311,
+      "after": 10503
+    },
+    {
+      "field": "planet_24.levels[0]",
+      "before": 0,
+      "after": 247
+    },
+    {
+      "field": "planet_24.levels[1]",
+      "before": 0,
+      "after": 241
+    },
+    {
+      "field": "planet_24.levels[2]",
+      "before": 0,
+      "after": 247
+    },
+    {
+      "field": "planet_24.auxiliary_word",
+      "before": 62,
+      "after": 8263
+    },
+    {
+      "field": "planet_24.minerals[0]",
+      "before": 532,
+      "after": 539
+    },
+    {
+      "field": "planet_24.minerals[1]",
+      "before": 956,
+      "after": 965
+    },
+    {
+      "field": "planet_24.minerals[2]",
+      "before": 500,
+      "after": 498
+    },
+    {
+      "field": "planet_24.minerals[3]",
+      "before": 250,
+      "after": 256
+    },
+    {
+      "field": "planet_24.improvements.population_delta",
+      "before": 0,
+      "after": 50
+    },
+    {
+      "field": "planet_24.improvements.factories",
+      "before": 10,
+      "after": 12
+    },
+    {
+      "field": "planet_24.mineral_selector",
+      "before": 106,
+      "after": 170
+    },
+    {
+      "field": "planet_24.body_hex",
+      "before": "1808872b004457443e213d3e006a1402bc03f401fa000aa0000a00000000000000",
+      "after": "1808872b15f7f1f74457443e213d4720aa1b02c503f2010001320ac0000a00000000000000"
+    },
+    {
+      "field": "production_type_28",
+      "before": [],
+      "after": [
+        "011c9205"
+      ]
+    }
+  ]
+}

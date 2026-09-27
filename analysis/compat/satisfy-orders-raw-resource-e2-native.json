@@ -1,0 +1,50 @@
+{
+  "procedures": ["SatisfyOrders"],
+  "phase2_step": "5/6",
+  "unit": "E2 standard successful resource FSendPlrMsg payload boundary",
+  "status": "supporting milestone; named E2 remains open",
+  "guest": "StarDev / Win98 / C:\\SYOE19",
+  "native_run": "runs/vmctl-vc152syoe19/",
+  "host_report": "SATISFY_ORDERS_RAW_RESOURCE_CHECKS=24 FAILURES=0 RESULT=PASS",
+  "native_report": "SATISFY_ORDERS_RAW_RESOURCE_CHECKS=24 FAILURES=0 RESULT=PASS EXIT=0",
+  "native_build": {
+    "compile": "PASS",
+    "link": "PASS",
+    "process_exit": 0,
+    "program_error_dialog": false,
+    "compiler_options": "/AM /GA /GEs /Zp1 /O /W3",
+    "response_file_definitions": "SYORES.DEF included; Win16 stack/heap/stub directives applied",
+    "warnings": ["VC1.52c C4018 signed/unsigned mismatch in combined legacy translation unit"]
+  },
+  "covered": [
+    "production raw_message standard resource-transfer boundary",
+    "planet mineral message 0x002d",
+    "planet colonist message 0x002e",
+    "same-owner fleet mineral message 0x002b",
+    "same-owner fleet colonist message 0x002c",
+    "source fleet marker and fleet id",
+    "accepted amount, packed target word, resource, target x, raw target id, and zero tail",
+    "order completion after successful transfer"
+  ],
+  "remaining": [
+    "foreign-fleet colonist message 0x0119",
+    "fuel and optimal-fuel message variants",
+    "permission and failed-transfer message families",
+    "original transfer differential against the full game message stream",
+    "E3 full-turn/original differential",
+    "named SatisfyOrders E2 Step-5 closure and Step-6 promotion"
+  ],
+  "evidence": [
+    "tests/satisfy_orders_raw_resource_probe.c",
+    "compat/vc152/satisfy-orders-raw-resource-e2-native/",
+    "runs/vmctl-vc152syoe19/SYORES.TXT",
+    "runs/vmctl-vc152syoe19/SYORESSTA.TXT",
+    "runs/vmctl-vc152syoe19/SYORESCL.LOG",
+    "runs/vmctl-vc152syoe19/SYORESLINK.LOG",
+    "runs/vmctl-vc152syoe19/SYORES.MAP",
+    "reconstructed/src/satisfy_orders.c",
+    "reconstructed/include/core.h",
+    "/Users/jdrake/Projects/stars-decompile/turn3.c",
+    "analysis/decompiler/export/raw/10b0_6798_SatisfyOrders.c"
+  ]
+}

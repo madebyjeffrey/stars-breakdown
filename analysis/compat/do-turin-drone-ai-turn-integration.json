@@ -1,0 +1,54 @@
+{
+  "procedures": ["DoTurinDroneAiTurn"],
+  "phase2_step": "5/6",
+  "guest": "StarDev / Win98 / C:\\TURINT",
+  "native_run": "runs/vmctl-vc152turint/",
+  "host_report": "TURIN_DRONE_AI_TURN_INTEGRATION_CHECKS=20 FAILURES=0 RESULT=PASS",
+  "native_report": "TURIN_DRONE_AI_TURN_INTEGRATION_CHECKS=20 FAILURES=0 RESULT=PASS",
+  "native_build": {
+    "compile": "PASS",
+    "link": "PASS",
+    "process_exit": 0,
+    "program_error_dialog": false,
+    "screen_capture": "runs/vmctl-vc152turint/native-screen.bmp"
+  },
+  "packed_boundaries": {
+    "planet_raw_size": 56,
+    "planet_id": 0,
+    "planet_player": 2,
+    "planet_visibility_low_byte": 4,
+    "planet_mineral_concentration": 9,
+    "fleet_raw_size": 124,
+    "fleet_id": 0,
+    "fleet_player": 2,
+    "fleet_planet": 6,
+    "fleet_ship_counts": 12,
+    "fleet_ship_count_element_size": 2,
+    "fleet_cord": 98
+  },
+  "integration": {
+    "raw_record_conversion_checked": true,
+    "merge_mask_sequence_checked": true,
+    "design_status_mask_and_selection_checked": true,
+    "planet_two_pass_classification_checked": true,
+    "production_affordability_and_queue_checked": true,
+    "fleet_role_and_repair_policy_checked": true,
+    "final_callback_order_checked": true,
+    "service_result_offsets_invented": false
+  },
+  "original_instruction_evidence": {
+    "raw_listing": "analysis/decompiler/export/raw/1088_3670.asm",
+    "raw_source": "analysis/decompiler/export/raw/1088_3670_DoTurinDroneAiTurn.c",
+    "codeview_types": "analysis/debug/types.json",
+    "production_resources_are_service_results": true,
+    "design_selection_is_service_result": true,
+    "full_original_turn_differential": false
+  },
+  "remaining_scope": [
+    "detailed production policy",
+    "fleet-order mutation and repair integration",
+    "colonizer and transport routing",
+    "complete AI-table integration",
+    "full original-turn differential"
+  ]
+}

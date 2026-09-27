@@ -1,0 +1,474 @@
+{
+  "input_pair": {
+    "action": {
+      "input_directory": "runs/syorig-tech-trader-v4-bitc-seed1-action",
+      "input_hashes": {
+        "CLEAN.H2": {
+          "bytes": 95,
+          "sha256": "69dcea347053bfc511760f793895f98447eff68e17ad02fd018c3f559112bb89"
+        },
+        "CLEAN.HST": {
+          "bytes": 1874,
+          "sha256": "10fba172f2fed7fd676f319b48a50bb4c3ba0042cf67a7ce300f04bf8df1288d"
+        },
+        "CLEAN.M1": {
+          "bytes": 843,
+          "sha256": "95d2d7fd27a39ea1668685beeb4785d876d9ed3cfb657f58173ea47e04e8c0a7"
+        },
+        "CLEAN.M2": {
+          "bytes": 576,
+          "sha256": "588830ac2225056422fa447cb201c7bd326e472652a8d3abf222b5fcceb99d4b"
+        },
+        "CLEAN.XY": {
+          "bytes": 216,
+          "sha256": "580e4c3be92eee570c95c97faa2557e3b4fe92856387970cf548700e1bb3fd88"
+        },
+        "STARS.EXE": {
+          "bytes": 4218116,
+          "sha256": "ccab6682b55dae14dbf104e491cfbd3b32a6280022020032ae0615500949ba59"
+        }
+      },
+      "pair_manifest": {
+        "files": {
+          "CLEAN.H2": {
+            "bytes": 95,
+            "sha256": "69dcea347053bfc511760f793895f98447eff68e17ad02fd018c3f559112bb89"
+          },
+          "CLEAN.HST": {
+            "bytes": 1874,
+            "sha256": "10fba172f2fed7fd676f319b48a50bb4c3ba0042cf67a7ce300f04bf8df1288d"
+          },
+          "CLEAN.M1": {
+            "bytes": 843,
+            "sha256": "95d2d7fd27a39ea1668685beeb4785d876d9ed3cfb657f58173ea47e04e8c0a7"
+          },
+          "CLEAN.M2": {
+            "bytes": 576,
+            "sha256": "588830ac2225056422fa447cb201c7bd326e472652a8d3abf222b5fcceb99d4b"
+          },
+          "CLEAN.XY": {
+            "bytes": 216,
+            "sha256": "580e4c3be92eee570c95c97faa2557e3b4fe92856387970cf548700e1bb3fd88"
+          },
+          "STARS.EXE": {
+            "bytes": 4218116,
+            "sha256": "ccab6682b55dae14dbf104e491cfbd3b32a6280022020032ae0615500949ba59"
+          }
+        },
+        "mutation": "set player-1 race bit C (bit 12) in HST; retain v3 hull-valid Battleship with 11 trader components; task 0 control or task 5 action",
+        "pair": "reprice-v4-bitc-seed1",
+        "paired_difference_record_indices": [
+          57
+        ],
+        "player_race_bits": {
+          "new_race_bits": "0x80003045",
+          "old_race_bits": "0x80002045",
+          "player_record": 2
+        },
+        "shared_h2_seed": {
+          "bytes": 95,
+          "sha256": "69dcea347053bfc511760f793895f98447eff68e17ad02fd018c3f559112bb89",
+          "source": "runs/syorig-tech-trader-v3-seed1-action/CLEAN.H2"
+        },
+        "side": "action",
+        "status": "candidate_input_only_not_original_behavior_evidence"
+      },
+      "player0_technology": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "player1": {
+        "race_bit_c": true,
+        "race_bits": "0x80003045",
+        "race_stat": 1,
+        "record_index": 2,
+        "technology": [
+          0,
+          0,
+          1,
+          0,
+          5,
+          0
+        ]
+      },
+      "target": {
+        "component_count": 11,
+        "components": [
+          {
+            "count": 4,
+            "group": 1,
+            "item": 8
+          },
+          {
+            "count": 1,
+            "group": 4096,
+            "item": 4
+          },
+          {
+            "count": 8,
+            "group": 4,
+            "item": 6
+          },
+          {
+            "count": 6,
+            "group": 16,
+            "item": 18
+          },
+          {
+            "count": 6,
+            "group": 32,
+            "item": 7
+          },
+          {
+            "count": 2,
+            "group": 32,
+            "item": 7
+          },
+          {
+            "count": 2,
+            "group": 16,
+            "item": 18
+          },
+          {
+            "count": 4,
+            "group": 16,
+            "item": 18
+          },
+          {
+            "count": 6,
+            "group": 8,
+            "item": 9
+          },
+          {
+            "count": 3,
+            "group": 2048,
+            "item": 4
+          },
+          {
+            "count": 3,
+            "group": 2048,
+            "item": 4
+          }
+        ],
+        "design_record": 41,
+        "fleet_id": 0,
+        "fleet_record": 56,
+        "hull_id": 9,
+        "order_record": 57,
+        "owner": 1,
+        "ship_design_slot": 0,
+        "task_flag": 5
+      }
+    },
+    "control": {
+      "input_directory": "runs/syorig-tech-trader-v4-bitc-seed1-control",
+      "input_hashes": {
+        "CLEAN.H2": {
+          "bytes": 95,
+          "sha256": "69dcea347053bfc511760f793895f98447eff68e17ad02fd018c3f559112bb89"
+        },
+        "CLEAN.HST": {
+          "bytes": 1874,
+          "sha256": "99fc1f87b0afa0eba4a4ab17f6e62c58faa698d3d83b62796798fb0a562f434b"
+        },
+        "CLEAN.M1": {
+          "bytes": 843,
+          "sha256": "95d2d7fd27a39ea1668685beeb4785d876d9ed3cfb657f58173ea47e04e8c0a7"
+        },
+        "CLEAN.M2": {
+          "bytes": 576,
+          "sha256": "588830ac2225056422fa447cb201c7bd326e472652a8d3abf222b5fcceb99d4b"
+        },
+        "CLEAN.XY": {
+          "bytes": 216,
+          "sha256": "580e4c3be92eee570c95c97faa2557e3b4fe92856387970cf548700e1bb3fd88"
+        },
+        "STARS.EXE": {
+          "bytes": 4218116,
+          "sha256": "ccab6682b55dae14dbf104e491cfbd3b32a6280022020032ae0615500949ba59"
+        }
+      },
+      "pair_manifest": {
+        "files": {
+          "CLEAN.H2": {
+            "bytes": 95,
+            "sha256": "69dcea347053bfc511760f793895f98447eff68e17ad02fd018c3f559112bb89"
+          },
+          "CLEAN.HST": {
+            "bytes": 1874,
+            "sha256": "99fc1f87b0afa0eba4a4ab17f6e62c58faa698d3d83b62796798fb0a562f434b"
+          },
+          "CLEAN.M1": {
+            "bytes": 843,
+            "sha256": "95d2d7fd27a39ea1668685beeb4785d876d9ed3cfb657f58173ea47e04e8c0a7"
+          },
+          "CLEAN.M2": {
+            "bytes": 576,
+            "sha256": "588830ac2225056422fa447cb201c7bd326e472652a8d3abf222b5fcceb99d4b"
+          },
+          "CLEAN.XY": {
+            "bytes": 216,
+            "sha256": "580e4c3be92eee570c95c97faa2557e3b4fe92856387970cf548700e1bb3fd88"
+          },
+          "STARS.EXE": {
+            "bytes": 4218116,
+            "sha256": "ccab6682b55dae14dbf104e491cfbd3b32a6280022020032ae0615500949ba59"
+          }
+        },
+        "mutation": "set player-1 race bit C (bit 12) in HST; retain v3 hull-valid Battleship with 11 trader components; task 0 control or task 5 action",
+        "pair": "reprice-v4-bitc-seed1",
+        "paired_difference_record_indices": [
+          57
+        ],
+        "player_race_bits": {
+          "new_race_bits": "0x80003045",
+          "old_race_bits": "0x80002045",
+          "player_record": 2
+        },
+        "shared_h2_seed": {
+          "bytes": 95,
+          "sha256": "69dcea347053bfc511760f793895f98447eff68e17ad02fd018c3f559112bb89",
+          "source": "runs/syorig-tech-trader-v3-seed1-action/CLEAN.H2"
+        },
+        "side": "control",
+        "status": "candidate_input_only_not_original_behavior_evidence"
+      },
+      "player0_technology": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "player1": {
+        "race_bit_c": true,
+        "race_bits": "0x80003045",
+        "race_stat": 1,
+        "record_index": 2,
+        "technology": [
+          0,
+          0,
+          1,
+          0,
+          5,
+          0
+        ]
+      },
+      "target": {
+        "component_count": 11,
+        "components": [
+          {
+            "count": 4,
+            "group": 1,
+            "item": 8
+          },
+          {
+            "count": 1,
+            "group": 4096,
+            "item": 4
+          },
+          {
+            "count": 8,
+            "group": 4,
+            "item": 6
+          },
+          {
+            "count": 6,
+            "group": 16,
+            "item": 18
+          },
+          {
+            "count": 6,
+            "group": 32,
+            "item": 7
+          },
+          {
+            "count": 2,
+            "group": 32,
+            "item": 7
+          },
+          {
+            "count": 2,
+            "group": 16,
+            "item": 18
+          },
+          {
+            "count": 4,
+            "group": 16,
+            "item": 18
+          },
+          {
+            "count": 6,
+            "group": 8,
+            "item": 9
+          },
+          {
+            "count": 3,
+            "group": 2048,
+            "item": 4
+          },
+          {
+            "count": 3,
+            "group": 2048,
+            "item": 4
+          }
+        ],
+        "design_record": 41,
+        "fleet_id": 0,
+        "fleet_record": 56,
+        "hull_id": 9,
+        "order_record": 57,
+        "owner": 1,
+        "ship_design_slot": 0,
+        "task_flag": 0
+      }
+    },
+    "paired_difference_record_indices": [
+      57
+    ],
+    "shared_h2_sha256": "69dcea347053bfc511760f793895f98447eff68e17ad02fd018c3f559112bb89"
+  },
+  "interpretation": [
+    "Both fresh inputs contain the same 11-component, hull-9 SHDEF, player-1 technology, planet/message inputs, and H2 seed. Their only HST difference is order record 57's task flag.",
+    "The target fleet owner is 1 and its race-bit word is 0x80003045, with bit C set. The original task-0 control retains owner-1 fleet 0 and has no 0x13D frame; task 5 retires fleet 0, writes a 0x13D point-technology frame, and raises player-0 technology 0 from 3 to 4.",
+    "The returned H2 files differ. They are output state after a turn with different random-call paths and are not evidence that the shared input H2 is the original random seed.",
+    "This pair is original-executable evidence for the live race-bit-C condition and high-offer design. It does not replace the still-open current-source native field differential."
+  ],
+  "pair": "reprice-v4-bitc-seed1",
+  "returns": {
+    "action": {
+      "clean_x2_output_present": false,
+      "error_dialog": false,
+      "guest_command": "command.com /c C:\\SVC92A\\RUN.BAT",
+      "guest_directory": "C:\\SVC92A",
+      "ordinary_signed_technology_message_0x13d": true,
+      "planet10": {
+        "improvements": {
+          "defenses": 10,
+          "factories": 10,
+          "mines": 10,
+          "population_delta": 50
+        },
+        "levels": [
+          247,
+          241,
+          247
+        ],
+        "minerals": [
+          880,
+          1451,
+          596,
+          287
+        ]
+      },
+      "player0_tech": [
+        4,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "process_exit": 0,
+      "return_directory": "runs/vmctl-sytech-reprice-v4-bitc-action",
+      "returned_files": {
+        "CLEAN.H2": {
+          "bytes": 95,
+          "sha256": "99d540ebd681f3bbebd1c8b88f67dc88daf9438481336278ca627f309c7558eb"
+        },
+        "CLEAN.HST": {
+          "bytes": 1991,
+          "sha256": "36862c5121d00cd69a8c4c9c5dffb69c4547017078a403db8cc8fd95bf354735"
+        },
+        "CLEAN.M1": {
+          "bytes": 1700,
+          "sha256": "bb7d8ceb7ed73025729f2a55954db91d2cedab2832db18a7cc188bfc65718a47"
+        },
+        "CLEAN.M2": {
+          "bytes": 801,
+          "sha256": "187fb74ab1bc2eb4755a5b00b6d21c2740807b5bf2432d5e47d997a362f0fdc8"
+        },
+        "CLEAN.XY": {
+          "bytes": 216,
+          "sha256": "580e4c3be92eee570c95c97faa2557e3b4fe92856387970cf548700e1bb3fd88"
+        },
+        "guest-screen.bmp": {
+          "bytes": 3932214,
+          "sha256": "c9910134c7e65e954251dd99b5b487914a8ba3a87734d3b4e11b527519493466"
+        }
+      },
+      "target_fleet_owner1_id0_present": false,
+      "turn1_message_block_hex": "5a000a000014000a41010a000014000a3d07feff00027b04000a005000feff0400003f000a000a"
+    },
+    "control": {
+      "clean_x2_output_present": false,
+      "error_dialog": false,
+      "guest_command": "command.com /c C:\\SVC92C\\RUN.BAT",
+      "guest_directory": "C:\\SVC92C",
+      "ordinary_signed_technology_message_0x13d": false,
+      "planet10": {
+        "improvements": {
+          "defenses": 10,
+          "factories": 10,
+          "mines": 10,
+          "population_delta": 50
+        },
+        "levels": [
+          247,
+          241,
+          247
+        ],
+        "minerals": [
+          484,
+          908,
+          387,
+          287
+        ]
+      },
+      "player0_tech": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "process_exit": 0,
+      "return_directory": "runs/vmctl-sytech-reprice-v4-bitc-control",
+      "returned_files": {
+        "CLEAN.H2": {
+          "bytes": 95,
+          "sha256": "c133c2dd967ceed444f6c9b98d600b545338297680fc981f881d549ae7350784"
+        },
+        "CLEAN.HST": {
+          "bytes": 2029,
+          "sha256": "f2b1dfad2adc48ebd1b05c14b978b5528734b3d4812f53519809aaa7e6609865"
+        },
+        "CLEAN.M1": {
+          "bytes": 1682,
+          "sha256": "6da6945dff47d5398b356e5bdcceff4a57ebe3eb9055e983e4c9ee957b1a3340"
+        },
+        "CLEAN.M2": {
+          "bytes": 1302,
+          "sha256": "c6195992caff480a0249b597c1f072f7d37458be46aab08615de9e79d2cde993"
+        },
+        "CLEAN.XY": {
+          "bytes": 216,
+          "sha256": "580e4c3be92eee570c95c97faa2557e3b4fe92856387970cf548700e1bb3fd88"
+        },
+        "guest-screen.bmp": {
+          "bytes": 3932214,
+          "sha256": "d3f3232254decc70fd73a3d2da6b7e86782c99b45aa92283ef6d308d3283944b"
+        }
+      },
+      "target_fleet_owner1_id0_present": true,
+      "turn1_message_block_hex": "5a000a000014000a41010a000014000a3f000a000a"
+    }
+  },
+  "status": "matched_original_behavior_evidence"
+}

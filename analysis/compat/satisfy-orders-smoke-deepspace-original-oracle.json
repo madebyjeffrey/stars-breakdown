@@ -1,0 +1,178 @@
+{
+  "input_hst_sha256": "9c1c4699f1c79a8a25541b9f3206037c2591afe3a0e0943cfef37da17fed0621",
+  "input_m2_sha256": "e62ced7bb92807afc78ed1923570cf05d1acaa87a6c0c8eb9683e2473cb6fe24",
+  "control_hst_sha256": "5c85db43c8731b3aff021daf29ea559e51d9d102a7b93dc4c7556338c2d3d221",
+  "action_hst_sha256": "695ba9c1d4faf7c35cf558bf49313093ba93eb00f2e017ab1cc9d6a702a3b02d",
+  "control_m2_sha256": "34effe2663ef3d03b34a7ec7a94a11abfae08cd32bf564ef1e14f1f8f7a2d55f",
+  "action_m2_sha256": "dd9bd839e46c8609622082eb644fb45821376b642f81239f9a709fce6b243323",
+  "original_exe_sha256": "ccab6682b55dae14dbf104e491cfbd3b32a6280022020032ae0615500949ba59",
+  "input_fleet": {
+    "id": 0,
+    "id_player_bits": 1,
+    "owner": 1,
+    "saved_flags": 2311,
+    "planet": -1,
+    "point": [
+      1276,
+      1380
+    ],
+    "ship_bitmap": 1,
+    "ship_counts": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "cargo": [
+      0,
+      0,
+      0,
+      0,
+      298
+    ],
+    "extra_bitmap": 0,
+    "extra_counts": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "design_plan": 0,
+    "order_count": 2
+  },
+  "design_parts": [
+    {
+      "group": 16384,
+      "item": 4,
+      "quantity": 1,
+      "offset": 11308,
+      "required_tech": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "cost": [
+        10,
+        4,
+        2,
+        4
+      ]
+    },
+    {
+      "group": 1,
+      "item": 1,
+      "quantity": 1,
+      "offset": 78,
+      "required_tech": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "cost": [
+        3,
+        3,
+        0,
+        1
+      ]
+    },
+    {
+      "group": 2,
+      "item": 4,
+      "quantity": 1,
+      "offset": 2120,
+      "required_tech": [
+        0,
+        0,
+        0,
+        0,
+        5,
+        0
+      ],
+      "cost": [
+        18,
+        3,
+        0,
+        3
+      ]
+    },
+    {
+      "group": 4096,
+      "item": 5,
+      "quantity": 1,
+      "offset": 4520,
+      "required_tech": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "cost": [
+        4,
+        6,
+        0,
+        0
+      ]
+    }
+  ],
+  "design_cost": [
+    35,
+    16,
+    2,
+    8
+  ],
+  "control_fleet_present": true,
+  "action_fleet_present": false,
+  "control_salvage_present": false,
+  "action_salvage": {
+    "id_full": 8704,
+    "id": 0,
+    "owner": 1,
+    "point": [
+      1276,
+      1380
+    ],
+    "packed": 33791,
+    "minerals": [
+      5,
+      0,
+      2
+    ],
+    "value": 2,
+    "turn": 0,
+    "raw_hex": "0022fc046405ff8305000000020002000000"
+  },
+  "action_m2_saved_message_0x5b": false,
+  "message_observation": "AI player M2 contains no kind-12 message; original decompiled branch calls FSendPlrMsg2 0x5B but the message is not a saved-output observation"
+}

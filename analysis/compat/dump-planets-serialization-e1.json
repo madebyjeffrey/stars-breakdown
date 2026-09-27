@@ -1,0 +1,47 @@
+{
+  "procedure": "DumpPlanets",
+  "milestone": "dump-planets-serialization-e1",
+  "scope": "host-source-fidelity",
+  "host_report": "DUMP_PLANETS_SERIALIZATION_CHECKS=12 FAILURES=0 RESULT=PASS",
+  "native_replay": {
+    "guest_directory": "C:\\DPSER1",
+    "status": "COMPILE=PASS LINK=PASS",
+    "report": "runs/vmctl-vc152dpser1/DPSR.TXT",
+    "checks": 12,
+    "failures": 0,
+    "result": "PASS",
+    "process_exit": 0,
+    "program_error_dialog": false
+  },
+  "step5_units_closed": 1,
+  "step6_promotion_recorded": false,
+  "boundary": {
+    "normal_field_count": 20,
+    "field_order_owned_by": "stars_dump_planets",
+    "localized_formatting_owned_by": "format_text_field_and_write_text_value_callbacks",
+    "row_terminator_owned_by": "write_text_end_callback",
+    "raw_callback_invocations": true,
+    "formatted_callback_invocations": true,
+    "two_row_crlf_tab_oracle": true,
+    "original_artifact_oracle": "runs/vmctl-vc152current/GAME.pla",
+    "detailed_serialization_complete": false
+  },
+  "native_status": "compile_link_run_passed",
+  "remaining_scope": [
+    "detailed_and_service_columns",
+    "complete_serialized_export_differential",
+    "step6_promotion"
+  ],
+  "evidence": [
+    "analysis/decompiler/export/raw/1108_86e4_DumpPlanets.c",
+    "reconstructed/include/core.h",
+    "reconstructed/src/dump_planets.c",
+    "tests/dump_planets_serialization_probe.c",
+    "compat/vc152/dump-planets-serialization-e1/",
+    "runs/vmctl-vc152dpser1/DPSSTA.TXT",
+    "runs/vmctl-vc152dpser1/DPSCL.LOG",
+    "runs/vmctl-vc152dpser1/DPSLINK.LOG",
+    "runs/vmctl-vc152dpser1/DPSR.TXT",
+    "runs/vmctl-vc152current/GAME.pla"
+  ]
+}

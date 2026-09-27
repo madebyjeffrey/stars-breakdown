@@ -1,0 +1,51 @@
+{
+  "procedures": ["SatisfyOrders"],
+  "phase2_step": "5/6",
+  "unit": "E2 foreign-fleet colonist rejection FSendPlrMsg2 boundary",
+  "status": "supporting milestone; named E2 remains open",
+  "guest": "StarDev / Win98 / C:\\SYOE20",
+  "native_run": "runs/vmctl-vc152syoe20/",
+  "host_report": "SATISFY_ORDERS_RAW_FOREIGN_COLONIST_CHECKS=12 FAILURES=0 RESULT=PASS",
+  "native_report": "SATISFY_ORDERS_RAW_FOREIGN_COLONIST_CHECKS=12 FAILURES=0 RESULT=PASS EXIT=0",
+  "native_rerun": "runs/vmctl-vc152syoe20-r2/",
+  "native_build": {
+    "compile": "PASS",
+    "link": "PASS",
+    "process_exit": 0,
+    "program_error_dialog": false,
+    "compiler_options": "/AM /GA /GEs /Zp1 /O /W3",
+    "response_file_definitions": "SYORES.DEF included; Win16 stack/heap/stub directives applied"
+  },
+  "covered": [
+    "foreign fleet colonist permission rejection",
+    "message code 0x0155",
+    "source fleet marker and id",
+    "source current planet id payload",
+    "no transfer callback",
+    "no ordinary resource raw callback",
+    "order cancellation with cargo and request preservation"
+  ],
+  "remaining": [
+    "fuel and optimal-fuel message variants",
+    "remaining permission and failed-transfer message families",
+    "original transfer differential against the full game message stream",
+    "E3 full-turn/original differential",
+    "named SatisfyOrders E2 Step-5 closure and Step-6 promotion"
+  ],
+  "evidence": [
+    "tests/satisfy_orders_raw_foreign_colonist_probe.c",
+    "compat/vc152/satisfy-orders-raw-foreign-colonist-e2-native/",
+    "runs/vmctl-vc152syoe20/SYOFOR.TXT",
+    "runs/vmctl-vc152syoe20/SYORESSTA.TXT",
+    "runs/vmctl-vc152syoe20/SYORESCL.LOG",
+    "runs/vmctl-vc152syoe20/SYORESLINK.LOG",
+    "runs/vmctl-vc152syoe20-r2/SYOFOR.TXT",
+    "runs/vmctl-vc152syoe20-r2/SYORESSTA.TXT",
+    "runs/vmctl-vc152syoe20-r2/SYORESCL.LOG",
+    "runs/vmctl-vc152syoe20-r2/SYORESLINK.LOG",
+    "reconstructed/src/satisfy_orders.c",
+    "reconstructed/include/core.h",
+    "/Users/jdrake/Projects/stars-decompile/turn3.c",
+    "analysis/decompiler/export/raw/10b0_6798_SatisfyOrders.c"
+  ]
+}

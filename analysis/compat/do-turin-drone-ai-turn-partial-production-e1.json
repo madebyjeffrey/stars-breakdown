@@ -1,0 +1,20 @@
+{
+  "procedure": "DoTurinDroneAiTurn",
+  "step5_unit": "E1 production policy plus first-order repair",
+  "status": "supporting_subcheck_only",
+  "original_source_range": "analysis/decompiler/export/raw/1088_3670_DoTurinDroneAiTurn.c:353-385",
+  "corrected_behavior": ["four-channel queue-cost debit", "one callback per affordable hull", "retained partial prefix", "per-item counters"],
+  "production_source": "reconstructed/src/do_turin_drone_ai_turn.c",
+  "host": "TURIN_DRONE_AI_PRODUCTION_CHECKS=11 FAILURES=0 RESULT=PASS",
+  "related_host_probes": {"packed_integration": "20/20", "edge_policy": "7/7"},
+  "native": {
+    "guest_directory": "C:\\TURPE1",
+    "build_status": "COMPILE=PASS LINK=PASS",
+    "process": "EXIT 0",
+    "report": "TURIN_DRONE_AI_PRODUCTION_CHECKS=11 FAILURES=0 RESULT=PASS",
+    "program_error_dialog": false,
+    "return_directory": "runs/vmctl-turpe1"
+  },
+  "e1_remaining": ["other selected-design loops", "population and design-count predicates", "RNG-gated queue items", "FinishProduction service interaction"],
+  "named_units_closed": 0
+}

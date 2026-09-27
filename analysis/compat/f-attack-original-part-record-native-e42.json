@@ -1,0 +1,63 @@
+{
+  "procedure": "FAttack",
+  "checkpoint": "original part-record integration E42",
+  "status": "supporting Step-5 evidence; no named unit closed",
+  "fixture": {
+    "source": "target/stars.exe NE segment 2, unrelocated",
+    "bytes": 25256,
+    "executable_sha256": "ccab6682b55dae14dbf104e491cfbd3b32a6280022020032ae0615500949ba59",
+    "segment_sha256": "52b2fb4ebc7c8ea4527b2d277fcaf3218c916053d9e295e33900cc637a753698"
+  },
+  "behavior": {
+    "record_offsets": {
+      "range": 52,
+      "damage_points": 54,
+      "initiative": 56
+    },
+    "minimum_record_size": 58,
+    "host_report": "F_ATTACK_PACKED_PART_CHECKS=20 FAILURES=0 RESULT=PASS"
+  },
+  "native_e42": {
+    "guest_directory": "C:\\FAPNE42",
+    "run_directory": "runs/vmctl-vc152fapne42",
+    "compile": "PASS",
+    "link": "PASS",
+    "process_exit": 0,
+    "report": "F_ATTACK_PACKED_PART_CHECKS=20 FAILURES=0 RESULT=PASS",
+    "program_error_dialog": false,
+    "returned": [
+      "BLDSTAT.TXT",
+      "FAPCL.LOG",
+      "FAPLINK.LOG",
+      "FAPARTN.TXT",
+      "FAPNAT.EXE",
+      "FAPNAT.MAP",
+      "FAPNAT.OBJ",
+      "guest-screen.bmp"
+    ]
+  },
+  "host_suite": {
+    "tests_passed": 524,
+    "expected_skips": 153,
+    "layout_assertions": 2241,
+    "declarations": 846,
+    "baseline_check": "PASS",
+    "git_diff_check": "PASS"
+  },
+  "failed_attempts_preserved": [
+    "runs/vmctl-vc152fapne40/",
+    "runs/vmctl-vc152fapne41/"
+  ],
+  "todo6_counters_unchanged": {
+    "evidence_closed": 120,
+    "evidence_total": 152,
+    "promotion_units_open": 10,
+    "practical_open_work_items": 42
+  },
+  "remaining": [
+    "live Stars! current-CS table binding and complete FLookupPart service behavior",
+    "broader original damage differentials and complete weapon target/damage acceptance",
+    "full native battle replay and final differential",
+    "Phase-2 promotion"
+  ]
+}

@@ -1,0 +1,210 @@
+{
+  "original_sha256": "ccab6682b55dae14dbf104e491cfbd3b32a6280022020032ae0615500949ba59",
+  "compiler": "Microsoft C/C++ Compiler Version 8.00c (VC++ 1.52c)",
+  "flags": "/c /AM /GA /GEs /Zp1 /Od /Gs /W3 /Fc",
+  "comparison": "No masked bytes; named OMF relocations resolved into the original address layout.",
+  "functions": [
+    {
+      "name": "FCreateFonts",
+      "ne_segment": 1,
+      "original_offset": 2738,
+      "original_bytes": 702,
+      "generated_bytes": 702,
+      "length_difference": 0,
+      "exact_after_address_resolution": true,
+      "differing_bytes": 0,
+      "differences": [],
+      "fixups": [
+        {
+          "offset": 18,
+          "width": 4,
+          "target": "LOCALALLOC",
+          "resolved_value": "0x14f8000c"
+        },
+        {
+          "offset": 86,
+          "width": 4,
+          "target": "_CchGetString",
+          "resolved_value": "0x1040221e"
+        },
+        {
+          "offset": 118,
+          "width": 4,
+          "target": "GETDEVICECAPS",
+          "resolved_value": "0x14f80124"
+        },
+        {
+          "offset": 128,
+          "width": 4,
+          "target": "_MULDIV",
+          "resolved_value": "0x14f8013c"
+        },
+        {
+          "offset": 176,
+          "width": 4,
+          "target": "__strcpy",
+          "resolved_value": "0x11180392"
+        },
+        {
+          "offset": 191,
+          "width": 4,
+          "target": "CREATEFONTINDIRECT",
+          "resolved_value": "0x14f80104"
+        },
+        {
+          "offset": 231,
+          "width": 4,
+          "target": "__strcpy",
+          "resolved_value": "0x11180392"
+        },
+        {
+          "offset": 250,
+          "width": 4,
+          "target": "GETDEVICECAPS",
+          "resolved_value": "0x14f80124"
+        },
+        {
+          "offset": 260,
+          "width": 4,
+          "target": "_MULDIV",
+          "resolved_value": "0x14f8013c"
+        },
+        {
+          "offset": 279,
+          "width": 4,
+          "target": "CREATEFONTINDIRECT",
+          "resolved_value": "0x14f80104"
+        },
+        {
+          "offset": 298,
+          "width": 4,
+          "target": "GETDEVICECAPS",
+          "resolved_value": "0x14f80124"
+        },
+        {
+          "offset": 308,
+          "width": 4,
+          "target": "_MULDIV",
+          "resolved_value": "0x14f8013c"
+        },
+        {
+          "offset": 327,
+          "width": 4,
+          "target": "CREATEFONTINDIRECT",
+          "resolved_value": "0x14f80104"
+        },
+        {
+          "offset": 346,
+          "width": 4,
+          "target": "GETDEVICECAPS",
+          "resolved_value": "0x14f80124"
+        },
+        {
+          "offset": 356,
+          "width": 4,
+          "target": "_MULDIV",
+          "resolved_value": "0x14f8013c"
+        },
+        {
+          "offset": 404,
+          "width": 4,
+          "target": "__strcpy",
+          "resolved_value": "0x11180392"
+        },
+        {
+          "offset": 419,
+          "width": 4,
+          "target": "CREATEFONTINDIRECT",
+          "resolved_value": "0x14f80104"
+        },
+        {
+          "offset": 459,
+          "width": 4,
+          "target": "__strcpy",
+          "resolved_value": "0x11180392"
+        },
+        {
+          "offset": 482,
+          "width": 4,
+          "target": "CREATEFONTINDIRECT",
+          "resolved_value": "0x14f80104"
+        },
+        {
+          "offset": 497,
+          "width": 4,
+          "target": "SELECTOBJECT",
+          "resolved_value": "0x14f800f8"
+        },
+        {
+          "offset": 515,
+          "width": 4,
+          "target": "GETTEXTMETRICS",
+          "resolved_value": "0x14f80138"
+        },
+        {
+          "offset": 543,
+          "width": 4,
+          "target": "GETTEXTEXTENT",
+          "resolved_value": "0x14f80134"
+        },
+        {
+          "offset": 570,
+          "width": 4,
+          "target": "SELECTOBJECT",
+          "resolved_value": "0x14f800f8"
+        },
+        {
+          "offset": 585,
+          "width": 4,
+          "target": "GETTEXTMETRICS",
+          "resolved_value": "0x14f80138"
+        },
+        {
+          "offset": 606,
+          "width": 4,
+          "target": "SELECTOBJECT",
+          "resolved_value": "0x14f800f8"
+        },
+        {
+          "offset": 621,
+          "width": 4,
+          "target": "GETTEXTMETRICS",
+          "resolved_value": "0x14f80138"
+        },
+        {
+          "offset": 642,
+          "width": 4,
+          "target": "SELECTOBJECT",
+          "resolved_value": "0x14f800f8"
+        },
+        {
+          "offset": 657,
+          "width": 4,
+          "target": "GETTEXTMETRICS",
+          "resolved_value": "0x14f80138"
+        },
+        {
+          "offset": 677,
+          "width": 4,
+          "target": "SELECTOBJECT",
+          "resolved_value": "0x14f800f8"
+        },
+        {
+          "offset": 686,
+          "width": 4,
+          "target": "LOCALFREE",
+          "resolved_value": "0x14f80014"
+        }
+      ],
+      "backpatch_records": 9,
+      "original_relocated_sha256": "9a36acd3598f3e02f878f3d44bb479a40faca37f7c948d3c67aa6edf9c81f49d",
+      "generated_resolved_sha256": "9a36acd3598f3e02f878f3d44bb479a40faca37f7c948d3c67aa6edf9c81f49d",
+      "source": "compat/init-fonts-match/INIT.C"
+    }
+  ],
+  "all_functions_match": true,
+  "object_sha256": "e66ca2946d5f2f31b577bd2833cf0a7251022aea9c8cfd3c404921a501f41536",
+  "source_sha256": "87190b1361deaa6270e3d0e3df339fa3d117323224c6b308f8d949b470610f5c",
+  "build_log": "init.c\ninit.c(277) : warning C4035: 'FCreateFonts' : no return value\ninit.c(277) : warning C4101: 'scratch' : unreferenced local variable\n",
+  "build_status": "PASS\n"
+}

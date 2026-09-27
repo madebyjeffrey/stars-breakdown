@@ -1,0 +1,20 @@
+{
+  "procedure": "DoTurinDroneAiTurn",
+  "step5_unit": "E1 production policy plus first-order repair",
+  "status": "supporting_subcheck_only",
+  "original_instruction_range": "analysis/decompiler/export/raw/1088_3670.asm:5811-588a",
+  "original_writes": ["first PLORD kind nibble becomes 6", "word at offset 12 becomes 5", "word at offset 14 becomes 5"],
+  "original_iordMac_write": false,
+  "production_source": ["reconstructed/src/do_turin_drone_ai_turn.c", "reconstructed/src/ai_plord.c"],
+  "host": "TURIN_MULTI_ORDER_REPAIR_CHECKS=18 FAILURES=0 RESULT=PASS",
+  "native": {
+    "guest_directory": "C:\\TURRE1",
+    "build_status": "COMPILE=PASS LINK=PASS",
+    "process": "EXIT 0",
+    "report": "TURIN_MULTI_ORDER_REPAIR_CHECKS=18 FAILURES=0 RESULT=PASS",
+    "program_error_dialog": false,
+    "return_directory": "runs/vmctl-turre1"
+  },
+  "e1_remaining": ["multiple selected production designs", "per-item queue writes", "RNG gates", "population/resource thresholds"],
+  "named_units_closed": 0
+}

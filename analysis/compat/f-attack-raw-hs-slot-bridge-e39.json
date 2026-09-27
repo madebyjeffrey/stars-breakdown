@@ -1,0 +1,51 @@
+{
+  "procedure": "FAttack",
+  "checkpoint": "E39",
+  "finding": "A production helper now decodes raw four-byte _hs records into FAttack's packed-part view with stride and capacity validation.",
+  "raw_record": {
+    "size": 4,
+    "group_offset": 0,
+    "group_width": 2,
+    "group_endian": "little",
+    "item_offset": 2,
+    "count_offset": 3
+  },
+  "source_change": "Added stars_attack_bind_raw_hull_slots; it explicitly decodes group/item/count bytes, validates destination capacity and source stride, then binds the converted slots to StarsAttackInput without type-punning packed storage.",
+  "host_validation": {
+    "packed_part": "F_ATTACK_PACKED_PART_CHECKS=16 FAILURES=0 RESULT=PASS",
+    "context_adapter": "F_DO_COOL_BATTLE_ATTACK_INTEGRATION_CHECKS=29 FAILURES=0 RESULT=PASS",
+    "full_suite": {
+      "tests": 523,
+      "expected_skips": 153,
+      "layout_assertions": 2241,
+      "declarations": 846
+    },
+    "baseline_check": "PASS",
+    "diff_check": "PASS"
+  },
+  "native_validation": {
+    "packet": "compat/vc152/f-attack-complex-native-e39/",
+    "guest_directory": "C:\\FAPNE39",
+    "build_status": "COMPILE=PASS; LINK=PASS",
+    "reports": [
+      "F_ATTACK_PACKED_PART_CHECKS=16 FAILURES=0 RESULT=PASS",
+      "F_ATTACK_BEAM_SCALE_CHECKS=86 FAILURES=0 RESULT=PASS",
+      "F_ATTACK_RAW_DAMAGE_CHECKS=9 FAILURES=0 RESULT=PASS",
+      "F_ATTACK_TORPEDO_TARGET_CHECKS=5 FAILURES=0 RESULT=PASS",
+      "F_ATTACK_RAW_TORPEDO_DISPATCH_CHECKS=17 FAILURES=0 RESULT=PASS"
+    ],
+    "tested_processes_exit": 0,
+    "program_error_dialog": false,
+    "evidence_directory": "runs/vmctl-vc152fapne39/"
+  },
+  "step5_units_closed": 0,
+  "step5_units_total": 3,
+  "remaining": [
+    "Complete original FLookupPart native table/service and race/visibility path",
+    "Complete packed attacker/target/design-to-hull resolution",
+    "Complete raw beam/torpedo damage-service acceptance",
+    "E2 broader original damage differential",
+    "E3 full battle replay and differential",
+    "Step-6 promotion"
+  ]
+}

@@ -2,14 +2,22 @@
 
 Step 2 generates storage-view headers and effective declarations in `include/`. They are reproducible with `python3 tools/debug_headers.py`; see `analysis/debug/README.md` for their representation, limitations and checks.
 
-Step 5 adds 59 reviewed routines in `src/`, compiled as a host C89 semantic library.
-Build with `python3 tools/build_core.py`. Their original addresses, behavior,
-machine-code comparisons, and limits are recorded in
-[the reconstruction report](../analysis/reconstruction/core.md).
+Step 5 began with a host C89 semantic library and has expanded to the
+[per-procedure source ledger](../TODO5.md): 838 reviewed and 8 partial named
+game procedures as of the current ledger. Build the host library with
+`python3 tools/build_core.py`. Original addresses, evidence, and limits are
+recorded per procedure in TODO5 and the linked reconstruction notes. The
+[core report](../analysis/reconstruction/core.md) documents an earlier
+component milestone.
 
 No complete application implementation exists yet. The core API in `include/core.h`
 uses explicit state and memory instead of the original far-call ABI. Header
 compilation alone is not counted as compiled function reconstruction.
+
+The `compat/common-byte-match/` files are intentionally separate exact-byte
+fixtures; they contain compiler directives that reproduce already-known bytes
+and are not the reconstructed source. The actual source implementations are
+the files linked in `TODO5.md` under `reconstructed/src/`.
 
 The [VC++ 1.52c compatibility fixture](../compat/vc152/README.md) packages eleven
 utility routines and a separate native recovered-header check for the user's

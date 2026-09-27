@@ -1,0 +1,47 @@
+{
+  "procedures": ["FLookupPart", "FAttack"],
+  "checkpoint": "E45",
+  "status": "superseded-by-E46; table selector was incorrectly attributed to DGROUP/NE29",
+  "source_changes": [
+    "Resolved live table anchors from CodeView global addresses.",
+    "Added exact absolute table_base_offset to StarsLookupPartInput.",
+    "Corrected ZIP byte stride to 0x36 because the raw expression uses ushort-pointer arithmetic."
+  ],
+  "anchor_families": [
+    {"group": "0x0100", "symbol": "ptStickyRaceDlg", "symbol_address": "0025:12EC", "table_base_offset": "0x12EC", "stride": "0x36", "segment": "0x10e0"},
+    {"group": "0x0200", "symbol": "rgbCur", "symbol_address": "0025:4B98", "expression_displacement": "0x1F2", "table_base_offset": "0x4D8A", "stride": "0x38", "segment": "0x10e0"},
+    {"group": "0x0400", "symbol": "szMsgTitle", "symbol_address": "0025:484C", "expression_displacement": "0x26", "table_base_offset": "0x4872", "stride": "0x8F", "segment": "0x10e0"},
+    {"group": "0x8000", "symbol": "hwndZipOrderDlg", "symbol_address": "0025:16B8", "expression": "(ushort *)&hwndZipOrderDlg + item*0x1B", "table_base_offset": "0x16B8", "stride": "0x36 bytes", "segment": "0x10e0"}
+  ],
+  "selected_offsets": {
+    "special_item_2": "0x1358",
+    "planetary_item_15": "0x50D2",
+    "message_item_4": "0x4AAE",
+    "zip_item_14": "0x19AC"
+  },
+  "validation": {
+    "host_table_probe": "LOOKUP_PART_TABLE_CHECKS=66 FAILURES=0 RESULT=PASS",
+    "host_gate_probe": "LOOKUP_PART_CHECKS=8 FAILURES=0 RESULT=PASS",
+    "native_packet": "compat/vc152/f-lookup-part-anchor-native-e47/",
+    "guest_directory": "C:\\FAPTA47",
+    "native_report": "LOOKUP_PART_TABLE_CHECKS=66 FAILURES=0 RESULT=PASS",
+    "build_status": "COMPILE=PASS; LINK=PASS",
+    "process_exit": 0,
+    "program_error_dialog": false,
+    "full_suite_tests": 523,
+    "expected_skips": 153,
+    "layout_assertions": 2241,
+    "declarations": 846,
+    "baseline_check": "PASS",
+    "diff_check": "PASS",
+    "evidence_directory": "runs/vmctl-faptae47/"
+  },
+  "superseded_checkpoint": "E44 (incorrect ZIP byte stride); E45 also had an incorrect selector interpretation. Artifacts retained.",
+  "step5_units_closed": 0,
+  "remaining": [
+    "Bind the exact addresses to live native DGROUP bytes",
+    "Complete FLookupPart race, hidden-part, and TechStatus service binding",
+    "Complete FAttack damage acceptance and original battle differential",
+    "Full battle replay and Step-6 promotion"
+  ]
+}

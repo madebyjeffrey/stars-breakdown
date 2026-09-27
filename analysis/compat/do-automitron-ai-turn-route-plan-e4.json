@@ -1,0 +1,38 @@
+{
+  "procedure": "DoAutomitronAiTurn",
+  "checkpoint": "E4 route plan/apply boundary host support",
+  "scope": "host-only",
+  "checks": 14,
+  "failures": 0,
+  "result": "PASS",
+  "report": "AUTOMITRON_AI_ROUTE_PLAN_CHECKS=14 FAILURES=0 RESULT=PASS",
+  "repository_regression": "Ran 519 tests; OK (skipped=153)",
+  "generated_headers": {
+    "layout_assertions": 2241,
+    "function_declarations": 846
+  },
+  "baseline_check": "PASS",
+  "git_diff_check": "PASS",
+  "step5_units_closed": 0,
+  "covered": [
+    "owned-fleet filtering",
+    "colonize and movement plan payloads",
+    "named action dispatch boundary",
+    "generic action applier fallback",
+    "planner failure propagation",
+    "applier failure propagation"
+  ],
+  "remaining": [
+    "raw Automitron target predicates",
+    "complete packed-order mutation",
+    "native replay",
+    "original-turn differential",
+    "Step-6 promotion"
+  ],
+  "evidence": [
+    "reconstructed/include/core.h",
+    "reconstructed/src/do_automitron_ai_turn.c",
+    "tests/do_automitron_ai_turn_route_plan_probe.c",
+    "analysis/decompiler/export/raw/1098_01e0_DoAutomitronAiTurn.c"
+  ]
+}

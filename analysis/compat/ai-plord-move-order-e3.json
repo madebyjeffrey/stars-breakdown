@@ -1,0 +1,34 @@
+{
+  "procedures": [
+    "DoRobotoidAiTurn",
+    "DoTurinDroneAiTurn",
+    "DoCyberAiTurn"
+  ],
+  "milestone": "ai-plord-move-order-e3",
+  "scope": "host-only",
+  "checks": 12,
+  "failures": 0,
+  "result": "PASS",
+  "report": "AI_PLORD_MOVE_ORDER_CHECKS=12 FAILURES=0 RESULT=PASS",
+  "step5_units_closed": 0,
+  "coverage": {
+    "first_order_copy": true,
+    "append_to_tail": true,
+    "endpoint_comparison": true,
+    "capacity_rejection_without_mutation": true,
+    "all_nine_order_words": true,
+    "order_count_update": true,
+    "reviewed_move_ai_fleet_regression": true,
+    "reviewed_colonize_ai_fleet_regression": true
+  },
+  "evidence": [
+    "reconstructed/include/core.h",
+    "reconstructed/src/ai_plord.c",
+    "reconstructed/src/ai.c",
+    "tests/ai_plord_move_order_probe.c",
+    "tests/f_move_ai_fleet_source_probe.c",
+    "tests/f_colonize_ai_fleet_source_probe.c",
+    "analysis/decompiler/export/raw/1090_3d0a_FMoveAiFleet.c",
+    "analysis/decompiler/export/raw/1090_0c78_FColonizeAiFleet.c"
+  ]
+}

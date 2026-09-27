@@ -1,0 +1,39 @@
+{
+  "procedure": "FAttack",
+  "checkpoint": "E32",
+  "scope": "group-0x10 post-selection beam scaling and damage-class host probe",
+  "acceptance_units_closed": 0,
+  "phase2_step5_units": {
+    "closed": 0,
+    "total": 3
+  },
+  "progress": "5/6",
+  "source_probe": "tests/f_attack_beam_scale_probe.c",
+  "host_test": "tests/test_f_attack_beam_scale.py",
+  "host_result": "F_ATTACK_BEAM_SCALE_CHECKS=7 FAILURES=0 RESULT=PASS",
+  "native_validation": {
+    "guest_directory": "C:\\FAPNE32",
+    "build_status": "COMPILE=PASS; LINK=PASS",
+    "report": "F_ATTACK_BEAM_SCALE_CHECKS=7 FAILURES=0 RESULT=PASS",
+    "process_exit": 0,
+    "program_error_dialog": false,
+    "evidence_directory": "runs/vmctl-vc152fapne32/",
+    "compiler_warning": "Harness macro BEAM_SCALE_NATIVE was defined both in source and compiler flags; compile and link still passed."
+  },
+  "original_evidence": "analysis/decompiler/export/raw/10f0_69ac_FAttack.c:515-561",
+  "coverage": [
+    "nonzero attacker pctCap followed by target pctBeamDef and distance falloff",
+    "zero pctCap bypass",
+    "integer truncation and operation order",
+    "raw FDamageTok beam class transition at dp == 200",
+    "zero effective beam defense rejects dispatch",
+    "falloff above 100 percent rejects dispatch"
+  ],
+  "remaining": [
+    "fresh VC++ 1.52c/Win98 replay of this source revision",
+    "complete raw complex-beam and torpedo battle-part scaling and table/service acceptance (E1)",
+    "broader original damage differentials (E2)",
+    "full native battle replay and final differential (E3)",
+    "Step-6 promotion"
+  ]
+}

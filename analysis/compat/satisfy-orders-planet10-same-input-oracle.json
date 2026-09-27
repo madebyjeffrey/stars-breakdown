@@ -1,0 +1,230 @@
+{
+  "sources": {
+    "clean_hst": {
+      "path": "runs/vmctl-syorig1/BACKUP/CLEAN.HST",
+      "sha256": "74a27a31221f67328a98200c5dfde54f4c955a6498cc37ac08624b64a33997f6"
+    },
+    "action_hst": {
+      "path": "runs/vmctl-syact3/BACKUP/CLEAN.HST",
+      "sha256": "aa6161bb6c95c8276b7a5d12e5a12d9999e3dea0fa242a3be89a94a05c45df3c"
+    },
+    "m1_only_hst": {
+      "path": "runs/vmctl-syact1/BACKUP/CLEAN.HST",
+      "sha256": "74a27a31221f67328a98200c5dfde54f4c955a6498cc37ac08624b64a33997f6"
+    },
+    "clean_m1": {
+      "path": "runs/vmctl-syorig1/CLEAN.M1",
+      "sha256": "96e388d36aa02b6e6640b97e3f0e18e81ffb8b052a244807723c1b516e48bb80"
+    },
+    "action_m1": {
+      "path": "runs/vmctl-syact3/CLEAN.M1",
+      "sha256": "c1ff47096624165fd3a94c1b39c617f832a05a92ee60d9b5bff262529d321663"
+    },
+    "m1_only_m1": {
+      "path": "runs/vmctl-syact1/CLEAN.M1",
+      "sha256": "f85ef1df5b69998995a7ca7d405559b6ec69fbed54f3d18d36838bebf7f9dbf2"
+    }
+  },
+  "original_input": {
+    "owner": 0,
+    "flags": 11143,
+    "levels": [
+      0,
+      0,
+      0
+    ],
+    "concentrations": [
+      68,
+      87,
+      68
+    ],
+    "environment": [
+      50,
+      50,
+      50
+    ],
+    "auxiliary_word": 62,
+    "minerals": [
+      469,
+      893,
+      376,
+      250
+    ],
+    "improvements": {
+      "population_delta": 0,
+      "mines": 10,
+      "factories": 10,
+      "defenses": 10
+    },
+    "mineral_selector": 106,
+    "body_hex": "0a00872b004457443232323e006ad5017d037801fa000aa0000a00000000000000"
+  },
+  "clean_output": {
+    "owner": 0,
+    "flags": 11143,
+    "levels": [
+      247,
+      241,
+      247
+    ],
+    "concentrations": [
+      68,
+      87,
+      68
+    ],
+    "environment": [
+      50,
+      50,
+      50
+    ],
+    "auxiliary_word": 8259,
+    "minerals": [
+      476,
+      902,
+      383,
+      287
+    ],
+    "improvements": {
+      "population_delta": 50,
+      "mines": 10,
+      "factories": 10,
+      "defenses": 10
+    },
+    "mineral_selector": 170,
+    "body_hex": "0a00872b15f7f1f74457443232324320aadc0186037f011f01320aa0000a00000000000000"
+  },
+  "action_output": {
+    "owner": 0,
+    "flags": 11143,
+    "levels": [
+      247,
+      241,
+      247
+    ],
+    "concentrations": [
+      68,
+      87,
+      68
+    ],
+    "environment": [
+      50,
+      50,
+      50
+    ],
+    "auxiliary_word": 8256,
+    "minerals": [
+      485,
+      907,
+      388,
+      287
+    ],
+    "improvements": {
+      "population_delta": 50,
+      "mines": 10,
+      "factories": 10,
+      "defenses": 10
+    },
+    "mineral_selector": 170,
+    "body_hex": "0a00872b15f7f1f74457443232324020aae5018b0384011f01320aa0000a00000000000000"
+  },
+  "m1_only_output": {
+    "owner": 0,
+    "flags": 11143,
+    "levels": [
+      247,
+      241,
+      247
+    ],
+    "concentrations": [
+      68,
+      87,
+      68
+    ],
+    "environment": [
+      50,
+      50,
+      50
+    ],
+    "auxiliary_word": 8268,
+    "minerals": [
+      475,
+      902,
+      383,
+      287
+    ],
+    "improvements": {
+      "population_delta": 50,
+      "mines": 10,
+      "factories": 10,
+      "defenses": 10
+    },
+    "mineral_selector": 170,
+    "body_hex": "0a00872b15f7f1f74457443232324c20aadb0186037f011f01320aa0000a00000000000000"
+  },
+  "m1_only_minus_clean": [
+    -1,
+    0,
+    0,
+    0
+  ],
+  "clean_minus_input": [
+    7,
+    9,
+    7,
+    37
+  ],
+  "action_minus_input": [
+    16,
+    14,
+    12,
+    37
+  ],
+  "action_minus_clean": [
+    9,
+    5,
+    5,
+    0
+  ],
+  "isolated_scrap_return": [
+    9,
+    6,
+    5,
+    0
+  ],
+  "remaining_full_turn_delta": [
+    0,
+    -1,
+    0,
+    0
+  ],
+  "mining_rounding_candidate": {
+    "owner_mine_efficiency": 10,
+    "owner_mine_operating_limit": 10,
+    "operating_mines": 10,
+    "raw_hundredths": [
+      680,
+      870,
+      680
+    ],
+    "floor": [
+      6,
+      8,
+      6
+    ],
+    "remainder": [
+      80,
+      70,
+      80
+    ],
+    "clean_turn_gain": [
+      7,
+      9,
+      7
+    ],
+    "action_turn_gain_after_scrap": [
+      7,
+      8,
+      7
+    ]
+  }
+}

@@ -1,5 +1,9 @@
 # Original-game runtime reference — step 4
 
+This report records the initial Step-4 runtime baseline. Its forward-looking
+statements describe that checkpoint. For current reconstruction and acceptance
+status, use [TODO5](../../TODO5.md) and [TODO7](../../TODO7.md).
+
 **Step 4's initial behavioral reference is established.** Windows for Workgroups 3.11 runs the original executable. The study now has game, turn, race and malformed-file fixtures; a verified live function trace; and two tutorial creations that match all 3,213 output bytes under a documented clock intervention. This is a foundation for reconstruction, not whole-program equivalence or exhaustive testing.
 
 The user resolved registration after the initial experiments. Subsequent clean game creation, turn generation, separate batch launches, tutorial creation and race-file reload completed without renewed registration prompts. Earlier SMOKE runs remain provisional historical evidence and are excluded from the accepted baseline.

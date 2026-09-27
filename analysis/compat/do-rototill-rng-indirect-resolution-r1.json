@@ -1,0 +1,116 @@
+{
+  "bsearch_comparator": "1038:1fa2 ICompFleetPoint2",
+  "callgraph_sha256": "e86d75c0a21076333fa5b57763bc7419b06c5406fbed08e919fe74de57f670fd",
+  "draw_plan_ship_table_callbacks": [
+    {
+      "descriptor": "1128:07fc",
+      "target": "1050:3336"
+    },
+    {
+      "descriptor": "1128:080c",
+      "target": "1050:12b2"
+    },
+    {
+      "descriptor": "1128:081c",
+      "target": "1050:1716"
+    },
+    {
+      "descriptor": "1128:082c",
+      "target": "1050:377e"
+    },
+    {
+      "descriptor": "1128:083c",
+      "target": "1050:2c38"
+    },
+    {
+      "descriptor": "1128:084c",
+      "target": "1050:22cc"
+    },
+    {
+      "descriptor": "1128:090e",
+      "target": "1050:3336"
+    },
+    {
+      "descriptor": "1128:091e",
+      "target": "1058:17b6"
+    },
+    {
+      "descriptor": "1128:092e",
+      "target": "1058:0000"
+    },
+    {
+      "descriptor": "1128:093e",
+      "target": "1058:0912"
+    },
+    {
+      "descriptor": "1128:094e",
+      "target": "1058:1a54"
+    },
+    {
+      "descriptor": "1128:095e",
+      "target": "1058:1e72"
+    },
+    {
+      "descriptor": "1128:096e",
+      "target": "1050:377e"
+    }
+  ],
+  "drawing_mining_random_path": {
+    "path": [
+      "DrawShipWayPtOrders",
+      "EstMineralsMined",
+      "Random"
+    ],
+    "retained_ui_dropdown_selection": null,
+    "ui_dropdown_selection_required": 3
+  },
+  "end_tutor_path": [
+    "FGenerateTurn",
+    "BreedColonistsInTransit",
+    "ChgCargo",
+    "FLookupFleet",
+    "AdvanceTutor",
+    "EndTutor"
+  ],
+  "functions_sha256": "d0cb3410476fc7754ccbb8845b19f3e39fceef6156b2458788a66953d7401a7a",
+  "indirect_sites": [
+    {
+      "classification": "DrawPlanShip descriptor callback",
+      "site": "1048:102f"
+    },
+    {
+      "classification": "ICompFleetPoint2 comparator",
+      "site": "1118:07ee"
+    },
+    {
+      "classification": "ICompFleetPoint2 comparator",
+      "site": "1118:082e"
+    },
+    {
+      "classification": "ICompReport comparator",
+      "site": "1118:088a"
+    },
+    {
+      "classification": "ICompReport comparator",
+      "site": "1118:0911"
+    },
+    {
+      "classification": "ICompReport comparator",
+      "site": "1118:092f"
+    },
+    {
+      "classification": "CRT stack-overflow continuation",
+      "site": "1118:12ed"
+    },
+    {
+      "classification": "same-segment math dispatch",
+      "site": "1118:2420"
+    }
+  ],
+  "original_exe_sha256": "ccab6682b55dae14dbf104e491cfbd3b32a6280022020032ae0615500949ba59",
+  "qsort_comparator": "1108:5bb8 ICompReport",
+  "random_address": "1040:16d2",
+  "schema": "rototill-rng-indirect-resolution-r1",
+  "scope_note": "Resolves immediate binary callback targets and callsite types. DrawShipWayPtOrders can still reach Random through a UI mining-preview path when dropdown selection 3 is active. Retained files do not carry that UI state. Tutorial and callback reentry need execution-context review.",
+  "start_tutor_directly_reachable": false
+}

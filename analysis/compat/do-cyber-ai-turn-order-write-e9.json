@@ -1,0 +1,49 @@
+{
+  "procedure": "DoCyberAiTurn",
+  "milestone": "do-cyber-ai-turn-order-write-e9",
+  "scope": "full_caller_repair_route_plan_apply_packed_order_matrix",
+  "host": {
+    "probe": "tests/do_cyber_ai_turn_order_write_probe.c",
+    "sources": [
+      "reconstructed/src/do_cyber_ai_turn.c",
+      "reconstructed/src/ai_plord.c"
+    ],
+    "checks": 24,
+    "failures": 0,
+    "result": "PASS",
+    "report": "CYBER_AI_TURN_ORDER_WRITE_CHECKS=24 FAILURES=0 RESULT=PASS"
+  },
+  "native": {
+    "status": "pass",
+    "packet": "compat/vc152/do-cyber-ai-turn-order-write-e9/",
+    "guest_directory": "C:\\CYBOWE9",
+    "compile": "PASS",
+    "link": "PASS",
+    "report": "CYBER_AI_TURN_ORDER_WRITE_CHECKS=24 FAILURES=0 RESULT=PASS",
+    "process_exit": 0,
+    "program_error_dialog": false,
+    "artifacts": [
+      "runs/vmctl-vc152cybowe9/CYBISTA.TXT",
+      "runs/vmctl-vc152cybowe9/CYBICL.LOG",
+      "runs/vmctl-vc152cybowe9/CYBILINK.LOG",
+      "runs/vmctl-vc152cybowe9/CYBOW.TXT"
+    ]
+  },
+  "coverage": {
+    "first_order_repair": true,
+    "same_endpoint_replacement": true,
+    "tail_append": true,
+    "foreign_fleet_bypass": true,
+    "repair_plan_apply_visit_order": true,
+    "planner_failure_propagation": true,
+    "applier_failure_propagation": true,
+    "complete_order_record_copy": true
+  },
+  "named_step5_units_closed": 1,
+  "remaining": [
+    "direct raw personality branch coverage beyond typed action families",
+    "complete Cyber AI-table integration",
+    "original-turn differential",
+    "Step-6 promotion"
+  ]
+}

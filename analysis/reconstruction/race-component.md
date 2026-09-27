@@ -16,8 +16,10 @@ cancellation checks in WfW 3.11. The earlier
 [scenario package](../../compat/race/README.md) supplies live replay recipes;
 a real Windows UI adapter and completion of that pilot remain separate work.
 
-This adds **40 reviewed entry points, covering 27,718 original procedure bytes**.
-The project now has **99 reviewed named routines / 45,906 procedure bytes**.
+This milestone added **40 reviewed entry points, covering 27,718 original procedure bytes**.
+At that checkpoint the project had **99 reviewed named routines / 45,906
+procedure bytes**. For current project totals, use [TODO5](../../TODO5.md)
+and for remaining acceptance gates use [TODO7](../../TODO7.md).
 Twelve additional helper paths are implemented inside the message formatter
 without crediting their complete original procedures. See the reproducible
 [dependency audit](race-dependencies.json) and [formatter report](message-formatting.md).

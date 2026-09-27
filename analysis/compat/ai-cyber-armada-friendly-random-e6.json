@@ -1,0 +1,23 @@
+{
+  "procedures": [
+    "TargetCyberArmada",
+    "DoCyberAiTurn"
+  ],
+  "milestone": "ai-cyber-armada-friendly-random-e6",
+  "scope": "host-only",
+  "checks": 9,
+  "failures": 0,
+  "result": "PASS",
+  "report": "TARGET_CYBER_ARMADA_FRIENDLY_RANDOM_CHECKS=9 FAILURES=0 RESULT=PASS",
+  "step5_units_closed": 0,
+  "coverage": {
+    "friendly_random_fallthrough": true,
+    "friendly_random_early_return": true,
+    "high_damage_second_roll": true
+  },
+  "evidence": [
+    "reconstructed/src/target_cyber_armada.c",
+    "tests/target_cyber_armada_friendly_random_probe.c",
+    "analysis/decompiler/export/raw/10a8_51a4_TargetCyberArmada.c"
+  ]
+}

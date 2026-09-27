@@ -1,0 +1,348 @@
+{
+  "schema": "rototill-turin-variant-r1-v1",
+  "input": {
+    "HST": {
+      "turin_sha256": "74a27a31221f67328a98200c5dfde54f4c955a6498cc37ac08624b64a33997f6",
+      "rototill_sha256": "3a28217e52ebc9619237d9af54c40e614480d42e2d1e5b37c2f2d9e0f961e207",
+      "bytes_identical": false,
+      "record_count": 82,
+      "decoded_differences": [
+        {
+          "record_index": 2,
+          "kind": 6,
+          "byte_offsets": [
+            7
+          ],
+          "before_hex": "27",
+          "after_hex": "67"
+        }
+      ]
+    },
+    "M1": {
+      "turin_sha256": "95d2d7fd27a39ea1668685beeb4785d876d9ed3cfb657f58173ea47e04e8c0a7",
+      "rototill_sha256": "95d2d7fd27a39ea1668685beeb4785d876d9ed3cfb657f58173ea47e04e8c0a7",
+      "bytes_identical": true,
+      "record_count": 31,
+      "decoded_differences": []
+    },
+    "M2": {
+      "turin_sha256": "588830ac2225056422fa447cb201c7bd326e472652a8d3abf222b5fcceb99d4b",
+      "rototill_sha256": "62b53d7d47a64525256f847c51fece2aabf2c76920eb92bae87eabd79fca0856",
+      "bytes_identical": false,
+      "record_count": 21,
+      "decoded_differences": [
+        {
+          "record_index": 1,
+          "kind": 6,
+          "byte_offsets": [
+            7
+          ],
+          "before_hex": "27",
+          "after_hex": "67"
+        }
+      ]
+    },
+    "XY": {
+      "turin_sha256": "580e4c3be92eee570c95c97faa2557e3b4fe92856387970cf548700e1bb3fd88",
+      "rototill_sha256": "580e4c3be92eee570c95c97faa2557e3b4fe92856387970cf548700e1bb3fd88",
+      "bytes_identical": true
+    }
+  },
+  "output": {
+    "HST": {
+      "turin_sha256": "8ac7a971db05d572779d05b5a23e093e3b3400f12df8b4839d7abef13e92446e",
+      "rototill_sha256": "18a2735c067c040788dddbd36fc11772191c1931cb9ca38245a221ea6052c76d",
+      "turin_turn_1_records": 83,
+      "rototill_turn_1_records": 87,
+      "identical_records_in_order": 69,
+      "differences": [
+        {
+          "action": "replace",
+          "turin_range": [
+            0,
+            1
+          ],
+          "rototill_range": [
+            0,
+            1
+          ],
+          "turin_kinds": [
+            8
+          ],
+          "rototill_kinds": [
+            8
+          ]
+        },
+        {
+          "action": "replace",
+          "turin_range": [
+            2,
+            3
+          ],
+          "rototill_range": [
+            2,
+            3
+          ],
+          "turin_kinds": [
+            6
+          ],
+          "rototill_kinds": [
+            6
+          ]
+        },
+        {
+          "action": "replace",
+          "turin_range": [
+            13,
+            14
+          ],
+          "rototill_range": [
+            13,
+            14
+          ],
+          "turin_kinds": [
+            13
+          ],
+          "rototill_kinds": [
+            13
+          ]
+        },
+        {
+          "action": "replace",
+          "turin_range": [
+            27,
+            29
+          ],
+          "rototill_range": [
+            27,
+            29
+          ],
+          "turin_kinds": [
+            13,
+            28
+          ],
+          "rototill_kinds": [
+            13,
+            28
+          ]
+        },
+        {
+          "action": "replace",
+          "turin_range": [
+            44,
+            45
+          ],
+          "rototill_range": [
+            44,
+            45
+          ],
+          "turin_kinds": [
+            26
+          ],
+          "rototill_kinds": [
+            26
+          ]
+        },
+        {
+          "action": "insert",
+          "turin_range": [
+            61,
+            61
+          ],
+          "rototill_range": [
+            61,
+            65
+          ],
+          "turin_kinds": [],
+          "rototill_kinds": [
+            16,
+            20,
+            16,
+            20
+          ]
+        },
+        {
+          "action": "replace",
+          "turin_range": [
+            63,
+            67
+          ],
+          "rototill_range": [
+            67,
+            71
+          ],
+          "turin_kinds": [
+            26,
+            26,
+            26,
+            26
+          ],
+          "rototill_kinds": [
+            26,
+            26,
+            26,
+            26
+          ]
+        },
+        {
+          "action": "replace",
+          "turin_range": [
+            68,
+            72
+          ],
+          "rototill_range": [
+            72,
+            76
+          ],
+          "turin_kinds": [
+            43,
+            43,
+            43,
+            43
+          ],
+          "rototill_kinds": [
+            43,
+            43,
+            43,
+            43
+          ]
+        }
+      ]
+    },
+    "M1": {
+      "turin_sha256": "93647a855bc1ace5f491f03904fe96342a679b19ba1a3ac6bac35b82ddbf3fd9",
+      "rototill_sha256": "66afc0b29b56a7c25fe6a318ff0184cee797caafa2356ecfcb23e3590e491497",
+      "turin_turn_1_records": 32,
+      "rototill_turn_1_records": 32,
+      "identical_records_in_order": 30,
+      "differences": [
+        {
+          "action": "replace",
+          "turin_range": [
+            0,
+            1
+          ],
+          "rototill_range": [
+            0,
+            1
+          ],
+          "turin_kinds": [
+            8
+          ],
+          "rototill_kinds": [
+            8
+          ]
+        },
+        {
+          "action": "replace",
+          "turin_range": [
+            4,
+            5
+          ],
+          "rototill_range": [
+            4,
+            5
+          ],
+          "turin_kinds": [
+            13
+          ],
+          "rototill_kinds": [
+            13
+          ]
+        }
+      ]
+    },
+    "M2": {
+      "turin_sha256": "c71534fc71e1b7050952dae147851527df74ea1e23d671087cccf918576f4ef5",
+      "rototill_sha256": "6df100298e84976e31c55b0c8c426e15e3640b00c9a4285f9d2e9cdc1db36d66",
+      "turin_turn_1_records": 24,
+      "rototill_turn_1_records": 28,
+      "identical_records_in_order": 14,
+      "differences": [
+        {
+          "action": "replace",
+          "turin_range": [
+            0,
+            4
+          ],
+          "rototill_range": [
+            0,
+            4
+          ],
+          "turin_kinds": [
+            8,
+            6,
+            13,
+            28
+          ],
+          "rototill_kinds": [
+            8,
+            6,
+            13,
+            28
+          ]
+        },
+        {
+          "action": "replace",
+          "turin_range": [
+            7,
+            8
+          ],
+          "rototill_range": [
+            7,
+            8
+          ],
+          "turin_kinds": [
+            26
+          ],
+          "rototill_kinds": [
+            26
+          ]
+        },
+        {
+          "action": "insert",
+          "turin_range": [
+            12,
+            12
+          ],
+          "rototill_range": [
+            12,
+            16
+          ],
+          "turin_kinds": [],
+          "rototill_kinds": [
+            16,
+            20,
+            16,
+            20
+          ]
+        },
+        {
+          "action": "replace",
+          "turin_range": [
+            13,
+            18
+          ],
+          "rototill_range": [
+            17,
+            22
+          ],
+          "turin_kinds": [
+            26,
+            26,
+            26,
+            26,
+            45
+          ],
+          "rototill_kinds": [
+            26,
+            26,
+            26,
+            26,
+            45
+          ]
+        }
+      ]
+    }
+  }
+}

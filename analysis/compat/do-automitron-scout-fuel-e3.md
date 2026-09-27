@@ -1,0 +1,7 @@
+# DoAutomitronAiTurn E3 low-fuel scout order gate
+
+Original `analysis/decompiler/export/raw/1098_01e0_DoAutomitronAiTurn.c`, lines 498–521 and 649–654, takes an owned fleet with fewer than two orders, no slot-6/slot-1/slot-2/slot-3 ships, a slot-0 ship, and `FIsAiTransport` false. If the low byte of `rgshdef[0].hul.rghs[0].overlap_2` is below 10 and the signed 32-bit fifth cargo/fuel amount is below 2, it jumps to the branch that replaces the first packed order's low task nibble with 5 and refreshes the fleet. That jump bypasses the subsequent target-search path.
+
+Production `reconstructed/src/do_automitron_ai_turn.c` now performs this gate before the typed planner, using explicit caller bindings for the hull byte, fleet fuel, and transport result. It calls the existing packed first-order-kind writer and requires a bounded `PLORD` record plus a refresh callback. The strict-C89 host probe `tests/do_automitron_scout_fuel_e3_probe.c` passes 15 checks: exact nibble preservation, refresh-before-planner short circuit, fuel and hull thresholds, transport/ship exclusions, short-record no-write failure, and foreign-owner filtering.
+
+This is original-instruction and host evidence for one route branch. It does not cover the other scout target search, colonizer, transport, armada, mineral, wormhole, or attack branches, and has no native/original-turn result. AU-E3 and final promotion remain open. The r3 native packet predates this source revision and is superseded for current validation.

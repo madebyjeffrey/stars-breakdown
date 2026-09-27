@@ -1,0 +1,193 @@
+{
+  "original_sha256": "ccab6682b55dae14dbf104e491cfbd3b32a6280022020032ae0615500949ba59",
+  "compiler": "Microsoft C/C++ Compiler Version 8.00c (VC++ 1.52c)",
+  "flags": "/c /AM /GA /GEs /Zp1 /Od /Gs /W3 /Fc",
+  "comparison": "No masked bytes; named OMF relocations resolved into the original address layout.",
+  "functions": [
+    {
+      "name": "InitInstance",
+      "ne_segment": 1,
+      "original_offset": 3440,
+      "original_bytes": 314,
+      "generated_bytes": 314,
+      "exact_before_address_resolution": false,
+      "exact_after_address_resolution": true,
+      "length_difference": 0,
+      "differing_bytes": 0,
+      "differences": [],
+      "fixups": [
+        {
+          "offset": 10,
+          "width": 2,
+          "target": "_ini",
+          "resolved_value": "0x229a"
+        },
+        {
+          "offset": 19,
+          "width": 2,
+          "target": "_ini",
+          "resolved_value": "0x229a"
+        },
+        {
+          "offset": 22,
+          "width": 2,
+          "target": "_ini",
+          "resolved_value": "0x229a"
+        },
+        {
+          "offset": 31,
+          "width": 2,
+          "target": "_ini",
+          "resolved_value": "0x229a"
+        },
+        {
+          "offset": 34,
+          "width": 2,
+          "target": "_ini",
+          "resolved_value": "0x229a"
+        },
+        {
+          "offset": 43,
+          "width": 2,
+          "target": "_ini",
+          "resolved_value": "0x229a"
+        },
+        {
+          "offset": 47,
+          "width": 2,
+          "target": "_ini",
+          "resolved_value": "0x22a0"
+        },
+        {
+          "offset": 52,
+          "width": 4,
+          "target": "_ReadIniSettings",
+          "resolved_value": "0x1000124c"
+        },
+        {
+          "offset": 57,
+          "width": 2,
+          "target": "_ini",
+          "resolved_value": "0x2290"
+        },
+        {
+          "offset": 72,
+          "width": 2,
+          "target": "_szFrame",
+          "resolved_value": "0x1d6"
+        },
+        {
+          "offset": 79,
+          "width": 2,
+          "target": "_szFrame",
+          "resolved_value": "0x731"
+        },
+        {
+          "offset": 115,
+          "width": 2,
+          "target": "_hInst",
+          "resolved_value": "0x5310"
+        },
+        {
+          "offset": 126,
+          "width": 4,
+          "target": "CREATEWINDOW",
+          "resolved_value": "0x14f801b8"
+        },
+        {
+          "offset": 131,
+          "width": 2,
+          "target": "_hwndFrame",
+          "resolved_value": "0x258c"
+        },
+        {
+          "offset": 135,
+          "width": 2,
+          "target": "_hwndFrame",
+          "resolved_value": "0x258c"
+        },
+        {
+          "offset": 151,
+          "width": 2,
+          "target": "_hInst",
+          "resolved_value": "0x5310"
+        },
+        {
+          "offset": 162,
+          "width": 4,
+          "target": "LOADACCELERATORS",
+          "resolved_value": "0x14f802ac"
+        },
+        {
+          "offset": 167,
+          "width": 2,
+          "target": "_hAccel",
+          "resolved_value": "0x23e6"
+        },
+        {
+          "offset": 185,
+          "width": 2,
+          "target": "_hInst",
+          "resolved_value": "0x5310"
+        },
+        {
+          "offset": 196,
+          "width": 4,
+          "target": "LOADACCELERATORS",
+          "resolved_value": "0x14f802ac"
+        },
+        {
+          "offset": 201,
+          "width": 2,
+          "target": "_hAccelTitle",
+          "resolved_value": "0x4a58"
+        },
+        {
+          "offset": 236,
+          "width": 2,
+          "target": "_ini",
+          "resolved_value": "0x2298"
+        },
+        {
+          "offset": 250,
+          "width": 2,
+          "target": "_ini",
+          "resolved_value": "0x2298"
+        },
+        {
+          "offset": 279,
+          "width": 2,
+          "target": "_hwndFrame",
+          "resolved_value": "0x258c"
+        },
+        {
+          "offset": 285,
+          "width": 4,
+          "target": "SHOWWINDOW",
+          "resolved_value": "0x14f801bc"
+        },
+        {
+          "offset": 291,
+          "width": 2,
+          "target": "_hwndFrame",
+          "resolved_value": "0x258c"
+        },
+        {
+          "offset": 298,
+          "width": 4,
+          "target": "SHOWWINDOW",
+          "resolved_value": "0x14f801bc"
+        }
+      ],
+      "backpatch_records": 12,
+      "original_relocated_sha256": "e139a2305ea772f36108e7ebfb9cb662c09e764c20dd28fe8484efaa34a3beb8",
+      "generated_resolved_sha256": "e139a2305ea772f36108e7ebfb9cb662c09e764c20dd28fe8484efaa34a3beb8",
+      "source": "compat/startup-match/INIT.C"
+    }
+  ],
+  "all_functions_match": true,
+  "object_sha256": "1a451e72ede61a04347981df3c847e8b7538d9efb79b6046f332a03ccd4274d4",
+  "source_sha256": "da8ba3c39df0fc3dd2c356560d8417c8d7a18f6a73ffbd554c8b1ecd4169361f",
+  "build_log": "init.c\n",
+  "build_status": "PASS\n"
+}

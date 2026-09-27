@@ -1,0 +1,54 @@
+{
+  "procedures": ["FAttack", "FDamageTok"],
+  "checkpoint": "dpMain loop arithmetic and callback alias audit E53",
+  "status": "original-instruction evidence; source semantics incomplete",
+  "listing": "analysis/decompiler/export/raw/10f0_69ac.asm",
+  "observations": {
+    "loop_condition": "dpMain > 0 || cTorpsLeft > 0",
+    "dpMain_initialization": {
+      "weapon_kind": "0x10",
+      "expression_shape": "low32(_beam.dp_at_0x36 * installed_component_count * attacker_tok.csh_at_0x13)",
+      "installed_component_count": "byte extracted from _shdef.hul.rghs[i].overlap_2 at 10f0:6a66-6adb; temporary is named dxRangeCur by CodeView",
+      "field_evidence": "CodeView _beam.dp is at byte offset 54 (0x36); CodeView _tok.csh is at byte offset 19 (0x13); raw C's _hul/wtFuelMax is a misleading overlapping view for group 0x10",
+      "helper": "1118:0c7e unsigned 32-by-32 multiply, low 32-bit result",
+      "alternate_kind": "dpMain = 0"
+    },
+    "dpMain_update": {
+      "listing_range": "10f0:7753-77fe",
+      "expression_shape": "min(dpMain - 1, quotient(dpMain * dp / dpT))",
+      "quotient_operands": {
+        "numerator_factor": "dp, BP -0x66 hex / -102 decimal, CodeView local dp",
+        "denominator": "dpT, BP -0x58 hex / -88 decimal, CodeView local dpT"
+      },
+      "semantic_role": "scale dpMain by mutable beam-damage remainder dp over pre-shield snapshot dpT",
+      "dpT_snapshot": "dpT is copied from dp immediately before shield-only FDamageTok at 10f0:76e4; that call mutates dp through &dp",
+      "not_cTorpsLeft": "cTorpsLeft is BP -0x3a hex / -58 decimal",
+      "paths": ["integer multiply/divide fast path", "x87 quotient fallback"]
+    },
+    "residual_mutation": {
+      "listing_range": "10f0:7c13-7c68",
+      "callback_pointer": "&cTorpsLeft passed to FDamageTok pcTorp",
+      "callback_mutation": "subtract casualties, floor at zero, write through pointer",
+      "caller_mutation": "subtract selected split terms after callback returns",
+      "original_backed_order_case": "not yet run"
+    }
+  },
+  "readable_source": {
+    "path": "reconstructed/src/f_attack.c",
+    "current_loop": "remaining_packets > 0 with made_progress break",
+    "missing": ["independent dpMain state", "original dual residual mutation order"],
+    "changed": false
+  },
+  "todo6": {
+    "named_step5_units_closed": 0,
+    "fattack_named_step5_closed": 0,
+    "fattack_named_step5_total": 3,
+    "fattack_phase2_step": "5/6",
+    "step5_closed": 120,
+    "step5_total": 152,
+    "step5_open": 32,
+    "promotion_open": 10,
+    "practical_open": 42
+  },
+  "next": "Represent dpMain and shield-ratio state in readable source, then verify shield-ratio and callback-plus-caller cTorpsLeft mutation order against the original executable"
+}

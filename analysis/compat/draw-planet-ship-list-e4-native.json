@@ -1,0 +1,47 @@
+{
+  "procedure": "DrawPlanetShipList",
+  "range": "000a:377e-3dec",
+  "checkpoint": "E4",
+  "evidence_unit": "complete drawing/transfer integration",
+  "host": {
+    "report": "DRAW_PLANET_SHIP_LIST_E4_CHECKS=12 FAILURES=0 RESULT=PASS",
+    "checks": 12,
+    "probe": "tests/draw_planet_ship_list_e4_probe.c"
+  },
+  "native": {
+    "guest_directory": "C:\\DLP4E",
+    "packet": "compat/vc152/draw-planet-ship-list-e4-production-native/",
+    "compile": "PASS",
+    "link": "PASS",
+    "checks": 12,
+    "report": "runs/vmctl-vc152dlep4/DLP4E-report.txt",
+    "status": "runs/vmctl-vc152dlep4/DLP4E-status.txt",
+    "compile_log": "runs/vmctl-vc152dlep4/DLP4E-compile.log",
+    "link_log": "runs/vmctl-vc152dlep4/DLP4E-link.log",
+    "process_exit": 0,
+    "program_error_dialog": false,
+    "artifacts": [
+      "runs/vmctl-vc152dlep4/DLP4E-status.txt",
+      "runs/vmctl-vc152dlep4/DLP4E-report.txt",
+      "runs/vmctl-vc152dlep4/DLP4E-compile.log",
+      "runs/vmctl-vc152dlep4/DLP4E-link.log",
+      "runs/vmctl-vc152dlep4/guest-after-e4.bmp"
+    ]
+  },
+  "original": {
+    "fleet_frame": "runs/vmctl-vc152current/planet-click.bmp",
+    "post_run_frame": "runs/vmctl-vc152dlep4/guest-after-e4.bmp",
+    "visible_boundaries": [
+      "fleet composition",
+      "fuel and cargo",
+      "fleet waypoints",
+      "planet frame returned after native probe"
+    ],
+    "program_error_dialog": false
+  },
+  "step5_unit_closed": true,
+  "promotion_ready": true,
+  "remaining": [
+    "Step-6 ledger synchronization and promotion"
+  ]
+}

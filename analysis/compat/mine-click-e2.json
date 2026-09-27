@@ -1,0 +1,34 @@
+{
+  "procedures": ["MineClick"],
+  "phase2_step": "5/6",
+  "step5_unit": "E2 localized popup identity and derived mineral/terraform payload resolution",
+  "guest": "StarDev / Win98 / C:\\MCLE3",
+  "native_run": "runs/vmctl-vc152mcle3/",
+  "host_report": "MINE_CLICK_CHECKS=36 FAILURES=0 RESULT=PASS",
+  "native_report": "MINE_CLICK_CHECKS=36 FAILURES=0 RESULT=PASS",
+  "native_build": {
+    "compile": "PASS",
+    "link": "PASS",
+    "process_exit": 0,
+    "program_error_dialog": false
+  },
+  "popup_resolution": {
+    "popup_kinds_checked": [1, 5],
+    "localized_resource_ids_checked": [501, 505],
+    "mineral_outputs_checked": [19, 11, 7],
+    "terraform_bounds_checked": [8, 18],
+    "player_bounds_checked": [7, 12, 19],
+    "typed_resolver_callbacks_checked": true
+  },
+  "evidence": [
+    "tests/mine_click_source_probe.c",
+    "reconstructed/src/mine_click.c",
+    "compat/vc152/mine-click-e3/MCL.C",
+    "compat/vc152/mine-click-e3/PROBE.C",
+    "runs/vmctl-vc152mcle3/MCLR.TXT"
+  ],
+  "remaining_scope": [
+    "complete minefield caller integration",
+    "final review and promotion"
+  ]
+}

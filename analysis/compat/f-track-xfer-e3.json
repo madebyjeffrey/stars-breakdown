@@ -1,0 +1,49 @@
+{
+  "procedures": ["FTrackXfer"],
+  "phase2_step": "6/6",
+  "guest": "StarDev / Win98 / C:\\FTXE3G",
+  "native_run": "runs/vmctl-vc152ftxe3/",
+  "host_report": "F_TRACK_XFER_E3_CHECKS=8 FAILURES=0 RESULT=PASS",
+  "native_report": "F_TRACK_XFER_E3_CHECKS=8 FAILURES=0 RESULT=PASS",
+  "native_build": {
+    "compile": "PASS",
+    "link": "PASS",
+    "process_exit": 0,
+    "program_error_dialog": false
+  },
+  "integration": {
+    "packed_fleet_lookup_and_store": true,
+    "real_task_message_queue": true,
+    "fget_mouse_move_filtering": true,
+    "win16_capture_and_release": true,
+    "direct_md_xfer_dialog_mutation": true,
+    "owner_rejection_without_mutation": true,
+    "refresh_and_redraw_order": true
+  },
+  "trace": {
+    "drag_lookup_calls": 5,
+    "drag_store_calls": 2,
+    "drag_supply_calls": 1,
+    "dialog_direct_moves": 1,
+    "dialog_supply_calls": 0,
+    "native_task_messages": ["WM_MOUSEMOVE", "WM_LBUTTONUP", "WM_LBUTTONDOWN"],
+    "capture_calls": 2,
+    "drag_move_calls": 2,
+    "button_track_calls": 2
+  },
+  "evidence": [
+    "tests/f_track_xfer_e3_probe.c",
+    "compat/vc152/f-track-xfer-e3g/",
+    "analysis/decompiler/export/raw/1050_5a16_FTrackXfer.c",
+    "analysis/decompiler/export/raw/1040_4146_FGetMouseMove.c",
+    "analysis/decompiler/export/raw/1040_354c_InitBtnTrack.c",
+    "analysis/decompiler/export/raw/1040_364a_FTrackBtn.c",
+    "runs/vmctl-vc152ftxe3/FTXE3.TXT",
+    "runs/vmctl-vc152ftxe3/FTXE3GSTA.TXT",
+    "runs/vmctl-vc152ftxe3/FTXE3GCL.LOG",
+    "runs/vmctl-vc152ftxe3/FTXE3GLINK.LOG",
+    "runs/vmctl-vc152ftxe3/FTXE3G.EXE",
+    "runs/vmctl-vc152ftxe3/FTXE3G.MAP",
+    "runs/vmctl-vc152ftxe3/FTXE3GN.OBJ"
+  ]
+}

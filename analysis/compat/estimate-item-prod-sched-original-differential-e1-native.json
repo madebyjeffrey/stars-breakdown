@@ -1,0 +1,37 @@
+{
+  "procedure": "EstimateItemProdSched",
+  "range": "001b:4f40-548f",
+  "checkpoint": "E1",
+  "evidence_unit": "original per-turn schedule differential",
+  "host": {
+    "report": "ESTIMATE_ITEM_PROD_SCHED_ORIGINAL_DIFFERENTIAL_CHECKS=8 FAILURES=0 RESULT=PASS",
+    "checks": 8,
+    "probe": "tests/estimate_item_prod_sched_original_differential_probe.c",
+    "oracle_basis": "analysis/decompiler/export/raw/10d0_4f40_EstimateItemProdSched.c"
+  },
+  "native": {
+    "guest_directory": "C:\\EIPOD",
+    "packet": "compat/vc152/estimate-item-prod-sched-original-differential-native/",
+    "compile": "PASS",
+    "link": "PASS",
+    "checks": 8,
+    "report": "runs/vmctl-vc152eipod/EIPOD-report.txt",
+    "status": "runs/vmctl-vc152eipod/EIPOD-status.txt",
+    "compile_log": "runs/vmctl-vc152eipod/EIPOD-compile.log",
+    "link_log": "runs/vmctl-vc152eipod/EIPOD-link.log",
+    "process_exit": 0,
+    "program_error_dialog": false,
+    "artifacts": [
+      "runs/vmctl-vc152eipod/EIPOD-status.txt",
+      "runs/vmctl-vc152eipod/EIPOD-report.txt",
+      "runs/vmctl-vc152eipod/EIPOD-compile.log",
+      "runs/vmctl-vc152eipod/EIPOD-link.log",
+      "runs/vmctl-vc152eipod/guest-after-eipod.bmp"
+    ]
+  },
+  "step5_unit_closed": true,
+  "promotion_ready": true,
+  "remaining": [
+    "Step-6 ledger synchronization and promotion"
+  ]
+}

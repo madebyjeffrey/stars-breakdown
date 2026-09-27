@@ -4,7 +4,9 @@ Reviewed 2026-09-14. This completes **all 11 routines in memory.obj**, the
 font/color/tile/terminal-cleanup resource lifecycle, six additional common
 helpers, the DOS entry stub, and an audit of every code-bearing CRT module
 record. The new C contribution is **23 named routines / 7,264 original bytes**;
-the project total is **122 / 846 named game routines / 53,170 original bytes**.
+the project total at that checkpoint was **122 / 846 named game routines /
+53,170 original bytes**. Current totals are in [TODO5](../../TODO5.md), with
+the separate Phase 2 gates in [TODO7](../../TODO7.md).
 DOS and CRT evidence are counted separately from named game reconstruction.
 
 The C sources compile together with the earlier race component under strict

@@ -1,0 +1,34 @@
+{
+  "procedures": ["DrawPopup"],
+  "phase2_step": "5/6",
+  "evidence_unit": "E2 localization, hull filtering, and formatting host boundary",
+  "host_report": "DRAW_POPUP_CONTENT_E2_CHECKS=21 FAILURES=0 RESULT=PASS",
+  "host_compile": "strict_c89_pass",
+  "source": [
+    "reconstructed/include/core.h",
+    "reconstructed/src/draw_popup.c",
+    "tests/draw_popup_content_e2_probe.c"
+  ],
+  "prepared_native_packet": "compat/vc152/draw-popup-content-e2/",
+  "native_status": "closed_in_draw-popup-content-e2-native",
+  "authoritative_units_closed": 0,
+  "covered": [
+    "popup kinds 1-4 text segment emission",
+    "localized resource IDs",
+    "numeric format kinds",
+    "planet-name and fleet-name seams",
+    "hull visibility callback filtering",
+    "hull-definition technology extraction",
+    "hull-name decoration",
+    "count and damage formatting",
+    "coordinate labels and values",
+    "full 32-bit raw fleet-pointer forwarding"
+  ],
+  "remaining": [
+    "native VC++ 1.52c replay",
+    "detailed GDI rendering",
+    "caller differential",
+    "original behavior completion",
+    "Step-6 promotion"
+  ]
+}

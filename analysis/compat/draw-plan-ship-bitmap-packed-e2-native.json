@@ -1,0 +1,41 @@
+{
+  "procedures": ["DrawPlanShipBitmap"],
+  "phase2_step": "5/6",
+  "unit": "E2",
+  "guest": "StarDev / Win98 / C:\\DPSBE2",
+  "native_run": "runs/vmctl-vc152dpsbe2/",
+  "host_report": "DRAW_PLAN_SHIP_BITMAP_PACKED_E2_CHECKS=11 FAILURES=0 RESULT=PASS",
+  "native_report": "DRAW_PLAN_SHIP_BITMAP_PACKED_E2_CHECKS=11 FAILURES=0 RESULT=PASS",
+  "native_build": {
+    "compile": "PASS",
+    "link": "PASS",
+    "process_exit": 0,
+    "program_error_dialog": false
+  },
+  "packed_selection": {
+    "size": 226,
+    "kind_offset": 4,
+    "id_offset": 8,
+    "fleet_subrecord_offset": 28,
+    "planet_subrecord_offset": 152,
+    "short_record_rejected": true
+  },
+  "checks": [
+    "fleet_selection_kind_and_id",
+    "fleet_tile_and_name_dispatch",
+    "fleet_bitmap_dispatch",
+    "fleet_button_layout",
+    "planet_selection_kind_and_id",
+    "planet_tile_and_name_dispatch",
+    "planet_frame_pattern_sequence",
+    "planet_dib_dispatch",
+    "planet_dib_source_coordinates",
+    "planet_no_button_suppression",
+    "undersized_selection_rejection"
+  ],
+  "remaining_scope": [
+    "localized_name_behavior",
+    "complete_planet_window_and_original_differential_integration",
+    "final_review_and_promotion"
+  ]
+}

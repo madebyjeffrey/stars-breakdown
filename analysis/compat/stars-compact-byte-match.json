@@ -1,0 +1,124 @@
+{
+  "original_sha256": "ccab6682b55dae14dbf104e491cfbd3b32a6280022020032ae0615500949ba59",
+  "compiler": "Microsoft C/C++ Compiler Version 8.00c (VC++ 1.52c)",
+  "flags": "/c /AM /GA /GEs /Zp1 /Od /Gs /W3 /Fc",
+  "comparison": "No masked bytes; named OMF relocations resolved into the original address layout.",
+  "functions": [
+    {
+      "name": "FSetUpBatchProcessing",
+      "ne_segment": 4,
+      "original_offset": 1700,
+      "original_bytes": 262,
+      "generated_bytes": 262,
+      "length_difference": 0,
+      "exact_after_address_resolution": true,
+      "differing_bytes": 0,
+      "differences": [],
+      "fixups": [
+        {
+          "offset": 25,
+          "width": 4,
+          "target": "___setjmp",
+          "resolved_value": "0x111809c8"
+        },
+        {
+          "offset": 52,
+          "width": 4,
+          "target": "_StreamOpen",
+          "resolved_value": "0x107052ae"
+        },
+        {
+          "offset": 64,
+          "width": 4,
+          "target": "___filelength",
+          "resolved_value": "0x11180470"
+        },
+        {
+          "offset": 83,
+          "width": 4,
+          "target": "_LpAlloc",
+          "resolved_value": "0x106003b2"
+        },
+        {
+          "offset": 110,
+          "width": 4,
+          "target": "_RgFromStream",
+          "resolved_value": "0x107053f4"
+        },
+        {
+          "offset": 232,
+          "width": 4,
+          "target": "_StreamClose",
+          "resolved_value": "0x107053cc"
+        }
+      ],
+      "backpatch_records": 31,
+      "original_relocated_sha256": "10cdd91ad663e3ec0b320a5cb928677707e6d2d7475ae199d091218305e76e6a",
+      "generated_resolved_sha256": "10cdd91ad663e3ec0b320a5cb928677707e6d2d7475ae199d091218305e76e6a",
+      "source": "compat/stars-compact-match/STARS.C"
+    },
+    {
+      "name": "IPlrAlsoCheater",
+      "ne_segment": 4,
+      "original_offset": 1962,
+      "original_bytes": 295,
+      "generated_bytes": 295,
+      "length_difference": 0,
+      "exact_after_address_resolution": true,
+      "differing_bytes": 0,
+      "differences": [],
+      "fixups": [
+        {
+          "offset": 42,
+          "width": 4,
+          "target": "_FValidSerialLong",
+          "resolved_value": "0x107048c4"
+        },
+        {
+          "offset": 259,
+          "width": 4,
+          "target": "___fmemcmp",
+          "resolved_value": "0x11180e3e"
+        }
+      ],
+      "backpatch_records": 31,
+      "original_relocated_sha256": "ab1ed68039185030029ffc4d977f5c4e9b9eda55c91ab2c5943652f1ce6e4745",
+      "generated_resolved_sha256": "ab1ed68039185030029ffc4d977f5c4e9b9eda55c91ab2c5943652f1ce6e4745",
+      "source": "compat/stars-compact-match/STARS.C"
+    },
+    {
+      "name": "SzVersion",
+      "ne_segment": 4,
+      "original_offset": 4626,
+      "original_bytes": 64,
+      "generated_bytes": 64,
+      "length_difference": 0,
+      "exact_after_address_resolution": true,
+      "differing_bytes": 0,
+      "differences": [],
+      "fixups": [
+        {
+          "offset": 26,
+          "width": 4,
+          "target": "_PszGetCompressedString",
+          "resolved_value": "0x1010743a"
+        },
+        {
+          "offset": 45,
+          "width": 4,
+          "target": "__WSPRINTF",
+          "resolved_value": "0x14f802f8"
+        }
+      ],
+      "backpatch_records": 31,
+      "original_relocated_sha256": "6b0ca51396ad41dfc7d150190a0dfac66f4969cd4cf4206f7bb8c717a1d5d034",
+      "generated_resolved_sha256": "6b0ca51396ad41dfc7d150190a0dfac66f4969cd4cf4206f7bb8c717a1d5d034",
+      "source": "compat/stars-compact-match/STARS.C"
+    }
+  ],
+  "all_functions_match": true,
+  "object_sha256": "3873f141fbfdc9d5878b6191452bf54c8c5abf30a3ac6704b9176e110b987427",
+  "source_sha256": "75de01ebdce982304d8cdf33a01a97d782bb89c31f465b0d6d57f13e6696f479",
+  "build_log": "stars.c\nstars.c(108) : warning C4035: 'FSetUpBatchProcessing' : no return value\nstars.c(108) : warning C4101: 'scratch' : unreferenced local variable\nstars.c(233) : warning C4035: 'IPlrAlsoCheater' : no return value\nstars.c(233) : warning C4101: 'scratch' : unreferenced local variable\nstars.c(261) : warning C4035: 'SzVersion' : no return value\n",
+  "build_status": "PASS\n"
+}

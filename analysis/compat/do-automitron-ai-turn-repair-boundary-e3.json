@@ -1,0 +1,41 @@
+{
+  "procedure": "DoAutomitronAiTurn",
+  "checkpoint": "E3 packed repair boundary host support",
+  "scope": "host-only",
+  "checks": 8,
+  "failures": 0,
+  "result": "PASS",
+  "report": "AUTOMITRON_AI_REPAIR_BOUNDARY_CHECKS=8 FAILURES=0 RESULT=PASS",
+  "repository_regression": "Ran 519 tests; OK (skipped=153)",
+  "generated_headers": {
+    "layout_assertions": 2241,
+    "function_declarations": 846
+  },
+  "baseline_check": "PASS",
+  "git_diff_check": "PASS",
+  "step5_units_closed": 0,
+  "covered": [
+    "owned-fleet filtering",
+    "slot-6 repair gate and slot-2-only non-repair",
+    "cord-one and empty-kind predicate",
+    "shared packed first-order repair",
+    "repair callback ordering",
+    "ordered-fleet bypass",
+    "empty-fleet bypass",
+    "callback failure propagation"
+  ],
+  "remaining": [
+    "native replay",
+    "complete Automitron route/order behavior",
+    "original-turn differential",
+    "Step-6 promotion"
+  ],
+  "evidence": [
+    "reconstructed/include/core.h",
+    "reconstructed/src/do_automitron_ai_turn.c",
+    "tests/do_automitron_ai_turn_repair_boundary_probe.c",
+    "reconstructed/src/ai_plord.c",
+    "analysis/decompiler/export/raw/1098_01e0_DoAutomitronAiTurn.c",
+    "analysis/decompiler/export/raw/1098_01e0.asm"
+  ]
+}

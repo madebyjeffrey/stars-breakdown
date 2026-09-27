@@ -1,0 +1,64 @@
+{
+  "procedures": ["Popup"],
+  "phase2_step": "6/6",
+  "guest": "StarDev / Win98 / C:\\PUINT2",
+  "native_run": "runs/vmctl-vc152puint2/",
+  "host_report": "POPUP_PACKED_CHECKS=22 FAILURES=0 RESULT=PASS",
+  "native_report": "POPUP_PACKED_CHECKS=22 FAILURES=0 RESULT=PASS",
+  "native_build": {
+    "compile": "PASS",
+    "link": "PASS",
+    "process_exit": 0,
+    "program_error_dialog": false
+  },
+  "packed_popupdata": {
+    "size": 22,
+    "offsets": {
+      "grPopup": 0,
+      "idPlanet": 2,
+      "iPlanetVar": 4,
+      "iPlanVal": 6,
+      "iPlanMin": 8,
+      "iPlanMax": 10,
+      "iPlrVal": 12,
+      "iPlrMin": 14,
+      "iPlrMax": 16,
+      "idPlan": 18,
+      "cMax": 20
+    }
+  },
+  "integration": {
+    "raw_field_decode_checked": true,
+    "popup_selector_bridge_checked": true,
+    "planet_id_measurement_bridge_checked": true,
+    "slot_extra_rows_bridge_checked": true,
+    "component_popup_screen_clamp_checked": true,
+    "localized_measurement_and_layout_checked": true,
+    "fleet_planet_hull_payload_checksum_checked": true,
+    "all_popup_kinds_checked": true
+  },
+  "step5_e2": {
+    "host_report": "POPUP_E2_CHECKS=148 FAILURES=0 RESULT=PASS",
+    "native_report": "POPUP_E2_CHECKS=148 FAILURES=0 RESULT=PASS",
+    "cases": ["measured kinds 1-8, 10, and 12", "fixed kinds 9, 11, 13, and 14"],
+    "packed_payloads": ["22-byte popupdata", "124-byte fleet", "56-byte planet", "32-byte hull"],
+    "localized_labels": true,
+    "independent_geometry_oracle": true,
+    "native_program_error": false
+  },
+  "original_instruction_evidence": {
+    "raw_source": "analysis/decompiler/export/raw/10c0_0c7c_Popup.c",
+    "codeview_types": "analysis/debug/types.json",
+    "original_consumer_boundary": "analysis/compat/popup-integration.md"
+  },
+  "remaining_scope": [],
+  "e1_closed": true,
+  "e2_closed": true,
+  "promoted": true,
+  "native_screenshot": "runs/vmctl-vc152puint2/native-screen.bmp",
+  "diagnostic_history": [
+    "PUINT2.TXT reports the pre-clamp expectation failure",
+    "PUINTDEBUG.TXT reports the first self-count mismatch",
+    "PUINTDEBUG2.TXT identifies the self-count as 22 checks"
+  ]
+}

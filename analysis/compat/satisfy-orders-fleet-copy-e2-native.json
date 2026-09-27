@@ -1,0 +1,45 @@
+{
+  "procedures": ["SatisfyOrders"],
+  "phase2_step": "5/6",
+  "unit": "E2 concrete fleet/design copy boundary",
+  "status": "supporting milestone; named E2 remains open",
+  "guest": "StarDev / Win98 / C:\\SYOE9",
+  "native_run": "runs/vmctl-vc152syoe9/",
+  "host_report": "SATISFY_ORDERS_FLEET_COPY_E2_CHECKS=10 FAILURES=0 RESULT=PASS",
+  "native_report": "SATISFY_ORDERS_FLEET_COPY_E2_CHECKS=10 FAILURES=0 RESULT=PASS EXIT=0",
+  "native_build": {
+    "compile": "PASS",
+    "link": "PASS",
+    "process_exit": 0,
+    "program_error_dialog": false
+  },
+  "covered": [
+    "created player-transfer branch dispatch",
+    "production stars_find_similar_design matching and no-match selection",
+    "production stars_duplicate_fleet invocation",
+    "124-byte fixed fleet-state copy",
+    "18-byte variable order-record copy and destination allocation",
+    "source preservation and order completion"
+  ],
+  "remaining": [
+    "player-specific ship-design record materialization and copying",
+    "original technology-table/result binding",
+    "complete raw message argument layouts",
+    "original transfer behavior differential",
+    "E3 full-turn and original differential"
+  ],
+  "evidence": [
+    "tests/satisfy_orders_fleet_copy_e2_probe.c",
+    "tests/common_fleet_copy_stubs.c",
+    "compat/vc152/satisfy-orders-fleet-copy-e2-native/",
+    "runs/vmctl-vc152syoe9/SYO9-fleet-design-pass.TXT",
+    "runs/vmctl-vc152syoe9/SYO9STA-design.TXT",
+    "runs/vmctl-vc152syoe9/SYO9CL-design.LOG",
+    "runs/vmctl-vc152syoe9/SYO9LINK-design.LOG",
+    "runs/vmctl-vc152syoe9/SYO9-fleet-copy-pass.TXT",
+    "runs/vmctl-vc152syoe9/SYO9STA-pass2.TXT",
+    "runs/vmctl-vc152syoe9/SYO9CL-pass2.LOG",
+    "runs/vmctl-vc152syoe9/SYO9LINK-pass2.LOG",
+    "reconstructed/src/common.c"
+  ]
+}

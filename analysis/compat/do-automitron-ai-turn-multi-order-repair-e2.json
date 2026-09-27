@@ -1,0 +1,22 @@
+{
+  "procedure": "DoAutomitronAiTurn",
+  "step5_unit": "E2 packed first-order repair",
+  "status": "closed",
+  "original_instruction_range": "analysis/decompiler/export/raw/1098_01e0.asm:1225-129e",
+  "original_gates": ["ship slot 6 nonzero", "cord equals 1", "first order kind nibble equals 0"],
+  "original_writes": ["first PLORD kind nibble becomes 6", "word at offset 12 becomes 5", "word at offset 14 becomes 5"],
+  "original_iordMac_write": false,
+  "production_source": ["reconstructed/src/ai_plord.c", "reconstructed/src/do_automitron_ai_turn.c"],
+  "host": "AUTOMITRON_MULTI_ORDER_REPAIR_CHECKS=22 FAILURES=0 RESULT=PASS",
+  "visitor_modes": ["typed", "legacy", "none"],
+  "native": {
+    "guest_directory": "C:\\AUTRE3",
+    "build_status": "COMPILE=PASS LINK=PASS",
+    "process": "EXIT 0",
+    "report": "AUTOMITRON_MULTI_ORDER_REPAIR_CHECKS=22 FAILURES=0 RESULT=PASS",
+    "program_error_dialog": false,
+    "return_directory": "runs/vmctl-autre3"
+  },
+  "prior_return_directory": "runs/vmctl-autre2",
+  "remaining": ["E1 colonizer/mineral handling", "E3 route and broader packed orders", "E4 original-behavior coverage", "Step-6 promotion"]
+}

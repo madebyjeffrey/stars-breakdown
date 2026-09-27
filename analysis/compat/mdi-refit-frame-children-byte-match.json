@@ -1,0 +1,29 @@
+{
+  "original_sha256": "ccab6682b55dae14dbf104e491cfbd3b32a6280022020032ae0615500949ba59",
+  "compiler": "Microsoft C/C++ Compiler Version 8.00c (VC++ 1.52c)",
+  "flags": "/c /AM /GA /GEs /Zp1 /Od /Gs /W3 /Fc",
+  "comparison": "No masked bytes; named OMF relocations resolved into the original address layout.",
+  "functions": [
+    {
+      "name": "RefitFrameChildren",
+      "ne_segment": 5,
+      "original_offset": 35976,
+      "original_bytes": 1181,
+      "generated_bytes": 1181,
+      "length_difference": 0,
+      "exact_after_address_resolution": true,
+      "differing_bytes": 0,
+      "differences": [],
+      "fixups": [],
+      "backpatch_records": 1,
+      "original_relocated_sha256": "ca5d9d4659cf532c3009b18ac754856726245dec5e3d4a6059d824a1ed38db4d",
+      "generated_resolved_sha256": "ca5d9d4659cf532c3009b18ac754856726245dec5e3d4a6059d824a1ed38db4d",
+      "source": "compat/mdi-refit-frame-children-match/MDI.C"
+    }
+  ],
+  "all_functions_match": true,
+  "object_sha256": "41a3c4e44154b27c97f191551611a2630e98e51b61d03df9cd8fd1c7089b9514",
+  "source_sha256": "6ba20e76791d57caa884ba1432c7dd218c2d74e5451c05a11b11791ddc52ea73",
+  "build_log": "mdi.c\nmdi.c(1174) : warning C4101: 'scratch' : unreferenced local variable\n",
+  "build_status": "PASS\n"
+}

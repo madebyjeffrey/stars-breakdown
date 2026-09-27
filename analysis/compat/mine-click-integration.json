@@ -1,0 +1,34 @@
+{
+  "procedures": ["MineClick"],
+  "phase2_step": "5/6",
+  "guest": "StarDev / Win98 / C:\\STARS!\\STARS.EXE",
+  "run": "runs/vmctl-vc152current/",
+  "original_executable_observation": {
+    "window_layout": "View > Window Layout > Small Screen",
+    "action": "Clicked the selection arrow in the original Oop Be Gone summary child",
+    "before": "Oop Be Gone summary selected",
+    "after": "Armed Probe #1 selected",
+    "redrawn_fields": [
+      "Armed Probe #1 Summary",
+      "ship count",
+      "fuel and cargo",
+      "mass",
+      "waypoint, task, and warp"
+    ],
+    "program_error": false,
+    "screenshot": "runs/vmctl-vc152current/mine-summary-arrow.bmp"
+  },
+  "original_instruction_boundary": {
+    "source": "analysis/decompiler/export/raw/1028_3b4e_MineClick.c",
+    "sequence": [
+      "MineWndProc forwards the summary-arrow mouse message",
+      "MineClick advances the scan selection",
+      "the frame redraws the selected-object survey and dependent panes"
+    ]
+  },
+  "reconstructed_acceptance": {
+    "native_probe": "runs/vmctl-vc152mcl3/MCLR.TXT",
+    "repaired_native_probe": "MINE_CLICK_CHECKS=25 FAILURES=0 RESULT=PASS",
+    "comparison": "The original mine-window arrow path agrees with the typed selection-advancement boundary and dependent survey redraw. Packed popup records, localized popup construction, and complete minefield integration remain open."
+  }
+}

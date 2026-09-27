@@ -1,0 +1,23 @@
+{
+  "procedures": ["DrawPopup"],
+  "phase2_step": "5/6",
+  "native_run": "runs/vmctl-vc152drawpopup/",
+  "native_report": "DRAW_POPUP_CHECKS=51 FAILURES=0 RESULT=PASS",
+  "original_executable": {
+    "surfaces": ["mineral popup", "population popup", "report popup", "restored frame"],
+    "program_error": false,
+    "screenshots": [
+      "runs/vmctl-vc152current/direct-popup-mineral.bmp",
+      "runs/vmctl-vc152current/direct-popup-population.bmp",
+      "runs/vmctl-vc152current/direct-popup-report-open.bmp",
+      "runs/vmctl-vc152current/direct-popup-restored.bmp"
+    ]
+  },
+  "remaining_scope": [
+    "packed GlobalPD records",
+    "localized strings",
+    "hull filtering",
+    "formatting",
+    "detailed GDI rendering"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "procedures": ["TransferStuff"],
+  "phase2_step": "5/6",
+  "step5_unit": "E2 exact cargo mutation",
+  "guest": "StarDev / Win98 / C:\\TRCNE2",
+  "native_run": "runs/vmctl-vc152trcne2/",
+  "host_report": "TRANSFER_STUFF_CARGO_E2_CHECKS=12 FAILURES=0 RESULT=PASS",
+  "native_report": "TRANSFER_STUFF_CARGO_E2_CHECKS=12 FAILURES=0 RESULT=PASS",
+  "native_build": {
+    "compile": "PASS",
+    "link": "PASS",
+    "process_exit": 0,
+    "program_error_dialog": false
+  },
+  "integration": {
+    "transfer_callback_order_checked": true,
+    "real_cargo_balance_service_called": true,
+    "five_resource_conservation_checked": true,
+    "fuel_donor_and_receiver_mutation_checked": true,
+    "packed_design_status_mutation_checked": true,
+    "cancel_path_does_not_balance_checked": true
+  },
+  "original_instruction_evidence": {
+    "raw_source": "analysis/decompiler/export/raw/1050_4faa_TransferStuff.c",
+    "balance_service": "reconstructed/src/fleet_transfer_cargo_balance.c",
+    "original_dialog_boundary": "analysis/compat/transfer-stuff-integration.md"
+  },
+  "remaining_scope": [
+    "complete packed planet/fleet/thing lookup and mutation",
+    "exact Win16 transfer dialog behavior",
+    "selection, scanner, and production refresh integration",
+    "original transfer differential coverage",
+    "final review and promotion"
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "procedure": "FAttack",
+  "checkpoint": "group-0x20 original torpedo table E29/E30/E31",
+  "status": "supporting Step-5 evidence; no named unit closed",
+  "original": {
+    "symbol": "rgtorp",
+    "ne_segment": 2,
+    "offset": "0x2180",
+    "entry_count": 12,
+    "record_size": 60,
+    "dp_offset": 54,
+    "dp_values": [5, 12, 26, 48, 90, 169, 316, 60, 85, 150, 280, 525],
+    "pointer_instruction": "FAttack/FLookupPart stores CS:(0x2180 + item*0x3c)"
+  },
+  "host": {
+    "dispatch_probe": "F_ATTACK_RAW_TORPEDO_DISPATCH_CHECKS=11 FAILURES=0 RESULT=PASS",
+    "lookup_metadata_probe": "LOOKUP_PART_TABLE_CHECKS=38 FAILURES=0 RESULT=PASS",
+    "full_suite": "519 tests passed; 153 expected skips; 2241 layout assertions; 846 declarations"
+  },
+  "native_e29": {
+    "guest_directory": "C:\\FAPNE29",
+    "run_directory": "runs/vmctl-vc152fapne29",
+    "compile": "PASS",
+    "link": "PASS",
+    "process_exit": 0,
+    "reports": {
+      "raw_damage": "F_ATTACK_RAW_DAMAGE_CHECKS=9 FAILURES=0 RESULT=PASS",
+      "torpedo_target": "F_ATTACK_TORPEDO_TARGET_CHECKS=5 FAILURES=0 RESULT=PASS",
+      "torpedo_dispatch": "F_ATTACK_RAW_TORPEDO_DISPATCH_CHECKS=11 FAILURES=0 RESULT=PASS",
+      "packed_part": "F_ATTACK_PACKED_PART_CHECKS=13 FAILURES=0 RESULT=PASS",
+      "lookup_metadata": "LOOKUP_PART_TABLE_CHECKS=34 FAILURES=0 RESULT=PASS",
+      "complex_score": "F_ATTACK_COMPLEX_SCORE_CHECKS=9 FAILURES=0 RESULT=PASS",
+      "complex_selection": "F_ATTACK_COMPLEX_SELECTION_CHECKS=3 FAILURES=0 RESULT=PASS"
+    },
+    "program_error_dialog": false
+  },
+  "native_e30": {
+    "guest_directory": "C:\\FAPNE30",
+    "run_directory": "runs/vmctl-vc152fapne30",
+    "source_probe": "tests/f_attack_source_probe.c",
+    "compile": "PASS",
+    "link": "PASS",
+    "process_exit": 0,
+    "report": "F_ATTACK_CHECKS=34 FAILURES=0 RESULT=PASS",
+    "program_error_dialog": false
+  },
+  "native_e31": {
+    "guest_directory": "C:\\FAPNE31",
+    "run_directory": "runs/vmctl-vc152fapne31",
+    "compile": "PASS",
+    "link": "PASS",
+    "process_exit": 0,
+    "reports": {
+      "lookup_metadata": "LOOKUP_PART_TABLE_CHECKS=38 FAILURES=0 RESULT=PASS",
+      "raw_damage": "F_ATTACK_RAW_DAMAGE_CHECKS=9 FAILURES=0 RESULT=PASS",
+      "torpedo_target": "F_ATTACK_TORPEDO_TARGET_CHECKS=5 FAILURES=0 RESULT=PASS",
+      "torpedo_dispatch": "F_ATTACK_RAW_TORPEDO_DISPATCH_CHECKS=11 FAILURES=0 RESULT=PASS",
+      "current_source": "F_ATTACK_CHECKS=34 FAILURES=0 RESULT=PASS",
+      "packed_part": "F_ATTACK_PACKED_PART_CHECKS=13 FAILURES=0 RESULT=PASS"
+    },
+    "current_cs_metadata": true,
+    "literal_selector_for_group_20": 0,
+    "program_error_dialog": false
+  },
+  "remaining": [
+    "complete raw complex-beam hull/resource/shield/jam/capacity scaling",
+    "broader original damage differentials",
+    "full native battle replay and final differential"
+  ],
+  "todo6_counters_unchanged": {
+    "evidence_closed": 120,
+    "evidence_total": 152,
+    "promotion_units_open": 10,
+    "practical_open_work_items": 42
+  }
+}

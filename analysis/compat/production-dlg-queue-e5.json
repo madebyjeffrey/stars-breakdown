@@ -1,0 +1,37 @@
+{
+  "procedure": "ProductionDlg",
+  "phase2_step": "5/6",
+  "evidence_unit": "E3_saved_queue_unsigned_capacity_clamp_sub_boundary",
+  "guest": "StarDev / Win98 / C:\\PDGQ5",
+  "host_probe": {
+    "source": "tests/production_dlg_queue_probe.c",
+    "checks": 10,
+    "failures": 0,
+    "result": "PASS"
+  },
+  "native_probe": {
+    "package": "compat/vc152/production-dlg-queue-e5/",
+    "status": "COMPILE=PASS LINK=PASS",
+    "report": "runs/vmctl-vc152pdgq5/PDGQRES.TXT",
+    "checks": 10,
+    "failures": 0,
+    "result": "PASS",
+    "process_exit": 0,
+    "program_error_dialog": false,
+    "console_output_bytes": 0
+  },
+  "queue_boundary": {
+    "capacity_type_is_unsigned": true,
+    "oversized_capacity_clamps_to_four_entries": true,
+    "sparse_valid_slots_remain_visible": true,
+    "raw_source": "analysis/decompiler/export/raw/10d0_1204_ProductionDlg.c"
+  },
+  "scope_note": "This closes the packed-capacity safety sub-boundary inside the saved-queue unit. Original queue differential behavior, complete resources, packed production globals, and promotion remain open.",
+  "evidence": [
+    "tests/production_dlg_queue_probe.c",
+    "reconstructed/src/production_dlg.c",
+    "reconstructed/include/core.h",
+    "compat/vc152/production-dlg-queue-e5/",
+    "runs/vmctl-vc152pdgq5/"
+  ]
+}

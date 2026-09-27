@@ -1,0 +1,42 @@
+{
+  "procedures": ["DrawPopup"],
+  "phase2_step": "5/6",
+  "evidence_unit": "E1 complete packed GlobalPD union payloads",
+  "host_report": "DRAW_POPUP_PACKED_CHECKS=38 FAILURES=0 RESULT=PASS",
+  "host_compile": "strict_c89_pass",
+  "native_packet": "compat/vc152/draw-popup-packed-e6-payload/",
+  "native_guest_directory": "C:\\DPE6",
+  "native_run": "runs/vmctl-vc152drawpopupe6/",
+  "native_build_status": "COMPILE=PASS; LINK=PASS",
+  "native_report": "DRAW_POPUP_PACKED_CHECKS=38 FAILURES=0 RESULT=PASS",
+  "native_process_exit": 0,
+  "native_program_error_dialog": false,
+  "authoritative_units_closed": 1,
+  "records": {
+    "popupdata_size": 22,
+    "raw_bytes_forwarded": true,
+    "rgi_long_count": 5,
+    "part_view_bytes": 8,
+    "pointer_words_preserved_without_dereference": true
+  },
+  "covered": [
+    "grPopup",
+    "rgi[5]",
+    "planet and player value overlays",
+    "production counters",
+    "near and far pointer words",
+    "damage and display flags",
+    "part[8]",
+    "token summary overlays",
+    "selector precedence and short-record fallback",
+    "all dispatcher kinds and kind-14 alias",
+    "GDI state restoration and geometry"
+  ],
+  "remaining": [
+    "E2 localization, hull filtering, and formatting",
+    "E3 detailed GDI and caller differential",
+    "E4 fresh original behavior completion",
+    "Step-6 promotion"
+  ],
+  "superseded_diagnostic": "runs/vmctl-vc152drawpopupe6/DRINT-e6-diagnostic.TXT"
+}

@@ -1,0 +1,52 @@
+{
+  "procedures": ["DrawPlanShipBitmap", "PlanetWndProc"],
+  "phase2_step": "5/6",
+  "unit": "DrawPlanShipBitmap E4",
+  "guest": "StarDev / Win98 / C:\\DPSBE4",
+  "native_run": "runs/vmctl-vc152dpsbe4/",
+  "host_report": "DRAW_PLAN_SHIP_BITMAP_PLANET_WINDOW_E4_CHECKS=12 FAILURES=0 RESULT=PASS",
+  "native_report": "DRAW_PLAN_SHIP_BITMAP_PLANET_WINDOW_E4_CHECKS=12 FAILURES=0 RESULT=PASS",
+  "native_build": {
+    "compile": "PASS",
+    "link": "PASS",
+    "process_exit": 0,
+    "program_error_dialog": false
+  },
+  "integration": {
+    "message": "WM_PAINT",
+    "begin_paint_then_planet_paint_then_end_paint": true,
+    "packed_selection_size": 226,
+    "fleet": {
+      "kind": 2,
+      "id": 4,
+      "text": "Stalwart Defender #5",
+      "draws": 1,
+      "button_positions": 3
+    },
+    "planet": {
+      "kind": 1,
+      "id": 7,
+      "text": "Oop Be Gone",
+      "pattern_blts": 10,
+      "dibs": 1,
+      "dib_source": [64, 128],
+      "button_positions": 0
+    }
+  },
+  "checks": [
+    "wm_paint_return_value",
+    "fleet_begin_paint_draw_end_order",
+    "fleet_kind_id_and_localized_tile",
+    "fleet_dispatch_and_button_positions",
+    "fleet_packed_selection_forwarding",
+    "planet_begin_paint_draw_end_order",
+    "planet_kind_id_and_localized_tile",
+    "planet_pattern_frame_operations",
+    "planet_dib_source_coordinates",
+    "planet_no_buttons_positioning_suppression",
+    "original_planet_fleet_frame_agreement",
+    "native_no_program_error_completion"
+  ],
+  "original_evidence": "analysis/compat/planet-frame-integration.json",
+  "remaining_scope": ["final_review_and_promotion"]
+}

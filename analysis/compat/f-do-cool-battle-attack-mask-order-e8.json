@@ -1,0 +1,29 @@
+{
+  "procedures": ["FDoCoolBattle"],
+  "milestone": "f-do-cool-battle-attack-mask-order-e8",
+  "scope": "host-source-fidelity",
+  "checks": 3,
+  "failures": 0,
+  "result": "PASS",
+  "source_correction": "post_movement_attack_mask_filter_and_survivor_recheck",
+  "existing_probe_results": {
+    "source": 58,
+    "attack_integration": 18,
+    "packed_token": 11,
+    "packed_field": 24
+  },
+  "step5_units_closed": 0,
+  "native_status": "pending_guest_agent_reconnection",
+  "remaining_scope": [
+    "exact native movement geometry and speed/initiative replay",
+    "exact native _tok/vrgtok global binding and compaction",
+    "complete damage, casualty, salvage, bombing, and record cases",
+    "fresh VC++ 1.52c/Win98 full-battle execution",
+    "original executable differential and promotion"
+  ],
+  "evidence": [
+    "reconstructed/src/f_do_cool_battle.c",
+    "tests/f_do_cool_battle_attack_mask_order_probe.c",
+    "analysis/decompiler/export/raw/10f0_8bcc_FDoCoolBattle.c"
+  ]
+}

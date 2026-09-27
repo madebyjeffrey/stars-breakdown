@@ -1,0 +1,43 @@
+{
+  "procedure": "FAttack",
+  "range": "001f:69ac-7cdd",
+  "checkpoint": "E11",
+  "scope": "native_production_complex_target_score_packed_dv_modifier",
+  "named_step5_units_closed": 0,
+  "packed_field": {
+    "name": "_tok.dv",
+    "offset": 21,
+    "size": 2,
+    "low_bits": "pctSh[0:7]",
+    "high_bits": "pctDp[7:16]"
+  },
+  "host": {
+    "probe": "tests/f_attack_complex_score_probe.c",
+    "checks": 9,
+    "failures": 0,
+    "result": "PASS"
+  },
+  "native": {
+    "guest_directory": "C:\\FAPNE11",
+    "packet": "compat/vc152/f-attack-complex-native-e11/",
+    "compile": "PASS",
+    "link": "PASS",
+    "checks": 9,
+    "failures": 0,
+    "result": "PASS",
+    "program_error_dialog": false,
+    "artifacts": [
+      "runs/vmctl-vc152fapne11/FAPNATSTA-final.TXT",
+      "runs/vmctl-vc152fapne11/CMPCL-final.LOG",
+      "runs/vmctl-vc152fapne11/CMPLINK-final.LOG",
+      "runs/vmctl-vc152fapne11/CMPR-final.TXT"
+    ]
+  },
+  "remaining": [
+    "complete raw complex-beam target-selection integration",
+    "weapon-part scaling and capacity/jam branches",
+    "post-selection dispatch",
+    "original differential and full battle replay",
+    "Step-6 ledger promotion"
+  ]
+}

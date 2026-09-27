@@ -1,0 +1,29 @@
+{
+  "procedures": ["TransferStuff"],
+  "phase2_step": "6/6",
+  "guest": "StarDev / Win98 / C:\\TRCNE3",
+  "host_report": "TRANSFER_STUFF_E3_CHECKS=8 FAILURES=0 RESULT=PASS",
+  "native_report": "TRANSFER_STUFF_E3_CHECKS=8 FAILURES=0 RESULT=PASS",
+  "native_compile": "COMPILE=PASS",
+  "native_link": "LINK=PASS",
+  "native_process_exit": 0,
+  "program_error_dialog": false,
+  "checks": {
+    "packed_fleet_split_sentinel": true,
+    "initial_packed_lookup": true,
+    "post_dialog_fleet_planet_thing_update_lookup": true,
+    "real_win16_task_message_queue": true,
+    "transfer_dialog_init_and_ok": true,
+    "cargo_balance_refresh_and_scanner_invalidation": true,
+    "lookup_rejection_before_dialog": true,
+    "original_boundary_and_step6_promotion": true
+  },
+  "evidence": [
+    "analysis/compat/transfer-stuff-e3.md",
+    "tests/transfer_stuff_e3_probe.c",
+    "reconstructed/src/transfer_stuff.c",
+    "reconstructed/src/transfer_dlg.c",
+    "compat/vc152/transfer-stuff-e3/",
+    "runs/vmctl-vc152trcne3/"
+  ]
+}

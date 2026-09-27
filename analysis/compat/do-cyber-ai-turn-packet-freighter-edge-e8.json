@@ -1,0 +1,51 @@
+{
+  "procedure": "DoCyberAiTurn",
+  "milestone": "do-cyber-ai-turn-packet-freighter-edge-e8",
+  "scope": "full_caller_packet_freighter_edge_matrix",
+  "host": {
+    "probe": "tests/do_cyber_ai_turn_packet_freighter_edge_probe.c",
+    "sources": [
+      "reconstructed/src/do_cyber_ai_turn.c",
+      "reconstructed/src/do_cyber_freighter.c",
+      "reconstructed/src/do_cyber_packets.c",
+      "reconstructed/src/ai_plord.c"
+    ],
+    "checks": 45,
+    "failures": 0,
+    "result": "PASS",
+    "report": "CYBER_AI_TURN_PACKET_FREIGHTER_EDGE_CHECKS=45 FAILURES=0 RESULT=PASS"
+  },
+  "native": {
+    "status": "pass",
+    "packet": "compat/vc152/do-cyber-ai-turn-packet-freighter-edge-e8/",
+    "guest_directory": "C:\\CYBFE8",
+    "compile": "PASS",
+    "link": "PASS",
+    "report": "CYBER_AI_TURN_PACKET_FREIGHTER_EDGE_CHECKS=45 FAILURES=0 RESULT=PASS",
+    "process_exit": 0,
+    "program_error_dialog": false,
+    "artifacts": [
+      "runs/vmctl-vc152cybfe8/CYBISTA.TXT",
+      "runs/vmctl-vc152cybfe8/CYBICL.LOG",
+      "runs/vmctl-vc152cybfe8/CYBILINK.LOG",
+      "runs/vmctl-vc152cybfe8/CYBFE.TXT"
+    ]
+  },
+  "coverage": {
+    "high_stock_owned_planet_dropoff": true,
+    "low_stock_owned_planet_pickup": true,
+    "enemy_ordinary_planet_starbase_fallback": true,
+    "open_space_short_circuit": true,
+    "packet_target_rejection": true,
+    "packed_first_order_mutation": true,
+    "packet_strength_writeback": true,
+    "callback_order_and_turn_finalization": true
+  },
+  "named_step5_units_closed": 1,
+  "remaining": [
+    "detailed fleet-order repair and caller order writes",
+    "complete Cyber AI-table integration",
+    "original-turn differential",
+    "Step-6 promotion"
+  ]
+}

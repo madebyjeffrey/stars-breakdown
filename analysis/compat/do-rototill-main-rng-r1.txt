@@ -1,0 +1,37 @@
+# Retained selector-3 source coordinator callback draws.
+# Each row is: ROT_RNG callback-index bound result.
+# X2/H2 and output WriteBOF draw directly inside source writers and are
+# listed separately in do-rototill-main-rng-audit-r1.md.
+ROT_RNG 1 13 12
+ROT_RNG 2 13 6
+ROT_RNG 3 13 12
+ROT_RNG 4 13 2
+ROT_RNG 5 100 31
+ROT_RNG 6 100 12
+ROT_RNG 7 2 0
+ROT_RNG 8 1 0
+ROT_RNG 9 100 85
+ROT_RNG 10 100 40
+ROT_RNG 11 100 53
+ROT_RNG 12 100 2
+ROT_RNG 13 100 16
+ROT_RNG 14 100 91
+ROT_RNG 15 20 6
+ROT_RNG 16 20 19
+ROT_RNG 17 15 0
+ROT_RNG 18 32 24
+ROT_RNG 19 100 82
+ROT_RNG 20 25 20
+ROT_RNG 21 25 3
+ROT_RNG 22 100 2
+ROT_RNG 23 25 6
+ROT_RNG 24 25 12
+ROT_RNG 25 100 83
+ROT_RNG 26 25 3
+ROT_RNG 27 25 5
+ROT_RNG 28 100 84
+ROT_RNG 29 25 6
+ROT_RNG 30 25 24
+ROT_RNG 31 71 45
+ROT_RNG 32 64 60
+ROT_RNG 33 8 6

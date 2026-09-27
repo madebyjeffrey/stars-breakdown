@@ -1,0 +1,41 @@
+{
+  "procedures": ["ExecuteReportClick"],
+  "phase2_step": "5/6",
+  "unit": "E5 fresh native production packed-record bridge",
+  "status": "supporting milestone; named Step-5 units remain open",
+  "guest": "StarDev / Win98 / C:\\EXINT5",
+  "native_run": "runs/vmctl-vc152exint5/",
+  "host_report": "EXECUTE_REPORT_CLICK_PACKED_CHECKS=34 FAILURES=0 RESULT=PASS",
+  "native_report": "EXECUTE_REPORT_CLICK_PACKED_CHECKS=34 FAILURES=0 RESULT=PASS EXIT=0",
+  "native_build": {
+    "compile": "PASS",
+    "link": "PASS",
+    "process_exit": 0,
+    "program_error_dialog": false,
+    "compiler_options": "/AM /GA /GEs /Zp1 /Od /W3",
+    "response_file_definitions": "EXINT.DEF included; Win16 stack/heap/stub directives applied"
+  },
+  "covered": [
+    "production 124-byte _fleet decode",
+    "production 56-byte _planet decode",
+    "production 14-byte _btldata decode",
+    "fleet/planet/battle selection",
+    "fleet, installation, mineral, resource, starbase, planet, and defense popup unions",
+    "resource-exempt and production/transfer modal guards"
+  ],
+  "remaining": [
+    "exact original GlobalPD owner and part-pointer cases",
+    "live USER/GDI handles and complete report caller/layout integration",
+    "original behavior differential",
+    "Step-6 promotion"
+  ],
+  "evidence": [
+    "analysis/compat/execute-report-click-packed-e5-native.md",
+    "tests/execute_report_click_packed_probe.c",
+    "compat/vc152/execute-report-click-packed-e5-native/",
+    "runs/vmctl-vc152exint5/EXINT.TXT",
+    "runs/vmctl-vc152exint5/EXINTSTA.TXT",
+    "runs/vmctl-vc152exint5/EXINTCL.LOG",
+    "runs/vmctl-vc152exint5/EXINTLINK.LOG"
+  ]
+}

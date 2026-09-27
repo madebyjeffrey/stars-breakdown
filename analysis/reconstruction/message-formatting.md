@@ -1,6 +1,7 @@
 # Message expansion and naming paths
 
-`format.c` implements PszFormatString (NE 7:85CC–8F67), PszFormatIds
+`format.c` implements PszGetCompressedMessage (NE 7:9EB8–A016),
+PszFormatMessage (NE 7:9220–924C), PszFormatString (NE 7:85CC–8F67), PszFormatIds
 (7:924C–9278), PszCalcEnvVar (10:5FCC–6057) and PszCalcGravity
 (10:6058–60E6). The parameter stream contains little-endian words; strings
 and pointed-to records must fit the original storage contracts. The formatter

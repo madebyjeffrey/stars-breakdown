@@ -1,0 +1,55 @@
+{
+  "procedures": ["FAttack", "FDoCoolBattle"],
+  "checkpoint": "E38",
+  "finding": "A production adapter maps decoded packed battle-token caller fields into FAttack, and a fresh native integration replay exercises that boundary.",
+  "packed_token_fields": {
+    "record_bytes": 29,
+    "player_offset": 2,
+    "object_kind_grobj_offset": 3,
+    "battle_coordinate_offset": 5
+  },
+  "adapter_fields": [
+    "token index -> StarsAttackInput.attacker_index",
+    "token player -> StarsAttackInput.attacker_owner",
+    "token battle_coordinate -> StarsAttackInput.attacker_coordinate",
+    "token object_kind/raw grobj -> StarsAttackInput.attacker_object_kind",
+    "current initiative -> StarsAttackInput.init",
+    "surviving players -> StarsAttackInput.attack_players"
+  ],
+  "source_change": "Added stars_attack_bind_cool_battle_token and changed the FDoCoolBattle-to-FAttack integration probe to use it through the production 29-byte packed-token load/store bridge.",
+  "host_validation": {
+    "report": "F_DO_COOL_BATTLE_ATTACK_INTEGRATION_CHECKS=29 FAILURES=0 RESULT=PASS",
+    "compiler": "cc -std=c89 -pedantic -Wall -Wextra -Werror",
+    "full_suite": {
+      "tests": 523,
+      "expected_skips": 153,
+      "layout_assertions": 2241,
+      "declarations": 846
+    },
+    "baseline_check": "PASS",
+    "diff_check": "PASS"
+  },
+  "native_validation": {
+    "packet": "compat/vc152/f-do-cool-battle-attack-adapter-e4/",
+    "guest_directory": "C:\\FCBATE4",
+    "build_status": "COMPILE=PASS; LINK=PASS",
+    "report": "F_DO_COOL_BATTLE_ATTACK_INTEGRATION_CHECKS=29 FAILURES=0 RESULT=PASS",
+    "process_exit": 0,
+    "program_error_dialog": false,
+    "successful_evidence_directory": "runs/vmctl-vc152fcbate4-success/",
+    "preserved_initial_compile_failure": "runs/vmctl-vc152fcbate4/"
+  },
+  "step5_units_closed": {
+    "FAttack": 0,
+    "FDoCoolBattle": 0
+  },
+  "remaining": [
+    "Complete packed weapon/hull/target mapping and raw beam/torpedo service acceptance, including hull/resource/shield/jam/capacity",
+    "FAttack E2 broader original damage differentials",
+    "FAttack E3 full native battle replay and differential",
+    "FDoCoolBattle exact native _tok/vrgtok globals and production caller binding",
+    "FDoCoolBattle complete movement, recovery, damage, casualty, salvage, bombing, and report behavior",
+    "FDoCoolBattle original full-battle differential",
+    "Step-6 ledger promotion"
+  ]
+}

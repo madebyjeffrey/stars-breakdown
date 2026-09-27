@@ -1,0 +1,57 @@
+{
+  "procedures": ["FDoCoolBattle"],
+  "milestone": "f-do-cool-battle-packed-token-e6",
+  "scope": "host-source-fidelity",
+  "checks": 11,
+  "failures": 0,
+  "result": "PASS",
+  "report": "F_DO_COOL_BATTLE_PACKED_TOKEN_CHECKS=11 FAILURES=0 RESULT=PASS",
+  "production_bridge": "StarsCoolBattleInput.packed_tokens",
+  "native_bridge_replay": "pending_fresh_packet_guest_agent_reconnect",
+  "step5_units_closed": 0,
+  "packed_token_bytes": 29,
+  "round_trip": {
+    "load_calls": 2,
+    "minimum_store_calls": 4,
+    "survivor_identity_preserved": true,
+    "defeated_count_written_zero": true,
+    "defeated_active_bit_cleared": true,
+    "coordinator_survivor_termination": true,
+    "complete_29_byte_field_map_checked": true,
+    "unchanged_raw_bytes_preserved": true,
+    "packed_capacity_rejection_is_reported": true,
+    "production_bridge_host_checked": true
+  },
+  "raw_offsets": {
+    "id": "0x00 word",
+    "player": "0x02 byte",
+    "object_kind": "0x03 byte",
+    "design": "0x04 byte",
+    "battle_coordinate": "0x05 byte",
+    "init_base_min_max": "0x06..0x08 bytes",
+    "target_token": "0x09 byte",
+    "pct_cloak_jam_battle_crit_capture_beam_def": "0x0a..0x0e bytes",
+    "weight": "0x0f word",
+    "dp_shield": "0x11 word",
+    "count": "0x13 word",
+    "defense_value": "0x15 word (_dv.dp)",
+    "target_flags": "0x17 word",
+    "movement_packed": "0x19 word (distance/speed/target nibbles)",
+    "active_and_movement_flags": "0x1b word"
+  },
+  "native_status": "pending_guest_agent_reconnection",
+  "remaining_scope": [
+    "exact native _tok/vrgtok global binding and production callers",
+    "complete 29-byte field mapping and global compaction",
+    "exact movement geometry and speed/initiative behavior",
+    "complete damage, casualty, salvage, bombing, and record cases",
+    "fresh VC++ 1.52c/Win98 execution without a Program Error dialog",
+    "original executable/full battle replay and promotion"
+  ],
+  "evidence": [
+    "reconstructed/src/f_do_cool_battle.c",
+    "reconstructed/include/core.h",
+    "tests/f_do_cool_battle_packed_token_probe.c",
+    "analysis/decompiler/export/raw/10f0_8bcc_FDoCoolBattle.c"
+  ]
+}

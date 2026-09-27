@@ -1,0 +1,31 @@
+{
+  "procedures": [
+    "DoRobotoidAiTurn",
+    "DoTurinDroneAiTurn",
+    "DoCyberAiTurn"
+  ],
+  "milestone": "ai-fleet-action-plord-integration-e3",
+  "scope": "host-only",
+  "checks": 12,
+  "failures": 0,
+  "result": "PASS",
+  "report": "AI_FLEET_ACTION_PLORD_INTEGRATION_CHECKS=12 FAILURES=0 RESULT=PASS",
+  "step5_units_closed": 0,
+  "coverage": {
+    "colonizer_order_constructor": true,
+    "wormhole_order_constructor": true,
+    "ideal_warp_nibble": true,
+    "first_order_plord_replacement": true,
+    "order_count_preservation": true,
+    "selection_forwarding": true,
+    "movement_success_fleet_flag": true
+  },
+  "evidence": [
+    "reconstructed/src/ai.c",
+    "reconstructed/src/ai_plord.c",
+    "reconstructed/include/core.h",
+    "tests/ai_fleet_action_plord_integration_probe.c",
+    "analysis/decompiler/export/raw/1090_0c78_FColonizeAiFleet.c",
+    "analysis/decompiler/export/raw/1090_0d5c_FGotoWormholeAiFleet.c"
+  ]
+}

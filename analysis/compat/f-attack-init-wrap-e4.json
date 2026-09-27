@@ -1,0 +1,41 @@
+{
+  "procedures": ["FAttack"],
+  "milestone": "f-attack-init-wrap-e4",
+  "scope": "host-source-fidelity",
+  "checks": 34,
+  "failures": 0,
+  "result": "PASS",
+  "report": "F_ATTACK_CHECKS=34 FAILURES=0 RESULT=PASS",
+  "step5_units_closed": 0,
+  "raw_evidence": {
+    "temporary_width": "unsigned 16-bit",
+    "source_expression": "tok.initBase + part.dp",
+    "upper_cap": "0x3f",
+    "negative_sum_clamp": false
+  },
+  "boundary": {
+    "init_base": 0,
+    "init_delta": -1,
+    "wrapped_value": 65535,
+    "capped_initiative": 63,
+    "dispatch_checked": true
+  },
+  "regressions": [
+    "F_ATTACK_INTEGRATION_CHECKS=2 FAILURES=0 RESULT=PASS",
+    "F_DO_COOL_BATTLE_ATTACK_INTEGRATION_CHECKS=18 FAILURES=0 RESULT=PASS"
+  ],
+  "native_status": "pending_guest_agent_reconnection",
+  "remaining_scope": [
+    "exact packed part lookup",
+    "complete battle-part scaling",
+    "broader original damage differentials",
+    "full battle replay"
+  ],
+  "evidence": [
+    "analysis/decompiler/export/raw/10f0_69ac_FAttack.c",
+    "analysis/debug/types.json",
+    "reconstructed/src/f_attack.c",
+    "reconstructed/include/core.h",
+    "tests/f_attack_source_probe.c"
+  ]
+}

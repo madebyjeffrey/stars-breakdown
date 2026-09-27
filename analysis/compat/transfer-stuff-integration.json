@@ -1,0 +1,29 @@
+{
+  "procedures": ["TransferStuff"],
+  "phase2_step": "5/6",
+  "guest": "StarDev / Win98 / C:\\STARS!\\STARS.EXE",
+  "run": "runs/vmctl-vc152current/",
+  "original_executable_observation": {
+    "game_window": "Stars! -- A Barefoot JayWalk -- Humanoids -- game.m1 [starsframe]",
+    "source_fleet": "Stalwart Defender #5",
+    "destination_fleet": "Oop Be Gone",
+    "dialog_title": "Cargo Transfer [#32770]",
+    "visible_rows": ["Fuel", "Cargo Hold", "Ironium", "Boranium", "Germanium", "Colonists"],
+    "visible_controls": "Per-row transfer controls, OK, Cancel, and Help",
+    "cancel_result": "Dialog closed without committing a game-state change",
+    "program_error": false,
+    "screenshots": ["runs/vmctl-vc152current/fleet-transfer.bmp"]
+  },
+  "original_instruction_boundary": {
+    "source": "analysis/decompiler/export/raw/1050_4faa_TransferStuff.c",
+    "observed_sequence": [
+      "the fleet Xfer command opens the original cargo transfer dialog",
+      "the dialog identifies both fleets and displays their cargo state",
+      "Cancel closes without committing the pending transfer"
+    ]
+  },
+  "reconstructed_acceptance": {
+    "native_probe": "runs/vmctl-vc152trn/TRNSR.TXT",
+    "comparison": "The original Cargo Transfer dialog and cancel boundary agree with the typed TransferStuff orchestration boundary. The separate E2 packet closes exact cargo mutation through the reconstructed balance service; packed records and complete Win16 lookup/refresh integration remain open."
+  }
+}

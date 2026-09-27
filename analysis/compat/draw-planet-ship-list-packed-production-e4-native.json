@@ -1,0 +1,39 @@
+{
+  "procedure": "DrawPlanetShipList",
+  "milestone": "packed-production-e4-native",
+  "evidence_unit": "E1 packed fleet/thing transfer records",
+  "host": {
+    "report": "DRAW_PLANET_SHIP_LIST_PACKED_CHECKS=18 FAILURES=0 RESULT=PASS",
+    "checks": 18
+  },
+  "native": {
+    "guest_directory": "C:\\DLP4",
+    "packet": "compat/vc152/draw-planet-ship-list-packed-production-e4-native/",
+    "compile": "PASS",
+    "link": "PASS",
+    "checks": 18,
+    "report": "runs/vmctl-vc152dlp4/DLP4-final.TXT",
+    "program_error_dialog": false,
+    "artifacts": [
+      "runs/vmctl-vc152dlp4/DLP4STA-final.TXT",
+      "runs/vmctl-vc152dlp4/DLP4CL-final.LOG",
+      "runs/vmctl-vc152dlp4/DLP4LINK-final.LOG",
+      "runs/vmctl-vc152dlp4/DLP4-final.TXT"
+    ]
+  },
+  "records": {
+    "selection_size": 226,
+    "selection_object_offset": 152,
+    "transfer_size": 128,
+    "transfer_id_offset": 0,
+    "transfer_kind_offset": 2,
+    "transfer_owner_offset": 6
+  },
+  "remaining": [
+    "E3 localized text/gauges and detail rendering",
+    "E4 complete drawing/transfer integration",
+    "original differential coverage",
+    "Step-6 promotion"
+  ],
+  "step5_unit_closed": true
+}

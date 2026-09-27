@@ -1,9 +1,10 @@
 # File headers and stream control flow
 
-Five reviewed C89 semantic adapters add 989 original procedure bytes. Their
+Eleven reviewed C89 semantic adapters add 8,696 original procedure bytes. Their
 original signatures, source mappings and locals are in `analysis/functions.json`
 and `analysis/debug/procedures.json`. Ranges below are NE ordinals and half-open
-offsets. All five are far C functions with caller cleanup and void returns.
+offsets. The original routines use far C entry points; the host adapters expose
+typed state and callback boundaries.
 
 | Original | NE 15 range | Host entry / source |
 |---|---|---|
@@ -12,12 +13,99 @@ offsets. All five are far C functions with caller cleanup and void returns.
 | StreamClose | 53CC–53F4 | stars_stream_close / stream.c |
 | RgFromStream | 53F4–547E | stars_stream_read / stream.c |
 | RgToStream | 9554–95BC | stars_stream_write / stream.c |
+| FReadShDef | 0006–05E1 | stars_read_shdef / file.c |
+| UpdateBattleRecords | 41AC–4329 | stars_update_battle_records / file.c |
+| DestroyCurGame | 44B0–484C | stars_destroy_cur_game / file.c |
+| FReadPlanet | 3206–3A4C | stars_read_planet / file.c |
+| FReadFleet | 3A4C–40CD | stars_read_fleet / file.c |
+| FOpenFile | 4AC2–4F22 | stars_open_file / file.c |
 
 These extend [player-record serialization](player-records.md). They are not
 a linked Win16 application. This checkpoint left FileError, PszFormatIds,
 AlertSz, FCreateFile, FSaveRace and FWasRaceFile unreconstructed. Subsequent
 [file-creation work](file-creation.md) supplies FileError, AlertSz and FCreateFile
 at explicit boundaries; the other three still require reconstruction.
+
+`FLoadGame` is represented as a coordinator rather than an opaque byte replay.
+Its source adapter is `reconstructed/src/load_game.c`, and its comments document
+the record order, the two uses of type `0x24`, the packed plan index, and the
+post-load stages. The adapter deliberately makes the original cursor and object
+callbacks explicit; it does not replay emitted bytes or assembly. The host probe
+covers the history load, player-file load, physical EOF, and corrupt-record
+cleanup paths in 19 checks. The current source compiled and linked warning-free
+with VC1.52c under the Win98 StarDev environment, and its native probe passed
+(`runs/vmctl-vc152ew/fload-game-r1/LGNRES.TXT`).
+
+## Current-turn load semantics
+
+The current-turn planet records are merged by their low eleven-bit object id,
+not appended by arrival order.  `locate_planet` reports the sorted insertion
+slot and whether a matching object already exists; `planet_turn` then receives
+that decision along with the original record and the `history`/`preinitialized`
+meaning.  Player-file snapshot planets use `planet_snapshot` instead.  This
+separation keeps the important distinction visible in both the C API and the
+probe instead of burying it in a generic record handler.
+
+Type-6 player snapshots follow the same rule: payload byte zero selects the
+player whose state is replaced.  It is not necessarily the selected player
+from the `p1`-style extension.  The `player_turn` input preserves both values,
+and `prepare_turn` marks the per-turn reset that clears transient design,
+planet, fleet, and battle-plan counts before those records are decoded.
+
+After the final turn, the coordinator exposes the original observable stages
+individually: thing-warp, production, and battle notifications; log loading
+and replay; rebuilding player counts; and MRU persistence for a concrete
+player load.  `post_load` remains as the integration boundary for stateful
+effects that still need the original global layouts.
+
+`FLoadLogFile` is now also represented by
+`reconstructed/src/load_log_file.c`.  It treats a log from another game or an
+older turn as non-applicable, reports the original `0x1e` wrong-turn error for
+a matching game with a future turn, and reports `0x1d` when the saved turn
+flags do not match.  A matching header then copies the exact length-prefixed
+memory-log image, consumes an optional type-`0x11` serial record, dispatches
+type-`0x28` messages, and requires the final type-0 marker.  The native probe
+also covers the missing-terminator failure path.
+
+The six-case source probe and the VC1.52c/Win98 StarDev native run both pass
+with zero failures (`runs/vmctl-vc152ew/load-log/LGLRES3.TXT`).
+
+`FRunLogRecord` is represented by `reconstructed/src/run_log_record.c`.  Its
+record-type constants name the operations that were implicit in the original
+switch: signed byte/word/long cargo deltas, order-array edits, fleet/order
+flags, transfer balancing, split/merge groups, ship-design state, production
+queues, battle plans, research, planet scanner fields, salts, relations,
+fleet-plan assignments, thing ownership, fleet names, and player settings.
+The source owns the little-endian decoding, masks, bounds, and signed-width
+rules; callbacks own the old far-pointer lookups and DGROUP heap mutations.
+This keeps the semantic comments close to the fields they explain and gives a
+future full-game adapter a typed integration point for each legacy subsystem.
+The native source probe exercises every named operation plus the no-op record.
+The current source and probe are warning-clean under host C89 and the native
+VC1.52c/Win98 StarDev run passes all 22 checks
+(`runs/vmctl-vc152ew/run-log-record/RLRRES2.TXT`).
+
+`LogChangeFleet` is represented by `reconstructed/src/log_change_fleet.c`. It
+compares two named fleet snapshots in the original order: sixteen ship-design
+counts, five 32-bit mineral totals, plan and detail fields, then the variable
+order array. Ship-count changes are held as the original type-0x17 transfer
+state, mineral changes are coalesced and encoded at byte, word, or long width,
+and order edits use the original type-3 deletion, type-4 insertion, and type-5
+replacement records. A callback represents the prior type-5 lookup that can
+rewind the memory-log cursor; it does not hide the record decision in emitted
+bytes. The local C89 probe and native VC1.52c probe both pass. The typed
+callback boundary preserves the original pending-state and cursor decisions;
+final whole-game caller integration remains a separate milestone.
+
+`LogChangePlanet` is represented by `reconstructed/src/log_change_planet.c`.
+It records the four mineral deltas through the same pending transfer format,
+including the inverse record used when a planet is removed, then compares the
+variable production queue and emits type 0x1d. It also packs the energy bit,
+scanner range, scanner detail and minefield-related range into the six-byte
+type-0x23 record using the original bit positions. The prior type-0x1d lookup
+is an explicit callback so cursor reuse remains visible at the integration
+boundary. The local C89 and native VC1.52c probes both pass; full DGROUP
+integration remains open for formal review.
 
 ## Beginning-of-file record
 

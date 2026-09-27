@@ -1,0 +1,49 @@
+{
+  "procedures": ["FAttack", "FDamageTok"],
+  "checkpoint": "torpedo loop condition raw stack/branch audit E52",
+  "status": "original-instruction evidence; source semantics incomplete",
+  "listing": "analysis/decompiler/export/raw/10f0_69ac.asm",
+  "branch": {
+    "condition": "dpMain > 0 || cTorpsLeft > 0",
+    "first_dword": {
+      "name": "dpMain",
+      "low_word_bp_offset": "-0x24",
+      "high_word_bp_offset": "-0x22",
+      "definitions_or_updates": ["10f0:6dca-6dcd", "10f0:6ddd-6de2", "10f0:7753-77fe"],
+      "codeview_bp_offset_decimal": -36,
+      "codeview_type": "long (type index 18, 4 bytes)",
+      "full_update_semantics": "unresolved"
+    },
+    "second_dword": {
+      "name": "cTorpsLeft",
+      "low_word_bp_offset": "-0x3a",
+      "high_word_bp_offset": "-0x38",
+      "initialization": "10f0:6ddd-6e01 on the non-0x10 weapon-kind path",
+      "split_term_subtraction": "10f0:7c65-7c68",
+      "codeview_bp_offset_decimal": -58,
+      "codeview_type": "long (type index 18, 4 bytes)",
+      "semantic_identity": "remaining torpedo quantity"
+    },
+    "repeat_target": "10f0:6e04",
+    "exit_target": "10f0:6a02"
+  },
+  "readable_source": {
+    "path": "reconstructed/src/f_attack.c",
+    "current_loop": "remaining_packets > 0 with made_progress break",
+    "matches_original_two_dword_condition": false,
+    "missing_independent_state": "dpMain",
+    "changed": false
+  },
+  "validation": {
+    "targeted_host_tests": 2,
+    "result": "PASS",
+    "source_behavior_changed": false
+  },
+  "todo6": {
+    "named_step5_units_closed": 0,
+    "fattack_named_step5_closed": 0,
+    "fattack_named_step5_total": 3,
+    "fattack_phase2_step": "5/6"
+  },
+  "next": "Trace dpMain definitions, updates, and FDamageTok interactions before changing the source loop"
+}

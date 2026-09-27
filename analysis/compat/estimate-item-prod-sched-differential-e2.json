@@ -1,0 +1,38 @@
+{
+  "procedures": ["EstimateItemProdSched"],
+  "phase2_step": "5/6",
+  "evidence_unit": "E1 schedule differential callback boundary",
+  "host_report": "ESTIMATE_ITEM_PROD_SCHED_DIFFERENTIAL_CHECKS=21 FAILURES=0 RESULT=PASS",
+  "host_compile": "strict_c89_pass",
+  "native_packet": "compat/vc152/estimate-item-prod-sched-diff/",
+  "guest_path": "C:\\EIPD",
+  "native_status": "PASS",
+  "native_run": "runs/vmctl-vc152eipd1/",
+  "native_guest_directory": "C:\\EIPD",
+  "native_build_status": "COMPILE=PASS; LINK=PASS",
+  "native_report": "ESTIMATE_ITEM_PROD_SCHED_DIFFERENTIAL_CHECKS=21 FAILURES=0 RESULT=PASS",
+  "native_process_exit": 0,
+  "native_program_error_dialog": false,
+  "native_subcheck_closed": true,
+  "checks": 21,
+  "coverage": {
+    "ordinary_phase_one_completion": true,
+    "phase_two_preceding_turn_result": true,
+    "hundred_turn_fallback": true,
+    "final_special_quantity_sentinel": true,
+    "nonfinal_special_rejection": true,
+    "partial_item_propagation": true,
+    "raw_resource_query": true,
+    "research_adjusted_query": true,
+    "research_exempt_query": true,
+    "mineral_refresh_and_copy_isolation": true,
+    "population_after_queue_pass": true
+  },
+  "remaining_scope": [
+    "native differential run",
+    "complete packed production-record and resource mutation comparison",
+    "original per-turn queue/resource replay",
+    "final promotion",
+    "complete packed production-record/resource mutation and original per-turn replay remain authoritative E1 requirements"
+  ]
+}

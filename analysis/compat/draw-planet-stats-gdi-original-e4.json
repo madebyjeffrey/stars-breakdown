@@ -1,0 +1,45 @@
+{
+  "procedure": "DrawPlanetStats",
+  "range": "000a:1716-21f5",
+  "checkpoint": "E4",
+  "evidence_unit": "detailed GDI and original integration",
+  "host": {
+    "source_report": "DRAW_PLANET_STATS_CHECKS=22 FAILURES=0 RESULT=PASS",
+    "integration_report": "PLANET_STATS_WNDPROC_INTEGRATION_CHECKS=8 FAILURES=0 RESULT=PASS"
+  },
+  "native": {
+    "guest_directory": "C:\\DPSWPE4",
+    "packet": "compat/vc152/planet-stats-wndproc-e4/",
+    "compile": "PASS",
+    "link": "PASS",
+    "source_checks": 22,
+    "integration_checks": 8,
+    "program_error_dialog": false,
+    "artifacts": [
+      "runs/vmctl-vc152dpswpe4/INTSTA-final.TXT",
+      "runs/vmctl-vc152dpswpe4/INTCL-final.LOG",
+      "runs/vmctl-vc152dpswpe4/INTLINK-final.LOG",
+      "runs/vmctl-vc152dpswpe4/SRCCL-final.LOG",
+      "runs/vmctl-vc152dpswpe4/SRCLINK-final.LOG",
+      "runs/vmctl-vc152dpswpe4/SRCRES-final.TXT",
+      "runs/vmctl-vc152dpswpe4/INTRES-final.TXT"
+    ]
+  },
+  "original": {
+    "selected_planet": "Oop Be Gone",
+    "frame_capture": "runs/vmctl-vc152dps-original-e4.bmp",
+    "production_queue_dismissed": true,
+    "program_error_dialog": false,
+    "visible_boundaries": [
+      "mineral and status rows",
+      "population and resources/year",
+      "scanner and defense rows",
+      "production and fleet panels",
+      "environment summary"
+    ]
+  },
+  "step5_unit_closed": true,
+  "remaining": [
+    "final ledger synchronization and promotion"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "procedures": [
+    "DoCyberAiTurn"
+  ],
+  "milestone": "ai-cyber-freighter-plord-integration-e3",
+  "scope": "host-only",
+  "checks": 8,
+  "failures": 0,
+  "result": "PASS",
+  "report": "AI_CYBER_FREIGHTER_PLORD_INTEGRATION_CHECKS=8 FAILURES=0 RESULT=PASS",
+  "step5_units_closed": 0,
+  "coverage": {
+    "owned_planet_supply_branch": true,
+    "target_lookup": true,
+    "ideal_warp_forwarding": true,
+    "movement_success_flag": true,
+    "target_identity": true,
+    "point_forwarding": true,
+    "order_flags": true,
+    "first_order_replacement": true
+  },
+  "evidence": [
+    "reconstructed/src/do_cyber_freighter.c",
+    "reconstructed/src/ai_plord.c",
+    "tests/ai_cyber_freighter_plord_integration_probe.c",
+    "tests/do_cyber_freighter_source_probe.c"
+  ]
+}

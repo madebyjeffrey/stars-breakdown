@@ -1,0 +1,52 @@
+{
+  "procedure": "DoCyberAiTurn",
+  "milestone": "do-cyber-ai-turn-packet-freighter-composition-e7",
+  "scope": "direct_packet_and_freighter_composition_and_packed_plord",
+  "host": {
+    "probe": "tests/do_cyber_ai_turn_packets_freighter_composition_probe.c",
+    "sources": [
+      "reconstructed/src/do_cyber_ai_turn.c",
+      "reconstructed/src/do_cyber_freighter.c",
+      "reconstructed/src/do_cyber_packets.c",
+      "reconstructed/src/ai_plord.c"
+    ],
+    "checks": 20,
+    "failures": 0,
+    "result": "PASS",
+    "report": "CYBER_AI_TURN_PACKET_FREIGHTER_COMPOSITION_CHECKS=20 FAILURES=0 RESULT=PASS"
+  },
+  "native": {
+    "status": "pass",
+    "packet": "compat/vc152/do-cyber-ai-turn-packet-freighter-composition-e7/",
+    "guest_directory": "C:\\CYBFE7",
+    "compile": "PASS",
+    "link": "PASS",
+    "report": "CYBER_AI_TURN_PACKET_FREIGHTER_COMPOSITION_CHECKS=20 FAILURES=0 RESULT=PASS",
+    "process_exit": 0,
+    "program_error_dialog": false,
+    "artifacts": [
+      "runs/vmctl-vc152cybfe7/CYBISTA.TXT",
+      "runs/vmctl-vc152cybfe7/CYBICL.LOG",
+      "runs/vmctl-vc152cybfe7/CYBILINK.LOG",
+      "runs/vmctl-vc152cybfe7/CYBPF.TXT"
+    ]
+  },
+  "coverage": {
+    "real_do_cyber_freighter_in_full_turn": true,
+    "real_do_cyber_packets_in_full_turn": true,
+    "freighter_before_basic_tasks": true,
+    "basic_before_packets": true,
+    "packet_strength_writeback": true,
+    "packet_queue_payload": true,
+    "packed_first_order_replacement": true,
+    "final_production_phase_order": true
+  },
+  "named_step5_units_closed": 0,
+  "remaining": [
+    "complete raw fleet-cargo predicates",
+    "packet/freighter edge branches",
+    "complete Cyber AI-table integration",
+    "original-turn differential",
+    "Step-6 promotion"
+  ]
+}

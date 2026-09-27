@@ -1,0 +1,49 @@
+{
+  "procedure": "DoCyberAiTurn",
+  "milestone": "do-cyber-ai-turn-freighter-composition-e6",
+  "scope": "direct_typed_freighter_composition_and_packed_plord",
+  "host": {
+    "probe": "tests/do_cyber_ai_turn_freighter_composition_probe.c",
+    "sources": [
+      "reconstructed/src/do_cyber_ai_turn.c",
+      "reconstructed/src/do_cyber_freighter.c",
+      "reconstructed/src/ai_plord.c"
+    ],
+    "checks": 18,
+    "failures": 0,
+    "result": "PASS",
+    "report": "CYBER_AI_TURN_FREIGHTER_COMPOSITION_CHECKS=18 FAILURES=0 RESULT=PASS"
+  },
+  "native": {
+    "status": "pass",
+    "packet": "compat/vc152/do-cyber-ai-turn-freighter-composition-e6/",
+    "guest_directory": "C:\\CYBFE6",
+    "compile": "PASS",
+    "link": "PASS",
+    "report": "CYBER_AI_TURN_FREIGHTER_COMPOSITION_CHECKS=18 FAILURES=0 RESULT=PASS",
+    "process_exit": 0,
+    "program_error_dialog": false,
+    "artifacts": [
+      "runs/vmctl-vc152cybfe6/CYBISTA.TXT",
+      "runs/vmctl-vc152cybfe6/CYBICL.LOG",
+      "runs/vmctl-vc152cybfe6/CYBILINK.LOG",
+      "runs/vmctl-vc152cybfe6/CYBFR.TXT"
+    ]
+  },
+  "coverage": {
+    "real_do_cyber_freighter_called_from_ai_turn": true,
+    "owned_planet_transfer_direction": true,
+    "target_selection_forwarding": true,
+    "exact_movement_flags": true,
+    "packed_first_order_replacement": true,
+    "freighter_before_typed_fleet_visitor": true
+  },
+  "named_step5_units_closed": 0,
+  "remaining": [
+    "complete packet/freighter interaction",
+    "complete raw fleet-cargo predicates",
+    "complete Cyber AI-table integration",
+    "original-turn differential",
+    "Step-6 promotion"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "procedures": ["DoCyberAiTurn"],
+  "milestone": "do-cyber-ai-turn-route-plan-e3",
+  "scope": "host-only",
+  "checks": 14,
+  "failures": 0,
+  "result": "PASS",
+  "report": "CYBER_AI_ROUTE_PLAN_BOUNDARY_CHECKS=14 FAILURES=0 RESULT=PASS",
+  "step5_units_closed": 0,
+  "coverage": {
+    "repair_before_plan": true,
+    "fleet_policy_and_potency_forwarding": true,
+    "route_action_family_constants": true,
+    "named_action_dispatch": true,
+    "colonizer_plan_payload": true,
+    "no_op_plan_suppresses_apply": true,
+    "apply_payload_and_visit_order": true,
+    "non_owned_fleet_filter": true,
+    "planner_failure_aborts_turn": true,
+    "applier_failure_aborts_turn": true
+  },
+  "evidence": [
+    "reconstructed/include/core.h",
+    "reconstructed/src/do_cyber_ai_turn.c",
+    "reconstructed/src/ai_plord.c",
+    "tests/do_cyber_ai_turn_route_plan_boundary_probe.c",
+    "analysis/decompiler/export/raw/10a8_002a_DoCyberAiTurn.c"
+  ]
+}

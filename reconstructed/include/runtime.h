@@ -62,6 +62,14 @@ struct StarsRuntime {
 void stars_runtime_init(StarsRuntime *, StarsU8 *, const StarsU8 *,
     const StarsPlatform *, void *, StarsU16, StarsU16);
 StarsU32 stars_password_salt(const StarsU8 *);
+typedef struct StarsNewPasswordOps {
+    const StarsU8 *(*text)(void *, StarsU16, StarsU16);
+    void (*mismatch)(void *, StarsU16);
+    StarsI16 (*write)(void *, StarsU32);
+    void (*end)(void *, StarsU16, StarsI16);
+} StarsNewPasswordOps;
+StarsI16 stars_new_password_dialog(StarsU16, StarsU16, StarsU16, StarsU32,
+    StarsI16, StarsU32 *, StarsU32 *, const StarsNewPasswordOps *, void *);
 void stars_delay(StarsI16, StarsTickCount, void *);
 StarsU16 stars_version_string(StarsU8 *, const StarsU8 *);
 void stars_output_file_string(StarsRuntime *, const StarsU8 *, const StarsU8 *);
@@ -72,6 +80,17 @@ StarsI16 stars_save_race(StarsRuntime *, StarsU16, StarsU16);
 StarsI16 stars_was_race_file(StarsRuntime *, StarsU16, StarsI16);
 StarsU16 stars_format_id(StarsRuntime *, StarsI16, const StarsU8 *);
 StarsU16 stars_format_string(StarsRuntime *, StarsU16, const StarsU8 *);
+StarsU16 stars_get_compressed_message(StarsU8 *, const StarsU8 *, StarsI16);
+StarsU16 stars_get_compressed_planet(StarsRuntime *, StarsI16);
+StarsU16 stars_planet_name(StarsRuntime *, StarsU16);
+StarsU16 stars_thing_name(StarsRuntime *, StarsU16);
+StarsU16 stars_fleet_name(StarsRuntime *, StarsU16);
+StarsU16 stars_fleet_word_name(StarsRuntime *, StarsU16);
+StarsU16 stars_location_name(StarsRuntime *, StarsI16, StarsI16,
+    StarsI16, StarsI16);
+StarsU16 stars_distance_string(StarsRuntime *, StarsI16, StarsI16,
+    StarsI16, StarsI16);
+StarsU16 stars_format_message(StarsRuntime *, StarsI16, const StarsU8 *);
 StarsU16 stars_environment_string(StarsRuntime *, StarsI16, StarsI16);
 StarsU16 stars_gravity_string(StarsRuntime *, StarsI16);
 #endif

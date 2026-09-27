@@ -1,0 +1,65 @@
+{
+  "procedures": ["FLookupPart", "FAttack"],
+  "checkpoint": "E47",
+  "source": "reconstructed/src/lookup_part.c",
+  "record_resolver": {
+    "function": "stars_lookup_part_record",
+    "validates": [
+      "current-CS marker and zero literal segment",
+      "supported group and item limit",
+      "family base and stride",
+      "computed item offset",
+      "complete record extent within caller span"
+    ],
+    "return": "borrowed pointer into caller-supplied segment bytes"
+  },
+  "original_image": {
+    "path": "target/stars.exe",
+    "sha256": "ccab6682b55dae14dbf104e491cfbd3b32a6280022020032ae0615500949ba59",
+    "segment": 2,
+    "segment_bytes": 25256,
+    "view": "unrelocated NE.raw[1]"
+  },
+  "validation": {
+    "probe": "tests/lookup_part_memory_probe.c",
+    "host_test": "tests/test_lookup_part_memory.py",
+    "checks": 129,
+    "result": "LOOKUP_PART_MEMORY_CHECKS=129 FAILURES=0 RESULT=PASS",
+    "full_host_suite": "PYTHONMALLOC=malloc python3 -m unittest discover -s tests -q: 524 passed; 153 expected skips",
+    "layout_assertions": 2241,
+    "function_declarations": 846,
+    "baseline_check": "PASS",
+    "diff_check": "PASS",
+    "covered": [
+      "all sixteen table-family record starts",
+      "all 24 beam records: dRangeMax, dp, init",
+      "all 12 torpedo records: dRangeMax, dp, init",
+      "truncated span rejection",
+      "wrong current-CS marker rejection",
+      "forged base, offset, and stride rejection"
+    ],
+    "packed_f_attack_host_regression": "PASS",
+    "native_validation": {
+      "packet": "compat/vc152/f-lookup-part-memory-native-e50/",
+      "guest_directory": "C:\\FAPTA50",
+      "build_status": "COMPILE=PASS; LINK=PASS",
+      "report": "LOOKUP_PART_MEMORY_CHECKS=129 FAILURES=0 RESULT=PASS",
+      "process_exit": 0,
+      "program_error_dialog": false,
+      "returned_segment_matches_package": true,
+      "evidence_directory": "runs/vmctl-faptae50/"
+    },
+    "superseded_failed_attempt": {
+      "packet": "compat/vc152/f-lookup-part-memory-native-e49/",
+      "failure": "linker response omitted explicit map-file argument",
+      "evidence_directory": "runs/vmctl-faptae49/"
+    }
+  },
+  "step5_units_closed": 0,
+  "limitations": [
+    "Host resolver maps original static bytes; no live Win98 CS mapping is established",
+    "Packed FAttack does not yet consume this returned raw record",
+    "Race, hidden-part, TechStatus, full damage acceptance, differential, replay, and promotion remain open"
+  ],
+  "next": "Integrate the native-validated raw record resolver into packed FAttack"
+}

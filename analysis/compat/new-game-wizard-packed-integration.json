@@ -1,0 +1,32 @@
+{
+  "procedures": ["NewGameWizard"],
+  "phase2_step": "5/6",
+  "guest": "StarDev / Win98 / C:\\NWP",
+  "native_run": "runs/vmctl-vc152nwp/",
+  "native_report": "NEW_GAME_WIZARD_PACKED_E1_CHECKS=11 FAILURES=0 RESULT=PASS",
+  "packed_player_e1": {
+    "host_probe": "tests/new_game_wizard_packed_probe.c",
+    "native_package": "compat/vc152/new-game-wizard-packed/",
+    "native_report": "runs/vmctl-vc152nwp/NWPE1.TXT",
+    "checks": 11,
+    "failures": 0,
+    "program_error": false,
+    "fields": {
+      "flags": 6,
+      "salt": 12,
+      "dead_marker": 84,
+      "name": 128,
+      "display_name": 160
+    },
+    "preserves_unowned_record_bytes": true,
+    "randomized_computer_marker": "0xe000",
+    "ai_level_mask": "0x1c00",
+    "ai_id_mask": "0xe000",
+    "relation_group_mask": "0x00f8",
+    "relation_excluded_mask": "0x0200"
+  },
+  "remaining_scope": [
+    "localized wizard resources and control geometry",
+    "complete creation transition through GenerateWorld and original replay"
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "procedures": ["PtDisplayPlanetStateInfo"],
+  "phase2_step": "5/6",
+  "guest": "StarDev / Win98 / C:\\STINT",
+  "native_run": "runs/vmctl-vc152stint/",
+  "host_report": "PT_DISPLAY_PLANET_STATE_INFO_PACKED_CHECKS=23 FAILURES=0 RESULT=PASS",
+  "native_report": "PT_DISPLAY_PLANET_STATE_INFO_PACKED_CHECKS=23 FAILURES=0 RESULT=PASS",
+  "native_build": {
+    "compile": "PASS",
+    "link": "PASS",
+    "process_exit": 0,
+    "program_error_dialog": false
+  },
+  "packed_records": {
+    "planet_size": 56,
+    "popupdata_size": 22,
+    "planet_offsets": {
+      "id": 0,
+      "environment_current_0": 12,
+      "environment_original_0": 15,
+      "environment_original_1": 16
+    },
+    "popupdata_offsets": {
+      "iPlanetVar": 4,
+      "iPlanVal": 6,
+      "iPlanMin": 8,
+      "iPlanMax": 10,
+      "iPlrVal": 12,
+      "iPlrMin": 14,
+      "iPlrMax": 16
+    }
+  },
+  "integration": {
+    "raw_record_sizes_checked": true,
+    "raw_planet_identity_decode_checked": true,
+    "raw_popup_limit_decode_checked": true,
+    "known_limit_rows_checked": true,
+    "unknown_limit_rows_checked": true,
+    "environment_service_boundary_checked": true,
+    "desirability_warning_checked": true,
+    "wrapping_and_layout_point_checked": true
+  },
+  "service_boundary": {
+    "environment_conversion": "callback-owned",
+    "desirability": "callback-owned",
+    "localization": "callback-owned",
+    "stream_and_wrap_gdi": "callback-owned"
+  },
+  "original_instruction_evidence": {
+    "raw_source": "analysis/decompiler/export/raw/10c0_1938_PtDisplayPlanetStateInfo.c",
+    "codeview_types": "analysis/debug/types.json",
+    "original_consumer_boundary": "analysis/compat/pt-display-planet-state-info-integration.md"
+  },
+  "remaining_scope": [
+    "complete packed player/planet lookup",
+    "localization and fixed-point formatting",
+    "detailed stream/wrap GDI behavior",
+    "original differential coverage",
+    "final review and promotion"
+  ]
+}

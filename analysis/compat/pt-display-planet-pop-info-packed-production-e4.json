@@ -1,0 +1,37 @@
+{
+  "procedures": ["PtDisplayPlanetPopInfo"],
+  "phase2_step": "5/6",
+  "host_report": "PT_DISPLAY_PLANET_POP_INFO_PACKED_CHECKS=21 FAILURES=0 RESULT=PASS",
+  "native_replay": "PASS",
+  "native_guest_directory": "C:\\PPPE4",
+  "native_run": "runs/vmctl-vc152pppe4/",
+  "native_build_status": "COMPILE=PASS; LINK=PASS",
+  "native_report": "PT_DISPLAY_PLANET_POP_INFO_PACKED_CHECKS=21 FAILURES=0 RESULT=PASS",
+  "native_process_exit": 0,
+  "native_program_error_dialog": false,
+  "production_bridge": "StarsPlanetPopInfoInput.packed_planet_record",
+  "record": {
+    "planet_size": 56,
+    "identity_offset": 0,
+    "owner_offset": 2,
+    "population_change_offset": 20,
+    "mineral_rate_offset": 28,
+    "population_change_encoding": "signed_low_byte_of_little_endian_u32"
+  },
+  "integration": {
+    "raw_identity_precedence_checked": true,
+    "owned_unowned_foreign_branches_checked": true,
+    "negative_desirability_checked": true,
+    "short_record_lookup_fallback_checked": true,
+    "segment_and_wrap_dispatch_retained": true
+  },
+  "authoritative_units_closed": 1,
+  "remaining_scope": [
+    "fresh native replay through the production bridge: closed",
+    "complete packed planet/player lookup: closed",
+    "localization and fixed-point formatting",
+    "detailed stream/wrap GDI behavior",
+    "original differential coverage",
+    "final ledger promotion"
+  ]
+}

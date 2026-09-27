@@ -1,0 +1,47 @@
+{
+  "procedure": "DoRobotoidAiTurn",
+  "checkpoint": "E4 repair eligibility and route ordering host support",
+  "scope": "host-only",
+  "checks": 7,
+  "failures": 0,
+  "result": "PASS",
+  "report": "ROBOTOID_AI_REPAIR_BOUNDARY_CHECKS=7 FAILURES=0 RESULT=PASS",
+  "route_plan": "ROBOTOID_AI_ROUTE_PLAN_BOUNDARY_CHECKS=18 FAILURES=0 RESULT=PASS",
+  "related_probes": {
+    "source": "ROBOTOID_AI_TURN_CHECKS=23 FAILURES=0 RESULT=PASS",
+    "phase": "ROBOTOID_AI_PHASE_CHECKS=6 FAILURES=0 RESULT=PASS",
+    "production": "ROBOTOID_AI_PRODUCTION_CHECKS=12 FAILURES=0 RESULT=PASS",
+    "packed_integration": "ROBOTOID_AI_TURN_INTEGRATION_CHECKS=18 FAILURES=0 RESULT=PASS",
+    "fleet_gate": "ROBOTOID_AI_FLEET_GATE_CHECKS=10 FAILURES=0 RESULT=PASS",
+    "typed_fleet": "ROBOTOID_AI_TYPED_FLEET_CHECKS=2 FAILURES=0 RESULT=PASS"
+  },
+  "raw_deterministic_gate": {
+    "ship_slot_zero_nonzero": true,
+    "minimum_turn": 41,
+    "cord": 1,
+    "first_order_kind": 0
+  },
+  "repair_order": "route planning precedes repair; a selected action bypasses repair",
+  "repository_regression": "Ran 519 tests; OK (skipped=153)",
+  "generated_headers": {
+    "layout_assertions": 2241,
+    "function_declarations": 846
+  },
+  "baseline_check": "PASS",
+  "git_diff_check": "PASS",
+  "step5_units_closed": 0,
+  "remaining": [
+    "Random(5) nearby-route decision and exact draw consumption",
+    "complete personality and AI-table integration",
+    "native replay of the current source revision",
+    "original-turn differential",
+    "Step-6 promotion"
+  ],
+  "evidence": [
+    "reconstructed/src/do_robotoid_ai_turn.c",
+    "tests/do_robotoid_ai_turn_repair_boundary_probe.c",
+    "tests/do_robotoid_ai_turn_route_plan_boundary_probe.c",
+    "analysis/decompiler/export/raw/1088_0312_DoRobotoidAiTurn.c",
+    "analysis/decompiler/export/raw/1088_0312.asm"
+  ]
+}

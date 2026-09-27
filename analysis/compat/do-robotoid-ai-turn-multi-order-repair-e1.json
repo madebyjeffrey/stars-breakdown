@@ -1,0 +1,29 @@
+{
+  "procedure": "DoRobotoidAiTurn",
+  "step5_unit": "E1 first-order repair",
+  "status": "closed",
+  "original_instruction_range": "analysis/decompiler/export/raw/1088_0312.asm:130d-136f",
+  "original_writes": ["first PLORD kind nibble becomes 6", "word at offset 12 becomes 5", "word at offset 14 becomes 5"],
+  "original_iordMac_write": false,
+  "corrected_source": ["reconstructed/src/ai_plord.c", "reconstructed/src/do_robotoid_ai_turn.c"],
+  "host": "ROBOTOID_MULTI_ORDER_REPAIR_CHECKS=14 FAILURES=0 RESULT=PASS",
+  "host_suite": {"tests": 530, "skipped": 153, "layout_assertions": 2241, "declarations": 846},
+  "native": {
+    "guest_directory": "C:\\ROBRE1",
+    "build_status": "COMPILE=PASS LINK=PASS",
+    "process": "EXIT 0",
+    "report": "ROBOTOID_MULTI_ORDER_REPAIR_CHECKS=14 FAILURES=0 RESULT=PASS",
+    "program_error_dialog": false,
+    "return_directory": "runs/vmctl-robre1"
+  },
+  "related_host_probes": {
+    "shared_helper": "9/9",
+    "robotoid_repair_boundary": "7/7",
+    "robotoid_route_boundary": "18/18",
+    "cyber_route_boundary": "14/14",
+    "turin_route_boundary": "14/14",
+    "automitron_repair_boundary": "8/8",
+    "macinti_repair_boundary": "5/5"
+  },
+  "remaining": ["E2 exact routing", "E3 broader PLORD mutation", "E4 AI-table/original-turn differential", "Step-6 promotion"]
+}

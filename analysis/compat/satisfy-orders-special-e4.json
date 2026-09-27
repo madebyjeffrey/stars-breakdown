@@ -1,0 +1,38 @@
+{
+  "procedure": "SatisfyOrders",
+  "milestone": "satisfy-orders-special-e4",
+  "scope": "host-source-fidelity",
+  "checks": 16,
+  "failures": 0,
+  "result": "PASS",
+  "reports": [
+    "SATISFY_ORDERS_SPECIAL_CHECKS=16 FAILURES=0 RESULT=PASS",
+    "SATISFY_ORDERS_SPECIAL_MINE_GATE=PASS",
+    "SATISFY_ORDERS_SPECIAL_CALLBACK_GATES=PASS"
+  ],
+  "branches": [
+    "battle_plan_pass_1",
+    "mine_capability_and_race_stat_gate",
+    "auto_route_starbase_and_no_path_message",
+    "merge_target_ownership_and_callback_gates",
+    "player_transfer_source_recipient_message_pairs",
+    "mine_repeat_count_zero_one_and_five"
+  ],
+  "step5_units_closed": 0,
+  "native_status": "pending_guest_agent_reconnection",
+  "remaining_scope": [
+    "native packed battle-plan/resource accounting",
+    "technology discovery",
+    "fleet and ship-design copying",
+    "salvage creation",
+    "complete message argument layouts",
+    "full-turn replay and original behavior",
+    "promotion"
+  ],
+  "evidence": [
+    "reconstructed/src/satisfy_orders.c",
+    "reconstructed/include/core.h",
+    "tests/satisfy_orders_special_source_probe.c",
+    "analysis/compat/satisfy-orders-turn-e3.md"
+  ]
+}

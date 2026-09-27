@@ -1,0 +1,17 @@
+{
+  "procedure": "ReportDlg",
+  "milestone": "draw-integration-boundary-e3",
+  "scope": "host-only",
+  "checks": 6,
+  "failures": 0,
+  "result": "PASS",
+  "native_status": "pending_guest_agent_reconnect",
+  "step5_units_closed": 0,
+  "evidence": [
+    "reconstructed/src/report_dlg.c",
+    "reconstructed/src/draw_report.c",
+    "reconstructed/src/draw_report_item.c",
+    "reconstructed/include/core.h",
+    "tests/report_dlg_draw_integration_probe.c"
+  ]
+}

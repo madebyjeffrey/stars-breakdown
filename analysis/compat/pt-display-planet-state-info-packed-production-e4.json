@@ -1,0 +1,45 @@
+{
+  "procedures": ["PtDisplayPlanetStateInfo"],
+  "phase2_step": "5/6",
+  "host_report": "PT_DISPLAY_PLANET_STATE_INFO_PACKED_CHECKS=25 FAILURES=0 RESULT=PASS",
+  "native_replay": "PASS",
+  "native_guest_directory": "C:\\STPE4",
+  "native_run": "runs/vmctl-vc152stpe4/",
+  "native_build_status": "COMPILE=PASS; LINK=PASS",
+  "native_report": "PT_DISPLAY_PLANET_STATE_INFO_PACKED_CHECKS=25 FAILURES=0 RESULT=PASS",
+  "native_process_exit": 0,
+  "native_program_error_dialog": false,
+  "production_bridge": "StarsPlanetStateInfoInput.packed_planet_record_and_packed_popupdata",
+  "records": {
+    "planet_size": 56,
+    "popupdata_size": 22,
+    "planet_identity_offset": 0,
+    "planet_environment_offset": 12,
+    "planet_environment_sidecar_offsets": [15, 16],
+    "popup_offsets": {
+      "planet_var": 4,
+      "planet_value": 6,
+      "planet_min": 8,
+      "planet_max": 10,
+      "player_value": 12,
+      "player_min": 14,
+      "player_max": 16
+    }
+  },
+  "integration": {
+    "raw_field_precedence_checked": true,
+    "known_and_unknown_limit_branches_checked": true,
+    "environment_and_desirability_callbacks_retained": true,
+    "short_record_typed_fallback_checked": true,
+    "wrap_and_layout_retained": true
+  },
+  "authoritative_units_closed": 1,
+  "remaining_scope": [
+    "fresh native replay through the production bridge: closed",
+    "complete packed player/planet lookup: closed",
+    "localization and fixed-point formatting",
+    "detailed stream/wrap GDI behavior",
+    "original differential coverage",
+    "final ledger promotion"
+  ]
+}

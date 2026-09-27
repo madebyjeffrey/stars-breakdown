@@ -1,0 +1,55 @@
+{
+  "procedures": ["DumpFleets"],
+  "phase2_step": "5/6",
+  "guest": "StarDev / Win98 / C:\\DMPFINT2",
+  "native_run": "runs/vmctl-vc152dmpfint2/",
+  "host_report": "DUMP_FLEETS_PACKED_CHECKS=22 FAILURES=0 RESULT=PASS",
+  "native_report": "DUMP_FLEETS_PACKED_CHECKS=22 FAILURES=0 RESULT=PASS",
+  "production_bridge": "stars_dump_fleets_packed",
+  "native_bridge_replay": "pending_fresh_packet_guest_agent_reconnect",
+  "native_evidence": "runs/vmctl-vc152dmpfint2/DFINT.TXT",
+  "native_build": {
+    "compile": "PASS",
+    "link": "PASS",
+    "process_exit": 0,
+    "program_error_dialog": false
+  },
+  "packed_fleet": {
+    "size": 124,
+    "offsets": {
+      "id": 0,
+      "iPlayer": 2,
+      "flags": 4,
+      "idPlanet": 6,
+      "pt": 8,
+      "rgcsh": 12,
+      "wtFleet": 44,
+      "rgwtMin": 76,
+      "iplan": 96,
+      "cord": 98,
+      "direction": 118
+    }
+  },
+  "integration": {
+    "production_bridge_host_checked": true,
+    "raw_to_typed_round_trip_checked": true,
+    "normal_and_detailed_report_paths_checked": true,
+    "ship_class_service_mapping_checked": true,
+    "cargo_and_detailed_fields_checked": true,
+    "destination_visibility_and_write_failure_checked": true,
+    "all_cargo_slots_and_detailed_service_fields_checked": true,
+    "normal_mode_detail_gating_checked": true,
+    "destination_requires_detail_checked": true
+  },
+  "original_instruction_evidence": {
+    "raw_source": "analysis/decompiler/export/raw/1108_9530_DumpFleets.c",
+    "codeview_types": "analysis/debug/types.json",
+    "original_export_boundary": "analysis/compat/report-dump-integration.md"
+  },
+  "remaining_scope": [
+    "localized formatting",
+    "exact scanner, minefield, battle-plan, and task services",
+    "complete original differential output comparison",
+    "final promotion"
+  ]
+}

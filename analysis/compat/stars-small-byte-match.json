@@ -1,0 +1,66 @@
+{
+  "original_sha256": "ccab6682b55dae14dbf104e491cfbd3b32a6280022020032ae0615500949ba59",
+  "compiler": "Microsoft C/C++ Compiler Version 8.00c (VC++ 1.52c)",
+  "flags": "/c /AM /GA /GEs /Zp1 /Od /Gs /W3 /Fc",
+  "comparison": "No masked bytes; named OMF relocations resolved into the original address layout.",
+  "functions": [
+    {
+      "name": "FHandleChar",
+      "ne_segment": 4,
+      "original_offset": 5598,
+      "original_bytes": 124,
+      "generated_bytes": 124,
+      "length_difference": 0,
+      "exact_after_address_resolution": true,
+      "differing_bytes": 0,
+      "differences": [],
+      "fixups": [
+        {
+          "offset": 11,
+          "width": 2,
+          "target": "_hwndScanner",
+          "resolved_value": "0x190"
+        },
+        {
+          "offset": 56,
+          "width": 4,
+          "target": "GETFOCUS",
+          "resolved_value": "0x14f80188"
+        },
+        {
+          "offset": 65,
+          "width": 2,
+          "target": "_hwndMessage",
+          "resolved_value": "0x198"
+        },
+        {
+          "offset": 74,
+          "width": 2,
+          "target": "_hwndMsgEdit",
+          "resolved_value": "0x5924"
+        },
+        {
+          "offset": 86,
+          "width": 2,
+          "target": "_hwndScanner",
+          "resolved_value": "0x190"
+        },
+        {
+          "offset": 102,
+          "width": 4,
+          "target": "SENDMESSAGE",
+          "resolved_value": "0x14f80260"
+        }
+      ],
+      "backpatch_records": 16,
+      "original_relocated_sha256": "6b1bcf041a0b31a46edbdb9a704ae318f6e98095d1bfb5df4a62c4224d9cb9cc",
+      "generated_resolved_sha256": "6b1bcf041a0b31a46edbdb9a704ae318f6e98095d1bfb5df4a62c4224d9cb9cc",
+      "source": "compat/stars-small-match/STARS.C"
+    }
+  ],
+  "all_functions_match": true,
+  "object_sha256": "394de00debfce3b8721d0f3bd7d2f5e94a7ba9813de9ff3195ba3412b7eaef89",
+  "source_sha256": "1b6c78c0146cd052f9994642723b2d1dfba4fcf5c6cfb3ae497011dfaf4c3ae9",
+  "build_log": "stars.c\nstars.c(59) : warning C4035: 'FHandleChar' : no return value\nstars.c(59) : warning C4101: 'uVar1' : unreferenced local variable\n",
+  "build_status": "PASS\n"
+}

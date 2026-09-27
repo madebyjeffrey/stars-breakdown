@@ -1,0 +1,37 @@
+{
+  "procedures": ["FAttack"],
+  "related_procedure": "FLookupPart",
+  "milestone": "f-attack-part-table-families-e8",
+  "scope": "host-source-fidelity",
+  "checks": {
+    "lookup_part_fixed_table_families": 34
+  },
+  "failures": 0,
+  "result": "PASS",
+  "reports": [
+    "LOOKUP_PART_TABLE_CHECKS=34 FAILURES=0 RESULT=PASS"
+  ],
+  "step5_units_closed": 0,
+  "fixed_families": [
+    "hull", "engine", "scanner", "weapon", "shield", "bomb",
+    "mine", "mech", "fuel", "battle", "component"
+  ],
+  "resource_relative_control": "group_0x0100_metadata_zero",
+  "native_status": "pending_guest_agent_reconnection",
+  "remaining_scope": [
+    "native table/service binding",
+    "resource-relative table families",
+    "complete battle-part scaling",
+    "broader original damage differentials",
+    "native packed replay and full battle replay"
+  ],
+  "evidence": [
+    "analysis/decompiler/export/raw/1008_524e_FLookupPart.c",
+    "analysis/DATA_LAYOUTS.md",
+    "reconstructed/include/common.h",
+    "reconstructed/src/lookup_part.c",
+    "reconstructed/src/f_attack.c",
+    "tests/lookup_part_table_probe.c",
+    "tests/f_attack_packed_part_probe.c"
+  ]
+}

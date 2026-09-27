@@ -1,0 +1,30 @@
+{
+  "procedures": [
+    "DoRobotoidAiTurn",
+    "DoTurinDroneAiTurn",
+    "DoCyberAiTurn"
+  ],
+  "milestone": "ai-freighter-action-plord-integration-e3",
+  "scope": "host-only",
+  "checks": 8,
+  "failures": 0,
+  "result": "PASS",
+  "report": "AI_FREIGHTER_ACTION_PLORD_INTEGRATION_CHECKS=8 FAILURES=0 RESULT=PASS",
+  "step5_units_closed": 0,
+  "coverage": {
+    "strict_score_ordering": true,
+    "target_identity_forwarding": true,
+    "point_forwarding": true,
+    "order_flags": true,
+    "first_order_replacement": true,
+    "packed_record_preservation": true,
+    "cargo_free_rejection": true
+  },
+  "evidence": [
+    "reconstructed/src/ai.c",
+    "reconstructed/src/ai_plord.c",
+    "tests/ai_freighter_action_plord_integration_probe.c",
+    "tests/id_target_freighter_source_probe.c",
+    "analysis/decompiler/export/raw/1090_286c_IdTargetFreighter.c"
+  ]
+}

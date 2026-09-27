@@ -1,0 +1,28 @@
+{
+  "procedures": ["FTrackXfer"],
+  "phase2_step": "5/6",
+  "guest": "StarDev / Win98 / C:\\STARS!\\STARS.EXE",
+  "run": "runs/vmctl-vc152current/",
+  "original_executable_observation": {
+    "game_window": "Stars! -- A Barefoot JayWalk -- Humanoids -- game.m1 [starsframe]",
+    "source_fleet": "Stalwart Defender #5",
+    "destination_fleet": "Oop Be Gone",
+    "dialog_title": "Cargo Transfer [#32770]",
+    "control_exercised": "Ironium transfer control",
+    "cancel_result": "Dialog closed without committing a game-state change",
+    "program_error": false,
+    "screenshots": ["runs/vmctl-vc152current/f-track-xfer.bmp"]
+  },
+  "original_instruction_boundary": {
+    "source": "analysis/decompiler/export/raw/1050_5a16_FTrackXfer.c",
+    "observed_sequence": [
+      "the fleet Xfer command opens the original cargo transfer dialog",
+      "a mineral transfer control can be activated while the dialog remains open",
+      "Cancel closes without committing the pending transfer"
+    ]
+  },
+  "reconstructed_acceptance": {
+    "native_probe": "runs/vmctl-vc152ftx/FTXR.TXT",
+    "comparison": "The original Cargo Transfer control boundary agrees with the typed FTrackXfer hit, tracking, and redraw boundary. Packed transfer records, exact cargo/supply mutation, and complete Win16 capture integration remain open."
+  }
+}

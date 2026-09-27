@@ -1,0 +1,40 @@
+{
+  "procedure": "FAttack",
+  "range": "001f:69ac-7cdd",
+  "checkpoint": "E19",
+  "scope": "separate_launched_torpedo_budget_from_successful_hits",
+  "named_step5_units_closed": 0,
+  "raw_evidence": {
+    "source": "analysis/decompiler/export/raw/10f0_69ac_FAttack.c",
+    "initial_packet_budget_lines": "620-625",
+    "split_and_dispatch_lines": "677-757",
+    "residual_loop_lines": "764-769",
+    "behavior": "CTorpHit result and launched packet budget are separate; the split terms sum to the packet count passed by reference to FDamageTok"
+  },
+  "host": {
+    "language_mode": "strict C89",
+    "probe": "tests/f_attack_raw_torpedo_dispatch_probe.c",
+    "checks": 7,
+    "failures": 0,
+    "result": "PASS",
+    "case": "two of three torpedoes hit; hull callback receives packet budget 3 and mutates it to 2"
+  },
+  "native": {
+    "status": "packet_prepared_guest_replay_not_yet_verified",
+    "packet": "compat/vc152/f-attack-complex-native-e19/",
+    "guest_directory": "C:\\FAPNE19",
+    "packet_file_count": 43,
+    "packet_text_file_count": 42,
+    "packet_text_encoding": "ASCII",
+    "packet_text_line_endings": "CRLF",
+    "packaged_source_strict_c89_syntax": "PASS"
+  },
+  "remaining": [
+    "derive uStack34/uStack38 allocation from shield and hull capacity",
+    "model residual-loop lVar19/lVar16 and the post-damage target state",
+    "native E19 compile and report replay",
+    "broader original damage differential",
+    "full native battle replay",
+    "Step-6 ledger promotion"
+  ]
+}

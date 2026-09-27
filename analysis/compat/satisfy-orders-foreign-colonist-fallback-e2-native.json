@@ -1,0 +1,37 @@
+{
+  "procedure": "SatisfyOrders",
+  "phase2_step": "5/6",
+  "unit": "E2 typed fallback preservation beside raw foreign-colonist frame",
+  "status": "closed as regression correction",
+  "guest": "StarDev / Win98 / C:\\SYOE24",
+  "host": {
+    "source_probe": "SATISFY_ORDERS_CHECKS=32 FAILURES=0 RESULT=PASS",
+    "raw_probe": "SATISFY_ORDERS_RAW_FOREIGN_COLONIST_CHECKS=12 FAILURES=0 RESULT=PASS"
+  },
+  "native": {
+    "compile": "PASS",
+    "link": "PASS",
+    "report": "SATISFY_ORDERS_RAW_FOREIGN_COLONIST_CHECKS=12 FAILURES=0 RESULT=PASS",
+    "process_exit": 0,
+    "program_error_dialog": false,
+    "status_file": "runs/vmctl-vc152syoe24/SYORESSTA.TXT",
+    "compile_log": "runs/vmctl-vc152syoe24/SYORESCL.LOG",
+    "link_log": "runs/vmctl-vc152syoe24/SYORESLINK.LOG",
+    "map": "runs/vmctl-vc152syoe24/SYORES.MAP"
+  },
+  "packet": "compat/vc152/satisfy-orders-raw-foreign-colonist-e2-native-r4/",
+  "source_change": "raw_message2 uses the exact 0x0155 frame; absent raw_message2 preserves send_message callback behavior",
+  "evidence": [
+    "reconstructed/src/satisfy_orders.c",
+    "tests/satisfy_orders_source_probe.c",
+    "tests/satisfy_orders_raw_foreign_colonist_probe.c",
+    "analysis/compat/satisfy-orders-foreign-colonist-fallback-e2-native.md",
+    "compat/vc152/satisfy-orders-raw-foreign-colonist-e2-native-r4/",
+    "runs/vmctl-vc152syoe24/SYORESSTA.TXT",
+    "runs/vmctl-vc152syoe24/SYORESCL.LOG",
+    "runs/vmctl-vc152syoe24/SYORESLINK.LOG",
+    "runs/vmctl-vc152syoe24/SYOFOR.TXT",
+    "runs/vmctl-vc152syoe24/SYORES.MAP"
+  ],
+  "diagnostic": "runs/vmctl-vc152syoe23/ was a non-authoritative wrapper/probe mismatch and is retained for troubleshooting"
+}

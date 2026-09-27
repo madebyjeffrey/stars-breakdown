@@ -1,0 +1,44 @@
+{
+  "procedures": ["DumpPlanets", "DumpFleets"],
+  "phase2_step": "5/6",
+  "guest": "StarDev / Win98 / C:\\STARS!\\STARS.EXE",
+  "run": "runs/vmctl-vc152current/",
+  "original_executable_observation": {
+    "fleet_dump": {
+      "menu_path": "Reports > Dump to Text File > Fleet Information",
+      "success_message": "Known fleet information has been successfully written to C:\\STARS!\\GAME.fle!",
+      "file": "runs/vmctl-vc152current/GAME.fle",
+      "bytes": 527,
+      "sha256": "185db0e8f67761777ae4cf9ab2a83d25fa619f78262f18b57296666a821a5ab8"
+    },
+    "planet_dump": {
+      "menu_path": "Reports > Dump to Text File > Planet Information",
+      "success_message": "Known planet information has been successfully written to C:\\STARS!\\GAME.pla!",
+      "file": "runs/vmctl-vc152current/GAME.pla",
+      "bytes": 334,
+      "sha256": "56673642fd9ddaed2985ed03e99ea731e3a5296069414d4b2f185790569d3d23"
+    },
+    "screenshots": [
+      "runs/vmctl-vc152current/report-dump.bmp",
+      "runs/vmctl-vc152current/fleet-dump-save.bmp",
+      "runs/vmctl-vc152current/planet-dump-save.bmp"
+    ],
+    "program_error": false
+  },
+  "original_instruction_boundary": {
+    "dump_fleets": "analysis/decompiler/export/raw/1108_9530_DumpFleets.c",
+    "dump_planets": "analysis/decompiler/export/raw/1108_86e4_DumpPlanets.c",
+    "observed_sequence": [
+      "Dump to Text File opens the three-way export submenu",
+      "Fleet Information writes GAME.fle and reports success",
+      "Planet Information writes GAME.pla and reports success"
+    ]
+  },
+  "reconstructed_acceptance": {
+    "native_probes": [
+      "runs/vmctl-vc152dumpfleets/DFR.TXT",
+      "runs/vmctl-vc152dumpplanets/DUMPR.TXT"
+    ],
+    "comparison": "The original Win98 export paths complete and produce preserved fleet and planet text artifacts. This is an original file/UI integration checkpoint, not proof that every localized formatter, packed record, scanner/minefield field, or battle-plan field is complete."
+  }
+}

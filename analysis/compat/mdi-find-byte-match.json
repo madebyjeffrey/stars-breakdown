@@ -1,0 +1,48 @@
+{
+  "original_sha256": "ccab6682b55dae14dbf104e491cfbd3b32a6280022020032ae0615500949ba59",
+  "compiler": "Microsoft C/C++ Compiler Version 8.00c (VC++ 1.52c)",
+  "flags": "/c /AM /GA /GEs /Zp1 /Od /Gs /W3 /Fc",
+  "comparison": "No masked bytes; named OMF relocations resolved into the original address layout.",
+  "functions": [
+    {
+      "name": "FFindSomethingAndSelectIt",
+      "ne_segment": 5,
+      "original_offset": 11804,
+      "original_bytes": 349,
+      "generated_bytes": 349,
+      "length_difference": 0,
+      "exact_after_address_resolution": true,
+      "differing_bytes": 0,
+      "differences": [],
+      "fixups": [
+        {
+          "offset": 25,
+          "width": 4,
+          "target": "_LpplFromId",
+          "resolved_value": "0x1038021e"
+        },
+        {
+          "offset": 211,
+          "width": 4,
+          "target": "_SelectAdjPlanet",
+          "resolved_value": "0x104844da"
+        },
+        {
+          "offset": 321,
+          "width": 4,
+          "target": "_SelectAdjFleet",
+          "resolved_value": "0x10503d32"
+        }
+      ],
+      "backpatch_records": 31,
+      "original_relocated_sha256": "c696004fcea4ab2fba02d4935ed12ba4678384bc031e5db4ec486006e474e42d",
+      "generated_resolved_sha256": "c696004fcea4ab2fba02d4935ed12ba4678384bc031e5db4ec486006e474e42d",
+      "source": "compat/mdi-find-match/MDI.C"
+    }
+  ],
+  "all_functions_match": true,
+  "object_sha256": "f15503b0622d09fb967bff5c4c77a31d3b2123e3f13843fe0910133f1453ce3a",
+  "source_sha256": "51443fd6b79c59f5ca4378c31020c4a56399cf7932e85bd497e2aafa139894e6",
+  "build_log": "mdi.c\nmdi.c(147) : warning C4035: 'FFindSomethingAndSelectIt' : no return value\nmdi.c(147) : warning C4101: 'scratch' : unreferenced local variable\n",
+  "build_status": "PASS\n"
+}

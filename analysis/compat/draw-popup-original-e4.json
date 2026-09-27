@@ -1,0 +1,48 @@
+{
+  "procedure": "DrawPopup",
+  "range": "0019:01c0-0c7c",
+  "checkpoint": "E4",
+  "evidence_unit": "original consumer completion",
+  "native": {
+    "packed_globalpd_checks": 38,
+    "content_checks": 21,
+    "geometry_checks": 25,
+    "state_support_checks": 7,
+    "caller_checks": 26,
+    "program_error_dialog": false,
+    "runs": [
+      "runs/vmctl-vc152drawpopupe6/",
+      "runs/vmctl-vc152drawpopupcontente2-r2/",
+      "runs/vmctl-vc152drawpopupgeometrye3r2/",
+      "runs/vmctl-vc152drawpopupstatee3/",
+      "runs/vmctl-vc152popintp/"
+    ]
+  },
+  "original": {
+    "guest": "StarDev / Win98 / C:\\STARS!\\STARS.EXE",
+    "program_error_dialog": false,
+    "screenshots": [
+      "runs/vmctl-vc152current/popup-probe-start.bmp",
+      "runs/vmctl-vc152current/popup-base.bmp",
+      "runs/vmctl-vc152current/direct-popup-mineral.bmp",
+      "runs/vmctl-vc152current/direct-popup-mineral2.bmp",
+      "runs/vmctl-vc152current/direct-popup-population.bmp",
+      "runs/vmctl-vc152current/direct-popup-population2.bmp",
+      "runs/vmctl-vc152current/direct-popup-report-open.bmp",
+      "runs/vmctl-vc152current/report-row-click.bmp",
+      "runs/vmctl-vc152current/direct-popup-restored.bmp",
+      "runs/vmctl-vc152current/popup-probe-restored.bmp"
+    ],
+    "surfaces": [
+      "fleet summary",
+      "starbase/base frame",
+      "planet mineral/status",
+      "planet population/report",
+      "Planet Summary Report",
+      "restored frame"
+    ]
+  },
+  "step5_unit_closed": true,
+  "promotion": "complete",
+  "pixel_identity_claim": false
+}

@@ -1,12 +1,17 @@
 # Stars! executable study
 
-A reverse-engineering study of `target/stars.exe`, preserving the supplied executable unchanged. The project has a tested NE/CodeView/Ghidra workflow and 99 reviewed C89 routines, including an integrated race save/load and creation component. It is not yet a complete decompilation or a Win16 replacement application.
+A reverse-engineering study of `target/stars.exe`, preserving the supplied executable unchanged. The tested NE/CodeView/Ghidra workflow now has exact instruction-byte matches for all 846 named game procedures. The source ledger records 838 reviewed procedures and 8 partial procedures. This is not yet a complete decompilation or a complete Win16 replacement application.
+
+The current Phase 2 acceptance ledger has **124/152 evidence units closed**, **28 open**, and **9 final procedure promotions open**. These are stricter integration and original-behavior gates than the source-review count. See [TODO7.md](TODO7.md) for the live burn-down and [EVIDENCE.md](EVIDENCE.md) for the numbered open units; [TODO6.md](TODO6.md) defines the gates.
 
 ## Start here
 
+- [Win98/86Box agent runbook](AGENTS.md): procedure for future agent-controlled VC++ 1.52c builds, runs, evidence collection, and troubleshooting.
 - [Race component](analysis/reconstruction/race-component.md): completed game-code dependencies, original-instruction comparisons, and the Windows contract for the next native build.
 - [Buildable race test](compat/racevc/README.md): VC++ package for 88 automatic race-creation/save/load scenarios; RETURN5 passes all 816 checks in Win98 SE with matching files and states. The returned progress/cancellation controls also pass native keyboard checks in WfW 3.11.
-- [Reviewed semantic core](analysis/reconstruction/core.md): current source coverage and validation scope.
+- [Source coverage](TODO5.md): current per-procedure review and byte-match ledger. [Reviewed semantic core](analysis/reconstruction/core.md) records an earlier component milestone and its validation scope.
+
+- [Player's Guide RE reference](analysis/reconstruction/help-file.md): structured behavioral rules, formulas, file lifecycle, UI/context clues, and a technology-table inventory extracted from the supplied HTML help export.
 
 - [Decompiler workflow](analysis/decompiler/README.md): tested import, initial C/assembly exports, call/data maps, acceptance checks, and remaining analysis limits (step 3 complete).
 
@@ -55,10 +60,12 @@ CodeView logical segment numbers are translated through `sstSegMap` to NE segmen
 
 ## Next decompilation stage
 
-Steps 0–4 are complete for the recorded baseline. Step 5 is in progress. The
-save/load and race-creation dependency cluster is integrated. Its automatic
-compiler/output package is ready for a VC++ build/run; real Windows UI acceptance
-also remains pending. The full checklist is in [TODO.md](TODO.md).
+Steps 0–4 are complete for the recorded baseline. Step 5 and whole-program
+acceptance remain in progress. The save/load and race-creation dependency
+cluster is integrated, and its VC++ package passed native checks. Partial
+Win16 application and UI milestones are documented separately; the ten
+remaining Phase 2 procedures and their exact evidence gates are in
+[TODO7.md](TODO7.md). The full completion criteria are in [TODO.md](TODO.md).
 
 The NE extractor accounts for every file byte, decodes all relocation records, resolves imports to symbolic identities, extracts every resource, and emits static memory images with synthetic selectors. Its hardware-x87 policy and remaining runtime limitations are documented in [the layout report](analysis/ne/README.md). Original execution evidence is in the [runtime report](analysis/runtime/README.md); the early native compiler results are in the [VC++ review](analysis/compat/vc152-return2.md).
 

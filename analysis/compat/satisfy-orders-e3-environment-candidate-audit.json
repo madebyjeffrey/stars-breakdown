@@ -1,0 +1,38 @@
+{
+  "scope": "Read-only comparison; no runtime inputs changed. INI capture provenance and current disk environment remain unproven.",
+  "shuffle_source": {
+    "path": "target/stars.exe",
+    "segment": 5,
+    "offset": 10352,
+    "sha256": "32ced90a4ad6d32791b6042c8434b12f3155dac45acd381ae39f2187dbbf9910"
+  },
+  "candidates": [
+    {
+      "path": "runs/step4/guest/WINDOWS/STARS.INI",
+      "sha256": "1d5890a30f0bdb846f70862aeab88786e9945e9c54c5a97da9b26dc150edc2cc",
+      "source_decode_valid": true,
+      "serial_matches_control_action": [
+        true,
+        true
+      ],
+      "registered_environment_matches_current_log_environment": [
+        true,
+        true
+      ]
+    },
+    {
+      "path": "runs/step4/guest98/WINDOWS/STARS.INI",
+      "sha256": "1d5890a30f0bdb846f70862aeab88786e9945e9c54c5a97da9b26dc150edc2cc",
+      "source_decode_valid": true,
+      "serial_matches_control_action": [
+        true,
+        true
+      ],
+      "registered_environment_matches_current_log_environment": [
+        true,
+        true
+      ]
+    }
+  ],
+  "original_header_environments_equal": true
+}

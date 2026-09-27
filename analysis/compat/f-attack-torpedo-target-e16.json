@@ -1,0 +1,58 @@
+{
+  "procedure": "FAttack",
+  "range": "001f:69ac-7cdd",
+  "checkpoint": "E16",
+  "scope": "raw_torpedo_candidate_ranking_before_random_hit_resolution",
+  "named_step5_units_closed": 0,
+  "raw_evidence": {
+    "source": "analysis/decompiler/export/raw/10f0_69ac_FAttack.c",
+    "candidate_setup_and_capacity_lines": "290-343",
+    "torpedo_score_lines": "383-515",
+    "damage_resolution_lines": "623-757",
+    "behavior": "rank eligible targets by resource value per expected shield/hull torpedoes, then call CTorpHit only for the selected target"
+  },
+  "host": {
+    "probe": "tests/f_attack_torpedo_target_probe.c",
+    "checks": 5,
+    "failures": 0,
+    "result": "PASS",
+    "case_coverage": [
+      "higher resource-value candidate wins",
+      "CTorpHit RNG is consumed only for the selected target",
+      "fully jammed zero-score candidates consume no RNG and dispatch no damage",
+      "damage callback and first-hit record target the selected token"
+    ],
+    "focused_regressions": {
+      "F_ATTACK_CHECKS": 34,
+      "F_ATTACK_COMPLEX_SCORE_CHECKS": 9,
+      "F_ATTACK_COMPLEX_SELECTION_CHECKS": 3,
+      "F_ATTACK_PACKED_PART_CHECKS": 13,
+      "F_ATTACK_RAW_DAMAGE_CHECKS": 7
+    },
+    "repository_tests": 519,
+    "repository_skips": 153,
+    "layout_assertions": 2241,
+    "function_declarations": 846,
+    "baseline_check": "PASS",
+    "diff_check": "PASS"
+  },
+  "native": {
+    "status": "packet_prepared_pending_win98_agent_reconnection",
+    "packet": "compat/vc152/f-attack-complex-native-e16/",
+    "guest_directory": "C:\\FAPNE16",
+    "packet_file_count": 42,
+    "packet_text_file_count": 41,
+    "packet_text_line_endings": "ASCII_CRLF",
+    "packaged_source_strict_c89_syntax": "PASS",
+    "prior_packet": "compat/vc152/f-attack-complex-native-e15/",
+    "prior_packet_source_is_stale": true
+  },
+  "remaining": [
+    "native replay of the E16 source revision",
+    "raw torpedo shield/hull damage split and residual-torpedo loop",
+    "complete raw complex-beam scaling acceptance",
+    "broader original damage differentials",
+    "full native battle replay",
+    "Step-6 ledger promotion"
+  ]
+}

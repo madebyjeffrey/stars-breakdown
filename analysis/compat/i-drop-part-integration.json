@@ -1,0 +1,44 @@
+{
+  "procedures": ["IDropPart"],
+  "phase2_step": "5/6",
+  "guest": "StarDev / Win98 / C:\\IDPINT",
+  "native_run": "runs/vmctl-vc152idpint/",
+  "host_report": "I_DROP_PART_INTEGRATION_CHECKS=24 FAILURES=0 RESULT=PASS",
+  "native_report": "I_DROP_PART_INTEGRATION_CHECKS=24 FAILURES=0 RESULT=PASS",
+  "native_build": {
+    "compile": "PASS",
+    "link": "PASS",
+    "process_exit": 0,
+    "program_error_dialog": false,
+    "screen_capture": "runs/vmctl-vc152idpint/native-screen.bmp"
+  },
+  "packed_boundaries": {
+    "hul_raw_size": 123,
+    "hul_slots_offset": 58,
+    "hs_raw_size": 4,
+    "hs_grhst_offset": 0,
+    "hs_quantity_offset": 2,
+    "hul_slot_count_offset": 122
+  },
+  "integration": {
+    "raw_hull_and_slot_round_trip_checked": true,
+    "empty_side_source_removal_checked": true,
+    "capacity_limited_merge_checked": true,
+    "source_quantity_decrement_checked": true,
+    "incompatible_drop_rejection_checked": true,
+    "no_modify_preservation_checked": true,
+    "hit_test_and_redraw_are_explicit_callbacks": true,
+    "service_result_offsets_invented": false
+  },
+  "original_instruction_evidence": {
+    "raw_source": "analysis/decompiler/export/raw/10c8_5476_IDropPart.c",
+    "codeview_types": "analysis/debug/types.json",
+    "live_designer_boundary": "analysis/compat/i-drop-part-live-diagnostic.md",
+    "complete_drag_trace": false
+  },
+  "remaining_scope": [
+    "exact Win16 slot hit testing and drag initiation",
+    "build-dialog redraw and USER/GDI control integration",
+    "complete original-executable drop behavior"
+  ]
+}

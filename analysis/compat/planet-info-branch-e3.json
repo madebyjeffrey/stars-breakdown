@@ -1,0 +1,16 @@
+{
+  "procedures": ["PtDisplayPlanetPopInfo", "PtDisplayPlanetStateInfo"],
+  "milestone": "branch-integration-e3",
+  "scope": "host-only",
+  "checks": 9,
+  "failures": 0,
+  "result": "PASS",
+  "native_status": "pending_guest_agent_reconnect",
+  "step5_units_closed": 0,
+  "evidence": [
+    "reconstructed/src/pt_display_planet_pop_info.c",
+    "reconstructed/src/pt_display_planet_state_info.c",
+    "reconstructed/include/core.h",
+    "tests/planet_info_branch_probe.c"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "procedure": "DoMacintiAiTurn",
+  "checkpoint": "E2 policy boundary host support",
+  "status": "supporting host evidence; native pending",
+  "checks": 11,
+  "host_report": "MACINTI_AI_POLICY_BOUNDARY_CHECKS=11 FAILURES=0 RESULT=PASS",
+  "covered": [
+    "owned, unowned, hostile-starbase, and hostile-ordinary planet states",
+    "mineral-score saturation and viability threshold",
+    "zero-limit and full production queue predicates",
+    "queue and hull-batch affordability",
+    "packet threat step, cap, and starbase increment",
+    "owned repair, transport, and colonizer fleet-role predicates",
+    "foreign-fleet exclusion from the typed turn visit"
+  ],
+  "remaining": [
+    "native replay",
+    "exact original retarget, colonizer, and transport predicates",
+    "broader packed order mutation",
+    "original full-turn differential",
+    "Step-6 promotion"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "procedures": [
+    "TargetCyberArmada",
+    "DoCyberAiTurn"
+  ],
+  "milestone": "ai-cyber-armada-hostile-gate-e5",
+  "scope": "host-only",
+  "checks": 4,
+  "failures": 0,
+  "result": "PASS",
+  "report": "TARGET_CYBER_ARMADA_HOSTILE_GATE_CHECKS=4 FAILURES=0 RESULT=PASS",
+  "step5_units_closed": 0,
+  "coverage": {
+    "current_planet_lookup": true,
+    "no_destination_enumeration": true,
+    "no_movement": true,
+    "no_task_clear": true
+  },
+  "evidence": [
+    "reconstructed/src/target_cyber_armada.c",
+    "tests/target_cyber_armada_hostile_gate_probe.c",
+    "analysis/decompiler/export/raw/10a8_51a4_TargetCyberArmada.c"
+  ]
+}

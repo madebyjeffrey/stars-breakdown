@@ -1,0 +1,27 @@
+{
+  "procedures": [
+    "TargetCyberArmada",
+    "DoCyberAiTurn"
+  ],
+  "milestone": "ai-cyber-armada-order-retention-e4",
+  "scope": "host-only",
+  "checks": 12,
+  "failures": 0,
+  "result": "PASS",
+  "report": "TARGET_CYBER_ARMADA_ORDER_RETENTION_CHECKS=12 FAILURES=0 RESULT=PASS",
+  "step5_units_closed": 0,
+  "coverage": {
+    "valid_near_planet_continuation": true,
+    "stale_planet_rejection": true,
+    "nearby_fleet_retention": true,
+    "distant_fleet_continuation": true,
+    "current_order_lookup_gates": true
+  },
+  "evidence": [
+    "reconstructed/src/target_cyber_armada.c",
+    "tests/target_cyber_armada_order_retention_probe.c",
+    "tests/target_cyber_armada_source_probe.c",
+    "tests/ai_cyber_armada_plord_integration_probe.c",
+    "analysis/decompiler/export/raw/10a8_51a4_TargetCyberArmada.c"
+  ]
+}

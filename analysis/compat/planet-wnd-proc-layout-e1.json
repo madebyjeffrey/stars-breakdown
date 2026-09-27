@@ -1,0 +1,37 @@
+{
+  "procedure": "PlanetWndProc",
+  "phase2_step": "5/6",
+  "evidence_unit": "E1_exact_child_layout",
+  "host_probe": {
+    "source": "tests/planet_wnd_proc_layout_probe.c",
+    "checks": 48,
+    "failures": 0,
+    "result": "PASS"
+  },
+  "native_probe": {
+    "package": "compat/vc152/planet-wnd-proc-layout-e1/",
+    "status": "COMPILE=PASS LINK=PASS",
+    "report": "runs/vmctl-vc152pwle/PWLE1.TXT",
+    "checks": 48,
+    "failures": 0,
+    "result": "PASS",
+    "process_exit": 0,
+    "program_error_dialog": false,
+    "compiler_warning": "The VC1.52c build retains one signed/unsigned comparison warning in the host/native assertion loop; the build and probe pass.",
+    "initial_packaging_diagnostic": "The first package copy retained an unguarded host printf and failed only at no-CRT link; the failed logs are preserved with the passing rerun."
+  },
+  "covers": [
+    "three order comboboxes, their styles, heights, and bold Arial8 font",
+    "order edit control, four-character limit, real edit-procedure capture, and fake subclass installation",
+    "battle and ship comboboxes, ship dropdown client-height capture, and ship/fleet/production listboxes",
+    "thirteen command buttons and the report button resource sequence",
+    "compressed string IDs 0x63-0x6c, 0x19f-0x1ab, and 799",
+    "typed handle propagation into the reconstructed PlanetWndProc state"
+  ],
+  "original_boundary": "The raw WM_CREATE path creates 23 child windows in the recorded order, passes the recovered styles and dimensions, resolves the compressed labels, limits and subclasses the order edit, captures the ship dropdown client height, and applies bold or normal Arial8 fonts to the same controls. The host and native probes assert the complete trace rather than only the final handles.",
+  "remaining": [
+    "E2 packed transfer lookup",
+    "E3 message/focus/drawing integration",
+    "step-6 ledger promotion"
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "sources": {
+    "source_hst": {
+      "path": "runs/vmctl-syact3/BACKUP/CLEAN.HST",
+      "sha256": "aa6161bb6c95c8276b7a5d12e5a12d9999e3dea0fa242a3be89a94a05c45df3c"
+    },
+    "racebit_hst": {
+      "path": "runs/syorig-racebit5-bundle-1/CLEAN.HST",
+      "sha256": "22e08ebd6db8ccf2c163e84a6637cf507a79cf4fa78fd103cbbeb9b5a72d4c4b"
+    },
+    "clean_m1": {
+      "path": "runs/vmctl-syorig1/CLEAN.M1",
+      "sha256": "96e388d36aa02b6e6640b97e3f0e18e81ffb8b052a244807723c1b516e48bb80"
+    },
+    "racebit_m1": {
+      "path": "runs/vmctl-syrb5/CLEAN.M1",
+      "sha256": "030f2d47dbf4c4d4ff4dd6385423fa0c80ca96ac6a20c1f9e83a740aa0bd7230"
+    }
+  },
+  "candidate_race_bits": 32,
+  "outputs": {
+    "clean_m1": {
+      "planet10": {
+        "owner": 0,
+        "flags": 11143,
+        "levels": [
+          247,
+          241,
+          247
+        ],
+        "concentrations": [
+          68,
+          87,
+          68
+        ],
+        "environment": [
+          50,
+          50,
+          50
+        ],
+        "auxiliary_word": 8259,
+        "minerals": [
+          476,
+          902,
+          383,
+          287
+        ],
+        "improvements": {
+          "population_delta": 50,
+          "mines": 10,
+          "factories": 10,
+          "defenses": 10
+        },
+        "mineral_selector": 170,
+        "body_hex": "0a00872b15f7f1f74457443232324320aadc0186037f011f01320aa0000a00000000000000"
+      },
+      "messages": [
+        "3f000a000a"
+      ],
+      "owner0_fleet_ids": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    "racebit_m1": {
+      "planet10": {
+        "owner": 0,
+        "flags": 11143,
+        "levels": [
+          247,
+          241,
+          247
+        ],
+        "concentrations": [
+          68,
+          87,
+          68
+        ],
+        "environment": [
+          50,
+          50,
+          50
+        ],
+        "auxiliary_word": 8257,
+        "minerals": [
+          486,
+          909,
+          389,
+          287
+        ],
+        "improvements": {
+          "population_delta": 50,
+          "mines": 10,
+          "factories": 10,
+          "defenses": 10
+        },
+        "mineral_selector": 170,
+        "body_hex": "0a00872b15f7f1f74457443232324120aae6018d0385011f01320aa0000a00000000000000"
+      },
+      "messages": [
+        "5d000a000017000a0e0043010a000017000a0e001701ffff3f000a000a"
+      ],
+      "owner0_fleet_ids": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    }
+  },
+  "resource_scrap_minus_clean_minerals": [
+    10,
+    7,
+    6,
+    0
+  ],
+  "resource_message_ids": [
+    93,
+    323,
+    63
+  ]
+}

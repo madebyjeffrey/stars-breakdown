@@ -1,5 +1,10 @@
 # Uncertainty log
 
+This log preserves questions and evidence across checkpoints. For the current
+source-review totals use [TODO5](../TODO5.md); for current Phase 2 acceptance
+gates use [TODO7](../TODO7.md) and the numbered [EVIDENCE](../EVIDENCE.md)
+index. Older entries retain the scope and counts of their recorded experiments.
+
 Entries are open unless marked resolved. Resolve entries by adding evidence and a resolution date; retain their history. These questions block later stages, not completion of the baseline inventory.
 
 | ID | Question and evidence | Impact | Concrete resolution task |

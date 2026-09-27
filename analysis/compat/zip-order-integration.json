@@ -1,0 +1,48 @@
+{
+  "procedures": ["ZipOrderDlg"],
+  "phase2_step": "6/6",
+  "closed_step5_evidence": ["E1 packed order/name storage and mutation boundary", "E2 localized resource IDs and strings", "E3 real USER/message-loop mutation and original caller boundary"],
+  "guest": "StarDev / Win98 / C:\\STARS!\\STARS.EXE",
+  "run": "runs/vmctl-vc152current/",
+  "original_executable_observation": {
+    "game_window": "Stars! -- A Barefoot JayWalk -- Humanoids -- game.m1 [starsframe]",
+    "selected_fleet": "Stalwart Defender #5",
+    "dialog_title": "Rename Fleet [#32770]",
+    "field_value": "Stalwart Defender #5",
+    "cancel_result": "Dialog closed and the original fleet name remained unchanged",
+    "program_error": false,
+    "screenshots": ["runs/vmctl-vc152current/fleet-rename.bmp"]
+  },
+  "original_instruction_boundary": {
+    "source": "analysis/decompiler/export/raw/1080_0000_ZipOrderDlg.c",
+    "observed_sequence": [
+      "the fleet Rename command opens the original rename dialog",
+      "the current fleet name is presented for editing",
+      "Cancel closes without committing a new name"
+    ]
+  },
+  "reconstructed_acceptance": {
+    "resource_strings": {
+      "probe_source": "tests/zip_order_dlg_source_probe.c",
+      "native_build_report": "runs/vmctl-vc152zod/ZODSTA-RES.TXT",
+      "native_report": "runs/vmctl-vc152zod/ZODR-RES.TXT",
+      "checks": 11,
+      "failures": 0,
+      "strings": {"0x231": "Customize Zip Orders", "0x4c1": "Custom Orders", "0x4c8": "Empty Custom Slot", "0x6d": "(no action)", "0x6e": "Load All Available", "0x6f": "Unload All", "0x70": "Load Exactly...", "0x71": "Unload Exactly..."},
+      "program_error": false
+    },
+    "native_user_loop": {
+      "build_report": "runs/vmctl-vc152zodmsg/ZODMSGSTA.TXT",
+      "compile_log": "runs/vmctl-vc152zodmsg/ZODMSGCL.LOG",
+      "link_log": "runs/vmctl-vc152zodmsg/ZODMSGLINK.LOG",
+      "report": "runs/vmctl-vc152zodmsg/ZODMSG.TXT",
+      "checks": 12,
+      "failures": 0,
+      "covers": ["actual parent and child controls", "paint", "radio selection", "Create", "Rename", "Delete", "control-color", "Help", "OK teardown"],
+      "program_error": false,
+      "screenshot": "runs/vmctl-vc152zodmsg/native-screen.bmp"
+    },
+    "native_probe": "runs/vmctl-vc152zod/ZODR2.TXT",
+    "comparison": "The original Rename Fleet dialog and cancel boundary agree with the typed ZipOrderDlg rename/close boundary. Packed order records, exact localized resource IDs/text, and the real USER/message-loop Create/Rename/Delete/Help/OK integration all pass without a Program Error dialog. Step-5 acceptance and Step-6 promotion are complete."
+  }
+}

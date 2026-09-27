@@ -1,0 +1,40 @@
+{
+  "procedures": ["FDoCoolBattle"],
+  "phase2_step": "5/6",
+  "guest": "StarDev / Win98 / C:\\CB",
+  "native_run": "runs/vmctl-vc152fcb/",
+  "native_report": "F_DO_COOL_BATTLE_CHECKS=53 FAILURES=0 RESULT=PASS",
+  "staged_log_native_run": "runs/vmctl-vc152fcb2/",
+  "staged_log_native_report": "F_DO_COOL_BATTLE_CHECKS=58 FAILURES=0 RESULT=PASS",
+  "packed_boundaries": {
+    "battle_header_size": 14,
+    "battle_record_size": 6,
+    "record_length_excludes_existing_prefix": true,
+    "overflow_marker_size": 2,
+    "overflow_marker": "0xffff"
+  },
+  "integration": {
+    "header_fields_checked": true,
+    "movement_record_fields_checked": true,
+    "attack_record_fields_checked": true,
+    "append_at_existing_end_checked": true,
+    "per_battle_length_checked": true,
+    "overflow_marker_checked": true,
+    "staged_append_prefix_preserved": true,
+    "staged_append_report_length_excludes_prefix": true
+  },
+  "original_executable": {
+    "surface": "Battle report",
+    "consumer_boundary_visible": true,
+    "program_error": false,
+    "populated_battle_replay_differential": false,
+    "screenshot": "runs/vmctl-vc152current/report-battles.bmp"
+  },
+  "remaining_scope": [
+    "packed token/global-state mapping",
+    "exact movement geometry",
+    "exact FAttack and damage behavior",
+    "remaining record cases",
+    "full battle replay"
+  ]
+}

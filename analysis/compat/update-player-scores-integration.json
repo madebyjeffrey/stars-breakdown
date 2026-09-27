@@ -1,0 +1,53 @@
+{
+  "procedures": ["UpdatePlayerScores"],
+  "phase2_step": "6/6",
+  "guest": "StarDev / Win98 / C:\\UPSINT2",
+  "native_run": "runs/vmctl-vc152upsint2/",
+  "native_report": "UPDATE_PLAYER_SCORES_E2_CHECKS=36 FAILURES=0 RESULT=PASS",
+  "packed_boundaries": {
+    "scorex_score_base": 4,
+    "scorex_lscore": 4,
+    "scorex_cresources": 8,
+    "scorex_cplanet": 12,
+    "scorex_rgcsh2": 20,
+    "scorex_ctechlevels": 22,
+    "scorex_rank": 2,
+    "scorex_valid_and_achievement_word": 0,
+    "player_fdead": 84
+  },
+  "message_boundary": {
+    "kind": "prepended_player_message",
+    "checked": true,
+    "record_headers_and_lengths_checked": true,
+    "message_count_and_dirty_invalidation_checked": true
+  },
+  "step5_e2": {
+    "host_report": "UPDATE_PLAYER_SCORES_E2_CHECKS=36 FAILURES=0 RESULT=PASS",
+    "cases": [
+      "empty-player death and achievement mask",
+      "unique winner and runner-up",
+      "tied winner candidates",
+      "all-but-one-dead elimination",
+      "single-player turn",
+      "multiple achievement-mask recipients"
+    ],
+    "independent_oracle": true,
+    "packed_report_checksum": true,
+    "native_compile": "PASS",
+    "native_link": "PASS",
+    "native_program_error": false
+  },
+  "original_executable": {
+    "dialog": "Player Scores",
+    "headings_visible": true,
+    "category_grid_visible": true,
+    "populated_values_visible": false,
+    "program_error": false,
+    "screenshot": "runs/vmctl-vc152current/score-report.bmp"
+  },
+  "remaining_scope": [],
+  "e1_closed": true,
+  "e2_closed": true,
+  "promoted": true,
+  "native_screenshot": "runs/vmctl-vc152upsint2/native-screen-final2.bmp"
+}

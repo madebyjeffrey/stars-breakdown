@@ -1,0 +1,23 @@
+{
+  "procedures": ["DrawPlanShipBitmap"],
+  "milestone": "draw-plan-ship-bitmap-fleet-e4",
+  "scope": "host-only",
+  "checks": 6,
+  "failures": 0,
+  "result": "PASS",
+  "report": "DRAW_PLAN_SHIP_BITMAP_FLEET_CHECKS=6 FAILURES=0 RESULT=PASS",
+  "step5_units_closed": 0,
+  "coverage": {
+    "fleet_identity_forwarding": true,
+    "tile_origin_forwarding": true,
+    "normal_positioning": true,
+    "grid_positioning": true,
+    "raw_draw_fleet_tail": [1, -1, 0, 0, -1, 0]
+  },
+  "evidence": [
+    "reconstructed/include/core.h",
+    "reconstructed/src/draw_plan_ship_bitmap.c",
+    "tests/draw_plan_ship_bitmap_fleet_boundary_probe.c",
+    "analysis/decompiler/export/raw/1048_3336_DrawPlanShipBitmap.c"
+  ]
+}

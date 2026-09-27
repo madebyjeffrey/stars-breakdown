@@ -1,0 +1,56 @@
+{
+  "procedures": ["FTrackXfer"],
+  "phase2_step": "5/6",
+  "guest": "StarDev / Win98 / C:\\FTXINT",
+  "native_run": "runs/vmctl-vc152ftxint/",
+  "host_report": "F_TRACK_XFER_PACKED_CHECKS=22 FAILURES=0 RESULT=PASS",
+  "native_report": "F_TRACK_XFER_PACKED_CHECKS=22 FAILURES=0 RESULT=PASS",
+  "native_build": {
+    "compile": "PASS",
+    "link": "PASS",
+    "process_exit": 0,
+    "program_error_dialog": false
+  },
+  "packed_transfer": {
+    "size": 128,
+    "offsets": {
+      "id": 0,
+      "grobj": 2,
+      "fleet_owner": 6,
+      "fleet_cargo": 80,
+      "thing_turn": 20
+    },
+    "overlapping_views": {
+      "fleet_size": 124,
+      "planet_size": 56,
+      "thing_size": 18
+    }
+  },
+  "integration": {
+    "raw_identity_and_kind_checked": true,
+    "raw_owner_gate_checked": true,
+    "drag_capture_and_release_checked": true,
+    "nonzero_origin_proportional_drag_checked": true,
+    "signed_supply_checked": true,
+    "bounded_dialog_transfer_checked": true,
+    "packed_source_and_destination_mutation_checked": true,
+    "final_refresh_and_redraw_checked": true
+  },
+  "service_boundary": {
+    "exact_xfer_supply_and_change_cargo": "callback-owned",
+    "full_fleet_planet_thing_lookup": "callback-owned",
+    "complete_win16_capture_and_message_loop": "callback-owned"
+  },
+  "original_instruction_evidence": {
+    "raw_source": "analysis/decompiler/export/raw/1050_5a16_FTrackXfer.c",
+    "codeview_types": "analysis/debug/types.json",
+    "original_consumer_boundary": "analysis/compat/f-track-xfer-integration.md"
+  },
+  "remaining_scope": [
+    "exact original XferSupply and ChgCargo semantics",
+    "full fleet, planet, and thing lookup integration",
+    "complete Win16 capture and message-loop behavior",
+    "original differential coverage",
+    "final review and promotion"
+  ]
+}

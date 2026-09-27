@@ -1,0 +1,35 @@
+{
+  "procedure": "FillBuildDD",
+  "phase2_step": "5/6",
+  "evidence_unit": "E1_packed_design_records",
+  "host_probe": {
+    "source": "tests/fill_build_dd_packed_probe.c",
+    "checks": 8,
+    "failures": 0,
+    "result": "PASS"
+  },
+  "native_probe": {
+    "package": "compat/vc152/fill-build-dd-packed/",
+    "status": "COMPILE=PASS LINK=PASS",
+    "report": "runs/vmctl-vc152fbdp/FBDPE1.TXT",
+    "checks": 8,
+    "failures": 0,
+    "result": "PASS",
+    "process_exit": 0,
+    "program_error_dialog": false,
+    "compiler_warning": "The existing VC1.52c build retains one signed/unsigned comparison warning in the enemy-design loop; the build and probe pass."
+  },
+  "covers": [
+    "147-byte packed _shdef stride",
+    "fFree visibility bit at offset 123",
+    "class name bytes at offset 8",
+    "cExist state at offset 131 driving edit enablement",
+    "typed shadow-record conflict and neighboring-record preservation"
+  ],
+  "original_boundary": "The raw original listing uses a 0x93-byte stride, checks the packed bit at +0x7b, reads the name at +8, and tests the two words of cExist at +0x83/+0x85. The native packet exercises that exact packed boundary; the existing live Ship & Starbase Designer observation covers the surrounding selector surface.",
+  "remaining": [
+    "E2 localized labels/resources",
+    "E3 complete population and caller/control integration",
+    "step-6 ledger promotion"
+  ]
+}

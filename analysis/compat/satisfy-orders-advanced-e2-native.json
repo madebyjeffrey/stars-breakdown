@@ -1,0 +1,39 @@
+{
+  "procedures": ["SatisfyOrders"],
+  "phase2_step": "5/6",
+  "unit": "E2 supporting advanced service-boundary milestone",
+  "status": "supporting milestone; named E2 remains open",
+  "guest": "StarDev / Win98 / C:\\SYOE7",
+  "native_run": "runs/vmctl-vc152syoe7/",
+  "host_report": "SATISFY_ORDERS_ADVANCED_E2_CHECKS=20 FAILURES=0 RESULT=PASS",
+  "native_report": "SATISFY_ORDERS_ADVANCED_E2_CHECKS=20 FAILURES=0 RESULT=PASS",
+  "native_build": {
+    "compile": "PASS",
+    "link": "PASS",
+    "process_exit": 0,
+    "program_error_dialog": false
+  },
+  "boundaries": [
+    "typed technology-discovery callback after transferred resources",
+    "typed created-transfer ship-copy callback",
+    "typed point-drop salvage mineral handoff",
+    "ordinary and player-transfer message-layout trace",
+    "packed technology-flag propagation"
+  ],
+  "remaining": [
+    "original technology-table/result binding",
+    "actual fleet and ship-design record copying",
+    "concrete salvage object creation and placement",
+    "complete raw message argument layouts",
+    "E3 full-turn and original differential"
+  ],
+  "evidence": [
+    "tests/satisfy_orders_advanced_e2_probe.c",
+    "compat/vc152/satisfy-orders-advanced-e2-native/",
+    "runs/vmctl-vc152syoe7/SYOE7-host.TXT",
+    "runs/vmctl-vc152syoe7/SYOSTA-final.TXT",
+    "runs/vmctl-vc152syoe7/SYOCL-final.LOG",
+    "runs/vmctl-vc152syoe7/SYOLINK-final.LOG",
+    "runs/vmctl-vc152syoe7/SYOE7-pass.TXT"
+  ]
+}

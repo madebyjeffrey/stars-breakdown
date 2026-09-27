@@ -1,0 +1,186 @@
+{
+  "original_sha256": "ccab6682b55dae14dbf104e491cfbd3b32a6280022020032ae0615500949ba59",
+  "compiler": "Microsoft C/C++ Compiler Version 8.00c (VC++ 1.52c)",
+  "flags": "/c /AM /GA /GEs /Zp1 /Od /Gs /W3 /Fc",
+  "comparison": "No masked bytes; named OMF relocations resolved into the original address layout.",
+  "functions": [
+    {
+      "name": "InitializeMenu",
+      "ne_segment": 5,
+      "original_offset": 21366,
+      "original_bytes": 838,
+      "generated_bytes": 838,
+      "length_difference": 0,
+      "exact_after_address_resolution": true,
+      "differing_bytes": 0,
+      "differences": [],
+      "fixups": [
+        {
+          "offset": 23,
+          "width": 4,
+          "target": "_GETMENU",
+          "resolved_value": "0x14f80290"
+        },
+        {
+          "offset": 39,
+          "width": 4,
+          "target": "_GetASubMenu",
+          "resolved_value": "0x1020589a"
+        },
+        {
+          "offset": 69,
+          "width": 4,
+          "target": "_DELETEMENU",
+          "resolved_value": "0x14f802ec"
+        },
+        {
+          "offset": 174,
+          "width": 4,
+          "target": "___fstrcpy",
+          "resolved_value": "0x11180f82"
+        },
+        {
+          "offset": 210,
+          "width": 4,
+          "target": "_INSERTMENU",
+          "resolved_value": "0x14f802e4"
+        },
+        {
+          "offset": 284,
+          "width": 4,
+          "target": "_ENABLEMENUITEM",
+          "resolved_value": "0x14f8028c"
+        },
+        {
+          "offset": 321,
+          "width": 4,
+          "target": "_ENABLEMENUITEM",
+          "resolved_value": "0x14f8028c"
+        },
+        {
+          "offset": 401,
+          "width": 4,
+          "target": "_ENABLEMENUITEM",
+          "resolved_value": "0x14f8028c"
+        },
+        {
+          "offset": 456,
+          "width": 4,
+          "target": "_ENABLEMENUITEM",
+          "resolved_value": "0x14f8028c"
+        },
+        {
+          "offset": 511,
+          "width": 4,
+          "target": "_ENABLEMENUITEM",
+          "resolved_value": "0x14f8028c"
+        },
+        {
+          "offset": 524,
+          "width": 4,
+          "target": "_GetASubMenu",
+          "resolved_value": "0x1020589a"
+        },
+        {
+          "offset": 571,
+          "width": 4,
+          "target": "_CHECKMENUITEM",
+          "resolved_value": "0x14f80288"
+        },
+        {
+          "offset": 607,
+          "width": 4,
+          "target": "_CHECKMENUITEM",
+          "resolved_value": "0x14f80288"
+        },
+        {
+          "offset": 626,
+          "width": 4,
+          "target": "_GETMENU",
+          "resolved_value": "0x14f80290"
+        },
+        {
+          "offset": 640,
+          "width": 4,
+          "target": "_ENABLEMENUITEM",
+          "resolved_value": "0x14f8028c"
+        },
+        {
+          "offset": 652,
+          "width": 4,
+          "target": "_GETMENU",
+          "resolved_value": "0x14f80290"
+        },
+        {
+          "offset": 666,
+          "width": 4,
+          "target": "_ENABLEMENUITEM",
+          "resolved_value": "0x14f8028c"
+        },
+        {
+          "offset": 679,
+          "width": 4,
+          "target": "_GetASubMenu",
+          "resolved_value": "0x1020589a"
+        },
+        {
+          "offset": 697,
+          "width": 4,
+          "target": "_GETSUBMENU",
+          "resolved_value": "0x14f80294"
+        },
+        {
+          "offset": 719,
+          "width": 4,
+          "target": "_CHECKMENUITEM",
+          "resolved_value": "0x14f80288"
+        },
+        {
+          "offset": 727,
+          "width": 4,
+          "target": "_GETMENUITEMCOUNT",
+          "resolved_value": "0x14f802d0"
+        },
+        {
+          "offset": 754,
+          "width": 4,
+          "target": "_ENABLEMENUITEM",
+          "resolved_value": "0x14f8028c"
+        },
+        {
+          "offset": 782,
+          "width": 4,
+          "target": "_GetASubMenu",
+          "resolved_value": "0x1020589a"
+        },
+        {
+          "offset": 800,
+          "width": 4,
+          "target": "_GETSUBMENU",
+          "resolved_value": "0x14f80294"
+        },
+        {
+          "offset": 819,
+          "width": 4,
+          "target": "_CHECKMENUITEM",
+          "resolved_value": "0x14f80288"
+        },
+        {
+          "offset": 828,
+          "width": 4,
+          "target": "_DRAWMENUBAR",
+          "resolved_value": "0x14f80298"
+        }
+      ],
+      "backpatch_records": 51,
+      "original_relocated_sha256": "688d4f4b99fd29a8c0b9afce5ade3eb130dd66064cc2ea976022505a984307a2",
+      "generated_resolved_sha256": "688d4f4b99fd29a8c0b9afce5ade3eb130dd66064cc2ea976022505a984307a2",
+      "source": "compat/mdi-initialize-menu-match/MDI.C"
+    }
+  ],
+  "all_functions_match": true,
+  "object_sha256": "4f40bfb8bf0fd30e7a675e923374431a9f4f9730bb8646fd32698102fe935be0",
+  "source_sha256": "f52f32e1357074c008821255156b9969514c34f2c6b28137273ab265af34f12c",
+  "build_log": "mdi.c\nmdi.c(354) : warning C4101: 'scratch' : unreferenced local variable\n",
+  "build_status": "PASS\n"
+}

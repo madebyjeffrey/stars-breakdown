@@ -1,0 +1,30 @@
+{
+  "scope": "Original-executable CLEAN.M1 turn-1 stable plaintext subset; not a production-source differential",
+  "turn": 1,
+  "source_files": [
+    {
+      "path": "runs/vmctl-syorig1/CLEAN.M1",
+      "sha256": "96e388d36aa02b6e6640b97e3f0e18e81ffb8b052a244807723c1b516e48bb80"
+    },
+    {
+      "path": "runs/step4/fixtures/clean-replay-a/CLEAN.M1",
+      "sha256": "5a80e815662233ab52d63ad4fc99357612969daad802802ee6742dc8c73dd151"
+    },
+    {
+      "path": "runs/step4/fixtures/clean-replay-b/CLEAN.M1",
+      "sha256": "0b44e03187df8143ecf256f7c7daf9475155628243ed506e4be0c475612a1b9b"
+    }
+  ],
+  "message": {"kind": 12, "body_hex": "3f000a000a"},
+  "fleet_kind": 16,
+  "order_kind": 20,
+  "order_body_hex": "680414050a000011",
+  "fleet_bodies_hex": [
+    "0000000007290a006804140501000100013200000001",
+    "0100000007290a006804140502000100022c0100000001",
+    "0200000007290a00680414050400010001c800000001",
+    "0300000007290a00680414050800010002c20100000001",
+    "0400000007290a00680414051000010002120200000001",
+    "0500000007290a00680414052000010001d200000001"
+  ]
+}

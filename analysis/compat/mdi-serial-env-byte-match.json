@@ -1,0 +1,90 @@
+{
+  "original_sha256": "ccab6682b55dae14dbf104e491cfbd3b32a6280022020032ae0615500949ba59",
+  "compiler": "Microsoft C/C++ Compiler Version 8.00c (VC++ 1.52c)",
+  "flags": "/c /AM /GA /GEs /Zp1 /Od /Gs /W3 /Fc",
+  "comparison": "No masked bytes; named OMF relocations resolved into the original address layout.",
+  "functions": [
+    {
+      "name": "FSerialAndEnvFromSz",
+      "ne_segment": 5,
+      "original_offset": 10988,
+      "original_bytes": 816,
+      "generated_bytes": 816,
+      "length_difference": 0,
+      "exact_after_address_resolution": true,
+      "differing_bytes": 0,
+      "differences": [],
+      "fixups": [
+        {
+          "offset": 38,
+          "width": 4,
+          "target": "__memset",
+          "resolved_value": "0x1118076e"
+        },
+        {
+          "offset": 305,
+          "width": 4,
+          "target": "___aFlshr",
+          "resolved_value": "0x11180d5c"
+        },
+        {
+          "offset": 406,
+          "width": 4,
+          "target": "_FValidSerialLong",
+          "resolved_value": "0x107048c4"
+        },
+        {
+          "offset": 441,
+          "width": 4,
+          "target": "_PushRandom",
+          "resolved_value": "0x10401440"
+        },
+        {
+          "offset": 457,
+          "width": 4,
+          "target": "_Randomize",
+          "resolved_value": "0x104015ea"
+        },
+        {
+          "offset": 504,
+          "width": 4,
+          "target": "_Random",
+          "resolved_value": "0x104016d2"
+        },
+        {
+          "offset": 557,
+          "width": 4,
+          "target": "_Random",
+          "resolved_value": "0x104016d2"
+        },
+        {
+          "offset": 614,
+          "width": 4,
+          "target": "_Random",
+          "resolved_value": "0x104016d2"
+        },
+        {
+          "offset": 758,
+          "width": 4,
+          "target": "_PopRandom",
+          "resolved_value": "0x104014a2"
+        },
+        {
+          "offset": 797,
+          "width": 4,
+          "target": "__memcpy",
+          "resolved_value": "0x11180742"
+        }
+      ],
+      "backpatch_records": 45,
+      "original_relocated_sha256": "dbe4cc9a8ec18e86ff2172b034d50d9c1630f087566de46e7216563902a0d063",
+      "generated_resolved_sha256": "dbe4cc9a8ec18e86ff2172b034d50d9c1630f087566de46e7216563902a0d063",
+      "source": "compat/mdi-serial-env-match/MDI.C"
+    }
+  ],
+  "all_functions_match": true,
+  "object_sha256": "aaf3608f19e145c2956dbe723f78cd630f554af1ba3c7873580aa9a2e03e4bb1",
+  "source_sha256": "7ebde07596dfdb158a85b4832382f6a986ceb04a53bc4e06437394caf0779955",
+  "build_log": "mdi.c\nmdi.c(340) : warning C4035: 'FSerialAndEnvFromSz' : no return value\nmdi.c(340) : warning C4102: 'return_value' : unreferenced label\nmdi.c(340) : warning C4101: 'scratch' : unreferenced local variable\n",
+  "build_status": "PASS\n"
+}

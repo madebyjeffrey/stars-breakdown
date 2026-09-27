@@ -1,0 +1,32 @@
+{
+  "procedures": [
+    "TargetCyberArmada",
+    "DoCyberAiTurn"
+  ],
+  "milestone": "ai-cyber-armada-plord-integration-e3",
+  "scope": "host-only",
+  "checks": 12,
+  "failures": 0,
+  "result": "PASS",
+  "report": "AI_CYBER_ARMADA_PLORD_INTEGRATION_CHECKS=12 FAILURES=0 RESULT=PASS",
+  "step5_units_closed": 0,
+  "coverage": {
+    "ordinary_planet_destination": true,
+    "enemy_fleet_fallback": true,
+    "destination_precedence": true,
+    "target_kind_and_identity": true,
+    "point_forwarding": true,
+    "planet_marking": true,
+    "planet_order_flags": true,
+    "fleet_order_flags": true,
+    "first_order_replacement": true,
+    "packed_record_preservation": true
+  },
+  "evidence": [
+    "reconstructed/src/target_cyber_armada.c",
+    "reconstructed/src/ai_plord.c",
+    "tests/ai_cyber_armada_plord_integration_probe.c",
+    "tests/target_cyber_armada_source_probe.c",
+    "analysis/decompiler/export/raw/10a8_51a4_TargetCyberArmada.c"
+  ]
+}

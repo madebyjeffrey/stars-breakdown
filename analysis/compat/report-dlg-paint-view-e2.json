@@ -1,0 +1,27 @@
+{
+  "procedure": "ReportDlg",
+  "milestone": "typed-paint-view-boundary-e2",
+  "scope": "host_and_native_paint_callback_with_teardown_failure",
+  "checks": 6,
+  "failures": 0,
+  "result": "PASS",
+  "packet_host_shape_compile": "PASS",
+  "native_status": "supporting_pass_exitprocess_direct_return_failed",
+  "native_build_status": "runs/vmctl-vc152rptpvpe2/RPTPVSTA-exitprocess.TXT",
+  "native_compile_log": "runs/vmctl-vc152rptpvpe2/RPTPVCL-exitprocess.LOG",
+  "native_link_log": "runs/vmctl-vc152rptpvpe2/RPTPVLINK-exitprocess.LOG",
+  "native_report": "runs/vmctl-vc152rptpvpe2/RPTPVE-exitprocess.TXT",
+  "native_process_exit_exitprocess": 0,
+  "native_program_error_dialog_exitprocess": false,
+  "native_direct_return_exit_code": 130,
+  "native_direct_return_program_error_dialog": true,
+  "native_direct_return_report": "runs/vmctl-vc152rptpvpe2/RPTPVE-failure.TXT",
+  "native_direct_return_screenshot": "runs/vmctl-vc152rptpvpe2/hung.png",
+  "native_report_before_teardown_failure": "REPORT_DLG_PAINT_VIEW_CHECKS=6 FAILURES=0 RESULT=PASS",
+  "step5_units_closed": 0,
+  "evidence": [
+    "reconstructed/src/report_dlg.c",
+    "reconstructed/include/core.h",
+    "tests/report_dlg_paint_view_probe.c"
+  ]
+}

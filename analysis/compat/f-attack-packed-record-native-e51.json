@@ -1,0 +1,65 @@
+{
+  "procedures": ["FAttack", "FLookupPart"],
+  "checkpoint": "packed raw-part resolver native integration E51",
+  "status": "supporting Step-5 evidence; no named unit closed",
+  "source": [
+    "reconstructed/src/f_attack.c",
+    "reconstructed/src/lookup_part.c"
+  ],
+  "fixture": {
+    "source": "target/stars.exe unrelocated NE segment 2",
+    "executable_sha256": "ccab6682b55dae14dbf104e491cfbd3b32a6280022020032ae0615500949ba59",
+    "segment_bytes": 25256,
+    "segment_sha256": "52b2fb4ebc7c8ea4527b2d277fcaf3218c916053d9e295e33900cc637a753698",
+    "returned_segment_matches_package": true
+  },
+  "host": {
+    "packed_part": "F_ATTACK_PACKED_PART_CHECKS=24 FAILURES=0 RESULT=PASS",
+    "torpedo_record_residual": "F_ATTACK_RAW_TORPEDO_DISPATCH_CHECKS=17 FAILURES=0 RESULT=PASS",
+    "targeted_tests": "2 passed",
+    "diff_check": "PASS",
+    "full_suite_reference": "E47: 524 passed, 153 expected skips, 2241 layout assertions, 846 declarations"
+  },
+  "native_e51": {
+    "guest_directory": "C:\\FAPNE51",
+    "run_directory": "runs/vmctl-fapne51",
+    "build_status": {
+      "compile": "PASS",
+      "link": "PASS"
+    },
+    "executables": {
+      "packed_part": {
+        "process_exit": 0,
+        "report": "F_ATTACK_PACKED_PART_CHECKS=24 FAILURES=0 RESULT=PASS"
+      },
+      "torpedo_record_residual": {
+        "process_exit": 0,
+        "report": "F_ATTACK_RAW_TORPEDO_DISPATCH_CHECKS=17 FAILURES=0 RESULT=PASS"
+      }
+    },
+    "program_error_dialog": false,
+    "preserved": [
+      "reports",
+      "build and link logs",
+      "executables",
+      "maps",
+      "objects",
+      "returned original segment",
+      "guest screenshot",
+      "agent log"
+    ]
+  },
+  "todo6_counters_unchanged": {
+    "evidence_closed": 120,
+    "evidence_total": 152,
+    "promotion_units_open": 10,
+    "practical_open_work_items": 42,
+    "fattack_named_step5_units_closed": 0
+  },
+  "remaining": [
+    "complete native FLookupPart race, hidden-part, and TechStatus services",
+    "broader original-executable differential for beam and torpedo damage sequences",
+    "full native battle replay and final differential",
+    "Phase-2 promotion"
+  ]
+}

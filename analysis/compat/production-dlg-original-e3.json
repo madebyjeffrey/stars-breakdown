@@ -1,0 +1,25 @@
+{
+  "procedure": "ProductionDlg",
+  "phase2_step": "6/6",
+  "evidence_unit": "E3_original_queue_differential",
+  "guest": "StarDev / Win98 / original C:\\STARS!\\STARS.EXE",
+  "original_boundary": {
+    "parent_title": "Production Queue for Oop Be Gone",
+    "menu_entries": ["<Default>", "<Customize>"],
+    "editor_title": "Customize Production Templates",
+    "selection": "real right-click on template diamond followed by real second-row mouse selection",
+    "cancel_return": true,
+    "program_error_dialog": false
+  },
+  "evidence": [
+    "analysis/compat/production-dlg-original-e3.md",
+    "analysis/decompiler/export/raw/10d0_1204_ProductionDlg.c",
+    "analysis/compat/zip-prod-dlg-integration.md",
+    "runs/vmctl-vc152zpd-e3/",
+    "runs/vmctl-vc152pdgrs3/production-refocus2.png",
+    "runs/vmctl-vc152pdgrs3/original-production-right-real.png",
+    "runs/vmctl-vc152pdgrs3/original-production-customize-real2.png",
+    "runs/vmctl-vc152pdgrs3/original-production-after-customize-cancel.png"
+  ],
+  "scope_note": "This closes the original ProductionDlg queue-menu/editor transition and cancel-return boundary. The matching typed queue, native USER, packed-global, resource-ID/order, and promoted ZipProdDlg mutation evidence are prerequisites for final ledger promotion."
+}

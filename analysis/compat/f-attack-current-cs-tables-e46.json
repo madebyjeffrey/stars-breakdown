@@ -1,0 +1,53 @@
+{
+  "procedures": ["FLookupPart", "FAttack"],
+  "checkpoint": "E46",
+  "address_model": {
+    "procedure": "NE 02:524E",
+    "selector_source": "current CS",
+    "synthetic_selector_warning": "Ghidra 0x10e0 maps to NE29 and is not the selector stored by the FLookupPart table branches",
+    "all_valid_families_store_cs": true,
+    "families": [
+      {"group": "0x0001", "name": "hull", "base": "0x0000", "stride": "0x4E", "mov_dx_cs": "1008:52AF"},
+      {"group": "0x0002", "name": "engine", "base": "0x0768", "stride": "0x38", "mov_dx_cs": "1008:5C36"},
+      {"group": "0x0004", "name": "scanner", "base": "0x0AE8", "stride": "0x36", "mov_dx_cs": "1008:53F6"},
+      {"group": "0x0008", "name": "armor", "base": "0x04E0", "stride": "0x36", "mov_dx_cs": "1008:5720"},
+      {"group": "0x0010", "name": "shield_beam", "base": "0x2450", "stride": "0x3C", "mov_dx_cs": "1008:5CFF"},
+      {"group": "0x0020", "name": "torpedo", "base": "0x2180", "stride": "0x3C", "mov_dx_cs": "1008:5D95"},
+      {"group": "0x0040", "name": "bomb", "base": "0x1E1A", "stride": "0x3A", "mov_dx_cs": "1008:5DEA"},
+      {"group": "0x0080", "name": "mine", "base": "0x1508", "stride": "0x36", "mov_dx_cs": "1008:5B0B"},
+      {"group": "0x0100", "name": "special", "base": "0x12EC", "stride": "0x36", "mov_dx_cs": "1008:5A07"},
+      {"group": "0x0200", "name": "planetary", "base": "0x4D8A", "stride": "0x38", "mov_dx_cs": "1008:592B"},
+      {"group": "0x0400", "name": "message", "base": "0x4872", "stride": "0x8F", "mov_dx_cs": "1008:5684"},
+      {"group": "0x0800", "name": "mech", "base": "0x0D04", "stride": "0x36", "mov_dx_cs": "1008:57AB"},
+      {"group": "0x1000", "name": "fuel", "base": "0x109A", "stride": "0x36", "mov_dx_cs": "1008:5899"},
+      {"group": "0x2000", "name": "battle", "base": "0x19E2", "stride": "0x36", "mov_dx_cs": "1008:5FB9"},
+      {"group": "0x4000", "name": "component", "base": "0x29F0", "stride": "0x8F", "mov_dx_cs": "1008:5481"},
+      {"group": "0x8000", "name": "zip", "base": "0x16B8", "stride": "0x36", "mov_dx_cs": "1008:5E8D"}
+    ]
+  },
+  "validation": {
+    "host_table_probe": "LOOKUP_PART_TABLE_CHECKS=66 FAILURES=0 RESULT=PASS",
+    "host_gate_probe": "LOOKUP_PART_CHECKS=8 FAILURES=0 RESULT=PASS",
+    "native_packet": "compat/vc152/f-lookup-part-anchor-native-e48/",
+    "guest_directory": "C:\\FAPTA48",
+    "native_report": "LOOKUP_PART_TABLE_CHECKS=66 FAILURES=0 RESULT=PASS",
+    "build_status": "COMPILE=PASS; LINK=PASS",
+    "process_exit": 0,
+    "program_error_dialog": false,
+    "full_suite_tests": 523,
+    "expected_skips": 153,
+    "layout_assertions": 2241,
+    "declarations": 846,
+    "baseline_check": "PASS",
+    "diff_check": "PASS",
+    "evidence_directory": "runs/vmctl-faptae48/"
+  },
+  "superseded_checkpoints": ["E44: incorrect ZIP byte stride", "E45: incorrect selector/CodeView overlay interpretation"],
+  "step5_units_closed": 0,
+  "remaining": [
+    "Bind current-CS table pointers to actual part-table bytes",
+    "Complete native FLookupPart race, hidden-part, and TechStatus services",
+    "Complete FAttack damage acceptance and original battle differential",
+    "Full battle replay and Step-6 promotion"
+  ]
+}

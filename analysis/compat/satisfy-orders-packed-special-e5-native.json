@@ -1,0 +1,43 @@
+{
+  "procedure": "SatisfyOrders",
+  "range": "0017:6798-9eb8",
+  "checkpoint": "E5 native packed special-order replay",
+  "evidence_unit": "packed special-order dispatch bridge",
+  "host": {
+    "report": "SATISFY_ORDERS_PACKED_SPECIAL_CHECKS=10 FAILURES=0 RESULT=PASS",
+    "checks": 10,
+    "probe": "tests/satisfy_orders_packed_special_probe.c",
+    "oracle_basis": "analysis/decompiler/export/raw/10b0_6798_SatisfyOrders.c"
+  },
+  "native": {
+    "guest_directory": "C:\\SYOP5",
+    "packet": "compat/vc152/satisfy-orders-packed-special-e5/",
+    "compile": "PASS",
+    "link": "PASS",
+    "checks": 10,
+    "report": "runs/vmctl-vc152syop5/SYOP5-report.TXT",
+    "status": "runs/vmctl-vc152syop5/SYOP5STA.TXT",
+    "compile_log": "runs/vmctl-vc152syop5/SYOP5CL.LOG",
+    "link_log": "runs/vmctl-vc152syop5/SYOP5LINK.LOG",
+    "process_exit": 0,
+    "program_error_dialog": false,
+    "artifacts": [
+      "runs/vmctl-vc152syop5/SYOP5STA.TXT",
+      "runs/vmctl-vc152syop5/SYOP5-report.TXT",
+      "runs/vmctl-vc152syop5/SYOP5CL.LOG",
+      "runs/vmctl-vc152syop5/SYOP5LINK.LOG",
+      "runs/vmctl-vc152syop5/guest-after-packed-special-e5.bmp"
+    ]
+  },
+  "step5_units_closed": 0,
+  "promotion_ready": false,
+  "remaining": [
+    "packed battle-plan/resource accounting",
+    "technology discovery",
+    "fleet and ship-design copying",
+    "salvage creation",
+    "complete message argument layouts",
+    "full-turn and original differential",
+    "Step-6 ledger synchronization and promotion"
+  ]
+}

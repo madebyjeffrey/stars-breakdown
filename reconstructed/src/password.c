@@ -19,6 +19,49 @@ StarsU32 stars_password_salt(const StarsU8 *text)
     return result ? result : 1U;
 }
 
+/* NE 9:5CBA-5FBF, NewPasswordDlg. Persisting the new salt and dialog effects
+ * are explicit host callbacks; the two-field comparison and failure path are
+ * the original state machine. */
+StarsI16 stars_new_password_dialog(StarsU16 hwnd, StarsU16 message,
+    StarsU16 wparam, StarsU32 lparam, StarsI16 player, StarsU32 *current,
+    StarsU32 *last, const StarsNewPasswordOps *ops, void *context)
+{
+    const StarsU8 *first, *second;
+    static const StarsU8 empty[] = { 0 };
+    StarsU32 salt, saved_last;
+    if (message == 0x0014U) return 1;
+    if (message == 0x0019U) return (StarsU16)(lparam >> 16) == 6U ? 1 : 0;
+    if (message == 0x0110U) return 1;
+    if (message != 0x0111U || (wparam != 1U && wparam != 2U)) return 0;
+    saved_last = last ? *last : 0U;
+    if (wparam == 1U) {
+        first = ops && ops->text ? ops->text(context, hwnd, 0x10cU) : 0;
+        second = ops && ops->text ? ops->text(context, hwnd, 0x10dU) : 0;
+        salt = stars_password_salt(first ? first : empty);
+        if (salt != stars_password_salt(second ? second : empty)) {
+            if (ops && ops->mismatch) ops->mismatch(context, hwnd);
+            return 0;
+        }
+        if (player == -1) {
+            if (current) *current = salt;
+            if (ops && ops->write) {
+                if (!ops->write(context, salt)) {
+                    if (current) *current = saved_last;
+                } else {
+                    saved_last = salt;
+                }
+            } else {
+                saved_last = salt;
+            }
+        } else if (current) {
+            *current = salt;
+        }
+    }
+    if (last) *last = saved_last;
+    if (ops && ops->end) ops->end(context, hwnd, (StarsI16)(wparam == 1U));
+    return 1;
+}
+
 void stars_delay(StarsI16 count, StarsTickCount timer, void *context)
 {
     StarsU32 start = timer(context), now;

@@ -1,0 +1,54 @@
+{
+  "procedure": "FAttack",
+  "checkpoint": "E34",
+  "finding": "Group-0x10 FAttack consumes the original 24-entry _beam table's dp field; resolver-provided damage is not authoritative.",
+  "original_table": {
+    "symbol": "rgbeam",
+    "ne_segment": 2,
+    "offset": "0x2450",
+    "record_size": 60,
+    "dp_offset": 54,
+    "values": [10, 16, 13, 26, 90, 26, 82, 26, 31, 66, 231, 66, 211, 66, 80, 169, 592, 169, 140, 541, 169, 204, 433, 433]
+  },
+  "source_change": "Added stars_lookup_beam_dp and wired its result into FAttack for packed group-0x10 parts after successful resolution.",
+  "host_validation": {
+    "beam_test": "tests.test_f_attack_beam_scale",
+    "beam_report": "F_ATTACK_BEAM_SCALE_CHECKS=33 FAILURES=0 RESULT=PASS",
+    "raw_damage_report": "F_ATTACK_RAW_DAMAGE_CHECKS=9 FAILURES=0 RESULT=PASS"
+  },
+  "native_validation": {
+    "packet": "compat/vc152/f-attack-complex-native-e34/",
+    "guest_directory": "C:\\FAPNE34",
+    "build_status": "COMPILE=PASS; LINK=PASS",
+    "reports": [
+      "F_ATTACK_BEAM_SCALE_CHECKS=33 FAILURES=0 RESULT=PASS",
+      "F_ATTACK_RAW_DAMAGE_CHECKS=9 FAILURES=0 RESULT=PASS",
+      "F_ATTACK_TORPEDO_TARGET_CHECKS=5 FAILURES=0 RESULT=PASS",
+      "F_ATTACK_RAW_TORPEDO_DISPATCH_CHECKS=11 FAILURES=0 RESULT=PASS"
+    ],
+    "tested_processes_exit": 0,
+    "program_error_dialog": false,
+    "evidence_directory": "runs/vmctl-vc152fapne34/",
+    "diagnostics_preserved": [
+      "First build found duplicate host stubs in the native raw-damage harness; the stubs were limited to host builds.",
+      "The first raw-damage run exposed the expected residual change from original dp=169; its expected post-shield damage was corrected from 33 to 34."
+    ]
+  },
+  "full_host_suite": {
+    "tests": 520,
+    "expected_skips": 153,
+    "layout_assertions": 2241,
+    "declarations": 846,
+    "baseline_check": "PASS",
+    "scoped_diff_check": "PASS",
+    "quiet_mode_anomaly": "Two full quiet-mode invocations exited with signal 10 before summary; the verbose full run passed and test_common_source -q passed 221/221 in isolation."
+  },
+  "step5_units_closed": 0,
+  "step5_units_total": 3,
+  "remaining": [
+    "Complete E1 raw beam/torpedo battle-part and table/service acceptance",
+    "E2 broader original damage differentials",
+    "E3 full native battle replay and differential",
+    "Step-6 promotion"
+  ]
+}

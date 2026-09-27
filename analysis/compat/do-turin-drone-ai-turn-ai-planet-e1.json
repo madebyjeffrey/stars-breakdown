@@ -1,0 +1,21 @@
+{
+  "procedure": "DoTurinDroneAiTurn",
+  "step5_unit": "TU-E1 production policy",
+  "status": "supporting_subcheck_only",
+  "original_source_range": "analysis/decompiler/export/raw/1088_3670_DoTurinDroneAiTurn.c:166-204",
+  "production_source": [
+    "reconstructed/src/do_turin_drone_ai_turn.c",
+    "reconstructed/include/core.h"
+  ],
+  "host": "TURIN_PACKED_SERVICE_CHECKS=26 FAILURES=0 RESULT=PASS",
+  "host_suite": "539 tests, 153 expected skips",
+  "native": {
+    "guest_directory": "C:\\TURAI1",
+    "build_status": "COMPILE=PASS LINK=PASS",
+    "process": "EXIT 0",
+    "report": "TURIN_PACKED_SERVICE_CHECKS=26 FAILURES=0 RESULT=PASS",
+    "program_error_dialog": false,
+    "return_directory": "runs/vmctl-turai1"
+  },
+  "named_units_closed": 0
+}

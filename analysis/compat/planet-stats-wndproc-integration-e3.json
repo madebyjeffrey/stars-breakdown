@@ -1,0 +1,28 @@
+{
+  "procedures": ["PlanetWndProc", "DrawPlanetStats"],
+  "milestone": "planet-stats-wndproc-integration-e3",
+  "scope": "host-only",
+  "checks": 8,
+  "failures": 0,
+  "result": "PASS",
+  "report": "PLANET_STATS_WNDPROC_INTEGRATION_CHECKS=8 FAILURES=0 RESULT=PASS",
+  "step5_units_closed": {
+    "PlanetWndProc": 0,
+    "DrawPlanetStats": 0
+  },
+  "integration": {
+    "wm_paint_dispatch": true,
+    "paint_lifecycle": "BPE",
+    "packed_data_load": true,
+    "seven_value_rows": true,
+    "references_and_separators": true,
+    "selected_field_values": true
+  },
+  "evidence": [
+    "tests/planet_stats_wndproc_integration_probe.c",
+    "reconstructed/src/planet_wnd_proc.c",
+    "reconstructed/src/draw_planet_stats.c",
+    "analysis/reconstruction/draw-planet-stats.md",
+    "analysis/reconstruction/planet-wnd-proc.md"
+  ]
+}

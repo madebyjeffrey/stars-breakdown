@@ -1,0 +1,27 @@
+{
+  "procedures": ["DrawPopup"],
+  "phase2_step": "5/6",
+  "evidence_unit": "E3 detailed GDI and caller integration",
+  "authoritative_units_closed": 1,
+  "host_geometry_report": "DRAW_POPUP_GEOMETRY_E3_CHECKS=25 FAILURES=0 RESULT=PASS",
+  "native_geometry_report": "DRAW_POPUP_GEOMETRY_E3_CHECKS=25 FAILURES=0 RESULT=PASS",
+  "native_geometry_build_status": "COMPILE=PASS; LINK=PASS",
+  "native_geometry_process_exit": 0,
+  "native_geometry_program_error_dialog": false,
+  "native_state_report": "DRAW_POPUP_STATE_CHECKS=7 FAILURES=0 RESULT=PASS",
+  "native_caller_report": "EXECUTE_REPORT_CLICK_POPUP_INTEGRATION_CHECKS=26 FAILURES=0 RESULT=PASS",
+  "native_caller_process_exit": 0,
+  "native_caller_program_error_dialog": false,
+  "original_consumer_observation": "mineral, population, report, and restored-popup surfaces with no Program Error dialog",
+  "remaining": [
+    "E4 original completion",
+    "Step-6 promotion"
+  ],
+  "evidence": [
+    "analysis/compat/draw-popup-geometry-e3-host.json",
+    "analysis/compat/draw-popup-geometry-e3-native.json",
+    "analysis/compat/draw-popup-state-e3.json",
+    "analysis/compat/execute-report-click-popup-integration-e3.json",
+    "analysis/compat/draw-popup-integration.json"
+  ]
+}

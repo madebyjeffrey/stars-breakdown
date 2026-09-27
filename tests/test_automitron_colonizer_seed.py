@@ -1,0 +1,32 @@
+"""Strict-C89 host matrix for Automitron's original colonizer seed branch."""
+
+import subprocess
+import tempfile
+import unittest
+from pathlib import Path
+
+
+ROOT = Path(__file__).resolve().parents[1]
+
+
+class AutomitronColonizerSeedTests(unittest.TestCase):
+    def test_first_matching_fleet_rng_and_queue_order(self):
+        with tempfile.TemporaryDirectory() as temp:
+            exe = Path(temp) / "automitron_colonizer_seed"
+            subprocess.run([
+                "cc", "-std=c89", "-pedantic", "-Wall", "-Wextra", "-Werror",
+                "-I", str(ROOT / "reconstructed/include"),
+                str(ROOT / "tests/do_automitron_colonizer_seed_probe.c"),
+                str(ROOT / "reconstructed/src/do_automitron_ai_turn.c"),
+                str(ROOT / "reconstructed/src/ai_plord.c"),
+                "-o", str(exe),
+            ], check=True)
+            result = subprocess.run([str(exe)], capture_output=True,
+                                    text=True, check=False)
+        self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+        self.assertIn("AUTOMITRON_COLONIZER_SEED_CHECKS=19 FAILURES=0 RESULT=PASS",
+                      result.stdout)
+
+
+if __name__ == "__main__":
+    unittest.main()

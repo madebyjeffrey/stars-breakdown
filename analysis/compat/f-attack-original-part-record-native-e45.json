@@ -1,0 +1,75 @@
+{
+  "procedure": "FAttack",
+  "checkpoint": "original beam and torpedo record integration E45",
+  "status": "supporting Step-5 evidence; no named unit closed",
+  "fixture": {
+    "source": "target/stars.exe NE segment 2, unrelocated",
+    "executable_sha256": "ccab6682b55dae14dbf104e491cfbd3b32a6280022020032ae0615500949ba59",
+    "segment_bytes": 25256,
+    "segment_sha256": "52b2fb4ebc7c8ea4527b2d277fcaf3218c916053d9e295e33900cc637a753698"
+  },
+  "torpedo_case": {
+    "group": "0x20",
+    "item": 4,
+    "record_offset": "0x2270",
+    "original_fields": {
+      "range": 5,
+      "dp": 90,
+      "init": 2
+    },
+    "init_base": 7,
+    "attacker_initiative": 9,
+    "one_hit_hull_damage": 45,
+    "mutated_dp": 120,
+    "mutated_damage": 60,
+    "range_zero_blocks_dispatch": true,
+    "initiative_one_blocks_dispatch": true
+  },
+  "host": {
+    "report": "F_ATTACK_PACKED_PART_CHECKS=24 FAILURES=0 RESULT=PASS",
+    "torpedo_hit_implementation": "reconstructed/src/c_torp_hit.c",
+    "suite": {
+      "tests_passed": 524,
+      "expected_skips": 153,
+      "layout_assertions": 2241,
+      "declarations": 846,
+      "baseline_check": "PASS",
+      "git_diff_check": "PASS"
+    }
+  },
+  "native_e45": {
+    "guest_directory": "C:\\FAPNE45",
+    "run_directory": "runs/vmctl-vc152fapne45",
+    "compile": "PASS",
+    "link": "PASS",
+    "process_exit": 0,
+    "report": "F_ATTACK_PACKED_PART_CHECKS=24 FAILURES=0 RESULT=PASS",
+    "program_error_dialog": false,
+    "returned": [
+      "BLDSTAT.TXT",
+      "FAPCL.LOG",
+      "FAPLINK.LOG",
+      "FAPARTN.TXT",
+      "FAPNAT.EXE",
+      "FAPNAT.MAP",
+      "FAPNAT.OBJ",
+      "guest-screen.bmp"
+    ]
+  },
+  "superseded_or_failed_attempts": [
+    "E42: beam-only 20-check version",
+    "E43: drive-relative RUNVC.BAT path",
+    "E44: 24-check executable with stale 20-check report label"
+  ],
+  "todo6_counters_unchanged": {
+    "evidence_closed": 120,
+    "evidence_total": 152,
+    "promotion_units_open": 10,
+    "practical_open_work_items": 42
+  },
+  "remaining": [
+    "broader original damage differentials and complete scaling/target/damage acceptance",
+    "full native battle replay and final differential",
+    "Phase-2 promotion"
+  ]
+}

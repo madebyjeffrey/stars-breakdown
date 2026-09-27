@@ -1,0 +1,41 @@
+{
+  "procedures": ["DoRobotoidAiTurn", "DoTurinDroneAiTurn", "DoCyberAiTurn"],
+  "milestone": "ai-plord-first-kind-e11",
+  "scope": "host-only",
+  "checks": 12,
+  "failures": 0,
+  "result": "PASS",
+  "report": "AI_PLORD_FIRST_KIND_SOURCE_CHECKS=12 FAILURES=0 RESULT=PASS",
+  "regression_report": "AI_PLORD_REPAIR_SOURCE_CHECKS=9 FAILURES=0 RESULT=PASS",
+  "repository_regression": "Ran 519 tests; OK (skipped=153)",
+  "generated_headers": {
+    "layout_assertions": 2241,
+    "function_declarations": 846
+  },
+  "baseline_check": "PASS",
+  "git_diff_check": "PASS",
+  "step5_units_closed": 0,
+  "covered": [
+    "kind 5 low-nibble write",
+    "kind 6 low-nibble write",
+    "high-nibble preservation",
+    "queue-count preservation",
+    "unrelated-byte preservation",
+    "invalid-kind rejection",
+    "null-pointer rejection"
+  ],
+  "remaining": [
+    "native replay",
+    "complete personality-specific route selection",
+    "multi-order packed mutation",
+    "original-turn differential",
+    "Step-6 promotion"
+  ],
+  "evidence": [
+    "reconstructed/include/core.h",
+    "reconstructed/src/ai_plord.c",
+    "tests/ai_plord_first_kind_source_probe.c",
+    "tests/ai_plord_repair_source_probe.c",
+    "analysis/decompiler/export/raw/1088_0312_DoRobotoidAiTurn.c"
+  ]
+}

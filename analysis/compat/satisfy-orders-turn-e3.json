@@ -1,0 +1,27 @@
+{
+  "procedure": "SatisfyOrders",
+  "milestone": "do-orders-turn-sequencing-e3",
+  "scope": "host_and_native_turn_sequencing_subcheck",
+  "checks": 8,
+  "failures": 0,
+  "result": "PASS",
+  "packet": "compat/vc152/satisfy-orders-turn-e3/",
+  "packet_host_shape_compile": "PROBE.C PASS",
+  "native_status": "pass",
+  "native_compile": "COMPILE=PASS",
+  "native_link": "LINK=PASS",
+  "native_report": "runs/vmctl-vc152syturn/SYTRES.TXT",
+  "native_build_status": "runs/vmctl-vc152syturn/SYTSTA-final.TXT",
+  "native_compile_log": "runs/vmctl-vc152syturn/SYTCL-final.LOG",
+  "native_link_log": "runs/vmctl-vc152syturn/SYTLINK-final.LOG",
+  "native_process_exit": 0,
+  "native_program_error_dialog": false,
+  "native_turn_sequencing_subcheck": true,
+  "step5_units_closed": 0,
+  "evidence": [
+    "reconstructed/src/satisfy_orders.c",
+    "reconstructed/src/do_orders.c",
+    "reconstructed/include/core.h",
+    "tests/satisfy_orders_turn_probe.c"
+  ]
+}

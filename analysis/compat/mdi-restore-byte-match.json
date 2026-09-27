@@ -1,0 +1,102 @@
+{
+  "original_sha256": "ccab6682b55dae14dbf104e491cfbd3b32a6280022020032ae0615500949ba59",
+  "compiler": "Microsoft C/C++ Compiler Version 8.00c (VC++ 1.52c)",
+  "flags": "/c /AM /GA /GEs /Zp1 /Od /Gs /W3 /Fc",
+  "comparison": "No masked bytes; named OMF relocations resolved into the original address layout.",
+  "functions": [
+    {
+      "name": "RestoreSelection",
+      "ne_segment": 5,
+      "original_offset": 9748,
+      "original_bytes": 603,
+      "generated_bytes": 603,
+      "length_difference": 0,
+      "exact_after_address_resolution": true,
+      "differing_bytes": 0,
+      "differences": [],
+      "fixups": [
+        {
+          "offset": 75,
+          "width": 4,
+          "target": "_LpflFromId",
+          "resolved_value": "0x10382078"
+        },
+        {
+          "offset": 107,
+          "width": 4,
+          "target": "_SelectAdjFleet",
+          "resolved_value": "0x10503d32"
+        },
+        {
+          "offset": 191,
+          "width": 4,
+          "target": "_LpplFromId",
+          "resolved_value": "0x1038021e"
+        },
+        {
+          "offset": 267,
+          "width": 4,
+          "target": "_SelectAdjPlanet",
+          "resolved_value": "0x104844da"
+        },
+        {
+          "offset": 344,
+          "width": 4,
+          "target": "_IMsgNext",
+          "resolved_value": "0x10307808"
+        },
+        {
+          "offset": 371,
+          "width": 4,
+          "target": "_SetMsgTitle",
+          "resolved_value": "0x10307218"
+        },
+        {
+          "offset": 395,
+          "width": 4,
+          "target": "INVALIDATERECT",
+          "resolved_value": "0x14f80274"
+        },
+        {
+          "offset": 431,
+          "width": 4,
+          "target": "_AdvanceTutor",
+          "resolved_value": "0x10f80a30"
+        },
+        {
+          "offset": 507,
+          "width": 4,
+          "target": "_LpplFromId",
+          "resolved_value": "0x1038021e"
+        },
+        {
+          "offset": 554,
+          "width": 4,
+          "target": "_FFindSomethingAndSelectIt",
+          "resolved_value": "0x10202e1c"
+        },
+        {
+          "offset": 570,
+          "width": 4,
+          "target": "_SelectAdjPlanet",
+          "resolved_value": "0x104844da"
+        },
+        {
+          "offset": 581,
+          "width": 4,
+          "target": "_FFindSomethingAndSelectIt",
+          "resolved_value": "0x10202e1c"
+        }
+      ],
+      "backpatch_records": 45,
+      "original_relocated_sha256": "b4444e9ad6589561a35bd0771f843c2086a2a1ad95506b3c3a26d556942a83ea",
+      "generated_resolved_sha256": "b4444e9ad6589561a35bd0771f843c2086a2a1ad95506b3c3a26d556942a83ea",
+      "source": "compat/mdi-restore-match/MDI.C"
+    }
+  ],
+  "all_functions_match": true,
+  "object_sha256": "511a3885b4d16dfe1d8bdb68315352cb86594f6a9b3fc74785c33290bb966e36",
+  "source_sha256": "15c592027e2344f298c3f5f8e796c94a422d8ca9f2179ea1eb8f7e578b39ef58",
+  "build_log": "mdi.c\nmdi.c(247) : warning C4101: 'scratch' : unreferenced local variable\n",
+  "build_status": "PASS\n"
+}

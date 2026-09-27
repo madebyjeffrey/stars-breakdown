@@ -1,0 +1,27 @@
+{
+  "procedures": ["DrawPlanetStats"],
+  "phase2_step": "5/6",
+  "evidence_unit": "E1 packed planet lookup",
+  "host_report": "DRAW_PLANET_STATS_LOOKUP_CHECKS=9 FAILURES=0 RESULT=PASS",
+  "host_compile": "strict_c89_pass",
+  "native_packet": "compat/vc152/draw-planet-stats-lookup-e1/",
+  "guest_path": "C:\\DPSLE1",
+  "native_status": "VC++ 1.52c compile/link/run passed; 9 checks passed; no Program Error dialog",
+  "native_run": "runs/vmctl-vc152dpsle1/",
+  "checks": 9,
+  "coverage": {
+    "typed_load_callback": true,
+    "packed_planet_size": 56,
+    "planet_id_offset_0": true,
+    "scanner_defense_offset_24": true,
+    "mineral_rate_offset_40": true,
+    "all_seven_rows_receive_lookup_data": true
+  },
+  "remaining_scope": [
+    "race/resource service lookup",
+    "exact localized resource comparison",
+    "detailed GDI/original differential",
+    "final promotion"
+  ],
+  "closed": true
+}

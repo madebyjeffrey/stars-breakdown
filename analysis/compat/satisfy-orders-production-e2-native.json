@@ -1,0 +1,38 @@
+{
+  "procedures": ["SatisfyOrders"],
+  "phase2_step": "5/6",
+  "unit": "E2 concrete production-service integration milestone",
+  "status": "supporting milestone; named E2 remains open",
+  "guest": "StarDev / Win98 / C:\\SYOE8",
+  "native_run": "runs/vmctl-vc152syoe8/",
+  "host_report": "SATISFY_ORDERS_PRODUCTION_E2_CHECKS=18 TYPED=12 PACKED=6 FAILURES=0 RESULT=PASS",
+  "native_report": "SATISFY_ORDERS_PRODUCTION_E2_CHECKS=18 TYPED=12 PACKED=6 FAILURES=0 RESULT=PASS EXIT=0",
+  "native_build": {
+    "compile": "PASS",
+    "link": "PASS",
+    "process_exit": 0,
+    "program_error_dialog": false
+  },
+  "concrete_services": [
+    "typed technology callback invokes stars_itech_learn_a_tech and checks research/event/result state",
+    "typed point-drop salvage callback invokes stars_drop_salvage and checks two-object split/value/mineral/coordinate state",
+    "packed technology callback repeats the production service through raw 124-byte fleet and 18-byte order records"
+  ],
+  "remaining": [
+    "original technology-table/result binding",
+    "actual fleet and ship-design record copying",
+    "complete raw message argument layouts",
+    "original destruction-to-salvage caller comparison",
+    "E3 full-turn and original differential"
+  ],
+  "evidence": [
+    "tests/satisfy_orders_production_e2_probe.c",
+    "compat/vc152/satisfy-orders-production-e2-native/",
+    "runs/vmctl-vc152syoe8/SYO8-production-pass.TXT",
+    "runs/vmctl-vc152syoe8/SYO8STA-final.TXT",
+    "runs/vmctl-vc152syoe8/SYO8CL-final.LOG",
+    "runs/vmctl-vc152syoe8/SYO8LINK-final.LOG",
+    "reconstructed/src/itech_learn_a_tech.c",
+    "reconstructed/src/drop_salvage.c"
+  ]
+}

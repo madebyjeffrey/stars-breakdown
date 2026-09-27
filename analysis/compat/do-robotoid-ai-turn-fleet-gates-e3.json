@@ -1,0 +1,25 @@
+{
+  "procedures": ["DoRobotoidAiTurn"],
+  "milestone": "do-robotoid-ai-turn-fleet-gates-e3",
+  "scope": "host-only",
+  "checks": 10,
+  "failures": 0,
+  "result": "PASS",
+  "report": "ROBOTOID_AI_FLEET_GATE_CHECKS=10 FAILURES=0 RESULT=PASS",
+  "step5_units_closed": 0,
+  "coverage": {
+    "empty_fleet": true,
+    "colonizer_without_order": true,
+    "transport_without_order": true,
+    "ordered_armed_fleet": true,
+    "support_attack_bins": true,
+    "warship_count_fallback": true,
+    "non_owned_filter": true
+  },
+  "evidence": [
+    "tests/do_robotoid_ai_turn_fleet_gate_probe.c",
+    "reconstructed/src/do_robotoid_ai_turn.c",
+    "reconstructed/include/core.h",
+    "analysis/decompiler/export/raw/1088_0312_DoRobotoidAiTurn.c"
+  ]
+}

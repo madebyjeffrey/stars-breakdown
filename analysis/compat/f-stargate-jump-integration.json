@@ -1,0 +1,50 @@
+{
+  "procedures": ["FStargateJump"],
+  "phase2_step": "6/6",
+  "guest": "StarDev / Win98 / C:\\SGJINT5",
+  "native_run": "runs/vmctl-vc152sgjint5/",
+  "host_report": "F_STARGATE_JUMP_INTEGRATION_CHECKS=2311 FAILURES=0 RESULT=PASS",
+  "native_report": "F_STARGATE_JUMP_INTEGRATION_CHECKS=2311 FAILURES=0 RESULT=PASS",
+  "expanded_cases": [
+    "damage abort message envelope",
+    "damage failure message and no mutation",
+    "empty fleet after inactive damage",
+    "surviving cargo with raw state write-back and loss message",
+    "complete cargo loss and empty-fleet flags",
+    "race-stat loss exemption with fixed-point state update",
+    "multi-slot cargo, per-slot design weight, transfer, and loss classification",
+    "damage-service source/destination/distance/mass callback arguments",
+    "zero cargo-damage state with fixed-point hull-state write-back",
+    "large multi-slot cargo loss with 32-bit severity-message amount",
+    "independent original MdCalcStargateDamage differential over armor records",
+    "distance-limit and range-overrun thresholds",
+    "source/destination defense and ship-weight thresholds",
+    "real FleetTransferCargoBalance source/destination adapter",
+    "lost-fleet flags/counts and surviving-source preservation",
+    "five-resource redistribution and packed offset-76 write-back"
+  ],
+  "packed_boundaries": {
+    "fleet_id": 0,
+    "fleet_player": 2,
+    "fleet_flags": 4,
+    "fleet_planet": 6,
+    "fleet_cargo_counts": 12,
+    "fleet_cargo_state": 44,
+    "fleet_resources": 76,
+    "ship_design_size": 147,
+    "ship_design_mass": 40,
+    "ship_design_ship_weight": 56
+  },
+  "original_executable": {
+    "surface": "Fleet Summary Report / Fuel & Cargo",
+    "fleet_identity_visible": true,
+    "cargo_state_visible": true,
+    "program_error": false,
+    "screenshot": "runs/vmctl-vc152current/report-fleet-right.bmp"
+  },
+  "closed_scope": [
+    "full original stargate-damage differential coverage",
+    "complete game-service stargate cargo integration"
+  ],
+  "remaining_scope": []
+}

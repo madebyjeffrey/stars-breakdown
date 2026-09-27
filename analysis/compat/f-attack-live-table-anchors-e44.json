@@ -1,0 +1,44 @@
+{
+  "procedures": ["FLookupPart", "FAttack"],
+  "checkpoint": "E44",
+  "status": "superseded-by-E45; ZIP byte stride was modeled incorrectly",
+  "source_changes": [
+    "Added explicit table-base kinds for four live DGROUP anchors.",
+    "Extended table metadata probes across all sixteen valid groups."
+  ],
+  "anchor_families": [
+    {"group": "0x0100", "symbol": "ptStickyRaceDlg", "displacement": "item*0x36", "stride": "0x36", "segment": "0x10e0"},
+    {"group": "0x0200", "symbol": "rgbCur", "displacement": "0x1f2+item*0x38", "stride": "0x38", "segment": "0x10e0"},
+    {"group": "0x0400", "symbol": "szMsgTitle", "displacement": "0x26+item*0x8f", "stride": "0x8f", "segment": "0x10e0"},
+    {"group": "0x8000", "symbol": "hwndZipOrderDlg", "displacement": "ushort-pointer-plus-item*0x1b", "stride": "0x36 bytes", "segment": "0x10e0", "note": "E44's tested model used the incorrect 0x1b-byte stride; corrected in E45"}
+  ],
+  "validation": {
+    "host_table_probe": "LOOKUP_PART_TABLE_CHECKS=50 FAILURES=0 RESULT=PASS",
+    "host_gate_probe": "LOOKUP_PART_CHECKS=8 FAILURES=0 RESULT=PASS",
+    "native_packet": "compat/vc152/f-lookup-part-anchor-native-e46/",
+    "guest_directory": "C:\\FAPTE46",
+    "native_report": "LOOKUP_PART_TABLE_CHECKS=50 FAILURES=0 RESULT=PASS (self-consistency only; superseded)",
+    "build_status": "COMPILE=PASS; LINK=PASS",
+    "process_exit": 0,
+    "program_error_dialog": false,
+    "full_suite_tests": 523,
+    "expected_skips": 153,
+    "layout_assertions": 2241,
+    "declarations": 846,
+    "baseline_check": "PASS",
+    "diff_check": "PASS",
+    "evidence_directory": "runs/vmctl-faptae46/"
+  },
+  "failed_native_attempts": [
+    {"packet": "e44", "cause": "unresolved _printf", "evidence": "runs/vmctl-faptae44/"},
+    {"packet": "e45", "cause": "unconditional probe printf", "evidence": "runs/vmctl-faptae45/"}
+  ],
+  "step5_units_closed": 0,
+  "superseded_by": "E45",
+  "remaining": [
+    "Resolve live anchor symbols against actual native DGROUP memory",
+    "Complete native FLookupPart race, hidden-part, and TechStatus service binding",
+    "Complete FAttack damage-service acceptance and original battle differential",
+    "Full battle replay and Step-6 promotion"
+  ]
+}

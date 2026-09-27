@@ -1,0 +1,50 @@
+{
+  "procedures": ["PlanetWndProc"],
+  "phase2_step": "5/6",
+  "guest": "StarDev / Win98 / C:\\STARS!\\STARS.EXE",
+  "run": "runs/vmctl-vc152current/",
+  "original_executable_observation": {
+    "window": "Stars! -- A Barefoot JayWalk -- Humanoids -- game.m1 [starsframe]",
+    "planet": "Oop Be Gone",
+    "selected_fleet": "Stalwart Defender #5",
+    "child_panels": [
+      "planet summary and population",
+      "environment gauges",
+      "mineral bars",
+      "production queue",
+      "starbase values",
+      "selected-fleet bitmap",
+      "fuel and cargo",
+      "fleet composition",
+      "fleet waypoints"
+    ],
+    "selection_change": "A map click changed the selected fleet and refreshed the related fleet child panels",
+    "program_error": false,
+    "screenshots": [
+      "runs/vmctl-vc152current/planet-frame-current.bmp",
+      "runs/vmctl-vc152current/planet-click.bmp",
+      "runs/vmctl-vc152current/current-continue.bmp"
+    ]
+  },
+  "original_instruction_boundary": {
+    "source": "analysis/decompiler/export/raw/1048_0000_PlanetWndProc.c",
+    "sequence": [
+      "the planet window creates and displays its child areas",
+      "planet and fleet controls coexist in the active starsframe",
+      "a map selection refreshes the selected-fleet child panels"
+    ]
+  },
+  "reconstructed_acceptance": {
+    "native_probe": "runs/vmctl-vc152pwp/PWPR.TXT",
+    "comparison": "The original planet window exposes the typed message-dispatch and child-panel refresh boundary. E1 closes exact child geometry, resource handles, and edit subclass behavior; E2 closes the packed transfer lookup; and E3 closes the USER/GDI message, focus, drawing, and cursor service boundary."
+  },
+  "step5_evidence_units": {
+    "closed": [
+      "E1 exact child layout, resource sequence, fonts, edit subclass, ship dropdown height, and handle propagation",
+      "E2 packed fleet/thing transfer lookup, _xfer headers, ordinal ordering, and button consumer boundaries",
+      "E3 paint, erase, minimum-size, owner-draw, measure, cursor, focus, and message integration"
+    ],
+    "open": [],
+    "promotion": "P final ledger synchronization"
+  }
+}

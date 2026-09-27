@@ -1,0 +1,35 @@
+{
+  "procedures": ["DumpPlanets"],
+  "phase2_step": "5/6",
+  "evidence_unit": "E1 report visibility and coordinator boundary",
+  "host_report": "DUMP_PLANETS_BOUNDARY_CHECKS=24 FAILURES=0 RESULT=PASS",
+  "host_compile": "strict_c89_pass",
+  "native_packet": "compat/vc152/dump-planets-boundary-production-e3/",
+  "guest_path": "C:\\DPBP",
+  "native_status": "pass",
+  "native_compile": "COMPILE=PASS",
+  "native_link": "LINK=PASS",
+  "native_report": "runs/vmctl-vc152dpbp/DPBR.TXT",
+  "native_build_status": "runs/vmctl-vc152dpbp/DPBSTA.TXT",
+  "native_compile_log": "runs/vmctl-vc152dpbp/DPBCL.LOG",
+  "native_link_log": "runs/vmctl-vc152dpbp/DPBLINK.LOG",
+  "native_process_exit": 0,
+  "native_program_error_dialog": false,
+  "step5_units_closed": 0,
+  "checks": 24,
+  "coverage": {
+    "active_game_and_viewer_gates": true,
+    "open_header_and_row_failure_cleanup": true,
+    "normal_and_detailed_header_counts": true,
+    "turn_age_and_owner_visibility": true,
+    "scanned_service_fields": true,
+    "inhabited_and_unknown_class_clearing": true,
+    "normal_production_resource_preservation": true
+  },
+  "remaining_scope": [
+    "localized derived-field serialization",
+    "complete packed service integration",
+    "original output differential",
+    "final promotion"
+  ]
+}

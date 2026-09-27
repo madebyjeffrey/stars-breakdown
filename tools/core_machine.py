@@ -6,8 +6,11 @@ specialized harnesses; the base harness substitutes no operating-system function
 """
 from pathlib import Path
 import hashlib
+import os
+import platform
 import struct
 import sys
+import unittest
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / '.tools/python-validation'))
@@ -22,6 +25,16 @@ class OriginalCore:
     STOP = 0x60000
 
     def __init__(self, imports=None):
+        # The bundled Unicorn build currently raises SIGILL in
+        # machine_initialize/uc_mem_map on this Apple Silicon + macOS host.
+        # Do not take down the Python process; opt in only after replacing or
+        # validating that native library.
+        if (sys.platform == 'darwin' and platform.machine() == 'arm64' and
+                os.environ.get('STARS_ALLOW_UNICORN') != '1'):
+            raise unittest.SkipTest(
+                'Unicorn x86-16 execution disabled on macOS arm64; '
+                'set STARS_ALLOW_UNICORN=1 only with a validated build'
+            )
         path = ROOT / 'target/stars.exe'
         assert hashlib.sha256(path.read_bytes()).hexdigest() == (
             'ccab6682b55dae14dbf104e491cfbd3b32a6280022020032ae0615500949ba59')

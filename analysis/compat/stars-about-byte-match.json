@@ -1,0 +1,192 @@
+{
+  "original_sha256": "ccab6682b55dae14dbf104e491cfbd3b32a6280022020032ae0615500949ba59",
+  "compiler": "Microsoft C/C++ Compiler Version 8.00c (VC++ 1.52c)",
+  "flags": "/c /AM /GA /GEs /Zp1 /Od /Gs /W3 /Fc",
+  "comparison": "No masked bytes; named OMF relocations resolved into the original address layout.",
+  "functions": [
+    {
+      "name": "About",
+      "ne_segment": 4,
+      "original_offset": 4690,
+      "original_bytes": 716,
+      "generated_bytes": 716,
+      "length_difference": 0,
+      "exact_after_address_resolution": true,
+      "differing_bytes": 0,
+      "differences": [],
+      "fixups": [
+        {
+          "offset": 35,
+          "width": 4,
+          "target": "GETDLGITEM",
+          "resolved_value": "0x14f80228"
+        },
+        {
+          "offset": 41,
+          "width": 4,
+          "target": "SZVERSION",
+          "resolved_value": "0x10181212"
+        },
+        {
+          "offset": 50,
+          "width": 4,
+          "target": "SETWINDOWTEXT",
+          "resolved_value": "0x14f801ac"
+        },
+        {
+          "offset": 74,
+          "width": 4,
+          "target": "SETTIMER",
+          "resolved_value": "0x14f80168"
+        },
+        {
+          "offset": 98,
+          "width": 4,
+          "target": "GETCLIENTRECT",
+          "resolved_value": "0x14f801a0"
+        },
+        {
+          "offset": 117,
+          "width": 4,
+          "target": "FILLRECT",
+          "resolved_value": "0x14f8020c"
+        },
+        {
+          "offset": 135,
+          "width": 4,
+          "target": "GETDLGITEM",
+          "resolved_value": "0x14f80228"
+        },
+        {
+          "offset": 197,
+          "width": 4,
+          "target": "GETCLIENTRECT",
+          "resolved_value": "0x14f801a0"
+        },
+        {
+          "offset": 205,
+          "width": 4,
+          "target": "GETDC",
+          "resolved_value": "0x14f801e8"
+        },
+        {
+          "offset": 220,
+          "width": 4,
+          "target": "SELECTOBJECT",
+          "resolved_value": "0x14f800f8"
+        },
+        {
+          "offset": 232,
+          "width": 4,
+          "target": "SETBKMODE",
+          "resolved_value": "0x14f800b8"
+        },
+        {
+          "offset": 248,
+          "width": 4,
+          "target": "SETBKCOLOR",
+          "resolved_value": "0x14f800b4"
+        },
+        {
+          "offset": 264,
+          "width": 4,
+          "target": "SETTEXTCOLOR",
+          "resolved_value": "0x14f800c0"
+        },
+        {
+          "offset": 286,
+          "width": 4,
+          "target": "INTERSECTCLIPRECT",
+          "resolved_value": "0x14f800d4"
+        },
+        {
+          "offset": 363,
+          "width": 4,
+          "target": "_PszGetCompressedString",
+          "resolved_value": "0x1010743a"
+        },
+        {
+          "offset": 379,
+          "width": 4,
+          "target": "_RcCtrTextOut",
+          "resolved_value": "0x104028fc"
+        },
+        {
+          "offset": 417,
+          "width": 4,
+          "target": "OFFSETRECT",
+          "resolved_value": "0x14f80200"
+        },
+        {
+          "offset": 444,
+          "width": 4,
+          "target": "FILLRECT",
+          "resolved_value": "0x14f8020c"
+        },
+        {
+          "offset": 456,
+          "width": 4,
+          "target": "SELECTCLIPRGN",
+          "resolved_value": "0x14f800f4"
+        },
+        {
+          "offset": 467,
+          "width": 4,
+          "target": "RELEASEDC",
+          "resolved_value": "0x14f801ec"
+        },
+        {
+          "offset": 484,
+          "width": 4,
+          "target": "___aFulshr",
+          "resolved_value": "0x11180e32"
+        },
+        {
+          "offset": 514,
+          "width": 4,
+          "target": "SETBKCOLOR",
+          "resolved_value": "0x14f800b4"
+        },
+        {
+          "offset": 553,
+          "width": 4,
+          "target": "KILLTIMER",
+          "resolved_value": "0x14f8016c"
+        },
+        {
+          "offset": 571,
+          "width": 4,
+          "target": "ENDDIALOG",
+          "resolved_value": "0x14f80220"
+        },
+        {
+          "offset": 606,
+          "width": 4,
+          "target": "MAKEPROCINSTANCE",
+          "resolved_value": "0x14f80048"
+        },
+        {
+          "offset": 638,
+          "width": 4,
+          "target": "DIALOGBOX",
+          "resolved_value": "0x14f8021c"
+        },
+        {
+          "offset": 649,
+          "width": 4,
+          "target": "FREEPROCINSTANCE",
+          "resolved_value": "0x14f8004c"
+        }
+      ],
+      "backpatch_records": 39,
+      "original_relocated_sha256": "16879554653e56320c89794a258ad9b29ab051b98d5bbdd25bf68ba3b8bebfb4",
+      "generated_resolved_sha256": "16879554653e56320c89794a258ad9b29ab051b98d5bbdd25bf68ba3b8bebfb4",
+      "source": "compat/stars-about-match/STARS.C"
+    }
+  ],
+  "all_functions_match": true,
+  "object_sha256": "fa95ad6b87d22b07bd4235abc24f02519eb299c1803933969f5652c7ec501b33",
+  "source_sha256": "9d42c9837568636349d476989578d134c709df6a46d728d2e9257606f2d73301",
+  "build_log": "stars.c\nstars.c(277) : warning C4035: 'About' : no return value\nstars.c(277) : warning C4102: 'about_epilogue' : unreferenced label\nstars.c(277) : warning C4102: 'about_timer_loop' : unreferenced label\nstars.c(277) : warning C4101: 'scratch' : unreferenced local variable\n",
+  "build_status": "PASS\n"
+}

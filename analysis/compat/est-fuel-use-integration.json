@@ -1,0 +1,50 @@
+{
+  "procedures": ["EstFuelUse"],
+  "phase2_step": "6/6",
+  "guest": "StarDev / Win98 / C:\\EFUINT3",
+  "native_run": "runs/vmctl-vc152efuint3/",
+  "host_report": "EST_FUEL_USE_INTEGRATION_CHECKS=29 FAILURES=0 RESULT=PASS",
+  "native_report": "EST_FUEL_USE_INTEGRATION_CHECKS=29 FAILURES=0 RESULT=PASS",
+  "checks": [
+    "engine-fuel ordering",
+    "race discount and Ram Scoop flag",
+    "fixed-point fuel cost and raw field preservation",
+    "no-cargo range sentinel",
+    "warp-10 selection",
+    "invalid-warp flag clearing",
+    "order-derived warp and distance callbacks",
+    "large intermediate product",
+    "absent-engine fallback",
+    "range-only conversion",
+    "packed record sizes",
+    "raw engine-table mapping",
+    "all packed design and hull slots",
+    "all warp rows and engine IDs",
+    "route distances 1, 37, 1000, and 50000",
+    "independent original-instruction fuel-loop differential"
+  ],
+  "packed_boundaries": {
+    "fleet_player": 2,
+    "fleet_destination": 6,
+    "fleet_ship_counts": 12,
+    "fleet_cargo_weight": 44,
+    "fleet_mineral_weights": 76,
+    "ship_design_size": 147,
+    "ship_design_hull_id": 0,
+    "ship_design_mass": 40,
+    "ship_design_component_records": 58,
+    "ship_design_component_count": 122,
+    "hull_definition_size": 143,
+    "hull_cargo_capacity": 52,
+    "engine_record_size": 78,
+    "engine_fuel_table": 54
+  },
+  "original_executable": {
+    "surface": "Fleet Summary Report / Fuel & Cargo",
+    "fuel_values_visible": true,
+    "program_error": false,
+    "screenshot": "runs/vmctl-vc152current/report-fleet-right.bmp"
+  },
+  "original_instruction_differential": true,
+  "remaining_scope": []
+}

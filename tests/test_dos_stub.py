@@ -1,7 +1,10 @@
 """Assemble the reviewed DOS path and compare bytes and DOS-visible effects."""
 from pathlib import Path
+import os
+import platform
 import struct
 import subprocess
+import sys
 import tempfile
 import unittest
 from tools.core_machine import ROOT, Uc, UC_ARCH_X86, UC_MODE_16, reg
@@ -25,6 +28,9 @@ def elf_text(blob):
 
 class DosStubTests(unittest.TestCase):
     def test_exact_assembled_bytes_and_exit(self):
+        if (sys.platform == 'darwin' and platform.machine() == 'arm64' and
+                os.environ.get('STARS_ALLOW_UNICORN') != '1'):
+            self.skipTest('Unicorn x86-16 execution disabled on macOS arm64')
         with tempfile.TemporaryDirectory() as directory:
             obj = Path(directory) / 'stub.o'
             subprocess.run(['clang', '--target=i386-unknown-linux-gnu', '-c',

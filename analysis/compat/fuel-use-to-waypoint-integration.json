@@ -1,0 +1,46 @@
+{
+  "procedures": ["LFuelUseToWaypoint"],
+  "phase2_step": "6/6",
+  "guest": "StarDev / Win98 / C:\\FUTINT4",
+  "native_run": "runs/vmctl-vc152futint4/",
+  "host_report": "FUEL_USE_TO_WAYPOINT_INTEGRATION_CHECKS=27 FAILURES=0 RESULT=PASS",
+  "native_report": "FUEL_USE_TO_WAYPOINT_INTEGRATION_CHECKS=27 FAILURES=0 RESULT=PASS",
+  "checks": [
+    "single-segment warp and planet reset",
+    "multi-segment accumulation",
+    "invalid warp segment",
+    "planet owner mismatch",
+    "owned special-planet reset",
+    "ram-scoop adjustment",
+    "varying route distances",
+    "independent original segment-loop differential over twelve route cases",
+    "packed record sizes",
+    "packed order preservation",
+    "packed fleet, planet, and hull preservation",
+    "all sixteen fleet/design slots and both cargo-hull IDs",
+    "planet-selected hull definition and full two-segment order boundary"
+  ],
+  "packed_boundaries": {
+    "fleet_owner": 2,
+    "fleet_ship_counts": 12,
+    "order_size": 18,
+    "order_point": 0,
+    "order_target": 4,
+    "order_task_and_warp_flags": 6,
+    "planet_owner": 2,
+    "planet_status_word": 4,
+    "planet_hull_selection": 44,
+    "hull_cargo_capacity": 52,
+    "ship_design_hull_id": 0
+  },
+  "original_executable": {
+    "surface": "Fleet Summary Report / Fuel & Cargo",
+    "fuel_values_visible": true,
+    "cargo_state_visible": true,
+    "program_error": false,
+    "screenshot": "runs/vmctl-vc152current/report-fleet-right.bmp"
+  },
+  "original_instruction_differential": true,
+  "remaining_scope": [],
+  "promoted": true
+}

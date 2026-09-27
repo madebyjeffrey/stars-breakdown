@@ -1,0 +1,23 @@
+{
+  "procedure": "DrawPlanShipBitmap",
+  "evidence_unit": "E1",
+  "scope": "gdi_handle_lifecycle_and_raster_geometry",
+  "status": "native_pass",
+  "host_probe": "tests/draw_plan_ship_bitmap_gdi_probe.c",
+  "host_report": "DRAW_PLAN_SHIP_BITMAP_GDI_CHECKS=8 FAILURES=0 RESULT=PASS",
+  "native_packet": "compat/vc152/draw-plan-ship-bitmap-gdi-e1/",
+  "native_run": "runs/vmctl-vc152dpsb-gdi-e1/",
+  "checked": [
+    "brush selection and restoration",
+    "ten planet-frame PATBLT operations",
+    "palette selection and realization",
+    "planet DIB source coordinates",
+    "fleet-only dispatch",
+    "fleet button geometry"
+  ],
+  "remaining": [
+    "complete planet-window/original differential",
+    "Step-6 ledger promotion"
+  ],
+  "closed": true
+}

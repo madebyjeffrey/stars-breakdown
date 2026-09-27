@@ -1,0 +1,21 @@
+{
+  "procedures": ["Popup"],
+  "phase2_step": "5/6",
+  "native_run": "runs/vmctl-vc152popup/",
+  "native_report": "POPUP_CHECKS=31 FAILURES=0 RESULT=PASS",
+  "original_executable": {
+    "surfaces": ["popup base", "popup start", "planet popup", "restored frame"],
+    "program_error": false,
+    "screenshots": [
+      "runs/vmctl-vc152current/popup-base.bmp",
+      "runs/vmctl-vc152current/popup-probe-start.bmp",
+      "runs/vmctl-vc152current/popup-probe-planet.bmp",
+      "runs/vmctl-vc152current/popup-probe-restored.bmp"
+    ]
+  },
+  "remaining_scope": [
+    "localized measurement",
+    "packed fleet/planet/hull records",
+    "detailed content layout"
+  ]
+}

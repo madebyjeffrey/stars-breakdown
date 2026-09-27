@@ -1,0 +1,35 @@
+{
+  "procedure": "DoCyberAiTurn",
+  "milestone": "do-cyber-ai-turn-packet-bridge-e4",
+  "scope": "host_only_typed_packet_service_boundary",
+  "host": {
+    "probe": "tests/do_cyber_ai_turn_integration_probe.c",
+    "checks": 30,
+    "failures": 0,
+    "result": "PASS",
+    "report": "CYBER_AI_TURN_INTEGRATION_CHECKS=30 FAILURES=0 RESULT=PASS"
+  },
+  "native": {
+    "status": "pending_win98_agent_reconnection",
+    "packet": "compat/vc152/do-cyber-ai-turn-packet-bridge-e4/",
+    "guest_directory": "C:\\CYBPE4"
+  },
+  "coverage": {
+    "packet_player_forwarding": true,
+    "packet_planet_table_forwarding": true,
+    "packet_pressure_forwarding": true,
+    "packed_packet_strength_preserved": true,
+    "packet_strength_writeback": true,
+    "legacy_player_only_fallback_preserved": true,
+    "final_callback_order": true
+  },
+  "named_step5_units_closed": 0,
+  "remaining": [
+    "fresh native replay",
+    "direct DoCyberPackets and DoCyberFreighter composition",
+    "complete packed PLORD mutation",
+    "AI-table integration",
+    "original-turn differential",
+    "Step-6 promotion"
+  ]
+}

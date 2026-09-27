@@ -1,0 +1,22 @@
+{
+  "procedure": "DoTurinDroneAiTurn",
+  "step5_unit": "E1 production policy plus first-order repair",
+  "status": "supporting_subcheck_only",
+  "original_source_ranges": ["analysis/decompiler/export/raw/1088_3670_DoTurinDroneAiTurn.c:139-151", "analysis/decompiler/export/raw/1088_3670_DoTurinDroneAiTurn.c:353-490"],
+  "role_order": [3, 0, 7, 5],
+  "selected_design_groups": {"0": "6-7", "3": "4-5", "5": "15", "7": "10-11"},
+  "count_caps": {"3": "plan_max/24+4", "0": "plan_max/12+8", "7": "plan_max/4+12", "5": "plan_max/12+8"},
+  "production_source": ["reconstructed/src/do_turin_drone_ai_turn.c", "reconstructed/include/core.h"],
+  "host": "TURIN_DESIGN_QUEUE_CHECKS=31 FAILURES=0 RESULT=PASS",
+  "related_host_probes": {"packed_integration": "20/20", "edge_policy": "7/7"},
+  "native": {
+    "guest_directory": "C:\\TURDQ1",
+    "build_status": "COMPILE=PASS LINK=PASS",
+    "process": "EXIT 0",
+    "report": "TURIN_DESIGN_QUEUE_CHECKS=31 FAILURES=0 RESULT=PASS",
+    "program_error_dialog": false,
+    "return_directory": "runs/vmctl-turdq1"
+  },
+  "e1_remaining": ["turn-zero queue seeding", "technology/design-count and RNG gates", "support-fleet checks", "FinishProduction interaction", "live packed table binding", "original-turn differential"],
+  "named_units_closed": 0
+}

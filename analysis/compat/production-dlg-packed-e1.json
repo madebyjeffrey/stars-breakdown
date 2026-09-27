@@ -1,0 +1,51 @@
+{
+  "procedure": "ProductionDlg",
+  "phase2_step": "5/6",
+  "evidence_unit": "E1_packed_production_globals",
+  "guest": "StarDev / Win98 / C:\\PDGP",
+  "host_probe": {
+    "source": "tests/production_dlg_packed_probe.c",
+    "checks": 11,
+    "failures": 0,
+    "result": "PASS"
+  },
+  "native_probe": {
+    "package": "compat/vc152/production-dlg-packed-e1/",
+    "status": "COMPILE=PASS LINK=PASS",
+    "report": "runs/vmctl-vc152pdgp/PDGPE1.TXT",
+    "checks": 11,
+    "failures": 0,
+    "result": "PASS",
+    "process_exit": 0,
+    "program_error_dialog": false,
+    "console_output_bytes": 0
+  },
+  "layout": {
+    "record_bytes": 40,
+    "storage_records": 5,
+    "visible_popup_records": 4,
+    "name_offset": 0,
+    "valid_offset": 13,
+    "no_research_offset": 14,
+    "item_count_offset": 15,
+    "items_offset": 16,
+    "item_words": 12
+  },
+  "remaining": [
+    "E2 complete localized resource comparison",
+    "E3 original queue differential",
+    "Step-6 ledger promotion"
+  ],
+  "evidence": [
+    "analysis/compat/production-dlg-packed-e1.md",
+    "reconstructed/src/production_dlg.c",
+    "reconstructed/include/core.h",
+    "tests/production_dlg_packed_probe.c",
+    "compat/vc152/production-dlg-packed-e1/",
+    "runs/vmctl-vc152pdgp/PDGPSTA.TXT",
+    "runs/vmctl-vc152pdgp/PDGPCL.LOG",
+    "runs/vmctl-vc152pdgp/PDGPLINK.LOG",
+    "runs/vmctl-vc152pdgp/PDGPE1.TXT",
+    "runs/vmctl-vc152pdgp/PDGP-CONSOLE.TXT"
+  ]
+}

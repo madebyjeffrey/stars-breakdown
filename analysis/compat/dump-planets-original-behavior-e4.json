@@ -1,0 +1,42 @@
+{
+  "procedure": "DumpPlanets",
+  "milestone": "dump-planets-original-behavior-e4",
+  "scope": "original-executable-integration",
+  "phase2_step": "6/6",
+  "original_executable_observation": {
+    "menu_path": "Reports > Dump to Text File > Planet Information",
+    "success_message_observed": true,
+    "file": "runs/vmctl-vc152current/GAME.pla",
+    "bytes": 334,
+    "sha256": "56673642fd9ddaed2985ed03e99ea731e3a5296069414d4b2f185790569d3d23",
+    "screenshots": [
+      "runs/vmctl-vc152current/report-dump.bmp",
+      "runs/vmctl-vc152current/planet-dump-save.bmp"
+    ],
+    "program_error_dialog": false
+  },
+  "native_differential": {
+    "milestone": "dump-planets-original-output-e2",
+    "report": "runs/vmctl-vc152dpsor2/DPSR.TXT",
+    "result": "DUMP_PLANETS_SERIALIZATION_CHECKS=14 FAILURES=0 RESULT=PASS"
+  },
+  "step5_units_closed": 4,
+  "step6_promotion_recorded": true,
+  "remaining_scope": [],
+  "evidence": [
+    "analysis/compat/report-dump-integration.md",
+    "analysis/compat/report-dump-integration.json",
+    "analysis/compat/dump-planets-serialization-e1.json",
+    "analysis/compat/dump-planets-original-output-e2.json",
+    "analysis/compat/dump-planets-original-behavior-e4.md",
+    "runs/vmctl-vc152current/GAME.pla",
+    "runs/vmctl-vc152current/planet-dump-save.bmp",
+    "runs/vmctl-vc152dpsor2/DPSR.TXT",
+    "tracking/reviews.json",
+    "TODO5.md",
+    "TODO6.md",
+    "analysis/coverage.json",
+    "analysis/reconstruction/dump-planets.md",
+    "analysis/reconstruction/current-handoff.md"
+  ]
+}

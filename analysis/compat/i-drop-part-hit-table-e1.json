@@ -1,0 +1,32 @@
+{
+  "procedure": "IDropPart",
+  "phase2_step": "5/6",
+  "evidence_unit": "E1_packed_slot_hit_table",
+  "host_probe": {
+    "source": "tests/i_drop_part_hit_table_probe.c",
+    "checks": 12,
+    "failures": 0,
+    "result": "PASS"
+  },
+  "native_probe": {
+    "package": "compat/vc152/i-drop-part-hit-table/",
+    "status": "COMPILE=PASS LINK=PASS",
+    "report": "runs/vmctl-vc152idphit/IDPHE1.TXT",
+    "checks": 12,
+    "failures": 0,
+    "result": "PASS",
+    "process_exit": 0,
+    "program_error_dialog": false
+  },
+  "covers": [
+    "packed slot rectangles",
+    "left/top inclusive and right/bottom exclusive edges",
+    "same-slot and empty-side classification",
+    "callback conflict boundary"
+  ],
+  "remaining": [
+    "E2 drag-state mutation",
+    "E3 redraw/control integration and original drop cases",
+    "step-6 ledger promotion"
+  ]
+}

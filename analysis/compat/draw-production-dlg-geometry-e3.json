@@ -1,0 +1,23 @@
+{
+  "procedure": "DrawProductionDlg",
+  "evidence_unit": "E3",
+  "scope": "host_geometry_and_gdi_boundary",
+  "status": "native_pass",
+  "host_probe": "tests/draw_production_dlg_geometry_probe.c",
+  "host_report": "DRAW_PRODUCTION_DLG_GEOMETRY_CHECKS=9 FAILURES=0 RESULT=PASS",
+  "source_change": "reconstructed/src/draw_production_dlg.c",
+  "original_source": "analysis/decompiler/export/raw/10d0_35dc_DrawProductionDlg.c",
+  "native_packet": "compat/vc152/draw-production-dlg-geometry-e3/",
+  "native_run": "runs/vmctl-vc152dpdre3/",
+  "checked": [
+    "DC acquisition and release",
+    "source and planet list control order",
+    "20-pixel mineral-label inset",
+    "measured separator boundary",
+    "right-text two-pixel offset",
+    "diamond geometry",
+    "ETA dispatch"
+  ],
+  "remaining": [],
+  "closed": true
+}

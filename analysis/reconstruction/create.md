@@ -1,9 +1,38 @@
 # Game-creation dependencies and text-format recovery
 
 This pass adds seven reviewed C89 routines in `reconstructed/src/create.c`,
-covering 829 original procedure bytes. **GenNewGameFromFile itself is not yet
-reconstructed or counted as completed.** Its file-format findings below are
-static evidence for the next implementation pass.
+covering 829 original procedure bytes. `GenNewGameFromFile` is now covered by
+the separate semantic reconstruction described in
+`analysis/reconstruction/gen-new-game-from-file.md` and counted in the formal
+ledger below.
+
+## Earlier pre-review semantic source
+
+The two files below were partial at this checkpoint. Both are now reviewed
+in the current [TODO5 ledger](../../TODO5.md); their later acceptance evidence
+is linked from those entries.
+
+`reconstructed/src/new_game_dlg3.c` is a genuine C reconstruction of
+NewGameDlg3 (NE 16:99f4–9d4c). It keeps the page's paint and erase behavior,
+control-color handling, cursor hit-testing, seven victory-condition control
+updates, race-button result mapping, read-only disabling, help dispatch, and
+mouse tracking as explicit typed operations. The source probe covers those
+message paths and the native VC1.52c probe passed all 10 checks with zero
+failures (`runs/vmctl-vc152ew/new-game-dlg3/NG3RES.TXT`). It was separate
+from this checkpoint's reviewed count while the real wizard state and callers
+were being integrated.
+
+`reconstructed/src/init_new_game_plr.c` is a genuine C reconstruction of
+InitNewGamePlr, then kept separate from the reviewed count while integration
+was pending. It makes the original map-size and AI-level player-count choices
+explicit, assigns the corresponding computer-player template bands, and
+preserves the original RNG call order during the template shuffle. The
+callback boundary represents the original SetVCVal and Random services while
+the host adapter is still being integrated. The source probe covers the
+map-size/difficulty branches, step gating, victory-value update, template
+selection, and player-zero preservation. VC1.52c under the Win98 StarDev
+environment compiled and linked the source, and the native probe passed all
+8 checks with zero failures (`runs/vmctl-vc152ew/init-new-game-plr/INPRES.TXT`).
 
 ## Reviewed routines
 
@@ -122,6 +151,10 @@ allocation/nonlocal error recovery, alerts, race loading, world generation, and
 cleanup remain unresolved dependencies for reconstructing the full procedure.
 No fake implementations of those dependencies were added.
 
+The reviewed source keeps those operations behind typed callbacks and does not
+pretend that the callbacks are a complete replacement for the surrounding
+game-global storage.
+
 ## Validation and limits
 
 `tests/test_create_machine.py` compares memory and return values with original
@@ -134,5 +167,6 @@ at a separate selector; unavailable imports still fail rather than being stubbed
 Setter indices must be 0–9 and battle template indices 0–4; invalid indices read
 unrelated original code-segment storage and are outside this host adapter's
 contract. Other memory/selector limits are as in `core.md`. Embedded table data
-is not added to procedure-byte coverage, and none of GenNewGameFromFile's range
-is marked reconstructed from this outline alone.
+The parser's range is credited only after its host source probe and native
+VC++1.52c probe pass; whole-game race loading and world generation remain
+separate integration work.

@@ -1,0 +1,35 @@
+{
+  "procedure": "DrawNewGame3",
+  "phase2_step": "5/6",
+  "evidence_unit": "E2_packed_output_rectangles",
+  "rectangle_count": 18,
+  "paired_reference_count": 36,
+  "host_probe": {
+    "source": "tests/draw_new_game3_rectangles_probe.c",
+    "checks": 95,
+    "failures": 0,
+    "result": "PASS"
+  },
+  "native_probe": {
+    "package": "compat/vc152/draw-new-game3-rectangles/",
+    "status": "COMPILE=PASS LINK=PASS",
+    "report": "runs/vmctl-vc152dng3rect/DNG3RE2.TXT",
+    "checks": 95,
+    "failures": 0,
+    "result": "PASS",
+    "process_exit": 0,
+    "program_error_dialog": false
+  },
+  "covers": [
+    "all 18 value rectangle coordinates",
+    "all 18 paired offset rectangles",
+    "fixed button height and width",
+    "row-7/8 carry-over geometry",
+    "negative-width percentage spacing"
+  ],
+  "remaining": [
+    "E3 localized rendering",
+    "E4 complete page GDI/original comparison",
+    "step-6 ledger promotion"
+  ]
+}

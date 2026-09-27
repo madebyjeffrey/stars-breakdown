@@ -1,0 +1,23 @@
+{
+  "procedure": "EstimateItemProdSched",
+  "milestone": "estimate-item-prod-sched-mutation-e2",
+  "phase2_step": "5/6",
+  "evidence_unit": "E2 production-record and resource mutation",
+  "host_report": "ESTIMATE_ITEM_PROD_SCHED_MUTATION_CHECKS=3 FAILURES=0 RESULT=PASS",
+  "native_guest_directory": "C:\\EIPM2",
+  "native_run": "runs/vmctl-vc152eipm2/",
+  "native_build": "COMPILE=PASS; LINK=PASS",
+  "native_report": "ESTIMATE_ITEM_PROD_SCHED_MUTATION_CHECKS=3 FAILURES=0 RESULT=PASS",
+  "process_exit": 0,
+  "program_error_dialog": false,
+  "step5_units_closed": 1,
+  "cases": [
+    "complete two-record queue mutation and four-lane resource consumption",
+    "partial queue quantity preservation and resource consumption",
+    "failed object creation quantity preservation and resource rollback"
+  ],
+  "remaining": [
+    "E1 independent original per-turn and complete schedule differential",
+    "step-6 promotion"
+  ]
+}

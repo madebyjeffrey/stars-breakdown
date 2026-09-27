@@ -1,0 +1,56 @@
+{
+  "procedures": ["FAttack", "FDoCoolBattle", "LpshdefFromTok"],
+  "checkpoint": "E43",
+  "source_changes": [
+    "Added stars_lpshdef_from_tok_globals to read raw DGROUP far-pointer tables.",
+    "Added stars_attack_bind_cool_battle_global_hull to resolve a token design through those tables and bind its inline hull _hs records."
+  ],
+  "original_globals": {
+    "rglpshdef": {"ne_address": "0025:00FE", "entries": 16, "entry_bytes": 4},
+    "rglpshdefSB": {"ne_address": "0025:014C", "entries": 16, "entry_bytes": 4},
+    "far_pointer_encoding": "little-endian offset word followed by segment word",
+    "hull_design_stride": "0x0093"
+  },
+  "cases": [
+    {
+      "player": 1,
+      "design_byte": "0x12",
+      "dgroup_entry": "0x0150",
+      "far_table_base": "1234:2000",
+      "resolved_hull": "1234:2126",
+      "raw_hs_part": {"group": "0x0010", "item": 7, "count": 2}
+    },
+    {
+      "player": 3,
+      "design_byte": "0x05",
+      "dgroup_entry": "0x010A",
+      "far_table_base": "2345:1000",
+      "resolved_hull": "2345:12DF",
+      "active_hull_slots": 0
+    }
+  ],
+  "validation": {
+    "host_report": "F_DO_COOL_BATTLE_ATTACK_INTEGRATION_CHECKS=44 FAILURES=0 RESULT=PASS",
+    "native_packet": "compat/vc152/f-do-cool-battle-global-table-e43/",
+    "guest_directory": "C:\\FCBATE43",
+    "native_report": "F_DO_COOL_BATTLE_ATTACK_INTEGRATION_CHECKS=44 FAILURES=0 RESULT=PASS",
+    "build_status": "COMPILE=PASS; LINK=PASS",
+    "process_exit": 0,
+    "program_error_dialog": false,
+    "full_suite_tests": 523,
+    "expected_skips": 153,
+    "layout_assertions": 2241,
+    "declarations": 846,
+    "baseline_check": "PASS",
+    "diff_check": "PASS",
+    "evidence_directory": "runs/vmctl-fcbate43/"
+  },
+  "step5_units_closed": 0,
+  "remaining": [
+    "Bind the segmented resolver to actual native hull-table memory and DGROUP globals",
+    "Complete FLookupPart table/service/race/visibility behavior",
+    "Complete beam and torpedo damage acceptance",
+    "Original damage differential and full battle replay",
+    "Step-6 promotion"
+  ]
+}

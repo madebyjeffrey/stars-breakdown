@@ -1,0 +1,657 @@
+{
+  "candidate_definitions": {
+    "printf": [],
+    "stars_add_item_to_queue": [
+      "reconstructed/src/ai.c"
+    ],
+    "stars_append_file": [
+      "reconstructed/src/file.c"
+    ],
+    "stars_auto_terraform": [
+      "reconstructed/src/auto_terraform.c"
+    ],
+    "stars_breed_colonists_in_transit": [
+      "reconstructed/src/breed_colonists_in_transit.c"
+    ],
+    "stars_build_object": [
+      "reconstructed/src/f_build_object.c"
+    ],
+    "stars_build_production_item": [
+      "reconstructed/src/c_build_prod_item.c"
+    ],
+    "stars_calc_pct_survive": [
+      "reconstructed/src/common.c"
+    ],
+    "stars_calc_planet_max_pop": [
+      "reconstructed/src/planet_max_pop.c"
+    ],
+    "stars_calc_player_score": [
+      "reconstructed/src/common.c"
+    ],
+    "stars_can_build_design": [
+      "reconstructed/src/common.c"
+    ],
+    "stars_can_terraform_lppl": [
+      "reconstructed/src/can_terraform.c"
+    ],
+    "stars_cfactories_operating": [
+      "reconstructed/src/planet.c"
+    ],
+    "stars_change_cargo": [
+      "reconstructed/src/common.c"
+    ],
+    "stars_change_main_obj_sel": [
+      "reconstructed/src/change_main_obj_sel.c"
+    ],
+    "stars_change_population": [
+      "reconstructed/src/change_population.c"
+    ],
+    "stars_cmax_defenses": [
+      "reconstructed/src/planet.c"
+    ],
+    "stars_cmax_factories": [
+      "reconstructed/src/planet.c"
+    ],
+    "stars_cmax_mines": [
+      "reconstructed/src/planet.c"
+    ],
+    "stars_cmax_operable_defenses": [
+      "reconstructed/src/planet.c"
+    ],
+    "stars_cmax_operable_factories": [
+      "reconstructed/src/planet.c"
+    ],
+    "stars_cmines_operating": [
+      "reconstructed/src/planet.c"
+    ],
+    "stars_compress_user_string": [
+      "reconstructed/src/codec.c",
+      "reconstructed/src/file.c",
+      "reconstructed/src/records.c"
+    ],
+    "stars_compute_design_power": [
+      "reconstructed/src/common.c"
+    ],
+    "stars_cplr_battle": [
+      "reconstructed/src/cplr_battle.c"
+    ],
+    "stars_cresources_at_planet": [
+      "reconstructed/src/planet.c"
+    ],
+    "stars_decompress_user_string": [
+      "reconstructed/src/codec.c"
+    ],
+    "stars_delete_fleet": [
+      "reconstructed/src/common.c"
+    ],
+    "stars_delete_wp_far": [
+      "reconstructed/src/delete_wp_far.c"
+    ],
+    "stars_destroy_cur_game": [
+      "reconstructed/src/file.c"
+    ],
+    "stars_dirty_game": [
+      "reconstructed/src/common.c"
+    ],
+    "stars_discover_new_minerals": [
+      "reconstructed/src/discover_minerals.c"
+    ],
+    "stars_do_ai_turn": [
+      "reconstructed/src/do_ai_turn.c"
+    ],
+    "stars_do_battles": [
+      "reconstructed/src/do_battles.c"
+    ],
+    "stars_do_bombing": [
+      "reconstructed/src/do_bombing.c"
+    ],
+    "stars_do_orders": [
+      "reconstructed/src/do_orders.c"
+    ],
+    "stars_do_rototill_ai_turn": [
+      "reconstructed/src/do_rototill_ai_turn.c"
+    ],
+    "stars_do_thing_interactions": [
+      "reconstructed/src/thing.c"
+    ],
+    "stars_drop_colonists": [
+      "reconstructed/src/drop_colonists.c"
+    ],
+    "stars_ensure_ai_starbase_designs": [
+      "reconstructed/src/ai.c"
+    ],
+    "stars_est_fuel_use": [
+      "reconstructed/src/est_fuel_use.c"
+    ],
+    "stars_est_minerals_mined": [
+      "reconstructed/src/est_minerals_mined.c"
+    ],
+    "stars_estimate_item_prod_schedule": [
+      "reconstructed/src/estimate_item_prod_sched.c"
+    ],
+    "stars_f_ai_fling": [
+      "reconstructed/src/ai.c"
+    ],
+    "stars_f_change_ai_shdef": [
+      "reconstructed/src/ai.c"
+    ],
+    "stars_f_create_ai_shdef": [
+      "reconstructed/src/ai.c"
+    ],
+    "stars_f_create_ai_starbase": [
+      "reconstructed/src/ai.c"
+    ],
+    "stars_f_get_ai_part": [
+      "reconstructed/src/ai.c"
+    ],
+    "stars_f_is_ai_transport": [
+      "reconstructed/src/ai.c"
+    ],
+    "stars_f_queue_ai_defenses": [
+      "reconstructed/src/ai.c"
+    ],
+    "stars_f_queue_ai_scanner": [
+      "reconstructed/src/ai.c"
+    ],
+    "stars_f_queue_ai_terraforming": [
+      "reconstructed/src/ai.c"
+    ],
+    "stars_f_upgrade_ai_starbase": [
+      "reconstructed/src/ai.c"
+    ],
+    "stars_file_valid_serial_long": [
+      "reconstructed/src/file.c"
+    ],
+    "stars_fill_prod_mines_and_factories": [
+      "reconstructed/src/fill_prod_mines_and_factories.c"
+    ],
+    "stars_fill_production_queue": [
+      "reconstructed/src/turn2.c"
+    ],
+    "stars_find_ideal_warp": [
+      "reconstructed/src/find_ideal_warp.c"
+    ],
+    "stars_finish_production": [
+      "reconstructed/src/finish_production.c"
+    ],
+    "stars_fleet_might_have_teeth": [
+      "reconstructed/src/ai.c"
+    ],
+    "stars_fleet_transfer_cargo_balance": [
+      "reconstructed/src/fleet_transfer_cargo_balance.c"
+    ],
+    "stars_fuel_fleets": [
+      "reconstructed/src/fuel_fleets.c"
+    ],
+    "stars_fuel_gain_from_ram_scoops": [
+      "reconstructed/src/common.c"
+    ],
+    "stars_fuel_use_to_waypoint": [
+      "reconstructed/src/fuel_use_to_waypoint.c"
+    ],
+    "stars_generate_turn": [
+      "reconstructed/src/generate_turn.c"
+    ],
+    "stars_get_best_defense_part": [
+      "reconstructed/src/planet.c"
+    ],
+    "stars_get_cargo_free": [
+      "reconstructed/src/common.c"
+    ],
+    "stars_get_compressed_string": [
+      "reconstructed/src/strings.c"
+    ],
+    "stars_get_design_scanner_range": [
+      "reconstructed/src/common.c"
+    ],
+    "stars_get_disk_serial_number": [
+      "reconstructed/src/utilgen.c"
+    ],
+    "stars_get_distance": [
+      "reconstructed/src/utilgen.c"
+    ],
+    "stars_get_fleet_scanner_range": [
+      "reconstructed/src/common.c"
+    ],
+    "stars_get_fleet_stat": [
+      "reconstructed/src/common.c"
+    ],
+    "stars_get_planet_scanner_range": [
+      "reconstructed/src/common.c"
+    ],
+    "stars_get_prod_q_cost": [
+      "reconstructed/src/ai.c"
+    ],
+    "stars_get_production_costs": [
+      "reconstructed/src/get_production_costs.c"
+    ],
+    "stars_get_resources_available": [
+      "reconstructed/src/ai.c"
+    ],
+    "stars_get_tech_level_cost": [
+      "reconstructed/src/file.c"
+    ],
+    "stars_get_true_hull_cost": [
+      "reconstructed/src/common.c"
+    ],
+    "stars_get_victory_check": [
+      "reconstructed/src/create.c"
+    ],
+    "stars_get_victory_value": [
+      "reconstructed/src/create.c"
+    ],
+    "stars_handle_basic_ai_tasks": [
+      "reconstructed/src/ai.c"
+    ],
+    "stars_heal_ships": [
+      "reconstructed/src/heal_ships.c"
+    ],
+    "stars_hull_has_teeth": [
+      "reconstructed/src/battle.c"
+    ],
+    "stars_id_nearest_colonizable_planet": [
+      "reconstructed/src/ai.c"
+    ],
+    "stars_increase_ai_minefield_sizes": [
+      "reconstructed/src/ai.c"
+    ],
+    "stars_init_production": [
+      "reconstructed/src/init_production.c"
+    ],
+    "stars_init_random_planet_list": [
+      "reconstructed/src/ai.c"
+    ],
+    "stars_initialize_shdef_cost": [
+      "reconstructed/src/reprice_shdef.c"
+    ],
+    "stars_invalidate_report": [
+      "reconstructed/src/invalidate_report.c"
+    ],
+    "stars_ipct_can_terraform": [
+      "reconstructed/src/planet.c"
+    ],
+    "stars_iro_ensure_ai": [
+      "reconstructed/src/ai.c"
+    ],
+    "stars_ishdef_ai_sb_latest": [
+      "reconstructed/src/ai.c"
+    ],
+    "stars_itech_learn_a_tech": [
+      "reconstructed/src/itech_learn_a_tech.c"
+    ],
+    "stars_iwarp_best_for_waypoint": [
+      "reconstructed/src/iwarp_best_for_waypoint.c"
+    ],
+    "stars_iwarp_ma_from_planet": [
+      "reconstructed/src/planet.c"
+    ],
+    "stars_keep_fleets_moving": [
+      "reconstructed/src/ai.c"
+    ],
+    "stars_kill_used_waypoints": [
+      "reconstructed/src/kill_used_waypoints.c"
+    ],
+    "stars_link_fleet_records": [
+      "reconstructed/src/link_fleets.c"
+    ],
+    "stars_load_log_file": [
+      "reconstructed/src/load_log_file.c"
+    ],
+    "stars_log_change_fleet": [
+      "reconstructed/src/log_change_fleet.c"
+    ],
+    "stars_log_change_planet": [
+      "reconstructed/src/log_change_planet.c"
+    ],
+    "stars_log_change_shdef": [
+      "reconstructed/src/file.c"
+    ],
+    "stars_log_make_valid_xfer": [
+      "reconstructed/src/file.c"
+    ],
+    "stars_lookup_best_planetary_scanner": [
+      "reconstructed/src/common.c"
+    ],
+    "stars_lookup_fleet": [
+      "reconstructed/src/common.c"
+    ],
+    "stars_lookup_part": [
+      "reconstructed/src/lookup_part.c"
+    ],
+    "stars_lookup_part_record": [
+      "reconstructed/src/lookup_part.c"
+    ],
+    "stars_lpth_worm_find": [
+      "reconstructed/src/ai.c"
+    ],
+    "stars_mark_file": [
+      "reconstructed/src/file.c"
+    ],
+    "stars_mark_planet": [
+      "reconstructed/src/common.c"
+    ],
+    "stars_mark_planets_player_lost": [
+      "reconstructed/src/messages.c"
+    ],
+    "stars_mark_planets_under_attack": [
+      "reconstructed/src/ai.c"
+    ],
+    "stars_mark_players_that_sent_messages": [
+      "reconstructed/src/messages.c"
+    ],
+    "stars_mark_techs_seen_shdef": [
+      "reconstructed/src/mark_techs.c"
+    ],
+    "stars_merge_two_fleets": [
+      "reconstructed/src/merge_fleets.c"
+    ],
+    "stars_meteor_strike": [
+      "reconstructed/src/meteor_strike.c"
+    ],
+    "stars_mine_minerals": [
+      "reconstructed/src/turn2.c"
+    ],
+    "stars_mine_sweep_from_fleet": [
+      "reconstructed/src/mine_sweep.c"
+    ],
+    "stars_mine_sweep_from_hull": [
+      "reconstructed/src/mine_sweep_hull.c"
+    ],
+    "stars_move_fleets": [
+      "reconstructed/src/move_fleets.c"
+    ],
+    "stars_move_things": [
+      "reconstructed/src/move_things.c"
+    ],
+    "stars_mystery_trader": [
+      "reconstructed/src/mystery_trader.c"
+    ],
+    "stars_pack_long": [
+      "reconstructed/src/common.c"
+    ],
+    "stars_pack_score_history_record": [
+      "reconstructed/src/common.c"
+    ],
+    "stars_pct_cloak_from_huldef": [
+      "reconstructed/src/planet.c"
+    ],
+    "stars_pct_wormhole_moves": [
+      "reconstructed/src/common.c"
+    ],
+    "stars_planet_desirability": [
+      "reconstructed/src/planet.c"
+    ],
+    "stars_planetary_climate_change": [
+      "reconstructed/src/planetary_climate_change.c"
+    ],
+    "stars_prepare_turn_design": [
+      "reconstructed/src/generate_turn.c"
+    ],
+    "stars_prepare_turn_fleet_flags": [
+      "reconstructed/src/generate_turn.c"
+    ],
+    "stars_produce": [
+      "reconstructed/src/produce.c"
+    ],
+    "stars_random": [
+      "reconstructed/src/format.c",
+      "reconstructed/src/utilgen.c"
+    ],
+    "stars_random_events": [
+      "reconstructed/src/common.c"
+    ],
+    "stars_randomize2": [
+      "reconstructed/src/utilgen.c"
+    ],
+    "stars_read_record": [
+      "reconstructed/src/records.c"
+    ],
+    "stars_read_shdef": [
+      "reconstructed/src/file.c"
+    ],
+    "stars_remote_terraform": [
+      "reconstructed/src/remote_terraforming.c"
+    ],
+    "stars_remove_player_message": [
+      "reconstructed/src/messages.c"
+    ],
+    "stars_rototill_target_scout": [
+      "reconstructed/src/rototill_scout_adapter.c"
+    ],
+    "stars_run_log_file": [
+      "reconstructed/src/file.c"
+    ],
+    "stars_run_log_record": [
+      "reconstructed/src/run_log_record.c"
+    ],
+    "stars_satisfy_orders": [
+      "reconstructed/src/satisfy_orders.c"
+    ],
+    "stars_satisfy_orders_packed": [
+      "reconstructed/src/satisfy_orders.c"
+    ],
+    "stars_send_player_message": [
+      "reconstructed/src/messages.c"
+    ],
+    "stars_send_player_message2": [
+      "reconstructed/src/messages.c"
+    ],
+    "stars_serial_and_env_from_string": [
+      "reconstructed/src/format.c"
+    ],
+    "stars_set_ai_fleet_ideal_speed": [
+      "reconstructed/src/ai.c"
+    ],
+    "stars_set_vis_pf_fleets": [
+      "reconstructed/src/set_vis_pf_fleets.c"
+    ],
+    "stars_set_vis_pf_init": [
+      "reconstructed/src/set_vis_pf_init.c"
+    ],
+    "stars_set_vis_pf_planets": [
+      "reconstructed/src/set_vis_pf_planets.c"
+    ],
+    "stars_set_vis_pf_things": [
+      "reconstructed/src/set_vis_pf_things.c"
+    ],
+    "stars_set_visible_pf_finish": [
+      "reconstructed/src/file.c"
+    ],
+    "stars_spank_the_cheaters": [
+      "reconstructed/src/spank_the_cheaters.c"
+    ],
+    "stars_speed_of_ship": [
+      "reconstructed/src/spd_of_ship.c"
+    ],
+    "stars_sweep_for_mines": [
+      "reconstructed/src/sweep_for_mines.c"
+    ],
+    "stars_tech_status": [
+      "reconstructed/src/common.c"
+    ],
+    "stars_terra_from_fleet": [
+      "reconstructed/src/terra_fleet.c"
+    ],
+    "stars_thing_decay": [
+      "reconstructed/src/thing_decay.c"
+    ],
+    "stars_transfer_to_others": [
+      "reconstructed/src/transfer_to_others.c"
+    ],
+    "stars_turin_fleet_from_packed": [
+      "reconstructed/src/do_turin_drone_ai_turn.c"
+    ],
+    "stars_turin_plan_local_transport": [
+      "reconstructed/src/do_turin_drone_ai_turn.c"
+    ],
+    "stars_turin_planet_from_packed": [
+      "reconstructed/src/do_turin_drone_ai_turn.c"
+    ],
+    "stars_unmark_mine_fields": [
+      "reconstructed/src/turn2.c"
+    ],
+    "stars_update_guesses": [
+      "reconstructed/src/update_guesses.c"
+    ],
+    "stars_update_player_scores": [
+      "reconstructed/src/update_player_scores.c"
+    ],
+    "stars_update_research_status": [
+      "reconstructed/src/update_research_status.c"
+    ],
+    "stars_validate_waypoints": [
+      "reconstructed/src/common.c"
+    ],
+    "stars_validate_wormhole_position": [
+      "reconstructed/src/common.c"
+    ],
+    "stars_write_battle_plan": [
+      "reconstructed/src/file.c"
+    ],
+    "stars_write_battles": [
+      "reconstructed/src/write_battles.c"
+    ],
+    "stars_write_bof": [
+      "reconstructed/src/records.c"
+    ],
+    "stars_write_data_file": [
+      "reconstructed/src/write_data_file.c"
+    ],
+    "stars_write_fleet": [
+      "reconstructed/src/file.c"
+    ],
+    "stars_write_hist_file": [
+      "reconstructed/src/write_hist_file.c"
+    ],
+    "stars_write_log_file": [
+      "reconstructed/src/write_log_file.c"
+    ],
+    "stars_write_planet": [
+      "reconstructed/src/file.c"
+    ],
+    "stars_write_player_messages": [
+      "reconstructed/src/messages.c"
+    ],
+    "stars_write_player_record": [
+      "reconstructed/src/records.c"
+    ],
+    "stars_write_production_queue_record": [
+      "reconstructed/src/file.c"
+    ],
+    "stars_write_record": [
+      "reconstructed/src/records.c"
+    ],
+    "stars_write_rt_shdef": [
+      "reconstructed/src/file.c"
+    ],
+    "stars_write_score_records": [
+      "reconstructed/src/file.c"
+    ],
+    "stars_write_thing_records": [
+      "reconstructed/src/file.c"
+    ],
+    "stars_wt_max_ship_design_stat": [
+      "reconstructed/src/common.c"
+    ],
+    "stars_xfer_ai_supply": [
+      "reconstructed/src/ai.c"
+    ]
+  },
+  "candidate_source_count": 86,
+  "candidate_sources": [
+    "reconstructed/src/ai.c",
+    "reconstructed/src/auto_terraform.c",
+    "reconstructed/src/battle.c",
+    "reconstructed/src/breed_colonists_in_transit.c",
+    "reconstructed/src/c_build_prod_item.c",
+    "reconstructed/src/can_terraform.c",
+    "reconstructed/src/change_main_obj_sel.c",
+    "reconstructed/src/change_population.c",
+    "reconstructed/src/codec.c",
+    "reconstructed/src/common.c",
+    "reconstructed/src/cplr_battle.c",
+    "reconstructed/src/create.c",
+    "reconstructed/src/delete_wp_far.c",
+    "reconstructed/src/discover_minerals.c",
+    "reconstructed/src/do_ai_turn.c",
+    "reconstructed/src/do_battles.c",
+    "reconstructed/src/do_bombing.c",
+    "reconstructed/src/do_orders.c",
+    "reconstructed/src/do_rototill_ai_turn.c",
+    "reconstructed/src/do_turin_drone_ai_turn.c",
+    "reconstructed/src/drop_colonists.c",
+    "reconstructed/src/est_fuel_use.c",
+    "reconstructed/src/est_minerals_mined.c",
+    "reconstructed/src/estimate_item_prod_sched.c",
+    "reconstructed/src/f_build_object.c",
+    "reconstructed/src/file.c",
+    "reconstructed/src/fill_prod_mines_and_factories.c",
+    "reconstructed/src/find_ideal_warp.c",
+    "reconstructed/src/finish_production.c",
+    "reconstructed/src/fleet_transfer_cargo_balance.c",
+    "reconstructed/src/format.c",
+    "reconstructed/src/fuel_fleets.c",
+    "reconstructed/src/fuel_use_to_waypoint.c",
+    "reconstructed/src/generate_turn.c",
+    "reconstructed/src/get_production_costs.c",
+    "reconstructed/src/heal_ships.c",
+    "reconstructed/src/init_production.c",
+    "reconstructed/src/invalidate_report.c",
+    "reconstructed/src/itech_learn_a_tech.c",
+    "reconstructed/src/iwarp_best_for_waypoint.c",
+    "reconstructed/src/kill_used_waypoints.c",
+    "reconstructed/src/link_fleets.c",
+    "reconstructed/src/load_log_file.c",
+    "reconstructed/src/log_change_fleet.c",
+    "reconstructed/src/log_change_planet.c",
+    "reconstructed/src/lookup_part.c",
+    "reconstructed/src/mark_techs.c",
+    "reconstructed/src/merge_fleets.c",
+    "reconstructed/src/messages.c",
+    "reconstructed/src/meteor_strike.c",
+    "reconstructed/src/mine_sweep.c",
+    "reconstructed/src/mine_sweep_hull.c",
+    "reconstructed/src/move_fleets.c",
+    "reconstructed/src/move_things.c",
+    "reconstructed/src/mystery_trader.c",
+    "reconstructed/src/planet.c",
+    "reconstructed/src/planet_max_pop.c",
+    "reconstructed/src/planetary_climate_change.c",
+    "reconstructed/src/produce.c",
+    "reconstructed/src/records.c",
+    "reconstructed/src/remote_terraforming.c",
+    "reconstructed/src/reprice_shdef.c",
+    "reconstructed/src/rototill_scout_adapter.c",
+    "reconstructed/src/run_log_record.c",
+    "reconstructed/src/satisfy_orders.c",
+    "reconstructed/src/set_vis_pf_fleets.c",
+    "reconstructed/src/set_vis_pf_init.c",
+    "reconstructed/src/set_vis_pf_planets.c",
+    "reconstructed/src/set_vis_pf_things.c",
+    "reconstructed/src/spank_the_cheaters.c",
+    "reconstructed/src/spd_of_ship.c",
+    "reconstructed/src/strings.c",
+    "reconstructed/src/sweep_for_mines.c",
+    "reconstructed/src/terra_fleet.c",
+    "reconstructed/src/thing.c",
+    "reconstructed/src/thing_decay.c",
+    "reconstructed/src/transfer_to_others.c",
+    "reconstructed/src/turn2.c",
+    "reconstructed/src/update_guesses.c",
+    "reconstructed/src/update_player_scores.c",
+    "reconstructed/src/update_research_status.c",
+    "reconstructed/src/utilgen.c",
+    "reconstructed/src/write_battles.c",
+    "reconstructed/src/write_data_file.c",
+    "reconstructed/src/write_hist_file.c",
+    "reconstructed/src/write_log_file.c"
+  ],
+  "log": "runs/rototill-segmented-stage9-r1/LINK2.LOG",
+  "log_sha256": "843d4830d31974bb3bfb88f56866b0e6d6a117deb7bb19cede5f2667c1aad8d1",
+  "schema": "rototill-native-link-audit-r1",
+  "scope": "Regex-derived candidate definitions; compile and link are still required",
+  "symbols_without_source_candidate": [
+    "printf"
+  ],
+  "unresolved_count": 185
+}

@@ -1,5 +1,10 @@
 # VC++ 1.52c compatibility experiment
 
+For future remote-controlled builds in the 86Box guest, use the repository-wide
+[Win98/86Box agent runbook](../../AGENTS.md). It documents the built `STARSAGT`
+agent, direct file transfer, CRLF wrapper requirement, build/run commands, and
+expected reports.
+
 This is the early step-5 compiler integration fixture for the user's Visual
 C++ 1.52c environment in an 86Box Windows 98 SE VM. The guest instructions are
 in [README.TXT](README.TXT). **RETURN2 passed all 563 native utility checks
@@ -13,10 +18,11 @@ Generate a fresh transfer folder and ZIP with:
 python3 tools/package_vc152.py
 ```
 
-The current outputs are `ftp-share/VC152C/` and `ftp-share/VC152C.ZIP`. This is
+The `ftp-share/VC152C/` and `ftp-share/VC152C.ZIP` outputs are historical
 package 2A: a status-display/documentation revision of the validated package 2.
 All C sources, compiler/linker response files and expectations are unchanged. No repeat VM build
-is needed for the completed compatibility milestone. The exporter
+is needed for that completed compatibility milestone. For a new native run,
+follow the runbook and use a fresh output directory. The exporter
 uses a fixed allowlist and refuses to overwrite either output. Use `--output`
 with a new directory for another package. The share is ignored by Git; canonical
 fixture source, original-machine expectations, and the exporter are tracked.

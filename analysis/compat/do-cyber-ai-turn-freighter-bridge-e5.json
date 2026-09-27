@@ -1,0 +1,45 @@
+{
+  "procedure": "DoCyberAiTurn",
+  "milestone": "do-cyber-ai-turn-freighter-bridge-e5",
+  "scope": "typed_freighter_service_boundary_host_and_native",
+  "host": {
+    "probe": "tests/do_cyber_ai_turn_integration_probe.c",
+    "checks": 31,
+    "failures": 0,
+    "result": "PASS",
+    "report": "CYBER_AI_TURN_INTEGRATION_CHECKS=31 FAILURES=0 RESULT=PASS"
+  },
+  "native": {
+    "status": "pass",
+    "packet": "compat/vc152/do-cyber-ai-turn-packet-bridge-e5/",
+    "guest_directory": "C:\\CYBPE5",
+    "compile": "PASS",
+    "link": "PASS",
+    "report": "CYBER_AI_TURN_INTEGRATION_CHECKS=31 FAILURES=0 RESULT=PASS",
+    "process_exit": 0,
+    "program_error_dialog": false,
+    "artifacts": [
+      "runs/vmctl-vc152cybe5/CYBISTA.TXT",
+      "runs/vmctl-vc152cybe5/CYBICL.LOG",
+      "runs/vmctl-vc152cybe5/CYBILINK.LOG",
+      "runs/vmctl-vc152cybe5/CYBIR.TXT"
+    ]
+  },
+  "coverage": {
+    "owned_fleet_filter": true,
+    "fleet_id_forwarding": true,
+    "packed_transport_count_forwarding": true,
+    "typed_policy_transport_count_forwarding": true,
+    "armada_potency_forwarding": true,
+    "freighter_callback_order_after_repair_before_plan": true,
+    "packet_table_writeback_and_legacy_fallback": true
+  },
+  "named_step5_units_closed": 0,
+  "remaining": [
+    "direct DoCyberFreighter composition",
+    "complete packed PLORD mutation",
+    "AI-table integration",
+    "original-turn differential",
+    "Step-6 promotion"
+  ]
+}

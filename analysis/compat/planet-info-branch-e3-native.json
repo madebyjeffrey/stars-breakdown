@@ -1,0 +1,40 @@
+{
+  "procedures": ["PtDisplayPlanetPopInfo", "PtDisplayPlanetStateInfo"],
+  "milestone": "branch-integration-e3-native",
+  "evidence_unit": "detailed stream/wrap GDI and original comparison",
+  "host": {
+    "source_report": "PLANET_INFO_BRANCH_CHECKS=9 FAILURES=0 RESULT=PASS",
+    "checks": 9
+  },
+  "native": {
+    "guest_directory": "C:\\PBR3",
+    "packet": "compat/vc152/planet-info-branch-e3-native/",
+    "compile": "PASS",
+    "link": "PASS",
+    "checks": 9,
+    "report": "runs/vmctl-vc152pbr3/PBR3-final.TXT",
+    "program_error_dialog": false,
+    "artifacts": [
+      "runs/vmctl-vc152pbr3/PBR3STA-final.TXT",
+      "runs/vmctl-vc152pbr3/PBR3CL-final.LOG",
+      "runs/vmctl-vc152pbr3/PBR3LINK-final.LOG",
+      "runs/vmctl-vc152pbr3/PBR3-final.TXT"
+    ]
+  },
+  "original": {
+    "selected_planet": "Oop Be Gone",
+    "layout": "View > Window Layout > Small Screen",
+    "capture": "runs/vmctl-vc152current/layout-small.bmp",
+    "program_error_dialog": false,
+    "visible_boundaries": [
+      "state gravity, temperature, radiation, and mineral rows",
+      "population value and population rows",
+      "current-report status and summary layout"
+    ]
+  },
+  "step5_units_closed": 2,
+  "procedures_promotable": [
+    "PtDisplayPlanetPopInfo",
+    "PtDisplayPlanetStateInfo"
+  ]
+}

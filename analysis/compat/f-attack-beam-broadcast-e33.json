@@ -1,0 +1,29 @@
+{
+  "procedure": "FAttack",
+  "checkpoint": "E33",
+  "finding": "Raw group-0x10 broadcast/simple beams do not apply the complex branch distance-loss multiplier.",
+  "source_change": "Distance falloff is now applied only in the complex target-selection path.",
+  "host_test": "tests.test_f_attack_beam_scale",
+  "host_result": "F_ATTACK_BEAM_SCALE_CHECKS=8 FAILURES=0 RESULT=PASS",
+  "native_validation": {
+    "packet": "compat/vc152/f-attack-complex-native-e33/",
+    "guest_directory": "C:\\FAPNE33",
+    "build_status": "COMPILE=PASS; LINK=PASS",
+    "report": "F_ATTACK_BEAM_SCALE_CHECKS=8 FAILURES=0 RESULT=PASS",
+    "process_exit": 0,
+    "program_error_dialog": false,
+    "evidence_directory": "runs/vmctl-vc152fapne33/"
+  },
+  "original_evidence": [
+    "analysis/decompiler/export/raw/10f0_69ac_FAttack.c:138-221",
+    "analysis/decompiler/export/raw/10f0_69ac_FAttack.c:515-561"
+  ],
+  "step5_units_closed": 0,
+  "step5_units_total": 3,
+  "remaining": [
+    "complete E1 raw beam/torpedo battle-part and table/service acceptance",
+    "E2 broader original damage differentials",
+    "E3 full native battle replay and differential",
+    "Step-6 promotion"
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "procedure": "SatisfyOrders",
+  "range": "0017:6798-9eb8",
+  "checkpoint": "E4 native supporting replay",
+  "evidence_unit": "special-order dispatch matrix",
+  "host": {
+    "report": "SATISFY_ORDERS_SPECIAL_CHECKS=16 FAILURES=0 RESULT=PASS",
+    "checks": 16,
+    "probe": "tests/satisfy_orders_special_source_probe.c",
+    "oracle_basis": "analysis/decompiler/export/raw/10b0_6798_SatisfyOrders.c"
+  },
+  "native": {
+    "guest_directory": "C:\\SYOE4",
+    "packet": "compat/vc152/satisfy-orders-special-native-e4/",
+    "compile": "PASS",
+    "link": "PASS",
+    "checks": 16,
+    "report": "runs/vmctl-vc152syoe4/SYOE-report.TXT",
+    "status": "runs/vmctl-vc152syoe4/SYOESTA-final.TXT",
+    "compile_log": "runs/vmctl-vc152syoe4/SYOECL-final.LOG",
+    "link_log": "runs/vmctl-vc152syoe4/SYOELINK-final.LOG",
+    "process_exit": 0,
+    "program_error_dialog": false,
+    "artifacts": [
+      "runs/vmctl-vc152syoe4/SYOESTA-final.TXT",
+      "runs/vmctl-vc152syoe4/SYOE-report.TXT",
+      "runs/vmctl-vc152syoe4/SYOECL-final.LOG",
+      "runs/vmctl-vc152syoe4/SYOELINK-final.LOG",
+      "runs/vmctl-vc152syoe4/guest-after-special-e4.bmp"
+    ]
+  },
+  "step5_units_closed": 0,
+  "promotion_ready": false,
+  "remaining": [
+    "native packed battle-plan/resource accounting",
+    "technology discovery",
+    "fleet and ship-design copying",
+    "salvage creation",
+    "complete message argument layouts",
+    "full-turn and original differential",
+    "Step-6 ledger synchronization and promotion"
+  ]
+}

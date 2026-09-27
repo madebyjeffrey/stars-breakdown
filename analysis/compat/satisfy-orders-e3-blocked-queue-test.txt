@@ -1,0 +1,9 @@
+Host integrated regression with subprocess stderr retained for AI_BLOCKED_QUEUE lines.
+Test: tests.test_satisfy_orders_turin_binding
+.
+----------------------------------------------------------------------
+Ran 1 test in 12.597s
+
+OK
+AI_BLOCKED_QUEUE first=2 last=2 builds=2 years=1 unit=35 resources=28
+AI_BLOCKED_QUEUE first=2 last=2 builds=2 years=1 unit=35 resources=28

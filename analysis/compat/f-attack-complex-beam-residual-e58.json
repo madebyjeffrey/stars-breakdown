@@ -1,0 +1,64 @@
+{
+  "procedures": ["FAttack"],
+  "checkpoint": "complex-beam shield-ratio oracle E58",
+  "status": "host and native supporting evidence; named Step-5 closure pending",
+  "oracle": {
+    "original_beam_item": 21,
+    "original_beam_dp": 204,
+    "part_count": 2,
+    "attacker_ship_count": 1,
+    "initial_dpMain": 408,
+    "passes": [
+      {
+        "target_mode": 1,
+        "target_index": 1,
+        "dp_before_shields": 163,
+        "dp_after_shields": 157,
+        "dpMain_after": 392,
+        "calculation": "min(407, floor(408 * 157 / 163))"
+      },
+      {
+        "target_mode": 0,
+        "target_index": 0,
+        "dp_before_shields": 156,
+        "dp_after_shields": 150,
+        "dpMain_after": 376,
+        "calculation": "min(391, floor(392 * 150 / 156))"
+      }
+    ],
+    "termination": "live rescan finds no target with remaining shield capacity"
+  },
+  "host_tests": {
+    "raw_damage": "F_ATTACK_RAW_DAMAGE_CHECKS=13 FAILURES=0 RESULT=PASS",
+    "beam_scaling": "F_ATTACK_BEAM_SCALE_CHECKS=86 FAILURES=0 RESULT=PASS",
+    "packed_part": "F_ATTACK_PACKED_PART_CHECKS=24 FAILURES=0 RESULT=PASS",
+    "raw_torpedo_dispatch": "F_ATTACK_RAW_TORPEDO_DISPATCH_CHECKS=17 FAILURES=0 RESULT=PASS",
+    "full_suite": "525 tests passed; 153 expected skips; 2241 layout assertions; 846 declarations"
+  },
+  "native": {
+    "package": "compat/vc152/f-attack-raw-residual-e58/",
+    "guest_directory": "C:\\FAE58",
+    "compiler": "Microsoft Visual C++ 1.52c",
+    "build_status": "COMPILE=PASS; LINK=PASS",
+    "process_exit_codes": [0, 0, 0],
+    "reports": [
+      "F_ATTACK_PACKED_PART_CHECKS=24 FAILURES=0 RESULT=PASS",
+      "F_ATTACK_RAW_TORPEDO_DISPATCH_CHECKS=17 FAILURES=0 RESULT=PASS",
+      "F_ATTACK_RAW_DAMAGE_CHECKS=13 FAILURES=0 RESULT=PASS"
+    ],
+    "segment_matches_package": true,
+    "program_error_dialog": false,
+    "test_only_warnings": ["C4135 at raw shield/hull value assignments"],
+    "return_directory": "runs/vmctl-fapraw-e58/"
+  },
+  "todo6": {
+    "fattack_named_step5_closed": 0,
+    "fattack_named_step5_total": 3,
+    "fattack_phase2_step": "5/6",
+    "step5_closed": 120,
+    "step5_total": 152,
+    "step5_open": 32,
+    "promotion_open": 10,
+    "practical_open": 42
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "procedures": ["DoTurinDroneAiTurn"],
+  "milestone": "do-turin-drone-ai-turn-edge-e3",
+  "scope": "host-only",
+  "checks": 7,
+  "failures": 0,
+  "result": "PASS",
+  "report": "TURIN_DRONE_AI_TURN_EDGE_CHECKS=7 FAILURES=0 RESULT=PASS",
+  "step5_units_closed": 0,
+  "coverage": {
+    "potency_turns": [0, 130, 131, 200, 300],
+    "support_ramp_threshold": true,
+    "potency_caps": true,
+    "merge_needed_short_circuit": true,
+    "design_status_requests": 8,
+    "five_hull_affordability": true,
+    "insufficient_resource_rejection": true,
+    "null_input_rejection": true
+  },
+  "evidence": ["tests/do_turin_drone_ai_turn_edge_probe.c", "reconstructed/src/do_turin_drone_ai_turn.c"]
+}

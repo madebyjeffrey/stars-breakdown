@@ -1,0 +1,45 @@
+{
+  "procedures": ["SatisfyOrders"],
+  "phase2_step": "5/6",
+  "unit": "E2 player-specific design materialization boundary",
+  "status": "supporting milestone; named E2 remains open",
+  "guest": "StarDev / Win98 / C:\\SYOE10",
+  "native_run": "runs/vmctl-vc152syoe10/",
+  "host_report": "SATISFY_ORDERS_DESIGN_MATERIALIZATION_E2_CHECKS=15 FAILURES=0 RESULT=PASS",
+  "native_report": "SATISFY_ORDERS_DESIGN_MATERIALIZATION_E2_CHECKS=15 FAILURES=0 RESULT=PASS EXIT=0",
+  "native_build": {
+    "compile": "PASS",
+    "link": "PASS",
+    "process_exit": 0,
+    "program_error_dialog": false,
+    "compiler_options": "/AM /GA /GEs /Zp1 /O /W3"
+  },
+  "covered": [
+    "created player-transfer materialize_designs callback invocation",
+    "production equivalent-design reuse through stars_find_similar_design",
+    "first hidden destination-slot allocation for an unmatched design",
+    "complete 0x93-byte source design-record copy",
+    "destination design identity flag rewrite",
+    "cleared design totals before transferred-count accumulation",
+    "per-design fleet count and status transfer",
+    "source-record preservation and order completion"
+  ],
+  "remaining": [
+    "original technology-table/result binding",
+    "complete raw message argument layouts",
+    "original transfer behavior differential",
+    "E3 full-turn and original differential"
+  ],
+  "evidence": [
+    "tests/satisfy_orders_design_materialization_e2_probe.c",
+    "tests/common_fleet_copy_stubs.c",
+    "compat/vc152/satisfy-orders-design-materialization-e2-native/",
+    "runs/vmctl-vc152syoe10/SYO10-design-pass.TXT",
+    "runs/vmctl-vc152syoe10/SYO10-run-pass.TXT",
+    "runs/vmctl-vc152syoe10/SYO10STA-opt.TXT",
+    "runs/vmctl-vc152syoe10/SYO10CL-opt.LOG",
+    "runs/vmctl-vc152syoe10/SYO10LINK-opt.LOG",
+    "reconstructed/src/common.c",
+    "reconstructed/src/satisfy_orders.c"
+  ]
+}

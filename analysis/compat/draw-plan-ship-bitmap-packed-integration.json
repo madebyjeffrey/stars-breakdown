@@ -1,0 +1,55 @@
+{
+  "procedures": ["DrawPlanShipBitmap"],
+  "phase2_step": "5/6",
+  "guest": "StarDev / Win98 / C:\\DPSBINT",
+  "native_run": "runs/vmctl-vc152dpsbint/",
+  "host_report": "DRAW_PLAN_SHIP_BITMAP_PACKED_CHECKS=17 FAILURES=0 RESULT=PASS",
+  "native_report": "DRAW_PLAN_SHIP_BITMAP_PACKED_CHECKS=17 FAILURES=0 RESULT=PASS",
+  "native_build": {
+    "compile": "PASS",
+    "link": "PASS",
+    "process_exit": 0,
+    "program_error_dialog": false
+  },
+  "packed_selection": {
+    "size": 226,
+    "offsets": {
+      "grobj": 4,
+      "id": 8,
+      "fleet": 28,
+      "planet": 152
+    },
+    "subrecords": {
+      "fleet_size": 124,
+      "planet_size": 56
+    }
+  },
+  "integration": {
+    "raw_selection_kind_checked": true,
+    "raw_selection_id_checked": true,
+    "raw_fleet_identity_checked": true,
+    "raw_planet_identity_checked": true,
+    "fleet_name_and_bitmap_dispatch_checked": true,
+    "planet_name_and_dib_dispatch_checked": true,
+    "planet_dib_source_coordinates_checked": true,
+    "hidden_cleanup_grid_and_no_button_paths_checked": true
+  },
+  "service_boundary": {
+    "fleet_bitmap_rendering": "callback-owned",
+    "planet_name_lookup": "callback-owned",
+    "localized_names": "callback-owned",
+    "win16_gdi_handles_and_controls": "callback-owned"
+  },
+  "original_instruction_evidence": {
+    "raw_source": "analysis/decompiler/export/raw/1048_3336_DrawPlanShipBitmap.c",
+    "codeview_types": "analysis/debug/types.json",
+    "original_consumer_boundary": "analysis/compat/planet-frame-integration.md"
+  },
+  "remaining_scope": [
+    "exact Win16 GDI resource handles",
+    "complete packed fleet and planet selection integration",
+    "localized name behavior",
+    "original differential coverage",
+    "final review and promotion"
+  ]
+}

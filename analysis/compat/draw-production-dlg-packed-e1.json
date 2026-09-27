@@ -1,0 +1,36 @@
+{
+  "procedures": ["DrawProductionDlg"],
+  "phase2_step": "5/6",
+  "evidence_unit": "E1 packed production globals",
+  "evidence_status": "closed",
+  "host_probe": "tests/draw_production_dlg_source_probe.c",
+  "host_report": "DRAW_PRODUCTION_DLG_SOURCE=PASS",
+  "native_package": "compat/vc152/draw-production-dlg/",
+  "guest": "StarDev / Win98 / C:\\DPD4",
+  "native_run": "runs/vmctl-vc152dpd4/",
+  "native_report": "DRAW_PRODUCTION_DLG_CHECKS=17 FAILURES=0 RESULT=PASS",
+  "native_build": {
+    "compile": "PASS",
+    "link": "PASS",
+    "process_exit": 0,
+    "redirected_console_bytes": 0,
+    "program_error_dialog": false
+  },
+  "packed_boundary": {
+    "source_list_word": "0x0abcdeff",
+    "planet_list_word": "0x00112233",
+    "source_selection_index": 1,
+    "planet_ui_selection": 1,
+    "planet_packed_index": 0,
+    "source_count_and_index_guard": true,
+    "planet_count_and_index_guard": true,
+    "exact_packed_word_delivery": true,
+    "decoded_cost_callback_fallback_preserved": true
+  },
+  "remaining_scope": [
+    "E2 exact formatting/resource-table and localized-string comparison",
+    "E3 full Win16 GDI and caller integration",
+    "Step-6 ledger promotion"
+  ],
+  "promoted": false
+}

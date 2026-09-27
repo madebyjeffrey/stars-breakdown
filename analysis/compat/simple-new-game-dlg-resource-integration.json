@@ -1,0 +1,22 @@
+{
+  "procedure": "SimpleNewGameDlg",
+  "phase2_step": "5/6",
+  "evidence_unit": "E2_resource_and_control_geometry",
+  "resource_id": "0x00d1",
+  "dialog": {"width": 240, "height": 190, "font_size": 8, "control_count": 16},
+  "host_probe": {
+    "source": "tests/simple_new_game_dlg_resource_probe.c",
+    "checks": 117,
+    "failures": 0,
+    "result": "PASS"
+  },
+  "native_probe": {
+    "status": "COMPILE=PASS LINK=PASS",
+    "report": "runs/vmctl-vc152sngdr/SNGDRE2.TXT",
+    "checks": 117,
+    "failures": 0,
+    "result": "PASS",
+    "program_error_dialog": false
+  },
+  "remaining": ["E3_creation_mutation_and_caller_integration", "step6_promotion"]
+}

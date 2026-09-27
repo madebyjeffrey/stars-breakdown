@@ -1,0 +1,48 @@
+{
+  "procedures": ["NewGameDlg", "NewGameWizard", "NewGameDlg2"],
+  "phase2_step": "5/6",
+  "guest": "StarDev / Win98 / C:\\STARS!\\STARS.EXE",
+  "run": "runs/vmctl-vc152current/",
+  "original_executable_observation": {
+    "title_window": "Stars! [starstitle]",
+    "settings_dialog": "New Game",
+    "wizard_pages": [
+      "Advanced New Game Wizard - Step 1 of 3",
+      "Advanced New Game Wizard - Step 2 of 3",
+      "Advanced New Game Wizard - Step 3 of 3"
+    ],
+    "player_menu": ["Predefined Race", "Custom Race", "Computer Player", "No Player"],
+    "name_dialog": "Choose New Game Name",
+    "program_error": false,
+    "screenshots": [
+      "runs/vmctl-vc152current/original-advanced-start.bmp",
+      "runs/vmctl-vc152current/original-advanced-dialog.bmp",
+      "runs/vmctl-vc152current/original-advanced-page.bmp",
+      "runs/vmctl-vc152current/original-advanced-page2.bmp",
+      "runs/vmctl-vc152current/original-player1.bmp",
+      "runs/vmctl-vc152current/original-player2-menu.bmp",
+      "runs/vmctl-vc152current/original-advanced-page3.bmp",
+      "runs/vmctl-vc152current/original-advanced-final.bmp"
+    ]
+  },
+  "original_instruction_boundary": {
+    "new_game_dialog": "analysis/decompiler/export/raw/1078_7e92_NewGameDlg.c",
+    "wizard": "analysis/decompiler/export/raw/1078_6022_NewGameWizard.c",
+    "player_dialog": "analysis/decompiler/export/raw/1078_87d2_NewGameDlg2.c",
+    "sequence": [
+      "New Game opens the simple settings dialog",
+      "Advanced Game dispatches to wizard pages 1, 2, and 3",
+      "player rows open the race/computer/no-player popup",
+      "Finish returns through Choose New Game Name",
+      "canceling the existing-name replacement returns to the wizard without a crash"
+    ]
+  },
+  "reconstructed_acceptance": {
+    "native_probes": [
+      "runs/vmctl-vc152ngd/NGDR.TXT",
+      "runs/vmctl-vc152nwt/NWR2.TXT",
+      "runs/vmctl-vc152nd2/NWD2R.TXT"
+    ],
+    "comparison": "The original Win98 executable exposes the same settings, three-page wizard, player-row menu, and name-finalization boundaries represented by the three typed reconstructions. This is an original/UI integration checkpoint, not proof that packed player/race records, localized resources, or every Win16 control message are complete."
+  }
+}

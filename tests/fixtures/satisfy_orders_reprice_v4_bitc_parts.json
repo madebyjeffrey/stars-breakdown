@@ -1,0 +1,377 @@
+{
+  "fixture": {
+    "header": "tests/fixtures/satisfy_orders_reprice_v4_bitc_parts.h",
+    "header_sha256": "d41d14dd0b2a1797a44f1c836ed635f271e76dddcbd496880c901d44a51f8d28"
+  },
+  "input": {
+    "components": [
+      {
+        "count": 4,
+        "group": 1,
+        "item": 8
+      },
+      {
+        "count": 1,
+        "group": 4096,
+        "item": 4
+      },
+      {
+        "count": 8,
+        "group": 4,
+        "item": 6
+      },
+      {
+        "count": 6,
+        "group": 16,
+        "item": 18
+      },
+      {
+        "count": 6,
+        "group": 32,
+        "item": 7
+      },
+      {
+        "count": 2,
+        "group": 32,
+        "item": 7
+      },
+      {
+        "count": 2,
+        "group": 16,
+        "item": 18
+      },
+      {
+        "count": 4,
+        "group": 16,
+        "item": 18
+      },
+      {
+        "count": 6,
+        "group": 8,
+        "item": 9
+      },
+      {
+        "count": 3,
+        "group": 2048,
+        "item": 4
+      },
+      {
+        "count": 3,
+        "group": 2048,
+        "item": 4
+      }
+    ],
+    "fleet_id": 0,
+    "fleet_owner": 1,
+    "fleet_record": 56,
+    "hull_id": 9,
+    "order_record": 57,
+    "owner_race_bits": "0x80003045",
+    "owner_race_stat": 1,
+    "owner_technology": [
+      0,
+      0,
+      1,
+      0,
+      5,
+      0
+    ],
+    "planet_colonists": 250,
+    "planet_id": 10,
+    "planet_minerals": [
+      469,
+      893,
+      376
+    ],
+    "planet_owner": 0,
+    "ship_count": 1,
+    "target_design_record": 41
+  },
+  "part_records": [
+    {
+      "base_costs": [
+        225,
+        120,
+        25,
+        20
+      ],
+      "group": 16384,
+      "item": 9,
+      "offset": 12023,
+      "quantity": 1,
+      "record_sha256": "de590f6372e36745baa0e6b6333b4e07e791dc4872ae6eb1b788db7b3d807ed7",
+      "segment": 2,
+      "stride": 143,
+      "technology": [
+        0,
+        0,
+        0,
+        13,
+        0,
+        0
+      ]
+    },
+    {
+      "base_costs": [
+        40,
+        12,
+        15,
+        11
+      ],
+      "group": 1,
+      "item": 8,
+      "offset": 624,
+      "quantity": 4,
+      "record_sha256": "10875ade4499e01a23702258d061d681e325a09c7e468408822b28bff32c1bc1",
+      "segment": 2,
+      "stride": 78,
+      "technology": [
+        7,
+        0,
+        13,
+        5,
+        9,
+        0
+      ]
+    },
+    {
+      "base_costs": [
+        25,
+        12,
+        0,
+        3
+      ],
+      "group": 4096,
+      "item": 4,
+      "offset": 4466,
+      "quantity": 1,
+      "record_sha256": "09ff4618653c12685d96fc7977f5ee1a4ecbbcf738bc0ea3b7ef8cc84de39c4e",
+      "segment": 2,
+      "stride": 54,
+      "technology": [
+        5,
+        0,
+        0,
+        11,
+        5,
+        0
+      ]
+    },
+    {
+      "base_costs": [
+        20,
+        10,
+        2,
+        6
+      ],
+      "group": 4,
+      "item": 6,
+      "offset": 3116,
+      "quantity": 8,
+      "record_sha256": "d83907e1c27273c838ae21740f0c041f825a1168c96baa99db758e02afd2c0be",
+      "segment": 2,
+      "stride": 54,
+      "technology": [
+        12,
+        0,
+        9,
+        0,
+        9,
+        0
+      ]
+    },
+    {
+      "base_costs": [
+        40,
+        6,
+        40,
+        6
+      ],
+      "group": 16,
+      "item": 18,
+      "offset": 10376,
+      "quantity": 6,
+      "record_sha256": "ccc7e142e1e875b6bcca7cbb819ff425022493212f20f9d6001214f5cb767116",
+      "segment": 2,
+      "stride": 60,
+      "technology": [
+        21,
+        21,
+        0,
+        0,
+        16,
+        12
+      ]
+    },
+    {
+      "base_costs": [
+        50,
+        3,
+        8,
+        1
+      ],
+      "group": 32,
+      "item": 7,
+      "offset": 8996,
+      "quantity": 6,
+      "record_sha256": "2bd6699c37ba3f25876375b5ff3a4593e36ab5bf5e27b852c9bb62979f409821",
+      "segment": 2,
+      "stride": 60,
+      "technology": [
+        0,
+        11,
+        12,
+        0,
+        0,
+        21
+      ]
+    },
+    {
+      "base_costs": [
+        50,
+        3,
+        8,
+        1
+      ],
+      "group": 32,
+      "item": 7,
+      "offset": 8996,
+      "quantity": 2,
+      "record_sha256": "2bd6699c37ba3f25876375b5ff3a4593e36ab5bf5e27b852c9bb62979f409821",
+      "segment": 2,
+      "stride": 60,
+      "technology": [
+        0,
+        11,
+        12,
+        0,
+        0,
+        21
+      ]
+    },
+    {
+      "base_costs": [
+        40,
+        6,
+        40,
+        6
+      ],
+      "group": 16,
+      "item": 18,
+      "offset": 10376,
+      "quantity": 2,
+      "record_sha256": "ccc7e142e1e875b6bcca7cbb819ff425022493212f20f9d6001214f5cb767116",
+      "segment": 2,
+      "stride": 60,
+      "technology": [
+        21,
+        21,
+        0,
+        0,
+        16,
+        12
+      ]
+    },
+    {
+      "base_costs": [
+        40,
+        6,
+        40,
+        6
+      ],
+      "group": 16,
+      "item": 18,
+      "offset": 10376,
+      "quantity": 4,
+      "record_sha256": "ccc7e142e1e875b6bcca7cbb819ff425022493212f20f9d6001214f5cb767116",
+      "segment": 2,
+      "stride": 60,
+      "technology": [
+        21,
+        21,
+        0,
+        0,
+        16,
+        12
+      ]
+    },
+    {
+      "base_costs": [
+        80,
+        40,
+        0,
+        15
+      ],
+      "group": 8,
+      "item": 9,
+      "offset": 5330,
+      "quantity": 6,
+      "record_sha256": "79dbc6b9dbad1296ae847c556a4b533a1618f080a5c5fe0bab246d13eb7f6699",
+      "segment": 2,
+      "stride": 54,
+      "technology": [
+        0,
+        0,
+        5,
+        0,
+        0,
+        11
+      ]
+    },
+    {
+      "base_costs": [
+        15,
+        5,
+        0,
+        5
+      ],
+      "group": 2048,
+      "item": 4,
+      "offset": 3548,
+      "quantity": 3,
+      "record_sha256": "4c861032a02aa3376e98870afa45ae010cf67a87ac9b3544fdfa748e39df231c",
+      "segment": 2,
+      "stride": 54,
+      "technology": [
+        11,
+        0,
+        11,
+        0,
+        11,
+        0
+      ]
+    },
+    {
+      "base_costs": [
+        15,
+        5,
+        0,
+        5
+      ],
+      "group": 2048,
+      "item": 4,
+      "offset": 3548,
+      "quantity": 3,
+      "record_sha256": "4c861032a02aa3376e98870afa45ae010cf67a87ac9b3544fdfa748e39df231c",
+      "segment": 2,
+      "stride": 54,
+      "technology": [
+        11,
+        0,
+        11,
+        0,
+        11,
+        0
+      ]
+    }
+  ],
+  "source": {
+    "executable": "target/stars.exe",
+    "executable_sha256": "ccab6682b55dae14dbf104e491cfbd3b32a6280022020032ae0615500949ba59",
+    "hst": "runs/syorig-tech-trader-v4-bitc-seed1-action/CLEAN.HST",
+    "hst_sha256": "10fba172f2fed7fd676f319b48a50bb4c3ba0042cf67a7ce300f04bf8df1288d",
+    "part_segment_bytes": 25256,
+    "part_segment_sha256": "52b2fb4ebc7c8ea4527b2d277fcaf3218c916053d9e295e33900cc637a753698"
+  },
+  "status": "verified_v4_high_offer_fixture"
+}

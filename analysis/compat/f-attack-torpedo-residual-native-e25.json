@@ -1,0 +1,57 @@
+{
+  "procedure": "FAttack",
+  "range": "001f:69ac-7cdd",
+  "checkpoint": "E25-E27",
+  "scope": "residual_torpedo_budget_host_and_native_regression",
+  "named_step5_units_closed": 0,
+  "production_source": {
+    "host": "reconstructed/src/f_attack.c",
+    "native_packet": "compat/vc152/f-attack-complex-native-e25/FA.C",
+    "identity": "identical after CRLF normalization and CORE.H include-name adaptation"
+  },
+  "native_e25": {
+    "guest": "StarDev / Win98 / C:\\FAPNE25",
+    "build_status": "COMPILE=PASS; LINK=PASS",
+    "process_exit": 0,
+    "reports": {
+      "LOOKUP_PART_TABLE_CHECKS": {"checks": 34, "failures": 0},
+      "F_ATTACK_PACKED_PART_CHECKS": {"checks": 13, "failures": 0},
+      "F_ATTACK_COMPLEX_SCORE_CHECKS": {"checks": 9, "failures": 0},
+      "F_ATTACK_COMPLEX_SELECTION_CHECKS": {"checks": 3, "failures": 0},
+      "F_ATTACK_RAW_DAMAGE_CHECKS": {"checks": 9, "failures": 0},
+      "F_ATTACK_TORPEDO_TARGET_CHECKS": {"checks": 5, "failures": 0},
+      "F_ATTACK_RAW_TORPEDO_DISPATCH_CHECKS": {"checks": 9, "failures": 0}
+    },
+    "complex_score_min_hull": {"actual": 18181, "expected": 18181},
+    "window_check": "no Program Error dialog"
+  },
+  "native_current_source_e27": {
+    "guest": "StarDev / Win98 / C:\\FAPNE27",
+    "host_probe_source": "tests/f_attack_source_probe.c",
+    "probe_report": "F_ATTACK_CHECKS=34 FAILURES=0 RESULT=PASS",
+    "build_status": "COMPILE=PASS; LINK=PASS",
+    "process_exit": 0
+  },
+  "retained_failed_attempts": {
+    "E24": "VC++ linker unresolved _printf; stale RAWNAT.EXE was not run",
+    "E25_scaling_fixture": "old native FASCALE.C failed after residual-loop expectation changed; corrected and passed in E27",
+    "E26": "reduced packet omitted TORP.C; no executable or runtime result"
+  },
+  "host_validation": {
+    "unittest_discover": "519 passed; 153 skipped; 2241 layout assertions; 846 declarations",
+    "vc152_package_tests": "3 passed",
+    "git_diff_check": "PASS"
+  },
+  "evidence": {
+    "E25_return": "runs/vmctl-vc152fapne25/",
+    "E27_return": "runs/vmctl-vc152fapne27/",
+    "E25_packet": "compat/vc152/f-attack-complex-native-e25/",
+    "E27_packet": "compat/vc152/f-attack-source-native-e27/"
+  },
+  "remaining": [
+    "resolve actual runtime-backed group-0x20 torpedo record values in the packed-part resolver",
+    "compare shield/hull allocation and residual targeting against original behavior",
+    "complete native battle replay across packed token/global state",
+    "close remaining Step-5 units and promote FAttack"
+  ]
+}

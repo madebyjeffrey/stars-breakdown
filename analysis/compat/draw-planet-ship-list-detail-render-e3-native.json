@@ -1,0 +1,39 @@
+{
+  "procedure": "DrawPlanetShipList",
+  "milestone": "detail-render-e3-native",
+  "evidence_unit": "E3 localized text/gauges/detail rendering",
+  "host": {
+    "report": "DRAW_PLANET_SHIP_LIST_DETAIL_RENDER_CHECKS=9 FAILURES=0 RESULT=PASS",
+    "checks": 9
+  },
+  "native": {
+    "guest_directory": "C:\\DLD3",
+    "packet": "compat/vc152/draw-planet-ship-list-details-e3-production-native/",
+    "compile": "PASS",
+    "link": "PASS",
+    "checks": 9,
+    "report": "runs/vmctl-vc152dld3p/DLD3-final.TXT",
+    "program_error_dialog": false,
+    "artifacts": [
+      "runs/vmctl-vc152dld3p/DLD3STA-final.TXT",
+      "runs/vmctl-vc152dld3p/DLD3CL-final.LOG",
+      "runs/vmctl-vc152dld3p/DLD3LINK-final.LOG",
+      "runs/vmctl-vc152dld3p/DLD3-final.TXT"
+    ]
+  },
+  "original": {
+    "capture": "runs/vmctl-vc152current/planet-click.bmp",
+    "visible_boundaries": [
+      "fleet composition",
+      "fuel and cargo",
+      "fleet waypoints"
+    ],
+    "program_error_dialog": false
+  },
+  "step5_unit_closed": true,
+  "remaining": [
+    "E4 complete drawing/transfer integration",
+    "broader original differential coverage",
+    "Step-6 promotion"
+  ]
+}

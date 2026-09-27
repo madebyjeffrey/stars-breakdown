@@ -1,0 +1,44 @@
+{
+  "procedure": "SimpleNewGameDlg",
+  "phase2_step": "5/6",
+  "guest": "StarDev / Win98 / C:\\STARS!\\STARS.EXE",
+  "run": "runs/vmctl-vc152current/",
+  "original_executable_observation": {
+    "settings_dialog": "New Game",
+    "custom_race_pages": [
+      "Custom Race Wizard - Step 1 of 6",
+      "Custom Race Wizard - Step 2 of 6",
+      "Custom Race Wizard - Step 3 of 6",
+      "Custom Race Wizard - Step 4 of 6",
+      "Custom Race Wizard - Step 5 of 6",
+      "Custom Race Wizard - Step 6 of 6"
+    ],
+    "save_dialog": "Save As",
+    "save_type": "Stars! Race Files",
+    "program_error": false,
+    "screenshots": [
+      "runs/vmctl-vc152current/original-customize-start.bmp",
+      "runs/vmctl-vc152current/original-customize-race.bmp",
+      "runs/vmctl-vc152current/original-customize-page2.bmp",
+      "runs/vmctl-vc152current/original-customize-page3.bmp",
+      "runs/vmctl-vc152current/original-customize-page4.bmp",
+      "runs/vmctl-vc152current/original-customize-page5.bmp",
+      "runs/vmctl-vc152current/original-customize-page6.bmp",
+      "runs/vmctl-vc152current/original-customize-return.bmp"
+    ]
+  },
+  "original_instruction_boundary": {
+    "raw_source": "analysis/decompiler/export/raw/1078_76aa_SimpleNewGameDlg.c",
+    "observed_sequence": [
+      "New Game initializes the simple settings dialog",
+      "Customize Race dispatches to RaceCreationWizard",
+      "the six custom-race pages advance and return to the parent dialog",
+      "Finish opens Save As with Stars! Race Files",
+      "canceling Save As returns to the wizard and then the parent dialog"
+    ]
+  },
+  "reconstructed_acceptance": {
+    "native_probe": "runs/vmctl-vc152sngd/SNGDR.TXT",
+    "comparison": "The original Win98 flow agrees with the reconstructed custom-race handoff, list/save boundary, focus restoration, and cancellation path. This is an original/UI integration checkpoint, not proof that packed player records, localized resources, exact geometry, or all Win16 control messages are complete."
+  }
+}

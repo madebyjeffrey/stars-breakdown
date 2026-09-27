@@ -1,0 +1,22 @@
+{
+  "procedure": "DrawPopup",
+  "evidence_unit": "E3",
+  "scope": "detailed_gdi_state_order_and_slot_geometry",
+  "status": "native_supporting_pass",
+  "host_probe": "tests/draw_popup_state_probe.c",
+  "host_report": "DRAW_POPUP_STATE_CHECKS=7 FAILURES=0 RESULT=PASS",
+  "native_packet": "compat/vc152/draw-popup-state-e3/",
+  "native_run": "runs/vmctl-vc152drawpopupstatee3/",
+  "checked": [
+    "initial GDI state setup",
+    "slot-hull bold and opaque transition",
+    "ordinary and kind-14 callback dispatch",
+    "client and slot rectangle geometry",
+    "reverse GDI state restoration"
+  ],
+  "remaining": [
+    "localized detailed GDI rendering",
+    "caller differential and Step-6 promotion"
+  ],
+  "closed": false
+}

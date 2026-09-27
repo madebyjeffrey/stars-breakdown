@@ -1,0 +1,32 @@
+{
+  "procedures": ["DoRobotoidAiTurn", "DoTurinDroneAiTurn", "DoCyberAiTurn"],
+  "milestone": "ai-plord-repair-e3",
+  "scope": "host-only",
+  "checks": 9,
+  "failures": 0,
+  "result": "PASS",
+  "report": "AI_PLORD_REPAIR_SOURCE_CHECKS=9 FAILURES=0 RESULT=PASS",
+  "step5_units_closed": 0,
+  "coverage": {
+    "four_byte_plord_header": true,
+    "eighteen_byte_order_stride": true,
+    "iord_mac_write": true,
+    "first_order_kind_nibble_write": true,
+    "first_order_repair_words": true,
+    "iord_max_preserved": true,
+    "coordinates_and_target_preserved": true,
+    "later_orders_preserved": true,
+    "robotoid_callback_integration": true
+  },
+  "evidence": [
+    "reconstructed/include/core.h",
+    "reconstructed/src/ai_plord.c",
+    "reconstructed/src/do_robotoid_ai_turn.c",
+    "reconstructed/src/do_turin_drone_ai_turn.c",
+    "reconstructed/src/do_cyber_ai_turn.c",
+    "tests/ai_plord_repair_source_probe.c",
+    "tests/do_robotoid_ai_turn_repair_boundary_probe.c",
+    "analysis/debug/types.json",
+    "analysis/decompiler/export/raw/1088_0312_DoRobotoidAiTurn.c"
+  ]
+}

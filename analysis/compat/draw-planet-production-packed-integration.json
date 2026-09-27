@@ -1,0 +1,122 @@
+{
+  "procedures": ["DrawPlanetProduction"],
+  "phase2_step": "6/6",
+  "guest": "StarDev / Win98 / C:\\DPINT",
+  "native_run": "runs/vmctl-vc152dpint/",
+  "host_report": "DRAW_PLANET_PRODUCTION_PACKED_CHECKS=18 FAILURES=0 RESULT=PASS",
+  "native_report": "DRAW_PLANET_PRODUCTION_PACKED_CHECKS=18 FAILURES=0 RESULT=PASS",
+  "localized_resources": {
+    "host_probe": "tests/draw_planet_production_resource_probe.c",
+    "native_run": "runs/vmctl-vc152dpres/",
+    "native_report": "runs/vmctl-vc152dpres/DPRES.TXT",
+    "checks": 3,
+    "failures": 0,
+    "strings": {
+      "0x32e": "Production",
+      "0x218": "Completion: ",
+      "0x4e9": "Route to"
+    },
+    "program_error": false
+  },
+  "production_records": {
+    "host_probe": "tests/draw_planet_production_records_probe.c",
+    "native_run": "runs/vmctl-vc152dprec/",
+    "native_report": "runs/vmctl-vc152dprec/DPREC.TXT",
+    "checks": 16,
+    "failures": 0,
+    "variable_records": 2,
+    "packed_fields": ["kind", "item", "count"],
+    "list_selection_and_direct_formatting": true,
+    "program_error": false
+  },
+  "service_e3": {
+    "host_probe": "tests/draw_planet_production_service_probe.c",
+    "native_package": "compat/vc152/draw-planet-production-service/",
+    "native_run": "runs/vmctl-vc152dpsv/",
+    "native_report": "runs/vmctl-vc152dpsv/DPSV.TXT",
+    "checks": 14,
+    "failures": 0,
+    "boundaries": [
+      "pre_and_post_list_client_rectangles",
+      "full_and_compact_row_heights",
+      "win16_resize_flags",
+      "list_and_button_geometry",
+      "localized_label_order",
+      "queue_action_enablement",
+      "action_button_kind",
+      "reference_rectangle",
+      "tile_reset_handling"
+    ],
+    "native_build": "COMPILE=PASS LINK=PASS",
+    "process_exit": 0,
+    "program_error": false
+  },
+  "original_differential_e4": {
+    "screenshots": [
+      "runs/vmctl-vc152current/planet-frame-current.bmp",
+      "runs/vmctl-vc152current/production-queue-popup.bmp",
+      "runs/vmctl-vc152current/production-before.bmp",
+      "runs/vmctl-vc152current/production-cycle.bmp",
+      "runs/vmctl-vc152current/planet-click.bmp",
+      "runs/vmctl-vc152dpp-original/baseline.bmp",
+      "runs/vmctl-vc152dpp-original/map-select.bmp"
+    ],
+    "selected_planet": "Oop Be Gone",
+    "empty_queue": true,
+    "queue_dialog_title": "Production Queue for Oop Be Gone",
+    "queue_dialog_empty_label": "-- Queue is Empty --",
+    "frame_refresh": "map/fleet selection changes the left fleet controls while the Oop Be Gone planet summary and production boundary remain stable",
+    "program_error": false,
+    "original_instruction_boundary": "analysis/decompiler/export/raw/1048_2c38_DrawPlanetProduction.c"
+  },
+  "native_build": {
+    "compile": "PASS",
+    "link": "PASS",
+    "process_exit": 0,
+    "program_error_dialog": false
+  },
+  "packed_planet": {
+    "size": 56,
+    "offsets": {
+      "id": 0,
+      "lpplprod": 52
+    }
+  },
+  "packed_plprod": {
+    "size": 4,
+    "offsets": {
+      "header": 0,
+      "iprodMax": 2,
+      "iprodMac": 3
+    },
+    "header_bits": {
+      "cbItem": "bits 0-7",
+      "fMark": "bit 8",
+      "ht": "bits 9-11",
+      "cAlloc": "bits 12-15"
+    }
+  },
+  "integration": {
+    "raw_planet_identity_checked": true,
+    "raw_production_pointer_checked": true,
+    "raw_plprod_header_checked": true,
+    "raw_queue_counts_checked": true,
+    "eta_and_planet_name_rows_checked": true,
+    "list_and_button_geometry_checked": true,
+    "queue_action_enablement_checked": true,
+    "empty_production_cleanup_checked": true
+  },
+  "service_boundary": {
+    "planet_name_lookup": "callback-owned prepared text",
+    "eta_formatting": "callback-owned prepared text",
+    "production_item_lookup": "linked PLPROD variable-record list probe",
+    "win16_controls_and_gdi": "callback-owned"
+  },
+  "original_instruction_evidence": {
+    "raw_source": "analysis/decompiler/export/raw/1048_2c38_DrawPlanetProduction.c",
+    "codeview_types": "analysis/debug/types.json",
+    "original_consumer_boundary": "analysis/compat/planet-frame-integration.md"
+  },
+  "remaining_scope": [],
+  "promoted": true
+}

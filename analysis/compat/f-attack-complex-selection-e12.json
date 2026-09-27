@@ -1,0 +1,36 @@
+{
+  "procedure": "FAttack",
+  "range": "001f:69ac-7cdd",
+  "checkpoint": "E12",
+  "scope": "native_production_complex_target_score_selection_integration",
+  "named_step5_units_closed": 0,
+  "host": {
+    "probe": "tests/f_attack_complex_selection_probe.c",
+    "checks": 3,
+    "failures": 0,
+    "result": "PASS"
+  },
+  "native": {
+    "guest_directory": "C:\\FAPNE12",
+    "packet": "compat/vc152/f-attack-complex-native-e12/",
+    "compile": "PASS",
+    "link": "PASS",
+    "checks": 3,
+    "failures": 0,
+    "result": "PASS",
+    "program_error_dialog": false,
+    "artifacts": [
+      "runs/vmctl-vc152fapne12/FAPNATSTA-final2.TXT",
+      "runs/vmctl-vc152fapne12/SELCL-final2.LOG",
+      "runs/vmctl-vc152fapne12/SELLINK-final2.LOG",
+      "runs/vmctl-vc152fapne12/SELR-final.TXT"
+    ]
+  },
+  "remaining": [
+    "complete raw part-dependent scaling",
+    "capacity and jam branches",
+    "distance and shield/hull damage dispatch",
+    "original differential and full battle replay",
+    "Step-6 ledger promotion"
+  ]
+}

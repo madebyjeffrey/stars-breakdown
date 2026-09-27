@@ -1,0 +1,73 @@
+{
+  "procedures": ["ZipProdDlg"],
+  "phase2_step": "6/6",
+  "guest": "StarDev / Win98 / C:\\STARS!\\STARS.EXE",
+  "run": "runs/vmctl-vc152current/",
+  "original_executable_observation": {
+    "dialog_title": "Production Queue for Oop Be Gone [#32770]",
+    "available_items": "Production-item list including ships, defenses, factories, mines, alchemy, and auto-build entries",
+    "selected_queue": "Empty selected queue",
+    "controls": ["Add", "Remove", "Item Up", "Item Down", "Clear", "Help", "OK", "Cancel"],
+    "other_fields": ["Required Minerals", "Apply or define a production template", "Contribute only leftover resources to research"],
+    "program_error": false,
+    "screenshots": ["runs/vmctl-vc152zpd-e3/queue-open.bmp", "runs/vmctl-vc152zpd-e3/queue-add-one.bmp", "runs/vmctl-vc152zpd-e3/queue-add-two.bmp", "runs/vmctl-vc152zpd-e3/queue-moved.bmp", "runs/vmctl-vc152zpd-e3/queue-up.bmp", "runs/vmctl-vc152zpd-e3/queue-clear.bmp", "runs/vmctl-vc152zpd-e3/queue-remove.bmp", "runs/vmctl-vc152zpd-e3/after-cancel.bmp"]
+  },
+  "original_instruction_boundary": {
+    "source": "analysis/decompiler/export/raw/10d0_5490_ZipProdDlg.c",
+    "sequence": [
+      "the production command opens the queue editor",
+      "available items and the selected queue are displayed",
+      "queue-editing controls and resource/template options are available",
+      "the dialog exposes OK and Cancel without a program error"
+    ]
+  },
+  "reconstructed_acceptance": {
+    "native_probe": "runs/vmctl-vc152zpd/ZPDR.TXT",
+    "expanded_native_probe": "runs/vmctl-vc152zpd2/ZPDR.TXT",
+    "expanded_native_checks": [
+      "negative and out-of-range production records are rejected",
+      "maximum packed kind/code word is 0xffc6",
+      "production queue construction is capped at twelve entries"
+    ],
+    "native_user_loop": {
+      "package": "C:\\ZPDMSG",
+      "build_report": "runs/vmctl-vc152zpdmsg/ZPDMSGSTA5.TXT",
+      "compile_log": "runs/vmctl-vc152zpdmsg/ZPDMSGCL5.LOG",
+      "link_log": "runs/vmctl-vc152zpdmsg/ZPDMSGLINK5.LOG",
+      "report": "runs/vmctl-vc152zpdmsg/ZPDMSG3.TXT",
+      "checks": 14,
+      "failures": 0,
+      "covers": ["real parent and child controls", "message-loop initialization", "paint and erase", "control color", "queue selection", "delete/create/rename", "help", "dirty state", "OK teardown"],
+      "program_error": false,
+      "screenshot": "runs/vmctl-vc152zpdmsg/native-screen-final.bmp"
+    },
+    "packed_layout": {
+      "source_type": "analysis/debug/types.json::_zipprodq",
+      "initialization_evidence": "analysis/decompiler/acceptance/1000_124c_ReadIniSettings.c",
+      "record_size": 40,
+      "global_record_count": 5,
+      "fields": {"name_offset": 0, "name_bytes": 13, "valid_offset": 13, "no_research_offset": 14, "item_count_offset": 15, "items_offset": 16, "item_word_count": 12},
+      "host_report": "ZIP_PROD_DLG_CHECKS=36 FAILURES=0 RESULT=PASS",
+      "native_report": "runs/vmctl-vc152zpdlay/ZPDR.TXT",
+      "compile_report": "runs/vmctl-vc152zpdlay/ZPDSTA2.TXT",
+      "program_error": false
+    },
+    "native_fill_user_loop": {
+      "package": "C:\\ZPDLAY",
+      "build_report": "runs/vmctl-vc152zpd-e3/FZPMSGSTA3.TXT",
+      "compile_log": "runs/vmctl-vc152zpd-e3/FZPMSGCL3.LOG",
+      "link_log": "runs/vmctl-vc152zpd-e3/FZPMSGLINK3.LOG",
+      "report": "runs/vmctl-vc152zpd-e3/FZPMSG2.TXT",
+      "checks": 9,
+      "failures": 0,
+      "covers": ["real listbox population", "invalid and empty queue reset", "item add and full-list boundary", "paint and invalidation", "real USER message-loop delivery"],
+      "program_error": false
+    },
+    "original_mutation_sequence": {
+      "run": "runs/vmctl-vc152zpd-e3/",
+      "covers": ["Add Armed Probe", "Add Long Range Scout", "required-mineral/resource total change", "Item Down", "Item Up", "Clear", "Add then Remove", "Cancel without error"],
+      "program_error": false
+    },
+    "comparison": "The original Production Queue dialog and its live mutation sequence agree with the typed ZipProdDlg initialization, packed queue storage, list population, item controls, resource totals, and close behavior. Host and native layout probes, the real USER dialog loop, the real FillZipProdLB listbox loop, and original Win98 Add/Remove/Item Up/Item Down/Clear evidence now cover the complete Step-5 acceptance boundary. Step 6 ledger synchronization is recorded for promotion."
+  }
+}

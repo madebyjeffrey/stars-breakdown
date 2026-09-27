@@ -1,0 +1,57 @@
+{
+  "procedures": ["DrawPlanetStats"],
+  "phase2_step": "5/6",
+  "guest": "StarDev / Win98 / C:\\DPSINT2",
+  "native_run": "runs/vmctl-vc152dpsint/",
+  "host_report": "DRAW_PLANET_STATS_PACKED_CHECKS=13 FAILURES=0 RESULT=PASS",
+  "native_report": "DRAW_PLANET_STATS_PACKED_CHECKS=15 FAILURES=0 RESULT=PASS",
+  "expanded_host_report": "DRAW_PLANET_STATS_PACKED_CHECKS=15 FAILURES=0 RESULT=PASS",
+  "expanded_native_run": "runs/vmctl-vc152dpsint2/",
+  "expanded_native_checks": 15,
+  "native_build": {
+    "compile": "PASS",
+    "link": "PASS",
+    "process_exit": 0,
+    "program_error_dialog": false
+  },
+  "packed_planet": {
+    "size": 56,
+    "offsets": {
+      "id": 0,
+      "status_word": 4,
+      "scanner_defense_word": 24,
+      "mineral_rate_3": 40
+    }
+  },
+  "integration": {
+    "raw_planet_identity_checked": true,
+    "raw_mineral_rate_checked": true,
+    "raw_scanner_bits_checked": true,
+    "raw_defense_bits_checked": true,
+    "zero_mineral_rate_checked": true,
+    "maximum_scanner_and_defense_values_checked": true,
+    "all_value_rows_receive_decoded_data": true,
+    "hidden_tile_labels_checked": true,
+    "reference_and_separator_paths_checked": true
+  },
+  "service_boundary": {
+    "race_lookup": "callback-owned prepared data",
+    "resource_calculation": "callback-owned prepared data",
+    "scanner_selection": "callback-owned prepared data",
+    "defense_selection": "callback-owned prepared data",
+    "gdi_operations": "callback-owned"
+  },
+  "original_instruction_evidence": {
+    "raw_source": "analysis/decompiler/export/raw/1048_1716_DrawPlanetStats.c",
+    "codeview_types": "analysis/debug/types.json",
+    "original_consumer_boundary": "analysis/compat/planet-frame-integration.md"
+  },
+  "remaining_scope": [
+    "complete packed planet/race lookup",
+    "localized and fixed-point formatting",
+    "exact scanner and defense service behavior",
+    "detailed GDI operations",
+    "original differential coverage",
+    "final review and promotion"
+  ]
+}

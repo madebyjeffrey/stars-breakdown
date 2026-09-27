@@ -1,0 +1,67 @@
+{
+  "procedure": "FAttack",
+  "checkpoint": "raw torpedo record and residual sequence E46",
+  "status": "supporting Step-5 evidence; no named unit closed",
+  "fixture": {
+    "source": "target/stars.exe NE segment 2, unrelocated",
+    "executable_sha256": "ccab6682b55dae14dbf104e491cfbd3b32a6280022020032ae0615500949ba59",
+    "segment_bytes": 25256,
+    "segment_sha256": "52b2fb4ebc7c8ea4527b2d277fcaf3218c916053d9e295e33900cc637a753698"
+  },
+  "raw_torpedo_case": {
+    "group": "0x20",
+    "item": 8,
+    "record_offset": "0x2360",
+    "original_fields": {
+      "range": 5,
+      "dp": 85,
+      "init": 0
+    },
+    "damage_sequence": [85, 42],
+    "callback_flags": [12, 12],
+    "random_calls": 4,
+    "residual_packet_state": {
+      "before": 1,
+      "after": 0
+    }
+  },
+  "host": {
+    "torpedo_report": "F_ATTACK_RAW_TORPEDO_DISPATCH_CHECKS=17 FAILURES=0 RESULT=PASS",
+    "full_suite": {
+      "tests_passed": 524,
+      "expected_skips": 153,
+      "layout_assertions": 2241,
+      "declarations": 846,
+      "baseline_check": "PASS",
+      "git_diff_check": "PASS"
+    }
+  },
+  "native_e46": {
+    "guest_directory": "C:\\FAPNE46",
+    "run_directory": "runs/vmctl-vc152fapne46",
+    "compile": "PASS",
+    "link": "PASS",
+    "executables": {
+      "packed_record": {
+        "process_exit": 0,
+        "report": "F_ATTACK_PACKED_PART_CHECKS=24 FAILURES=0 RESULT=PASS"
+      },
+      "torpedo_record_residual": {
+        "process_exit": 0,
+        "report": "F_ATTACK_RAW_TORPEDO_DISPATCH_CHECKS=17 FAILURES=0 RESULT=PASS"
+      }
+    },
+    "program_error_dialog": false
+  },
+  "todo6_counters_unchanged": {
+    "evidence_closed": 120,
+    "evidence_total": 152,
+    "promotion_units_open": 10,
+    "practical_open_work_items": 42
+  },
+  "remaining": [
+    "broader original-executable differential for beam and torpedo damage sequences",
+    "full native battle replay and final differential",
+    "Phase-2 promotion"
+  ]
+}

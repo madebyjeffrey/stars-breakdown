@@ -1,0 +1,54 @@
+{
+  "procedures": ["PtDisplayPlanetPopInfo"],
+  "phase2_step": "5/6",
+  "guest": "StarDev / Win98 / C:\\PPINT",
+  "native_run": "runs/vmctl-vc152ppint/",
+  "host_report": "PT_DISPLAY_PLANET_POP_INFO_PACKED_CHECKS=19 FAILURES=0 RESULT=PASS",
+  "native_report": "PT_DISPLAY_PLANET_POP_INFO_PACKED_CHECKS=19 FAILURES=0 RESULT=PASS",
+  "native_build": {
+    "compile": "PASS",
+    "link": "PASS",
+    "process_exit": 0,
+    "program_error_dialog": false
+  },
+  "packed_planet": {
+    "size": 56,
+    "offsets": {
+      "id": 0,
+      "owner": 2,
+      "flags": 4,
+      "population_change_word": 20,
+      "mineral_rate_0": 28
+    }
+  },
+  "integration": {
+    "raw_identity_decode_checked": true,
+    "raw_owner_decode_checked": true,
+    "raw_mineral_rate_decode_checked": true,
+    "raw_population_change_decode_checked": true,
+    "owned_unowned_foreign_branches_checked": true,
+    "negative_desirability_branch_checked": true,
+    "lookup_identity_and_geometry_checked": true
+  },
+  "service_boundary": {
+    "derived_habitability": "callback-owned",
+    "derived_max_population": "callback-owned",
+    "derived_desirability": "callback-owned",
+    "foreign_environment_class": "callback-owned"
+  },
+  "original_instruction_evidence": {
+    "raw_source": "analysis/decompiler/export/raw/10c0_228e_PtDisplayPlanetPopInfo.c",
+    "codeview_types": "analysis/debug/types.json",
+    "original_consumer_boundary": "analysis/compat/pt-display-planet-pop-info-integration.md"
+  },
+  "remaining_scope": [
+    "complete packed planet/player lookup",
+    "localization and fixed-point formatting",
+    "detailed stream/wrap GDI behavior",
+    "original differential coverage",
+    "final review and promotion"
+  ],
+  "diagnostic_history": [
+    "PPINTDEBUG.TXT records the pre-correction negative-branch label-index expectation"
+  ]
+}

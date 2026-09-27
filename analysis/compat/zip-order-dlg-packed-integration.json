@@ -1,0 +1,43 @@
+{
+  "procedures": ["ZipOrderDlg"],
+  "phase2_step": "5/6",
+  "closed_step5_evidence": ["E1 packed order/name storage and mutation boundary"],
+  "guest": "StarDev / Win98 / C:\\ZODINT",
+  "native_run": "runs/vmctl-vc152zodint/",
+  "host_report": "ZIP_ORDER_DLG_PACKED_CHECKS=11 FAILURES=0 RESULT=PASS",
+  "native_report": "ZIP_ORDER_DLG_PACKED_CHECKS=11 FAILURES=0 RESULT=PASS",
+  "native_build": {
+    "compile": "PASS",
+    "link": "PASS",
+    "process_exit": 0,
+    "program_error_dialog": false
+  },
+  "packed_ziporder": {
+    "record_count": 4,
+    "record_size": 24,
+    "word_offsets": [0, 2, 4, 6, 8],
+    "name_offset": 10,
+    "valid_offset": 23,
+    "packed_order_source_word_offset": 12
+  },
+  "integration": {
+    "raw_decode_checked": true,
+    "initialization_checked": true,
+    "selection_checked": true,
+    "create_copy_of_five_order_words_checked": true,
+    "name_and_ampersand_boundary_checked": true,
+    "delete_validity_cleanup_checked": true,
+    "rename_persistence_checked": true,
+    "cancel_closure_checked": true
+  },
+  "original_instruction_evidence": {
+    "raw_source": "analysis/decompiler/export/raw/1080_0000_ZipOrderDlg.c",
+    "codeview_types": "analysis/debug/types.json",
+    "original_dialog_boundary": "analysis/compat/zip-order-integration.md"
+  },
+  "remaining_scope": [
+    "E2 localized resource table and command integration",
+    "E3 complete live Win16 integration and original differential coverage",
+    "final review and promotion"
+  ]
+}

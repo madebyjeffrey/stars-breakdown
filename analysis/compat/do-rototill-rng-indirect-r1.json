@@ -1,0 +1,670 @@
+{
+  "address_taken_random_relocations": [],
+  "random_address": "1040:16d2",
+  "reachable_indirect_count": 35,
+  "reachable_indirect_transfers": [
+    {
+      "instruction": "JMP word ptr CS:[BX + 0x5852]",
+      "kind": "COMPUTED_JUMP",
+      "one_shortest_path": [
+        "FGenerateTurn",
+        "FCanBuildShdef",
+        "FLookupPart"
+      ],
+      "owners": [
+        "FLookupPart"
+      ],
+      "site": "1008:584d",
+      "status": "static target set recovered",
+      "target_count": 6,
+      "targets_include_random": false
+    },
+    {
+      "instruction": "JMP word ptr CS:[BX + 0x8ee1]",
+      "kind": "COMPUTED_JUMP",
+      "one_shortest_path": [
+        "FGenerateTurn",
+        "PszFormatIds",
+        "PszFormatString"
+      ],
+      "owners": [
+        "PszFormatString"
+      ],
+      "site": "1030:8edc",
+      "status": "static target set recovered",
+      "target_count": 27,
+      "targets_include_random": false
+    },
+    {
+      "instruction": "CALLF [BX + 0x6]",
+      "kind": "COMPUTED_CALL",
+      "one_shortest_path": [
+        "FGenerateTurn",
+        "FRunLogFile",
+        "FRunLogRecord",
+        "DestroyAllIshdef",
+        "DrawPlanShip"
+      ],
+      "owners": [
+        "DrawPlanShip"
+      ],
+      "site": "1048:102f",
+      "status": "unresolved",
+      "target_count": 0,
+      "targets_include_random": false
+    },
+    {
+      "instruction": "JMP word ptr CS:[BX + 0xc738]",
+      "kind": "COMPUTED_JUMP",
+      "one_shortest_path": [
+        "FGenerateTurn",
+        "FRunLogFile",
+        "FRunLogRecord"
+      ],
+      "owners": [
+        "FRunLogRecord"
+      ],
+      "site": "1048:c733",
+      "status": "static target set recovered",
+      "target_count": 20,
+      "targets_include_random": false
+    },
+    {
+      "instruction": "JMP word ptr CS:[BX + 0xfa3]",
+      "kind": "COMPUTED_JUMP",
+      "one_shortest_path": [
+        "FGenerateTurn",
+        "FRunLogFile",
+        "FRunLogRecord",
+        "DestroyAllIshdef",
+        "RedrawScanSel",
+        "DrawScanner",
+        "PtToScan"
+      ],
+      "owners": [
+        "PtToScan"
+      ],
+      "site": "1058:0f9e",
+      "status": "static target set recovered",
+      "target_count": 9,
+      "targets_include_random": false
+    },
+    {
+      "instruction": "JMP word ptr CS:[BX + 0x106b]",
+      "kind": "COMPUTED_JUMP",
+      "one_shortest_path": [
+        "FGenerateTurn",
+        "FWriteDataFile",
+        "FFindNearestObject",
+        "ScanToPt"
+      ],
+      "owners": [
+        "ScanToPt"
+      ],
+      "site": "1058:1066",
+      "status": "static target set recovered",
+      "target_count": 9,
+      "targets_include_random": false
+    },
+    {
+      "instruction": "JMP word ptr CS:[BX + 0x2d68]",
+      "kind": "COMPUTED_JUMP",
+      "one_shortest_path": [
+        "FGenerateTurn",
+        "FRunLogFile",
+        "FRunLogRecord",
+        "DestroyAllIshdef",
+        "RedrawScanSel",
+        "DrawScanner"
+      ],
+      "owners": [
+        "DrawScanner"
+      ],
+      "site": "1058:2d63",
+      "status": "static target set recovered",
+      "target_count": 4,
+      "targets_include_random": false
+    },
+    {
+      "instruction": "JMP word ptr CS:[BX + 0xb81f]",
+      "kind": "COMPUTED_JUMP",
+      "one_shortest_path": [
+        "FGenerateTurn",
+        "UpdatePlayerScores",
+        "GetVCVal"
+      ],
+      "owners": [
+        "GetVCVal"
+      ],
+      "site": "1078:b81a",
+      "status": "static target set recovered",
+      "target_count": 9,
+      "targets_include_random": false
+    },
+    {
+      "instruction": "JMP word ptr CS:[BX + 0x1d18]",
+      "kind": "COMPUTED_JUMP",
+      "one_shortest_path": [
+        "FGenerateTurn",
+        "MoveFleets",
+        "KillUsedWaypoints"
+      ],
+      "owners": [
+        "KillUsedWaypoints"
+      ],
+      "site": "1080:1d13",
+      "status": "static target set recovered",
+      "target_count": 3,
+      "targets_include_random": false
+    },
+    {
+      "instruction": "JMP word ptr CS:[BX + 0x7006]",
+      "kind": "COMPUTED_JUMP",
+      "one_shortest_path": [
+        "FGenerateTurn",
+        "DoOrders",
+        "SatisfyOrders"
+      ],
+      "owners": [
+        "SatisfyOrders"
+      ],
+      "site": "10b0:7001",
+      "status": "static target set recovered",
+      "target_count": 7,
+      "targets_include_random": false
+    },
+    {
+      "instruction": "JMP word ptr CS:[BX + 0x7b62]",
+      "kind": "COMPUTED_JUMP",
+      "one_shortest_path": [
+        "FGenerateTurn",
+        "DoOrders",
+        "SatisfyOrders"
+      ],
+      "owners": [
+        "SatisfyOrders"
+      ],
+      "site": "10b0:7b5d",
+      "status": "static target set recovered",
+      "target_count": 5,
+      "targets_include_random": false
+    },
+    {
+      "instruction": "JMP word ptr CS:[BX + 0x2f88]",
+      "kind": "COMPUTED_JUMP",
+      "one_shortest_path": [
+        "FGenerateTurn",
+        "Produce",
+        "FBuildObject"
+      ],
+      "owners": [
+        "FBuildObject"
+      ],
+      "site": "10b8:2f83",
+      "status": "static target set recovered",
+      "target_count": 10,
+      "targets_include_random": false
+    },
+    {
+      "instruction": "JMP word ptr CS:[BX + 0x4120]",
+      "kind": "COMPUTED_JUMP",
+      "one_shortest_path": [
+        "FGenerateTurn",
+        "DoOrders",
+        "DoBattles",
+        "FDoCoolBattle",
+        "InitializeBoard",
+        "CheckWeapons"
+      ],
+      "owners": [
+        "CheckWeapons"
+      ],
+      "site": "10f0:411b",
+      "status": "static target set recovered",
+      "target_count": 6,
+      "targets_include_random": false
+    },
+    {
+      "instruction": "JMP word ptr CS:[BX + 0x5850]",
+      "kind": "COMPUTED_JUMP",
+      "one_shortest_path": [
+        "FGenerateTurn",
+        "DoOrders",
+        "DoBattles",
+        "FDoCoolBattle",
+        "DxyMoveTokTo",
+        "FDoesPrimaryTargetTypeExist"
+      ],
+      "owners": [
+        "FDoesPrimaryTargetTypeExist"
+      ],
+      "site": "10f0:584b",
+      "status": "static target set recovered",
+      "target_count": 3,
+      "targets_include_random": false
+    },
+    {
+      "instruction": "JMP word ptr CS:[BX + 0x5975]",
+      "kind": "COMPUTED_JUMP",
+      "one_shortest_path": [
+        "FGenerateTurn",
+        "DoOrders",
+        "DoBattles",
+        "FDoCoolBattle",
+        "FAttack",
+        "FIsTargetOfMdTarget"
+      ],
+      "owners": [
+        "FIsTargetOfMdTarget"
+      ],
+      "site": "10f0:5970",
+      "status": "static target set recovered",
+      "target_count": 6,
+      "targets_include_random": false
+    },
+    {
+      "instruction": "JMP word ptr CS:[BX + 0x5f05]",
+      "kind": "COMPUTED_JUMP",
+      "one_shortest_path": [
+        "FGenerateTurn",
+        "DoOrders",
+        "DoBattles",
+        "FDoCoolBattle",
+        "DxyMoveTokTo",
+        "ScoreGuessBattleDamage",
+        "ScoreFromGiveAndTakeAndTactic"
+      ],
+      "owners": [
+        "ScoreFromGiveAndTakeAndTactic"
+      ],
+      "site": "10f0:5f00",
+      "status": "static target set recovered",
+      "target_count": 3,
+      "targets_include_random": false
+    },
+    {
+      "instruction": "JMP word ptr CS:[BX + 0x640f]",
+      "kind": "COMPUTED_JUMP",
+      "one_shortest_path": [
+        "FGenerateTurn",
+        "BreedColonistsInTransit",
+        "ChgCargo",
+        "FLookupFleet",
+        "AdvanceTutor",
+        "FTutorTaskDone"
+      ],
+      "owners": [
+        "FTutorTaskDone"
+      ],
+      "site": "10f8:640a",
+      "status": "static target set recovered",
+      "target_count": 37,
+      "targets_include_random": false
+    },
+    {
+      "instruction": "INT 0x21",
+      "kind": "COMPUTED_CALL",
+      "one_shortest_path": [
+        "FGenerateTurn",
+        "FMarkFile",
+        "__lseek"
+      ],
+      "owners": [
+        "__lseek"
+      ],
+      "site": "1118:02d0",
+      "status": "OS interrupt; service behavior requires runtime review",
+      "target_count": 0,
+      "targets_include_random": false
+    },
+    {
+      "instruction": "INT 0x21",
+      "kind": "COMPUTED_CALL",
+      "one_shortest_path": [
+        "FGenerateTurn",
+        "FMarkFile",
+        "__lseek"
+      ],
+      "owners": [
+        "__lseek"
+      ],
+      "site": "1118:0304",
+      "status": "OS interrupt; service behavior requires runtime review",
+      "target_count": 0,
+      "targets_include_random": false
+    },
+    {
+      "instruction": "INT 0x21",
+      "kind": "COMPUTED_CALL",
+      "one_shortest_path": [
+        "FGenerateTurn",
+        "FMarkFile",
+        "__lseek"
+      ],
+      "owners": [
+        "__lseek"
+      ],
+      "site": "1118:0327",
+      "status": "OS interrupt; service behavior requires runtime review",
+      "target_count": 0,
+      "targets_include_random": false
+    },
+    {
+      "instruction": "INT 0x21",
+      "kind": "COMPUTED_CALL",
+      "one_shortest_path": [
+        "FGenerateTurn",
+        "FMarkFile",
+        "__lseek"
+      ],
+      "owners": [
+        "__lseek"
+      ],
+      "site": "1118:0346",
+      "status": "OS interrupt; service behavior requires runtime review",
+      "target_count": 0,
+      "targets_include_random": false
+    },
+    {
+      "instruction": "INT 0x21",
+      "kind": "COMPUTED_CALL",
+      "one_shortest_path": [
+        "FGenerateTurn",
+        "AlertSz",
+        "OutputSz",
+        "__strdate"
+      ],
+      "owners": [
+        "__strdate"
+      ],
+      "site": "1118:0526",
+      "status": "OS interrupt; service behavior requires runtime review",
+      "target_count": 0,
+      "targets_include_random": false
+    },
+    {
+      "instruction": "INT 0x21",
+      "kind": "COMPUTED_CALL",
+      "one_shortest_path": [
+        "FGenerateTurn",
+        "AlertSz",
+        "OutputSz",
+        "__strtime"
+      ],
+      "owners": [
+        "__strtime"
+      ],
+      "site": "1118:058a",
+      "status": "OS interrupt; service behavior requires runtime review",
+      "target_count": 0,
+      "targets_include_random": false
+    },
+    {
+      "instruction": "CALLF [BP + 0xe]",
+      "kind": "COMPUTED_CALL",
+      "one_shortest_path": [
+        "FGenerateTurn",
+        "DoOrders",
+        "DoBattles",
+        "LinkFleets",
+        "_bsearch"
+      ],
+      "owners": [
+        "_bsearch"
+      ],
+      "site": "1118:07ee",
+      "status": "unresolved",
+      "target_count": 0,
+      "targets_include_random": false
+    },
+    {
+      "instruction": "CALLF [BP + 0xe]",
+      "kind": "COMPUTED_CALL",
+      "one_shortest_path": [
+        "FGenerateTurn",
+        "DoOrders",
+        "DoBattles",
+        "LinkFleets",
+        "_bsearch"
+      ],
+      "owners": [
+        "_bsearch"
+      ],
+      "site": "1118:082e",
+      "status": "unresolved",
+      "target_count": 0,
+      "targets_include_random": false
+    },
+    {
+      "instruction": "CALLF [BP + 0xc]",
+      "kind": "COMPUTED_CALL",
+      "one_shortest_path": [
+        "FGenerateTurn",
+        "BreedColonistsInTransit",
+        "ChgCargo",
+        "FLookupFleet",
+        "InvalidateReport",
+        "SortReportCache",
+        "_qsort"
+      ],
+      "owners": [
+        "_qsort"
+      ],
+      "site": "1118:088a",
+      "status": "unresolved",
+      "target_count": 0,
+      "targets_include_random": false
+    },
+    {
+      "instruction": "CALLF [DI + 0x14]",
+      "kind": "COMPUTED_CALL",
+      "one_shortest_path": [
+        "FGenerateTurn",
+        "BreedColonistsInTransit",
+        "ChgCargo",
+        "FLookupFleet",
+        "InvalidateReport",
+        "SortReportCache",
+        "_qsort"
+      ],
+      "owners": [
+        "_qsort"
+      ],
+      "site": "1118:0911",
+      "status": "unresolved",
+      "target_count": 0,
+      "targets_include_random": false
+    },
+    {
+      "instruction": "CALLF [DI + 0x14]",
+      "kind": "COMPUTED_CALL",
+      "one_shortest_path": [
+        "FGenerateTurn",
+        "BreedColonistsInTransit",
+        "ChgCargo",
+        "FLookupFleet",
+        "InvalidateReport",
+        "SortReportCache",
+        "_qsort"
+      ],
+      "owners": [
+        "_qsort"
+      ],
+      "site": "1118:092f",
+      "status": "unresolved",
+      "target_count": 0,
+      "targets_include_random": false
+    },
+    {
+      "instruction": "INT 0x21",
+      "kind": "COMPUTED_CALL",
+      "one_shortest_path": [
+        "FGenerateTurn",
+        "__access"
+      ],
+      "owners": [
+        "__access"
+      ],
+      "site": "1118:0a36",
+      "status": "OS interrupt; service behavior requires runtime review",
+      "target_count": 0,
+      "targets_include_random": false
+    },
+    {
+      "instruction": "INT 0x21",
+      "kind": "COMPUTED_CALL",
+      "one_shortest_path": [
+        "FGenerateTurn",
+        "_rename"
+      ],
+      "owners": [
+        "_rename"
+      ],
+      "site": "1118:0ae3",
+      "status": "OS interrupt; service behavior requires runtime review",
+      "target_count": 0,
+      "targets_include_random": false
+    },
+    {
+      "instruction": "INT 0x21",
+      "kind": "COMPUTED_CALL",
+      "one_shortest_path": [
+        "FGenerateTurn",
+        "__unlink"
+      ],
+      "owners": [
+        "__unlink"
+      ],
+      "site": "1118:0b09",
+      "status": "OS interrupt; service behavior requires runtime review",
+      "target_count": 0,
+      "targets_include_random": false
+    },
+    {
+      "instruction": "JMPF [0x1878]",
+      "kind": "COMPUTED_JUMP",
+      "one_shortest_path": [
+        "FGenerateTurn",
+        "BreedColonistsInTransit",
+        "ChgCargo",
+        "FLookupFleet",
+        "InvalidateReport",
+        "SortReportCache",
+        "_qsort",
+        "__aFchkstk"
+      ],
+      "owners": [
+        "__aFchkstk"
+      ],
+      "site": "1118:12ed",
+      "status": "unresolved",
+      "target_count": 0,
+      "targets_include_random": false
+    },
+    {
+      "instruction": "JMP word ptr [DI]",
+      "kind": "COMPUTED_JUMP",
+      "one_shortest_path": [
+        "FGenerateTurn",
+        "GetShdefScannerRange",
+        "_sqrt",
+        "__ctrandisp1"
+      ],
+      "owners": [
+        "__ctrandisp1"
+      ],
+      "site": "1118:213f",
+      "status": "static target set recovered",
+      "target_count": 4,
+      "targets_include_random": false
+    },
+    {
+      "instruction": "JMP word ptr [BX]",
+      "kind": "COMPUTED_JUMP",
+      "one_shortest_path": [
+        "FGenerateTurn",
+        "GetShdefScannerRange",
+        "_sqrt",
+        "__ctrandisp1",
+        "__trandisp1"
+      ],
+      "owners": [
+        "__trandisp1"
+      ],
+      "site": "1118:2420",
+      "status": "unresolved",
+      "target_count": 0,
+      "targets_include_random": false
+    },
+    {
+      "instruction": "JMP word ptr [BX]",
+      "kind": "COMPUTED_JUMP",
+      "one_shortest_path": [
+        "FGenerateTurn",
+        "MoveThings",
+        "CalcPctSurvive",
+        "_pow",
+        "__ctrandisp2",
+        "__trandisp2"
+      ],
+      "owners": [
+        "__trandisp2"
+      ],
+      "site": "1118:2483",
+      "status": "static target set recovered",
+      "target_count": 39,
+      "targets_include_random": false
+    }
+  ],
+  "reachable_os_interrupt_count": 9,
+  "reachable_unresolved_count": 8,
+  "recovered_indirect_targets_include_random": false,
+  "root": "FGenerateTurn",
+  "schema": "rototill-rng-indirect-r1",
+  "scope_note": "Static direct-call reachability is an overapproximation; missing address-taken relocations do not exclude constructed runtime function pointers.",
+  "seed_mutators": {
+    "PopRandom": {
+      "address": "1040:14a2",
+      "one_shortest_path": null
+    },
+    "PushRandom": {
+      "address": "1040:1440",
+      "one_shortest_path": null
+    },
+    "Randomize": {
+      "address": "1040:15ea",
+      "one_shortest_path": [
+        "FGenerateTurn",
+        "Randomize"
+      ]
+    },
+    "Randomize2": {
+      "address": "1040:165a",
+      "one_shortest_path": [
+        "FGenerateTurn",
+        "BreedColonistsInTransit",
+        "ChgCargo",
+        "FLookupFleet",
+        "AdvanceTutor",
+        "EndTutor",
+        "Randomize2"
+      ]
+    },
+    "SetFileSeeds": {
+      "address": "1040:1a7c",
+      "one_shortest_path": [
+        "FGenerateTurn",
+        "FMarkFile",
+        "SetFileSeeds"
+      ]
+    }
+  },
+  "source_sha256": {
+    "callgraph.json": "e86d75c0a21076333fa5b57763bc7419b06c5406fbed08e919fe74de57f670fd",
+    "code-pointers.json": "33007d3f6fcb5b1c451d51cca5e43949fca1456a62e8c40ca09f446c76ee23e1",
+    "data-references.json": "cc252013a05619de996a6c8e7b5c9b127ff03abd51d02086fb53749858c2dbda",
+    "functions.json": "d0cb3410476fc7754ccbb8845b19f3e39fceef6156b2458788a66953d7401a7a",
+    "indirect-targets.json": "a8dbe6001adaf93b1c07be5e34b3cd52d7cae15f9c8dda552333f5d6b56e0bbd"
+  },
+  "static_reachable_name_count": 956
+}

@@ -1,0 +1,45 @@
+{
+  "procedures": ["FDoCoolBattle", "FAttack"],
+  "milestone": "f-do-cool-battle-attack-integration-e3",
+  "scope": "host_and_native_battle_chain_subcheck",
+  "checks": 18,
+  "failures": 0,
+  "result": "PASS",
+  "packet": "compat/vc152/f-do-cool-battle-attack-production-e3/",
+  "packet_host_shape_compile": "PROBE.C COOL.C FA.C TORP.C DXY.C DZRANGE.C INIT.C BATTLE.C MDTARG.C PASS",
+  "native_status": "pass",
+  "native_compile": "COMPILE=PASS",
+  "native_link": "LINK=PASS",
+  "native_report": "runs/vmctl-vc152cbatp/CBATRES-final2.TXT",
+  "native_build_status": "runs/vmctl-vc152cbatp/COOLATSTA-final2.TXT",
+  "native_compile_log": "runs/vmctl-vc152cbatp/COOLACL-final2.LOG",
+  "native_link_log": "runs/vmctl-vc152cbatp/COOLATLINK-final2.LOG",
+  "native_process_exit": 0,
+  "native_program_error_dialog": false,
+  "native_warning_fixed": true,
+  "native_compile_warning_initial": "FA.C(278): signed/unsigned mismatch in section-index comparison",
+  "native_battle_chain_subcheck": true,
+  "step5_units_closed": {
+    "FDoCoolBattle": 0,
+    "FAttack": 0
+  },
+  "integration": {
+    "battle_to_attack_dispatch": true,
+    "damage_mutates_target_token": true,
+    "movement_and_attack_events": true,
+    "survivor_termination": true,
+    "report_and_cleanup": true
+  },
+  "evidence": [
+    "reconstructed/src/f_do_cool_battle.c",
+    "reconstructed/src/f_attack.c",
+    "reconstructed/src/c_torp_hit.c",
+    "reconstructed/src/dxy_move_tok_to.c",
+    "reconstructed/src/dz_move_range_to_consider.c",
+    "reconstructed/src/initialize_board.c",
+    "reconstructed/src/battle.c",
+    "reconstructed/src/md_target.c",
+    "reconstructed/include/core.h",
+    "tests/f_do_cool_battle_attack_integration_probe.c"
+  ]
+}

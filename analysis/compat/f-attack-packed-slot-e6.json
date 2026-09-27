@@ -1,0 +1,43 @@
+{
+  "procedures": ["FAttack"],
+  "milestone": "f-attack-packed-slot-e6",
+  "scope": "host-source-fidelity",
+  "checks": 10,
+  "failures": 0,
+  "result": "PASS",
+  "report": "F_ATTACK_PACKED_PART_CHECKS=10 FAILURES=0 RESULT=PASS",
+  "step5_units_closed": 0,
+  "raw_boundary": {
+    "record": "_hs",
+    "size_bytes": 4,
+    "group_word_offset": 0,
+    "item_byte_offset": 2,
+    "count_byte_offset": 3,
+    "lookup_gate": "(grhst & 0x30) != 0 && cItem != 0",
+    "lookup_before_initiative": true
+  },
+  "coverage": {
+    "raw_slot_overrides_contradictory_typed_fields": true,
+    "group_item_count_forwarding": true,
+    "resolved_component_identity": "0x00100007",
+    "resolved_section_dispatch": true,
+    "unsupported_item_rejection": true,
+    "zero_count_suppression": true,
+    "caller_section_unchanged": true
+  },
+  "native_status": "pending_guest_agent_reconnection",
+  "remaining_scope": [
+    "native packed FLookupPart table and race/hidden/technology services",
+    "complete battle-part scaling",
+    "broader original damage differentials",
+    "native packed replay and full battle replay"
+  ],
+  "evidence": [
+    "analysis/decompiler/export/raw/10f0_69ac_FAttack.c",
+    "analysis/decompiler/export/raw/1008_524e_FLookupPart.c",
+    "analysis/DATA_LAYOUTS.md",
+    "reconstructed/include/core.h",
+    "reconstructed/src/f_attack.c",
+    "tests/f_attack_packed_part_probe.c"
+  ]
+}

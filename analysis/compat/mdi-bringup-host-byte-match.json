@@ -1,0 +1,144 @@
+{
+  "original_sha256": "ccab6682b55dae14dbf104e491cfbd3b32a6280022020032ae0615500949ba59",
+  "compiler": "Microsoft C/C++ Compiler Version 8.00c (VC++ 1.52c)",
+  "flags": "/c /AM /GA /GEs /Zp1 /Od /Gs /W3 /Fc",
+  "comparison": "No masked bytes; named OMF relocations resolved into the original address layout.",
+  "functions": [
+    {
+      "name": "BringUpHostDlg",
+      "ne_segment": 5,
+      "original_offset": 24572,
+      "original_bytes": 580,
+      "generated_bytes": 580,
+      "length_difference": 0,
+      "exact_after_address_resolution": true,
+      "differing_bytes": 0,
+      "differences": [],
+      "fixups": [
+        {
+          "offset": 70,
+          "width": 4,
+          "target": "_FMarkFile",
+          "resolved_value": "0x1070904a"
+        },
+        {
+          "offset": 98,
+          "width": 4,
+          "target": "SHOWWINDOW",
+          "resolved_value": "0x14f801bc"
+        },
+        {
+          "offset": 148,
+          "width": 4,
+          "target": "MAKEPROCINSTANCE",
+          "resolved_value": "0x14f80048"
+        },
+        {
+          "offset": 181,
+          "width": 4,
+          "target": "DIALOGBOX",
+          "resolved_value": "0x14f8021c"
+        },
+        {
+          "offset": 195,
+          "width": 4,
+          "target": "FREEPROCINSTANCE",
+          "resolved_value": "0x14f8004c"
+        },
+        {
+          "offset": 217,
+          "width": 4,
+          "target": "SHOWWINDOW",
+          "resolved_value": "0x14f801bc"
+        },
+        {
+          "offset": 242,
+          "width": 4,
+          "target": "SETTIMER",
+          "resolved_value": "0x14f80168"
+        },
+        {
+          "offset": 276,
+          "width": 4,
+          "target": "_HostTimerProc",
+          "resolved_value": "0x10207716"
+        },
+        {
+          "offset": 312,
+          "width": 4,
+          "target": "_ShowProgressGauge",
+          "resolved_value": "0x1040636c"
+        },
+        {
+          "offset": 317,
+          "width": 4,
+          "target": "_EnsureAis",
+          "resolved_value": "0x102056bc"
+        },
+        {
+          "offset": 322,
+          "width": 4,
+          "target": "_FGenerateTurn",
+          "resolved_value": "0x10b00000"
+        },
+        {
+          "offset": 346,
+          "width": 4,
+          "target": "GETASYNCKEYSTATE",
+          "resolved_value": "0x14f802c4"
+        },
+        {
+          "offset": 363,
+          "width": 4,
+          "target": "GETASYNCKEYSTATE",
+          "resolved_value": "0x14f802c4"
+        },
+        {
+          "offset": 385,
+          "width": 4,
+          "target": "_HideProgressGauge",
+          "resolved_value": "0x104063b2"
+        },
+        {
+          "offset": 433,
+          "width": 4,
+          "target": "_FMarkFile",
+          "resolved_value": "0x1070904a"
+        },
+        {
+          "offset": 453,
+          "width": 4,
+          "target": "_DestroyCurGame",
+          "resolved_value": "0x107044b0"
+        },
+        {
+          "offset": 482,
+          "width": 4,
+          "target": "GETSYSTEMMETRICS",
+          "resolved_value": "0x14f802b4"
+        },
+        {
+          "offset": 494,
+          "width": 4,
+          "target": "GETSYSTEMMETRICS",
+          "resolved_value": "0x14f802b4"
+        },
+        {
+          "offset": 558,
+          "width": 4,
+          "target": "CREATEWINDOW",
+          "resolved_value": "0x14f801b8"
+        }
+      ],
+      "backpatch_records": 25,
+      "original_relocated_sha256": "fdd1021f78258b082865add7b2c6a039d9d038b5351b67799d111c26272275a6",
+      "generated_resolved_sha256": "fdd1021f78258b082865add7b2c6a039d9d038b5351b67799d111c26272275a6",
+      "source": "compat/mdi-bringup-host-match/MDI.C"
+    }
+  ],
+  "all_functions_match": true,
+  "object_sha256": "ce756b56e3081bc0126ba268d0f9be873121673e5899c80cf8d10184db765e60",
+  "source_sha256": "cbdb4a5df459b082f96f95ddd54aa949d6dddf884308728c493a67ff789e099a",
+  "build_log": "mdi.c\nmdi.c(239) : warning C4101: 'scratch' : unreferenced local variable\n",
+  "build_status": "PASS\n"
+}

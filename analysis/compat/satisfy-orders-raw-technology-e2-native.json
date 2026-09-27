@@ -1,0 +1,52 @@
+{
+  "procedures": ["SatisfyOrders"],
+  "phase2_step": "5/6",
+  "unit": "E2 raw technology FSendPlrMsg frame handoff",
+  "status": "supporting milestone; named E2 remains open",
+  "guest": "StarDev / Win98 / C:\\SYOE18",
+  "native_run": "runs/vmctl-vc152syoe18/",
+  "host_report": "SATISFY_ORDERS_RAW_TECHNOLOGY_CHECKS=16 FAILURES=0 RESULT=PASS",
+  "native_report": "SATISFY_ORDERS_RAW_TECHNOLOGY_CHECKS=16 FAILURES=0 RESULT=PASS EXIT=0",
+  "native_rerun": "runs/vmctl-vc152syoe18-r2/",
+  "native_build": {
+    "compile": "PASS",
+    "link": "PASS",
+    "process_exit": 0,
+    "program_error_dialog": false,
+    "compiler_options": "/AM /GA /GEs /Zp1 /O /W3",
+    "response_file_definitions": "SYOTECH.DEF included; Win16 stack/heap/stub directives applied"
+  },
+  "covered": [
+    "production raw_message technology frame handoff",
+    "signed negative point result message code 0x013c",
+    "signed positive planet result message code 0x013f",
+    "caller-resolved recipient forwarding",
+    "all eight caller-resolved payload words forwarded exactly",
+    "result id and transferred amount retained through binding",
+    "order completion after technology binding"
+  ],
+  "remaining": [
+    "independent derivation of every original technology payload field",
+    "foreign-fleet, fuel, and permission/failure resource-message families",
+    "original transfer differential against the full game message stream",
+    "E3 full-turn/original differential",
+    "named SatisfyOrders E2 Step-5 closure and Step-6 promotion"
+  ],
+  "evidence": [
+    "tests/satisfy_orders_raw_technology_probe.c",
+    "compat/vc152/satisfy-orders-raw-technology-e2-native/",
+    "runs/vmctl-vc152syoe18/SYOTECH.TXT",
+    "runs/vmctl-vc152syoe18/SYOTECHSTA.TXT",
+    "runs/vmctl-vc152syoe18/SYOTECHCL.LOG",
+    "runs/vmctl-vc152syoe18/SYOTECHLINK.LOG",
+    "runs/vmctl-vc152syoe18/SYOTECH.MAP",
+    "runs/vmctl-vc152syoe18-r2/SYOTECH.TXT",
+    "runs/vmctl-vc152syoe18-r2/SYOTECHSTA.TXT",
+    "runs/vmctl-vc152syoe18-r2/SYOTECHCL.LOG",
+    "runs/vmctl-vc152syoe18-r2/SYOTECHLINK.LOG",
+    "reconstructed/src/satisfy_orders.c",
+    "reconstructed/include/core.h",
+    "analysis/compat/satisfy-orders-technology-binding-e2-native.md",
+    "analysis/decompiler/export/raw/10b0_6798_SatisfyOrders.c"
+  ]
+}

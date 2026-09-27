@@ -1,0 +1,29 @@
+{
+  "procedure": "SimpleNewGameDlg",
+  "phase2_step": "6/6",
+  "evidence_unit": "E3_creation_mutation_and_caller_integration",
+  "host_probe": {
+    "source": "tests/simple_new_game_dlg_integration_probe.c",
+    "checks": 12,
+    "failures": 0,
+    "result": "PASS"
+  },
+  "native_probe": {
+    "package": "compat/vc152/simple-new-game-dlg-integration/",
+    "status": "COMPILE=PASS LINK=PASS",
+    "report": "runs/vmctl-vc152sngdi/SNGDIE3.TXT",
+    "checks": 12,
+    "failures": 0,
+    "result": "PASS",
+    "process_exit": 0,
+    "program_error_dialog": false
+  },
+  "covers": [
+    "accepted density and map-size radio values",
+    "selected race reaching the EndDialog caller boundary",
+    "custom-race load/wizard/save and list mutation",
+    "focus restoration after custom-race return",
+    "cancel preserving accepted dialog state"
+  ],
+  "remaining": []
+}

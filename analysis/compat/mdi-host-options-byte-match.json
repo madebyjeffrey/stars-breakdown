@@ -1,0 +1,108 @@
+{
+  "original_sha256": "ccab6682b55dae14dbf104e491cfbd3b32a6280022020032ae0615500949ba59",
+  "compiler": "Microsoft C/C++ Compiler Version 8.00c (VC++ 1.52c)",
+  "flags": "/c /AM /GA /GEs /Zp1 /Od /Gs /W3 /Fc",
+  "comparison": "No masked bytes; named OMF relocations resolved into the original address layout.",
+  "functions": [
+    {
+      "name": "HostOptionsDialog",
+      "ne_segment": 5,
+      "original_offset": 30158,
+      "original_bytes": 307,
+      "generated_bytes": 307,
+      "length_difference": 0,
+      "exact_after_address_resolution": true,
+      "differing_bytes": 0,
+      "differences": [],
+      "fixups": [
+        {
+          "offset": 26,
+          "width": 4,
+          "target": "GETCLIENTRECT",
+          "resolved_value": "0x14f801a0"
+        },
+        {
+          "offset": 42,
+          "width": 2,
+          "target": "_hbrButtonFace",
+          "resolved_value": "0x10"
+        },
+        {
+          "offset": 45,
+          "width": 4,
+          "target": "FILLRECT",
+          "resolved_value": "0x14f8020c"
+        },
+        {
+          "offset": 60,
+          "width": 2,
+          "target": "_crButtonFace",
+          "resolved_value": "0x22bc"
+        },
+        {
+          "offset": 64,
+          "width": 2,
+          "target": "_crButtonFace",
+          "resolved_value": "0x22ba"
+        },
+        {
+          "offset": 67,
+          "width": 4,
+          "target": "SETBKCOLOR",
+          "resolved_value": "0x14f800b4"
+        },
+        {
+          "offset": 72,
+          "width": 2,
+          "target": "_hbrButtonFace",
+          "resolved_value": "0x10"
+        },
+        {
+          "offset": 88,
+          "width": 4,
+          "target": "BEGINPAINT",
+          "resolved_value": "0x14f801b0"
+        },
+        {
+          "offset": 106,
+          "width": 4,
+          "target": "_DrawHostOptions",
+          "resolved_value": "0x10207706"
+        },
+        {
+          "offset": 124,
+          "width": 4,
+          "target": "ENDPAINT",
+          "resolved_value": "0x14f801b4"
+        },
+        {
+          "offset": 178,
+          "width": 4,
+          "target": "ENDDIALOG",
+          "resolved_value": "0x14f80220"
+        },
+        {
+          "offset": 204,
+          "width": 2,
+          "target": "_szHelpFile",
+          "resolved_value": "0x14a"
+        },
+        {
+          "offset": 223,
+          "width": 4,
+          "target": "WINHELP",
+          "resolved_value": "0x14f8029c"
+        }
+      ],
+      "backpatch_records": 27,
+      "original_relocated_sha256": "a9ae7303984cc2cb93a457822227523b1c89c0dda78d6484f8b91870ef50fefe",
+      "generated_resolved_sha256": "a9ae7303984cc2cb93a457822227523b1c89c0dda78d6484f8b91870ef50fefe",
+      "source": "compat/mdi-host-options-match/MDI.C"
+    }
+  ],
+  "all_functions_match": true,
+  "object_sha256": "4c6946319bd67628796b6c97a8a953d875d3223744896adda7aa111dbec40320",
+  "source_sha256": "d76284623cb45abe60ce206bbf7f80acb513ce21208e74f971ff047aa32c6be2",
+  "build_log": "mdi.c\nmdi.c(146) : warning C4035: 'HostOptionsDialog' : no return value\nmdi.c(146) : warning C4102: 'before_dispatch_3' : unreferenced label\nmdi.c(146) : warning C4102: 'end_dialog_fallthrough' : unreferenced label\nmdi.c(146) : warning C4102: 'paint_fallthrough' : unreferenced label\nmdi.c(146) : warning C4101: 'scratch' : unreferenced local variable\n",
+  "build_status": "PASS\n"
+}

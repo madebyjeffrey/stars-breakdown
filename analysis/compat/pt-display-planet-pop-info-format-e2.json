@@ -1,0 +1,31 @@
+{
+  "procedures": ["PtDisplayPlanetPopInfo"],
+  "phase2_step": "5/6",
+  "evidence_unit": "E2 localized and fixed-point segment boundary",
+  "host_report": "PT_DISPLAY_PLANET_POP_INFO_FORMAT_CHECKS=27 FAILURES=0 RESULT=PASS",
+  "host_compile": "strict_c89_pass",
+  "native_packet": "compat/vc152/pt-display-planet-pop-info-format-e2/",
+  "guest_path": "C:\\PPFE2",
+  "native_status": "PASS",
+  "native_guest_directory": "C:\\PPFE2",
+  "native_run": "runs/vmctl-vc152ppfe2/",
+  "native_build_status": "COMPILE=PASS; LINK=PASS",
+  "native_report": "PT_DISPLAY_PLANET_POP_INFO_FORMAT_CHECKS=27 FAILURES=0 RESULT=PASS",
+  "native_process_exit": 0,
+  "native_program_error_dialog": false,
+  "step5_units_closed": 1,
+  "checks": 27,
+  "coverage": {
+    "every_stream_and_wrap_segment_prepared": true,
+    "negative_desirability_fixed_point_pair": "2,5",
+    "owned_unowned_foreign_branches": true,
+    "legacy_stream_wrap_compatibility": true
+  },
+  "remaining_scope": [
+    "native formatting run: closed",
+    "complete packed planet/player lookup",
+    "detailed stream/wrap GDI behavior",
+    "original differential",
+    "final promotion"
+  ]
+}

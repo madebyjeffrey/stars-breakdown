@@ -1,0 +1,45 @@
+{
+  "procedures": ["EstMineralsMined"],
+  "phase2_step": "5/6",
+  "guest": "StarDev / Win98 / C:\\EMMINT3",
+  "native_run": "runs/vmctl-vc152emmint4/",
+  "native_report": "EST_MINERALS_MINED_INTEGRATION_CHECKS=13 FAILURES=0 RESULT=PASS",
+  "expanded_cases": [
+    "packed basic extraction and fixed-point write-back",
+    "packed percent-limited extraction",
+    "invalid mining context",
+    "operating-mine lookup and efficiency",
+    "random rounding up",
+    "random rounding down",
+    "special-race concentration floor",
+    "special-race fleet recursion and consumption",
+    "null operations guard",
+    "packed fleet order eligibility and consumed-bit mutation",
+    "ordinary-race populated turn at efficiency 5/10",
+    "ordinary-race populated turn at efficiency 7/10",
+    "special-race populated planet plus two mining fleets"
+  ],
+  "packed_boundaries": {
+    "planet_player": 2,
+    "planet_percent_levels": 6,
+    "planet_concentration": 9,
+    "planet_rgwtMin": 28,
+    "planet_raw_size": 56,
+    "fleet_raw_size": 124,
+    "fleet_player": 2,
+    "fleet_idPlanet": 6,
+    "fleet_flags": 4,
+    "fleet_cord": 98,
+    "fleet_lpplord": 100,
+    "fleet_consumed_bit_clear_mask": "0xdfff"
+  },
+  "original_executable": {
+    "surface": "planet summary / Minerals On Hand",
+    "minerals_on_hand_visible": true,
+    "populated_mining_turn_differential": true,
+    "populated_mining_turn_oracle": "original_instruction_path",
+    "program_error": false,
+    "screenshot": "runs/vmctl-vc152current/planet-frame-current.bmp"
+  },
+  "remaining_scope": []
+}

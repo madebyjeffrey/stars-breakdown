@@ -1,0 +1,40 @@
+{
+  "procedures": ["ReportDlg"],
+  "phase2_step": "5/6",
+  "evidence_unit": "E1 packed _rpt view load boundary",
+  "host_report": "REPORT_DLG_VIEW_CHECKS=13 FAILURES=0 RESULT=PASS",
+  "host_compile": "strict_c89_pass",
+  "production_bridge": "stars_report_dlg_packed",
+  "native_bridge_replay": "fresh_production_source_packet_passed",
+  "native_packet": "compat/vc152/report-dlg-view-e1-production/",
+  "guest_path": "C:\\RPTVEP",
+  "native_status": "pass",
+  "native_compile": "COMPILE=PASS",
+  "native_link": "LINK=PASS",
+  "native_report": "runs/vmctl-vc152rptvep/RPTVE-final.TXT",
+  "native_build_status": "runs/vmctl-vc152rptvep/RPTVESTA-final.TXT",
+  "native_compile_log": "runs/vmctl-vc152rptvep/RPTVECL-final.LOG",
+  "native_link_log": "runs/vmctl-vc152rptvep/RPTVELINK-final.LOG",
+  "native_process_exit": 0,
+  "native_program_error_dialog": false,
+  "authoritative_units_closed": 1,
+  "checks": 13,
+  "packed_rpt": {
+    "size": 54,
+    "production_bridge_host_checked": true,
+    "visible_mask_offset_0": true,
+    "report_and_field_offsets_4_through_8": true,
+    "sort_and_row_offsets_10_through_14": true,
+    "dialog_position_and_size_offsets_16_through_22": true,
+    "column_width_offset_26": true,
+    "row_count_offset_42": true,
+    "scroll_handles_and_column_scroll_offsets_48_through_52": true
+  },
+  "remaining_scope": [
+    "populated report unions and row contents",
+    "populated report unions and row contents",
+    "exact live USER/GDI and menu payload behavior",
+    "complete caller integration",
+    "final promotion"
+  ]
+}

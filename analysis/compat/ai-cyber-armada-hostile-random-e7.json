@@ -1,0 +1,28 @@
+{
+  "procedures": [
+    "TargetCyberArmada",
+    "DoCyberAiTurn"
+  ],
+  "milestone": "ai-cyber-armada-hostile-random-e7",
+  "scope": "host-only",
+  "checks": 20,
+  "failures": 0,
+  "result": "PASS",
+  "report": "TARGET_CYBER_ARMADA_HOSTILE_RANDOM_CHECKS=20 FAILURES=0 RESULT=PASS",
+  "step5_units_closed": 0,
+  "coverage": {
+    "zero_roll_retreat": true,
+    "one_roll_rejection": true,
+    "two_roll_rejection": true,
+    "three_roll_retreat": true,
+    "starbase_destination": true,
+    "ordinary_destination_fallthrough": true,
+    "task_clear": true,
+    "movement": true
+  },
+  "evidence": [
+    "reconstructed/src/target_cyber_armada.c",
+    "tests/target_cyber_armada_hostile_random_probe.c",
+    "analysis/decompiler/export/raw/10a8_51a4_TargetCyberArmada.c"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "procedure": "ReportDlg",
+  "range": "0022:0018-09e7",
+  "checkpoint": "E3 native populated caller chain",
+  "evidence_unit": "native/original caller integration",
+  "host": {
+    "report": "REPORT_DLG_DRAW_INTEGRATION_CHECKS=6 FAILURES=0 RESULT=PASS",
+    "checks": 6,
+    "probe": "tests/report_dlg_draw_integration_probe.c",
+    "oracle_basis": "analysis/compat/report-popup-integration.json"
+  },
+  "native": {
+    "guest_directory": "C:\\RPTDINT",
+    "packet": "compat/vc152/report-dlg-draw-integration-e3-native/",
+    "compile": "PASS",
+    "link": "PASS",
+    "checks": 6,
+    "report": "runs/vmctl-vc152rptdint/RPTDINT-report.TXT",
+    "status": "runs/vmctl-vc152rptdint/RPTDISTA-final2.TXT",
+    "compile_log": "runs/vmctl-vc152rptdint/RPTDICL-final2.LOG",
+    "link_log": "runs/vmctl-vc152rptdint/RPTDILINK-final2.LOG",
+    "process_exit": 0,
+    "program_error_dialog": false,
+    "artifacts": [
+      "runs/vmctl-vc152rptdint/RPTDISTA-final2.TXT",
+      "runs/vmctl-vc152rptdint/RPTDINT-report.TXT",
+      "runs/vmctl-vc152rptdint/RPTDICL-final2.LOG",
+      "runs/vmctl-vc152rptdint/RPTDILINK-final2.LOG",
+      "runs/vmctl-vc152rptdint/guest-after-rptdint.bmp"
+    ]
+  },
+  "step5_units_closed": 1,
+  "promotion_ready": false,
+  "remaining": [
+    "E2 populated report unions and exact live USER/GDI/menu payloads",
+    "Step-6 ledger synchronization and promotion"
+  ]
+}

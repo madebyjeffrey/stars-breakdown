@@ -1,0 +1,43 @@
+{
+  "procedures": ["FTrackXfer"],
+  "phase2_step": "5/6",
+  "guest": "StarDev / Win98 / C:\\FTXSE2",
+  "native_run": "runs/vmctl-vc152ftxse2/",
+  "host_report": "F_TRACK_XFER_SERVICE_E12_CHECKS=12 FAILURES=0 RESULT=PASS",
+  "native_report": "F_TRACK_XFER_SERVICE_E12_CHECKS=12 FAILURES=0 RESULT=PASS",
+  "native_build": {
+    "compile": "PASS",
+    "link": "PASS",
+    "process_exit": 0,
+    "program_error_dialog": false
+  },
+  "service_integration": {
+    "tracking_to_xfer_supply": true,
+    "xfer_supply_zero_query_and_direction": true,
+    "xfer_supply_source_clamp": true,
+    "xfer_supply_destination_apply_and_source_rollback": true,
+    "change_cargo_mineral_query_and_mutation": true,
+    "drag_signed_directions_and_conservation": true,
+    "button_step_and_dialog_bound": true,
+    "final_refresh_and_redraw": true
+  },
+  "remaining_scope": [
+    "full fleet, planet, and thing lookup/store and capacity integration",
+    "complete Win16 capture and message-loop behavior",
+    "original differential cases for partial, rejected, and refresh paths",
+    "final review and Step-6 promotion"
+  ],
+  "evidence": [
+    "tests/f_track_xfer_service_e12_probe.c",
+    "compat/vc152/f-track-xfer-service-e12/",
+    "analysis/decompiler/export/raw/1050_5a16_FTrackXfer.c",
+    "analysis/compat/f-track-xfer-packed-integration.json",
+    "runs/vmctl-vc152ftxse2/FTXSE2STA.TXT",
+    "runs/vmctl-vc152ftxse2/FTXSE2CL.LOG",
+    "runs/vmctl-vc152ftxse2/FTXSE2LINK.LOG",
+    "runs/vmctl-vc152ftxse2/FTXSE2.TXT",
+    "runs/vmctl-vc152ftxse2/FTXSE2.EXE",
+    "runs/vmctl-vc152ftxse2/FTXSE2.MAP",
+    "runs/vmctl-vc152ftxse2/FTXSE2N.OBJ"
+  ]
+}

@@ -79,7 +79,7 @@ This does not promise the author's exact source text, comments, macros, or code 
 - [x] Create small, controlled game/race/save/turn fixtures and record all inputs, outputs, seeds, and relevant environment state.
 - [x] Identify randomness, time, configuration, and other nondeterministic inputs; establish how to control or record them.
 - [x] Add observation methods appropriate to the environment: memory snapshots, breakpoints, function traces, file comparisons, and UI captures.
-- [x] Build a comparison harness for original versus reconstructed behavior, documenting any normalization of timestamps or other nondeterministic fields. (`tools/runtime/compare.py`; all bytes compared, no normalization; reconstruction not yet available.)
+- [x] Build a comparison harness for original versus reconstructed behavior, documenting any normalization of timestamps or other nondeterministic fields. (`tools/runtime/compare.py`; all bytes compared, no normalization. The original Step-4 capture predates reconstructed outputs; later differentials are linked from TODO5–TODO7.)
 - [x] Record original crashes, arithmetic quirks, and malformed-input behavior as compatibility evidence rather than silently correcting them.
 
 **Exit:** there is a practical behavioral reference for validating source as it is reconstructed. Begin this stage before substantial subsystem rewriting.
@@ -90,9 +90,12 @@ This does not promise the author's exact source text, comments, macros, or code 
 game procedure, runtime/helper entry and DOS-stub entry, grouped by subsystem,
 with signatures, dependencies, reviewed/partial/open status and evidence links.
 
-**In progress:** 130 named routines (55,942 original procedure bytes) now have
-reviewed C89 source and original-x86 differential tests. See
-[the core reconstruction report](analysis/reconstruction/core.md).
+**Current source ledger:** 838/846 named game procedures are reviewed,
+8 are partial, and none are open; 838,028/890,384 named procedure bytes are
+credited. All 846 have exact instruction-byte matches, which are separate
+evidence from semantic review. See [TODO5](TODO5.md). The stricter Phase 2
+ledger has 121/152 evidence units closed and 10 procedure promotions open;
+see [TODO7](TODO7.md) and [EVIDENCE](EVIDENCE.md).
 Completed components are checked under their subsystem below. A parent checkbox
 stays open until the whole subsystem meets the Step 5 completion criterion.
 The race scoring/random-generation chain now runs independently of Windows;
@@ -325,7 +328,8 @@ compiler installation alone does not complete those checks.
 
 This is a template for each routine, not a global progress checklist. Completed
 routine reviews are recorded in [the coverage ledger](analysis/coverage.json);
-130 named game routines currently meet the reviewed-source standard.
+838 named game procedures currently meet the TODO5 reviewed-source standard.
+The Phase 2 original/integration gates are tracked separately in TODO7.
 
 - [ ] Record address range(s), names, source mappings, signature, calling convention, and evidence links.
 - [ ] Resolve control flow, call targets, global references, structure accesses, and local-variable roles.

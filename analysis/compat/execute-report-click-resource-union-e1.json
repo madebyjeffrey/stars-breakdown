@@ -1,0 +1,21 @@
+{
+  "procedure": "ExecuteReportClick",
+  "step5_unit": "ER-E1 exact pointer-union values",
+  "status": "supporting_subcheck_only",
+  "original_source_ranges": [
+    "analysis/decompiler/export/raw/1108_7cd6_ExecuteReportClick.c:252-263",
+    "analysis/decompiler/export/raw/10c0_3378_PtDisplayResourceInfo.c:38-63"
+  ],
+  "production_source": "reconstructed/src/execute_report_click.c",
+  "host": "EXECUTE_REPORT_CLICK_GLOBALPD_CHECKS=20 FAILURES=0 RESULT=PASS",
+  "host_suite": "540 tests, 153 expected skips",
+  "native": {
+    "guest_directory": "C:\\GPDE3",
+    "build_status": "COMPILE=PASS LINK=PASS",
+    "process": "EXIT 0",
+    "report": "EXECUTE_REPORT_CLICK_GLOBALPD_CHECKS=20 FAILURES=0 RESULT=PASS",
+    "program_error_dialog": false,
+    "return_directory": "runs/vmctl-gpde3"
+  },
+  "named_units_closed": 0
+}

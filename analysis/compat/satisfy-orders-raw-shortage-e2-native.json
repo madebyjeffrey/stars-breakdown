@@ -1,0 +1,48 @@
+{
+  "procedures": ["SatisfyOrders"],
+  "phase2_step": "5/6",
+  "unit": "E2 raw shortage FSendPlrMsg2 payload boundary",
+  "status": "supporting milestone; named E2 remains open",
+  "guest": "StarDev / Win98 / C:\\SYOE16",
+  "native_run": "runs/vmctl-vc152syoe16/",
+  "host_report": "SATISFY_ORDERS_RAW_SHORTAGE_CHECKS=12 FAILURES=0 RESULT=PASS",
+  "native_report": "SATISFY_ORDERS_RAW_SHORTAGE_CHECKS=12 FAILURES=0 RESULT=PASS EXIT=0",
+  "native_build": {
+    "compile": "PASS",
+    "link": "PASS",
+    "process_exit": 0,
+    "program_error_dialog": false,
+    "compiler_options": "/AM /GA /GEs /Zp1 /O /W3",
+    "response_file_definitions": "SYOSHORT.DEF included; Win16 stack/heap/stub directives applied"
+  },
+  "covered": [
+    "production raw_message2 shortage service boundary",
+    "planet shortage message 0x011f",
+    "fleet shortage message 0x0120",
+    "point shortage message 0x0123",
+    "pass-four notification gate",
+    "source-owner recipient and 0x8000 fleet identity payload",
+    "resource index as the third raw payload",
+    "shortage leaves the incomplete order active"
+  ],
+  "remaining": [
+    "ordinary successful resource-transfer FSendPlrMsg layouts",
+    "raw message layouts for colonist and technology branches",
+    "original transfer differential against the full game message stream",
+    "E3 full-turn/original differential",
+    "named SatisfyOrders E2 Step-5 closure and Step-6 promotion"
+  ],
+  "evidence": [
+    "tests/satisfy_orders_raw_shortage_probe.c",
+    "compat/vc152/satisfy-orders-raw-shortage-e2-native/",
+    "runs/vmctl-vc152syoe16/SYOSHORT.TXT",
+    "runs/vmctl-vc152syoe16/SYOSHORTSTA.TXT",
+    "runs/vmctl-vc152syoe16/SYOSHORTCL.LOG",
+    "runs/vmctl-vc152syoe16/SYOSHORTLINK.LOG",
+    "runs/vmctl-vc152syoe16/SYOSHORT.MAP",
+    "reconstructed/src/satisfy_orders.c",
+    "reconstructed/include/core.h",
+    "analysis/decompiler/export/raw/10b0_6798_SatisfyOrders.c",
+    "/Users/jdrake/Projects/stars-decompile/turn3.c"
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "procedure": "FAttack",
+  "range": "001f:69ac-7cdd",
+  "checkpoint": "E21",
+  "scope": "raw_torpedo_shield_hull_allocation_scan",
+  "named_step5_units_closed": 0,
+  "raw_evidence": {
+    "source": "analysis/decompiler/export/raw/10f0_69ac_FAttack.c",
+    "allocation_lines": "620-732",
+    "damage_dispatch_lines": "733-757",
+    "behavior": "split packet budget using hit allocation, shield/hull capacities, and per-part wtFuelMax; dispatch shield term at /8 and hull term at /2"
+  },
+  "host": {
+    "language_mode": "strict C89",
+    "probe": "tests/f_attack_raw_torpedo_dispatch_probe.c",
+    "checks": 9,
+    "failures": 0,
+    "result": "PASS",
+    "focused_regressions": {
+      "F_ATTACK_CHECKS": 34,
+      "F_ATTACK_TORPEDO_TARGET_CHECKS": 5,
+      "F_ATTACK_RAW_DAMAGE_CHECKS": 7
+    },
+    "repository_tests": 519,
+    "repository_skips": 153,
+    "layout_assertions": 2241,
+    "function_declarations": 846
+  },
+  "native": {
+    "status": "packet_prepared_guest_replay_not_yet_verified",
+    "packet": "compat/vc152/f-attack-complex-native-e21/",
+    "guest_directory": "C:\\FAPNE21",
+    "packet_file_count": 43,
+    "packet_text_file_count": 42,
+    "packet_text_encoding": "ASCII",
+    "packet_text_line_endings": "CRLF",
+    "packaged_source_strict_c89_syntax": "PASS"
+  },
+  "remaining": [
+    "feed post-damage state into the raw residual loop",
+    "resolve and populate raw_torpedo_power from packed weapon wtFuelMax",
+    "derive beam grfWeapon class from packed part data",
+    "native E21 compile and report replay",
+    "broader original damage differential",
+    "full native battle replay",
+    "Step-6 ledger promotion"
+  ]
+}

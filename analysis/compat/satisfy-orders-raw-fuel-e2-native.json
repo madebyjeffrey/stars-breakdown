@@ -1,0 +1,46 @@
+{
+  "procedures": ["SatisfyOrders"],
+  "phase2_step": "5/6",
+  "unit": "E2 fuel and optimal-fuel FSendPlrMsg payload boundary",
+  "status": "supporting milestone; named E2 remains open",
+  "guest": "StarDev / Win98 / C:\\SYOE21",
+  "native_run": "runs/vmctl-vc152syoe21/",
+  "host_report": "SATISFY_ORDERS_RAW_FUEL_CHECKS=40 FAILURES=0 RESULT=PASS",
+  "native_report": "SATISFY_ORDERS_RAW_FUEL_CHECKS=40 FAILURES=0 RESULT=PASS EXIT=0",
+  "native_build": {
+    "compile": "PASS",
+    "link": "PASS",
+    "process_exit": 0,
+    "program_error_dialog": false,
+    "compiler_options": "/AM /GA /GEs /Zp1 /O /W3",
+    "response_file_definitions": "SYORES.DEF included; Win16 stack/heap/stub directives applied"
+  },
+  "covered": [
+    "signed optimal-fuel unload frame 0x002d",
+    "signed optimal-fuel load frame 0x002b",
+    "failed fuel load message 0x0126",
+    "fuel-capacity message 0x003d",
+    "insufficient-fuel message 0x003c",
+    "all eight payload words for every branch",
+    "caller-resolved fuel stat, demand, target word, x, target id, and recipient"
+  ],
+  "remaining": [
+    "upstream route-engine fuel-use calculation and pass gating",
+    "remaining permission and failed-transfer message families",
+    "original full-turn transfer differential",
+    "E3 full-turn/original differential",
+    "named SatisfyOrders E2 Step-5 closure and Step-6 promotion"
+  ],
+  "evidence": [
+    "tests/satisfy_orders_raw_fuel_probe.c",
+    "compat/vc152/satisfy-orders-raw-fuel-e2-native/",
+    "runs/vmctl-vc152syoe21/SYOFUEL.TXT",
+    "runs/vmctl-vc152syoe21/SYORESSTA.TXT",
+    "runs/vmctl-vc152syoe21/SYORESCL.LOG",
+    "runs/vmctl-vc152syoe21/SYORESLINK.LOG",
+    "reconstructed/src/satisfy_orders.c",
+    "reconstructed/include/core.h",
+    "/Users/jdrake/Projects/stars-decompile/turn3.c",
+    "/Users/jdrake/Projects/stars-decompile/scripts/ghidra_scripts/includes/enums.h"
+  ]
+}

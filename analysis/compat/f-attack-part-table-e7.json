@@ -1,0 +1,43 @@
+{
+  "procedures": ["FAttack"],
+  "related_procedure": "FLookupPart",
+  "milestone": "f-attack-part-table-e7",
+  "scope": "host-source-fidelity",
+  "checks": {
+    "f_attack_packed_part": 13,
+    "lookup_part_source": 8
+  },
+  "failures": 0,
+  "result": "PASS",
+  "reports": [
+    "F_ATTACK_PACKED_PART_CHECKS=13 FAILURES=0 RESULT=PASS",
+    "LOOKUP_PART_CHECKS=8 FAILURES=0 RESULT=PASS"
+  ],
+  "step5_units_closed": 0,
+  "table_contract": {
+    "group": "0x0010",
+    "item": 7,
+    "segment": "0x10e0",
+    "base": "0x2450",
+    "stride": "0x003c",
+    "offset": "0x25f4",
+    "resolved_component": "0x00100007"
+  },
+  "native_status": "pending_guest_agent_reconnection",
+  "remaining_scope": [
+    "native table segment/address binding",
+    "resource-relative table families",
+    "complete battle-part scaling",
+    "broader original damage differentials",
+    "native packed replay and full battle replay"
+  ],
+  "evidence": [
+    "analysis/decompiler/export/raw/1008_524e_FLookupPart.c",
+    "analysis/DATA_LAYOUTS.md",
+    "reconstructed/include/common.h",
+    "reconstructed/src/lookup_part.c",
+    "reconstructed/src/f_attack.c",
+    "tests/f_attack_packed_part_probe.c",
+    "tests/lookup_part_source_probe.c"
+  ]
+}

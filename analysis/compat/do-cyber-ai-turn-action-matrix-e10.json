@@ -1,0 +1,52 @@
+{
+  "procedure": "DoCyberAiTurn",
+  "milestone": "do-cyber-ai-turn-action-matrix-e10",
+  "scope": "full_caller_named_action_dispatch_and_seeded_plord_writes",
+  "host": {
+    "probe": "tests/do_cyber_ai_turn_action_matrix_probe.c",
+    "sources": [
+      "reconstructed/src/do_cyber_ai_turn.c",
+      "reconstructed/src/ai_plord.c"
+    ],
+    "checks": 34,
+    "failures": 0,
+    "result": "PASS",
+    "report": "CYBER_AI_TURN_ACTION_MATRIX_CHECKS=34 FAILURES=0 RESULT=PASS"
+  },
+  "native": {
+    "status": "pass",
+    "packet": "compat/vc152/do-cyber-ai-turn-action-matrix-e10/",
+    "guest_directory": "C:\\CYBAME10",
+    "compile": "PASS",
+    "link": "PASS",
+    "report": "CYBER_AI_TURN_ACTION_MATRIX_CHECKS=34 FAILURES=0 RESULT=PASS",
+    "process_exit": 0,
+    "program_error_dialog": false,
+    "artifacts": [
+      "runs/vmctl-vc152cybame10/CYBISTA.TXT",
+      "runs/vmctl-vc152cybame10/CYBICL.LOG",
+      "runs/vmctl-vc152cybame10/CYBILINK.LOG",
+      "runs/vmctl-vc152cybame10/CYBAM.TXT"
+    ]
+  },
+  "coverage": {
+    "clear_task_dispatch": true,
+    "move_dispatch": true,
+    "colonize_dispatch": true,
+    "wormhole_dispatch": true,
+    "move_starbase_dispatch": true,
+    "attack_dispatch": true,
+    "target_armada_dispatch": true,
+    "transport_dispatch": true,
+    "target_freighter_dispatch": true,
+    "seeded_first_order_plord_replacement": true,
+    "typed_visitor_after_action": true
+  },
+  "named_step5_units_closed": 0,
+  "remaining": [
+    "raw Cyber personality branch predicates",
+    "complete AI-table integration",
+    "original-turn differential",
+    "Step-6 promotion"
+  ]
+}

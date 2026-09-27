@@ -1,0 +1,24 @@
+{
+  "procedures": ["DoCyberAiTurn"],
+  "milestone": "do-cyber-ai-turn-repair-boundary-e3",
+  "scope": "host-only",
+  "checks": 6,
+  "failures": 0,
+  "result": "PASS",
+  "report": "CYBER_AI_REPAIR_BOUNDARY_CHECKS=6 FAILURES=0 RESULT=PASS",
+  "step5_units_closed": 0,
+  "coverage": {
+    "merge_mask_order": true,
+    "missing_first_order_dispatch": true,
+    "ordered_fleet_bypass": true,
+    "non_owned_filter": true,
+    "policy_and_potency_forwarding": true,
+    "repair_failure_aborts_turn": true
+  },
+  "evidence": [
+    "reconstructed/include/core.h",
+    "reconstructed/src/do_cyber_ai_turn.c",
+    "tests/do_cyber_ai_turn_repair_boundary_probe.c",
+    "analysis/decompiler/export/raw/10a8_002a_DoCyberAiTurn.c"
+  ]
+}

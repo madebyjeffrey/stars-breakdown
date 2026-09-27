@@ -1,0 +1,38 @@
+{
+  "procedure": "ProductionDlg",
+  "phase2_step": "5/6",
+  "evidence_unit": "E3_saved_queue_menu_and_cancel_rollback_sub_boundary",
+  "guest": "StarDev / Win98 / C:\\PDGQ3",
+  "host_probe": {
+    "source": "tests/production_dlg_queue_probe.c",
+    "checks": 7,
+    "failures": 0,
+    "result": "PASS"
+  },
+  "native_probe": {
+    "package": "compat/vc152/production-dlg-queue-e3/",
+    "status": "COMPILE=PASS LINK=PASS",
+    "report": "runs/vmctl-vc152pdgq3/PDGQRES.TXT",
+    "checks": 7,
+    "failures": 0,
+    "result": "PASS",
+    "process_exit": 0,
+    "program_error_dialog": false,
+    "console_output_bytes": 0
+  },
+  "queue_boundary": {
+    "valid_slot_filtering": true,
+    "sparse_slot_selection_preserves_original_index": true,
+    "editor_resource_id": "0x04c0",
+    "editor_cancel_restores_queue_table": true,
+    "raw_source": "analysis/decompiler/export/raw/10d0_1204_ProductionDlg.c"
+  },
+  "scope_note": "This closes the saved-queue menu construction/selection and cancel-rollback sub-boundary. Full queue-control integration, accepted editor mutation, live USER/message-loop behavior, original differential evidence, and promotion remain open.",
+  "evidence": [
+    "tests/production_dlg_queue_probe.c",
+    "reconstructed/src/production_dlg.c",
+    "reconstructed/include/core.h",
+    "compat/vc152/production-dlg-queue-e3/",
+    "runs/vmctl-vc152pdgq3/"
+  ]
+}

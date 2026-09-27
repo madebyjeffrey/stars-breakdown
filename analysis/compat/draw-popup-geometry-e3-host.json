@@ -1,0 +1,32 @@
+{
+  "procedures": ["DrawPopup"],
+  "phase2_step": "5/6",
+  "evidence_unit": "E3 detailed text geometry and style supporting boundary",
+  "host_report": "DRAW_POPUP_GEOMETRY_E3_CHECKS=25 FAILURES=0 RESULT=PASS",
+  "host_compile": "strict_c89_pass",
+  "source": [
+    "reconstructed/include/core.h",
+    "reconstructed/src/draw_popup.c",
+    "tests/draw_popup_geometry_e3_probe.c",
+    "analysis/decompiler/export/raw/10c0_01c0_DrawPopup.c"
+  ],
+  "prepared_native_packet": "compat/vc152/draw-popup-geometry-e3-r2/",
+  "authoritative_units_closed": 0,
+  "covered": [
+    "centered title and fleet text",
+    "measured title and label offsets",
+    "row-height geometry",
+    "left, right, and center text anchors",
+    "bold and normal font selection",
+    "opaque background mode",
+    "hull-row and short-client geometry",
+    "separator offset and PatBlt geometry",
+    "text-color reset after damaged hull rows"
+  ],
+  "remaining": [
+    "complete detailed GDI rendering",
+    "caller differential",
+    "original behavior completion",
+    "Step-6 promotion"
+  ]
+}

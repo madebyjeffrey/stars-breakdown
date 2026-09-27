@@ -1,0 +1,43 @@
+{
+  "procedure": "DoCyberFreighter",
+  "phase": "2",
+  "step": "5",
+  "milestone": "native_e5_gate_progress_and_plord_support",
+  "host_report": "DO_CYBER_FREIGHTER_E5_CHECKS=26 FAILURES=0 RESULT=PASS",
+  "native_report": "DO_CYBER_FREIGHTER_E5_CHECKS=26 FAILURES=0 RESULT=PASS",
+  "native_guest_directory": "C:\\CYBFE5",
+  "native_run_directory": "runs/vmctl-vc152cybfe5",
+  "compile": "PASS",
+  "link": "PASS",
+  "process_exit": 0,
+  "program_error_dialog": false,
+  "checks": [
+    "owned-planet negative-rate and low-stock pickup gate",
+    "owned-planet drop-off threshold at stock 2001",
+    "transfer direction and target-kind selection",
+    "carrying drop-off progress-bit advancement",
+    "owned no-destination rollback and planet-progress advancement",
+    "enemy ordinary-planet starbase fallback",
+    "special-planet carrying/drop-off path",
+    "open-space no-nearest short circuit",
+    "0x11b0 movement flags and packed PLORD first-order replacement"
+  ],
+  "authoritative_closure": false,
+  "remaining": [
+    "complete raw fleet-cargo predicates",
+    "packet/freighter interaction",
+    "complete Cyber AI-table integration",
+    "original-turn differential",
+    "Step-6 promotion"
+  ],
+  "evidence": [
+    "analysis/compat/ai-cyber-freighter-native-e5.md",
+    "tests/do_cyber_freighter_e5_probe.c",
+    "compat/vc152/do-cyber-freighter-e5-native-r1/",
+    "runs/vmctl-vc152cybfe5/CYBFE5.TXT",
+    "runs/vmctl-vc152cybfe5/CYBFE5STA-r2.TXT",
+    "runs/vmctl-vc152cybfe5/CYBFE5CL-r2.LOG",
+    "runs/vmctl-vc152cybfe5/CYBFE5LINK-r2.LOG",
+    "runs/vmctl-vc152cybfe5/CYBFE5-r2.MAP"
+  ]
+}

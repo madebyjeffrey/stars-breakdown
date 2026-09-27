@@ -1,0 +1,28 @@
+{
+  "procedure": "NewGameDlg",
+  "phase2_step": "5/6",
+  "guest": "StarDev / Win98 / C:\\NGDR",
+  "native_run": "runs/vmctl-vc152ngdr/",
+  "native_report": "NEW_GAME_DLG_RESOURCE_E2_CHECKS=30 FAILURES=0 RESULT=PASS",
+  "resource_e2": {
+    "host_probe": "tests/new_game_dlg_resource_probe.c",
+    "native_package": "compat/vc152/new-game-dlg-resource/",
+    "native_report": "runs/vmctl-vc152ngdr/NGDPE2.TXT",
+    "checks": 30,
+    "failures": 0,
+    "program_error": false,
+    "resource_id": "0x0186",
+    "dialog_geometry": [261, 210],
+    "font_size": 8,
+    "control_count": 27,
+    "source_contract_covers": [
+      "game-name edit",
+      "size, density, and start-distance radio groups",
+      "seven option controls",
+      "Help, Cancel, Back, Next, and Finish buttons"
+    ]
+  },
+  "remaining_scope": [
+    "complete wizard mutation and original creation replay"
+  ]
+}

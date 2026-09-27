@@ -1,0 +1,101 @@
+{
+  "procedures": ["BrowserDlg"],
+  "phase2_step": "6/6",
+  "guest": "StarDev / Win98 / C:\\STARS!\\STARS.EXE",
+  "run": "runs/vmctl-vc152current/",
+  "original_executable_observation": {
+    "dialog": "Ship & Starbase Designer [#3270]",
+    "view": "Components",
+    "group_selector": "All",
+    "browser_content": "Scrollable component list with icons and names",
+    "controls": ["Done", "Help"],
+    "program_error": false,
+    "screenshots": ["runs/vmctl-vc152current/ship-design-components.bmp"]
+  },
+  "original_instruction_boundary": {
+    "source": "analysis/decompiler/export/raw/10d8_1ed8_BrowserDlg.c",
+    "sequence": [
+      "the Ship & Starbase Designer enters Components view",
+      "the component-group selector and browser list are populated",
+      "the list exposes scrolling and the dialog exposes Done and Help"
+    ]
+  },
+  "reconstructed_acceptance": {
+    "native_probe": "runs/vmctl-vc152brd/BRDR.TXT",
+    "packed_item_native_probe": "runs/vmctl-vc152brd2/BRDR.TXT",
+    "expanded_native_checks": [
+      "packed item-word high byte is preserved during component selection",
+      "previous navigation changes only the low-byte item index",
+      "next navigation restores the selected low-byte item without losing group bits",
+      "recovered CS:1EB5 component-group table selection and empty-combo wrapping"
+    ],
+    "expanded_native_probe": "runs/vmctl-vc152brd3/BRDR.TXT",
+    "expanded_native_checks": 25,
+    "resource_sequence_native_probe": "runs/vmctl-vc152brd4/BRDR.TXT",
+    "resource_sequence": ["0x43f", "0x440", "0x441", "0x442", "0x443", "0x444", "0x445", "0x446", "0x447", "0x448", "0x449", "0x44a", "0x44b", "0x44c", "0x44d", "0x44e", "0x44f"],
+    "packed_native_probe": "runs/vmctl-vc152brd5/BRDR.TXT",
+    "packed_native_checks": 31,
+    "packed_lookup_offsets": {
+      "0x0008": {"base": "0x04e0", "stride": "0x36", "entries": 12},
+      "0x0010": {"base": "0x2450", "stride": "0x3c", "entries": 24}
+    },
+    "packed_component_native_probe": "runs/vmctl-vc152brd6/BRDR.TXT",
+    "packed_component_checks": 33,
+    "original_payload_native_probe": "runs/vmctl-vc152brd7/BRDR.TXT",
+    "original_payload_checks": 35,
+    "localized_payload_native_probe": "runs/vmctl-vc152brd8/BRDR.TXT",
+    "localized_payload_checks": 36,
+    "component_record": {
+      "size": 52,
+      "offsets": {"id": 0, "technology": 2, "name": 8, "mass": 40, "resource_cost": 42, "ore_costs": 44, "bitmap_id": 50}
+    },
+    "original_payload_tables": {
+      "source": "target/stars.exe",
+      "ne_segment": 2,
+      "group_0x0008": {"base": "0x04e0", "stride": "0x36", "entries": 12},
+      "group_0x0010": {"base": "0x2450", "stride": "0x3c", "entries": 24},
+      "fields_checked": ["technology_masks", "names", "mass", "resource_cost", "ore_costs", "bitmap_ids"],
+      "representative_entries": ["Valanium", "Superlatanium", "Laser", "Multi Contained Munition"]
+    },
+    "localized_payloads": {
+      "source": "analysis/decompiler/export/raw/1010_743a_PszGetCompressedString.c",
+      "asm_source": "analysis/decompiler/export/raw/1010_743a.asm",
+      "ne_segment": 3,
+      "lookup_offset": "0x73e6",
+      "chunk_offset_table": "0x73b8",
+      "chunk_data": "0x6e32",
+      "ids": ["0x43f", "0x440", "0x441", "0x442", "0x443", "0x444", "0x445", "0x446", "0x447", "0x448", "0x449", "0x44a", "0x44b", "0x44c", "0x44d", "0x44e", "0x44f"],
+      "strings": ["All", "Armor", "Beam Weapons", "Bombs", "Electrical", "Engines", "Mechanical", "Mine Layers", "Mining Robots", "Orbital", "Planetary", "Scanners", "Shields", "Ship Hulls", "Starbase Hulls", "Terraforming", "Torpedoes"],
+      "ascii_sum": 15229
+    },
+    "recovered_group_table": ["0x19ff", "0x0008", "0x0010", "0x0040", "0x0800", "0x0001", "0x1000", "0x0100", "0x0080", "0x0200", "0x8000", "0x0002", "0x0004", "0x4000", "0x0400", "0x2000", "0x0020"],
+    "user_message_native_probe": "runs/vmctl-vc152brdmsg/BRDMSG3.TXT",
+    "user_message_native_checks": 9,
+    "user_message_native_run": "runs/vmctl-vc152brdmsg/",
+    "user_message_native_compile": "runs/vmctl-vc152brdmsg/BRDMSGSTA3.TXT",
+    "user_message_native_logs": ["runs/vmctl-vc152brdmsg/BRDMSGCL3.LOG", "runs/vmctl-vc152brdmsg/BRDMSGLINK2.LOG"],
+    "user_message_native_screen": "runs/vmctl-vc152brdmsg/native-screen3.bmp",
+    "user_message_native_result": "9 real USER-loop checks pass: actual combo/control creation, 17 added component labels, paint/erase dispatch, next/previous commands, invalidation, and Done teardown; no Program Error dialog",
+    "original_caller_differential": {
+      "run": "runs/vmctl-vc152browser-live/",
+      "commands_path": "Commands > Ship Design... > Components",
+      "observations": [
+        "All selector and scrollable icon/name list displayed in the original Ship & Starbase Designer",
+        "Quick Jump 5 and Long Hump 6 selection changed the highlighted row and detail pane",
+        "Armor displayed Tritanium and Crobmnium; selecting Tritanium updated the detail pane",
+        "Beam Weapons displayed Laser and X-Ray Laser",
+        "designer remained open and the window inventory contained no Program Error dialog"
+      ],
+      "screens": [
+        "runs/vmctl-vc152browser-live/designer-before.bmp",
+        "runs/vmctl-vc152browser-live/components-initial2.bmp",
+        "runs/vmctl-vc152browser-live/components-quick-jump.bmp",
+        "runs/vmctl-vc152browser-live/components-long-hump.bmp",
+        "runs/vmctl-vc152browser-live/group-armor.bmp",
+        "runs/vmctl-vc152browser-live/armor-titanium.bmp",
+        "runs/vmctl-vc152browser-live/group-beam.bmp"
+      ]
+    },
+    "comparison": "The original Components view agrees with the typed BrowserDlg group selector, browser-list, icon/name, selection/detail, and close/help boundary. Packed item-word preservation, navigation boundaries, the recovered component-group table, the 52-byte _compart consumer layout, representative original component payload values, and all 17 localized compressed-string payloads have fresh native evidence. The real USER control/message unit is closed by the fresh 9-check message-loop run, and the direct original caller-path differential now covers Commands > Ship Design > Components, component selection, group changes, detail updates, and no-error completion."
+  }
+}

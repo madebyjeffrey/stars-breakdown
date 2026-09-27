@@ -1,0 +1,30 @@
+{
+  "procedures": ["PtDisplayPlanetStateInfo"],
+  "phase2_step": "5/6",
+  "guest": "StarDev / Win98 / C:\\STARS!\\STARS.EXE",
+  "run": "runs/vmctl-vc152current/",
+  "original_executable_observation": {
+    "window_layout": "View > Window Layout > Small Screen",
+    "selection": "Oop Be Gone",
+    "state_output": [
+      "gravity row and colored gauge",
+      "temperature row and colored gauge",
+      "radiation row and colored gauge",
+      "Ironium, Boranium, and Germanium rows with plotted values"
+    ],
+    "program_error": false,
+    "screenshot": "runs/vmctl-vc152current/layout-small.bmp"
+  },
+  "original_instruction_boundary": {
+    "source": "analysis/decompiler/export/raw/10c0_1938_PtDisplayPlanetStateInfo.c",
+    "sequence": [
+      "state rows are selected for the displayed planet",
+      "labels, values, and wrapped layout are sent to the frame output",
+      "the resulting state section is rendered in the selection-summary child"
+    ]
+  },
+  "reconstructed_acceptance": {
+    "native_probe": "runs/vmctl-vc152stateinfo/STIR.TXT",
+    "comparison": "The original selection-summary state rows agree with the typed environment, planet-limit, difference, and layout-point boundary. Packed lookup, localization, fixed-point formatting, detailed GDI geometry, and complete promotion remain open."
+  }
+}

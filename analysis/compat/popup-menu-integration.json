@@ -1,0 +1,61 @@
+{
+  "procedures": ["PopupMenu"],
+  "phase2_step": "6/6",
+  "guest": "StarDev / Win98 / C:\\PMUINT3",
+  "native_run": "runs/vmctl-vc152pmuint3/",
+  "host_report": "POPUP_MENU_INTEGRATION_CHECKS=30 FAILURES=0 RESULT=PASS",
+  "native_report": "POPUP_MENU_INTEGRATION_CHECKS=31 FAILURES=0 RESULT=PASS",
+  "localized_payload_native_run": "runs/vmctl-vc152pmuint2/",
+  "localized_payload_host_checks": 31,
+  "localized_payload_native_checks": 32,
+  "localized_payload_native_report": "runs/vmctl-vc152pmuint2/PMINT.TXT",
+  "localized_payload_build_status": "runs/vmctl-vc152pmuint2/PMUISTA.TXT",
+  "e2_host_report": "POPUP_MENU_E2_CHECKS=30 FAILURES=0 RESULT=PASS",
+  "e2_native_report": "runs/vmctl-vc152pmuint3/PMENUINT-click.TXT",
+  "e2_native_checks": 30,
+  "e2_native_command": 15000,
+  "native_build": {
+    "compile": "PASS",
+    "link": "PASS",
+    "process_exit": 0,
+    "program_error_dialog": false,
+    "screen_capture": "runs/vmctl-vc152pmuint/native-screen-track.bmp"
+  },
+  "e2_native_build": {
+    "compile": "PASS",
+    "link": "PASS",
+    "process_exit": 0,
+    "program_error_dialog": false,
+    "screen_capture": "runs/vmctl-vc152pmuint3/menu-open.bmp"
+  },
+  "integration": {
+    "direct_labels_and_separator_checked": true,
+    "ampersand_escaping_checked": true,
+    "checked_item_flags_checked": true,
+    "flagged_name_sources_checked": [1, 2, 3, 4],
+    "caller_owned_submenu_header_checked": true,
+    "right_button_tracking_checked": true,
+    "command_selection_checked": true,
+    "real_trackpopupmenu_first_item_selection_checked": true,
+    "command_15000_decoded_as_selection_0": true,
+    "real_win16_menu_api_checked": true,
+    "compressed_string_ids_checked": ["0x43f", "0x440", "0x441", "0x442", "0x443", "0x444", "0x445", "0x446", "0x447", "0x448", "0x449", "0x44a", "0x44b", "0x44c", "0x44d", "0x44e", "0x44f"],
+    "compressed_string_ascii_sum": 15229,
+    "compressed_string_first": "All",
+    "compressed_string_last": "Torpedoes",
+    "queue_boundary_harness_bridge_used": false,
+    "exact_owner_message_queue_checked": true,
+    "exact_peekmessage_arguments_checked": true,
+    "packed_fleet_thing_planet_deep_lookup_checked": true,
+    "real_first_item_mouse_selection_checked": true,
+    "expected_parent_submenu_destroy_effect_recorded": true,
+    "unexpected_api_failures": false
+  },
+  "original_instruction_evidence": {
+    "raw_source": "analysis/decompiler/export/raw/10c0_136c_PopupMenu.c",
+    "caller_boundary": "analysis/compat/report-popup-integration.md",
+    "source_correction": "Submenu headers preserve caller-owned labels instead of kind-0 resolution"
+  },
+  "remaining_scope": [],
+  "promoted": true
+}

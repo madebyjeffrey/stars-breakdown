@@ -1,0 +1,33 @@
+{
+  "procedure": "ProductionDlg",
+  "phase2_step": "5/6",
+  "evidence_unit": "E3_real_user_message_loop_sub_boundary",
+  "guest": "StarDev / Win98 / C:\\PDGU5",
+  "native_probe": {
+    "package": "compat/vc152/production-dlg-user-e5/",
+    "status": "COMPILE=PASS LINK=PASS",
+    "report": "runs/vmctl-vc152pdgu5/PDGUSER.TXT",
+    "checks": 12,
+    "failures": 0,
+    "result": "PASS",
+    "process_exit": 0,
+    "program_error_dialog": false,
+    "console_output_bytes": 0
+  },
+  "user_boundary": {
+    "queued_messages": ["WM_COMMAND", "WM_LBUTTONDOWN", "WM_RBUTTONDOWN", "WM_PAINT", "WM_ERASEBKGND"],
+    "initialization_count": 1,
+    "command_count": 1,
+    "help_popup_count": 1,
+    "queue_menu_count": 2,
+    "selected_sparse_queue_slot": 2,
+    "accepted_editor_mutation": true,
+    "message_loop_dispatch_count": 74
+  },
+  "scope_note": "This closes the native USER/message-loop sub-boundary. Original-executable queue differential, packed production globals, complete resources, and promotion remain open.",
+  "evidence": [
+    "reconstructed/src/production_dlg.c",
+    "compat/vc152/production-dlg-user-e5/",
+    "runs/vmctl-vc152pdgu5/"
+  ]
+}

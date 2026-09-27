@@ -1,0 +1,162 @@
+{
+  "original_sha256": "ccab6682b55dae14dbf104e491cfbd3b32a6280022020032ae0615500949ba59",
+  "compiler": "Microsoft C/C++ Compiler Version 8.00c (VC++ 1.52c)",
+  "flags": "/c /AM /GA /GEs /Zp1 /Od /Gs /W3 /Fc",
+  "comparison": "No masked bytes; named OMF relocations resolved into the original address layout.",
+  "functions": [
+    {
+      "name": "CreateChildWindows",
+      "ne_segment": 5,
+      "original_offset": 908,
+      "original_bytes": 841,
+      "generated_bytes": 841,
+      "length_difference": 0,
+      "exact_after_address_resolution": true,
+      "differing_bytes": 0,
+      "differences": [],
+      "fixups": [
+        {
+          "offset": 24,
+          "width": 4,
+          "target": "__strlen",
+          "resolved_value": "0x111803f0"
+        },
+        {
+          "offset": 107,
+          "width": 4,
+          "target": "__strncpy",
+          "resolved_value": "0x1118040c"
+        },
+        {
+          "offset": 119,
+          "width": 4,
+          "target": "___strlwr",
+          "resolved_value": "0x111806b4"
+        },
+        {
+          "offset": 145,
+          "width": 4,
+          "target": "__strlen",
+          "resolved_value": "0x111803f0"
+        },
+        {
+          "offset": 162,
+          "width": 4,
+          "target": "__WSPRINTF",
+          "resolved_value": "0x14f802f8"
+        },
+        {
+          "offset": 201,
+          "width": 4,
+          "target": "_PszPlayerName",
+          "resolved_value": "0x103811f2"
+        },
+        {
+          "offset": 234,
+          "width": 4,
+          "target": "__WSPRINTF",
+          "resolved_value": "0x14f802f8"
+        },
+        {
+          "offset": 253,
+          "width": 4,
+          "target": "_CchGetString",
+          "resolved_value": "0x1040221e"
+        },
+        {
+          "offset": 282,
+          "width": 4,
+          "target": "__WSPRINTF",
+          "resolved_value": "0x14f802f8"
+        },
+        {
+          "offset": 301,
+          "width": 4,
+          "target": "_SETWINDOWTEXT",
+          "resolved_value": "0x14f801ac"
+        },
+        {
+          "offset": 388,
+          "width": 4,
+          "target": "_CREATEWINDOW",
+          "resolved_value": "0x14f801b8"
+        },
+        {
+          "offset": 415,
+          "width": 4,
+          "target": "_INVALIDATERECT",
+          "resolved_value": "0x14f80274"
+        },
+        {
+          "offset": 436,
+          "width": 4,
+          "target": "_SetScanScrollBars",
+          "resolved_value": "0x10586c14"
+        },
+        {
+          "offset": 511,
+          "width": 4,
+          "target": "_CREATEWINDOW",
+          "resolved_value": "0x14f801b8"
+        },
+        {
+          "offset": 538,
+          "width": 4,
+          "target": "_INVALIDATERECT",
+          "resolved_value": "0x14f80274"
+        },
+        {
+          "offset": 612,
+          "width": 4,
+          "target": "_CREATEWINDOW",
+          "resolved_value": "0x14f801b8"
+        },
+        {
+          "offset": 639,
+          "width": 4,
+          "target": "_INVALIDATERECT",
+          "resolved_value": "0x14f80274"
+        },
+        {
+          "offset": 713,
+          "width": 4,
+          "target": "_CREATEWINDOW",
+          "resolved_value": "0x14f801b8"
+        },
+        {
+          "offset": 740,
+          "width": 4,
+          "target": "_INVALIDATERECT",
+          "resolved_value": "0x14f80274"
+        },
+        {
+          "offset": 759,
+          "width": 4,
+          "target": "_DESTROYWINDOW",
+          "resolved_value": "0x14f801c8"
+        },
+        {
+          "offset": 823,
+          "width": 4,
+          "target": "_CREATEWINDOW",
+          "resolved_value": "0x14f801b8"
+        },
+        {
+          "offset": 831,
+          "width": 4,
+          "target": "_RefitFrameChildren",
+          "resolved_value": "0x10208c88"
+        }
+      ],
+      "backpatch_records": 27,
+      "original_relocated_sha256": "305898dbfa07337403972d4292a1a055b981b5fd86770d3f539496c1e721f22e",
+      "generated_resolved_sha256": "305898dbfa07337403972d4292a1a055b981b5fd86770d3f539496c1e721f22e",
+      "source": "compat/mdi-create-child-match/MDI.C"
+    }
+  ],
+  "all_functions_match": true,
+  "object_sha256": "38e43e05275456b204df38cd749a80d27749a0502d7ffd5408aa842fde0ae08f",
+  "source_sha256": "6c7101aa46f581368cda5d42a4cd261990249c374467c952855d28c84cadc506",
+  "build_log": "mdi.c\nmdi.c(378) : warning C4101: 'scratch' : unreferenced local variable\n",
+  "build_status": "PASS\n"
+}

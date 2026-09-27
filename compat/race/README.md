@@ -3,8 +3,9 @@
 The user's proposed workflow is implemented as a generated scenario package:
 one named set of wizard actions drives the recovered C, the original-instruction
 oracle, and written recipes for independently recreating the races in DOSBox or
-86Box. The native VC++ Windows adapter remains a separate pending task. This
-package contains race files and instructions; it is not a Win16 executable.
+86Box. This scenario package contains race files and instructions; it is not a
+Win16 executable. The later [RACEVC package](../racevc/README.md) compiled and
+passed native Win16 checks. Live manual pilot acceptance remains separate.
 
 The catalog contains **88 scenarios**, with **15 selected for the initial live
 replay**. These cover every template, all ten primary and fourteen lesser traits,
@@ -127,11 +128,10 @@ deliberately changed checksums, an unapproved header difference, truncated input
 U020, dynamic mouse actions, ASCII/8.3 transfer integrity and preserved returns.
 The complete catalog is also compared during package generation.
 
-Remaining acceptance work is the rest of the live pilot, inspection of returned observations,
-and the native VC++ adapter/build of these new source files. The subsequent
-[compiler/output package](../racevc/README.md) now includes all recovered source
-and an automatic C runner for the same 88 scenarios. RETURN3 compiled all source;
-RACEVC2 addresses its linker failure. Native execution is pending, and the
-modeled UI does not finish the live pilot. Later components can
+Remaining acceptance work for this scenario package is the rest of the live
+pilot and inspection of returned observations. The subsequent
+[compiler/output package](../racevc/README.md) includes all recovered source
+and an automatic C runner for the same 88 scenarios. RETURN5 passed 816 native
+checks in Win98 SE. The modeled UI does not finish the live pilot. Later components can
 use the same structure: named actions, original expected outcomes, candidate
 artifacts, a small live sample and explicit unresolved differences.

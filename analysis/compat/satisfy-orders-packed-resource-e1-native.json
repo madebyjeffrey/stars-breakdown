@@ -1,0 +1,41 @@
+{
+  "procedures": ["SatisfyOrders"],
+  "phase2_step": "5/6",
+  "unit": "E1",
+  "guest": "StarDev / Win98 / C:\\SYOE6",
+  "native_run": "runs/vmctl-vc152syoe6/",
+  "host_report": "SATISFY_ORDERS_PACKED_RESOURCE_E1_CHECKS=21 FAILURES=0 RESULT=PASS",
+  "native_report": "SATISFY_ORDERS_PACKED_RESOURCE_E1_CHECKS=21 FAILURES=0 RESULT=PASS",
+  "native_build": {
+    "compile": "PASS",
+    "link": "PASS",
+    "process_exit": 0,
+    "program_error_dialog": false
+  },
+  "packed_records": {
+    "fleet_bytes": 124,
+    "order_bytes": 18,
+    "fleet_identity_offsets": [0, 2],
+    "fleet_turn_flags_offset": 118,
+    "order_target_offset": 4,
+    "order_kind_target_active_offset": 6
+  },
+  "checks": [
+    "pass_1_turn_flag_clearing",
+    "mineral_source_and_destination_capacity_accounting",
+    "mineral_transfer_message_payload",
+    "fleet_colonist_capacity_and_message_variant",
+    "thing_fuel_channel_rejection",
+    "pass_4_point_shortage_message",
+    "stat_percent_callback_selector_and_delta",
+    "active_bit_writeback_for_partial_transfer",
+    "battle_plan_pass_1_dispatch_and_completion",
+    "undersized_record_rejection"
+  ],
+  "supporting_original_boundary": "analysis/decompiler/export/raw/10b0_6798_SatisfyOrders.c",
+  "remaining_scope": [
+    "E2 technology_discovery_fleet_and_ship_design_copying_salvage_and_complete_message_layouts",
+    "E3 complete_native_turn_and_original_differential",
+    "final_review_and_promotion"
+  ]
+}

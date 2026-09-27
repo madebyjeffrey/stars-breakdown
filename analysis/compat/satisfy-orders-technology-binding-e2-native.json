@@ -1,0 +1,53 @@
+{
+  "procedures": ["SatisfyOrders"],
+  "phase2_step": "5/6",
+  "unit": "E2 original technology-table/result binding boundary",
+  "status": "supporting milestone; named E2 remains open",
+  "guest": "StarDev / Win98 / C:\\SYOE11",
+  "native_run": "runs/vmctl-vc152syoe11/",
+  "host_report": "SATISFY_ORDERS_TECHNOLOGY_BINDING_E2_CHECKS=12 FAILURES=0 RESULT=PASS",
+  "native_report": "SATISFY_ORDERS_TECHNOLOGY_BINDING_E2_CHECKS=12 FAILURES=0 RESULT=PASS EXIT=0",
+  "native_build": {
+    "compile": "PASS",
+    "link": "PASS",
+    "process_exit": 0,
+    "program_error_dialog": false,
+    "compiler_options": "/AM /GA /GEs /Zp1 /O /W3",
+    "response_file_definitions": "SYO11.DEF included; Win16 stack/heap/stub directives applied"
+  },
+  "covered": [
+    "production SatisfyOrders technology_binding callback path",
+    "point destination negative/positive message codes 0x013c and 0x013d",
+    "planet destination negative/positive message codes 0x013e and 0x013f",
+    "real stars_itech_learn_a_tech invocation",
+    "signed negative trader-part result mapping",
+    "signed positive battle-technology result mapping",
+    "zero no-learning result preservation",
+    "trader chance, battle threshold, research, event, and goto state",
+    "resource amount propagation and order completion"
+  ],
+  "remaining": [
+    "complete raw message argument layouts",
+    "original transfer behavior differential",
+    "E3 full-turn and original differential",
+    "named SatisfyOrders E2 Step-5 closure and Step-6 promotion"
+  ],
+  "diagnostic_history": [
+    "initial packet omitted SYO11.DEF from SYO11.LNK, causing linker warning L4021 and the Win98 not-enough-space-for-arguments dialog",
+    "corrected packet passed with /Od before final clean /O replay"
+  ],
+  "evidence": [
+    "tests/satisfy_orders_technology_binding_e2_probe.c",
+    "compat/vc152/satisfy-orders-technology-binding-e2-native/",
+    "runs/vmctl-vc152syoe11/SYO11-final-opt.TXT",
+    "runs/vmctl-vc152syoe11/SYO11-final-opt-run.TXT",
+    "runs/vmctl-vc152syoe11/SYO11-final-opt-STA.TXT",
+    "runs/vmctl-vc152syoe11/SYO11-final-opt-CL.LOG",
+    "runs/vmctl-vc152syoe11/SYO11-final-opt-LINK.LOG",
+    "runs/vmctl-vc152syoe11/SYO11-final-opt.MAP",
+    "reconstructed/src/satisfy_orders.c",
+    "reconstructed/src/satisfy_technology.c",
+    "reconstructed/src/itech_learn_a_tech.c",
+    "reconstructed/include/core.h"
+  ]
+}

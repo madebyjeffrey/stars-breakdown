@@ -1,0 +1,35 @@
+{
+  "procedure": "DrawPlanetShipList",
+  "milestone": "draw-planet-ship-list-details-e3",
+  "scope": "host-source-fidelity",
+  "host_report": "DRAW_PLANET_SHIP_LIST_DETAILS_CHECKS=9 FAILURES=0 RESULT=PASS",
+  "related_reports": [
+    "DRAW_PLANET_SHIP_LIST_CHECKS=19 FAILURES=0 RESULT=PASS",
+    "DRAW_PLANET_SHIP_LIST_PACKED_CHECKS=18 FAILURES=0 RESULT=PASS"
+  ],
+  "step5_units_closed": 0,
+  "boundary": {
+    "callback": "draw_details",
+    "arguments": ["detail_rect", "transfer_kind", "transfer_index"],
+    "fleet_detail_kind_checked": true,
+    "unavailable_transfer_suppression_checked": true,
+    "ship_mode_suppression_checked": true,
+    "legacy_fill_fallback_preserved": true
+  },
+  "native_status": "pending_guest_agent_reconnection",
+  "remaining_scope": [
+    "native fleet and thing detail rendering",
+    "exact USER/GDI handles",
+    "localized text and gauges",
+    "complete transfer integration",
+    "original differential",
+    "promotion"
+  ],
+  "evidence": [
+    "analysis/decompiler/export/raw/1048_377e_DrawPlanetShipList.c",
+    "reconstructed/include/core.h",
+    "reconstructed/src/draw_planet_ship_list.c",
+    "tests/draw_planet_ship_list_details_probe.c",
+    "tests/draw_planet_ship_list_packed_probe.c"
+  ]
+}

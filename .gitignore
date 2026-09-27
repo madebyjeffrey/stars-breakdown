@@ -17,5 +17,35 @@ __pycache__/
 # Full disassembly, pseudocode, memory dumps and per-run logs are reproducible.
 /analysis/decompiler/export/
 /analysis/decompiler/export-*/
+
+# Rebuilt VC152 startup byte-match outputs; source and build recipe are tracked.
+/compat/startup-match/*.OBJ
+/compat/startup-match/*.COD
+/compat/startup-match/*.LOG
+/compat/startup-match/DONE.TXT
+/compat/mdi-match/*.OBJ
+/compat/mdi-match/*.COD
+/compat/mdi-match/*.LOG
+/compat/mdi-match/DONE.TXT
+/compat/tiles-match/*.OBJ
+/compat/tiles-match/*.COD
+/compat/tiles-match/*.LOG
+/compat/tiles-match/DONE.TXT
 # Transfer staging and user-returned VM artifacts; fixture sources are in compat/.
 /ftp-share/
+
+# Local IDE metadata.
+/.idea/
+
+# Accidentally emitted guest paths on the host (for example C:\\FOO\\BAR.TXT).
+/C:*
+
+# Generated VC1.52c compatibility harness binaries and linker intermediates.
+/compat/vc152/**/*.EXE
+/compat/vc152/**/*.OBJ
+/compat/vc152/**/*.LNK
+
+# Extracted help-file rendering outputs; source assets and extraction scripts stay tracked.
+/help-file/out/
+/help-file/out.zip
+/compat/

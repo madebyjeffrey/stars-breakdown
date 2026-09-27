@@ -1,0 +1,46 @@
+{
+  "procedures": ["DoCyberAiTurn"],
+  "checkpoint": "multi-order packed PLORD mutation E12",
+  "original_boundary": "FMoveAiFleet NE 19:3D0A",
+  "status": "host and native supporting evidence; named Step-5 closure pending",
+  "cases": [
+    "append third distinct endpoint to two-order queue, preserving earlier records",
+    "append at last endpoint and replace final record",
+    "non-append at first endpoint replaces first record and truncates count to one",
+    "non-append at new endpoint preserves first record and writes second record",
+    "helper boundary rejects full-capacity append without mutation; original LpplReAlloc integration is not covered"
+  ],
+  "host": {
+    "probe": "tests/ai_plord_multi_order_probe.c",
+    "runner": "tests/test_ai_plord_multi_order.py",
+    "report": "AI_PLORD_MULTI_ORDER_CHECKS=15 FAILURES=0 RESULT=PASS"
+  },
+  "native": {
+    "package": "compat/vc152/ai-plord-multi-order-e12/",
+    "guest_directory": "C:\\PLOE12",
+    "compiler": "Microsoft Visual C++ 1.52c",
+    "build_status": "COMPILE=PASS; LINK=PASS",
+    "report": "AI_PLORD_MULTI_ORDER_CHECKS=15 FAILURES=0 RESULT=PASS",
+    "process_exit": 0,
+    "program_error_dialog": false,
+    "return_directory": "runs/vmctl-ai-plord-multi-e12/"
+  },
+  "full_host_suite": {
+    "tests": 526,
+    "skipped": 153,
+    "layout_assertions": 2241,
+    "function_declarations": 846,
+    "result": "PASS"
+  },
+  "todo6": {
+    "cyber_phase2_step": "5/6",
+    "cyber_named_step5_closed": 2,
+    "cyber_named_step5_total": 4,
+    "step5_closed": 120,
+    "step5_total": 152,
+    "step5_open": 32,
+    "promotion_open": 10,
+    "practical_open": 42,
+    "named_step5_units_closed_by_this_checkpoint": 0
+  }
+}

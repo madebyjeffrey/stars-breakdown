@@ -1,0 +1,57 @@
+{
+  "procedures": ["ExecuteReportClick"],
+  "phase2_step": "5/6",
+  "host_report": "EXECUTE_REPORT_CLICK_PACKED_CHECKS=34 FAILURES=0 RESULT=PASS",
+  "production_packed_lookup": true,
+  "native_production_replay": "pending_fresh_packet_guest_agent_reconnect",
+  "native_build": {
+    "guest": "StarDev / Win98",
+    "native_run": "runs/vmctl-vc152exint4/",
+    "compile": "PASS",
+    "link": "PASS",
+    "process_exit": 0,
+    "native_report": "EXECUTE_REPORT_CLICK_PACKED_CHECKS=34 FAILURES=0 RESULT=PASS",
+    "program_error_dialog": false,
+    "diagnostic_failed_runs": ["runs/vmctl-vc152expacked/", "runs/vmctl-vc152expacked2/"]
+  },
+  "packed_records": {
+    "fleet_bytes": 124,
+    "planet_bytes": 56,
+    "battle_bytes": 14,
+    "popup_bytes": 22,
+    "fleet_offsets": {"id": 0, "idPlanet": 6, "pt": 8},
+    "planet_offsets": {"id": 0, "flags": 4, "rgMinConc": 9, "rgwtMin": 28, "mineral_weight": 20, "defense_bits": 24},
+    "battle_offsets": {"id": 0, "pt": 10},
+    "popup_offsets": {"grPopup": 0, "idPlanet": 2, "iPlanetVar": 4, "iPlanVal": 6, "iPlanMin": 8, "iPlanMax": 10, "iPlrVal": 12, "iPlrMin": 14, "iPlrMax": 16, "mineral_union_tail": 18}
+  },
+  "integration": {
+    "raw_fleet_load": true,
+    "raw_planet_bitfield_load": true,
+    "raw_battle_load": true,
+    "fleet_popup_union_offsets_checked": true,
+    "installation_popup_union_offsets_checked": true,
+    "mineral_popup_union_offsets_checked": true,
+    "resource_popup_union_offsets_checked": true,
+    "starbase_popup_union_offsets_checked": true,
+    "planet_popup_union_offsets_checked": true,
+    "defense_part_payload_checked": true,
+    "resource_exempt_flag_checked": true,
+    "production_modal_guard_checked": true,
+    "transfer_modal_guard_checked": true,
+    "native_packed_execution": true,
+    "native_layout_run": "runs/vmctl-vc152exlayout3/",
+    "native_layout_report": "EXECUTE_REPORT_CLICK_PACKED_LAYOUT_CHECKS=16 FAILURES=0 RESULT=PASS"
+  },
+  "supporting_layout_evidence": [
+    "analysis/compat/execute-report-click-packed-layout.md",
+    "analysis/compat/execute-report-click-packed-layout.json",
+    "tests/execute_report_click_packed_layout_probe.c",
+    "compat/vc152/execute-report-click-packed-layout/",
+    "runs/vmctl-vc152exlayout3/"
+  ],
+  "remaining_scope": [
+    "exact original GlobalPD owner and part/pointer union cases",
+    "live USER/GDI handles and complete report caller/layout integration",
+    "final promotion"
+  ]
+}

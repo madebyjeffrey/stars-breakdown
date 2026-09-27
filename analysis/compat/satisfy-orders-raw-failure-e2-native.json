@@ -1,0 +1,45 @@
+{
+  "procedures": ["SatisfyOrders"],
+  "phase2_step": "5/6",
+  "unit": "E2 remaining transfer-failure FSendPlrMsg/FSendPlrMsg2 payload boundary",
+  "status": "supporting milestone; named E2 remains open",
+  "guest": "StarDev / Win98 / C:\\SYOE22",
+  "native_run": "runs/vmctl-vc152syoe22/",
+  "host_report": "SATISFY_ORDERS_RAW_FAILURE_CHECKS=44 FAILURES=0 RESULT=PASS",
+  "native_report": "SATISFY_ORDERS_RAW_FAILURE_CHECKS=44 FAILURES=0 RESULT=PASS EXIT=0",
+  "native_build": {
+    "compile": "PASS",
+    "link": "PASS",
+    "process_exit": 0,
+    "program_error_dialog": false,
+    "compiler_options": "/AM /GA /GEs /Zp1 /O /W3",
+    "response_file_definitions": "SYOFALL.DEF included; Win16 stack/heap/stub directives applied"
+  },
+  "covered": [
+    "set-amount failure message 0x0121",
+    "set-colonists failure message 0x0122",
+    "deep-space colonist rejection message 0x0165",
+    "futile mineral-packet transfer message 0x011e",
+    "all eight payload words for the FSendPlrMsg branches",
+    "all three payload words for the FSendPlrMsg2 branches"
+  ],
+  "remaining": [
+    "caller-resolved packed action-union conditions",
+    "upstream route/fuel calculation and pass gating",
+    "original full-turn transfer differential",
+    "E3 full-turn/original differential",
+    "named SatisfyOrders E2 Step-5 closure and Step-6 promotion"
+  ],
+  "evidence": [
+    "tests/satisfy_orders_raw_failure_probe.c",
+    "compat/vc152/satisfy-orders-raw-failure-e2-native/",
+    "runs/vmctl-vc152syoe22/SYOFALL.TXT",
+    "runs/vmctl-vc152syoe22/SYOFALSTA.TXT",
+    "runs/vmctl-vc152syoe22/SYOFACL.LOG",
+    "runs/vmctl-vc152syoe22/SYOFALLINK.LOG",
+    "reconstructed/src/satisfy_orders.c",
+    "reconstructed/include/core.h",
+    "/Users/jdrake/Projects/stars-decompile/turn3.c",
+    "/Users/jdrake/Projects/stars-decompile/scripts/ghidra_scripts/includes/enums.h"
+  ]
+}

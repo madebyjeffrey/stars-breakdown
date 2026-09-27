@@ -1,0 +1,301 @@
+{
+  "original_sha256": "ccab6682b55dae14dbf104e491cfbd3b32a6280022020032ae0615500949ba59",
+  "compiler": "Microsoft C/C++ Compiler Version 8.00c (VC++ 1.52c)",
+  "flags": "/c /AM /GA /GEs /Zp1 /Od /Gs /W3 /Fc",
+  "comparison": "No masked bytes; named OMF relocations resolved into the original address layout.",
+  "functions": [
+    {
+      "name": "InitMDIApp",
+      "ne_segment": 5,
+      "original_offset": 0,
+      "original_bytes": 907,
+      "generated_bytes": 907,
+      "exact_before_address_resolution": false,
+      "exact_after_address_resolution": true,
+      "length_difference": 0,
+      "differing_bytes": 0,
+      "differences": [],
+      "fixups": [
+        {
+          "offset": 17,
+          "width": 2,
+          "target": "FRAMEWNDPROC",
+          "resolved_value": "0x6d6"
+        },
+        {
+          "offset": 22,
+          "width": 2,
+          "target": "FRAMEWNDPROC",
+          "resolved_value": "0x1020"
+        },
+        {
+          "offset": 35,
+          "width": 2,
+          "target": "_hInst",
+          "resolved_value": "0x5310"
+        },
+        {
+          "offset": 58,
+          "width": 4,
+          "target": "LOADCURSOR",
+          "resolved_value": "0x14f802a0"
+        },
+        {
+          "offset": 71,
+          "width": 2,
+          "target": "_data0364",
+          "resolved_value": "0x364"
+        },
+        {
+          "offset": 82,
+          "width": 2,
+          "target": "_szFrame",
+          "resolved_value": "0x1d6"
+        },
+        {
+          "offset": 100,
+          "width": 4,
+          "target": "REGISTERCLASS",
+          "resolved_value": "0x14f801d0"
+        },
+        {
+          "offset": 126,
+          "width": 2,
+          "target": "MESSAGEWNDPROC",
+          "resolved_value": "0x5c92"
+        },
+        {
+          "offset": 131,
+          "width": 2,
+          "target": "MESSAGEWNDPROC",
+          "resolved_value": "0x1030"
+        },
+        {
+          "offset": 153,
+          "width": 4,
+          "target": "GETSTOCKOBJECT",
+          "resolved_value": "0x14f80130"
+        },
+        {
+          "offset": 161,
+          "width": 2,
+          "target": "_szMessage",
+          "resolved_value": "0x202"
+        },
+        {
+          "offset": 179,
+          "width": 4,
+          "target": "REGISTERCLASS",
+          "resolved_value": "0x14f801d0"
+        },
+        {
+          "offset": 217,
+          "width": 4,
+          "target": "GETSTOCKOBJECT",
+          "resolved_value": "0x14f80130"
+        },
+        {
+          "offset": 225,
+          "width": 2,
+          "target": "_szScan",
+          "resolved_value": "0x1e2"
+        },
+        {
+          "offset": 243,
+          "width": 4,
+          "target": "REGISTERCLASS",
+          "resolved_value": "0x14f801d0"
+        },
+        {
+          "offset": 281,
+          "width": 4,
+          "target": "GETSTOCKOBJECT",
+          "resolved_value": "0x14f80130"
+        },
+        {
+          "offset": 289,
+          "width": 2,
+          "target": "_szMine",
+          "resolved_value": "0x1ec"
+        },
+        {
+          "offset": 307,
+          "width": 4,
+          "target": "REGISTERCLASS",
+          "resolved_value": "0x14f801d0"
+        },
+        {
+          "offset": 345,
+          "width": 4,
+          "target": "GETSTOCKOBJECT",
+          "resolved_value": "0x14f80130"
+        },
+        {
+          "offset": 353,
+          "width": 2,
+          "target": "_szTb",
+          "resolved_value": "0x242"
+        },
+        {
+          "offset": 371,
+          "width": 4,
+          "target": "REGISTERCLASS",
+          "resolved_value": "0x14f801d0"
+        },
+        {
+          "offset": 409,
+          "width": 4,
+          "target": "GETSTOCKOBJECT",
+          "resolved_value": "0x14f80130"
+        },
+        {
+          "offset": 422,
+          "width": 2,
+          "target": "_szPlanet",
+          "resolved_value": "0x1f6"
+        },
+        {
+          "offset": 440,
+          "width": 4,
+          "target": "REGISTERCLASS",
+          "resolved_value": "0x14f801d0"
+        },
+        {
+          "offset": 478,
+          "width": 4,
+          "target": "GETSTOCKOBJECT",
+          "resolved_value": "0x14f80130"
+        },
+        {
+          "offset": 491,
+          "width": 2,
+          "target": "_szPopup",
+          "resolved_value": "0x210"
+        },
+        {
+          "offset": 509,
+          "width": 4,
+          "target": "REGISTERCLASS",
+          "resolved_value": "0x14f801d0"
+        },
+        {
+          "offset": 547,
+          "width": 4,
+          "target": "GETSTOCKOBJECT",
+          "resolved_value": "0x14f80130"
+        },
+        {
+          "offset": 560,
+          "width": 2,
+          "target": "_szTooltip",
+          "resolved_value": "0x24a"
+        },
+        {
+          "offset": 578,
+          "width": 4,
+          "target": "REGISTERCLASS",
+          "resolved_value": "0x14f801d0"
+        },
+        {
+          "offset": 616,
+          "width": 4,
+          "target": "GETSTOCKOBJECT",
+          "resolved_value": "0x14f80130"
+        },
+        {
+          "offset": 629,
+          "width": 2,
+          "target": "_szBrowser",
+          "resolved_value": "0x21c"
+        },
+        {
+          "offset": 647,
+          "width": 4,
+          "target": "REGISTERCLASS",
+          "resolved_value": "0x14f801d0"
+        },
+        {
+          "offset": 673,
+          "width": 2,
+          "target": "TITLEWNDPROC",
+          "resolved_value": "0x9126"
+        },
+        {
+          "offset": 678,
+          "width": 2,
+          "target": "TITLEWNDPROC",
+          "resolved_value": "0x1020"
+        },
+        {
+          "offset": 691,
+          "width": 2,
+          "target": "_hInst",
+          "resolved_value": "0x5310"
+        },
+        {
+          "offset": 714,
+          "width": 4,
+          "target": "LOADCURSOR",
+          "resolved_value": "0x14f802a0"
+        },
+        {
+          "offset": 726,
+          "width": 4,
+          "target": "GETSTOCKOBJECT",
+          "resolved_value": "0x14f80130"
+        },
+        {
+          "offset": 744,
+          "width": 2,
+          "target": "_szTitle",
+          "resolved_value": "0x22a"
+        },
+        {
+          "offset": 762,
+          "width": 4,
+          "target": "REGISTERCLASS",
+          "resolved_value": "0x14f801d0"
+        },
+        {
+          "offset": 806,
+          "width": 2,
+          "target": "_hInst",
+          "resolved_value": "0x5310"
+        },
+        {
+          "offset": 829,
+          "width": 4,
+          "target": "LOADCURSOR",
+          "resolved_value": "0x14f802a0"
+        },
+        {
+          "offset": 841,
+          "width": 4,
+          "target": "GETSTOCKOBJECT",
+          "resolved_value": "0x14f80130"
+        },
+        {
+          "offset": 859,
+          "width": 2,
+          "target": "_szReport",
+          "resolved_value": "0x236"
+        },
+        {
+          "offset": 877,
+          "width": 4,
+          "target": "REGISTERCLASS",
+          "resolved_value": "0x14f801d0"
+        }
+      ],
+      "backpatch_records": 23,
+      "original_relocated_sha256": "61bfe215939c45b8f2dd25065d76ba09d1457cb9ba6e3402fd47c15b150f67d7",
+      "generated_resolved_sha256": "61bfe215939c45b8f2dd25065d76ba09d1457cb9ba6e3402fd47c15b150f67d7",
+      "source": "compat/mdi-match/MDI.C"
+    }
+  ],
+  "all_functions_match": true,
+  "object_sha256": "b0d529153306cd6be7fa1770fa3ce296a4ef006bede80c875149842e5ca8b033",
+  "source_sha256": "d680ab640529c7b4f483e795fc871d8412cdd570abb2c787aa2911644f3fa299",
+  "build_log": "mdi.c\nmdi.c(34) : warning C4113: function parameter lists differed\nmdi.c(34) : warning C4049: '=' : indirection to different types\nmdi.c(47) : warning C4113: function parameter lists differed\nmdi.c(47) : warning C4049: '=' : indirection to different types\nmdi.c(109) : warning C4113: function parameter lists differed\nmdi.c(109) : warning C4049: '=' : indirection to different types\n",
+  "build_status": "PASS\n"
+}

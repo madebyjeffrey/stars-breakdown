@@ -1,7 +1,198 @@
 /* Message expansion and its name-lookup data paths. Input strings, names and
  * parameter spans must fit the original buffers; see message-formatting.md. */
 #include "runtime_internal.h"
+#include "common.h"
 #include <assert.h>
+
+/* NE 5:2886-2AEA. Randomly mixes the eleven environment bytes into the
+ * serial payload, adds a nibble checksum, permutes 21 bytes through the
+ * original plan selector table, then emits 28 six-bit characters. The seed
+ * state is restored exactly as PushRandom/PopRandom do in the Win16 image.
+ */
+void stars_format_serial_and_env(StarsSeeds *state, StarsU32 serial,
+    const StarsU8 *environment, const StarsU8 *plan_order, StarsU8 *output)
+{
+    StarsSeeds saved;
+    StarsU8 frame[22];
+    StarsU8 selected[21];
+    StarsU32 value;
+    StarsU8 checksum;
+    StarsU8 nibble;
+    StarsU8 parity;
+    StarsU16 cursor;
+    StarsU16 length;
+    StarsU16 bits;
+    StarsU16 selected_cursor;
+    StarsU16 i;
+
+    if (!state || !environment || !plan_order || !output) return;
+    for (i = 0; i < 21U; ++i)
+        if (plan_order[i] >= 21U) return;
+    saved = *state;
+    frame[0] = (StarsU8)serial;
+    frame[1] = (StarsU8)(serial >> 8);
+    frame[2] = (StarsU8)(serial >> 16);
+    frame[3] = (StarsU8)(serial >> 24);
+    for (i = 0; i < 11U; ++i) frame[4U + i] = environment[i];
+    cursor = 15U;
+    parity = 0;
+    stars_randomize(state, serial);
+    for (i = 0; i < 11U; ++i) {
+        length = environment[i];
+        while (length) {
+            (void)stars_random(state, 0x10);
+            --length;
+        }
+        if (parity == 0U) {
+            frame[cursor] =
+                (StarsU8)stars_random(state, 0x10);
+        } else {
+            nibble = (StarsU8)stars_random(state, 0x10);
+            frame[cursor] |=
+                (StarsU8)((nibble & 0x0fU) << 4);
+            ++cursor;
+        }
+        parity = (StarsU8)((parity + 1U) & 1U);
+    }
+    checksum = 0;
+    for (i = 0; i < 15U; ++i) checksum ^= frame[i];
+    frame[cursor] |= (StarsU8)(checksum << 4);
+    ++cursor;
+    for (i = 0; i < 21U; ++i)
+        selected[i] = frame[plan_order[i]];
+
+    value = 0;
+    bits = 0;
+    selected_cursor = 0;
+    for (i = 0; i < 28U; ++i) {
+        if (bits < 6U) {
+            value |= (StarsU32)selected[selected_cursor++] << bits;
+            bits = (StarsU16)(bits + 8U);
+        }
+        nibble = (StarsU8)(value & 0x3fU);
+        value >>= 6;
+        bits = (StarsU16)(bits - 6U);
+        if (nibble < 0x1aU) *output++ = (StarsU8)(nibble + 0x41U);
+        else if (nibble < 0x34U) *output++ = (StarsU8)(nibble + 0x47U);
+        else if (nibble < 0x3eU) *output++ = (StarsU8)(nibble - 4U);
+        else if (nibble == 0x3eU) *output++ = '-';
+        else *output++ = '*';
+    }
+    *output = 0;
+    *state = saved;
+}
+
+/* Host-facing guard for ctypes and other callers that can carry an explicit
+ * output capacity. The historical entry point cannot check the destination
+ * size because that size is not part of its original ABI. */
+StarsI16 stars_format_serial_and_env_checked(StarsSeeds *state, StarsU32 serial,
+    const StarsU8 *environment, const StarsU8 *plan_order, StarsU8 *output,
+    StarsU16 output_capacity)
+{
+    StarsU16 i;
+
+    if (!state || !environment || !plan_order || !output ||
+        output_capacity < 29U)
+        return 0;
+    for (i = 0; i < 21U; ++i)
+        if (plan_order[i] >= 21U) return 0;
+    stars_format_serial_and_env(state, serial, environment, plan_order, output);
+    return 1;
+}
+
+/* NE 5:2AEC-2E1B. This is the inverse of the six-bit serial display:
+ * decode 21 bytes, undo the rgidPlan permutation, validate the recovered
+ * serial, then replay the environment-dependent random nibbles and checksum.
+ * The serial validator remains a host callback for FValidSerialLong. */
+StarsI16 stars_serial_and_env_from_string(StarsSeeds *state,
+    const StarsU8 *input, StarsU32 *serial_output, StarsU8 *environment,
+    const StarsU8 *plan_order, StarsSerialValidator validate_serial,
+    void *context)
+{
+    StarsSeeds saved;
+    StarsU8 frame[22];
+    StarsU8 selected[21];
+    StarsU32 value;
+    StarsU32 serial;
+    StarsU8 code;
+    StarsU8 checksum;
+    StarsU8 parity;
+    StarsU16 bits;
+    StarsU16 input_index;
+    StarsU16 cursor;
+    StarsU16 length;
+    StarsU16 i;
+    const StarsU8 *ch;
+
+    if (!state || !input || !serial_output || !environment || !plan_order ||
+        !validate_serial)
+        return 0;
+    saved = *state;
+    value = 0;
+    bits = 0;
+    input_index = 0;
+    for (i = 0; i < 21U; ++i) {
+        while (bits <= 7U) {
+            ch = input + input_index++;
+            if (*ch >= 'A' && *ch <= 'Z') code = (StarsU8)(*ch - 'A');
+            else if (*ch >= 'a' && *ch <= 'z') code = (StarsU8)(*ch - 'a' + 26);
+            else if (*ch >= '0' && *ch <= '9') code = (StarsU8)(*ch - '0' + 52);
+            else if (*ch == '-') code = 0x3eU;
+            else code = 0x3fU;
+            value |= (StarsU32)code << bits;
+            bits = (StarsU16)(bits + 6U);
+        }
+        selected[i] = (StarsU8)value;
+        value >>= 8;
+        bits = (StarsU16)(bits - 8U);
+    }
+    for (i = 0; i < 22U; ++i) frame[i] = 0;
+    for (i = 0; i < 21U; ++i) {
+        if (plan_order[i] >= 22U) return 0;
+        frame[plan_order[i]] = selected[i];
+    }
+    serial = (StarsU32)frame[0] | ((StarsU32)frame[1] << 8) |
+        ((StarsU32)frame[2] << 16) | ((StarsU32)frame[3] << 24);
+    if (!validate_serial(context, serial)) {
+        *state = saved;
+        return 0;
+    }
+    cursor = 15U;
+    parity = 0;
+    stars_randomize(state, serial);
+    for (i = 0; i < 11U; ++i) {
+        length = frame[4U + i];
+        while (length) {
+            (void)stars_random(state, 0x10);
+            --length;
+        }
+        if (parity == 0U) {
+            if ((StarsU8)(frame[cursor] & 0x0fU) !=
+                (StarsU8)stars_random(state, 0x10)) {
+                *state = saved;
+                return 0;
+            }
+        } else {
+            if ((StarsU8)(frame[cursor] >> 4) !=
+                (StarsU8)stars_random(state, 0x10)) {
+                *state = saved;
+                return 0;
+            }
+            ++cursor;
+        }
+        parity = (StarsU8)((parity + 1U) & 1U);
+    }
+    checksum = 0;
+    for (i = 0; i < 15U; ++i) checksum ^= frame[i];
+    if ((StarsU8)(frame[cursor] >> 4) != (StarsU8)(checksum & 0x0fU)) {
+        *state = saved;
+        return 0;
+    }
+    *serial_output = serial;
+    for (i = 0; i < 11U; ++i) environment[i] = frame[4U + i];
+    *state = saved;
+    return 1;
+}
 
 static const StarsU8 *far_address(StarsRuntime *r, StarsU32 address)
 {
@@ -38,6 +229,22 @@ StarsU16 stars_environment_string(StarsRuntime *r, StarsI16 environment, StarsI1
     return 0x57a4U;
 }
 
+/* NE 8:3F00-3FE4, PszGetDistance. The original truncates the nonnegative
+ * x87 result to a long, then selects one of two hundredths format strings
+ * based on DGROUP:23FA (dyArial8). */
+StarsU16 stars_distance_string(StarsRuntime *r, StarsI16 x1, StarsI16 y1,
+    StarsI16 x2, StarsI16 y2)
+{
+    StarsI32 distance = (StarsI32)stars_get_distance(x1, y1, x2, y2);
+    StarsI32 whole = distance / 100L;
+    StarsI32 fraction = distance - whole * 100L;
+    StarsU16 format = stars_game_string(r,
+        r->data[0x23faU] < 15U ? 0x360 : 0x361);
+    sprintf((char *)r->data + 0x57a4U, (char *)r->data + format,
+        (long)whole, (long)fraction);
+    return 0x57a4U;
+}
+
 /* NE 9:1D96-1F64. Unlike general text, planet names capitalize words. The
  * original reads iLastGet but doesn't update that cache marker. */
 static StarsU16 compressed_planet(StarsRuntime *r, StarsI16 id)
@@ -66,6 +273,8 @@ static StarsU16 compressed_planet(StarsRuntime *r, StarsI16 id)
     d[out] = 0;
     return 0x22c8U;
 }
+StarsU16 stars_get_compressed_planet(StarsRuntime *r, StarsI16 id)
+{ return compressed_planet(r, id); }
 static StarsU16 planet_name(StarsRuntime *r, StarsU16 id)
 {
     StarsU16 name = compressed_planet(r, stars_signed_word(stars_word(r->data,
@@ -75,6 +284,8 @@ static StarsU16 planet_name(StarsRuntime *r, StarsU16 id)
     else strcpy((char *)r->data + 0x57a4U, (char *)r->data + name);
     return 0x57a4U;
 }
+StarsU16 stars_planet_name(StarsRuntime *r, StarsU16 id)
+{ return planet_name(r, id); }
 static const StarsU8 *thing_from_id(StarsRuntime *r, StarsU16 id)
 {
     StarsU32 base = stars_dword(r->data, 0x1698U), cursor = base;
@@ -177,6 +388,10 @@ static StarsU16 fleet_name(StarsRuntime *r, StarsU16 id)
     }
     return 0x57a4U;
 }
+StarsU16 stars_thing_name(StarsRuntime *r, StarsU16 id)
+{ return thing_name(r, id); }
+StarsU16 stars_fleet_name(StarsRuntime *r, StarsU16 id)
+{ return fleet_name(r, id); }
 static StarsU16 fleet_word_name(StarsRuntime *r, StarsU16 word)
 {
     const StarsU8 *ship = design(r, stars_word(r->data, 0x18cU), (StarsU16)((word >> 9) & 15U)), *name;
@@ -192,6 +407,8 @@ static StarsU16 fleet_word_name(StarsRuntime *r, StarsU16 word)
     sprintf((char *)r->data + 0x57a4U, (char *)r->data + 0x532U, name, (int)((word & 511U) + 1U));
     return 0x57a4U;
 }
+StarsU16 stars_fleet_word_name(StarsRuntime *r, StarsU16 word)
+{ return fleet_word_name(r, word); }
 /* In the \k branch only the component pointer from FLookupPart is observable:
  * availability/TechStatus results are discarded, and those queries don't
  * mutate globals. This table is that verified data-flow slice, not a claim to
@@ -214,6 +431,16 @@ static StarsU16 location_name(StarsRuntime *r, StarsU16 x, StarsU16 y)
     else sprintf((char *)r->data + 0x57a4U, (char *)r->data + stars_game_string(r, 0x363),
         (int)stars_signed_word(x), (int)stars_signed_word(y));
     return 0x57a4U;
+}
+StarsU16 stars_location_name(StarsRuntime *r, StarsI16 grobj, StarsI16 id,
+    StarsI16 x, StarsI16 y)
+{
+    if (id != -1) {
+        if (grobj == 1) return planet_name(r, (StarsU16)id);
+        if (grobj == 2) return fleet_name(r, (StarsU16)id);
+        if (grobj == 8) return thing_name(r, (StarsU16)id);
+    }
+    return location_name(r, (StarsU16)x, (StarsU16)y);
 }
 static StarsU16 append(StarsU8 *d, StarsU16 out, const StarsU8 *text)
 {
@@ -345,3 +572,48 @@ StarsU16 stars_format_string(StarsRuntime *r, StarsU16 format, const StarsU8 *pa
 }
 StarsU16 stars_format_id(StarsRuntime *r, StarsI16 id, const StarsU8 *parameters)
 { return stars_format_string(r, stars_game_string(r, id), parameters); }
+
+/* NE 7:9EB8-A016. Message compression uses the tables in the original
+ * message segment: 64-byte length groups, a word-offset table, and a
+ * cumulative-nibble character table. The cache marker is intentionally only
+ * read; the original routine does not update it here. */
+StarsU16 stars_get_compressed_message(StarsU8 *data, const StarsU8 *messages,
+    StarsI16 id)
+{
+    StarsU16 cached, group, lengths, cursor, sum = 0, count;
+    StarsU16 nibble, character = 0, i, output = 0x505cU;
+    int high;
+    if (!messages) return output;
+    cached = stars_word(data, 0x0b75U);
+    if (id == stars_signed_word(cached)) return output;
+    group = (StarsU16)((StarsU16)id >> 6);
+    lengths = (StarsU16)(0x5934U + group * 64U);
+    for (i = 0; i < ((StarsU16)id & 63U); ++i)
+        sum = (StarsU16)(sum + messages[(StarsU16)(lengths + i)]);
+    cursor = stars_word(messages, (StarsU16)(0x5ab8U + group * 2U));
+    cursor = (StarsU16)(cursor + sum / 2U);
+    high = !(sum & 1U);
+    count = messages[(StarsU16)(lengths + ((StarsU16)id & 63U))];
+    for (i = 0; i < count; ++i) {
+        if (high) nibble = (StarsU16)(messages[cursor] >> 4);
+        else nibble = (StarsU16)(messages[(StarsU16)(cursor++)] & 15U);
+        high = !high;
+        character = (StarsU16)(character + nibble);
+        if (nibble != 15U) {
+            data[output++] = messages[(StarsU16)(0x5ac6U + character)];
+            character = 0;
+        }
+    }
+    data[output] = 0;
+    return 0x505cU;
+}
+
+/* PszFormatMessage is a real source-level composition of the two recovered
+ * message routines. Segment 7 must be installed in the runtime segment map. */
+StarsU16 stars_format_message(StarsRuntime *r, StarsI16 id,
+    const StarsU8 *parameters)
+{
+    return stars_format_string(r,
+        stars_get_compressed_message(r->data, r->segments[7], id),
+        parameters);
+}

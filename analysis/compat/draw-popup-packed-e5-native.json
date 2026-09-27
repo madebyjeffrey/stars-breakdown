@@ -1,0 +1,46 @@
+{
+  "procedures": ["DrawPopup"],
+  "phase2_step": "5/6",
+  "unit": "E5 native production replay of the 22-byte popup selector bridge",
+  "status": "supporting milestone; named Step-5 units remain open",
+  "guest": "StarDev / Win98 / C:\\DPE5R",
+  "native_run": "runs/vmctl-vc152dpe5r/",
+  "host_report": "DRAW_POPUP_PACKED_CHECKS=37 FAILURES=0 RESULT=PASS",
+  "native_report": "DRAW_POPUP_PACKED_CHECKS=37 FAILURES=0 RESULT=PASS EXIT=0",
+  "native_build": {
+    "compile": "PASS",
+    "link": "PASS",
+    "process_exit": 0,
+    "program_error_dialog": false,
+    "compiler_options": "/AM /GA /GEs /Zp1 /Od /W3",
+    "response_file_definitions": "DRINT.DEF included; Win16 stack/heap/stub directives applied"
+  },
+  "covered": [
+    "22-byte popup selector precedence",
+    "all dispatcher kinds",
+    "kind-14 slot/hull alias",
+    "client and slot rectangles",
+    "GDI state callback ordering",
+    "short-record typed fallback"
+  ],
+  "remaining": [
+    "complete GlobalPD union payloads",
+    "localized strings and hull filtering/formatting",
+    "detailed GDI rendering",
+    "original caller differential",
+    "Step-6 promotion"
+  ],
+  "superseded_attempt": {
+    "native_run": "runs/vmctl-vc152dpe5/",
+    "failure": "compile stopped with C1083 because lowercase core.h was omitted from transfer"
+  },
+  "evidence": [
+    "analysis/compat/draw-popup-packed-e5-native.md",
+    "tests/draw_popup_packed_probe.c",
+    "compat/vc152/draw-popup-packed-e5r-native/",
+    "runs/vmctl-vc152dpe5r/DRINT.TXT",
+    "runs/vmctl-vc152dpe5r/DRINTSTA.TXT",
+    "runs/vmctl-vc152dpe5r/DRINTCL.LOG",
+    "runs/vmctl-vc152dpe5r/DRINTLINK.LOG"
+  ]
+}

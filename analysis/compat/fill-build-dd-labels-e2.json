@@ -1,0 +1,34 @@
+{
+  "procedure": "FillBuildDD",
+  "phase2_step": "5/6",
+  "evidence_unit": "E2_localized_labels_resources",
+  "host_probe": {
+    "source": "tests/fill_build_dd_labels_probe.c",
+    "checks": 58,
+    "failures": 0,
+    "result": "PASS"
+  },
+  "native_probe": {
+    "package": "compat/vc152/fill-build-dd-labels/",
+    "status": "COMPILE=PASS LINK=PASS",
+    "report": "runs/vmctl-vc152fbdl/FBDLE2.TXT",
+    "checks": 58,
+    "failures": 0,
+    "result": "PASS",
+    "process_exit": 0,
+    "program_error_dialog": false,
+    "compiler_warning": "The existing VC1.52c build retains one signed/unsigned comparison warning in the enemy-design loop; the build and probe pass."
+  },
+  "covers": [
+    "normal-mode compressed-string resource IDs 0x52 through 0x6a in order",
+    "starbase-mode compressed-string resource IDs 0x7c through 0x8a in order",
+    "both mode 3 and mode 4 label branches",
+    "reset, add, list-count, and end message sequence",
+    "three original disable calls for nonzero modes"
+  ],
+  "original_boundary": "The raw original listing indexes the normal resource table at data offset 0x52 for 13 entries and the starbase table at 0x7c for 8 entries, using PszGetCompressedString and CB_ADDSTRING in both mode 3 and mode 4. The host and native packets assert those exact ordered IDs and surrounding control-message behavior.",
+  "remaining": [
+    "E3 complete population, queue state, resize, and caller/control integration",
+    "step-6 ledger promotion"
+  ]
+}

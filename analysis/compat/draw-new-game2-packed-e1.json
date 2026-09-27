@@ -1,0 +1,35 @@
+{
+  "procedure": "DrawNewGame2",
+  "phase2_step": "5/6",
+  "evidence_unit": "E1_packed_player_and_type_tables",
+  "packed_type_entry_size": 1,
+  "packed_race_file_entry_size": 13,
+  "host_probe": {
+    "source": "tests/draw_new_game2_packed_probe.c",
+    "checks": 13,
+    "failures": 0,
+    "result": "PASS"
+  },
+  "native_probe": {
+    "package": "compat/vc152/draw-new-game2-packed/",
+    "status": "COMPILE=PASS LINK=PASS",
+    "report": "runs/vmctl-vc152dng2pack/DNG2PE1.TXT",
+    "checks": 13,
+    "failures": 0,
+    "result": "PASS",
+    "process_exit": 0,
+    "program_error_dialog": false
+  },
+  "covers": [
+    "packed one-byte player kind/race selection",
+    "packed 13-byte custom-race filename stride",
+    "empty packed filename fallback",
+    "game-file-mode direct filename formatting",
+    "shadow-record conflict rejection"
+  ],
+  "remaining": [
+    "E2 localized text and formatting matrix",
+    "E3 complete page GDI/resource integration",
+    "step-6 ledger promotion"
+  ]
+}

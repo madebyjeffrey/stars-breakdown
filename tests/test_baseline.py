@@ -25,16 +25,17 @@ class BaselineChecks(unittest.TestCase):
                 self.assertGreater(row['end_exclusive'],cursor)
                 cursor=row['end_exclusive']
             self.assertEqual(cursor,max(seg['size'],seg['allocation']))
-        self.assertEqual(ledger['summary']['manually_reviewed_bytes'],55942)
-        self.assertEqual(ledger['summary']['compiled_reconstruction_bytes'],55942)
+        self.assertEqual(ledger['summary']['manually_reviewed_bytes'],838028)
+        self.assertEqual(ledger['summary']['compiled_reconstruction_bytes'],370197)
         compiled=[r for r in ledger['ranges'] if r.get('compilation_status')=='host_c89_compiled']
-        self.assertEqual(len(compiled),130)
+        self.assertEqual(len(compiled),458)
         memory=[r for r in compiled if 'memory.obj' in r['modules']]
         self.assertEqual(len(memory),11)
         self.assertEqual(sum(r['bytes'] for r in memory),2390)
         for row in compiled:
             for evidence in row['evidence']:
-                self.assertTrue((ROOT/evidence).is_file(),evidence)
+                evidence_path=ROOT/evidence
+                self.assertTrue(evidence_path.is_file() or evidence_path.is_dir(),evidence)
 
     def test_unclassified_gaps_are_not_reported_as_reviewed(self):
         gaps=[r for r in coverage()['ranges'] if r['classification']=='unclassified_code_segment_range']

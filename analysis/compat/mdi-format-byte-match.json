@@ -1,0 +1,78 @@
+{
+  "original_sha256": "ccab6682b55dae14dbf104e491cfbd3b32a6280022020032ae0615500949ba59",
+  "compiler": "Microsoft C/C++ Compiler Version 8.00c (VC++ 1.52c)",
+  "flags": "/c /AM /GA /GEs /Zp1 /Od /Gs /W3 /Fc",
+  "comparison": "No masked bytes; named OMF relocations resolved into the original address layout.",
+  "functions": [
+    {
+      "name": "FormatSerialAndEnv",
+      "ne_segment": 5,
+      "original_offset": 10374,
+      "original_bytes": 613,
+      "generated_bytes": 613,
+      "length_difference": 0,
+      "exact_after_address_resolution": true,
+      "differing_bytes": 0,
+      "differences": [],
+      "fixups": [
+        {
+          "offset": 23,
+          "width": 4,
+          "target": "_PushRandom",
+          "resolved_value": "0x10401440"
+        },
+        {
+          "offset": 39,
+          "width": 4,
+          "target": "_Randomize",
+          "resolved_value": "0x104015ea"
+        },
+        {
+          "offset": 70,
+          "width": 4,
+          "target": "__memcpy",
+          "resolved_value": "0x11180742"
+        },
+        {
+          "offset": 114,
+          "width": 4,
+          "target": "_Random",
+          "resolved_value": "0x104016d2"
+        },
+        {
+          "offset": 148,
+          "width": 4,
+          "target": "_Random",
+          "resolved_value": "0x104016d2"
+        },
+        {
+          "offset": 173,
+          "width": 4,
+          "target": "_Random",
+          "resolved_value": "0x104016d2"
+        },
+        {
+          "offset": 300,
+          "width": 4,
+          "target": "_PopRandom",
+          "resolved_value": "0x104014a2"
+        },
+        {
+          "offset": 448,
+          "width": 4,
+          "target": "___aFlshr",
+          "resolved_value": "0x11180d5c"
+        }
+      ],
+      "backpatch_records": 28,
+      "original_relocated_sha256": "295a37891315215f35c19cfd0c17fb6548d7ffccc5b96b8d6a8dbb0e7ad803c0",
+      "generated_resolved_sha256": "295a37891315215f35c19cfd0c17fb6548d7ffccc5b96b8d6a8dbb0e7ad803c0",
+      "source": "compat/mdi-format-match/MDI.C"
+    }
+  ],
+  "all_functions_match": true,
+  "object_sha256": "e31f41dc693350f7c3bb30782f4db298bb928e990994d0dbfa8a1a08a253f663",
+  "source_sha256": "eef438c206d940c6745e5848544ba53e29b941e364e69eb6b8939e6814e869b4",
+  "build_log": "mdi.c\nmdi.c(246) : warning C4101: 'scratch' : unreferenced local variable\n",
+  "build_status": "PASS\n"
+}

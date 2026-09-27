@@ -1,0 +1,145 @@
+{
+  "executable_sha256": "ccab6682b55dae14dbf104e491cfbd3b32a6280022020032ae0615500949ba59",
+  "hst_sha256": "aa6161bb6c95c8276b7a5d12e5a12d9999e3dea0fa242a3be89a94a05c45df3c",
+  "design_record_index": 35,
+  "design_record_hex": "070104110000030100010000000100000001000301020001011000010108b08db2d60bf87d42",
+  "owner_tech": [
+    3,
+    3,
+    3,
+    3,
+    3,
+    3
+  ],
+  "owner_race_bits": 0,
+  "owner_race_stat": 9,
+  "hull": {
+    "id": 4,
+    "segment": 2,
+    "offset": 11308,
+    "base_cost": [
+      10,
+      4,
+      2,
+      4
+    ],
+    "required_tech": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "discount_percent": 12,
+    "owner_cost": [
+      9,
+      4,
+      2,
+      4
+    ]
+  },
+  "components": [
+    {
+      "group": 1,
+      "item": 3,
+      "quantity": 1,
+      "segment": 2,
+      "offset": 234,
+      "base_cost": [
+        6,
+        5,
+        0,
+        1
+      ],
+      "required_tech": [
+        0,
+        0,
+        3,
+        0,
+        0,
+        0
+      ],
+      "discount_percent": 0,
+      "owner_cost": [
+        6,
+        5,
+        0,
+        1
+      ]
+    },
+    {
+      "group": 2,
+      "item": 1,
+      "quantity": 1,
+      "segment": 2,
+      "offset": 1952,
+      "base_cost": [
+        3,
+        3,
+        0,
+        2
+      ],
+      "required_tech": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "discount_percent": 8,
+      "owner_cost": [
+        3,
+        3,
+        0,
+        2
+      ]
+    },
+    {
+      "group": 16,
+      "item": 1,
+      "quantity": 1,
+      "segment": 2,
+      "offset": 9356,
+      "base_cost": [
+        6,
+        0,
+        6,
+        0
+      ],
+      "required_tech": [
+        0,
+        3,
+        0,
+        0,
+        0,
+        0
+      ],
+      "discount_percent": 0,
+      "owner_cost": [
+        6,
+        0,
+        6,
+        0
+      ]
+    }
+  ],
+  "base_design_cost": [
+    25,
+    12,
+    8,
+    7
+  ],
+  "owner_design_cost": [
+    24,
+    12,
+    8,
+    7
+  ],
+  "ordinary_starbase_mineral_return": [
+    9,
+    6,
+    5
+  ]
+}

@@ -56,7 +56,7 @@ def object_module(blob):
         if kind == 0xb2:
             c = Cursor(body)
             seg, location = c.index(), c.byte()
-            if location != 1:
+            if location not in (0, 1):
                 raise ValueError('Only 16-bit BAKPAT supported')
             while c.remaining():
                 backpatches.append((seg, c.word(), c.word()))

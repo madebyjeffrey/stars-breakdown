@@ -1,0 +1,25 @@
+{
+  "procedures": ["ExecuteReportClick"],
+  "phase2_step": "5/6",
+  "guest": "StarDev / Win98 / C:\\EXLAY3",
+  "host_report": "EXECUTE_REPORT_CLICK_PACKED_LAYOUT_CHECKS=16 FAILURES=0 RESULT=PASS",
+  "native_report": "EXECUTE_REPORT_CLICK_PACKED_LAYOUT_CHECKS=16 FAILURES=0 RESULT=PASS",
+  "native_build": {
+    "compile": "PASS",
+    "link": "PASS",
+    "process_exit": 0,
+    "program_error_dialog": false
+  },
+  "records": {
+    "fleet": 124,
+    "planet": 56,
+    "battle": 14,
+    "popup": 22
+  },
+  "evidence": [
+    "tests/execute_report_click_packed_layout_probe.c",
+    "compat/vc152/execute-report-click-packed-layout/",
+    "runs/vmctl-vc152exlayout3/EXLAYSTA.TXT",
+    "runs/vmctl-vc152exlayout3/EXLAY.TXT"
+  ]
+}

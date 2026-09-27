@@ -1,0 +1,61 @@
+{
+  "procedures": ["DrawPopup"],
+  "phase2_step": "5/6",
+  "guest": "StarDev / Win98 / C:\\DRINT",
+  "native_run": "runs/vmctl-vc152drint/",
+  "host_report": "DRAW_POPUP_PACKED_CHECKS=25 FAILURES=0 RESULT=PASS",
+  "native_report": "DRAW_POPUP_PACKED_CHECKS=25 FAILURES=0 RESULT=PASS",
+  "expanded_native_run": "runs/vmctl-vc152drint2/",
+  "expanded_host_checks": 35,
+  "expanded_native_report": "DRAW_POPUP_PACKED_CHECKS=35 FAILURES=0 RESULT=PASS",
+  "native_build": {
+    "compile": "PASS",
+    "link": "PASS",
+    "process_exit": 0,
+    "program_error_dialog": false
+  },
+  "packed_records": {
+    "popupdata_size": 22,
+    "fleet_size": 124,
+    "planet_size": 56,
+    "offsets": {
+      "popup_kind": 0,
+      "popup_planet_id": 2,
+      "popup_planet_value": 4,
+      "popup_planet_min": 6,
+      "popup_planet_max": 8,
+      "popup_player_value": 10,
+      "fleet_x": 8,
+      "fleet_y": 10,
+      "fleet_ship_count_0": 12,
+      "fleet_ship_count_1": 14,
+      "planet_flags": 0
+    }
+  },
+  "integration": {
+    "raw_selector_decode_checked": true,
+    "fleet_callback_record_view_checked": true,
+    "planet_callback_record_view_checked": true,
+    "slot_hull_geometry_and_mode_checked": true,
+    "default_dispatch_checked": true,
+    "gdi_state_restoration_checked": true,
+    "all_popup_kind_callbacks_checked": true,
+    "kind_14_slot_hull_alias_checked": true
+  },
+  "original_instruction_evidence": {
+    "raw_source": "analysis/decompiler/export/raw/10c0_01c0_DrawPopup.c",
+    "codeview_types": "analysis/debug/types.json",
+    "original_consumer_boundary": "analysis/compat/draw-popup-integration.md"
+  },
+  "remaining_scope": [
+    "complete GlobalPD union coverage beyond the dispatcher",
+    "localized strings",
+    "hull filtering and formatting",
+    "detailed GDI text rendering",
+    "final caller review and promotion"
+  ],
+  "diagnostic_history": [
+    "DRINTDEBUG.TXT records the pre-correction 26-check self-count",
+    "DRINTDEBUG2.TXT records the same probe-count mismatch"
+  ]
+}

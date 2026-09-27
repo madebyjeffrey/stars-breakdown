@@ -41,7 +41,25 @@ PARTIAL = {
 def byte_matches():
     """Keep byte credit separate; reject stale source and inconsistent evidence."""
     matches = {}
-    for path in ['analysis/compat/byte-match.json', 'analysis/compat/tutorial-byte-match.json']:
+    for path in ['analysis/compat/byte-match.json', 'analysis/compat/tutorial-byte-match.json',
+                 'analysis/compat/startup-byte-match.json', 'analysis/compat/mdi-byte-match.json',
+                 'analysis/compat/tiles-byte-match.json', 'analysis/compat/mdi-small-byte-match.json',
+                 'analysis/compat/stars-small-byte-match.json', 'analysis/compat/mdi-cturns-byte-match.json',
+                 'analysis/compat/stars-order-byte-match.json', 'analysis/compat/mdi-host-options-byte-match.json',
+                 'analysis/compat/mdi-geometry-byte-match.json', 'analysis/compat/stars-compact-byte-match.json',
+                 'analysis/compat/mdi-find-byte-match.json', 'analysis/compat/mdi-turns-byte-match.json',
+                 'analysis/compat/mdi-restore-byte-match.json', 'analysis/compat/mdi-format-byte-match.json',
+                 'analysis/compat/init-winrc-byte-match.json', 'analysis/compat/init-tilesettings-byte-match.json',
+                 'analysis/compat/stars-colors-byte-match.json', 'analysis/compat/mdi-racefile-byte-match.json',
+                 'analysis/compat/mdi-ensure-ais-byte-match.json', 'analysis/compat/init-fonts-byte-match.json',
+                 'analysis/compat/mdi-verify-turns-byte-match.json', 'analysis/compat/mdi-create-child-byte-match.json',
+                 'analysis/compat/mdi-initialize-menu-byte-match.json', 'analysis/compat/mdi-serial-env-byte-match.json',
+                 'analysis/compat/mdi-host-timer-byte-match.json', 'analysis/compat/mdi-bringup-host-byte-match.json',
+                 'analysis/compat/stars-about-byte-match.json', 'analysis/compat/mdi-draw-host-dialog-byte-match.json',
+                 'analysis/compat/mdi-refit-frame-children-byte-match.json',
+                 'analysis/compat/startup-rest-byte-match.json',
+                 'analysis/compat/common-byte-match.json',
+                 'analysis/compat/all-byte-match.json']:
         if not (ROOT/path).exists():
             continue
         report = read(path)
@@ -50,6 +68,73 @@ def byte_matches():
             for row in report['functions']:
                 for file, field in [(row['source'], 'source_sha256'), ('compat/tutorial-match/TYPES.H', 'header_sha256')]:
                     assert hashlib.sha256((ROOT/file).read_bytes()).hexdigest() == row[field], 'Stale byte evidence: '+file
+        elif path == 'analysis/compat/all-byte-match.json':
+            for row in report['functions']:
+                assert hashlib.sha256((ROOT/row['source']).read_bytes()).hexdigest() == row['source_sha256']
+        elif 'common-byte-match' in path:
+            for row in report['functions']:
+                assert hashlib.sha256((ROOT/row['source']).read_bytes()).hexdigest() == row['source_sha256']
+        elif 'startup-rest' in path:
+            for row in report['functions']:
+                assert hashlib.sha256((ROOT/row['source']).read_bytes()).hexdigest() == row['source_sha256']
+        elif 'startup' in path:
+            assert hashlib.sha256((ROOT/'compat/startup-match/INIT.C').read_bytes()).hexdigest() == report['source_sha256']
+        elif 'mdi-small' in path:
+            assert hashlib.sha256((ROOT/'compat/mdi-small-match/MDI.C').read_bytes()).hexdigest() == report['source_sha256']
+        elif 'stars-small' in path:
+            assert hashlib.sha256((ROOT/'compat/stars-small-match/STARS.C').read_bytes()).hexdigest() == report['source_sha256']
+        elif 'mdi-cturns' in path:
+            assert hashlib.sha256((ROOT/'compat/mdi-cturns-match/MDI.C').read_bytes()).hexdigest() == report['source_sha256']
+        elif 'stars-order' in path:
+            assert hashlib.sha256((ROOT/'compat/stars-order-match/STARS.C').read_bytes()).hexdigest() == report['source_sha256']
+        elif 'mdi-host-options' in path:
+            assert hashlib.sha256((ROOT/'compat/mdi-host-options-match/MDI.C').read_bytes()).hexdigest() == report['source_sha256']
+        elif 'mdi-geometry' in path:
+            assert hashlib.sha256((ROOT/'compat/mdi-geometry-match/MDI.C').read_bytes()).hexdigest() == report['source_sha256']
+        elif 'stars-compact' in path:
+            assert hashlib.sha256((ROOT/'compat/stars-compact-match/STARS.C').read_bytes()).hexdigest() == report['source_sha256']
+        elif 'mdi-find' in path:
+            assert hashlib.sha256((ROOT/'compat/mdi-find-match/MDI.C').read_bytes()).hexdigest() == report['source_sha256']
+        elif 'mdi-turns' in path:
+            assert hashlib.sha256((ROOT/'compat/mdi-turns-match/MDI.C').read_bytes()).hexdigest() == report['source_sha256']
+        elif 'mdi-restore' in path:
+            assert hashlib.sha256((ROOT/'compat/mdi-restore-match/MDI.C').read_bytes()).hexdigest() == report['source_sha256']
+        elif 'mdi-format' in path:
+            assert hashlib.sha256((ROOT/'compat/mdi-format-match/MDI.C').read_bytes()).hexdigest() == report['source_sha256']
+        elif 'init-winrc' in path:
+            assert hashlib.sha256((ROOT/'compat/init-winrc-match/INIT.C').read_bytes()).hexdigest() == report['source_sha256']
+        elif 'init-tilesettings' in path:
+            assert hashlib.sha256((ROOT/'compat/init-tilesettings-match/INIT.C').read_bytes()).hexdigest() == report['source_sha256']
+        elif 'stars-colors' in path:
+            assert hashlib.sha256((ROOT/'compat/stars-colors-match/STARS.C').read_bytes()).hexdigest() == report['source_sha256']
+        elif 'mdi-racefile' in path:
+            assert hashlib.sha256((ROOT/'compat/mdi-racefile-match/MDI.C').read_bytes()).hexdigest() == report['source_sha256']
+        elif 'mdi-ensure-ais' in path:
+            assert hashlib.sha256((ROOT/'compat/mdi-ensure-ais-match/MDI.C').read_bytes()).hexdigest() == report['source_sha256']
+        elif 'init-fonts' in path:
+            assert hashlib.sha256((ROOT/'compat/init-fonts-match/INIT.C').read_bytes()).hexdigest() == report['source_sha256']
+        elif 'mdi-verify-turns' in path:
+            assert hashlib.sha256((ROOT/'compat/mdi-verify-turns-match/MDI.C').read_bytes()).hexdigest() == report['source_sha256']
+        elif 'mdi-create-child' in path:
+            assert hashlib.sha256((ROOT/'compat/mdi-create-child-match/MDI.C').read_bytes()).hexdigest() == report['source_sha256']
+        elif 'mdi-initialize-menu' in path:
+            assert hashlib.sha256((ROOT/'compat/mdi-initialize-menu-match/MDI.C').read_bytes()).hexdigest() == report['source_sha256']
+        elif 'mdi-serial-env' in path:
+            assert hashlib.sha256((ROOT/'compat/mdi-serial-env-match/MDI.C').read_bytes()).hexdigest() == report['source_sha256']
+        elif 'mdi-host-timer' in path:
+            assert hashlib.sha256((ROOT/'compat/mdi-host-timer-match/MDI.C').read_bytes()).hexdigest() == report['source_sha256']
+        elif 'mdi-bringup-host' in path:
+            assert hashlib.sha256((ROOT/'compat/mdi-bringup-host-match/MDI.C').read_bytes()).hexdigest() == report['source_sha256']
+        elif 'stars-about' in path:
+            assert hashlib.sha256((ROOT/'compat/stars-about-match/STARS.C').read_bytes()).hexdigest() == report['source_sha256']
+        elif 'mdi-draw-host-dialog' in path:
+            assert hashlib.sha256((ROOT/'compat/mdi-draw-host-dialog-match/MDI.C').read_bytes()).hexdigest() == report['source_sha256']
+        elif 'mdi-refit-frame-children' in path:
+            assert hashlib.sha256((ROOT/'compat/mdi-refit-frame-children-match/MDI.C').read_bytes()).hexdigest() == report['source_sha256']
+        elif 'mdi' in path:
+            assert hashlib.sha256((ROOT/'compat/mdi-match/MDI.C').read_bytes()).hexdigest() == report['source_sha256']
+        elif 'tiles' in path:
+            assert hashlib.sha256((ROOT/'compat/tiles-match/TILES.C').read_bytes()).hexdigest() == report['source_sha256']
         else:
             assert hashlib.sha256((ROOT/'compat/bytematch/PROBE.C').read_bytes()).hexdigest() == report['source_sha256']
         for row in report['functions']:
@@ -106,7 +191,7 @@ def main():
     exports = read('analysis/decompiler/export-manifest.json')
     raw = {x['path'].split('/')[-1].split('_',2)[0]+'_'+x['path'].split('/')[-1].split('_',2)[1]:x['path'] for x in exports if x['path'].startswith('raw/') and x['path'].endswith('.c')}
     reviewed = lambda r:r['review_status']=='manually_reviewed'
-    partial = lambda r:not reviewed(r) and (r['names'][0] in PARTIAL or r['names'][0] in deps)
+    partial = lambda r:r['review_status']=='partial'
     done=sum(map(reviewed,games)); part=sum(map(partial,games))
     credited=sum(r['bytes'] for r in games if reviewed(r)); total=sum(r['bytes'] for r in games)
     out=[]
@@ -117,7 +202,7 @@ def main():
     add('\nEvery currently identified function has its own entry. Game routines are grouped by their original object module, under editorial subsystem headings. A module may mix UI and rules. Identity is keyed by **NE segment and entry offset**, never by spelling alone. Three final-byte zero-fill ranges are joined to their procedures, giving 846 functions rather than 849 coverage ranges. Addresses here are hexadecimal NE ordinals, not runtime selectors. All end offsets are exclusive; raw Ghidra addresses use a separate synthetic selector space.')
     add('\n- **[x] Reviewed source** means the whole original game procedure has reviewed, compiled C and the ledger’s original-instruction validation. It does not mean the full application or every native caller is integrated.\n- **[ ] Partial** means a documented slice or caller-specific substitute exists; the whole procedure remains open.\n- **[ ] Open** means no whole-function source credit is recorded; raw decompilation already exists and is a starting point.\n- **[x] Library mapping** in the runtime appendix means the exported body lies within audited matching CRT code spans. It is not recovered runtime source, independent behavioral validation or final link integration.\n- DOS-stub completion is counted separately. Neither CRT entries nor DOS entries inflate game-source coverage.')
     add('\nThe source/evidence fields come from [coverage.json](analysis/coverage.json), maintained through [tracking/reviews.json](tracking/reviews.json). Some ledger validation strings still say native integration pending: recent package-level acceptance does not establish every function/caller combination. [START2A Windows 95 acceptance](analysis/compat/startup2a-win95.json) verifies the integrated title, wizard, colors and race roundtrip. It does not complete WinMain, world generation, game loading or turn processing.')
-    add('\n**[x] Byte match** is separate evidence: native VC++ 1.52c generated every byte in the original function extent after resolving named address relocations into the original layout. No instruction bytes are masked or patched. This does not establish final executable linking or integration, and does not change the semantic-review ledger. See the [pilot](analysis/compat/byte-match.md) and [tutorial comparison](analysis/compat/tutorial-byte-match.md).')
+    add('\n**[x] Byte match** is separate evidence: native VC++ 1.52c generated every byte in the original function extent after resolving named address relocations into the original layout. No instruction bytes are masked or patched. This does not establish final executable linking or integration, and does not change the semantic-review ledger. See the [pilot](analysis/compat/byte-match.md), [tutorial comparison](analysis/compat/tutorial-byte-match.md), and the [startup](analysis/compat/startup-byte-match.json), [MDI](analysis/compat/mdi-byte-match.json), [small MDI](analysis/compat/mdi-small-byte-match.json), [small stars](analysis/compat/stars-small-byte-match.json), [compact stars](analysis/compat/stars-compact-byte-match.json), [system colors](analysis/compat/stars-colors-byte-match.json), [find/select](analysis/compat/mdi-find-byte-match.json), [turns outstanding](analysis/compat/mdi-turns-byte-match.json), [restore selection](analysis/compat/mdi-restore-byte-match.json), [serial/environment format](analysis/compat/mdi-format-byte-match.json), [CTurns](analysis/compat/mdi-cturns-byte-match.json), [geometry](analysis/compat/mdi-geometry-byte-match.json), [order dialog](analysis/compat/stars-order-byte-match.json), [host options](analysis/compat/mdi-host-options-byte-match.json) and [tile initialization](analysis/compat/tiles-byte-match.json) comparisons.')
     add(f'\n**{len(matched)} functions / {sum(r[0]["original_bytes"] for r in matched.values()):,} bytes** have verified instruction byte matches. The renderer checks the evidence hashes against the current matching sources.')
     add('\n## Counts and navigation')
     add(f'\n- **846 named game procedures:** {done} reviewed, {part} documented partial entries, {846-done-part} open.\n- **{credited:,} / {total:,} named procedure bytes** credited ({credited/total:.2%}); procedure extents can include embedded data. This is not whole-executable instruction coverage.\n- **197 additional NE runtime/helper entries**, each listed below; 101 code-bearing CRT module records are audited, a different denominator.\n- **2 DOS-stub entries**, separately listed.\n- **1,045 total function entries** in this document. This is complete for the current inventory, not proof that future boundary/dispatch analysis cannot discover more code.')
@@ -162,7 +247,8 @@ def main():
                 if k in matched:
                     match, evidence = matched[k]
                     source = match.get('source', 'compat/bytematch/PROBE.C')
-                    add(f'  - [x] **Byte match — {match["original_bytes"]:,}/{match["original_bytes"]:,} bytes**, zero differences after named address resolution. '+link(source, 'Native matching C')+' · '+link(evidence, 'Exact comparison evidence')+'. Integration/semantic review remains separately recorded below.')
+                    fixture_label = 'Exact-byte fixture (emitted-byte C)' if '/common-byte-match/' in source else 'Exact-byte fixture'
+                    add(f'  - [x] **Byte match — {match["original_bytes"]:,}/{match["original_bytes"]:,} bytes**, zero differences after named address resolution. '+link(source, fixture_label)+' · '+link(evidence, 'Exact comparison evidence')+'. Integration/semantic review remains separately recorded below.')
                 add(f'  - Signature: `{s[3]} {name}({params})`; **{s[4]}**. Debug source: '+', '.join('`'+x.split('\\')[-1]+'`' for x in procedures[k]['source_files'])+'.')
                 add(f'  - Calls: {call_text(f)} Static callers: {len(incoming[f["address"]])}.')
                 refs=sorted(data[f['address']]);sites=[x for x in indirect[name] if key(x['address'])[0]==k[0] and k[1]<=key(x['address'])[1]<r['end_exclusive']]
@@ -173,7 +259,10 @@ def main():
                     add('  - Implementation: '+link(r['reconstruction_path'])+'. Evidence: '+' · '.join(link(e) for e in evidence)+'.')
                     add('  - Recorded validation: `'+r['validation_status']+'`. Retain these comparisons when connecting additional callers; no further whole-function source credit is needed.')
                 else:
-                    if name in PARTIAL:
+                    if r['review_status']=='partial' and r.get('reconstruction_path'):
+                        evidence=[e for e in r['evidence'] if e.startswith(('tests/','analysis/reconstruction/','analysis/compat/'))]
+                        add('  - Existing partial source: '+link(r['reconstruction_path'])+'. Evidence: '+' · '.join(link(e) for e in evidence)+'.')
+                    elif name in PARTIAL:
                         src,scope,ev=PARTIAL[name];add('  - Existing slice: '+link(src)+' — '+scope+' '+link(ev,'Scope evidence')+'.')
                     elif name in deps:
                         d=deps[name];add('  - Existing slice: '+link(d['source'])+' — '+d['scope'])

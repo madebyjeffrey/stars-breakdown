@@ -1,0 +1,31 @@
+{
+  "procedure": "NewGameDlg2",
+  "phase2_step": "6/6",
+  "evidence_unit": "E1_packed_race_and_password_records",
+  "packed_player_record_size": 192,
+  "race_file_entry_size": 13,
+  "host_probe": {
+    "source": "tests/new_game_dlg2_packed_probe.c",
+    "checks": 1238,
+    "failures": 0,
+    "result": "PASS"
+  },
+  "native_probe": {
+    "package": "compat/vc152/new-game-dlg2-packed/",
+    "status": "COMPILE=PASS LINK=PASS",
+    "report": "runs/vmctl-vc152nd2pack/NWD2PE1.TXT",
+    "checks": 1238,
+    "failures": 0,
+    "result": "PASS",
+    "process_exit": 0,
+    "program_error_dialog": false
+  },
+  "covers": [
+    "Create selected-slot record and race-file commit",
+    "Open selected-slot record and race-file commit",
+    "Edit password rejection without mutation",
+    "Edit password acceptance with record and race-file commit",
+    "neighboring-slot preservation"
+  ],
+  "remaining": []
+}

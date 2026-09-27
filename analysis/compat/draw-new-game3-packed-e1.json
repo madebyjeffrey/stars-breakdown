@@ -1,0 +1,36 @@
+{
+  "procedure": "DrawNewGame3",
+  "phase2_step": "5/6",
+  "evidence_unit": "E1_packed_signed_column_width_table",
+  "packed_entry_count": 18,
+  "packed_entry_shape": "9 rows x 2 signed bytes",
+  "host_probe": {
+    "source": "tests/draw_new_game3_source_probe.c",
+    "checks": 7,
+    "failures": 0,
+    "result": "PASS"
+  },
+  "native_probe": {
+    "package": "compat/vc152/draw-new-game3-packed/",
+    "status": "COMPILE=PASS LINK=PASS",
+    "report": "runs/vmctl-vc152dng3pack/DNG3PE1.TXT",
+    "checks": 7,
+    "failures": 0,
+    "result": "PASS",
+    "process_exit": 0,
+    "program_error_dialog": false
+  },
+  "covers": [
+    "raw row-major 18-byte table addressing",
+    "signed negative-width percent suffix",
+    "zero-width second-column label skip",
+    "17 value lookups and final value index",
+    "34 paired reference rectangles"
+  ],
+  "remaining": [
+    "E2 packed output rectangles",
+    "E3 localized rendering",
+    "E4 complete page GDI/original comparison",
+    "step-6 ledger promotion"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "procedure": "ExecuteReportClick",
+  "checkpoint": "E6",
+  "status": "supporting native packed mineral-status boundary",
+  "host": {
+    "checks": 34,
+    "failures": 0,
+    "result": "PASS"
+  },
+  "native": {
+    "guest": "StarDev / Win98 / C:\\EXINT6",
+    "compile": "PASS",
+    "link": "PASS",
+    "checks": 34,
+    "failures": 0,
+    "result": "PASS",
+    "process_exit": 0,
+    "program_error_dialog": false,
+    "evidence": [
+      "runs/vmctl-vc152exint6/EXINT.TXT",
+      "runs/vmctl-vc152exint6/EXINTSTA.TXT",
+      "runs/vmctl-vc152exint6/EXINTCL.LOG",
+      "runs/vmctl-vc152exint6/EXINTLINK.LOG",
+      "runs/vmctl-vc152exint6/EXINT.MAP"
+    ]
+  },
+  "change": {
+    "packed_planet_status_offset": "0x04",
+    "mineral_popup_i_plan_val_bit": 10,
+    "mineral_popup_raw_offset": "0x06"
+  },
+  "remaining": [
+    "exact original GlobalPD pointer/part ownership and differential",
+    "live USER/GDI report integration",
+    "complete report-layout caller cases",
+    "Step-6 promotion"
+  ]
+}

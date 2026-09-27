@@ -1,0 +1,37 @@
+{
+  "procedures": ["DrawMineSurvey"],
+  "phase2_step": "5/6",
+  "step5_unit": "E3 localized title and complete MineWndProc paint caller integration",
+  "guest": "StarDev / Win98 / C:\\DMSIE3",
+  "native_run": "runs/vmctl-vc152dmsint3/",
+  "host_report": "DRAW_MINE_SURVEY_INTEGRATION_CHECKS=12 FAILURES=0 RESULT=PASS",
+  "native_report": "DRAW_MINE_SURVEY_INTEGRATION_CHECKS=12 FAILURES=0 RESULT=PASS",
+  "native_build": {
+    "compile": "PASS",
+    "link": "PASS",
+    "process_exit": 0,
+    "program_error_dialog": false,
+    "console_output_bytes": 0
+  },
+  "caller_boundary": {
+    "localized_resource_id": "0x04bd",
+    "paint_entry": "MineWndProc WM_PAINT",
+    "survey_callback": "stars_draw_mine_survey",
+    "survey_rect_after_title": [0, 12, 120, 80],
+    "planet_lookup_id": 5,
+    "planet_detail_summary_checked": true,
+    "state_restore_checked": true,
+    "paint_order_checked": true
+  },
+  "evidence": [
+    "tests/draw_mine_survey_integration_probe.c",
+    "reconstructed/src/mine_wnd_proc.c",
+    "reconstructed/src/draw_mine_survey.c",
+    "compat/vc152/draw-mine-survey-e3/",
+    "runs/vmctl-vc152dmsint3/"
+  ],
+  "remaining_scope": [
+    "detailed DrawMineSurvey GDI coordinates and panel primitives",
+    "final review-ledger synchronization and promotion"
+  ]
+}

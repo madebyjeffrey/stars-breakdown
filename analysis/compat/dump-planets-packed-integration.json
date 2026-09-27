@@ -1,0 +1,50 @@
+{
+  "procedures": ["DumpPlanets"],
+  "phase2_step": "5/6",
+  "guest": "StarDev / Win98 / C:\\DMPINT2",
+  "host_report": "DUMP_PLANETS_PACKED_CHECKS=22 FAILURES=0 RESULT=PASS",
+  "native_report": "DUMP_PLANETS_PACKED_CHECKS=22 FAILURES=0 RESULT=PASS",
+  "production_bridge": "stars_dump_planets_packed",
+  "native_bridge_replay": "pending_fresh_packet_guest_agent_reconnect",
+  "native_evidence": "runs/vmctl-vc152dmpint2/DPINT.TXT",
+  "native_build": {
+    "compile": "PASS",
+    "link": "PASS",
+    "process_exit": 0,
+    "program_error_dialog": false
+  },
+  "packed_planet": {
+    "size": 56,
+    "offsets": {
+      "id": 0,
+      "iPlayer": 2,
+      "flags": 4,
+      "rgMinConc": 9,
+      "uPopGuess": 18,
+      "weights": 20,
+      "cDefenses": 24,
+      "rgwtMin": 28,
+      "lStarbase": 44,
+      "wRouting": 48,
+      "turn": 50
+    }
+  },
+  "integration": {
+    "production_bridge_host_checked": true,
+    "raw_to_typed_planet_load_checked": true,
+    "detailed_header_and_row_dispatch_checked": true,
+    "owner_visibility_checked": true,
+    "turn_age_checked": true,
+    "environment_and_mineral_fields_checked": true,
+    "starbase_and_wormhole_fields_checked": true,
+    "all_environment_slots_checked": true,
+    "all_mineral_concentration_and_rate_slots_checked": true,
+    "complete_row_service_fields_checked": true
+  },
+  "remaining_scope": [
+    "localized field formatting",
+    "full starbase/wormhole/production service callbacks",
+    "complete original report differential",
+    "final promotion"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "procedures": [
+    "DoCyberFreighter",
+    "DoCyberAiTurn"
+  ],
+  "milestone": "ai-cyber-freighter-owned-gate-e5",
+  "scope": "host-only",
+  "checks": 12,
+  "failures": 0,
+  "result": "PASS",
+  "report": "DO_CYBER_FREIGHTER_OWNED_GATE_CHECKS=12 FAILURES=0 RESULT=PASS",
+  "step5_units_closed": 0,
+  "coverage": {
+    "negative_rate_pickup": true,
+    "low_rate_low_stock_pickup": true,
+    "low_rate_threshold_dropoff": true,
+    "positive_rate_dropoff": true,
+    "pickup_transfer": true,
+    "dropoff_transfer": true
+  },
+  "evidence": [
+    "reconstructed/include/core.h",
+    "reconstructed/src/do_cyber_freighter.c",
+    "tests/do_cyber_freighter_owned_gate_probe.c",
+    "tests/do_cyber_freighter_source_probe.c",
+    "analysis/decompiler/export/raw/10a8_37b0_DoCyberFreighter.c"
+  ]
+}

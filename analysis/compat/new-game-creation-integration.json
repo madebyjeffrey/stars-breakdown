@@ -1,0 +1,46 @@
+{
+  "procedures": ["NewGameDlg", "NewGameWizard"],
+  "phase2_step": {
+    "NewGameDlg": "6/6",
+    "NewGameWizard": "5/6"
+  },
+  "evidence_unit": "E3_complete_creation_transition_and_original_replay",
+  "guest": "StarDev / Win98 / STARSAGT 0.4.2",
+  "package": "compat/vc152/new-game-creation-integration/",
+  "run": "runs/vmctl-vc152ngint/",
+  "host_probe": {
+    "source": "tests/new_game_creation_integration_probe.c",
+    "checks": 11,
+    "failures": 0,
+    "result": "PASS"
+  },
+  "native_probe": {
+    "status": "COMPILE=PASS LINK=PASS",
+    "report": "runs/vmctl-vc152ngint/NGINTE3.TXT",
+    "checks": 11,
+    "failures": 0,
+    "result": "PASS",
+    "program_error_dialog": false
+  },
+  "transition_checks": [
+    "NewGameDlg acceptance writes map, density, start distance, options, and name",
+    "wizard visits stages 0, 1, and 2",
+    "one packed player is committed with name fields",
+    "game name is accepted",
+    "save/restore, close-title, world-generation, and host-dispatch callbacks run",
+    "game-bit word is restored"
+  ],
+  "original_replay": [
+    "analysis/compat/new-game-flow-integration.md",
+    "analysis/compat/new-game-flow-integration.json",
+    "runs/vmctl-vc152current/original-advanced-dialog.bmp",
+    "runs/vmctl-vc152current/original-advanced-page.bmp",
+    "runs/vmctl-vc152current/original-advanced-page2.bmp",
+    "runs/vmctl-vc152current/original-advanced-page3.bmp",
+    "runs/vmctl-vc152current/original-advanced-final.bmp"
+  ],
+  "remaining": {
+    "NewGameDlg": [],
+    "NewGameWizard": ["E2_localized_resources_and_control_geometry", "step6_promotion"]
+  }
+}

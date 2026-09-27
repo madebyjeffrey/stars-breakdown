@@ -1,0 +1,31 @@
+{
+  "procedure": "DrawPlanetShipList",
+  "milestone": "draw-planet-ship-list-details-e3-native",
+  "scope": "host-and-native",
+  "checks": 9,
+  "failures": 0,
+  "result": "PASS",
+  "report": "DRAW_PLANET_SHIP_LIST_DETAILS_CHECKS=9 FAILURES=0 RESULT=PASS",
+  "guest_directory": "C:\\DLISTDE3",
+  "build": "COMPILE=PASS; LINK=PASS",
+  "process_exit": 0,
+  "program_error_dialog": false,
+  "step5_units_closed": 0,
+  "coverage": {
+    "resolved_fleet_detail_dispatch": true,
+    "unavailable_transfer_suppression": true,
+    "ship_mode_suppression": true
+  },
+  "remaining_acceptance": [
+    "localized text and gauges",
+    "complete transfer behavior",
+    "exact caller and resource integration",
+    "original differential",
+    "step-6 promotion"
+  ],
+  "evidence": [
+    "compat/vc152/draw-planet-ship-list-details-e3-native/",
+    "runs/vmctl-vc152dlist-details-e3/",
+    "tests/draw_planet_ship_list_details_probe.c"
+  ]
+}

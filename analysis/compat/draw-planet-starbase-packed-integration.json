@@ -1,0 +1,99 @@
+{
+  "procedures": ["DrawPlanetStarbase"],
+  "phase2_step": "5/6",
+  "guest": "StarDev / Win98 / C:\\DSBINT",
+  "native_run": "runs/vmctl-vc152dsbint/",
+  "host_report": "DRAW_PLANET_STARBASE_PACKED_CHECKS=17 FAILURES=0 RESULT=PASS",
+  "native_report": "DRAW_PLANET_STARBASE_PACKED_CHECKS=17 FAILURES=0 RESULT=PASS",
+  "native_build": {
+    "compile": "PASS",
+    "link": "PASS",
+    "process_exit": 0,
+    "program_error_dialog": false
+  },
+  "packed_planet": {
+    "size": 56,
+    "offsets": {
+      "id": 0,
+      "status_word": 4,
+      "starbase_word": 44
+    },
+    "bits": {
+      "fStarbase": "status_word bit 9",
+      "mass_warp_packed": "starbase_word low 16 bits"
+    }
+  },
+  "integration": {
+    "raw_planet_identity_checked": true,
+    "raw_starbase_flag_checked": true,
+    "raw_starbase_word_checked": true,
+    "populated_title_details_and_references_checked": true,
+    "warp_gauge_and_gauge_best_checked": true,
+    "no_warp_sentinel_cleanup_checked": true,
+    "empty_starbase_sentinels_checked": true
+  },
+  "service_boundary": {
+    "hull_lookup": "decoded from packed starbase design and hull records",
+    "cargo_and_defense": "decoded from packed hull cargo/defense offsets",
+    "shield_lookup": "callback-owned",
+    "warp_lookup": "callback-owned",
+    "localization_and_gdi_operations": "callback-owned"
+  },
+  "localized_resources": {
+    "ids_and_strings": {
+      "0x344": "Dock Capacity",
+      "0x345": "Armor",
+      "0x346": "Shields",
+      "0x347": "Damage",
+      "0x349": "Mass Driver",
+      "0x475": "Destination",
+      "0x560": "none",
+      "0x2ed": "Unlimited"
+    },
+    "host_probe": "tests/draw_planet_starbase_resource_probe.c",
+    "native_run": "runs/vmctl-vc152sbr/",
+    "native_report": "DRAW_PLANET_STARBASE_RESOURCE_CHECKS=7 FAILURES=0 RESULT=PASS",
+    "checks": 7,
+    "failures": 0,
+    "callback_order_checked": true,
+    "program_error_dialog": false
+  },
+  "packed_design_lookup": {
+    "planet_record_size": 56,
+    "design_record_size": 147,
+    "hull_record_size": 143,
+    "host_probe": "tests/draw_planet_starbase_design_probe.c",
+    "native_run": "runs/vmctl-vc152sbds2/",
+    "native_report": "DRAW_PLANET_STARBASE_DESIGN_CHECKS=10 FAILURES=0 RESULT=PASS",
+    "checks": 10,
+    "failures": 0,
+    "design_slot_hull_id_cargo_defense_mass_warp_destination_checked": true,
+    "no_starbase_and_invalid_bounds_checked": true,
+    "program_error_dialog": false
+  },
+  "service_e3": {
+    "host_probe": "tests/draw_planet_starbase_service_probe.c",
+    "native_package": "compat/vc152/draw-planet-starbase/",
+    "native_run": "runs/vmctl-vc152dpsbservice/",
+    "native_report": "DRAW_PLANET_STARBASE_SERVICE_CHECKS=7 FAILURES=0 RESULT=PASS",
+    "checks": 7,
+    "failures": 0,
+    "title_from_hull_class_checked": true,
+    "shield_hull_and_player_ids_checked": true,
+    "warp_planet_and_destination_name_checked": true,
+    "button_enablement_and_gauge_best_checked": true,
+    "reference_geometry_checked": true,
+    "native_compile": "PASS",
+    "native_link": "PASS",
+    "process_exit": 0,
+    "program_error_dialog": false
+  },
+  "original_instruction_evidence": {
+    "raw_source": "analysis/decompiler/export/raw/1048_22cc_DrawPlanetStarbase.c",
+    "codeview_types": "analysis/debug/types.json",
+    "original_consumer_boundary": "analysis/compat/planet-frame-integration.md"
+  },
+  "remaining_scope": [
+    "final review and promotion"
+  ]
+}

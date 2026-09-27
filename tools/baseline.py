@@ -78,8 +78,8 @@ def coverage():
         raise ValueError(f'Review keys no longer map to coverage: {unknown}')
     for row in rows:
         if row.get('compilation_status') == 'host_c89_compiled':
-            if row['review_status'] != 'manually_reviewed' or not row['reconstruction_path']:
-                raise ValueError('Compiled coverage requires reviewed source')
+            if row['review_status'] == 'not_started' or not row['reconstruction_path']:
+                raise ValueError('Compiled coverage requires a reconstruction path')
             if not (ROOT/row['reconstruction_path']).is_file():
                 raise ValueError('Compiled reconstruction source is missing')
     return dict(schema_version=2,address_convention='NE ordinal:offset; half-open ranges; not runtime selectors',

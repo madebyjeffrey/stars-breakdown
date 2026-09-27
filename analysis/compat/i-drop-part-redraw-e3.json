@@ -1,0 +1,33 @@
+{
+  "procedure": "IDropPart",
+  "phase2_step": "5/6",
+  "evidence_unit": "E3_redraw_control_integration",
+  "host_probe": {
+    "source": "tests/i_drop_part_redraw_probe.c",
+    "checks": 8,
+    "failures": 0,
+    "result": "PASS"
+  },
+  "native_probe": {
+    "package": "compat/vc152/i-drop-part-redraw/",
+    "status": "COMPILE=PASS LINK=PASS",
+    "report": "runs/vmctl-vc152idpr/IDPRE3.TXT",
+    "checks": 8,
+    "failures": 0,
+    "result": "PASS",
+    "process_exit": 0,
+    "program_error_dialog": false,
+    "initial_package_retry": "The first link attempt failed only because the copied linker file still named IDPM.DEF; the corrected rerun is the recorded PASS."
+  },
+  "covers": [
+    "empty-side update-cost to client-rect to slot redraw sequence",
+    "build-info top replacement before erase invalidation",
+    "selected component and hull redraw with -1 and null rectangle",
+    "merge update-cost to selection to client-rect to invalidation sequence",
+    "original-instruction service order from the recovered IDropPart listing"
+  ],
+  "original_boundary": "The raw original listing supplies the exact GETCLIENTRECT, DrawSlotDlg, INVALIDATERECT, DrawBuildSelComp, DrawBuildSelHull, SetBuildSelection, and AdvanceTutor order. The live original diagnostic confirms the surrounding editable Ship & Starbase Designer and selected-component surface; the controller still cannot generate a press/move/release drag trace.",
+  "remaining": [
+    "step-6 ledger promotion"
+  ]
+}

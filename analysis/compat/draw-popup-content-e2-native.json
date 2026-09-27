@@ -1,0 +1,27 @@
+{
+  "procedures": ["DrawPopup"],
+  "phase2_step": "5/6",
+  "evidence_unit": "E2 localization, hull filtering, and formatting",
+  "host_report": "DRAW_POPUP_CONTENT_E2_CHECKS=21 FAILURES=0 RESULT=PASS",
+  "native_packet": "compat/vc152/draw-popup-content-e2/",
+  "native_guest_directory": "C:\\DPE7",
+  "native_run": "runs/vmctl-vc152drawpopupcontente2-r2/",
+  "native_build_status": "COMPILE=PASS; LINK=PASS",
+  "native_report": "DRAW_POPUP_CONTENT_E2_CHECKS=21 FAILURES=0 RESULT=PASS",
+  "native_process_exit": 0,
+  "native_program_error_dialog": false,
+  "authoritative_units_closed": 1,
+  "covered": [
+    "popup kinds 1-4 text segment emission",
+    "localized resource IDs",
+    "numeric format kinds",
+    "planet-name and fleet-name seams",
+    "hull visibility callback filtering",
+    "hull-definition technology extraction",
+    "hull-name decoration",
+    "count and damage formatting",
+    "coordinate labels and values",
+    "full 32-bit raw fleet-pointer forwarding"
+  ],
+  "superseded_attempt": "runs/vmctl-vc152drawpopupcontente2/"
+}

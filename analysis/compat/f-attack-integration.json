@@ -1,0 +1,43 @@
+{
+  "procedures": ["FAttack"],
+  "phase2_step": "5/6",
+  "guest": "StarDev / Win98 / C:\\FAINT",
+  "native_run": "runs/vmctl-vc152faint/",
+  "native_report": "F_ATTACK_INTEGRATION_CHECKS=2 FAILURES=0 RESULT=PASS",
+  "packed_boundaries": {
+    "tok_raw_size": 29,
+    "tok_id": 0,
+    "tok_owner": 2,
+    "tok_battle_coordinate": 5,
+    "tok_dp_shield": 17,
+    "tok_ship_count": 19,
+    "tok_target_word": 23,
+    "tok_active_flags": 27,
+    "hul_raw_size": 123,
+    "hul_dp": 56,
+    "battle_record_size": 6,
+    "battle_record_hit_count": 2,
+    "battle_record_first_target": 5
+  },
+  "integration": {
+    "raw_token_decode_checked": true,
+    "raw_hull_dp_checked": true,
+    "f_damage_tok_shield_and_casualty_checked": true,
+    "raw_token_writeback_checked": true,
+    "battle_record_hit_fields_checked": true,
+    "shield_only_residual_checked": true
+  },
+  "original_executable": {
+    "surface": "Battle report",
+    "consumer_boundary_visible": true,
+    "program_error": false,
+    "populated_damage_differential": false,
+    "screenshot": "runs/vmctl-vc152current/report-battles.bmp"
+  },
+  "remaining_scope": [
+    "exact packed part lookup",
+    "complete battle-part scaling",
+    "broader original damage differentials",
+    "full battle replay"
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "procedure": "FAttack",
+  "checkpoint": "E36",
+  "finding": "Original beam range is the inclusive DzFromBrcBrc distance gate dRangeMax plus one only for attacker grobj 1.",
+  "original_table": {
+    "symbol": "rgbeam",
+    "ne_segment": 2,
+    "offset": "0x2450",
+    "record_size": 60,
+    "dRangeMax_offset": 52,
+    "dRangeMax_values": [1, 1, 2, 1, 0, 2, 3, 3, 2, 1, 0, 2, 3, 3, 2, 1, 0, 2, 3, 3, 3, 2, 1, 2]
+  },
+  "raw_behavior": {
+    "source": "analysis/decompiler/export/raw/10f0_69ac_FAttack.c",
+    "range_expression": "DzFromBrcBrc(attacker.brc, target.brc) <= ((attacker.grobj == 1) + part.dRangeMax)",
+    "object_kind_mapping": "StarsAttackInput.attacker_object_kind carries raw _tok.grobj; 1 receives the +1 allowance, including planet/starbase attackers; other kinds do not."
+  },
+  "source_change": "Added stars_lookup_beam_range and set the packed group-0x10 section's inclusive coordinate-range gate from the selected original beam record and attacker object kind.",
+  "host_validation": {
+    "table_and_scaling": "F_ATTACK_BEAM_SCALE_CHECKS=86 FAILURES=0 RESULT=PASS",
+    "packed_part": "F_ATTACK_PACKED_PART_CHECKS=13 FAILURES=0 RESULT=PASS",
+    "range_cases": [
+      "beam item 0 dRangeMax=1 with object kind 1 accepts coordinate distance 2",
+      "the same beam rejects distance 3",
+      "object kind 2 rejects distance 2 because no +1 allowance applies"
+    ]
+  },
+  "native_validation": {
+    "packet": "compat/vc152/f-attack-complex-native-e36/",
+    "guest_directory": "C:\\FAPNE36",
+    "build_status": "COMPILE=PASS; LINK=PASS",
+    "reports": [
+      "F_ATTACK_BEAM_SCALE_CHECKS=86 FAILURES=0 RESULT=PASS",
+      "F_ATTACK_PACKED_PART_CHECKS=13 FAILURES=0 RESULT=PASS",
+      "F_ATTACK_RAW_DAMAGE_CHECKS=9 FAILURES=0 RESULT=PASS",
+      "F_ATTACK_TORPEDO_TARGET_CHECKS=5 FAILURES=0 RESULT=PASS",
+      "F_ATTACK_RAW_TORPEDO_DISPATCH_CHECKS=11 FAILURES=0 RESULT=PASS"
+    ],
+    "tested_processes_exit": 0,
+    "program_error_dialog": false,
+    "evidence_directory": "runs/vmctl-vc152fapne36/"
+  },
+  "full_host_suite": {
+    "tests": 521,
+    "expected_skips": 153,
+    "layout_assertions": 2241,
+    "declarations": 846,
+    "baseline_check": "PASS",
+    "diff_check": "PASS",
+    "quiet_mode_anomaly": "Two prior full quiet-mode invocations exited with signal 10 before summary; this full verbose run passed."
+  },
+  "step5_units_closed": 0,
+  "step5_units_total": 3,
+  "remaining": [
+    "Trace attacker object kind from the packed battle token through complete battle/orchestrator replay",
+    "Complete raw beam/torpedo field and service acceptance, including hull/resource/shield/jam/capacity",
+    "E2 broader original damage differentials",
+    "E3 full native battle replay and differential",
+    "Step-6 promotion"
+  ]
+}

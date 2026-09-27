@@ -1,0 +1,73 @@
+{
+  "procedures": ["SatisfyOrders"],
+  "phase2_step": "5/6",
+  "unit": "E2 technology/ship-copy/salvage binding, caller-resolved action and failure conditions, and complete special-order/message layouts",
+  "status": "closed",
+  "host_validation": {
+    "source": "production reconstructed SatisfyOrders and helper boundaries",
+    "raw_message_sweep": "141/141 affected raw-order checks passed",
+    "component_checks": {
+      "production_services": 18,
+      "fleet_copy": 10,
+      "design_materialization": 15,
+      "technology_binding": 12,
+      "special_order": 16,
+      "packed_special": 10,
+      "raw_player_transfer": 21,
+      "raw_auto_route": 20,
+      "raw_mine": 12,
+      "raw_merge": 12,
+      "raw_shortage": 12,
+      "raw_colonist": 12,
+      "raw_technology": 16,
+      "raw_resource": 24,
+      "raw_foreign_colonist": 12,
+      "raw_fuel": 40,
+      "raw_failure": 44
+    }
+  },
+  "native_validation": {
+    "compiler": "VC++ 1.52c on Win98",
+    "guest": "StarDev",
+    "packets": ["C:\\SYOE4", "C:\\SYOP5", "C:\\SYOE8", "C:\\SYOE9", "C:\\SYOE10", "C:\\SYOE11", "C:\\SYOE12", "C:\\SYOE13", "C:\\SYOE14", "C:\\SYOE15", "C:\\SYOE16", "C:\\SYOE17", "C:\\SYOE18", "C:\\SYOE19", "C:\\SYOE20", "C:\\SYOE21", "C:\\SYOE22"],
+    "compile_link_passed": true,
+    "process_exit_zero": true,
+    "program_error_dialog": false,
+    "corrected_foreign_colonist_fallback_replay": "runs/vmctl-vc152syoe24/"
+  },
+  "original_oracle": [
+    "analysis/decompiler/export/raw/10b0_6798_SatisfyOrders.c",
+    "/Users/jdrake/Projects/stars-decompile/turn3.c",
+    "/Users/jdrake/Projects/stars-decompile/scripts/ghidra_scripts/includes/enums.h"
+  ],
+  "evidence": [
+    "analysis/compat/satisfy-orders-e2-closure.md",
+    "analysis/compat/satisfy-orders-production-e2-native.json",
+    "analysis/compat/satisfy-orders-fleet-copy-e2-native.json",
+    "analysis/compat/satisfy-orders-design-materialization-e2-native.json",
+    "analysis/compat/satisfy-orders-technology-binding-e2-native.json",
+    "analysis/compat/satisfy-orders-special-e4-native.json",
+    "analysis/compat/satisfy-orders-packed-special-e5-native.json",
+    "analysis/compat/satisfy-orders-raw-transfer-e2-native.json",
+    "analysis/compat/satisfy-orders-raw-route-e2-native.json",
+    "analysis/compat/satisfy-orders-raw-mine-e2-native.json",
+    "analysis/compat/satisfy-orders-raw-merge-e2-native.json",
+    "analysis/compat/satisfy-orders-raw-shortage-e2-native.json",
+    "analysis/compat/satisfy-orders-raw-colonist-e2-native.json",
+    "analysis/compat/satisfy-orders-raw-technology-e2-native.json",
+    "analysis/compat/satisfy-orders-raw-resource-e2-native.json",
+    "analysis/compat/satisfy-orders-raw-foreign-colonist-e2-native.json",
+    "analysis/compat/satisfy-orders-raw-fuel-e2-native.json",
+    "analysis/compat/satisfy-orders-raw-failure-e2-native.json",
+    "analysis/compat/satisfy-orders-foreign-colonist-fallback-e2-native.json",
+    "runs/vmctl-vc152syoe24/SYOFOR.TXT",
+    "runs/vmctl-vc152syoe24/SYORESSTA.TXT",
+    "runs/vmctl-vc152syoe24/SYORESCL.LOG",
+    "runs/vmctl-vc152syoe24/SYORESLINK.LOG"
+  ],
+  "remaining": [
+    "SatisfyOrders E3 complete four-pass turn replay",
+    "SatisfyOrders original full-turn message/state differential",
+    "Step-6 ledger synchronization and promotion"
+  ]
+}

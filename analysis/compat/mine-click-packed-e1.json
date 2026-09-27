@@ -1,0 +1,42 @@
+{
+  "procedures": ["MineClick"],
+  "phase2_step": "5/6",
+  "step5_unit": "E1 packed GlobalPD-facing planet/fleet/thing records",
+  "guest": "StarDev / Win98 / C:\\MCLE2",
+  "native_run": "runs/vmctl-vc152mcle2/",
+  "host_report": "MINE_CLICK_CHECKS=30 FAILURES=0 RESULT=PASS",
+  "native_report": "MINE_CLICK_CHECKS=30 FAILURES=0 RESULT=PASS",
+  "native_build": {
+    "compile": "PASS",
+    "link": "PASS",
+    "process_exit": 0,
+    "program_error_dialog": false
+  },
+  "packed_records": {
+    "planet_size": 56,
+    "fleet_size": 124,
+    "thing_size": 18,
+    "planet_identity_owner_detail_checked": true,
+    "planet_environment_bounds_checked": true,
+    "fleet_identity_owner_planet_ship_count_checked": true,
+    "thing_identity_owner_kind_point_checked": true
+  },
+  "integration": {
+    "raw_payload_callback_checked": true,
+    "typed_callback_fallback_checked": true,
+    "hit_code_and_double_click_paths_preserved": true
+  },
+  "evidence": [
+    "tests/mine_click_source_probe.c",
+    "reconstructed/src/mine_click.c",
+    "compat/vc152/mine-click-e2/MCL.C",
+    "compat/vc152/mine-click-e2/PROBE.C",
+    "runs/vmctl-vc152mcle2/MCLR.TXT"
+  ],
+  "remaining_scope": [
+    "localized popup construction",
+    "derived mining and terraforming arithmetic",
+    "complete minefield caller integration",
+    "final review and promotion"
+  ]
+}

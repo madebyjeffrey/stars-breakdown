@@ -1,0 +1,30 @@
+{
+  "procedures": [
+    "DoRobotoidAiTurn",
+    "DoTurinDroneAiTurn",
+    "DoCyberAiTurn"
+  ],
+  "milestone": "ai-starbase-action-plord-integration-e3",
+  "scope": "host-only",
+  "checks": 8,
+  "failures": 0,
+  "result": "PASS",
+  "report": "AI_STARBASE_ACTION_PLORD_INTEGRATION_CHECKS=8 FAILURES=0 RESULT=PASS",
+  "step5_units_closed": 0,
+  "coverage": {
+    "starbase_lookup_forwarding": true,
+    "point_lookup_forwarding": true,
+    "replacement_mode": true,
+    "target_identity": true,
+    "order_flags": true,
+    "packed_record_preservation": true,
+    "no_target_short_circuit": true
+  },
+  "evidence": [
+    "reconstructed/src/ai.c",
+    "reconstructed/src/ai_plord.c",
+    "tests/ai_starbase_action_plord_integration_probe.c",
+    "tests/f_move_to_nearest_starbase_source_probe.c",
+    "analysis/decompiler/export/raw/1090_6f7e_FMoveToNearestStarbase.c"
+  ]
+}
